@@ -4,4 +4,7 @@ pytest==9.1.1
 scipy==1.17.1
 pyyaml==6.0.3
 torch>=2.0.0
+onnx>=1.14.0
+onnxruntime>=1.16.0
+onnxscript>=0.7.0
 # Note: pybullet 3.2.7 installed from source with macOS SDK zutil.h patch
