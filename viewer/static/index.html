@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UAV 3D Simulation Cockpit & Evaluation Suite</title>
+    <link rel="stylesheet" href="/style.css">
+    <!-- Google Fonts for crisp typography -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+    <!-- Offline Local Three.js & OrbitControls -->
+    <script src="/three.min.js"></script>
+    <script src="/OrbitControls.js"></script>
+</head>
+<body>
+    <div class="app-layout">
+        <!-- Sidebar Controls -->
+        <aside class="sidebar">
+            <div class="brand">
+                <div class="brand-icon">
+                    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <polygon points="12 2 2 7 12 12 22 7 12 2"></polygon>
+                        <polyline points="2 17 12 22 22 17"></polyline>
+                        <polyline points="2 12 12 17 22 12"></polyline>
+                    </svg>
+                </div>
+                <div>
+                    <h1 class="brand-title">UAV Nav Sim</h1>
+                    <span class="badge-tag">Milestone 1 Viewer</span>
+                </div>
+            </div>
+
+            <!-- Controller / Checkpoint Selector -->
+            <section class="card">
+                <h2 class="card-title">Controller & Checkpoint</h2>
+                <div class="form-group">
+                    <label for="controller-select">Active Model / Policy</label>
+                    <select id="controller-select" class="select-input"></select>
+                </div>
+                <div class="model-meta-box">
+                    <div class="meta-row">
+                        <span class="meta-label">Checkpoint:</span>
+                        <span id="meta-checkpoint" class="meta-value mono">loading...</span>
+                    </div>
+                    <div class="meta-row">
+                        <span class="meta-label">Status:</span>
+                        <span id="meta-status" class="meta-value tag">Active</span>
+                    </div>
+                    <p id="meta-description" class="meta-desc">...</p>
+                </div>
+            </section>
+
+            <!-- Execution Controls -->
+            <section class="card">
+                <h2 class="card-title">Simulation Control</h2>
+                <div class="button-grid">
+                    <button id="btn-play" class="btn btn-primary">
+                        <span class="btn-icon">▶</span> Play
+                    </button>
+                    <button id="btn-pause" class="btn btn-secondary">
+                        <span class="btn-icon">⏸</span> Pause
+                    </button>
+                    <button id="btn-step" class="btn btn-secondary">
+                        <span class="btn-icon">⏭</span> Step
+                    </button>
+                    <button id="btn-reset" class="btn btn-danger">
+                        <span class="btn-icon">↺</span> Reset
+                    </button>
+                </div>
+
+                <div class="form-row">
+                    <div class="form-group flex-1">
+                        <label for="seed-input">Corridor Seed</label>
+                        <input type="number" id="seed-input" class="number-input" value="100" min="1" max="9999">
+                    </div>
+                    <div class="form-group flex-1">
+                        <label for="speed-select">Speed</label>
+                        <select id="speed-select" class="select-input">
+                            <option value="0.5">0.5x</option>
+                            <option value="1.0" selected>1.0x</option>
+                            <option value="2.0">2.0x</option>
+                            <option value="5.0">5.0x</option>
+                        </select>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Repeatable Evaluation Mode -->
+            <section class="card">
+                <h2 class="card-title">Repeatable Evaluation</h2>
+                <p class="section-hint">Executes fixed held-out seeds (1000–1004) to collect empirical benchmark metrics.</p>
+                <button id="btn-eval-batch" class="btn btn-accent w-full">
+                    <span class="btn-icon">⚡</span> Run Held-Out Batch (5 Seeds)
+                </button>
+            </section>
+
+            <!-- Episode Replay Buffer -->
+            <section class="card">
+                <h2 class="card-title">Episode Replay</h2>
+                <div class="form-group">
+                    <label for="replay-slider">Scrub Episode Trajectory (<span id="scrub-step-label">Step 0</span>)</label>
+                    <input type="range" id="replay-slider" class="range-slider" min="0" max="0" value="0" disabled>
+                </div>
+                <div class="meta-row">
+                    <span class="meta-label">Replay Mode:</span>
+                    <span id="replay-status" class="meta-value">Live Sim</span>
+                </div>
+            </section>
+
+            <!-- Feature Implementation Status -->
+            <section class="card status-guide">
+                <h2 class="card-title">Implementation Matrix</h2>
+                <ul class="feature-list">
+                    <li class="feature-item active">
+                        <span class="dot green"></span> Native PyBullet 3D Simulation
+                    </li>
+                    <li class="feature-item active">
+                        <span class="dot green"></span> Synchronized Trajectory Trail
+                    </li>
+                    <li class="feature-item active">
+                        <span class="dot green"></span> Raycast Distance Sensors (12 Rays)
+                    </li>
+                    <li class="feature-item active">
+                        <span class="dot green"></span> Deterministic Safety Supervisor
+                    </li>
+                    <li class="feature-item active">
+                        <span class="dot green"></span> Repeatable Seed Evaluation
+                    </li>
+                    <li class="feature-item planned">
+                        <span class="dot orange"></span> Scripted APF Expert (M2)
+                    </li>
+                    <li class="feature-item planned">
+                        <span class="dot orange"></span> BC Neural Policy Checkpoint (M3)
+                    </li>
+                    <li class="feature-item planned">
+                        <span class="dot orange"></span> PPO Reinforcement Learning (M4)
+                    </li>
+                </ul>
+            </section>
+        </aside>
+
+        <!-- Main 3D Viewport & HUD -->
+        <main class="main-content">
+            <!-- Top HUD Bar -->
+            <header class="hud-bar">
+                <div class="hud-item">
+                    <span class="hud-label">EPISODE STATUS</span>
+                    <span id="hud-status" class="status-pill running">RUNNING</span>
+                </div>
+                <div class="hud-item">
+                    <span class="hud-label">SAFETY SUPERVISOR</span>
+                    <span id="hud-safety" class="status-pill nominal">NOMINAL</span>
+                </div>
+                <div class="hud-item">
+                    <span class="hud-label">SIM TIME</span>
+                    <span id="hud-time" class="hud-value mono">0.00 s</span>
+                </div>
+                <div class="hud-item">
+                    <span class="hud-label">STEP</span>
+                    <span id="hud-step" class="hud-value mono">0</span>
+                </div>
+                <div class="hud-item">
+                    <span class="hud-label">CLEARANCE</span>
+                    <span id="hud-clearance" class="hud-value mono">0.00 m</span>
+                </div>
+                <div class="hud-item">
+                    <span class="hud-label">SPEED</span>
+                    <span id="hud-speed" class="hud-value mono">0.00 m/s</span>
+                </div>
+                <div class="hud-item">
+                    <span class="hud-label">GOAL DIST</span>
+                    <span id="hud-goal-dist" class="hud-value mono">0.00 m</span>
+                </div>
+            </header>
+
+            <!-- 3D Canvas Container -->
+            <div id="viewport-container" class="viewport">
+                <!-- Overlay Legend / Camera Instructions -->
+                <div class="viewport-overlay">
+                    <div class="overlay-card">
+                        <span class="overlay-title">3D Viewport Controls</span>
+                        <span class="overlay-sub">Left Drag: Orbit | Right Drag: Pan | Scroll: Zoom</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Bottom Evaluation Drawer -->
+            <section class="eval-drawer">
+                <div class="drawer-header">
+                    <div class="drawer-title-group">
+                        <h2 class="drawer-title">Evaluation Metrics (Empirical Measured Data Only)</h2>
+                        <span id="eval-count-badge" class="badge-count">0 Episodes</span>
+                    </div>
+                    <div class="drawer-stats" id="drawer-stats-summary">
+                        <div class="stat-pill">
+                            <span class="stat-title">Success Rate:</span>
+                            <span id="stat-success" class="stat-num">-</span>
+                        </div>
+                        <div class="stat-pill">
+                            <span class="stat-title">Collision Rate:</span>
+                            <span id="stat-collision" class="stat-num">-</span>
+                        </div>
+                        <div class="stat-pill">
+                            <span class="stat-title">Boundary Violations:</span>
+                            <span id="stat-boundary" class="stat-num">-</span>
+                        </div>
+                        <div class="stat-pill">
+                            <span class="stat-title">Avg Flight Time:</span>
+                            <span id="stat-time" class="stat-num">-</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Completed Episodes Table -->
+                <div class="table-container">
+                    <table class="data-table" id="eval-table">
+                        <thead>
+                            <tr>
+                                <th>Ep #</th>
+                                <th>Seed</th>
+                                <th>Model & Checkpoint</th>
+                                <th>Outcome</th>
+                                <th>Steps</th>
+                                <th>Flight Time</th>
+                                <th>Min Clearance</th>
+                                <th>Final Goal Dist</th>
+                            </tr>
+                        </thead>
+                        <tbody id="eval-tbody">
+                            <tr class="empty-row">
+                                <td colspan="8">No evaluation episodes completed yet. Click 'Run Held-Out Batch' to measure performance.</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <script src="/app.js"></script>
+</body>
+</html>

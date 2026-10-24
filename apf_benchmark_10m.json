@@ -1,0 +1,180 @@
+{
+  "controller_id": "scripted_expert_apf",
+  "checkpoint_id": "m2_apf_expert_v1",
+  "controller_display_name": "Scripted APF Expert",
+  "total_episodes": 10,
+  "success_count": 10,
+  "success_rate_pct": 100.0,
+  "collision_count": 0,
+  "collision_rate_pct": 0.0,
+  "obstacle_crash_count": 0,
+  "boundary_crash_count": 0,
+  "corridor_boundary_violation_rate_pct": 0.0,
+  "timeout_count": 0,
+  "timeout_rate_pct": 0.0,
+  "mean_flight_time_successful_s": 19.41,
+  "mean_distance_successful_m": 9.56,
+  "mean_safety_interventions_per_episode": 65.4,
+  "records": [
+    {
+      "seed": 100,
+      "status": "success",
+      "detail": "Arrived at goal (d=0.342m, speed=0.166m/s)",
+      "steps": 395,
+      "flight_time_s": 19.75,
+      "distance_travelled_m": 9.87,
+      "safety_interventions": 82,
+      "min_boundary_clearance_m": 0.159,
+      "min_obstacle_clearance_m": 0.311,
+      "final_position": [
+        9.16,
+        -0.03,
+        1.0
+      ]
+    },
+    {
+      "seed": 101,
+      "status": "success",
+      "detail": "Arrived at goal (d=0.345m, speed=0.169m/s)",
+      "steps": 387,
+      "flight_time_s": 19.35,
+      "distance_travelled_m": 9.23,
+      "safety_interventions": 54,
+      "min_boundary_clearance_m": 0.218,
+      "min_obstacle_clearance_m": 0.183,
+      "final_position": [
+        9.16,
+        0.03,
+        1.0
+      ]
+    },
+    {
+      "seed": 102,
+      "status": "success",
+      "detail": "Arrived at goal (d=0.348m, speed=0.168m/s)",
+      "steps": 420,
+      "flight_time_s": 21.0,
+      "distance_travelled_m": 9.87,
+      "safety_interventions": 75,
+      "min_boundary_clearance_m": 0.205,
+      "min_obstacle_clearance_m": 0.225,
+      "final_position": [
+        9.15,
+        0.03,
+        1.0
+      ]
+    },
+    {
+      "seed": 103,
+      "status": "success",
+      "detail": "Arrived at goal (d=0.346m, speed=0.170m/s)",
+      "steps": 359,
+      "flight_time_s": 17.95,
+      "distance_travelled_m": 9.13,
+      "safety_interventions": 55,
+      "min_boundary_clearance_m": 0.205,
+      "min_obstacle_clearance_m": 0.426,
+      "final_position": [
+        9.16,
+        -0.03,
+        1.0
+      ]
+    },
+    {
+      "seed": 104,
+      "status": "success",
+      "detail": "Arrived at goal (d=0.346m, speed=0.167m/s)",
+      "steps": 391,
+      "flight_time_s": 19.55,
+      "distance_travelled_m": 9.79,
+      "safety_interventions": 75,
+      "min_boundary_clearance_m": 0.193,
+      "min_obstacle_clearance_m": 0.413,
+      "final_position": [
+        9.16,
+        -0.03,
+        1.0
+      ]
+    },
+    {
+      "seed": 105,
+      "status": "success",
+      "detail": "Arrived at goal (d=0.346m, speed=0.166m/s)",
+      "steps": 395,
+      "flight_time_s": 19.75,
+      "distance_travelled_m": 9.77,
+      "safety_interventions": 55,
+      "min_boundary_clearance_m": 0.195,
+      "min_obstacle_clearance_m": 0.401,
+      "final_position": [
+        9.16,
+        -0.03,
+        1.0
+      ]
+    },
+    {
+      "seed": 106,
+      "status": "success",
+      "detail": "Arrived at goal (d=0.350m, speed=0.171m/s)",
+      "steps": 384,
+      "flight_time_s": 19.2,
+      "distance_travelled_m": 9.72,
+      "safety_interventions": 32,
+      "min_boundary_clearance_m": 0.216,
+      "min_obstacle_clearance_m": 0.456,
+      "final_position": [
+        9.15,
+        -0.04,
+        1.0
+      ]
+    },
+    {
+      "seed": 107,
+      "status": "success",
+      "detail": "Arrived at goal (d=0.344m, speed=0.168m/s)",
+      "steps": 398,
+      "flight_time_s": 19.9,
+      "distance_travelled_m": 9.29,
+      "safety_interventions": 89,
+      "min_boundary_clearance_m": 0.18,
+      "min_obstacle_clearance_m": 0.268,
+      "final_position": [
+        9.16,
+        0.03,
+        1.0
+      ]
+    },
+    {
+      "seed": 108,
+      "status": "success",
+      "detail": "Arrived at goal (d=0.346m, speed=0.167m/s)",
+      "steps": 388,
+      "flight_time_s": 19.4,
+      "distance_travelled_m": 9.76,
+      "safety_interventions": 74,
+      "min_boundary_clearance_m": 0.205,
+      "min_obstacle_clearance_m": 0.378,
+      "final_position": [
+        9.16,
+        -0.03,
+        1.0
+      ]
+    },
+    {
+      "seed": 109,
+      "status": "success",
+      "detail": "Arrived at goal (d=0.346m, speed=0.170m/s)",
+      "steps": 365,
+      "flight_time_s": 18.25,
+      "distance_travelled_m": 9.2,
+      "safety_interventions": 63,
+      "min_boundary_clearance_m": 0.179,
+      "min_obstacle_clearance_m": 0.352,
+      "final_position": [
+        9.16,
+        0.04,
+        1.0
+      ]
+    }
+  ]
+}
