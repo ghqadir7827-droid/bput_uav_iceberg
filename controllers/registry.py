@@ -238,16 +238,29 @@ class ControllerRegistry:
                 )
             )
 
-        self._planned_specs.extend([
-            ControllerMetadata(
-                controller_id="ppo_fine_tuned",
-                checkpoint_id="pending_training",
-                display_name="PPO Fine-Tuned Policy (Planned)",
-                is_implemented=False,
-                milestone_tag="Milestone 4",
-                description="Curriculum PPO reinforcement learning with hard-negative replay."
-            ),
-        ])
+        # Register Milestone 4 PPO policy controller if checkpoint exists
+        ppo_registered = False
+        try:
+            from controllers.ppo_policy import PPOPolicyController
+            ppo_ctrl = PPOPolicyController()
+            if ppo_ctrl.metadata.is_implemented:
+                self.register(ppo_ctrl)
+                ppo_registered = True
+        except Exception:
+            pass
+
+        # Register planned controllers (strictly flagged as is_implemented=False)
+        if not ppo_registered:
+            self._planned_specs.append(
+                ControllerMetadata(
+                    controller_id="ppo_fine_tuned",
+                    checkpoint_id="pending_training",
+                    display_name="PPO Fine-Tuned Policy (Planned)",
+                    is_implemented=False,
+                    milestone_tag="Milestone 4",
+                    description="Curriculum PPO reinforcement learning with hard-negative replay."
+                )
+            )
 
         self.scan_checkpoints()
 
