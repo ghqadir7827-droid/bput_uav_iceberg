@@ -49,6 +49,8 @@ class OnboardONNXPolicyRunner:
     def predict(self, observation: np.ndarray) -> VelocityAction:
         """Runs fast single-sample ONNX inference."""
         obs_input = np.ascontiguousarray(observation, dtype=np.float32)
+        # Sanitize against non-finite values (NaN / Inf) from sensor drivers
+        obs_input = np.nan_to_num(obs_input, nan=0.0, posinf=1.0, neginf=-1.0)
         if obs_input.ndim == 1:
             obs_input = np.expand_dims(obs_input, axis=0)
 

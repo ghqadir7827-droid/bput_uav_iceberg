@@ -80,3 +80,16 @@ def test_onnx_controller_registry_integration():
     assert isinstance(action, VelocityAction)
     assert action.vx > 0.0
 
+
+def test_onnx_runner_nan_inf_sanitization():
+    runner = OnboardONNXPolicyRunner(onnx_model_path="models/checkpoints/policy_ppo.onnx")
+    corrupted_obs = np.array([np.nan, np.inf, -np.inf] + [0.5] * 20, dtype=np.float32)
+
+    action = runner.predict(corrupted_obs)
+    assert isinstance(action, VelocityAction)
+    assert not np.isnan(action.vx)
+    assert not np.isnan(action.vy)
+    assert not np.isnan(action.vz)
+    assert not np.isnan(action.yaw_rate)
+
+
