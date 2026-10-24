@@ -62,3 +62,21 @@ def test_onnx_runner_latency_budget():
 
     # Must be under 0.5 ms (well within 3.0 ms budget)
     assert avg_lat_ms < 0.5, f"ONNX runner too slow: {avg_lat_ms:.3f} ms"
+
+
+def test_onnx_controller_registry_integration():
+    from controllers.registry import ControllerRegistry
+    from controllers.onnx_controller import ONNXEdgePolicyController
+
+    registry = ControllerRegistry()
+    ctrl = registry.get_controller("onnx_ppo_edge")
+    assert ctrl is not None
+    assert isinstance(ctrl, ONNXEdgePolicyController)
+    assert ctrl.metadata.is_implemented is True
+    assert ctrl.metadata.checkpoint_id == "onnx_5.3kb_0.016ms"
+
+    obs = np.ones(23, dtype=np.float32) * 0.5
+    action = ctrl.predict(obs)
+    assert isinstance(action, VelocityAction)
+    assert action.vx > 0.0
+

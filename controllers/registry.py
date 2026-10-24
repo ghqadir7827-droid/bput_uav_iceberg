@@ -261,6 +261,14 @@ class ControllerRegistry:
                     description="Curriculum PPO reinforcement learning with hard-negative replay."
                 )
             )
+        # Register Milestone 5 ONNX edge runner controller if onnx model exists
+        try:
+            from controllers.onnx_controller import ONNXEdgePolicyController
+            onnx_ctrl = ONNXEdgePolicyController()
+            if onnx_ctrl.metadata.is_implemented:
+                self.register(onnx_ctrl)
+        except Exception:
+            pass
 
         self.scan_checkpoints()
 
