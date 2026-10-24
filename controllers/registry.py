@@ -214,16 +214,31 @@ class ControllerRegistry:
         except ImportError:
             pass
 
+        # Register Milestone 3 BC policy controller if checkpoint exists
+        bc_registered = False
+        try:
+            from controllers.bc_policy import BehaviorCloningPolicyController
+            bc_ctrl = BehaviorCloningPolicyController()
+            if bc_ctrl.metadata.is_implemented:
+                self.register(bc_ctrl)
+                bc_registered = True
+        except Exception:
+            pass
+
         # Register planned controllers (strictly flagged as is_implemented=False)
+        if not bc_registered:
+            self._planned_specs.append(
+                ControllerMetadata(
+                    controller_id="imitation_bc_policy",
+                    checkpoint_id="pending_training",
+                    display_name="Behavior Cloning Policy (Planned)",
+                    is_implemented=False,
+                    milestone_tag="Milestone 3",
+                    description="Supervised neural network imitation of expert demonstrations."
+                )
+            )
+
         self._planned_specs.extend([
-            ControllerMetadata(
-                controller_id="imitation_bc_policy",
-                checkpoint_id="pending_training",
-                display_name="Behavior Cloning Policy (Planned)",
-                is_implemented=False,
-                milestone_tag="Milestone 3",
-                description="Supervised neural network imitation of expert demonstrations."
-            ),
             ControllerMetadata(
                 controller_id="ppo_fine_tuned",
                 checkpoint_id="pending_training",
