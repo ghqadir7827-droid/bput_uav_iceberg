@@ -83,6 +83,7 @@ class CorridorSimEnv(gym.Env):
         options: Optional[Dict[str, Any]] = None
     ) -> Tuple[np.ndarray, Dict[str, Any]]:
         super().reset(seed=seed)
+        self._current_seed = seed
         if seed is not None:
             self._rng = np.random.default_rng(seed)
 
@@ -184,32 +185,46 @@ class CorridorSimEnv(gym.Env):
         self.obstacles = []
         c = self.corridor
 
-        for x_pos in c.pillar_x_positions:
-            y_offset = float(self._rng.uniform(-c.pillar_y_range, c.pillar_y_range))
-            radius = c.pillar_radius
-            height = c.height
+        # Level 4 supports deterministic alternating impossible passages for validation
+        is_level_4_impassable = (
+            hasattr(c, "name") and "level_4" in c.name
+            and getattr(self, "_current_seed", None) is not None
+            and (self._current_seed % 2 == 1)
+        )
 
-            col_shape = p.createCollisionShape(
-                p.GEOM_CYLINDER, radius=radius, height=height,
-                physicsClientId=self.client_id
-            )
-            vis_shape = p.createVisualShape(
-                p.GEOM_CYLINDER, radius=radius, length=height,
-                rgbaColor=[0.95, 0.35, 0.10, 0.95],
-                physicsClientId=self.client_id
-            )
-            obs_id = p.createMultiBody(
-                baseMass=0, baseCollisionShapeIndex=col_shape, baseVisualShapeIndex=vis_shape,
-                basePosition=[x_pos, y_offset, (c.z_floor + c.z_ceiling) / 2.0],
-                physicsClientId=self.client_id
-            )
-            self.obstacle_ids.append(obs_id)
-            self.obstacles.append(Obstacle3D(
-                center=np.array([x_pos, y_offset, (c.z_floor + c.z_ceiling) / 2.0]),
-                radius=radius,
-                height=height,
-                obstacle_type="cylinder"
-            ))
+        for x_pos in c.pillar_x_positions:
+            if is_level_4_impassable and np.isclose(x_pos, 7.0, atol=0.2):
+                # Spawn impassable paired gate: 2 pillars at y = +0.55m and -0.55m
+                # Leaves passages of only 0.60m (< 0.65m drone diameter) on all channels
+                gate_offsets = [0.55, -0.55]
+            else:
+                gate_offsets = [float(self._rng.uniform(-c.pillar_y_range, c.pillar_y_range))]
+
+            for y_offset in gate_offsets:
+                radius = c.pillar_radius
+                height = c.height
+
+                col_shape = p.createCollisionShape(
+                    p.GEOM_CYLINDER, radius=radius, height=height,
+                    physicsClientId=self.client_id
+                )
+                vis_shape = p.createVisualShape(
+                    p.GEOM_CYLINDER, radius=radius, length=height,
+                    rgbaColor=[0.95, 0.35, 0.10, 0.95],
+                    physicsClientId=self.client_id
+                )
+                obs_id = p.createMultiBody(
+                    baseMass=0, baseCollisionShapeIndex=col_shape, baseVisualShapeIndex=vis_shape,
+                    basePosition=[x_pos, y_offset, (c.z_floor + c.z_ceiling) / 2.0],
+                    physicsClientId=self.client_id
+                )
+                self.obstacle_ids.append(obs_id)
+                self.obstacles.append(Obstacle3D(
+                    center=np.array([x_pos, y_offset, (c.z_floor + c.z_ceiling) / 2.0]),
+                    radius=radius,
+                    height=height,
+                    obstacle_type="cylinder"
+                ))
 
     def _spawn_drone(self) -> None:
         """Creates drone rigid body at the entrance (Bright Cyan Drone)."""
@@ -228,8 +243,9 @@ class CorridorSimEnv(gym.Env):
             rgbaColor=[0.10, 0.82, 0.95, 1.0],
             physicsClientId=self.client_id
         )
+        mass = 1.80 if c.drone_radius > 0.25 else 1.20
         self.drone_id = p.createMultiBody(
-            baseMass=1.2, baseCollisionShapeIndex=drone_shape, baseVisualShapeIndex=drone_vis,
+            baseMass=mass, baseCollisionShapeIndex=drone_shape, baseVisualShapeIndex=drone_vis,
             basePosition=[start_x, start_y, start_z],
             baseOrientation=[0, 0, 0, 1],
             physicsClientId=self.client_id

@@ -1,0 +1,11 @@
+{
+  "model_path": "models/checkpoints/policy_bc.onnx",
+  "onnx_file_size_bytes": 5419,
+  "inference_cycles": 1000,
+  "mean_latency_ms": 0.0287,
+  "p50_latency_ms": 0.0283,
+  "p95_latency_ms": 0.0305,
+  "p99_latency_ms": 0.0346,
+  "target_latency_budget_ms": 3.0,
+  "satisfies_50hz_realtime": true
+}

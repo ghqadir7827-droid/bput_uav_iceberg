@@ -1,0 +1,215 @@
+{
+  "total_episodes": 10,
+  "success_count": 0,
+  "success_rate_pct": 0.0,
+  "collision_count": 0,
+  "collision_rate_pct": 0.0,
+  "timeout_count": 10,
+  "timeout_rate_pct": 100.0,
+  "mean_return": 35.66,
+  "mean_net_forward_displacement_m": 4.77,
+  "mean_distance_travelled_m": 6.51,
+  "min_obstacle_clearance_m": 0.108,
+  "min_wall_clearance_m": 0.246,
+  "total_steps": 5000,
+  "intervention_steps": 4766,
+  "intervention_rate_pct": 95.3,
+  "reverse_control_steps": 1019,
+  "recovery_episodes": 10,
+  "component_interventions": {
+    "vx": {
+      "mean_mps": 0.2941,
+      "max_mps": 0.7,
+      "unit": "m/s"
+    },
+    "vy": {
+      "mean_mps": 0.0823,
+      "max_mps": 0.4,
+      "unit": "m/s"
+    },
+    "vz": {
+      "mean_mps": 0.014,
+      "max_mps": 0.1378,
+      "unit": "m/s"
+    },
+    "yaw_rate": {
+      "mean_radps": 0.0,
+      "max_radps": 0.0,
+      "unit": "rad/s"
+    }
+  },
+  "policy_saturation": {
+    "vx": 2000,
+    "vy": 394,
+    "vz": 0,
+    "yaw_rate": 175
+  },
+  "applied_saturation": {
+    "vx": 205,
+    "vy": 118,
+    "vz": 0,
+    "yaw_rate": 175
+  },
+  "per_seed_records": [
+    {
+      "seed": 100,
+      "status": "timeout",
+      "steps": 500,
+      "episode_return": 52.64,
+      "distance_travelled_m": 7.45,
+      "net_forward_displacement_m": 6.18,
+      "min_obstacle_clearance_m": 0.133,
+      "min_wall_clearance_m": 0.247,
+      "interventions": 474,
+      "final_position": [
+        6.68,
+        -0.53,
+        1.6
+      ]
+    },
+    {
+      "seed": 101,
+      "status": "timeout",
+      "steps": 500,
+      "episode_return": 26.57,
+      "distance_travelled_m": 6.23,
+      "net_forward_displacement_m": 4.21,
+      "min_obstacle_clearance_m": 0.132,
+      "min_wall_clearance_m": 0.247,
+      "interventions": 478,
+      "final_position": [
+        4.71,
+        -0.5,
+        1.6
+      ]
+    },
+    {
+      "seed": 102,
+      "status": "timeout",
+      "steps": 500,
+      "episode_return": 6.47,
+      "distance_travelled_m": 4.55,
+      "net_forward_displacement_m": 2.08,
+      "min_obstacle_clearance_m": 0.15,
+      "min_wall_clearance_m": 0.246,
+      "interventions": 480,
+      "final_position": [
+        2.58,
+        -0.53,
+        1.6
+      ]
+    },
+    {
+      "seed": 103,
+      "status": "timeout",
+      "steps": 500,
+      "episode_return": 1.28,
+      "distance_travelled_m": 4.63,
+      "net_forward_displacement_m": 2.21,
+      "min_obstacle_clearance_m": 0.121,
+      "min_wall_clearance_m": 0.247,
+      "interventions": 467,
+      "final_position": [
+        2.71,
+        -0.53,
+        1.6
+      ]
+    },
+    {
+      "seed": 104,
+      "status": "timeout",
+      "steps": 500,
+      "episode_return": 52.46,
+      "distance_travelled_m": 7.53,
+      "net_forward_displacement_m": 6.12,
+      "min_obstacle_clearance_m": 0.129,
+      "min_wall_clearance_m": 0.246,
+      "interventions": 470,
+      "final_position": [
+        6.62,
+        -0.53,
+        1.6
+      ]
+    },
+    {
+      "seed": 105,
+      "status": "timeout",
+      "steps": 500,
+      "episode_return": 53.82,
+      "distance_travelled_m": 7.26,
+      "net_forward_displacement_m": 6.06,
+      "min_obstacle_clearance_m": 0.135,
+      "min_wall_clearance_m": 0.247,
+      "interventions": 479,
+      "final_position": [
+        6.56,
+        -0.53,
+        1.6
+      ]
+    },
+    {
+      "seed": 106,
+      "status": "timeout",
+      "steps": 500,
+      "episode_return": 27.48,
+      "distance_travelled_m": 5.95,
+      "net_forward_displacement_m": 4.05,
+      "min_obstacle_clearance_m": 0.137,
+      "min_wall_clearance_m": 0.246,
+      "interventions": 485,
+      "final_position": [
+        4.55,
+        -0.53,
+        1.6
+      ]
+    },
+    {
+      "seed": 107,
+      "status": "timeout",
+      "steps": 500,
+      "episode_return": 26.25,
+      "distance_travelled_m": 6.19,
+      "net_forward_displacement_m": 4.25,
+      "min_obstacle_clearance_m": 0.124,
+      "min_wall_clearance_m": 0.248,
+      "interventions": 474,
+      "final_position": [
+        4.75,
+        -0.44,
+        1.6
+      ]
+    },
+    {
+      "seed": 108,
+      "status": "timeout",
+      "steps": 500,
+      "episode_return": 52.43,
+      "distance_travelled_m": 7.5,
+      "net_forward_displacement_m": 6.07,
+      "min_obstacle_clearance_m": 0.13,
+      "min_wall_clearance_m": 0.246,
+      "interventions": 480,
+      "final_position": [
+        6.57,
+        -0.53,
+        1.6
+      ]
+    },
+    {
+      "seed": 109,
+      "status": "timeout",
+      "steps": 500,
+      "episode_return": 57.18,
+      "distance_travelled_m": 7.83,
+      "net_forward_displacement_m": 6.5,
+      "min_obstacle_clearance_m": 0.108,
+      "min_wall_clearance_m": 0.247,
+      "interventions": 479,
+      "final_position": [
+        7.0,
+        -0.42,
+        1.58
+      ]
+    }
+  ]
+}

@@ -11,8 +11,13 @@ from typing import Any, Dict, List, Optional, Tuple
 import numpy as np
 
 from controllers.registry import ControllerRegistry, IController
-from controllers.safety_supervisor import SafetyState, SafetySupervisor
-from core.contracts import ActionLimits, DeployableObservation, VelocityAction
+from controllers.safety_supervisor import SafetyState, SafetySupervisor, SafetySupervisorConfig
+from core.contracts import (
+    ActionLimits,
+    DeployableObservation,
+    VelocityAction,
+    compute_forward_clearance_m,
+)
 from core.geometry import Corridor3D, TerminationReason
 from localization.interface import LocalizationManager
 from localization.sim_source import SimGroundTruthSource
@@ -40,10 +45,11 @@ class EvaluationRecord:
 class EvaluationEngine:
     """Coordinates simulation rollouts, controller prediction, safety filtering, and metrics."""
 
-    def __init__(self, seed: int = 100):
+    def __init__(self, seed: int = 100, scenario: str = "level_2"):
         self.lock = threading.RLock()
-        self.env = CorridorSimEnv(gui=False, seed=seed)
+        self.env = CorridorSimEnv(scenario=scenario, gui=False, seed=seed)
         self.corridor = self.env.corridor
+        # Safety supervisor automatically configures for 65cm UAV if drone_radius > 0.25
         self.safety_supervisor = SafetySupervisor(corridor=self.corridor)
 
         self.sim_loc_source = SimGroundTruthSource()
@@ -64,6 +70,10 @@ class EvaluationEngine:
         self.current_episode_status = "running"
         self.last_safety_state = SafetyState.NOMINAL.value
         self.last_safety_reason = "Nominal flight"
+        self.last_proposed_action = VelocityAction(0.0, 0.0, 0.0, 0.0)
+        self.last_applied_action = VelocityAction(0.0, 0.0, 0.0, 0.0)
+        self.last_norm_action = np.zeros(4, dtype=np.float32)
+        self.running_safety_interventions = 0
 
         # Evaluation history & recording
         self.evaluation_records: List[EvaluationRecord] = []
@@ -72,10 +82,11 @@ class EvaluationEngine:
         self.reset(seed=seed)
 
     def select_scenario(self, scenario_id: str) -> Tuple[bool, str]:
-        """Switches corridor scenario between '10m' initial benchmark and '20m' extended scenario."""
+        """Switches corridor scenario between Level 1-4 scaled and legacy benchmarks."""
         with self.lock:
-            if scenario_id not in ("10m", "20m"):
-                return False, f"Unknown scenario '{scenario_id}'. Choose '10m' or '20m'."
+            allowed = ("level_1", "level_2", "level_3", "level_4", "scaled", "10m", "20m")
+            if scenario_id not in allowed:
+                return False, f"Unknown scenario '{scenario_id}'. Choose from: {list(allowed)}."
             self.env.close()
             self.env = CorridorSimEnv(scenario=scenario_id, gui=False, seed=self.current_seed)
             self.corridor = self.env.corridor
@@ -83,7 +94,7 @@ class EvaluationEngine:
             if hasattr(self.active_controller, "update_environment"):
                 self.active_controller.update_environment(self.corridor, self.env.obstacles)
             self.reset(seed=self.current_seed)
-            return True, f"Scenario set to {self.corridor.name} ({self.corridor.x_end}m x {self.corridor.width}m x {self.corridor.height}m)"
+            return True, f"Scenario set to {self.corridor.name} ({self.corridor.x_end:.1f}m x {self.corridor.width:.1f}m x {self.corridor.height:.1f}m, drone_r={self.corridor.drone_radius:.3f}m)"
 
     def select_controller(self, controller_id: str) -> Tuple[bool, str]:
         """Switches active controller if implemented."""
@@ -115,6 +126,16 @@ class EvaluationEngine:
             self.current_episode_status = "running"
             self.last_safety_state = SafetyState.NOMINAL.value
             self.last_safety_reason = "Initialized"
+            self.last_proposed_action = VelocityAction(0.0, 0.0, 0.0, 0.0)
+            self.last_applied_action = VelocityAction(0.0, 0.0, 0.0, 0.0)
+            self.last_norm_action = np.zeros(4, dtype=np.float32)
+            self.running_safety_interventions = 0
+
+            # Reset supervisor episode-dependent state
+            if self.safety_supervisor is not None:
+                self.safety_supervisor.loss_timer_s = 0.0
+                self.safety_supervisor.stalled_timer_s = 0.0
+                self.safety_supervisor.last_safe_action = VelocityAction(0.0, 0.0, 0.0, 0.0)
 
             # Record initial snapshot
             snap = self._capture_snapshot()
@@ -143,9 +164,12 @@ class EvaluationEngine:
 
             # 2. Controller Inference
             proposed_action = self.active_controller.predict(self.obs_vec)
+            self.last_proposed_action = proposed_action
 
-            # 3. Multi-beam front clearance
-            front_dist = float(self.obs_vec[0] * self.env.sensor_config.max_range_m)
+            # 3. Multi-beam front clearance across forward-facing rays (indices 0..4)
+            front_dist = compute_forward_clearance_m(
+                self.obs_vec, max_range_m=self.env.sensor_config.max_range_m
+            )
 
             # 4. Safety Supervisor Filtering
             safe_action, s_state, s_reason = self.safety_supervisor.filter_action(
@@ -155,14 +179,19 @@ class EvaluationEngine:
                 min_front_range=front_dist,
                 dt=self.env.dt,
                 is_localization_healthy=health.is_healthy,
-                telemetry_age_s=health.packet_age_s
+                telemetry_age_s=health.packet_age_s,
+                observation=self.obs_vec,
             )
 
+            self.last_applied_action = safe_action
             self.last_safety_state = s_state.value
             self.last_safety_reason = s_reason
+            if s_state != SafetyState.NOMINAL:
+                self.running_safety_interventions += 1
 
             # 5. Physics Step
             norm_action = safe_action.to_normalized(self.env.action_limits)
+            self.last_norm_action = norm_action
             self.obs_vec, reward, terminated, truncated, self.info = self.env.step(norm_action)
 
             # 6. Capture Snapshot & Trajectory
@@ -181,23 +210,88 @@ class EvaluationEngine:
     def _capture_snapshot(self) -> Dict[str, Any]:
         """Captures full visual and telemetry snapshot directly from the simulation."""
         vis = self.env.get_visual_state()
+        raw_obs = [round(float(x), 4) for x in self.obs_vec]
+
+        # Breakdown of 23-float deployable observation into contract groups
+        obs_groups = {
+            "distance_rays_norm": raw_obs[0:12],
+            "distance_rays_m": [round(raw_obs[i] * 4.0, 2) for i in range(min(12, len(raw_obs)))],
+            "rel_goal_direction_body": raw_obs[12:15] if len(raw_obs) >= 15 else [0.0, 0.0, 0.0],
+            "body_velocity_mps": raw_obs[15:18] if len(raw_obs) >= 18 else [0.0, 0.0, 0.0],
+            "attitude_trig": raw_obs[18:22] if len(raw_obs) >= 22 else [0.0, 1.0, 0.0, 1.0],
+            "yaw_rate_radps": raw_obs[22] if len(raw_obs) > 22 else 0.0,
+        }
+
+        # Commanded actions
+        prop_act = {
+            "vx": round(float(self.last_proposed_action.vx), 3),
+            "vy": round(float(self.last_proposed_action.vy), 3),
+            "vz": round(float(self.last_proposed_action.vz), 3),
+            "yaw_rate": round(float(self.last_proposed_action.yaw_rate), 3),
+        }
+        applied_act = {
+            "vx": round(float(self.last_applied_action.vx), 3),
+            "vy": round(float(self.last_applied_action.vy), 3),
+            "vz": round(float(self.last_applied_action.vz), 3),
+            "yaw_rate": round(float(self.last_applied_action.yaw_rate), 3),
+        }
+        norm_act = [round(float(x), 3) for x in self.last_norm_action]
+
+        euler_deg = [
+            round(float(vis["orientation_euler"][0]) * 180.0 / np.pi, 1),
+            round(float(vis["orientation_euler"][1]) * 180.0 / np.pi, 1),
+            round(float(vis["orientation_euler"][2]) * 180.0 / np.pi, 1),
+        ]
+
+        flags = {
+            "running": self.current_episode_status == "running",
+            "success": self.current_episode_status == "success",
+            "crash_obstacle": self.current_episode_status == "crash_obstacle",
+            "crash_boundary": self.current_episode_status == "crash_boundary",
+            "timeout": self.current_episode_status == "timeout",
+        }
+
+        # Ground truth state (clearly distinguished as simulation truth, NOT policy input)
+        priv_truth = {
+            "obstacle_clearance_m": round(float(vis["obstacle_clearance"]), 3),
+            "boundary_distance_m": round(float(vis["boundary_distance"]), 3),
+            "world_position_m": [round(float(x), 3) for x in vis["position"]],
+            "world_velocity_mps": [round(float(x), 3) for x in vis["velocity"]],
+            "obstacles": [
+                {"center": [round(float(c), 3) for c in o.center], "radius": round(float(o.radius), 3)}
+                for o in self.env.obstacles
+            ],
+        }
+
         return {
             "step": vis["step_count"],
-            "sim_time_s": vis["sim_time_s"],
+            "sim_time_s": round(float(vis["sim_time_s"]), 2),
             "position": vis["position"],
             "velocity": vis["velocity"],
             "orientation_euler": vis["orientation_euler"],
-            "speed_mps": vis["speed_mps"],
-            "boundary_distance": vis["boundary_distance"],
-            "obstacle_clearance": vis["obstacle_clearance"],
-            "goal_distance": vis["goal_distance"],
+            "orientation_euler_deg": euler_deg,
+            "speed_mps": round(float(vis["speed_mps"]), 3),
+            "boundary_distance": round(float(vis["boundary_distance"]), 3),
+            "obstacle_clearance": round(float(vis["obstacle_clearance"]), 3),
+            "goal_distance": round(float(vis["goal_distance"]), 3),
+            "goal_position": [round(float(x), 3) for x in self.corridor.goal_position],
             "rays": vis["rays"],
             "episode_status": self.current_episode_status,
             "safety_state": self.last_safety_state,
             "safety_reason": self.last_safety_reason,
+            "safety_interventions_count": self.running_safety_interventions,
             "controller_id": self.active_controller.metadata.controller_id,
             "checkpoint_id": self.active_controller.metadata.checkpoint_id,
+            "controller_display_name": self.active_controller.metadata.display_name,
             "seed": self.current_seed,
+            "scenario": self.corridor.name,
+            "proposed_action": prop_act,
+            "applied_action": applied_act,
+            "normalized_action": norm_act,
+            "deployable_observation_23": raw_obs,
+            "observation_groups": obs_groups,
+            "flags": flags,
+            "privileged_simulation_ground_truth": priv_truth,
         }
 
     def _record_completed_episode(self) -> None:

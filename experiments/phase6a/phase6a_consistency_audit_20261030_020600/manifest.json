@@ -1,0 +1,67 @@
+{
+  "phase": "phase6a_consistency_audit",
+  "timestamp": "20261030_020600",
+  "workspace": "/Users/ghulamqadir/.gemini/antigravity-ide/scratch/uav-bput-nav",
+  "experiment_dir": "experiments/phase6a/phase6a_consistency_audit_20261030_020600",
+  "protected_assets": {
+    "bc_policy_best.pt": {
+      "path": "models/checkpoints/bc_policy_best.pt",
+      "expected_sha256": "93c4d7d1d8476b8d288a24fca1862d87133696f78b9603aa622bcc367afad44f",
+      "actual_sha256": "93c4d7d1d8476b8d288a24fca1862d87133696f78b9603aa622bcc367afad44f",
+      "status": "VERIFIED_MATCH"
+    },
+    "ppo_policy_best.pt": {
+      "path": "models/checkpoints/ppo_policy_best.pt",
+      "expected_sha256": "33f6d8b705edcffa430c48b2a21ed33a3e00f81b1c8195323134dd8be2a00ee0",
+      "actual_sha256": "33f6d8b705edcffa430c48b2a21ed33a3e00f81b1c8195323134dd8be2a00ee0",
+      "status": "VERIFIED_MATCH"
+    },
+    "safety_supervisor.py": {
+      "path": "controllers/safety_supervisor.py",
+      "expected_sha256": "9f84af22821f0f1473ea963b0f33a1924d1c4e7a487d4ed7893b7efc56fcd26f",
+      "actual_sha256": "9f84af22821f0f1473ea963b0f33a1924d1c4e7a487d4ed7893b7efc56fcd26f",
+      "status": "VERIFIED_MATCH"
+    },
+    "held_out_seeds": {
+      "range": "90000-90099",
+      "status": "SEALED_UNTOUCHED"
+    }
+  },
+  "initial_source_hashes": {
+    "policy_bc.onnx": "9365aab7253c38793af5efa7cb7eb89b7e1db3bf60ea96e70df1671cdbbb4f50",
+    "policy_ppo.onnx": "38dd6575d9828b4616d740b296b067c7ee964fc7de1ff5e8f671c4ecb82a0ecf",
+    "guidance_controller.py": "aab24029c02d25ed8008a2c300bad2065bd5d850adacded4eaccae6cfde1c053",
+    "registry.py": "feff2d0cd627059f2ae258e6385160c22ebf88bcaa953a8df0dd4db6ca1cb72a",
+    "onnx_runner.py": "6f0bb307825e741f4f93638c5ea7768ab66787d64c05bd430243f1a7a12934e5",
+    "test_guidance_controller.py": "03959821018715f55eddf4433a73164d1687f60d927f11b72b5b53738f4ff97e",
+    "test_onnx_runner.py": "2763add9698bd1a9d37e6f3ac0356428c1055a5111de162abcd6c16a00fa2167",
+    "corridor_env.py": "4d0c9bd20b370c181a49b5e5516cab851d4353d038774053557aad260255fc66",
+    "geometry.py": "22ca56dd3420614e93346d4d0e78e53531530cb9b6cadb9a400a69fd8c9cfadb",
+    "contracts.py": "1272af8f2f301f854ab75b0088e4032f464789379c8120825aa747b1580967ab"
+  },
+  "pre_run_test_status": {
+    "total_passed": 145,
+    "total_failed": 0,
+    "execution_time_s": 2.55
+  },
+  "post_run_source_hashes": {
+    "policy_bc.onnx": "9365aab7253c38793af5efa7cb7eb89b7e1db3bf60ea96e70df1671cdbbb4f50",
+    "policy_ppo.onnx": "38dd6575d9828b4616d740b296b067c7ee964fc7de1ff5e8f671c4ecb82a0ecf",
+    "guidance_controller.py": "2818fa497cd9aa1657114a895ce031edfc0687e1211cbead4003caffdd47dc21",
+    "guidance.py": "97ff738f25e4e85e5674683d072ad9d83fd6aa413155155118729b9462aea7c0",
+    "registry.py": "feff2d0cd627059f2ae258e6385160c22ebf88bcaa953a8df0dd4db6ca1cb72a",
+    "onnx_runner.py": "d80e4d8f2cfbbd9e7184ddfc138ffeb2614d0c2bb4861c1413a583d417cc30cd",
+    "test_guidance_controller.py": "03959821018715f55eddf4433a73164d1687f60d927f11b72b5b53738f4ff97e",
+    "test_guidance_parity.py": "c9ebea45abc4fa0c4f6f99367a6dfc932fdbcd0c3a2368279c1bee91be52d5a9",
+    "test_onnx_runner.py": "8146652c6c50e128f4ba4f32747c61eebbd790846f4e0771626e8850c1156200",
+    "corridor_env.py": "4d0c9bd20b370c181a49b5e5516cab851d4353d038774053557aad260255fc66",
+    "geometry.py": "22ca56dd3420614e93346d4d0e78e53531530cb9b6cadb9a400a69fd8c9cfadb",
+    "contracts.py": "1272af8f2f301f854ab75b0088e4032f464789379c8120825aa747b1580967ab"
+  },
+  "post_run_test_status": {
+    "total_passed": 153,
+    "total_failed": 0,
+    "total_skipped": 0,
+    "execution_time_s": 2.03
+  }
+}

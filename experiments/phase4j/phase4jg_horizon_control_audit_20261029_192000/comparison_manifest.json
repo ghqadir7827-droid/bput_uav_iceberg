@@ -1,0 +1,48 @@
+{
+  "experiment_name": "Phase 4J-G Horizon Sensitivity and Policy-Supervisor Compatibility Audit",
+  "timestamp": "20261029_192000",
+  "workspace": "/Users/ghulamqadir/.gemini/antigravity-ide/scratch/uav-bput-nav",
+  "experiment_directory": "/Users/ghulamqadir/.gemini/antigravity-ide/scratch/uav-bput-nav/experiments/phase4j/phase4jg_horizon_control_audit_20261029_192000",
+  "artifacts_generated": [
+    "PHASE_4JG_PRE_RUN_AUDIT.md",
+    "run_phase4jg_evaluation.py",
+    "horizon_paired_episode_results.csv",
+    "horizon_comparison_summary.json",
+    "failure_classification.csv",
+    "policy_supervisor_conflict_analysis.md",
+    "comparison_manifest.json",
+    "PHASE_4JG_FINAL_REPORT.md"
+  ],
+  "cryptographic_hashes": {
+    "bc_checkpoint_sha256": "93c4d7d1d8476b8d288a24fca1862d87133696f78b9603aa622bcc367afad44f",
+    "canonical_supervisor_sha256": "9f84af22821f0f1473ea963b0f33a1924d1c4e7a487d4ed7893b7efc56fcd26f",
+    "evaluation_script_sha256": "861acaa270cdd3ef40a94e219937d886beb29c20f4593126ca10402b81a6dcd8"
+  },
+  "environment_configuration": {
+    "corridor": "10m canonical benchmark",
+    "corridor_length_m": 10.0,
+    "corridor_half_width_m": 1.0,
+    "drone_radius_m": 0.15,
+    "dt_s": 0.05,
+    "evaluated_horizons_steps": [
+      500,
+      600
+    ],
+    "evaluated_durations_s": [
+      25.0,
+      30.0
+    ],
+    "caution_distance_m": 0.5,
+    "safety_envelope_threshold_m": 0.08,
+    "development_seeds": [
+      2000,
+      2049
+    ],
+    "held_out_seeds_status": "SEALED AND UNTOUCHED (90000..90099)"
+  },
+  "python_environment": {
+    "python_version": "3.11.17 (main, Oct  1 2026, 00:48:48) [Clang 21.0.0 (clang-2100.3.34.2)]",
+    "torch_version": "2.14.1",
+    "numpy_version": "2.4.6"
+  }
+}

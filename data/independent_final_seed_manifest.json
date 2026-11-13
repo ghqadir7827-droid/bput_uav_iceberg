@@ -1,0 +1,44 @@
+{
+  "title": "Phase 5 Independent Final Evaluation Seed Manifest",
+  "description": "Pristine, disjoint holdout seed set generated and frozen before execution.",
+  "timestamp_iso": "2026-10-31T01:34:00Z",
+  "total_seeds": 200,
+  "partitions": {
+    "Level 1 (Basic)": {
+      "level": 1,
+      "seed_range": [
+        26100,
+        26149
+      ],
+      "count": 50,
+      "feasibility": "All Feasible"
+    },
+    "Level 2 (Standard)": {
+      "level": 2,
+      "seed_range": [
+        26200,
+        26249
+      ],
+      "count": 50,
+      "feasibility": "All Feasible"
+    },
+    "Level 3 (Challenging)": {
+      "level": 3,
+      "seed_range": [
+        26300,
+        26349
+      ],
+      "count": 50,
+      "feasibility": "All Feasible"
+    },
+    "Level 4 (Boundary & Feasibility)": {
+      "level": 4,
+      "seed_range": [
+        26400,
+        26449
+      ],
+      "count": 50,
+      "feasibility": "25 Feasible (Even), 25 Infeasible (Odd)"
+    }
+  }
+}

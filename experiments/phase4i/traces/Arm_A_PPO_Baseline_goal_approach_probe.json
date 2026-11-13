@@ -1,0 +1,2342 @@
+{
+  "controller_id": "Arm_A_PPO_Baseline",
+  "scenario_name": "goal_approach_probe",
+  "seed": 1,
+  "total_steps": 84,
+  "total_time_s": 4.2,
+  "termination_reason": "success",
+  "is_success": true,
+  "final_position": [
+    9.437,
+    0.212,
+    0.965
+  ],
+  "final_speed_mps": 0.343,
+  "final_goal_distance_m": 0.224,
+  "forward_progress_m": 1.937,
+  "obstacles_cleared_count": 3,
+  "cleared_pillars": [
+    1,
+    2,
+    3
+  ],
+  "time_budget": {
+    "total_steps": 84,
+    "total_time_s": 4.2,
+    "step_counts": {
+      "unconstrained_forward": 8,
+      "supervisor_constrained_forward": 1,
+      "lateral_avoidance": 74,
+      "braking_or_stopping": 0,
+      "retreat_or_recovery": 0,
+      "re_acceleration": 0,
+      "goal_approach_braking": 0,
+      "other_unclassified": 1
+    },
+    "time_spent_s": {
+      "unconstrained_forward": 0.4,
+      "supervisor_constrained_forward": 0.05,
+      "lateral_avoidance": 3.7,
+      "braking_or_stopping": 0.0,
+      "retreat_or_recovery": 0.0,
+      "re_acceleration": 0.0,
+      "goal_approach_braking": 0.0,
+      "other_unclassified": 0.05
+    },
+    "time_percentages": {
+      "unconstrained_forward": 9.52,
+      "supervisor_constrained_forward": 1.19,
+      "lateral_avoidance": 88.1,
+      "braking_or_stopping": 0.0,
+      "retreat_or_recovery": 0.0,
+      "re_acceleration": 0.0,
+      "goal_approach_braking": 0.0,
+      "other_unclassified": 1.19
+    },
+    "encounters": {
+      "caution_entries": 3,
+      "complete_stops": 1,
+      "stalled_recoveries": 0,
+      "obstacles_cleared": 3
+    }
+  },
+  "progress_loss_diagnostics": {
+    "first_loss_x_m": null,
+    "first_loss_step": null,
+    "first_loss_obstacle": null,
+    "first_loss_reason": null,
+    "total_braking_time_s": 0.0,
+    "mean_reaccel_time_s": null,
+    "reaccel_event_count": 0
+  },
+  "step_traces": [
+    {
+      "step": 0,
+      "time_s": 0.0,
+      "pos": [
+        7.5,
+        0.0,
+        1.0
+      ],
+      "vel": [
+        0.5,
+        0.0,
+        0.0
+      ],
+      "goal_dist": 2.0,
+      "fwd_progress": 0.0,
+      "raw_vx": 0.661,
+      "raw_vy": -0.148,
+      "safe_vx": 0.6,
+      "safe_vy": -0.148,
+      "safety_state": "nominal",
+      "safety_reason": "All safety envelopes satisfied",
+      "front_clearance_m": 1.168,
+      "min_obs_clearance_m": 10.0,
+      "min_wall_clearance_m": 0.85,
+      "mode": "unconstrained_forward",
+      "active_pillar": "Pillar_3"
+    },
+    {
+      "step": 1,
+      "time_s": 0.05,
+      "pos": [
+        7.53,
+        -0.007,
+        1.002
+      ],
+      "vel": [
+        0.598,
+        -0.147,
+        0.044
+      ],
+      "goal_dist": 1.97,
+      "fwd_progress": 0.03,
+      "raw_vx": 0.677,
+      "raw_vy": -0.199,
+      "safe_vx": 0.6,
+      "safe_vy": -0.199,
+      "safety_state": "nominal",
+      "safety_reason": "All safety envelopes satisfied",
+      "front_clearance_m": 1.169,
+      "min_obs_clearance_m": 10.0,
+      "min_wall_clearance_m": 0.843,
+      "mode": "lateral_avoidance",
+      "active_pillar": "Pillar_3"
+    },
+    {
+      "step": 2,
+      "time_s": 0.1,
+      "pos": [
+        7.56,
+        -0.018,
+        1.002
+      ],
+      "vel": [
+        0.596,
+        -0.204,
+        0.003
+      ],
+      "goal_dist": 1.94,
+      "fwd_progress": 0.06,
+      "raw_vx": 0.703,
+      "raw_vy": -0.389,
+      "safe_vx": 0.6,
+      "safe_vy": -0.389,
+      "safety_state": "nominal",
+      "safety_reason": "All safety envelopes satisfied",
+      "front_clearance_m": 1.096,
+      "min_obs_clearance_m": 10.0,
+      "min_wall_clearance_m": 0.832,
+      "mode": "lateral_avoidance",
+      "active_pillar": "Pillar_3"
+    },
+    {
+      "step": 3,
+      "time_s": 0.15,
+      "pos": [
+        7.589,
+        -0.038,
+        1.002
+      ],
+      "vel": [
+        0.589,
+        -0.401,
+        -0.004
+      ],
+      "goal_dist": 1.911,
+      "fwd_progress": 0.089,
+      "raw_vx": 0.711,
+      "raw_vy": -0.425,
+      "safe_vx": 0.6,
+      "safe_vy": -0.4,
+      "safety_state": "nominal",
+      "safety_reason": "All safety envelopes satisfied",
+      "front_clearance_m": 1.055,
+      "min_obs_clearance_m": 10.0,
+      "min_wall_clearance_m": 0.812,
+      "mode": "lateral_avoidance",
+      "active_pillar": "Pillar_3"
+    },
+    {
+      "step": 4,
+      "time_s": 0.2,
+      "pos": [
+        7.618,
+        -0.059,
+        1.001
+      ],
+      "vel": [
+        0.58,
+        -0.424,
+        -0.014
+      ],
+      "goal_dist": 1.883,
+      "fwd_progress": 0.118,
+      "raw_vx": 0.707,
+      "raw_vy": -0.445,
+      "safe_vx": 0.6,
+      "safe_vy": -0.4,
+      "safety_state": "nominal",
+      "safety_reason": "All safety envelopes satisfied",
+      "front_clearance_m": 1.06,
+      "min_obs_clearance_m": 10.0,
+      "min_wall_clearance_m": 0.791,
+      "mode": "lateral_avoidance",
+      "active_pillar": "Pillar_3"
+    },
+    {
+      "step": 5,
+      "time_s": 0.25,
+      "pos": [
+        7.647,
+        -0.081,
+        1.0
+      ],
+      "vel": [
+        0.57,
+        -0.437,
+        -0.021
+      ],
+      "goal_dist": 1.855,
+      "fwd_progress": 0.147,
+      "raw_vx": 0.704,
+      "raw_vy": -0.439,
+      "safe_vx": 0.6,
+      "safe_vy": -0.4,
+      "safety_state": "nominal",
+      "safety_reason": "All safety envelopes satisfied",
+      "front_clearance_m": 1.046,
+      "min_obs_clearance_m": 10.0,
+      "min_wall_clearance_m": 0.769,
+      "mode": "lateral_avoidance",
+      "active_pillar": "Pillar_3"
+    },
+    {
+      "step": 6,
+      "time_s": 0.3,
+      "pos": [
+        7.675,
+        -0.103,
+        0.999
+      ],
+      "vel": [
+        0.56,
+        -0.451,
+        -0.023
+      ],
+      "goal_dist": 1.828,
+      "fwd_progress": 0.175,
+      "raw_vx": 0.697,
+      "raw_vy": -0.379,
+      "safe_vx": 0.6,
+      "safe_vy": -0.379,
+      "safety_state": "nominal",
+      "safety_reason": "All safety envelopes satisfied",
+      "front_clearance_m": 1.004,
+      "min_obs_clearance_m": 10.0,
+      "min_wall_clearance_m": 0.747,
+      "mode": "lateral_avoidance",
+      "active_pillar": "Pillar_3"
+    },
+    {
+      "step": 7,
+      "time_s": 0.35,
+      "pos": [
+        7.702,
+        -0.125,
+        0.998
+      ],
+      "vel": [
+        0.551,
+        -0.443,
+        -0.032
+      ],
+      "goal_dist": 1.802,
+      "fwd_progress": 0.202,
+      "raw_vx": 0.694,
+      "raw_vy": -0.36,
+      "safe_vx": 0.6,
+      "safe_vy": -0.36,
+      "safety_state": "nominal",
+      "safety_reason": "All safety envelopes satisfied",
+      "front_clearance_m": 0.952,
+      "min_obs_clearance_m": 10.0,
+      "min_wall_clearance_m": 0.725,
+      "mode": "lateral_avoidance",
+      "active_pillar": "Pillar_3"
+    },
+    {
+      "step": 8,
+      "time_s": 0.4,
+      "pos": [
+        7.729,
+        -0.147,
+        0.996
+      ],
+      "vel": [
+        0.544,
+        -0.437,
+        -0.03
+      ],
+      "goal_dist": 1.777,
+      "fwd_progress": 0.229,
+      "raw_vx": 0.694,
+      "raw_vy": -0.335,
+      "safe_vx": 0.6,
+      "safe_vy": -0.335,
+      "safety_state": "nominal",
+      "safety_reason": "All safety envelopes satisfied",
+      "front_clearance_m": 0.923,
+      "min_obs_clearance_m": 10.0,
+      "min_wall_clearance_m": 0.703,
+      "mode": "lateral_avoidance",
+      "active_pillar": "Pillar_3"
+    },
+    {
+      "step": 9,
+      "time_s": 0.45,
+      "pos": [
+        7.756,
+        -0.168,
+        0.995
+      ],
+      "vel": [
+        0.538,
+        -0.424,
+        -0.028
+      ],
+      "goal_dist": 1.752,
+      "fwd_progress": 0.256,
+      "raw_vx": 0.693,
+      "raw_vy": -0.308,
+      "safe_vx": 0.6,
+      "safe_vy": -0.308,
+      "safety_state": "nominal",
+      "safety_reason": "All safety envelopes satisfied",
+      "front_clearance_m": 0.882,
+      "min_obs_clearance_m": 10.0,
+      "min_wall_clearance_m": 0.682,
+      "mode": "lateral_avoidance",
+      "active_pillar": "Pillar_3"
+    },
+    {
+      "step": 10,
+      "time_s": 0.5,
+      "pos": [
+        7.783,
+        -0.189,
+        0.993
+      ],
+      "vel": [
+        0.533,
+        -0.409,
+        -0.028
+      ],
+      "goal_dist": 1.727,
+      "fwd_progress": 0.283,
+      "raw_vx": 0.692,
+      "raw_vy": -0.279,
+      "safe_vx": 0.6,
+      "safe_vy": -0.279,
+      "safety_state": "nominal",
+      "safety_reason": "All safety envelopes satisfied",
+      "front_clearance_m": 0.84,
+      "min_obs_clearance_m": 10.0,
+      "min_wall_clearance_m": 0.661,
+      "mode": "lateral_avoidance",
+      "active_pillar": "Pillar_3"
+    },
+    {
+      "step": 11,
+      "time_s": 0.55,
+      "pos": [
+        7.809,
+        -0.208,
+        0.992
+      ],
+      "vel": [
+        0.53,
+        -0.392,
+        -0.027
+      ],
+      "goal_dist": 1.703,
+      "fwd_progress": 0.309,
+      "raw_vx": 0.691,
+      "raw_vy": -0.237,
+      "safe_vx": 0.6,
+      "safe_vy": -0.237,
+      "safety_state": "nominal",
+      "safety_reason": "All safety envelopes satisfied",
+      "front_clearance_m": 0.823,
+      "min_obs_clearance_m": 10.0,
+      "min_wall_clearance_m": 0.642,
+      "mode": "lateral_avoidance",
+      "active_pillar": "Pillar_3"
+    },
+    {
+      "step": 12,
+      "time_s": 0.6,
+      "pos": [
+        7.836,
+        -0.227,
+        0.991
+      ],
+      "vel": [
+        0.532,
+        -0.362,
+        -0.026
+      ],
+      "goal_dist": 1.679,
+      "fwd_progress": 0.336,
+      "raw_vx": 0.692,
+      "raw_vy": -0.201,
+      "safe_vx": 0.598,
+      "safe_vy": -0.201,
+      "safety_state": "obstacle_brake",
+      "safety_reason": "Obstacle caution zone (0.80m < 0.80m) -> Speed throttled to 0.60m/s",
+      "front_clearance_m": 0.798,
+      "min_obs_clearance_m": 10.0,
+      "min_wall_clearance_m": 0.623,
+      "mode": "lateral_avoidance",
+      "active_pillar": "Pillar_3"
+    },
+    {
+      "step": 13,
+      "time_s": 0.65,
+      "pos": [
+        7.863,
+        -0.243,
+        0.99
+      ],
+      "vel": [
+        0.531,
+        -0.336,
+        -0.024
+      ],
+      "goal_dist": 1.655,
+      "fwd_progress": 0.363,
+      "raw_vx": 0.69,
+      "raw_vy": -0.144,
+      "safe_vx": 0.562,
+      "safe_vy": -0.144,
+      "safety_state": "obstacle_brake",
+      "safety_reason": "Obstacle caution zone (0.77m < 0.80m) -> Speed throttled to 0.56m/s",
+      "front_clearance_m": 0.769,
+      "min_obs_clearance_m": 10.0,
+      "min_wall_clearance_m": 0.607,
+      "mode": "lateral_avoidance",
+      "active_pillar": "Pillar_3"
+    },
+    {
+      "step": 14,
+      "time_s": 0.7,
+      "pos": [
+        7.888,
+        -0.257,
+        0.988
+      ],
+      "vel": [
+        0.506,
+        -0.281,
+        -0.023
+      ],
+      "goal_dist": 1.633,
+      "fwd_progress": 0.388,
+      "raw_vx": 0.689,
+      "raw_vy": -0.054,
+      "safe_vx": 0.52,
+      "safe_vy": -0.054,
+      "safety_state": "obstacle_brake",
+      "safety_reason": "Obstacle caution zone (0.73m < 0.80m) -> Speed throttled to 0.52m/s",
+      "front_clearance_m": 0.733,
+      "min_obs_clearance_m": 10.0,
+      "min_wall_clearance_m": 0.593,
+      "mode": "lateral_avoidance",
+      "active_pillar": "Pillar_3"
+    },
+    {
+      "step": 15,
+      "time_s": 0.75,
+      "pos": [
+        7.912,
+        -0.267,
+        0.987
+      ],
+      "vel": [
+        0.485,
+        -0.19,
+        -0.029
+      ],
+      "goal_dist": 1.61,
+      "fwd_progress": 0.412,
+      "raw_vx": 0.662,
+      "raw_vy": 0.054,
+      "safe_vx": 0.506,
+      "safe_vy": 0.054,
+      "safety_state": "obstacle_brake",
+      "safety_reason": "Obstacle caution zone (0.72m < 0.80m) -> Speed throttled to 0.51m/s",
+      "front_clearance_m": 0.721,
+      "min_obs_clearance_m": 10.0,
+      "min_wall_clearance_m": 0.583,
+      "mode": "lateral_avoidance",
+      "active_pillar": "Pillar_3"
+    },
+    {
+      "step": 16,
+      "time_s": 0.8,
+      "pos": [
+        7.937,
+        -0.271,
+        0.985
+      ],
+      "vel": [
+        0.499,
+        -0.088,
+        -0.029
+      ],
+      "goal_dist": 1.586,
+      "fwd_progress": 0.437,
+      "raw_vx": 0.63,
+      "raw_vy": 0.153,
+      "safe_vx": 0.543,
+      "safe_vy": 0.153,
+      "safety_state": "obstacle_brake",
+      "safety_reason": "Obstacle caution zone (0.75m < 0.80m) -> Speed throttled to 0.54m/s",
+      "front_clearance_m": 0.753,
+      "min_obs_clearance_m": 10.0,
+      "min_wall_clearance_m": 0.579,
+      "mode": "lateral_avoidance",
+      "active_pillar": "Pillar_3"
+    },
+    {
+      "step": 17,
+      "time_s": 0.85,
+      "pos": [
+        7.965,
+        -0.272,
+        0.985
+      ],
+      "vel": [
+        0.563,
+        -0.005,
+        -0.013
+      ],
+      "goal_dist": 1.559,
+      "fwd_progress": 0.465,
+      "raw_vx": 0.658,
+      "raw_vy": 0.093,
+      "safe_vx": 0.575,
+      "safe_vy": 0.093,
+      "safety_state": "obstacle_brake",
+      "safety_reason": "Obstacle caution zone (0.78m < 0.80m) -> Speed throttled to 0.57m/s",
+      "front_clearance_m": 0.779,
+      "min_obs_clearance_m": 10.0,
+      "min_wall_clearance_m": 0.578,
+      "mode": "supervisor_constrained_forward",
+      "active_pillar": "Pillar_3"
+    },
+    {
+      "step": 18,
+      "time_s": 0.9,
+      "pos": [
+        7.994,
+        -0.275,
+        0.986
+      ],
+      "vel": [
+        0.576,
+        -0.068,
+        0.029
+      ],
+      "goal_dist": 1.531,
+      "fwd_progress": 0.494,
+      "raw_vx": 0.688,
+      "raw_vy": 0.178,
+      "safe_vx": 0.535,
+      "safe_vy": 0.178,
+      "safety_state": "obstacle_brake",
+      "safety_reason": "Obstacle caution zone (0.75m < 0.80m) -> Speed throttled to 0.54m/s",
+      "front_clearance_m": 0.746,
+      "min_obs_clearance_m": 10.0,
+      "min_wall_clearance_m": 0.575,
+      "mode": "lateral_avoidance",
+      "active_pillar": "Pillar_3"
+    },
+    {
+      "step": 19,
+      "time_s": 0.95,
+      "pos": [
+        8.022,
+        -0.273,
+        0.989
+      ],
+      "vel": [
+        0.561,
+        0.033,
+        0.046
+      ],
+      "goal_dist": 1.503,
+      "fwd_progress": 0.522,
+      "raw_vx": 0.656,
+      "raw_vy": 0.209,
+      "safe_vx": 0.551,
+      "safe_vy": 0.209,
+      "safety_state": "obstacle_brake",
+      "safety_reason": "Obstacle caution zone (0.76m < 0.80m) -> Speed throttled to 0.55m/s",
+      "front_clearance_m": 0.759,
+      "min_obs_clearance_m": 10.0,
+      "min_wall_clearance_m": 0.577,
+      "mode": "lateral_avoidance",
+      "active_pillar": null
+    },
+    {
+      "step": 20,
+      "time_s": 1.0,
+      "pos": [
+        8.051,
+        -0.27,
+        0.991
+      ],
+      "vel": [
+        0.583,
+        0.069,
+        0.056
+      ],
+      "goal_dist": 1.474,
+      "fwd_progress": 0.551,
+      "raw_vx": 0.676,
+      "raw_vy": 0.238,
+      "safe_vx": 0.552,
+      "safe_vy": 0.238,
+      "safety_state": "obstacle_brake",
+      "safety_reason": "Obstacle caution zone (0.76m < 0.80m) -> Speed throttled to 0.55m/s",
+      "front_clearance_m": 0.76,
+      "min_obs_clearance_m": 10.0,
+      "min_wall_clearance_m": 0.58,
+      "mode": "lateral_avoidance",
+      "active_pillar": null
+    },
+    {
+      "step": 21,
+      "time_s": 1.05,
+      "pos": [
+        8.081,
+        -0.265,
+        0.995
+      ],
+      "vel": [
+        0.59,
+        0.107,
+        0.068
+      ],
+      "goal_dist": 1.444,
+      "fwd_progress": 0.581,
+      "raw_vx": 0.68,
+      "raw_vy": 0.26,
+      "safe_vx": 0.592,
+      "safe_vy": 0.26,
+      "safety_state": "obstacle_brake",
+      "safety_reason": "Obstacle caution zone (0.79m < 0.80m) -> Speed throttled to 0.59m/s",
+      "front_clearance_m": 0.794,
+      "min_obs_clearance_m": 10.0,
+      "min_wall_clearance_m": 0.585,
+      "mode": "lateral_avoidance",
+      "active_pillar": null
+    },
+    {
+      "step": 22,
+      "time_s": 1.1,
+      "pos": [
+        8.112,
+        -0.258,
+        0.998
+      ],
+      "vel": [
+        0.631,
+        0.132,
+        0.073
+      ],
+      "goal_dist": 1.411,
+      "fwd_progress": 0.612,
+      "raw_vx": 0.715,
+      "raw_vy": 0.27,
+      "safe_vx": 0.6,
+      "safe_vy": 0.27,
+      "safety_state": "nominal",
+      "safety_reason": "All safety envelopes satisfied",
+      "front_clearance_m": 0.805,
+      "min_obs_clearance_m": 10.0,
+      "min_wall_clearance_m": 0.592,
+      "mode": "lateral_avoidance",
+      "active_pillar": null
+    },
+    {
+      "step": 23,
+      "time_s": 1.15,
+      "pos": [
+        8.144,
+        -0.25,
+        1.002
+      ],
+      "vel": [
+        0.638,
+        0.154,
+        0.08
+      ],
+      "goal_dist": 1.379,
+      "fwd_progress": 0.644,
+      "raw_vx": 0.722,
+      "raw_vy": 0.281,
+      "safe_vx": 0.584,
+      "safe_vy": 0.281,
+      "safety_state": "obstacle_brake",
+      "safety_reason": "Obstacle caution zone (0.79m < 0.80m) -> Speed throttled to 0.58m/s",
+      "front_clearance_m": 0.787,
+      "min_obs_clearance_m": 10.0,
+      "min_wall_clearance_m": 0.6,
+      "mode": "lateral_avoidance",
+      "active_pillar": null
+    },
+    {
+      "step": 24,
+      "time_s": 1.2,
+      "pos": [
+        8.175,
+        -0.241,
+        1.007
+      ],
+      "vel": [
+        0.62,
+        0.181,
+        0.084
+      ],
+      "goal_dist": 1.347,
+      "fwd_progress": 0.675,
+      "raw_vx": 0.711,
+      "raw_vy": 0.293,
+      "safe_vx": 0.587,
+      "safe_vy": 0.293,
+      "safety_state": "obstacle_brake",
+      "safety_reason": "Obstacle caution zone (0.79m < 0.80m) -> Speed throttled to 0.59m/s",
+      "front_clearance_m": 0.789,
+      "min_obs_clearance_m": 10.0,
+      "min_wall_clearance_m": 0.609,
+      "mode": "lateral_avoidance",
+      "active_pillar": null
+    },
+    {
+      "step": 25,
+      "time_s": 1.25,
+      "pos": [
+        8.206,
+        -0.231,
+        1.011
+      ],
+      "vel": [
+        0.621,
+        0.206,
+        0.083
+      ],
+      "goal_dist": 1.314,
+      "fwd_progress": 0.706,
+      "raw_vx": 0.713,
+      "raw_vy": 0.289,
+      "safe_vx": 0.599,
+      "safe_vy": 0.289,
+      "safety_state": "obstacle_brake",
+      "safety_reason": "Obstacle caution zone (0.80m < 0.80m) -> Speed throttled to 0.60m/s",
+      "front_clearance_m": 0.799,
+      "min_obs_clearance_m": 10.0,
+      "min_wall_clearance_m": 0.619,
+      "mode": "lateral_avoidance",
+      "active_pillar": null
+    },
+    {
+      "step": 26,
+      "time_s": 1.3,
+      "pos": [
+        8.238,
+        -0.22,
+        1.015
+      ],
+      "vel": [
+        0.627,
+        0.215,
+        0.082
+      ],
+      "goal_dist": 1.282,
+      "fwd_progress": 0.738,
+      "raw_vx": 0.719,
+      "raw_vy": 0.266,
+      "safe_vx": 0.6,
+      "safe_vy": 0.266,
+      "safety_state": "nominal",
+      "safety_reason": "All safety envelopes satisfied",
+      "front_clearance_m": 0.828,
+      "min_obs_clearance_m": 10.0,
+      "min_wall_clearance_m": 0.63,
+      "mode": "lateral_avoidance",
+      "active_pillar": null
+    },
+    {
+      "step": 27,
+      "time_s": 1.35,
+      "pos": [
+        8.269,
+        -0.21,
+        1.019
+      ],
+      "vel": [
+        0.621,
+        0.207,
+        0.081
+      ],
+      "goal_dist": 1.249,
+      "fwd_progress": 0.769,
+      "raw_vx": 0.714,
+      "raw_vy": 0.209,
+      "safe_vx": 0.6,
+      "safe_vy": 0.209,
+      "safety_state": "nominal",
+      "safety_reason": "All safety envelopes satisfied",
+      "front_clearance_m": 0.858,
+      "min_obs_clearance_m": 10.0,
+      "min_wall_clearance_m": 0.64,
+      "mode": "lateral_avoidance",
+      "active_pillar": null
+    },
+    {
+      "step": 28,
+      "time_s": 1.4,
+      "pos": [
+        8.299,
+        -0.202,
+        1.023
+      ],
+      "vel": [
+        0.612,
+        0.163,
+        0.074
+      ],
+      "goal_dist": 1.218,
+      "fwd_progress": 0.799,
+      "raw_vx": 0.7,
+      "raw_vy": 0.101,
+      "safe_vx": 0.6,
+      "safe_vy": 0.101,
+      "safety_state": "nominal",
+      "safety_reason": "All safety envelopes satisfied",
+      "front_clearance_m": 0.884,
+      "min_obs_clearance_m": 10.0,
+      "min_wall_clearance_m": 0.648,
+      "mode": "lateral_avoidance",
+      "active_pillar": null
+    },
+    {
+      "step": 29,
+      "time_s": 1.45,
+      "pos": [
+        8.329,
+        -0.198,
+        1.026
+      ],
+      "vel": [
+        0.603,
+        0.068,
+        0.062
+      ],
+      "goal_dist": 1.188,
+      "fwd_progress": 0.829,
+      "raw_vx": 0.668,
+      "raw_vy": 0.016,
+      "safe_vx": 0.6,
+      "safe_vy": 0.016,
+      "safety_state": "nominal",
+      "safety_reason": "All safety envelopes satisfied",
+      "front_clearance_m": 0.925,
+      "min_obs_clearance_m": 10.0,
+      "min_wall_clearance_m": 0.652,
+      "mode": "unconstrained_forward",
+      "active_pillar": null
+    },
+    {
+      "step": 30,
+      "time_s": 1.5,
+      "pos": [
+        8.359,
+        -0.199,
+        1.027
+      ],
+      "vel": [
+        0.598,
+        -0.008,
+        0.035
+      ],
+      "goal_dist": 1.158,
+      "fwd_progress": 0.859,
+      "raw_vx": 0.652,
+      "raw_vy": -0.012,
+      "safe_vx": 0.6,
+      "safe_vy": -0.012,
+      "safety_state": "nominal",
+      "safety_reason": "All safety envelopes satisfied",
+      "front_clearance_m": 0.885,
+      "min_obs_clearance_m": 10.0,
+      "min_wall_clearance_m": 0.651,
+      "mode": "unconstrained_forward",
+      "active_pillar": null
+    },
+    {
+      "step": 31,
+      "time_s": 1.55,
+      "pos": [
+        8.389,
+        -0.2,
+        1.028
+      ],
+      "vel": [
+        0.597,
+        -0.031,
+        0.009
+      ],
+      "goal_dist": 1.129,
+      "fwd_progress": 0.889,
+      "raw_vx": 0.646,
+      "raw_vy": -0.044,
+      "safe_vx": 0.6,
+      "safe_vy": -0.044,
+      "safety_state": "nominal",
+      "safety_reason": "All safety envelopes satisfied",
+      "front_clearance_m": 0.907,
+      "min_obs_clearance_m": 10.0,
+      "min_wall_clearance_m": 0.65,
+      "mode": "unconstrained_forward",
+      "active_pillar": null
+    },
+    {
+      "step": 32,
+      "time_s": 1.6,
+      "pos": [
+        8.419,
+        -0.203,
+        1.028
+      ],
+      "vel": [
+        0.597,
+        -0.061,
+        -0.008
+      ],
+      "goal_dist": 1.1,
+      "fwd_progress": 0.919,
+      "raw_vx": 0.613,
+      "raw_vy": -0.078,
+      "safe_vx": 0.6,
+      "safe_vy": -0.078,
+      "safety_state": "nominal",
+      "safety_reason": "All safety envelopes satisfied",
+      "front_clearance_m": 1.39,
+      "min_obs_clearance_m": 10.0,
+      "min_wall_clearance_m": 0.647,
+      "mode": "unconstrained_forward",
+      "active_pillar": null
+    },
+    {
+      "step": 33,
+      "time_s": 1.65,
+      "pos": [
+        8.449,
+        -0.208,
+        1.027
+      ],
+      "vel": [
+        0.596,
+        -0.096,
+        -0.015
+      ],
+      "goal_dist": 1.072,
+      "fwd_progress": 0.949,
+      "raw_vx": 0.647,
+      "raw_vy": -0.09,
+      "safe_vx": 0.6,
+      "safe_vy": -0.09,
+      "safety_state": "nominal",
+      "safety_reason": "All safety envelopes satisfied",
+      "front_clearance_m": 0.885,
+      "min_obs_clearance_m": 10.0,
+      "min_wall_clearance_m": 0.642,
+      "mode": "unconstrained_forward",
+      "active_pillar": null
+    },
+    {
+      "step": 34,
+      "time_s": 1.7,
+      "pos": [
+        8.478,
+        -0.214,
+        1.025
+      ],
+      "vel": [
+        0.595,
+        -0.109,
+        -0.029
+      ],
+      "goal_dist": 1.044,
+      "fwd_progress": 0.978,
+      "raw_vx": 0.651,
+      "raw_vy": -0.114,
+      "safe_vx": 0.6,
+      "safe_vy": -0.114,
+      "safety_state": "nominal",
+      "safety_reason": "All safety envelopes satisfied",
+      "front_clearance_m": 0.912,
+      "min_obs_clearance_m": 10.0,
+      "min_wall_clearance_m": 0.636,
+      "mode": "unconstrained_forward",
+      "active_pillar": null
+    },
+    {
+      "step": 35,
+      "time_s": 1.75,
+      "pos": [
+        8.508,
+        -0.22,
+        1.024
+      ],
+      "vel": [
+        0.593,
+        -0.137,
+        -0.035
+      ],
+      "goal_dist": 1.016,
+      "fwd_progress": 1.008,
+      "raw_vx": 0.651,
+      "raw_vy": -0.139,
+      "safe_vx": 0.6,
+      "safe_vy": -0.139,
+      "safety_state": "nominal",
+      "safety_reason": "All safety envelopes satisfied",
+      "front_clearance_m": 0.904,
+      "min_obs_clearance_m": 10.0,
+      "min_wall_clearance_m": 0.63,
+      "mode": "unconstrained_forward",
+      "active_pillar": null
+    },
+    {
+      "step": 36,
+      "time_s": 1.8,
+      "pos": [
+        8.538,
+        -0.229,
+        1.021
+      ],
+      "vel": [
+        0.591,
+        -0.167,
+        -0.042
+      ],
+      "goal_dist": 0.989,
+      "fwd_progress": 1.038,
+      "raw_vx": 0.657,
+      "raw_vy": -0.17,
+      "safe_vx": 0.6,
+      "safe_vy": -0.17,
+      "safety_state": "nominal",
+      "safety_reason": "All safety envelopes satisfied",
+      "front_clearance_m": 0.905,
+      "min_obs_clearance_m": 10.0,
+      "min_wall_clearance_m": 0.621,
+      "mode": "lateral_avoidance",
+      "active_pillar": null
+    },
+    {
+      "step": 37,
+      "time_s": 1.85,
+      "pos": [
+        8.567,
+        -0.239,
+        1.019
+      ],
+      "vel": [
+        0.587,
+        -0.204,
+        -0.047
+      ],
+      "goal_dist": 0.963,
+      "fwd_progress": 1.067,
+      "raw_vx": 0.665,
+      "raw_vy": -0.209,
+      "safe_vx": 0.6,
+      "safe_vy": -0.209,
+      "safety_state": "nominal",
+      "safety_reason": "All safety envelopes satisfied",
+      "front_clearance_m": 0.818,
+      "min_obs_clearance_m": 10.0,
+      "min_wall_clearance_m": 0.611,
+      "mode": "lateral_avoidance",
+      "active_pillar": null
+    },
+    {
+      "step": 38,
+      "time_s": 1.9,
+      "pos": [
+        8.596,
+        -0.252,
+        1.017
+      ],
+      "vel": [
+        0.581,
+        -0.251,
+        -0.052
+      ],
+      "goal_dist": 0.938,
+      "fwd_progress": 1.096,
+      "raw_vx": 0.671,
+      "raw_vy": -0.254,
+      "safe_vx": 0.6,
+      "safe_vy": -0.254,
+      "safety_state": "nominal",
+      "safety_reason": "All safety envelopes satisfied",
+      "front_clearance_m": 0.841,
+      "min_obs_clearance_m": 10.0,
+      "min_wall_clearance_m": 0.598,
+      "mode": "lateral_avoidance",
+      "active_pillar": null
+    },
+    {
+      "step": 39,
+      "time_s": 1.95,
+      "pos": [
+        8.625,
+        -0.267,
+        1.014
+      ],
+      "vel": [
+        0.573,
+        -0.305,
+        -0.056
+      ],
+      "goal_dist": 0.915,
+      "fwd_progress": 1.125,
+      "raw_vx": 0.68,
+      "raw_vy": -0.287,
+      "safe_vx": 0.6,
+      "safe_vy": -0.287,
+      "safety_state": "nominal",
+      "safety_reason": "All safety envelopes satisfied",
+      "front_clearance_m": 0.819,
+      "min_obs_clearance_m": 10.0,
+      "min_wall_clearance_m": 0.583,
+      "mode": "lateral_avoidance",
+      "active_pillar": null
+    },
+    {
+      "step": 40,
+      "time_s": 2.0,
+      "pos": [
+        8.653,
+        -0.284,
+        1.011
+      ],
+      "vel": [
+        0.564,
+        -0.349,
+        -0.059
+      ],
+      "goal_dist": 0.894,
+      "fwd_progress": 1.153,
+      "raw_vx": 0.684,
+      "raw_vy": -0.316,
+      "safe_vx": 0.547,
+      "safe_vy": -0.316,
+      "safety_state": "obstacle_brake",
+      "safety_reason": "Obstacle caution zone (0.76m < 0.80m) -> Speed throttled to 0.55m/s",
+      "front_clearance_m": 0.756,
+      "min_obs_clearance_m": 10.0,
+      "min_wall_clearance_m": 0.566,
+      "mode": "lateral_avoidance",
+      "active_pillar": null
+    },
+    {
+      "step": 41,
+      "time_s": 2.05,
+      "pos": [
+        8.678,
+        -0.303,
+        1.008
+      ],
+      "vel": [
+        0.5,
+        -0.382,
+        -0.061
+      ],
+      "goal_dist": 0.876,
+      "fwd_progress": 1.178,
+      "raw_vx": 0.65,
+      "raw_vy": -0.333,
+      "safe_vx": 0.504,
+      "safe_vy": -0.333,
+      "safety_state": "obstacle_brake",
+      "safety_reason": "Obstacle caution zone (0.72m < 0.80m) -> Speed throttled to 0.50m/s",
+      "front_clearance_m": 0.72,
+      "min_obs_clearance_m": 10.0,
+      "min_wall_clearance_m": 0.547,
+      "mode": "lateral_avoidance",
+      "active_pillar": null
+    },
+    {
+      "step": 42,
+      "time_s": 2.1,
+      "pos": [
+        8.7,
+        -0.323,
+        1.004
+      ],
+      "vel": [
+        0.447,
+        -0.403,
+        -0.07
+      ],
+      "goal_dist": 0.863,
+      "fwd_progress": 1.2,
+      "raw_vx": 0.619,
+      "raw_vy": -0.337,
+      "safe_vx": 0.539,
+      "safe_vy": -0.337,
+      "safety_state": "obstacle_brake",
+      "safety_reason": "Obstacle caution zone (0.75m < 0.80m) -> Speed throttled to 0.54m/s",
+      "front_clearance_m": 0.749,
+      "min_obs_clearance_m": 10.0,
+      "min_wall_clearance_m": 0.527,
+      "mode": "lateral_avoidance",
+      "active_pillar": null
+    },
+    {
+      "step": 43,
+      "time_s": 2.15,
+      "pos": [
+        8.724,
+        -0.345,
+        1.0
+      ],
+      "vel": [
+        0.472,
+        -0.422,
+        -0.077
+      ],
+      "goal_dist": 0.849,
+      "fwd_progress": 1.224,
+      "raw_vx": 0.651,
+      "raw_vy": -0.341,
+      "safe_vx": 0.435,
+      "safe_vy": -0.322,
+      "safety_state": "obstacle_brake",
+      "safety_reason": "Obstacle caution zone (0.66m < 0.80m) -> Speed throttled to 0.44m/s",
+      "front_clearance_m": 0.663,
+      "min_obs_clearance_m": 10.0,
+      "min_wall_clearance_m": 0.505,
+      "mode": "lateral_avoidance",
+      "active_pillar": null
+    },
+    {
+      "step": 44,
+      "time_s": 2.2,
+      "pos": [
+        8.742,
+        -0.365,
+        0.997
+      ],
+      "vel": [
+        0.364,
+        -0.399,
+        -0.073
+      ],
+      "goal_dist": 0.841,
+      "fwd_progress": 1.242,
+      "raw_vx": 0.569,
+      "raw_vy": -0.323,
+      "safe_vx": 0.434,
+      "safe_vy": -0.288,
+      "safety_state": "obstacle_brake",
+      "safety_reason": "Obstacle caution zone (0.66m < 0.80m) -> Speed throttled to 0.43m/s",
+      "front_clearance_m": 0.662,
+      "min_obs_clearance_m": 10.0,
+      "min_wall_clearance_m": 0.485,
+      "mode": "lateral_avoidance",
+      "active_pillar": null
+    },
+    {
+      "step": 45,
+      "time_s": 2.25,
+      "pos": [
+        8.76,
+        -0.383,
+        0.992
+      ],
+      "vel": [
+        0.361,
+        -0.373,
+        -0.087
+      ],
+      "goal_dist": 0.833,
+      "fwd_progress": 1.26,
+      "raw_vx": 0.572,
+      "raw_vy": -0.323,
+      "safe_vx": 0.391,
+      "safe_vy": -0.255,
+      "safety_state": "obstacle_brake",
+      "safety_reason": "Obstacle caution zone (0.63m < 0.80m) -> Speed throttled to 0.39m/s",
+      "front_clearance_m": 0.626,
+      "min_obs_clearance_m": 10.0,
+      "min_wall_clearance_m": 0.467,
+      "mode": "lateral_avoidance",
+      "active_pillar": null
+    },
+    {
+      "step": 46,
+      "time_s": 2.3,
+      "pos": [
+        8.776,
+        -0.4,
+        0.988
+      ],
+      "vel": [
+        0.319,
+        -0.339,
+        -0.096
+      ],
+      "goal_dist": 0.827,
+      "fwd_progress": 1.276,
+      "raw_vx": 0.516,
+      "raw_vy": -0.266,
+      "safe_vx": 0.388,
+      "safe_vy": -0.226,
+      "safety_state": "obstacle_brake",
+      "safety_reason": "Obstacle caution zone (0.62m < 0.80m) -> Speed throttled to 0.39m/s",
+      "front_clearance_m": 0.624,
+      "min_obs_clearance_m": 10.0,
+      "min_wall_clearance_m": 0.45,
+      "mode": "lateral_avoidance",
+      "active_pillar": null
+    },
+    {
+      "step": 47,
+      "time_s": 2.35,
+      "pos": [
+        8.792,
+        -0.416,
+        0.983
+      ],
+      "vel": [
+        0.317,
+        -0.316,
+        -0.099
+      ],
+      "goal_dist": 0.821,
+      "fwd_progress": 1.292,
+      "raw_vx": 0.502,
+      "raw_vy": -0.19,
+      "safe_vx": 0.321,
+      "safe_vy": -0.19,
+      "safety_state": "obstacle_brake",
+      "safety_reason": "Obstacle caution zone (0.57m < 0.80m) -> Speed throttled to 0.32m/s",
+      "front_clearance_m": 0.568,
+      "min_obs_clearance_m": 10.0,
+      "min_wall_clearance_m": 0.434,
+      "mode": "lateral_avoidance",
+      "active_pillar": null
+    },
+    {
+      "step": 48,
+      "time_s": 2.4,
+      "pos": [
+        8.805,
+        -0.429,
+        0.978
+      ],
+      "vel": [
+        0.257,
+        -0.269,
+        -0.096
+      ],
+      "goal_dist": 0.817,
+      "fwd_progress": 1.305,
+      "raw_vx": 0.398,
+      "raw_vy": -0.098,
+      "safe_vx": 0.373,
+      "safe_vy": -0.098,
+      "safety_state": "obstacle_brake",
+      "safety_reason": "Obstacle caution zone (0.61m < 0.80m) -> Speed throttled to 0.37m/s",
+      "front_clearance_m": 0.611,
+      "min_obs_clearance_m": 10.0,
+      "min_wall_clearance_m": 0.421,
+      "mode": "lateral_avoidance",
+      "active_pillar": null
+    },
+    {
+      "step": 49,
+      "time_s": 2.45,
+      "pos": [
+        8.821,
+        -0.439,
+        0.973
+      ],
+      "vel": [
+        0.33,
+        -0.198,
+        -0.09
+      ],
+      "goal_dist": 0.809,
+      "fwd_progress": 1.321,
+      "raw_vx": 0.426,
+      "raw_vy": 0.012,
+      "safe_vx": 0.297,
+      "safe_vy": 0.012,
+      "safety_state": "obstacle_brake",
+      "safety_reason": "Obstacle caution zone (0.55m < 0.80m) -> Speed throttled to 0.30m/s",
+      "front_clearance_m": 0.548,
+      "min_obs_clearance_m": 10.0,
+      "min_wall_clearance_m": 0.411,
+      "mode": "lateral_avoidance",
+      "active_pillar": null
+    },
+    {
+      "step": 50,
+      "time_s": 2.5,
+      "pos": [
+        8.836,
+        -0.443,
+        0.97
+      ],
+      "vel": [
+        0.288,
+        -0.074,
+        -0.07
+      ],
+      "goal_dist": 0.799,
+      "fwd_progress": 1.336,
+      "raw_vx": 0.319,
+      "raw_vy": 0.132,
+      "safe_vx": 0.319,
+      "safe_vy": 0.132,
+      "safety_state": "nominal",
+      "safety_reason": "All safety envelopes satisfied",
+      "front_clearance_m": 0.581,
+      "min_obs_clearance_m": 10.0,
+      "min_wall_clearance_m": 0.407,
+      "mode": "other_unclassified",
+      "active_pillar": null
+    },
+    {
+      "step": 51,
+      "time_s": 2.55,
+      "pos": [
+        8.853,
+        -0.441,
+        0.968
+      ],
+      "vel": [
+        0.342,
+        0.037,
+        -0.037
+      ],
+      "goal_dist": 0.784,
+      "fwd_progress": 1.353,
+      "raw_vx": 0.348,
+      "raw_vy": 0.265,
+      "safe_vx": 0.315,
+      "safe_vy": 0.265,
+      "safety_state": "obstacle_brake",
+      "safety_reason": "Obstacle caution zone (0.56m < 0.80m) -> Speed throttled to 0.31m/s",
+      "front_clearance_m": 0.562,
+      "min_obs_clearance_m": 10.0,
+      "min_wall_clearance_m": 0.409,
+      "mode": "lateral_avoidance",
+      "active_pillar": null
+    },
+    {
+      "step": 52,
+      "time_s": 2.6,
+      "pos": [
+        8.871,
+        -0.433,
+        0.968
+      ],
+      "vel": [
+        0.374,
+        0.169,
+        -0.008
+      ],
+      "goal_dist": 0.764,
+      "fwd_progress": 1.371,
+      "raw_vx": 0.447,
+      "raw_vy": 0.476,
+      "safe_vx": 0.344,
+      "safe_vy": 0.4,
+      "safety_state": "obstacle_brake",
+      "safety_reason": "Obstacle caution zone (0.59m < 0.80m) -> Speed throttled to 0.34m/s",
+      "front_clearance_m": 0.586,
+      "min_obs_clearance_m": 10.0,
+      "min_wall_clearance_m": 0.417,
+      "mode": "lateral_avoidance",
+      "active_pillar": null
+    },
+    {
+      "step": 53,
+      "time_s": 2.65,
+      "pos": [
+        8.893,
+        -0.418,
+        0.969
+      ],
+      "vel": [
+        0.432,
+        0.3,
+        0.026
+      ],
+      "goal_dist": 0.737,
+      "fwd_progress": 1.393,
+      "raw_vx": 0.505,
+      "raw_vy": 0.55,
+      "safe_vx": 0.406,
+      "safe_vy": 0.4,
+      "safety_state": "obstacle_brake",
+      "safety_reason": "Obstacle caution zone (0.64m < 0.80m) -> Speed throttled to 0.41m/s",
+      "front_clearance_m": 0.638,
+      "min_obs_clearance_m": 10.0,
+      "min_wall_clearance_m": 0.432,
+      "mode": "lateral_avoidance",
+      "active_pillar": null
+    },
+    {
+      "step": 54,
+      "time_s": 2.7,
+      "pos": [
+        8.917,
+        -0.403,
+        0.97
+      ],
+      "vel": [
+        0.485,
+        0.296,
+        0.022
+      ],
+      "goal_dist": 0.709,
+      "fwd_progress": 1.417,
+      "raw_vx": 0.431,
+      "raw_vy": 0.497,
+      "safe_vx": 0.386,
+      "safe_vy": 0.4,
+      "safety_state": "obstacle_brake",
+      "safety_reason": "Obstacle caution zone (0.62m < 0.80m) -> Speed throttled to 0.39m/s",
+      "front_clearance_m": 0.622,
+      "min_obs_clearance_m": 10.0,
+      "min_wall_clearance_m": 0.447,
+      "mode": "lateral_avoidance",
+      "active_pillar": null
+    },
+    {
+      "step": 55,
+      "time_s": 2.75,
+      "pos": [
+        8.94,
+        -0.387,
+        0.97
+      ],
+      "vel": [
+        0.458,
+        0.312,
+        -0.009
+      ],
+      "goal_dist": 0.681,
+      "fwd_progress": 1.44,
+      "raw_vx": 0.522,
+      "raw_vy": 0.56,
+      "safe_vx": 0.427,
+      "safe_vy": 0.4,
+      "safety_state": "obstacle_brake",
+      "safety_reason": "Obstacle caution zone (0.66m < 0.80m) -> Speed throttled to 0.43m/s",
+      "front_clearance_m": 0.656,
+      "min_obs_clearance_m": 10.0,
+      "min_wall_clearance_m": 0.463,
+      "mode": "lateral_avoidance",
+      "active_pillar": null
+    },
+    {
+      "step": 56,
+      "time_s": 2.8,
+      "pos": [
+        8.965,
+        -0.372,
+        0.972
+      ],
+      "vel": [
+        0.49,
+        0.316,
+        0.043
+      ],
+      "goal_dist": 0.652,
+      "fwd_progress": 1.465,
+      "raw_vx": 0.536,
+      "raw_vy": 0.56,
+      "safe_vx": 0.429,
+      "safe_vy": 0.4,
+      "safety_state": "obstacle_brake",
+      "safety_reason": "Obstacle caution zone (0.66m < 0.80m) -> Speed throttled to 0.43m/s",
+      "front_clearance_m": 0.657,
+      "min_obs_clearance_m": 10.0,
+      "min_wall_clearance_m": 0.478,
+      "mode": "lateral_avoidance",
+      "active_pillar": null
+    },
+    {
+      "step": 57,
+      "time_s": 2.85,
+      "pos": [
+        8.989,
+        -0.355,
+        0.974
+      ],
+      "vel": [
+        0.484,
+        0.328,
+        0.046
+      ],
+      "goal_dist": 0.623,
+      "fwd_progress": 1.489,
+      "raw_vx": 0.524,
+      "raw_vy": 0.575,
+      "safe_vx": 0.432,
+      "safe_vy": 0.4,
+      "safety_state": "obstacle_brake",
+      "safety_reason": "Obstacle caution zone (0.66m < 0.80m) -> Speed throttled to 0.43m/s",
+      "front_clearance_m": 0.66,
+      "min_obs_clearance_m": 10.0,
+      "min_wall_clearance_m": 0.495,
+      "mode": "lateral_avoidance",
+      "active_pillar": null
+    },
+    {
+      "step": 58,
+      "time_s": 2.9,
+      "pos": [
+        9.013,
+        -0.338,
+        0.976
+      ],
+      "vel": [
+        0.479,
+        0.34,
+        0.039
+      ],
+      "goal_dist": 0.593,
+      "fwd_progress": 1.513,
+      "raw_vx": 0.568,
+      "raw_vy": 0.562,
+      "safe_vx": 0.509,
+      "safe_vy": 0.4,
+      "safety_state": "obstacle_brake",
+      "safety_reason": "Obstacle caution zone (0.72m < 0.80m) -> Speed throttled to 0.51m/s",
+      "front_clearance_m": 0.724,
+      "min_obs_clearance_m": 10.0,
+      "min_wall_clearance_m": 0.512,
+      "mode": "lateral_avoidance",
+      "active_pillar": null
+    },
+    {
+      "step": 59,
+      "time_s": 2.95,
+      "pos": [
+        9.04,
+        -0.321,
+        0.978
+      ],
+      "vel": [
+        0.546,
+        0.343,
+        0.045
+      ],
+      "goal_dist": 0.561,
+      "fwd_progress": 1.54,
+      "raw_vx": 0.58,
+      "raw_vy": 0.405,
+      "safe_vx": 0.516,
+      "safe_vy": 0.4,
+      "safety_state": "obstacle_brake",
+      "safety_reason": "Obstacle caution zone (0.73m < 0.80m) -> Speed throttled to 0.52m/s",
+      "front_clearance_m": 0.73,
+      "min_obs_clearance_m": 10.0,
+      "min_wall_clearance_m": 0.529,
+      "mode": "lateral_avoidance",
+      "active_pillar": null
+    },
+    {
+      "step": 60,
+      "time_s": 3.0,
+      "pos": [
+        9.067,
+        -0.303,
+        0.979
+      ],
+      "vel": [
+        0.544,
+        0.356,
+        0.008
+      ],
+      "goal_dist": 0.529,
+      "fwd_progress": 1.567,
+      "raw_vx": 0.59,
+      "raw_vy": 0.401,
+      "safe_vx": 0.557,
+      "safe_vy": 0.4,
+      "safety_state": "obstacle_brake",
+      "safety_reason": "Obstacle caution zone (0.76m < 0.80m) -> Speed throttled to 0.56m/s",
+      "front_clearance_m": 0.764,
+      "min_obs_clearance_m": 10.0,
+      "min_wall_clearance_m": 0.547,
+      "mode": "lateral_avoidance",
+      "active_pillar": null
+    },
+    {
+      "step": 61,
+      "time_s": 3.05,
+      "pos": [
+        9.096,
+        -0.285,
+        0.979
+      ],
+      "vel": [
+        0.576,
+        0.367,
+        0.008
+      ],
+      "goal_dist": 0.495,
+      "fwd_progress": 1.596,
+      "raw_vx": 0.578,
+      "raw_vy": 0.41,
+      "safe_vx": 0.578,
+      "safe_vy": 0.4,
+      "safety_state": "nominal",
+      "safety_reason": "All safety envelopes satisfied",
+      "front_clearance_m": 0.827,
+      "min_obs_clearance_m": 10.0,
+      "min_wall_clearance_m": 0.565,
+      "mode": "lateral_avoidance",
+      "active_pillar": null
+    },
+    {
+      "step": 62,
+      "time_s": 3.1,
+      "pos": [
+        9.126,
+        -0.266,
+        0.979
+      ],
+      "vel": [
+        0.588,
+        0.38,
+        -0.0
+      ],
+      "goal_dist": 0.46,
+      "fwd_progress": 1.626,
+      "raw_vx": 0.64,
+      "raw_vy": 0.406,
+      "safe_vx": 0.6,
+      "safe_vy": 0.4,
+      "safety_state": "nominal",
+      "safety_reason": "All safety envelopes satisfied",
+      "front_clearance_m": 0.869,
+      "min_obs_clearance_m": 10.0,
+      "min_wall_clearance_m": 0.584,
+      "mode": "lateral_avoidance",
+      "active_pillar": null
+    },
+    {
+      "step": 63,
+      "time_s": 3.15,
+      "pos": [
+        9.156,
+        -0.246,
+        0.98
+      ],
+      "vel": [
+        0.601,
+        0.395,
+        0.012
+      ],
+      "goal_dist": 0.424,
+      "fwd_progress": 1.656,
+      "raw_vx": 0.655,
+      "raw_vy": 0.393,
+      "safe_vx": 0.6,
+      "safe_vy": 0.393,
+      "safety_state": "nominal",
+      "safety_reason": "All safety envelopes satisfied",
+      "front_clearance_m": 0.913,
+      "min_obs_clearance_m": 10.0,
+      "min_wall_clearance_m": 0.604,
+      "mode": "lateral_avoidance",
+      "active_pillar": null
+    },
+    {
+      "step": 64,
+      "time_s": 3.2,
+      "pos": [
+        9.185,
+        -0.226,
+        0.98
+      ],
+      "vel": [
+        0.591,
+        0.403,
+        0.012
+      ],
+      "goal_dist": 0.388,
+      "fwd_progress": 1.685,
+      "raw_vx": 0.649,
+      "raw_vy": 0.386,
+      "safe_vx": 0.6,
+      "safe_vy": 0.386,
+      "safety_state": "nominal",
+      "safety_reason": "All safety envelopes satisfied",
+      "front_clearance_m": 0.943,
+      "min_obs_clearance_m": 10.0,
+      "min_wall_clearance_m": 0.624,
+      "mode": "lateral_avoidance",
+      "active_pillar": null
+    },
+    {
+      "step": 65,
+      "time_s": 3.25,
+      "pos": [
+        9.214,
+        -0.205,
+        0.981
+      ],
+      "vel": [
+        0.581,
+        0.409,
+        0.01
+      ],
+      "goal_dist": 0.353,
+      "fwd_progress": 1.714,
+      "raw_vx": 0.647,
+      "raw_vy": 0.377,
+      "safe_vx": 0.6,
+      "safe_vy": 0.377,
+      "safety_state": "nominal",
+      "safety_reason": "All safety envelopes satisfied",
+      "front_clearance_m": 0.963,
+      "min_obs_clearance_m": 10.0,
+      "min_wall_clearance_m": 0.645,
+      "mode": "lateral_avoidance",
+      "active_pillar": null
+    },
+    {
+      "step": 66,
+      "time_s": 3.3,
+      "pos": [
+        9.243,
+        -0.185,
+        0.981
+      ],
+      "vel": [
+        0.572,
+        0.413,
+        0.007
+      ],
+      "goal_dist": 0.317,
+      "fwd_progress": 1.743,
+      "raw_vx": 0.641,
+      "raw_vy": 0.368,
+      "safe_vx": 0.6,
+      "safe_vy": 0.368,
+      "safety_state": "nominal",
+      "safety_reason": "All safety envelopes satisfied",
+      "front_clearance_m": 0.987,
+      "min_obs_clearance_m": 10.0,
+      "min_wall_clearance_m": 0.665,
+      "mode": "lateral_avoidance",
+      "active_pillar": null
+    },
+    {
+      "step": 67,
+      "time_s": 3.35,
+      "pos": [
+        9.271,
+        -0.164,
+        0.981
+      ],
+      "vel": [
+        0.563,
+        0.418,
+        0.005
+      ],
+      "goal_dist": 0.282,
+      "fwd_progress": 1.771,
+      "raw_vx": 0.635,
+      "raw_vy": 0.363,
+      "safe_vx": 0.6,
+      "safe_vy": 0.363,
+      "safety_state": "nominal",
+      "safety_reason": "All safety envelopes satisfied",
+      "front_clearance_m": 1.056,
+      "min_obs_clearance_m": 10.0,
+      "min_wall_clearance_m": 0.686,
+      "mode": "lateral_avoidance",
+      "active_pillar": null
+    },
+    {
+      "step": 68,
+      "time_s": 3.4,
+      "pos": [
+        9.299,
+        -0.143,
+        0.981
+      ],
+      "vel": [
+        0.554,
+        0.426,
+        0.003
+      ],
+      "goal_dist": 0.247,
+      "fwd_progress": 1.799,
+      "raw_vx": 0.632,
+      "raw_vy": 0.356,
+      "safe_vx": 0.6,
+      "safe_vy": 0.356,
+      "safety_state": "nominal",
+      "safety_reason": "All safety envelopes satisfied",
+      "front_clearance_m": 1.051,
+      "min_obs_clearance_m": 10.0,
+      "min_wall_clearance_m": 0.707,
+      "mode": "lateral_avoidance",
+      "active_pillar": null
+    },
+    {
+      "step": 69,
+      "time_s": 3.45,
+      "pos": [
+        9.326,
+        -0.121,
+        0.982
+      ],
+      "vel": [
+        0.545,
+        0.432,
+        0.001
+      ],
+      "goal_dist": 0.213,
+      "fwd_progress": 1.826,
+      "raw_vx": 0.526,
+      "raw_vy": 0.393,
+      "safe_vx": 0.526,
+      "safe_vy": 0.393,
+      "safety_state": "nominal",
+      "safety_reason": "All safety envelopes satisfied",
+      "front_clearance_m": 1.208,
+      "min_obs_clearance_m": 10.0,
+      "min_wall_clearance_m": 0.729,
+      "mode": "lateral_avoidance",
+      "active_pillar": null
+    },
+    {
+      "step": 70,
+      "time_s": 3.5,
+      "pos": [
+        9.349,
+        -0.098,
+        0.982
+      ],
+      "vel": [
+        0.457,
+        0.469,
+        0.0
+      ],
+      "goal_dist": 0.181,
+      "fwd_progress": 1.849,
+      "raw_vx": 0.458,
+      "raw_vy": 0.424,
+      "safe_vx": 0.458,
+      "safe_vy": 0.4,
+      "safety_state": "nominal",
+      "safety_reason": "All safety envelopes satisfied",
+      "front_clearance_m": 1.174,
+      "min_obs_clearance_m": 10.0,
+      "min_wall_clearance_m": 0.752,
+      "mode": "lateral_avoidance",
+      "active_pillar": null
+    },
+    {
+      "step": 71,
+      "time_s": 3.55,
+      "pos": [
+        9.368,
+        -0.074,
+        0.981
+      ],
+      "vel": [
+        0.377,
+        0.474,
+        -0.001
+      ],
+      "goal_dist": 0.153,
+      "fwd_progress": 1.868,
+      "raw_vx": 0.396,
+      "raw_vy": 0.429,
+      "safe_vx": 0.396,
+      "safe_vy": 0.4,
+      "safety_state": "nominal",
+      "safety_reason": "All safety envelopes satisfied",
+      "front_clearance_m": 1.123,
+      "min_obs_clearance_m": 10.0,
+      "min_wall_clearance_m": 0.776,
+      "mode": "lateral_avoidance",
+      "active_pillar": null
+    },
+    {
+      "step": 72,
+      "time_s": 3.6,
+      "pos": [
+        9.383,
+        -0.05,
+        0.981
+      ],
+      "vel": [
+        0.305,
+        0.471,
+        -0.005
+      ],
+      "goal_dist": 0.129,
+      "fwd_progress": 1.883,
+      "raw_vx": 0.366,
+      "raw_vy": 0.422,
+      "safe_vx": 0.366,
+      "safe_vy": 0.4,
+      "safety_state": "nominal",
+      "safety_reason": "All safety envelopes satisfied",
+      "front_clearance_m": 1.079,
+      "min_obs_clearance_m": 10.0,
+      "min_wall_clearance_m": 0.8,
+      "mode": "lateral_avoidance",
+      "active_pillar": null
+    },
+    {
+      "step": 73,
+      "time_s": 3.65,
+      "pos": [
+        9.396,
+        -0.027,
+        0.98
+      ],
+      "vel": [
+        0.264,
+        0.472,
+        -0.019
+      ],
+      "goal_dist": 0.109,
+      "fwd_progress": 1.896,
+      "raw_vx": 0.325,
+      "raw_vy": 0.425,
+      "safe_vx": 0.325,
+      "safe_vy": 0.4,
+      "safety_state": "nominal",
+      "safety_reason": "All safety envelopes satisfied",
+      "front_clearance_m": 1.078,
+      "min_obs_clearance_m": 10.0,
+      "min_wall_clearance_m": 0.823,
+      "mode": "lateral_avoidance",
+      "active_pillar": null
+    },
+    {
+      "step": 74,
+      "time_s": 3.7,
+      "pos": [
+        9.407,
+        -0.003,
+        0.98
+      ],
+      "vel": [
+        0.212,
+        0.468,
+        -0.012
+      ],
+      "goal_dist": 0.096,
+      "fwd_progress": 1.907,
+      "raw_vx": 0.294,
+      "raw_vy": 0.418,
+      "safe_vx": 0.294,
+      "safe_vy": 0.4,
+      "safety_state": "nominal",
+      "safety_reason": "All safety envelopes satisfied",
+      "front_clearance_m": 1.012,
+      "min_obs_clearance_m": 10.0,
+      "min_wall_clearance_m": 0.83,
+      "mode": "lateral_avoidance",
+      "active_pillar": null
+    },
+    {
+      "step": 75,
+      "time_s": 3.75,
+      "pos": [
+        9.415,
+        0.02,
+        0.979
+      ],
+      "vel": [
+        0.171,
+        0.464,
+        -0.014
+      ],
+      "goal_dist": 0.09,
+      "fwd_progress": 1.915,
+      "raw_vx": 0.274,
+      "raw_vy": 0.414,
+      "safe_vx": 0.274,
+      "safe_vy": 0.4,
+      "safety_state": "nominal",
+      "safety_reason": "All safety envelopes satisfied",
+      "front_clearance_m": 0.969,
+      "min_obs_clearance_m": 10.0,
+      "min_wall_clearance_m": 0.829,
+      "mode": "lateral_avoidance",
+      "active_pillar": null
+    },
+    {
+      "step": 76,
+      "time_s": 3.8,
+      "pos": [
+        9.422,
+        0.043,
+        0.978
+      ],
+      "vel": [
+        0.141,
+        0.463,
+        -0.016
+      ],
+      "goal_dist": 0.091,
+      "fwd_progress": 1.922,
+      "raw_vx": 0.258,
+      "raw_vy": 0.41,
+      "safe_vx": 0.258,
+      "safe_vy": 0.4,
+      "safety_state": "nominal",
+      "safety_reason": "All safety envelopes satisfied",
+      "front_clearance_m": 0.988,
+      "min_obs_clearance_m": 10.0,
+      "min_wall_clearance_m": 0.807,
+      "mode": "lateral_avoidance",
+      "active_pillar": null
+    },
+    {
+      "step": 77,
+      "time_s": 3.85,
+      "pos": [
+        9.428,
+        0.066,
+        0.977
+      ],
+      "vel": [
+        0.114,
+        0.461,
+        -0.017
+      ],
+      "goal_dist": 0.1,
+      "fwd_progress": 1.928,
+      "raw_vx": 0.246,
+      "raw_vy": 0.406,
+      "safe_vx": 0.246,
+      "safe_vy": 0.4,
+      "safety_state": "nominal",
+      "safety_reason": "All safety envelopes satisfied",
+      "front_clearance_m": 0.965,
+      "min_obs_clearance_m": 10.0,
+      "min_wall_clearance_m": 0.784,
+      "mode": "lateral_avoidance",
+      "active_pillar": null
+    },
+    {
+      "step": 78,
+      "time_s": 3.9,
+      "pos": [
+        9.433,
+        0.089,
+        0.976
+      ],
+      "vel": [
+        0.091,
+        0.459,
+        -0.018
+      ],
+      "goal_dist": 0.114,
+      "fwd_progress": 1.933,
+      "raw_vx": 0.238,
+      "raw_vy": 0.401,
+      "safe_vx": 0.238,
+      "safe_vy": 0.4,
+      "safety_state": "nominal",
+      "safety_reason": "All safety envelopes satisfied",
+      "front_clearance_m": 0.911,
+      "min_obs_clearance_m": 10.0,
+      "min_wall_clearance_m": 0.761,
+      "mode": "lateral_avoidance",
+      "active_pillar": null
+    },
+    {
+      "step": 79,
+      "time_s": 3.95,
+      "pos": [
+        9.436,
+        0.112,
+        0.976
+      ],
+      "vel": [
+        0.072,
+        0.458,
+        -0.018
+      ],
+      "goal_dist": 0.131,
+      "fwd_progress": 1.936,
+      "raw_vx": 0.231,
+      "raw_vy": 0.397,
+      "safe_vx": 0.231,
+      "safe_vy": 0.397,
+      "safety_state": "nominal",
+      "safety_reason": "All safety envelopes satisfied",
+      "front_clearance_m": 0.888,
+      "min_obs_clearance_m": 10.0,
+      "min_wall_clearance_m": 0.738,
+      "mode": "lateral_avoidance",
+      "active_pillar": null
+    },
+    {
+      "step": 80,
+      "time_s": 4.0,
+      "pos": [
+        9.439,
+        0.135,
+        0.975
+      ],
+      "vel": [
+        0.056,
+        0.455,
+        -0.019
+      ],
+      "goal_dist": 0.15,
+      "fwd_progress": 1.939,
+      "raw_vx": 0.225,
+      "raw_vy": 0.393,
+      "safe_vx": 0.225,
+      "safe_vy": 0.393,
+      "safety_state": "nominal",
+      "safety_reason": "All safety envelopes satisfied",
+      "front_clearance_m": 0.844,
+      "min_obs_clearance_m": 10.0,
+      "min_wall_clearance_m": 0.715,
+      "mode": "lateral_avoidance",
+      "active_pillar": null
+    },
+    {
+      "step": 81,
+      "time_s": 4.05,
+      "pos": [
+        9.441,
+        0.157,
+        0.974
+      ],
+      "vel": [
+        0.041,
+        0.449,
+        -0.02
+      ],
+      "goal_dist": 0.17,
+      "fwd_progress": 1.941,
+      "raw_vx": 0.187,
+      "raw_vy": 0.363,
+      "safe_vx": 0.187,
+      "safe_vy": 0.363,
+      "safety_state": "nominal",
+      "safety_reason": "All safety envelopes satisfied",
+      "front_clearance_m": 0.861,
+      "min_obs_clearance_m": 10.0,
+      "min_wall_clearance_m": 0.693,
+      "mode": "lateral_avoidance",
+      "active_pillar": null
+    },
+    {
+      "step": 82,
+      "time_s": 4.1,
+      "pos": [
+        9.442,
+        0.177,
+        0.971
+      ],
+      "vel": [
+        0.01,
+        0.407,
+        -0.046
+      ],
+      "goal_dist": 0.189,
+      "fwd_progress": 1.942,
+      "raw_vx": 0.128,
+      "raw_vy": 0.334,
+      "safe_vx": 0.128,
+      "safe_vy": 0.334,
+      "safety_state": "nominal",
+      "safety_reason": "All safety envelopes satisfied",
+      "front_clearance_m": 0.816,
+      "min_obs_clearance_m": 10.0,
+      "min_wall_clearance_m": 0.673,
+      "mode": "lateral_avoidance",
+      "active_pillar": null
+    },
+    {
+      "step": 83,
+      "time_s": 4.15,
+      "pos": [
+        9.44,
+        0.195,
+        0.968
+      ],
+      "vel": [
+        -0.039,
+        0.355,
+        -0.057
+      ],
+      "goal_dist": 0.207,
+      "fwd_progress": 1.94,
+      "raw_vx": 0.104,
+      "raw_vy": 0.323,
+      "safe_vx": 0.104,
+      "safe_vy": 0.323,
+      "safety_state": "nominal",
+      "safety_reason": "All safety envelopes satisfied",
+      "front_clearance_m": 0.822,
+      "min_obs_clearance_m": 10.0,
+      "min_wall_clearance_m": 0.655,
+      "mode": "lateral_avoidance",
+      "active_pillar": null
+    }
+  ]
+}

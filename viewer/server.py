@@ -124,7 +124,17 @@ def create_handler(sim_server: SimulationServer):
             elif path == "/api/reset":
                 sim_server.pause_play()
                 raw_seed = data.get("seed")
-                seed = int(raw_seed) if (raw_seed is not None and str(raw_seed).strip() != "") else sim_server.engine.current_seed
+                if raw_seed is None or (isinstance(raw_seed, str) and raw_seed.strip() == ""):
+                    self._send_json({"error": "Seed parameter is required and cannot be empty."}, status=400)
+                    return
+                try:
+                    seed = int(raw_seed)
+                    if seed < 1 or seed > 999999999:
+                        self._send_json({"error": f"Invalid seed '{raw_seed}': must be a positive integer between 1 and 999999999."}, status=400)
+                        return
+                except (ValueError, TypeError):
+                    self._send_json({"error": f"Invalid seed value '{raw_seed}': must be a valid integer."}, status=400)
+                    return
                 snap = sim_server.engine.reset(seed=seed)
                 self._send_json(snap)
             elif path == "/api/select_controller":

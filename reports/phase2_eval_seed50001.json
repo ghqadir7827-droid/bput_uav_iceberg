@@ -1,0 +1,36 @@
+{
+  "controller_id": "ppo_fine_tuned",
+  "checkpoint_id": "ppo_iter_22_succ_70.0pct",
+  "controller_display_name": "PPO Fine-Tuned Policy",
+  "total_episodes": 1,
+  "success_count": 0,
+  "success_rate_pct": 0.0,
+  "collision_count": 1,
+  "collision_rate_pct": 100.0,
+  "obstacle_crash_count": 1,
+  "boundary_crash_count": 0,
+  "corridor_boundary_violation_rate_pct": 0.0,
+  "timeout_count": 0,
+  "timeout_rate_pct": 0.0,
+  "mean_flight_time_successful_s": 0.0,
+  "mean_distance_successful_m": 0.0,
+  "mean_safety_interventions_per_episode": 397.0,
+  "records": [
+    {
+      "seed": 50001,
+      "status": "crash_obstacle",
+      "detail": "Obstacle collision (clearance=-0.000m)",
+      "steps": 436,
+      "flight_time_s": 21.8,
+      "distance_travelled_m": 9.4,
+      "safety_interventions": 397,
+      "min_boundary_clearance_m": 0.232,
+      "min_obstacle_clearance_m": -0.0,
+      "final_position": [
+        6.71,
+        -0.15,
+        1.59
+      ]
+    }
+  ]
+}

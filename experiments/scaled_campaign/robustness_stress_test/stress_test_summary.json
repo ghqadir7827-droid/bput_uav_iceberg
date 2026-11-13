@@ -1,0 +1,394 @@
+{
+  "Baseline Deterministic": {
+    "v2_summary": {
+      "case_id": 1,
+      "case_name": "Baseline Deterministic",
+      "controller_id": "scaled_guided_bc_v2",
+      "n_episodes": 20,
+      "success_count": 19,
+      "success_pct": 95.0,
+      "wilson_ci_95": [
+        76.39,
+        99.11
+      ],
+      "collisions": 0,
+      "envelope_violations": 4,
+      "envelope_violation_pct": 20.0,
+      "envelope_violation_steps": 738,
+      "interventions": 4326,
+      "intervention_rate_per_kstep": 334.62,
+      "min_clearance_m": 0.0003,
+      "median_clearance_m": 0.2594,
+      "elapsed_s": 3.53
+    },
+    "v3_summary": {
+      "case_id": 1,
+      "case_name": "Baseline Deterministic",
+      "controller_id": "scaled_guided_bc_v3",
+      "n_episodes": 20,
+      "success_count": 20,
+      "success_pct": 100.0,
+      "wilson_ci_95": [
+        83.89,
+        100.0
+      ],
+      "collisions": 0,
+      "envelope_violations": 6,
+      "envelope_violation_pct": 30.0,
+      "envelope_violation_steps": 339,
+      "interventions": 3506,
+      "intervention_rate_per_kstep": 289.13,
+      "min_clearance_m": 0.0002,
+      "median_clearance_m": 0.2338,
+      "elapsed_s": 3.27
+    },
+    "both_succeed": 19,
+    "v2_only": 0,
+    "v3_only": 1,
+    "both_fail": 0,
+    "mcnemar_p_value": 1.0
+  },
+  "Sensor Noise & Bias": {
+    "v2_summary": {
+      "case_id": 2,
+      "case_name": "Sensor Noise & Bias",
+      "controller_id": "scaled_guided_bc_v2",
+      "n_episodes": 20,
+      "success_count": 20,
+      "success_pct": 100.0,
+      "wilson_ci_95": [
+        83.89,
+        100.0
+      ],
+      "collisions": 0,
+      "envelope_violations": 4,
+      "envelope_violation_pct": 20.0,
+      "envelope_violation_steps": 294,
+      "interventions": 2666,
+      "intervention_rate_per_kstep": 222.8,
+      "min_clearance_m": 0.0002,
+      "median_clearance_m": 0.3293,
+      "elapsed_s": 3.31
+    },
+    "v3_summary": {
+      "case_id": 2,
+      "case_name": "Sensor Noise & Bias",
+      "controller_id": "scaled_guided_bc_v3",
+      "n_episodes": 20,
+      "success_count": 20,
+      "success_pct": 100.0,
+      "wilson_ci_95": [
+        83.89,
+        100.0
+      ],
+      "collisions": 0,
+      "envelope_violations": 4,
+      "envelope_violation_pct": 20.0,
+      "envelope_violation_steps": 437,
+      "interventions": 2693,
+      "intervention_rate_per_kstep": 227.14,
+      "min_clearance_m": 0.0003,
+      "median_clearance_m": 0.2488,
+      "elapsed_s": 3.34
+    },
+    "both_succeed": 20,
+    "v2_only": 0,
+    "v3_only": 0,
+    "both_fail": 0,
+    "mcnemar_p_value": 1.0
+  },
+  "Localization Drift & Jitter": {
+    "v2_summary": {
+      "case_id": 3,
+      "case_name": "Localization Drift & Jitter",
+      "controller_id": "scaled_guided_bc_v2",
+      "n_episodes": 20,
+      "success_count": 20,
+      "success_pct": 100.0,
+      "wilson_ci_95": [
+        83.89,
+        100.0
+      ],
+      "collisions": 0,
+      "envelope_violations": 3,
+      "envelope_violation_pct": 15.0,
+      "envelope_violation_steps": 217,
+      "interventions": 3598,
+      "intervention_rate_per_kstep": 293.09,
+      "min_clearance_m": 0.0003,
+      "median_clearance_m": 0.2908,
+      "elapsed_s": 3.54
+    },
+    "v3_summary": {
+      "case_id": 3,
+      "case_name": "Localization Drift & Jitter",
+      "controller_id": "scaled_guided_bc_v3",
+      "n_episodes": 20,
+      "success_count": 20,
+      "success_pct": 100.0,
+      "wilson_ci_95": [
+        83.89,
+        100.0
+      ],
+      "collisions": 0,
+      "envelope_violations": 5,
+      "envelope_violation_pct": 25.0,
+      "envelope_violation_steps": 188,
+      "interventions": 3507,
+      "intervention_rate_per_kstep": 287.88,
+      "min_clearance_m": 0.0002,
+      "median_clearance_m": 0.2541,
+      "elapsed_s": 3.41
+    },
+    "both_succeed": 20,
+    "v2_only": 0,
+    "v3_only": 0,
+    "both_fail": 0,
+    "mcnemar_p_value": 1.0
+  },
+  "Sensor Latency & Packet Drops": {
+    "v2_summary": {
+      "case_id": 4,
+      "case_name": "Sensor Latency & Packet Drops",
+      "controller_id": "scaled_guided_bc_v2",
+      "n_episodes": 20,
+      "success_count": 18,
+      "success_pct": 90.0,
+      "wilson_ci_95": [
+        69.9,
+        97.21
+      ],
+      "collisions": 0,
+      "envelope_violations": 4,
+      "envelope_violation_pct": 20.0,
+      "envelope_violation_steps": 984,
+      "interventions": 4203,
+      "intervention_rate_per_kstep": 320.4,
+      "min_clearance_m": 0.0895,
+      "median_clearance_m": 0.2419,
+      "elapsed_s": 4.37
+    },
+    "v3_summary": {
+      "case_id": 4,
+      "case_name": "Sensor Latency & Packet Drops",
+      "controller_id": "scaled_guided_bc_v3",
+      "n_episodes": 20,
+      "success_count": 19,
+      "success_pct": 95.0,
+      "wilson_ci_95": [
+        76.39,
+        99.11
+      ],
+      "collisions": 0,
+      "envelope_violations": 10,
+      "envelope_violation_pct": 50.0,
+      "envelope_violation_steps": 732,
+      "interventions": 3796,
+      "intervention_rate_per_kstep": 301.77,
+      "min_clearance_m": 0.0002,
+      "median_clearance_m": 0.1849,
+      "elapsed_s": 4.07
+    },
+    "both_succeed": 18,
+    "v2_only": 0,
+    "v3_only": 1,
+    "both_fail": 1,
+    "mcnemar_p_value": 1.0
+  },
+  "Control Actuation Latency & Scale Error": {
+    "v2_summary": {
+      "case_id": 5,
+      "case_name": "Control Actuation Latency & Scale Error",
+      "controller_id": "scaled_guided_bc_v2",
+      "n_episodes": 20,
+      "success_count": 14,
+      "success_pct": 70.0,
+      "wilson_ci_95": [
+        48.1,
+        85.45
+      ],
+      "collisions": 0,
+      "envelope_violations": 11,
+      "envelope_violation_pct": 55.0,
+      "envelope_violation_steps": 1083,
+      "interventions": 4199,
+      "intervention_rate_per_kstep": 230.5,
+      "min_clearance_m": 0.0002,
+      "median_clearance_m": 0.1198,
+      "elapsed_s": 5.58
+    },
+    "v3_summary": {
+      "case_id": 5,
+      "case_name": "Control Actuation Latency & Scale Error",
+      "controller_id": "scaled_guided_bc_v3",
+      "n_episodes": 20,
+      "success_count": 17,
+      "success_pct": 85.0,
+      "wilson_ci_95": [
+        63.96,
+        94.76
+      ],
+      "collisions": 0,
+      "envelope_violations": 10,
+      "envelope_violation_pct": 50.0,
+      "envelope_violation_steps": 656,
+      "interventions": 2842,
+      "intervention_rate_per_kstep": 170.06,
+      "min_clearance_m": 0.0001,
+      "median_clearance_m": 0.1537,
+      "elapsed_s": 5.07
+    },
+    "both_succeed": 13,
+    "v2_only": 1,
+    "v3_only": 4,
+    "both_fail": 2,
+    "mcnemar_p_value": 0.375
+  },
+  "Temporary Telemetry Blackout": {
+    "v2_summary": {
+      "case_id": 6,
+      "case_name": "Temporary Telemetry Blackout",
+      "controller_id": "scaled_guided_bc_v2",
+      "n_episodes": 20,
+      "success_count": 19,
+      "success_pct": 95.0,
+      "wilson_ci_95": [
+        76.39,
+        99.11
+      ],
+      "collisions": 0,
+      "envelope_violations": 4,
+      "envelope_violation_pct": 20.0,
+      "envelope_violation_steps": 750,
+      "interventions": 4181,
+      "intervention_rate_per_kstep": 327.95,
+      "min_clearance_m": 0.0002,
+      "median_clearance_m": 0.2615,
+      "elapsed_s": 3.46
+    },
+    "v3_summary": {
+      "case_id": 6,
+      "case_name": "Temporary Telemetry Blackout",
+      "controller_id": "scaled_guided_bc_v3",
+      "n_episodes": 20,
+      "success_count": 20,
+      "success_pct": 100.0,
+      "wilson_ci_95": [
+        83.89,
+        100.0
+      ],
+      "collisions": 0,
+      "envelope_violations": 7,
+      "envelope_violation_pct": 35.0,
+      "envelope_violation_steps": 288,
+      "interventions": 3564,
+      "intervention_rate_per_kstep": 289.4,
+      "min_clearance_m": 0.0002,
+      "median_clearance_m": 0.2312,
+      "elapsed_s": 3.55
+    },
+    "both_succeed": 19,
+    "v2_only": 0,
+    "v3_only": 1,
+    "both_fail": 0,
+    "mcnemar_p_value": 1.0
+  },
+  "Combined Moderate Disturbances": {
+    "v2_summary": {
+      "case_id": 7,
+      "case_name": "Combined Moderate Disturbances",
+      "controller_id": "scaled_guided_bc_v2",
+      "n_episodes": 20,
+      "success_count": 18,
+      "success_pct": 90.0,
+      "wilson_ci_95": [
+        69.9,
+        97.21
+      ],
+      "collisions": 0,
+      "envelope_violations": 7,
+      "envelope_violation_pct": 35.0,
+      "envelope_violation_steps": 520,
+      "interventions": 3419,
+      "intervention_rate_per_kstep": 223.16,
+      "min_clearance_m": 0.0001,
+      "median_clearance_m": 0.177,
+      "elapsed_s": 4.38
+    },
+    "v3_summary": {
+      "case_id": 7,
+      "case_name": "Combined Moderate Disturbances",
+      "controller_id": "scaled_guided_bc_v3",
+      "n_episodes": 20,
+      "success_count": 20,
+      "success_pct": 100.0,
+      "wilson_ci_95": [
+        83.89,
+        100.0
+      ],
+      "collisions": 0,
+      "envelope_violations": 12,
+      "envelope_violation_pct": 60.0,
+      "envelope_violation_steps": 602,
+      "interventions": 3240,
+      "intervention_rate_per_kstep": 224.91,
+      "min_clearance_m": 0.0002,
+      "median_clearance_m": 0.0934,
+      "elapsed_s": 4.07
+    },
+    "both_succeed": 18,
+    "v2_only": 0,
+    "v3_only": 2,
+    "both_fail": 0,
+    "mcnemar_p_value": 0.5
+  },
+  "Initial State Perturbations": {
+    "v2_summary": {
+      "case_id": 8,
+      "case_name": "Initial State Perturbations",
+      "controller_id": "scaled_guided_bc_v2",
+      "n_episodes": 20,
+      "success_count": 17,
+      "success_pct": 85.0,
+      "wilson_ci_95": [
+        63.96,
+        94.76
+      ],
+      "collisions": 0,
+      "envelope_violations": 5,
+      "envelope_violation_pct": 25.0,
+      "envelope_violation_steps": 1580,
+      "interventions": 4803,
+      "intervention_rate_per_kstep": 360.94,
+      "min_clearance_m": 0.0003,
+      "median_clearance_m": 0.3332,
+      "elapsed_s": 3.64
+    },
+    "v3_summary": {
+      "case_id": 8,
+      "case_name": "Initial State Perturbations",
+      "controller_id": "scaled_guided_bc_v3",
+      "n_episodes": 20,
+      "success_count": 19,
+      "success_pct": 95.0,
+      "wilson_ci_95": [
+        76.39,
+        99.11
+      ],
+      "collisions": 0,
+      "envelope_violations": 2,
+      "envelope_violation_pct": 10.0,
+      "envelope_violation_steps": 437,
+      "interventions": 3472,
+      "intervention_rate_per_kstep": 279.53,
+      "min_clearance_m": 0.0346,
+      "median_clearance_m": 0.2497,
+      "elapsed_s": 3.4
+    },
+    "both_succeed": 16,
+    "v2_only": 1,
+    "v3_only": 3,
+    "both_fail": 0,
+    "mcnemar_p_value": 0.625
+  }
+}

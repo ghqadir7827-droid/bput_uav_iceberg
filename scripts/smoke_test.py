@@ -14,7 +14,7 @@ import time
 import numpy as np
 
 from controllers.safety_supervisor import SafetyState, SafetySupervisor
-from core.contracts import VelocityAction
+from core.contracts import VelocityAction, compute_forward_clearance_m
 from localization.interface import LocalizationManager
 from localization.sim_source import SimGroundTruthSource
 from sim.corridor_env import CorridorSimEnv
@@ -70,8 +70,8 @@ def run_smoke_test(num_steps: int = 50) -> None:
         # Propose forward flight command
         proposed_action = VelocityAction(vx=0.45, vy=0.0, vz=0.0, yaw_rate=0.0)
 
-        # Multi-beam front range (index 0 is front center)
-        front_dist_m = float(obs[0] * env.sensor_config.max_range_m)
+        # Multi-beam front range across forward rays (indices 0..4)
+        front_dist_m = compute_forward_clearance_m(obs, max_range_m=env.sensor_config.max_range_m)
 
         # Safety Supervisor Filter
         safe_action, safety_state, reason = safety_sup.filter_action(
@@ -81,7 +81,8 @@ def run_smoke_test(num_steps: int = 50) -> None:
             min_front_range=front_dist_m,
             dt=env.dt,
             is_localization_healthy=health.is_healthy,
-            telemetry_age_s=health.packet_age_s
+            telemetry_age_s=health.packet_age_s,
+            observation=obs,
         )
 
         if safety_state != SafetyState.NOMINAL:

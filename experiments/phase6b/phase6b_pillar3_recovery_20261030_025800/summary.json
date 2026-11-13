@@ -1,0 +1,83 @@
+{
+  "benchmark_seeds": "2000-2049",
+  "num_seeds": 50,
+  "baseline_successes": 42,
+  "baseline_success_rate": 0.84,
+  "candidate_successes": 39,
+  "candidate_success_rate": 0.78,
+  "paired_contingency": {
+    "both_succeed": 35,
+    "candidate_only_succeeds": 4,
+    "baseline_only_succeeds": 7,
+    "both_fail": 4
+  },
+  "safety_metrics": {
+    "baseline_collisions": 0,
+    "candidate_collisions": 0,
+    "baseline_envelope_violations": 0,
+    "candidate_envelope_violations": 0,
+    "baseline_min_obs_clearance_m": 0.0957,
+    "candidate_min_obs_clearance_m": 0.0865,
+    "baseline_min_wall_clearance_m": 0.19419999420642853,
+    "candidate_min_wall_clearance_m": 0.1890999972820282
+  },
+  "efficiency_metrics": {
+    "baseline_mean_progress_m": 8.475,
+    "candidate_mean_progress_m": 8.476,
+    "baseline_mean_duration_s": 21.07,
+    "candidate_mean_duration_s": 21.84,
+    "baseline_mean_throttled_pct": 18.1,
+    "candidate_mean_throttled_pct": 19.2
+  },
+  "pillar_passage_rates": {
+    "pillar_1": {
+      "baseline": "50/50 (100.0%)",
+      "candidate": "50/50 (100.0%)"
+    },
+    "pillar_2": {
+      "baseline": "50/50 (100.0%)",
+      "candidate": "50/50 (100.0%)"
+    },
+    "pillar_3": {
+      "baseline": "46/50 (92.0%)",
+      "candidate": "47/50 (94.0%)"
+    }
+  },
+  "target_failures_outcomes": {
+    "2001": {
+      "baseline": "TIMEOUT_SLOW_TRANSIT",
+      "candidate": "SUCCESS",
+      "baseline_prog_m": 7.051,
+      "candidate_prog_m": 8.656,
+      "candidate_p_cleared": 3
+    },
+    "2005": {
+      "baseline": "PROGRESS_STALL_PILLAR_3",
+      "candidate": "SUCCESS",
+      "baseline_prog_m": 6.145,
+      "candidate_prog_m": 8.652,
+      "candidate_p_cleared": 3
+    },
+    "2006": {
+      "baseline": "PROGRESS_STALL_PILLAR_3",
+      "candidate": "GOAL_ALIGNMENT_TIMEOUT",
+      "baseline_prog_m": 6.283,
+      "candidate_prog_m": 8.518,
+      "candidate_p_cleared": 3
+    },
+    "2022": {
+      "baseline": "PROGRESS_STALL_PILLAR_3",
+      "candidate": "GOAL_ALIGNMENT_TIMEOUT",
+      "baseline_prog_m": 6.339,
+      "candidate_prog_m": 8.637,
+      "candidate_p_cleared": 3
+    },
+    "2042": {
+      "baseline": "PROGRESS_STALL_PILLAR_3",
+      "candidate": "TIMEOUT_SLOW_TRANSIT",
+      "baseline_prog_m": 6.16,
+      "candidate_prog_m": 7.821,
+      "candidate_p_cleared": 3
+    }
+  }
+}

@@ -1,0 +1,1049 @@
+{
+  "development_suite_200": {
+    "partition": "Development Suite (200 Seeds)",
+    "n_seeds": 200,
+    "feasible": {
+      "v2": {
+        "n": 175,
+        "success": 137,
+        "success_pct": 78.29,
+        "wilson_ci_95": [
+          71.61,
+          83.75
+        ],
+        "timeouts": 38,
+        "collisions": 0,
+        "envelope_violations": 61,
+        "envelope_pct": 34.86,
+        "envelope_ci_95": [
+          28.19,
+          42.17
+        ],
+        "envelope_steps": 9851,
+        "interventions": 42608,
+        "intervention_rate_per_kstep": 346.15,
+        "min_clearance_m": 0.0002,
+        "median_clearance_m": 0.217,
+        "mean_flight_time_s": 31.06,
+        "mean_speed_mps": 0.503
+      },
+      "v3": {
+        "n": 175,
+        "success": 162,
+        "success_pct": 92.57,
+        "wilson_ci_95": [
+          87.71,
+          95.61
+        ],
+        "timeouts": 13,
+        "collisions": 0,
+        "envelope_violations": 42,
+        "envelope_pct": 24.0,
+        "envelope_ci_95": [
+          18.27,
+          30.84
+        ],
+        "envelope_steps": 4770,
+        "interventions": 35825,
+        "intervention_rate_per_kstep": 321.79,
+        "min_clearance_m": 0.0001,
+        "median_clearance_m": 0.2315,
+        "mean_flight_time_s": 30.35,
+        "mean_speed_mps": 0.53
+      },
+      "paired": {
+        "n_pairs": 175,
+        "both_succeed": 130,
+        "v2_only": 7,
+        "v3_only": 32,
+        "both_fail": 6,
+        "net_diff_pct": 14.29,
+        "mcnemar_p_value": 7.025478407740593e-05,
+        "tost_is_equivalent_delta10": false,
+        "tost_p_value": 0.87672,
+        "ci90_diff": [
+          8.2,
+          20.36
+        ]
+      }
+    },
+    "infeasible": {
+      "scaled_guided_bc_v2": {
+        "n": 25,
+        "safe_rejections": 25,
+        "rejection_pct": 100.0,
+        "wilson_ci_95": [
+          86.68,
+          100.0
+        ],
+        "timeouts": 0,
+        "collisions": 0,
+        "envelope_violations": 25,
+        "min_clearance_m": 0.0003
+      },
+      "scaled_guided_bc_v3": {
+        "n": 25,
+        "safe_rejections": 24,
+        "rejection_pct": 96.0,
+        "wilson_ci_95": [
+          80.46,
+          99.29
+        ],
+        "timeouts": 1,
+        "collisions": 0,
+        "envelope_violations": 25,
+        "min_clearance_m": 0.081
+      }
+    }
+  },
+  "level2_confirmation_50": {
+    "partition": "Level 2 Confirmation Suite (50 Seeds)",
+    "n_seeds": 50,
+    "feasible": {
+      "v2": {
+        "n": 50,
+        "success": 47,
+        "success_pct": 94.0,
+        "wilson_ci_95": [
+          83.78,
+          97.94
+        ],
+        "timeouts": 3,
+        "collisions": 0,
+        "envelope_violations": 7,
+        "envelope_pct": 14.0,
+        "envelope_ci_95": [
+          6.95,
+          26.19
+        ],
+        "envelope_steps": 957,
+        "interventions": 9996,
+        "intervention_rate_per_kstep": 323.04,
+        "min_clearance_m": 0.073,
+        "median_clearance_m": 0.3112,
+        "mean_flight_time_s": 29.73,
+        "mean_speed_mps": 0.517
+      },
+      "v3": {
+        "n": 50,
+        "success": 45,
+        "success_pct": 90.0,
+        "wilson_ci_95": [
+          78.64,
+          95.65
+        ],
+        "timeouts": 5,
+        "collisions": 0,
+        "envelope_violations": 9,
+        "envelope_pct": 18.0,
+        "envelope_ci_95": [
+          9.77,
+          30.8
+        ],
+        "envelope_steps": 1370,
+        "interventions": 10241,
+        "intervention_rate_per_kstep": 336.75,
+        "min_clearance_m": 0.0003,
+        "median_clearance_m": 0.2848,
+        "mean_flight_time_s": 28.23,
+        "mean_speed_mps": 0.543
+      },
+      "paired": {
+        "n_pairs": 50,
+        "both_succeed": 43,
+        "v2_only": 4,
+        "v3_only": 2,
+        "both_fail": 1,
+        "net_diff_pct": -4.0,
+        "mcnemar_p_value": 0.6875,
+        "tost_is_equivalent_delta10": false,
+        "tost_p_value": 0.13375,
+        "ci90_diff": [
+          -12.9,
+          4.9
+        ]
+      }
+    },
+    "infeasible": {}
+  },
+  "exhaustive_suite_250": {
+    "partition": "Exhaustive Evaluation Suite (250 Seeds)",
+    "n_seeds": 250,
+    "feasible": {
+      "v2": {
+        "n": 225,
+        "success": 184,
+        "success_pct": 81.78,
+        "wilson_ci_95": [
+          76.21,
+          86.27
+        ],
+        "timeouts": 41,
+        "collisions": 0,
+        "envelope_violations": 68,
+        "envelope_pct": 30.22,
+        "envelope_ci_95": [
+          24.6,
+          36.51
+        ],
+        "envelope_steps": 10808,
+        "interventions": 52604,
+        "intervention_rate_per_kstep": 341.51,
+        "min_clearance_m": 0.0002,
+        "median_clearance_m": 0.2355,
+        "mean_flight_time_s": 30.72,
+        "mean_speed_mps": 0.507
+      },
+      "v3": {
+        "n": 225,
+        "success": 207,
+        "success_pct": 92.0,
+        "wilson_ci_95": [
+          87.71,
+          94.88
+        ],
+        "timeouts": 18,
+        "collisions": 0,
+        "envelope_violations": 51,
+        "envelope_pct": 22.67,
+        "envelope_ci_95": [
+          17.68,
+          28.57
+        ],
+        "envelope_steps": 6140,
+        "interventions": 46066,
+        "intervention_rate_per_kstep": 325.0,
+        "min_clearance_m": 0.0001,
+        "median_clearance_m": 0.2442,
+        "mean_flight_time_s": 29.89,
+        "mean_speed_mps": 0.533
+      },
+      "paired": {
+        "n_pairs": 225,
+        "both_succeed": 173,
+        "v2_only": 11,
+        "v3_only": 34,
+        "both_fail": 7,
+        "net_diff_pct": 10.22,
+        "mcnemar_p_value": 0.0008240823595997426,
+        "tost_is_equivalent_delta10": false,
+        "tost_p_value": 0.52788,
+        "ci90_diff": [
+          5.05,
+          15.39
+        ]
+      }
+    },
+    "infeasible": {
+      "scaled_guided_bc_v2": {
+        "n": 25,
+        "safe_rejections": 25,
+        "rejection_pct": 100.0,
+        "wilson_ci_95": [
+          86.68,
+          100.0
+        ],
+        "timeouts": 0,
+        "collisions": 0,
+        "envelope_violations": 25,
+        "min_clearance_m": 0.0003
+      },
+      "scaled_guided_bc_v3": {
+        "n": 25,
+        "safe_rejections": 24,
+        "rejection_pct": 96.0,
+        "wilson_ci_95": [
+          80.46,
+          99.29
+        ],
+        "timeouts": 1,
+        "collisions": 0,
+        "envelope_violations": 25,
+        "min_clearance_m": 0.081
+      }
+    }
+  },
+  "untouched_confirmation_200": {
+    "partition": "Pre-Registered Untouched Confirmation Suite (200 Seeds)",
+    "n_seeds": 200,
+    "feasible": {
+      "v2": {
+        "n": 175,
+        "success": 141,
+        "success_pct": 80.57,
+        "wilson_ci_95": [
+          74.08,
+          85.75
+        ],
+        "timeouts": 34,
+        "collisions": 0,
+        "envelope_violations": 44,
+        "envelope_pct": 25.14,
+        "envelope_ci_95": [
+          19.3,
+          32.06
+        ],
+        "envelope_steps": 5865,
+        "interventions": 38552,
+        "intervention_rate_per_kstep": 320.77,
+        "min_clearance_m": 0.0002,
+        "median_clearance_m": 0.2311,
+        "mean_flight_time_s": 30.56,
+        "mean_speed_mps": 0.51
+      },
+      "v3": {
+        "n": 175,
+        "success": 171,
+        "success_pct": 97.71,
+        "wilson_ci_95": [
+          94.27,
+          99.11
+        ],
+        "timeouts": 4,
+        "collisions": 0,
+        "envelope_violations": 33,
+        "envelope_pct": 18.86,
+        "envelope_ci_95": [
+          13.75,
+          25.3
+        ],
+        "envelope_steps": 1866,
+        "interventions": 30205,
+        "intervention_rate_per_kstep": 281.93,
+        "min_clearance_m": 0.0002,
+        "median_clearance_m": 0.2618,
+        "mean_flight_time_s": 30.16,
+        "mean_speed_mps": 0.53
+      },
+      "paired": {
+        "n_pairs": 175,
+        "both_succeed": 140,
+        "v2_only": 1,
+        "v3_only": 31,
+        "both_fail": 3,
+        "net_diff_pct": 17.14,
+        "mcnemar_p_value": 1.5366822481155396e-08,
+        "tost_is_equivalent_delta10": false,
+        "tost_p_value": 0.98722,
+        "ci90_diff": [
+          11.88,
+          22.4
+        ]
+      }
+    },
+    "infeasible": {
+      "scaled_guided_bc_v2": {
+        "n": 25,
+        "safe_rejections": 25,
+        "rejection_pct": 100.0,
+        "wilson_ci_95": [
+          86.68,
+          100.0
+        ],
+        "timeouts": 0,
+        "collisions": 0,
+        "envelope_violations": 25,
+        "min_clearance_m": 0.0201
+      },
+      "scaled_guided_bc_v3": {
+        "n": 25,
+        "safe_rejections": 24,
+        "rejection_pct": 96.0,
+        "wilson_ci_95": [
+          80.46,
+          99.29
+        ],
+        "timeouts": 1,
+        "collisions": 0,
+        "envelope_violations": 25,
+        "min_clearance_m": 0.0813
+      }
+    }
+  },
+  "by_tier": {
+    "Exhaustive_Level 1 (Basic)": {
+      "partition": "Exhaustive - Level 1 (Basic)",
+      "n_seeds": 50,
+      "feasible": {
+        "v2": {
+          "n": 50,
+          "success": 20,
+          "success_pct": 40.0,
+          "wilson_ci_95": [
+            27.61,
+            53.82
+          ],
+          "timeouts": 30,
+          "collisions": 0,
+          "envelope_violations": 25,
+          "envelope_pct": 50.0,
+          "envelope_ci_95": [
+            36.64,
+            63.36
+          ],
+          "envelope_steps": 5277,
+          "interventions": 12152,
+          "intervention_rate_per_kstep": 269.79,
+          "min_clearance_m": 0.0004,
+          "median_clearance_m": 0.1498,
+          "mean_flight_time_s": 37.61,
+          "mean_speed_mps": 0.479
+        },
+        "v3": {
+          "n": 50,
+          "success": 47,
+          "success_pct": 94.0,
+          "wilson_ci_95": [
+            83.78,
+            97.94
+          ],
+          "timeouts": 3,
+          "collisions": 0,
+          "envelope_violations": 3,
+          "envelope_pct": 6.0,
+          "envelope_ci_95": [
+            2.06,
+            16.22
+          ],
+          "envelope_steps": 194,
+          "interventions": 5567,
+          "intervention_rate_per_kstep": 163.58,
+          "min_clearance_m": 0.0867,
+          "median_clearance_m": 0.3957,
+          "mean_flight_time_s": 33.01,
+          "mean_speed_mps": 0.517
+        },
+        "paired": {
+          "n_pairs": 50,
+          "both_succeed": 19,
+          "v2_only": 1,
+          "v3_only": 28,
+          "both_fail": 2,
+          "net_diff_pct": 54.0,
+          "mcnemar_p_value": 1.1175870895385742e-07,
+          "tost_is_equivalent_delta10": false,
+          "tost_p_value": 1.0,
+          "ci90_diff": [
+            41.34,
+            66.66
+          ]
+        }
+      },
+      "infeasible": {}
+    },
+    "Exhaustive_Level 2 Confirmation": {
+      "partition": "Exhaustive - Level 2 Confirmation",
+      "n_seeds": 50,
+      "feasible": {
+        "v2": {
+          "n": 50,
+          "success": 47,
+          "success_pct": 94.0,
+          "wilson_ci_95": [
+            83.78,
+            97.94
+          ],
+          "timeouts": 3,
+          "collisions": 0,
+          "envelope_violations": 7,
+          "envelope_pct": 14.0,
+          "envelope_ci_95": [
+            6.95,
+            26.19
+          ],
+          "envelope_steps": 957,
+          "interventions": 9996,
+          "intervention_rate_per_kstep": 323.04,
+          "min_clearance_m": 0.073,
+          "median_clearance_m": 0.3112,
+          "mean_flight_time_s": 29.73,
+          "mean_speed_mps": 0.517
+        },
+        "v3": {
+          "n": 50,
+          "success": 45,
+          "success_pct": 90.0,
+          "wilson_ci_95": [
+            78.64,
+            95.65
+          ],
+          "timeouts": 5,
+          "collisions": 0,
+          "envelope_violations": 9,
+          "envelope_pct": 18.0,
+          "envelope_ci_95": [
+            9.77,
+            30.8
+          ],
+          "envelope_steps": 1370,
+          "interventions": 10241,
+          "intervention_rate_per_kstep": 336.75,
+          "min_clearance_m": 0.0003,
+          "median_clearance_m": 0.2848,
+          "mean_flight_time_s": 28.23,
+          "mean_speed_mps": 0.543
+        },
+        "paired": {
+          "n_pairs": 50,
+          "both_succeed": 43,
+          "v2_only": 4,
+          "v3_only": 2,
+          "both_fail": 1,
+          "net_diff_pct": -4.0,
+          "mcnemar_p_value": 0.6875,
+          "tost_is_equivalent_delta10": false,
+          "tost_p_value": 0.13375,
+          "ci90_diff": [
+            -12.9,
+            4.9
+          ]
+        }
+      },
+      "infeasible": {}
+    },
+    "Exhaustive_Level 2 Dev (Standard)": {
+      "partition": "Exhaustive - Level 2 Dev (Standard)",
+      "n_seeds": 50,
+      "feasible": {
+        "v2": {
+          "n": 50,
+          "success": 46,
+          "success_pct": 92.0,
+          "wilson_ci_95": [
+            81.16,
+            96.85
+          ],
+          "timeouts": 4,
+          "collisions": 0,
+          "envelope_violations": 10,
+          "envelope_pct": 20.0,
+          "envelope_ci_95": [
+            11.24,
+            33.04
+          ],
+          "envelope_steps": 2421,
+          "interventions": 11299,
+          "intervention_rate_per_kstep": 352.43,
+          "min_clearance_m": 0.0003,
+          "median_clearance_m": 0.2719,
+          "mean_flight_time_s": 30.5,
+          "mean_speed_mps": 0.515
+        },
+        "v3": {
+          "n": 50,
+          "success": 45,
+          "success_pct": 90.0,
+          "wilson_ci_95": [
+            78.64,
+            95.65
+          ],
+          "timeouts": 5,
+          "collisions": 0,
+          "envelope_violations": 15,
+          "envelope_pct": 30.0,
+          "envelope_ci_95": [
+            19.1,
+            43.75
+          ],
+          "envelope_steps": 2063,
+          "interventions": 11053,
+          "intervention_rate_per_kstep": 347.43,
+          "min_clearance_m": 0.0002,
+          "median_clearance_m": 0.2371,
+          "mean_flight_time_s": 29.79,
+          "mean_speed_mps": 0.534
+        },
+        "paired": {
+          "n_pairs": 50,
+          "both_succeed": 43,
+          "v2_only": 3,
+          "v3_only": 2,
+          "both_fail": 2,
+          "net_diff_pct": -2.0,
+          "mcnemar_p_value": 1.0,
+          "tost_is_equivalent_delta10": false,
+          "tost_p_value": 0.08097,
+          "ci90_diff": [
+            -11.41,
+            7.41
+          ]
+        }
+      },
+      "infeasible": {}
+    },
+    "Exhaustive_Level 3 (Challenging)": {
+      "partition": "Exhaustive - Level 3 (Challenging)",
+      "n_seeds": 50,
+      "feasible": {
+        "v2": {
+          "n": 50,
+          "success": 49,
+          "success_pct": 98.0,
+          "wilson_ci_95": [
+            89.5,
+            99.65
+          ],
+          "timeouts": 1,
+          "collisions": 0,
+          "envelope_violations": 13,
+          "envelope_pct": 26.0,
+          "envelope_ci_95": [
+            15.87,
+            39.55
+          ],
+          "envelope_steps": 1031,
+          "interventions": 11086,
+          "intervention_rate_per_kstep": 376.58,
+          "min_clearance_m": 0.0002,
+          "median_clearance_m": 0.238,
+          "mean_flight_time_s": 29.02,
+          "mean_speed_mps": 0.512
+        },
+        "v3": {
+          "n": 50,
+          "success": 50,
+          "success_pct": 100.0,
+          "wilson_ci_95": [
+            92.87,
+            100.0
+          ],
+          "timeouts": 0,
+          "collisions": 0,
+          "envelope_violations": 9,
+          "envelope_pct": 18.0,
+          "envelope_ci_95": [
+            9.77,
+            30.8
+          ],
+          "envelope_steps": 486,
+          "interventions": 9483,
+          "intervention_rate_per_kstep": 337.51,
+          "min_clearance_m": 0.0001,
+          "median_clearance_m": 0.2123,
+          "mean_flight_time_s": 28.1,
+          "mean_speed_mps": 0.55
+        },
+        "paired": {
+          "n_pairs": 50,
+          "both_succeed": 49,
+          "v2_only": 0,
+          "v3_only": 1,
+          "both_fail": 0,
+          "net_diff_pct": 2.0,
+          "mcnemar_p_value": 1.0,
+          "tost_is_equivalent_delta10": true,
+          "tost_p_value": 3e-05,
+          "ci90_diff": [
+            -1.26,
+            5.26
+          ]
+        }
+      },
+      "infeasible": {}
+    },
+    "Exhaustive_Level 4 (Boundary & Feasibility)": {
+      "partition": "Exhaustive - Level 4 (Boundary & Feasibility)",
+      "n_seeds": 50,
+      "feasible": {
+        "v2": {
+          "n": 25,
+          "success": 22,
+          "success_pct": 88.0,
+          "wilson_ci_95": [
+            70.04,
+            95.83
+          ],
+          "timeouts": 3,
+          "collisions": 0,
+          "envelope_violations": 13,
+          "envelope_pct": 52.0,
+          "envelope_ci_95": [
+            33.5,
+            69.97
+          ],
+          "envelope_steps": 1122,
+          "interventions": 8071,
+          "intervention_rate_per_kstep": 487.67,
+          "min_clearance_m": 0.0004,
+          "median_clearance_m": 0.1423,
+          "mean_flight_time_s": 30.8,
+          "mean_speed_mps": 0.482
+        },
+        "v3": {
+          "n": 25,
+          "success": 20,
+          "success_pct": 80.0,
+          "wilson_ci_95": [
+            60.87,
+            91.14
+          ],
+          "timeouts": 5,
+          "collisions": 0,
+          "envelope_violations": 15,
+          "envelope_pct": 60.0,
+          "envelope_ci_95": [
+            40.74,
+            76.6
+          ],
+          "envelope_steps": 2027,
+          "interventions": 9722,
+          "intervention_rate_per_kstep": 559.19,
+          "min_clearance_m": 0.0004,
+          "median_clearance_m": 0.1376,
+          "mean_flight_time_s": 30.97,
+          "mean_speed_mps": 0.504
+        },
+        "paired": {
+          "n_pairs": 25,
+          "both_succeed": 19,
+          "v2_only": 3,
+          "v3_only": 1,
+          "both_fail": 2,
+          "net_diff_pct": -8.0,
+          "mcnemar_p_value": 0.625,
+          "tost_is_equivalent_delta10": false,
+          "tost_p_value": 0.42307,
+          "ci90_diff": [
+            -24.95,
+            8.95
+          ]
+        }
+      },
+      "infeasible": {
+        "scaled_guided_bc_v2": {
+          "n": 25,
+          "safe_rejections": 25,
+          "rejection_pct": 100.0,
+          "wilson_ci_95": [
+            86.68,
+            100.0
+          ],
+          "timeouts": 0,
+          "collisions": 0,
+          "envelope_violations": 25,
+          "min_clearance_m": 0.0003
+        },
+        "scaled_guided_bc_v3": {
+          "n": 25,
+          "safe_rejections": 24,
+          "rejection_pct": 96.0,
+          "wilson_ci_95": [
+            80.46,
+            99.29
+          ],
+          "timeouts": 1,
+          "collisions": 0,
+          "envelope_violations": 25,
+          "min_clearance_m": 0.081
+        }
+      }
+    },
+    "Untouched_Level 1 Untouched (Basic)": {
+      "partition": "Untouched - Level 1 Untouched (Basic)",
+      "n_seeds": 50,
+      "feasible": {
+        "v2": {
+          "n": 50,
+          "success": 20,
+          "success_pct": 40.0,
+          "wilson_ci_95": [
+            27.61,
+            53.82
+          ],
+          "timeouts": 30,
+          "collisions": 0,
+          "envelope_violations": 16,
+          "envelope_pct": 32.0,
+          "envelope_ci_95": [
+            20.76,
+            45.81
+          ],
+          "envelope_steps": 3401,
+          "interventions": 11017,
+          "intervention_rate_per_kstep": 246.17,
+          "min_clearance_m": 0.0002,
+          "median_clearance_m": 0.2091,
+          "mean_flight_time_s": 36.88,
+          "mean_speed_mps": 0.486
+        },
+        "v3": {
+          "n": 50,
+          "success": 48,
+          "success_pct": 96.0,
+          "wilson_ci_95": [
+            86.54,
+            98.9
+          ],
+          "timeouts": 2,
+          "collisions": 0,
+          "envelope_violations": 4,
+          "envelope_pct": 8.0,
+          "envelope_ci_95": [
+            3.15,
+            18.84
+          ],
+          "envelope_steps": 116,
+          "interventions": 5124,
+          "intervention_rate_per_kstep": 152.05,
+          "min_clearance_m": 0.0991,
+          "median_clearance_m": 0.4052,
+          "mean_flight_time_s": 33.02,
+          "mean_speed_mps": 0.515
+        },
+        "paired": {
+          "n_pairs": 50,
+          "both_succeed": 20,
+          "v2_only": 0,
+          "v3_only": 28,
+          "both_fail": 2,
+          "net_diff_pct": 56.0,
+          "mcnemar_p_value": 7.450580596923828e-09,
+          "tost_is_equivalent_delta10": false,
+          "tost_p_value": 1.0,
+          "ci90_diff": [
+            43.73,
+            68.27
+          ]
+        }
+      },
+      "infeasible": {}
+    },
+    "Untouched_Level 2 Untouched (Standard)": {
+      "partition": "Untouched - Level 2 Untouched (Standard)",
+      "n_seeds": 50,
+      "feasible": {
+        "v2": {
+          "n": 50,
+          "success": 49,
+          "success_pct": 98.0,
+          "wilson_ci_95": [
+            89.5,
+            99.65
+          ],
+          "timeouts": 1,
+          "collisions": 0,
+          "envelope_violations": 10,
+          "envelope_pct": 20.0,
+          "envelope_ci_95": [
+            11.24,
+            33.04
+          ],
+          "envelope_steps": 1021,
+          "interventions": 9486,
+          "intervention_rate_per_kstep": 310.9,
+          "min_clearance_m": 0.0002,
+          "median_clearance_m": 0.302,
+          "mean_flight_time_s": 30.11,
+          "mean_speed_mps": 0.517
+        },
+        "v3": {
+          "n": 50,
+          "success": 50,
+          "success_pct": 100.0,
+          "wilson_ci_95": [
+            92.87,
+            100.0
+          ],
+          "timeouts": 0,
+          "collisions": 0,
+          "envelope_violations": 10,
+          "envelope_pct": 20.0,
+          "envelope_ci_95": [
+            11.24,
+            33.04
+          ],
+          "envelope_steps": 487,
+          "interventions": 7938,
+          "intervention_rate_per_kstep": 271.56,
+          "min_clearance_m": 0.0003,
+          "median_clearance_m": 0.2676,
+          "mean_flight_time_s": 29.23,
+          "mean_speed_mps": 0.538
+        },
+        "paired": {
+          "n_pairs": 50,
+          "both_succeed": 49,
+          "v2_only": 0,
+          "v3_only": 1,
+          "both_fail": 0,
+          "net_diff_pct": 2.0,
+          "mcnemar_p_value": 1.0,
+          "tost_is_equivalent_delta10": true,
+          "tost_p_value": 3e-05,
+          "ci90_diff": [
+            -1.26,
+            5.26
+          ]
+        }
+      },
+      "infeasible": {}
+    },
+    "Untouched_Level 3 Untouched (Challenging)": {
+      "partition": "Untouched - Level 3 Untouched (Challenging)",
+      "n_seeds": 50,
+      "feasible": {
+        "v2": {
+          "n": 50,
+          "success": 48,
+          "success_pct": 96.0,
+          "wilson_ci_95": [
+            86.54,
+            98.9
+          ],
+          "timeouts": 2,
+          "collisions": 0,
+          "envelope_violations": 11,
+          "envelope_pct": 22.0,
+          "envelope_ci_95": [
+            12.75,
+            35.24
+          ],
+          "envelope_steps": 1307,
+          "interventions": 10990,
+          "intervention_rate_per_kstep": 380.47,
+          "min_clearance_m": 0.0004,
+          "median_clearance_m": 0.2502,
+          "mean_flight_time_s": 28.01,
+          "mean_speed_mps": 0.526
+        },
+        "v3": {
+          "n": 50,
+          "success": 50,
+          "success_pct": 100.0,
+          "wilson_ci_95": [
+            92.87,
+            100.0
+          ],
+          "timeouts": 0,
+          "collisions": 0,
+          "envelope_violations": 10,
+          "envelope_pct": 20.0,
+          "envelope_ci_95": [
+            11.24,
+            33.04
+          ],
+          "envelope_steps": 409,
+          "interventions": 9225,
+          "intervention_rate_per_kstep": 332.17,
+          "min_clearance_m": 0.0002,
+          "median_clearance_m": 0.2087,
+          "mean_flight_time_s": 27.77,
+          "mean_speed_mps": 0.552
+        },
+        "paired": {
+          "n_pairs": 50,
+          "both_succeed": 48,
+          "v2_only": 0,
+          "v3_only": 2,
+          "both_fail": 0,
+          "net_diff_pct": 4.0,
+          "mcnemar_p_value": 0.5,
+          "tost_is_equivalent_delta10": true,
+          "tost_p_value": 0.01519,
+          "ci90_diff": [
+            -0.56,
+            8.56
+          ]
+        }
+      },
+      "infeasible": {}
+    },
+    "Untouched_Level 4 Untouched (Boundary & Feasibility)": {
+      "partition": "Untouched - Level 4 Untouched (Boundary & Feasibility)",
+      "n_seeds": 50,
+      "feasible": {
+        "v2": {
+          "n": 25,
+          "success": 24,
+          "success_pct": 96.0,
+          "wilson_ci_95": [
+            80.46,
+            99.29
+          ],
+          "timeouts": 1,
+          "collisions": 0,
+          "envelope_violations": 7,
+          "envelope_pct": 28.0,
+          "envelope_ci_95": [
+            14.28,
+            47.58
+          ],
+          "envelope_steps": 136,
+          "interventions": 7059,
+          "intervention_rate_per_kstep": 440.2,
+          "min_clearance_m": 0.0241,
+          "median_clearance_m": 0.1883,
+          "mean_flight_time_s": 31.32,
+          "mean_speed_mps": 0.479
+        },
+        "v3": {
+          "n": 25,
+          "success": 23,
+          "success_pct": 92.0,
+          "wilson_ci_95": [
+            75.03,
+            97.78
+          ],
+          "timeouts": 2,
+          "collisions": 0,
+          "envelope_violations": 9,
+          "envelope_pct": 36.0,
+          "envelope_ci_95": [
+            20.25,
+            55.48
+          ],
+          "envelope_steps": 854,
+          "interventions": 7918,
+          "intervention_rate_per_kstep": 481.78,
+          "min_clearance_m": 0.0283,
+          "median_clearance_m": 0.1763,
+          "mean_flight_time_s": 31.38,
+          "mean_speed_mps": 0.497
+        },
+        "paired": {
+          "n_pairs": 25,
+          "both_succeed": 23,
+          "v2_only": 1,
+          "v3_only": 0,
+          "both_fail": 1,
+          "net_diff_pct": -4.0,
+          "mcnemar_p_value": 1.0,
+          "tost_is_equivalent_delta10": false,
+          "tost_p_value": 0.18501,
+          "ci90_diff": [
+            -15.01,
+            7.01
+          ]
+        }
+      },
+      "infeasible": {
+        "scaled_guided_bc_v2": {
+          "n": 25,
+          "safe_rejections": 25,
+          "rejection_pct": 100.0,
+          "wilson_ci_95": [
+            86.68,
+            100.0
+          ],
+          "timeouts": 0,
+          "collisions": 0,
+          "envelope_violations": 25,
+          "min_clearance_m": 0.0201
+        },
+        "scaled_guided_bc_v3": {
+          "n": 25,
+          "safe_rejections": 24,
+          "rejection_pct": 96.0,
+          "wilson_ci_95": [
+            80.46,
+            99.29
+          ],
+          "timeouts": 1,
+          "collisions": 0,
+          "envelope_violations": 25,
+          "min_clearance_m": 0.0813
+        }
+      }
+    }
+  }
+}

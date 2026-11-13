@@ -1,0 +1,76 @@
+{
+  "audit_timestamp": "2026-10-29T21:02:00Z",
+  "dataset_provenance": {
+    "train_file": "data/demonstrations/bc_train_10m.npz",
+    "val_file": "data/demonstrations/bc_val_10m.npz",
+    "teacher_controller": "ScriptedAPFExpertController (controllers/apf_expert.py)",
+    "demonstration_generator": "scripts/generate_demonstrations.py",
+    "train_transitions": 47780,
+    "val_transitions": 11796,
+    "train_episodes": 120,
+    "val_episodes": 30
+  },
+  "observation_contract": {
+    "dimension": 23,
+    "feature_order": [
+      "rays_0_11: 12 rangefinder rays normalized by 4.0m",
+      "rel_goal_12_14: relative goal unit vector in body FLU [gx, gy, gz]",
+      "body_vel_15_17: estimated body velocity [vx, vy, vz] in m/s",
+      "attitude_18_21: [sin(roll), cos(roll), sin(pitch), cos(pitch)]",
+      "yaw_rate_22: body yaw rate in rad/s"
+    ],
+    "bilateral_reflection_invariance": "For centered obstacle on centerline, ray pairs swap and lateral components are zero, creating identical reflected input vector"
+  },
+  "action_contract": {
+    "dimension": 4,
+    "feature_order": [
+      "vx (m/s)",
+      "vy (m/s)",
+      "vz (m/s)",
+      "yaw_rate (rad/s)"
+    ],
+    "activation_head": "act_center + act_half_range * tanh(raw) in policy_net.py",
+    "act_center": [
+      0.3,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "act_half_range": [
+      0.5,
+      0.6,
+      0.4,
+      0.6
+    ]
+  },
+  "dataset_distribution_metrics": {
+    "global_action_distribution": {
+      "vx_mean": 0.4808,
+      "vx_std": 0.1809,
+      "vy_mean": 0.0007,
+      "vy_std": 0.2072,
+      "left_fraction_pct": 38.28,
+      "right_fraction_pct": 38.39,
+      "center_fraction_pct": 23.33
+    },
+    "low_front_clearance_metrics": {
+      "front_ray_lt_0_5m_count": 595,
+      "front_ray_lt_0_5m_pct": 1.245,
+      "front_ray_lt_0_4m_count": 137,
+      "front_ray_lt_0_4m_pct": 0.287,
+      "front_ray_lt_0_3m_count": 16,
+      "front_ray_lt_0_3m_pct": 0.033
+    },
+    "low_speed_standoff_state_metrics": {
+      "front_lt_0_5m_and_speed_lt_0_2mps_count": 0,
+      "front_lt_0_5m_and_speed_lt_0_2mps_pct": 0.0,
+      "front_lt_0_5m_and_speed_lt_0_1mps_count": 0,
+      "front_lt_0_5m_and_speed_lt_0_1mps_pct": 0.0,
+      "interpretation": "CRITICAL FINDING: The training dataset contains ZERO transitions where the UAV is in front of an obstacle (<0.50m) at low speed (<0.20 m/s). The safety supervisor standoff hover is 100% out-of-distribution (OOD) for the BC policy."
+    },
+    "velocity_shortcut_correlation": {
+      "correlation_obs_vy_to_target_vy": 0.9723,
+      "interpretation": "High correlation (r > 0.85) between current body velocity and target velocity causes the MLP to rely on momentum rather than initiating lateral evasions from standstill."
+    }
+  }
+}

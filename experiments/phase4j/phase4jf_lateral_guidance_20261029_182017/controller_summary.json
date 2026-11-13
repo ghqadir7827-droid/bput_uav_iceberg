@@ -1,0 +1,128 @@
+{
+  "evaluation_name": "Phase 4J-F Controlled BC Baseline vs Lateral Guidance Evaluation",
+  "checkpoint": "models/checkpoints/bc_policy_best.pt",
+  "checkpoint_sha256": "93c4d7d1d8476b8d288a24fca1862d87133696f78b9603aa622bcc367afad44f",
+  "canonical_supervisor_sha256": "9f84af22821f0f1473ea963b0f33a1924d1c4e7a487d4ed7893b7efc56fcd26f",
+  "caution_distance_m": 0.5,
+  "num_seeds": 50,
+  "seed_range": [
+    2000,
+    2049
+  ],
+  "horizon_steps": 500,
+  "dt_s": 0.05,
+  "contingency_table": {
+    "both_succeed": 23,
+    "baseline_only": 1,
+    "guidance_only": 0,
+    "both_fail": 26,
+    "improved_seeds": [],
+    "degraded_seeds": [
+      2005
+    ],
+    "mcnemar_exact_p_value": 1.0,
+    "is_statistically_significant": false
+  },
+  "controllers": {
+    "baseline": {
+      "successes": 24,
+      "total_episodes": 50,
+      "success_rate_pct": 48.0,
+      "wilson_95_ci_pct": [
+        34.8,
+        61.5
+      ],
+      "obstacle_collisions": 0,
+      "boundary_collisions": 0,
+      "obstacle_envelope_violations": 0,
+      "boundary_envelope_violations": 0,
+      "forward_progress_m": {
+        "mean": 6.525,
+        "std": 2.331,
+        "median": 6.324
+      },
+      "duration_s": {
+        "mean": 22.99,
+        "std": 2.62
+      },
+      "min_obstacle_clearance_m": {
+        "absolute_min": 0.107,
+        "mean": 0.1367,
+        "std": 0.0353
+      },
+      "min_boundary_clearance_m": {
+        "absolute_min": 0.2537,
+        "mean": 0.2931,
+        "std": 0.0211
+      },
+      "supervisor_intervention_rate": {
+        "mean": 0.4771,
+        "std": 0.273
+      },
+      "fraction_steps_throttled": {
+        "mean": 0.2757,
+        "std": 0.1025
+      },
+      "guidance_metrics": {
+        "total_deadlocks_detected": 0,
+        "total_lateral_commitments": 0,
+        "total_direction_changes": 0,
+        "total_fallback_events": 0,
+        "mean_time_state_idle_s": 22.99,
+        "mean_time_guidance_left_s": 0.0,
+        "mean_time_guidance_right_s": 0.0,
+        "mean_time_fallback_blocked_s": 0.0
+      }
+    },
+    "lateral_guidance": {
+      "successes": 23,
+      "total_episodes": 50,
+      "success_rate_pct": 46.0,
+      "wilson_95_ci_pct": [
+        33.0,
+        59.6
+      ],
+      "obstacle_collisions": 0,
+      "boundary_collisions": 0,
+      "obstacle_envelope_violations": 0,
+      "boundary_envelope_violations": 0,
+      "forward_progress_m": {
+        "mean": 6.717,
+        "std": 2.163,
+        "median": 7.199
+      },
+      "duration_s": {
+        "mean": 23.02,
+        "std": 2.63
+      },
+      "min_obstacle_clearance_m": {
+        "absolute_min": 0.1066,
+        "mean": 0.1366,
+        "std": 0.0353
+      },
+      "min_boundary_clearance_m": {
+        "absolute_min": 0.2537,
+        "mean": 0.2907,
+        "std": 0.0171
+      },
+      "supervisor_intervention_rate": {
+        "mean": 0.4639,
+        "std": 0.2591
+      },
+      "fraction_steps_throttled": {
+        "mean": 0.2833,
+        "std": 0.1099
+      },
+      "guidance_metrics": {
+        "total_deadlocks_detected": 385,
+        "total_lateral_commitments": 385,
+        "total_direction_changes": 141,
+        "total_fallback_events": 0,
+        "mean_time_state_idle_s": 15.3,
+        "mean_time_guidance_left_s": 3.46,
+        "mean_time_guidance_right_s": 4.26,
+        "mean_time_fallback_blocked_s": 0.0
+      }
+    }
+  }
+}

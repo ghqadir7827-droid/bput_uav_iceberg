@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>UAV 3D Simulation Cockpit & Evaluation Suite</title>
+    <title>UAV 3D Simulation Cockpit & Diagnostic Suite</title>
     <link rel="stylesheet" href="/style.css">
     <!-- Google Fonts for crisp typography -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -26,16 +26,16 @@
                     </svg>
                 </div>
                 <div>
-                    <h1 class="brand-title">UAV Nav Sim</h1>
-                    <span class="badge-tag">Milestone 1 Viewer</span>
+                    <h1 class="brand-title">UAV Corridor Cockpit</h1>
+                    <span class="badge-tag" id="sim-backend-badge">Live PyBullet 240Hz</span>
                 </div>
             </div>
 
             <!-- Controller / Checkpoint Selector -->
             <section class="card">
-                <h2 class="card-title">Controller & Checkpoint</h2>
+                <h2 class="card-title">Controller & Policy Checkpoint</h2>
                 <div class="form-group">
-                    <label for="controller-select">Active Model / Policy</label>
+                    <label for="controller-select">Active Navigation Controller</label>
                     <select id="controller-select" class="select-input"></select>
                 </div>
                 <div class="model-meta-box">
@@ -44,52 +44,97 @@
                         <span id="meta-checkpoint" class="meta-value mono">loading...</span>
                     </div>
                     <div class="meta-row">
-                        <span class="meta-label">Status:</span>
+                        <span class="meta-label">Policy Status:</span>
                         <span id="meta-status" class="meta-value tag">Active</span>
                     </div>
                     <p id="meta-description" class="meta-desc">...</p>
                 </div>
             </section>
 
-            <!-- Execution Controls -->
+            <!-- Scenario & Seed Configuration -->
             <section class="card">
-                <h2 class="card-title">Simulation Control</h2>
-                <div class="button-grid">
-                    <button id="btn-play" class="btn btn-primary">
-                        <span class="btn-icon">▶</span> Play
-                    </button>
-                    <button id="btn-pause" class="btn btn-secondary">
-                        <span class="btn-icon">⏸</span> Pause
-                    </button>
-                    <button id="btn-step" class="btn btn-secondary">
-                        <span class="btn-icon">⏭</span> Step
-                    </button>
-                    <button id="btn-reset" class="btn btn-danger">
-                        <span class="btn-icon">↺</span> Reset
-                    </button>
+                <h2 class="card-title">Scenario & Benchmark Seed</h2>
+                <div class="form-group">
+                    <label for="scenario-select">Corridor Scenario</label>
+                    <select id="scenario-select" class="select-input">
+                        <option value="level_2" selected>Level 2: Standard Scaled (3.8 x 2.5m - 65cm UAV)</option>
+                        <option value="level_1">Level 1: Basic Scaled (4.5 x 2.8m - 65cm UAV)</option>
+                        <option value="level_3">Level 3: Challenging Scaled (3.2 x 2.4m - 65cm UAV)</option>
+                        <option value="level_4">Level 4: Boundary & Feasibility (2.8 x 2.4m - 65cm UAV)</option>
+                        <option value="10m">Legacy 10m Benchmark (10 x 2 x 2m - 30cm UAV)</option>
+                        <option value="20m">Legacy 20m Extended (20 x 2.4 x 2m)</option>
+                    </select>
                 </div>
 
                 <div class="form-row">
                     <div class="form-group flex-1">
-                        <label for="seed-input">Corridor Seed</label>
-                        <input type="number" id="seed-input" class="number-input" value="100" min="1" max="9999">
+                        <label for="seed-input">Random Seed</label>
+                        <input type="number" id="seed-input" class="number-input" value="50001" min="1" max="999999999">
                     </div>
                     <div class="form-group flex-1">
-                        <label for="speed-select">Speed</label>
+                        <label for="speed-select">Sim Speed</label>
                         <select id="speed-select" class="select-input">
+                            <option value="0.25">0.25x</option>
                             <option value="0.5">0.5x</option>
-                            <option value="1.0" selected>1.0x</option>
+                            <option value="1.0" selected>1.0x (Realtime)</option>
                             <option value="2.0">2.0x</option>
                             <option value="5.0">5.0x</option>
                         </select>
                     </div>
+                </div>
+
+                <div class="meta-row mt-6">
+                    <span class="meta-label">Active Simulation Seed:</span>
+                    <span id="active-seed-display" class="meta-value mono text-blue">50001</span>
+                </div>
+
+                <!-- Quick Seed Selectors for Failure Diagnosis -->
+                <div class="quick-seeds">
+                    <span class="meta-label">Diagnostic Preset Seeds:</span>
+                    <div class="seed-chips">
+                        <button class="chip-btn crash" onclick="setSeed(50001)" title="PPO crashes at Obstacle 3 (X=6.93m)">50001 (PPO Crash)</button>
+                        <button class="chip-btn crash" onclick="setSeed(50004)" title="PPO crashes at Obstacle 3 (X=6.95m)">50004 (PPO Crash)</button>
+                        <button class="chip-btn win" onclick="setSeed(50002)" title="PPO passes corridor successfully">50002 (PPO Win)</button>
+                        <button class="chip-btn apf" onclick="setSeed(100)" title="APF Expert nominal run">100 (Nominal)</button>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Execution Controls -->
+            <section class="card">
+                <h2 class="card-title">Interactive Execution</h2>
+                <div class="button-grid">
+                    <button id="btn-play" class="btn btn-primary" title="Start live PyBullet simulation">
+                        <span class="btn-icon">▶</span> Play
+                    </button>
+                    <button id="btn-pause" class="btn btn-secondary" title="Pause simulation">
+                        <span class="btn-icon">⏸</span> Pause
+                    </button>
+                    <button id="btn-step" class="btn btn-secondary" title="Advance exactly 1 physics step (50ms)">
+                        <span class="btn-icon">⏭</span> Single Step
+                    </button>
+                    <button id="btn-reset" class="btn btn-danger" title="Reset episode with current seed">
+                        <span class="btn-icon">↺</span> Reset
+                    </button>
+                </div>
+
+                <!-- Debug Pause Options -->
+                <div class="checkbox-group">
+                    <label class="checkbox-label" title="Automatically pause the simulation when drone reaches X=5.9m to allow stepping through Obstacle 3">
+                        <input type="checkbox" id="chk-pause-obs3" checked>
+                        <span>Pause before Obstacle 3 (X &ge; 5.95m)</span>
+                    </label>
+                    <label class="checkbox-label" title="Automatically pause when collision or boundary violation occurs">
+                        <input type="checkbox" id="chk-pause-terminal" checked>
+                        <span>Pause on terminal collision / boundary</span>
+                    </label>
                 </div>
             </section>
 
             <!-- Repeatable Evaluation Mode -->
             <section class="card">
                 <h2 class="card-title">Repeatable Evaluation</h2>
-                <p class="section-hint">Executes fixed held-out seeds (1000–1004) to collect empirical benchmark metrics.</p>
+                <p class="section-hint">Runs fixed held-out seeds to compute empirical benchmarks.</p>
                 <button id="btn-eval-batch" class="btn btn-accent w-full">
                     <span class="btn-icon">⚡</span> Run Held-Out Batch (5 Seeds)
                 </button>
@@ -97,7 +142,7 @@
 
             <!-- Episode Replay Buffer -->
             <section class="card">
-                <h2 class="card-title">Episode Replay</h2>
+                <h2 class="card-title">Episode Trajectory Scrubbing</h2>
                 <div class="form-group">
                     <label for="replay-slider">Scrub Episode Trajectory (<span id="scrub-step-label">Step 0</span>)</label>
                     <input type="range" id="replay-slider" class="range-slider" min="0" max="0" value="0" disabled>
@@ -107,37 +152,6 @@
                     <span id="replay-status" class="meta-value">Live Sim</span>
                 </div>
             </section>
-
-            <!-- Feature Implementation Status -->
-            <section class="card status-guide">
-                <h2 class="card-title">Implementation Matrix</h2>
-                <ul class="feature-list">
-                    <li class="feature-item active">
-                        <span class="dot green"></span> Native PyBullet 3D Simulation
-                    </li>
-                    <li class="feature-item active">
-                        <span class="dot green"></span> Synchronized Trajectory Trail
-                    </li>
-                    <li class="feature-item active">
-                        <span class="dot green"></span> Raycast Distance Sensors (12 Rays)
-                    </li>
-                    <li class="feature-item active">
-                        <span class="dot green"></span> Deterministic Safety Supervisor
-                    </li>
-                    <li class="feature-item active">
-                        <span class="dot green"></span> Repeatable Seed Evaluation
-                    </li>
-                    <li class="feature-item planned">
-                        <span class="dot orange"></span> Scripted APF Expert (M2)
-                    </li>
-                    <li class="feature-item planned">
-                        <span class="dot orange"></span> BC Neural Policy Checkpoint (M3)
-                    </li>
-                    <li class="feature-item planned">
-                        <span class="dot orange"></span> PPO Reinforcement Learning (M4)
-                    </li>
-                </ul>
-            </section>
         </aside>
 
         <!-- Main 3D Viewport & HUD -->
@@ -145,12 +159,20 @@
             <!-- Top HUD Bar -->
             <header class="hud-bar">
                 <div class="hud-item">
+                    <span class="hud-label">ACTIVE SEED</span>
+                    <span id="hud-active-seed" class="hud-value mono text-blue">50001</span>
+                </div>
+                <div class="hud-item">
                     <span class="hud-label">EPISODE STATUS</span>
                     <span id="hud-status" class="status-pill running">RUNNING</span>
                 </div>
                 <div class="hud-item">
                     <span class="hud-label">SAFETY SUPERVISOR</span>
                     <span id="hud-safety" class="status-pill nominal">NOMINAL</span>
+                </div>
+                <div class="hud-item">
+                    <span class="hud-label">INTERVENTIONS</span>
+                    <span id="hud-interventions" class="hud-value mono text-amber">0</span>
                 </div>
                 <div class="hud-item">
                     <span class="hud-label">SIM TIME</span>
@@ -161,8 +183,12 @@
                     <span id="hud-step" class="hud-value mono">0</span>
                 </div>
                 <div class="hud-item">
-                    <span class="hud-label">CLEARANCE</span>
-                    <span id="hud-clearance" class="hud-value mono">0.00 m</span>
+                    <span class="hud-label">OBS CLEARANCE</span>
+                    <span id="hud-obs-clearance" class="hud-value mono">0.00 m</span>
+                </div>
+                <div class="hud-item">
+                    <span class="hud-label">WALL CLEARANCE</span>
+                    <span id="hud-wall-clearance" class="hud-value mono">0.00 m</span>
                 </div>
                 <div class="hud-item">
                     <span class="hud-label">SPEED</span>
@@ -176,6 +202,21 @@
 
             <!-- 3D Canvas Container -->
             <div id="viewport-container" class="viewport">
+                <!-- Camera Preset Toolbar -->
+                <div class="camera-toolbar">
+                    <span class="toolbar-title">Camera Views:</span>
+                    <button class="cam-btn active" id="cam-orbit" onclick="setCameraView('orbit')">Orbit</button>
+                    <button class="cam-btn" id="cam-entrance" onclick="setCameraView('entrance')">Entrance View</button>
+                    <button class="cam-btn" id="cam-chase" onclick="setCameraView('chase')">Chase Cam</button>
+                    <button class="cam-btn" id="cam-topdown" onclick="setCameraView('topdown')">Top-Down Plan</button>
+                    <button class="cam-btn" id="cam-obs3" onclick="setCameraView('obs3')">Focus Obs 3</button>
+                </div>
+
+                <!-- Simulation Notification Banner -->
+                <div id="sim-banner" class="sim-banner hidden">
+                    <span id="sim-banner-text">Simulation Paused</span>
+                </div>
+
                 <!-- Overlay Legend / Camera Instructions -->
                 <div class="viewport-overlay">
                     <div class="overlay-card">
@@ -185,54 +226,257 @@
                 </div>
             </div>
 
-            <!-- Bottom Evaluation Drawer -->
+            <!-- Bottom Evaluation & Diagnostics Drawer -->
             <section class="eval-drawer">
                 <div class="drawer-header">
-                    <div class="drawer-title-group">
-                        <h2 class="drawer-title">Evaluation Metrics (Empirical Measured Data Only)</h2>
-                        <span id="eval-count-badge" class="badge-count">0 Episodes</span>
+                    <div class="tab-buttons">
+                        <button class="tab-btn active" onclick="switchTab('tab-actions')">Actions & Kinematics</button>
+                        <button class="tab-btn" onclick="switchTab('tab-rays')">12-Beam Rangefinders</button>
+                        <button class="tab-btn" onclick="switchTab('tab-obs23')">23-Dim Contract Groups</button>
+                        <button class="tab-btn" onclick="switchTab('tab-priv')">Simulation Ground Truth (Privileged)</button>
+                        <button class="tab-btn" onclick="switchTab('tab-eval')">Batch Evaluation Records</button>
                     </div>
-                    <div class="drawer-stats" id="drawer-stats-summary">
-                        <div class="stat-pill">
-                            <span class="stat-title">Success Rate:</span>
-                            <span id="stat-success" class="stat-num">-</span>
-                        </div>
-                        <div class="stat-pill">
-                            <span class="stat-title">Collision Rate:</span>
-                            <span id="stat-collision" class="stat-num">-</span>
-                        </div>
-                        <div class="stat-pill">
-                            <span class="stat-title">Boundary Violations:</span>
-                            <span id="stat-boundary" class="stat-num">-</span>
-                        </div>
-                        <div class="stat-pill">
-                            <span class="stat-title">Avg Flight Time:</span>
-                            <span id="stat-time" class="stat-num">-</span>
-                        </div>
+                    <div class="header-badges">
+                        <span id="active-ctrl-badge" class="badge-tag">PPO Fine-Tuned</span>
+                        <span id="eval-count-badge" class="badge-count">0 Episodes</span>
                     </div>
                 </div>
 
-                <!-- Completed Episodes Table -->
-                <div class="table-container">
-                    <table class="data-table" id="eval-table">
-                        <thead>
-                            <tr>
-                                <th>Ep #</th>
-                                <th>Seed</th>
-                                <th>Model & Checkpoint</th>
-                                <th>Outcome</th>
-                                <th>Steps</th>
-                                <th>Flight Time</th>
-                                <th>Min Clearance</th>
-                                <th>Final Goal Dist</th>
-                            </tr>
-                        </thead>
-                        <tbody id="eval-tbody">
-                            <tr class="empty-row">
-                                <td colspan="8">No evaluation episodes completed yet. Click 'Run Held-Out Batch' to measure performance.</td>
-                            </tr>
-                        </tbody>
-                    </table>
+                <!-- Tab Content Containers -->
+                <div class="tab-content-wrapper">
+                    <!-- TAB 1: Actions & Kinematics -->
+                    <div id="tab-actions" class="tab-pane active">
+                        <div class="diag-grid-4">
+                            <!-- Raw vs Filtered Actions -->
+                            <div class="diag-card">
+                                <h3 class="diag-subtitle">Commanded Actions (FLU Frame)</h3>
+                                <div class="action-comparison-table">
+                                    <div class="action-header-row">
+                                        <span>Channel</span>
+                                        <span>Proposed (Policy)</span>
+                                        <span>Applied (Supervisor)</span>
+                                        <span>Limits</span>
+                                    </div>
+                                    <div class="action-row">
+                                        <span class="action-channel">v<sub>x</sub> (Fwd)</span>
+                                        <span id="act-prop-vx" class="mono text-blue">0.00 m/s</span>
+                                        <span id="act-appl-vx" class="mono text-emerald">0.00 m/s</span>
+                                        <span class="mono text-muted">[-0.2, 0.8]</span>
+                                    </div>
+                                    <div class="action-row">
+                                        <span class="action-channel">v<sub>y</sub> (Left)</span>
+                                        <span id="act-prop-vy" class="mono text-blue">0.00 m/s</span>
+                                        <span id="act-appl-vy" class="mono text-emerald">0.00 m/s</span>
+                                        <span class="mono text-muted">[-0.6, 0.6]</span>
+                                    </div>
+                                    <div class="action-row">
+                                        <span class="action-channel">v<sub>z</sub> (Up)</span>
+                                        <span id="act-prop-vz" class="mono text-blue">0.00 m/s</span>
+                                        <span id="act-appl-vz" class="mono text-emerald">0.00 m/s</span>
+                                        <span class="mono text-muted">[-0.3, 0.3]</span>
+                                    </div>
+                                    <div class="action-row">
+                                        <span class="action-channel">r (Yaw Rate)</span>
+                                        <span id="act-prop-yaw" class="mono text-blue">0.00 rad/s</span>
+                                        <span id="act-appl-yaw" class="mono text-emerald">0.00 rad/s</span>
+                                        <span class="mono text-muted">[-0.5, 0.5]</span>
+                                    </div>
+                                </div>
+                                <div class="meta-row mt-6">
+                                    <span class="meta-label">Normalized Action [-1, 1]:</span>
+                                    <span id="act-norm-vec" class="mono text-secondary">[0.00, 0.00, 0.00, 0.00]</span>
+                                </div>
+                            </div>
+
+                            <!-- Pose & Orientation -->
+                            <div class="diag-card">
+                                <h3 class="diag-subtitle">World Pose (ENU Coordinates)</h3>
+                                <div class="telemetry-list">
+                                    <div class="tele-item">
+                                        <span class="tele-label">Position [X, Y, Z]:</span>
+                                        <span id="tele-pos" class="tele-val mono">[0.000, 0.000, 0.000] m</span>
+                                    </div>
+                                    <div class="tele-item">
+                                        <span class="tele-label">Euler [Roll, Pitch, Yaw]:</span>
+                                        <span id="tele-euler" class="tele-val mono">[0.0&deg;, 0.0&deg;, 0.0&deg;]</span>
+                                    </div>
+                                    <div class="tele-item">
+                                        <span class="tele-label">Velocity [Vx, Vy, Vz]:</span>
+                                        <span id="tele-vel" class="tele-val mono">[0.000, 0.000, 0.000] m/s</span>
+                                    </div>
+                                    <div class="tele-item">
+                                        <span class="tele-label">Goal Target [X, Y, Z]:</span>
+                                        <span id="tele-goal" class="tele-val mono">[9.50, 0.00, 1.00] m</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Status & Safety Details -->
+                            <div class="diag-card">
+                                <h3 class="diag-subtitle">Supervisor & Interventions</h3>
+                                <div class="telemetry-list">
+                                    <div class="tele-item">
+                                        <span class="tele-label">Active State:</span>
+                                        <span id="tele-safety-state" class="tele-val mono text-emerald">NOMINAL</span>
+                                    </div>
+                                    <div class="tele-item">
+                                        <span class="tele-label">Supervisor Reason:</span>
+                                        <span id="tele-safety-reason" class="tele-val text-muted">Nominal flight</span>
+                                    </div>
+                                    <div class="tele-item">
+                                        <span class="tele-label">Cumulative Interventions:</span>
+                                        <span id="tele-safety-count" class="tele-val mono text-amber">0</span>
+                                    </div>
+                                    <div class="tele-item">
+                                        <span class="tele-label">Terminal Outcome:</span>
+                                        <span id="tele-flags-outcome" class="tele-val mono">Running</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Coordinate Frame Specifications -->
+                            <div class="diag-card">
+                                <h3 class="diag-subtitle">Coordinate Frames & Conventions</h3>
+                                <ul class="frame-notes">
+                                    <li><strong>World Frame (ENU):</strong> +X = Corridor longitudinal, +Y = Left wall, +Z = Ceiling/Up.</li>
+                                    <li><strong>Body Frame (FLU):</strong> +X = Nose forward, +Y = Port/Left, +Z = Dorsal/Up.</li>
+                                    <li><strong>Velocities:</strong> Linear in m/s, Yaw rate in rad/s (positive CCW).</li>
+                                    <li><strong>Safety Buffer:</strong> Wall margin 0.35m, Obstacle margin 0.30m.</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- TAB 2: 12-Beam Rangefinders -->
+                    <div id="tab-rays" class="tab-pane">
+                        <div class="rangefinders-container">
+                            <div class="rangefinder-grid" id="rays-grid">
+                                <!-- Dynamically populated with 12 rangefinder bars -->
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- TAB 3: 23-Dim Contract Groups -->
+                    <div id="tab-obs23" class="tab-pane">
+                        <div class="obs-contract-grid">
+                            <div class="contract-card">
+                                <h4 class="contract-title">Group 1: Rangefinders (Dims 0..11)</h4>
+                                <span class="contract-desc">12 normalized raycasts [0.0 = hit, 1.0 = 4.0m range]</span>
+                                <div class="mono array-display" id="obs-grp-rays">[]</div>
+                            </div>
+                            <div class="contract-card">
+                                <h4 class="contract-title">Group 2: Relative Goal Direction (Dims 12..14)</h4>
+                                <span class="contract-desc">Unit vector to goal in body frame [gx, gy, gz]</span>
+                                <div class="mono array-display" id="obs-grp-goal">[]</div>
+                            </div>
+                            <div class="contract-card">
+                                <h4 class="contract-title">Group 3: Body Velocity (Dims 15..17)</h4>
+                                <span class="contract-desc">Body linear velocity [vx, vy, vz] in m/s</span>
+                                <div class="mono array-display" id="obs-grp-vel">[]</div>
+                            </div>
+                            <div class="contract-card">
+                                <h4 class="contract-title">Group 4: Attitude Trigonometry (Dims 18..21)</h4>
+                                <span class="contract-desc">[sin(&phi;), cos(&phi;), sin(&theta;), cos(&theta;)]</span>
+                                <div class="mono array-display" id="obs-grp-att">[]</div>
+                            </div>
+                            <div class="contract-card">
+                                <h4 class="contract-title">Group 5: Body Yaw Rate (Dim 22)</h4>
+                                <span class="contract-desc">Body angular velocity r in rad/s</span>
+                                <div class="mono array-display" id="obs-grp-yaw">0.000</div>
+                            </div>
+                            <div class="contract-card">
+                                <h4 class="contract-title">Raw Flattened Vector (23 floats)</h4>
+                                <span class="contract-desc">Contract-compliant input tensor supplied to Policy</span>
+                                <div class="mono array-display small-text" id="obs-raw-full">[]</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- TAB 4: Simulator Ground Truth (Privileged) -->
+                    <div id="tab-priv" class="tab-pane">
+                        <div class="priv-container">
+                            <div class="priv-warning">
+                                <span class="priv-icon">🔒</span>
+                                <div>
+                                    <strong>PRIVILEGED SIMULATOR STATE — NOT ACCESSIBLE TO DEPLOYED POLICIES</strong>
+                                    <p>The neural policy (PPO/BC) receives ONLY the 23-dim deployable observation above. The values below are internal PyBullet ground-truth physics states used strictly for verification and diagnostics.</p>
+                                </div>
+                            </div>
+                            <div class="priv-grid">
+                                <div class="diag-card">
+                                    <h3 class="diag-subtitle">Ground Truth Obstacles (World ENU)</h3>
+                                    <div id="priv-obstacles-list" class="priv-obs-list">
+                                        <!-- Dynamically generated obstacle positions -->
+                                    </div>
+                                </div>
+                                <div class="diag-card">
+                                    <h3 class="diag-subtitle">Analytical Clearances</h3>
+                                    <div class="telemetry-list">
+                                        <div class="tele-item">
+                                            <span class="tele-label">Nearest Obstacle Distance:</span>
+                                            <span id="priv-min-obs" class="tele-val mono">0.000 m</span>
+                                        </div>
+                                        <div class="tele-item">
+                                            <span class="tele-label">Nearest Boundary Distance:</span>
+                                            <span id="priv-min-wall" class="tele-val mono">0.000 m</span>
+                                        </div>
+                                        <div class="tele-item">
+                                            <span class="tele-label">True PyBullet World Pos:</span>
+                                            <span id="priv-world-pos" class="tele-val mono">[0, 0, 0] m</span>
+                                        </div>
+                                        <div class="tele-item">
+                                            <span class="tele-label">True PyBullet World Vel:</span>
+                                            <span id="priv-world-vel" class="tele-val mono">[0, 0, 0] m/s</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- TAB 5: Batch Evaluation Records -->
+                    <div id="tab-eval" class="tab-pane">
+                        <div class="eval-stats-summary" id="drawer-stats-summary">
+                            <div class="stat-pill">
+                                <span class="stat-title">Success Rate:</span>
+                                <span id="stat-success" class="stat-num">-</span>
+                            </div>
+                            <div class="stat-pill">
+                                <span class="stat-title">Collision Rate:</span>
+                                <span id="stat-collision" class="stat-num">-</span>
+                            </div>
+                            <div class="stat-pill">
+                                <span class="stat-title">Boundary Violations:</span>
+                                <span id="stat-boundary" class="stat-num">-</span>
+                            </div>
+                            <div class="stat-pill">
+                                <span class="stat-title">Avg Flight Time:</span>
+                                <span id="stat-time" class="stat-num">-</span>
+                            </div>
+                        </div>
+                        <div class="table-container">
+                            <table class="data-table" id="eval-table">
+                                <thead>
+                                    <tr>
+                                        <th>Ep #</th>
+                                        <th>Seed</th>
+                                        <th>Model & Checkpoint</th>
+                                        <th>Outcome</th>
+                                        <th>Steps</th>
+                                        <th>Flight Time</th>
+                                        <th>Min Wall Clearance</th>
+                                        <th>Min Obstacle Clearance</th>
+                                        <th>Final Goal Dist</th>
+                                    </tr>
+                                </thead>
+                                <tbody id="eval-tbody">
+                                    <tr class="empty-row">
+                                        <td colspan="9">No evaluation episodes recorded yet. Click 'Run Held-Out Batch' to collect empirical data.</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
                 </div>
             </section>
         </main>

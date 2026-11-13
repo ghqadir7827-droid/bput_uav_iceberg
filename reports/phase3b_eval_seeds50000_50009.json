@@ -1,0 +1,213 @@
+{
+  "controller_id": "ppo_fine_tuned",
+  "checkpoint_id": "ppo_iter_22_succ_70.0pct",
+  "controller_display_name": "PPO Fine-Tuned Policy",
+  "total_episodes": 10,
+  "success_count": 0,
+  "success_rate_pct": 0.0,
+  "collision_count": 10,
+  "collision_rate_pct": 100.0,
+  "obstacle_crash_count": 10,
+  "boundary_crash_count": 0,
+  "corridor_boundary_violation_rate_pct": 0.0,
+  "timeout_count": 0,
+  "timeout_rate_pct": 0.0,
+  "mean_flight_time_successful_s": 0.0,
+  "mean_distance_successful_m": 0.0,
+  "mean_safety_interventions_per_episode": 269.2,
+  "total_reverse_cmds_requested": 3,
+  "total_reverse_cmds_executed": 3,
+  "total_action_saturated_steps": 1477,
+  "records": [
+    {
+      "seed": 50000,
+      "status": "crash_obstacle",
+      "detail": "Obstacle collision (clearance=-0.003m)",
+      "steps": 162,
+      "flight_time_s": 8.1,
+      "distance_travelled_m": 3.83,
+      "safety_interventions": 129,
+      "reverse_cmds_requested": 0,
+      "reverse_cmds_executed": 0,
+      "action_saturated_steps": 112,
+      "min_boundary_clearance_m": 0.268,
+      "min_obstacle_clearance_m": -0.003,
+      "final_position": [
+        2.66,
+        -0.12,
+        1.36
+      ]
+    },
+    {
+      "seed": 50001,
+      "status": "crash_obstacle",
+      "detail": "Obstacle collision (clearance=-0.001m)",
+      "steps": 433,
+      "flight_time_s": 21.65,
+      "distance_travelled_m": 9.35,
+      "safety_interventions": 398,
+      "reverse_cmds_requested": 0,
+      "reverse_cmds_executed": 0,
+      "action_saturated_steps": 182,
+      "min_boundary_clearance_m": 0.232,
+      "min_obstacle_clearance_m": -0.001,
+      "final_position": [
+        6.68,
+        -0.21,
+        1.58
+      ]
+    },
+    {
+      "seed": 50002,
+      "status": "crash_obstacle",
+      "detail": "Obstacle collision (clearance=-0.000m)",
+      "steps": 285,
+      "flight_time_s": 14.25,
+      "distance_travelled_m": 6.48,
+      "safety_interventions": 268,
+      "reverse_cmds_requested": 0,
+      "reverse_cmds_executed": 0,
+      "action_saturated_steps": 142,
+      "min_boundary_clearance_m": 0.239,
+      "min_obstacle_clearance_m": -0.0,
+      "final_position": [
+        4.79,
+        -0.39,
+        1.59
+      ]
+    },
+    {
+      "seed": 50003,
+      "status": "crash_obstacle",
+      "detail": "Obstacle collision (clearance=-0.010m)",
+      "steps": 235,
+      "flight_time_s": 11.75,
+      "distance_travelled_m": 5.18,
+      "safety_interventions": 212,
+      "reverse_cmds_requested": 1,
+      "reverse_cmds_executed": 1,
+      "action_saturated_steps": 168,
+      "min_boundary_clearance_m": 0.232,
+      "min_obstacle_clearance_m": -0.01,
+      "final_position": [
+        2.92,
+        -0.39,
+        1.49
+      ]
+    },
+    {
+      "seed": 50004,
+      "status": "crash_obstacle",
+      "detail": "Obstacle collision (clearance=-0.003m)",
+      "steps": 371,
+      "flight_time_s": 18.55,
+      "distance_travelled_m": 8.36,
+      "safety_interventions": 356,
+      "reverse_cmds_requested": 0,
+      "reverse_cmds_executed": 0,
+      "action_saturated_steps": 133,
+      "min_boundary_clearance_m": 0.237,
+      "min_obstacle_clearance_m": -0.003,
+      "final_position": [
+        6.69,
+        -0.39,
+        1.6
+      ]
+    },
+    {
+      "seed": 50005,
+      "status": "crash_obstacle",
+      "detail": "Obstacle collision (clearance=-0.000m)",
+      "steps": 458,
+      "flight_time_s": 22.9,
+      "distance_travelled_m": 9.29,
+      "safety_interventions": 436,
+      "reverse_cmds_requested": 0,
+      "reverse_cmds_executed": 0,
+      "action_saturated_steps": 207,
+      "min_boundary_clearance_m": 0.233,
+      "min_obstacle_clearance_m": -0.0,
+      "final_position": [
+        6.68,
+        -0.41,
+        1.6
+      ]
+    },
+    {
+      "seed": 50006,
+      "status": "crash_obstacle",
+      "detail": "Obstacle collision (clearance=-0.007m)",
+      "steps": 199,
+      "flight_time_s": 9.95,
+      "distance_travelled_m": 4.44,
+      "safety_interventions": 163,
+      "reverse_cmds_requested": 0,
+      "reverse_cmds_executed": 0,
+      "action_saturated_steps": 134,
+      "min_boundary_clearance_m": 0.245,
+      "min_obstacle_clearance_m": -0.007,
+      "final_position": [
+        2.78,
+        -0.42,
+        1.4
+      ]
+    },
+    {
+      "seed": 50007,
+      "status": "crash_obstacle",
+      "detail": "Obstacle collision (clearance=-0.001m)",
+      "steps": 478,
+      "flight_time_s": 23.9,
+      "distance_travelled_m": 9.58,
+      "safety_interventions": 455,
+      "reverse_cmds_requested": 1,
+      "reverse_cmds_executed": 1,
+      "action_saturated_steps": 186,
+      "min_boundary_clearance_m": 0.239,
+      "min_obstacle_clearance_m": -0.001,
+      "final_position": [
+        6.7,
+        -0.44,
+        1.6
+      ]
+    },
+    {
+      "seed": 50008,
+      "status": "crash_obstacle",
+      "detail": "Obstacle collision (clearance=-0.014m)",
+      "steps": 153,
+      "flight_time_s": 7.65,
+      "distance_travelled_m": 3.75,
+      "safety_interventions": 128,
+      "reverse_cmds_requested": 1,
+      "reverse_cmds_executed": 1,
+      "action_saturated_steps": 108,
+      "min_boundary_clearance_m": 0.33,
+      "min_obstacle_clearance_m": -0.014,
+      "final_position": [
+        2.67,
+        -0.02,
+        1.39
+      ]
+    },
+    {
+      "seed": 50009,
+      "status": "crash_obstacle",
+      "detail": "Obstacle collision (clearance=-0.000m)",
+      "steps": 171,
+      "flight_time_s": 8.55,
+      "distance_travelled_m": 3.86,
+      "safety_interventions": 147,
+      "reverse_cmds_requested": 0,
+      "reverse_cmds_executed": 0,
+      "action_saturated_steps": 105,
+      "min_boundary_clearance_m": 0.255,
+      "min_obstacle_clearance_m": -0.0,
+      "final_position": [
+        2.67,
+        -0.08,
+        1.41
+      ]
+    }
+  ]
+}

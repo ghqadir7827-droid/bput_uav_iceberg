@@ -1,0 +1,51 @@
+{
+  "status": "PPO_HARNESS_VALIDATED",
+  "best_success_rate_pct": 10.0,
+  "total_iterations": 1,
+  "total_timesteps": 32,
+  "total_training_time_s": 21.99,
+  "supervisor_active": true,
+  "checkpoint_file": "models/checkpoints/ppo_phase4a_dryrun.pt",
+  "history": [
+    {
+      "iteration": 1,
+      "mean_reward": 0.0,
+      "policy_loss": 0.0022,
+      "value_loss": 0.3103,
+      "entropy": 0.876,
+      "eval_success_rate": 0.0,
+      "is_best": false,
+      "telemetry": {
+        "total_steps": 32,
+        "intervention_steps": 0,
+        "intervention_rate_pct": 0.0,
+        "mean_intervention_magnitude": 0.0,
+        "max_intervention_magnitude": 0.0,
+        "reverse_steps": 3,
+        "reverse_rate_pct": 9.38,
+        "recovery_episodes": 3,
+        "policy_saturation": {
+          "vx": 18,
+          "vy": 8,
+          "vz": 14,
+          "yaw_rate": 6,
+          "total_denominator": 32
+        },
+        "applied_saturation": {
+          "vx": 18,
+          "vy": 8,
+          "vz": 14,
+          "yaw_rate": 6,
+          "total_denominator": 32
+        },
+        "episodes_completed": 0,
+        "success_count": 0,
+        "collision_count": 0,
+        "timeout_count": 0,
+        "mean_return": 0.0,
+        "mean_displacement": 0.0,
+        "mean_forward_progress": 0.0
+      }
+    }
+  ]
+}

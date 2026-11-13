@@ -1,5 +1,29 @@
+# Python & Virtual Environments
 .venv/
+venv/
+ENV/
+env/
 __pycache__/
-*.pyc
+*.py[cod]
+*$py.class
+*.so
+
+# Testing & Coverage
 .pytest_cache/
+.coverage
+htmlcov/
+.cache/
+
+# OS & IDE Metadata
 .DS_Store
+.AppleDouble
+.LSOverride
+._*
+.vscode/
+.idea/
+*.swp
+*~
+
+# Logs & Temporary Scratch
+*.log
+scratch/__pycache__/

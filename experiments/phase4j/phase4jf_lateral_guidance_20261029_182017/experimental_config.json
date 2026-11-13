@@ -1,0 +1,35 @@
+{
+  "supervisor_metadata": {
+    "module": "IsolatedLateralGuidanceSupervisor",
+    "phase": "Phase 4J-F",
+    "timestamp_iso": "2026-10-29T18:32:00Z",
+    "workspace": "/Users/ghulamqadir/.gemini/antigravity-ide/scratch/uav-bput-nav"
+  },
+  "invariant_safety_thresholds": {
+    "boundary_buffer_m": 0.25,
+    "critical_obstacle_dist_m": 0.30,
+    "emergency_reverse_dist_m": 0.15,
+    "obstacle_caution_dist_m": 0.50,
+    "critical_lateral_dist_m": 0.32,
+    "caution_lateral_dist_m": 0.55
+  },
+  "deadlock_detection_parameters": {
+    "detection_window_steps": 30,
+    "detection_window_duration_s": 1.50,
+    "max_forward_displacement_m": 0.06,
+    "max_mean_abs_lateral_velocity_mps": 0.08,
+    "front_obstacle_trigger_dist_m": 0.45
+  },
+  "lateral_guidance_parameters": {
+    "lateral_bias_speed_mps": 0.25,
+    "forward_crawl_speed_mps": 0.18,
+    "commitment_duration_steps": 18,
+    "commitment_duration_s": 0.90,
+    "opening_difference_margin_m": 0.05,
+    "min_wall_headroom_m": 0.28,
+    "wall_abort_threshold_m": 0.26,
+    "obstacle_cleared_threshold_m": 0.60
+  },
+  "fallback_policy": "CONSERVATIVE_STANDSTILL_REVERSE"
+}
+

@@ -1,0 +1,32 @@
+# Phase 4K Isolated Curriculum Training Configuration
+experiment_id: phase4k_curriculum_pilot_20261029_210200
+base_checkpoint: models/checkpoints/bc_policy_best.pt
+candidate_checkpoint: experiments/phase4k/phase4k_symmetry_curriculum_20261029_210200/bc_curriculum_candidate.pt
+
+dataset:
+  train_npz: experiments/phase4k/phase4k_symmetry_curriculum_20261029_210200/data/bc_curriculum_train.npz
+  val_npz: experiments/phase4k/phase4k_symmetry_curriculum_20261029_210200/data/bc_curriculum_val.npz
+  baseline_train_source: data/demonstrations/bc_train_10m.npz
+  standoff_episodes_added: 40
+  left_right_balance: 0.50
+
+training:
+  epochs: 20
+  batch_size: 128
+  learning_rate: 0.0005
+  weight_decay: 0.0001
+  grad_clip_norm: 1.0
+  seed: 42
+  optimizer: AdamW
+  scheduler: CosineAnnealingLR
+  loss: MSELoss
+
+architecture:
+  model_class: NavigationPolicyMLP
+  obs_dim: 23
+  act_dim: 4
+  hidden_dims: [128, 128, 64]
+  activation: GELU
+  normalization: LayerNorm
+  action_head: ScaledTanh
+

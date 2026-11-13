@@ -1,0 +1,1084 @@
+{
+  "meta": {
+    "dataset_name": "phase4h_targeted_bc_demonstrations",
+    "total_episodes": 119,
+    "train_episodes": 96,
+    "val_episodes": 23,
+    "train_transitions": 35322,
+    "val_transitions": 8463,
+    "timestamp_iso": "2026-10-28T20:42:31Z"
+  },
+  "episodes": [
+    {
+      "episode_id": 1,
+      "type": "single",
+      "seed": 2000,
+      "steps": 368,
+      "min_obs_clearance": 0.335,
+      "min_wall_clearance": 0.165,
+      "terminal_speed": 0.156
+    },
+    {
+      "episode_id": 2,
+      "type": "single",
+      "seed": 2001,
+      "steps": 371,
+      "min_obs_clearance": 0.336,
+      "min_wall_clearance": 0.164,
+      "terminal_speed": 0.156
+    },
+    {
+      "episode_id": 3,
+      "type": "single",
+      "seed": 2002,
+      "steps": 366,
+      "min_obs_clearance": 0.334,
+      "min_wall_clearance": 0.166,
+      "terminal_speed": 0.154
+    },
+    {
+      "episode_id": 4,
+      "type": "single",
+      "seed": 2003,
+      "steps": 372,
+      "min_obs_clearance": 0.336,
+      "min_wall_clearance": 0.164,
+      "terminal_speed": 0.154
+    },
+    {
+      "episode_id": 5,
+      "type": "single",
+      "seed": 2004,
+      "steps": 369,
+      "min_obs_clearance": 0.335,
+      "min_wall_clearance": 0.165,
+      "terminal_speed": 0.155
+    },
+    {
+      "episode_id": 6,
+      "type": "single",
+      "seed": 2005,
+      "steps": 371,
+      "min_obs_clearance": 0.336,
+      "min_wall_clearance": 0.164,
+      "terminal_speed": 0.156
+    },
+    {
+      "episode_id": 7,
+      "type": "single",
+      "seed": 2006,
+      "steps": 367,
+      "min_obs_clearance": 0.334,
+      "min_wall_clearance": 0.166,
+      "terminal_speed": 0.154
+    },
+    {
+      "episode_id": 8,
+      "type": "single",
+      "seed": 2007,
+      "steps": 369,
+      "min_obs_clearance": 0.335,
+      "min_wall_clearance": 0.165,
+      "terminal_speed": 0.155
+    },
+    {
+      "episode_id": 9,
+      "type": "single",
+      "seed": 2008,
+      "steps": 365,
+      "min_obs_clearance": 0.333,
+      "min_wall_clearance": 0.167,
+      "terminal_speed": 0.156
+    },
+    {
+      "episode_id": 10,
+      "type": "single",
+      "seed": 2009,
+      "steps": 368,
+      "min_obs_clearance": 0.334,
+      "min_wall_clearance": 0.166,
+      "terminal_speed": 0.156
+    },
+    {
+      "episode_id": 11,
+      "type": "single",
+      "seed": 2010,
+      "steps": 366,
+      "min_obs_clearance": 0.334,
+      "min_wall_clearance": 0.166,
+      "terminal_speed": 0.156
+    },
+    {
+      "episode_id": 12,
+      "type": "single",
+      "seed": 2011,
+      "steps": 366,
+      "min_obs_clearance": 0.334,
+      "min_wall_clearance": 0.166,
+      "terminal_speed": 0.156
+    },
+    {
+      "episode_id": 13,
+      "type": "single",
+      "seed": 2012,
+      "steps": 366,
+      "min_obs_clearance": 0.334,
+      "min_wall_clearance": 0.166,
+      "terminal_speed": 0.156
+    },
+    {
+      "episode_id": 14,
+      "type": "single",
+      "seed": 2013,
+      "steps": 371,
+      "min_obs_clearance": 0.336,
+      "min_wall_clearance": 0.164,
+      "terminal_speed": 0.156
+    },
+    {
+      "episode_id": 15,
+      "type": "single",
+      "seed": 2014,
+      "steps": 368,
+      "min_obs_clearance": 0.335,
+      "min_wall_clearance": 0.165,
+      "terminal_speed": 0.157
+    },
+    {
+      "episode_id": 16,
+      "type": "single",
+      "seed": 2015,
+      "steps": 371,
+      "min_obs_clearance": 0.336,
+      "min_wall_clearance": 0.164,
+      "terminal_speed": 0.156
+    },
+    {
+      "episode_id": 17,
+      "type": "single",
+      "seed": 2016,
+      "steps": 367,
+      "min_obs_clearance": 0.334,
+      "min_wall_clearance": 0.166,
+      "terminal_speed": 0.154
+    },
+    {
+      "episode_id": 18,
+      "type": "single",
+      "seed": 2017,
+      "steps": 368,
+      "min_obs_clearance": 0.335,
+      "min_wall_clearance": 0.165,
+      "terminal_speed": 0.156
+    },
+    {
+      "episode_id": 19,
+      "type": "single",
+      "seed": 2018,
+      "steps": 372,
+      "min_obs_clearance": 0.336,
+      "min_wall_clearance": 0.164,
+      "terminal_speed": 0.154
+    },
+    {
+      "episode_id": 20,
+      "type": "single",
+      "seed": 2019,
+      "steps": 371,
+      "min_obs_clearance": 0.336,
+      "min_wall_clearance": 0.164,
+      "terminal_speed": 0.157
+    },
+    {
+      "episode_id": 21,
+      "type": "single",
+      "seed": 2020,
+      "steps": 369,
+      "min_obs_clearance": 0.335,
+      "min_wall_clearance": 0.165,
+      "terminal_speed": 0.156
+    },
+    {
+      "episode_id": 22,
+      "type": "single",
+      "seed": 2021,
+      "steps": 366,
+      "min_obs_clearance": 0.334,
+      "min_wall_clearance": 0.166,
+      "terminal_speed": 0.157
+    },
+    {
+      "episode_id": 23,
+      "type": "single",
+      "seed": 2022,
+      "steps": 365,
+      "min_obs_clearance": 0.333,
+      "min_wall_clearance": 0.167,
+      "terminal_speed": 0.157
+    },
+    {
+      "episode_id": 24,
+      "type": "single",
+      "seed": 2023,
+      "steps": 368,
+      "min_obs_clearance": 0.335,
+      "min_wall_clearance": 0.165,
+      "terminal_speed": 0.156
+    },
+    {
+      "episode_id": 25,
+      "type": "single",
+      "seed": 2024,
+      "steps": 370,
+      "min_obs_clearance": 0.336,
+      "min_wall_clearance": 0.164,
+      "terminal_speed": 0.154
+    },
+    {
+      "episode_id": 26,
+      "type": "single",
+      "seed": 2100,
+      "steps": 360,
+      "min_obs_clearance": 0.446,
+      "min_wall_clearance": 0.204,
+      "terminal_speed": 0.154
+    },
+    {
+      "episode_id": 27,
+      "type": "single",
+      "seed": 2101,
+      "steps": 355,
+      "min_obs_clearance": 0.522,
+      "min_wall_clearance": 0.228,
+      "terminal_speed": 0.154
+    },
+    {
+      "episode_id": 28,
+      "type": "single",
+      "seed": 2102,
+      "steps": 360,
+      "min_obs_clearance": 0.447,
+      "min_wall_clearance": 0.203,
+      "terminal_speed": 0.156
+    },
+    {
+      "episode_id": 29,
+      "type": "single",
+      "seed": 2103,
+      "steps": 355,
+      "min_obs_clearance": 0.523,
+      "min_wall_clearance": 0.227,
+      "terminal_speed": 0.155
+    },
+    {
+      "episode_id": 30,
+      "type": "single",
+      "seed": 2104,
+      "steps": 363,
+      "min_obs_clearance": 0.448,
+      "min_wall_clearance": 0.202,
+      "terminal_speed": 0.155
+    },
+    {
+      "episode_id": 31,
+      "type": "single",
+      "seed": 2105,
+      "steps": 356,
+      "min_obs_clearance": 0.524,
+      "min_wall_clearance": 0.226,
+      "terminal_speed": 0.154
+    },
+    {
+      "episode_id": 32,
+      "type": "single",
+      "seed": 2106,
+      "steps": 361,
+      "min_obs_clearance": 0.447,
+      "min_wall_clearance": 0.204,
+      "terminal_speed": 0.156
+    },
+    {
+      "episode_id": 33,
+      "type": "single",
+      "seed": 2107,
+      "steps": 357,
+      "min_obs_clearance": 0.524,
+      "min_wall_clearance": 0.226,
+      "terminal_speed": 0.156
+    },
+    {
+      "episode_id": 34,
+      "type": "single",
+      "seed": 2108,
+      "steps": 361,
+      "min_obs_clearance": 0.447,
+      "min_wall_clearance": 0.204,
+      "terminal_speed": 0.156
+    },
+    {
+      "episode_id": 35,
+      "type": "single",
+      "seed": 2109,
+      "steps": 353,
+      "min_obs_clearance": 0.521,
+      "min_wall_clearance": 0.229,
+      "terminal_speed": 0.155
+    },
+    {
+      "episode_id": 36,
+      "type": "single",
+      "seed": 2110,
+      "steps": 356,
+      "min_obs_clearance": 0.444,
+      "min_wall_clearance": 0.206,
+      "terminal_speed": 0.155
+    },
+    {
+      "episode_id": 37,
+      "type": "single",
+      "seed": 2111,
+      "steps": 354,
+      "min_obs_clearance": 0.521,
+      "min_wall_clearance": 0.229,
+      "terminal_speed": 0.155
+    },
+    {
+      "episode_id": 38,
+      "type": "single",
+      "seed": 2112,
+      "steps": 361,
+      "min_obs_clearance": 0.447,
+      "min_wall_clearance": 0.204,
+      "terminal_speed": 0.156
+    },
+    {
+      "episode_id": 39,
+      "type": "single",
+      "seed": 2113,
+      "steps": 356,
+      "min_obs_clearance": 0.524,
+      "min_wall_clearance": 0.226,
+      "terminal_speed": 0.154
+    },
+    {
+      "episode_id": 40,
+      "type": "single",
+      "seed": 2114,
+      "steps": 358,
+      "min_obs_clearance": 0.445,
+      "min_wall_clearance": 0.205,
+      "terminal_speed": 0.155
+    },
+    {
+      "episode_id": 41,
+      "type": "single",
+      "seed": 2115,
+      "steps": 353,
+      "min_obs_clearance": 0.52,
+      "min_wall_clearance": 0.23,
+      "terminal_speed": 0.153
+    },
+    {
+      "episode_id": 42,
+      "type": "single",
+      "seed": 2116,
+      "steps": 362,
+      "min_obs_clearance": 0.447,
+      "min_wall_clearance": 0.203,
+      "terminal_speed": 0.156
+    },
+    {
+      "episode_id": 43,
+      "type": "single",
+      "seed": 2117,
+      "steps": 354,
+      "min_obs_clearance": 0.522,
+      "min_wall_clearance": 0.228,
+      "terminal_speed": 0.156
+    },
+    {
+      "episode_id": 44,
+      "type": "single",
+      "seed": 2118,
+      "steps": 356,
+      "min_obs_clearance": 0.444,
+      "min_wall_clearance": 0.206,
+      "terminal_speed": 0.157
+    },
+    {
+      "episode_id": 45,
+      "type": "single",
+      "seed": 2119,
+      "steps": 352,
+      "min_obs_clearance": 0.52,
+      "min_wall_clearance": 0.23,
+      "terminal_speed": 0.156
+    },
+    {
+      "episode_id": 46,
+      "type": "single",
+      "seed": 2120,
+      "steps": 362,
+      "min_obs_clearance": 0.447,
+      "min_wall_clearance": 0.203,
+      "terminal_speed": 0.155
+    },
+    {
+      "episode_id": 47,
+      "type": "single",
+      "seed": 2121,
+      "steps": 352,
+      "min_obs_clearance": 0.52,
+      "min_wall_clearance": 0.23,
+      "terminal_speed": 0.155
+    },
+    {
+      "episode_id": 48,
+      "type": "single",
+      "seed": 2122,
+      "steps": 357,
+      "min_obs_clearance": 0.444,
+      "min_wall_clearance": 0.206,
+      "terminal_speed": 0.153
+    },
+    {
+      "episode_id": 49,
+      "type": "single",
+      "seed": 2123,
+      "steps": 357,
+      "min_obs_clearance": 0.524,
+      "min_wall_clearance": 0.226,
+      "terminal_speed": 0.156
+    },
+    {
+      "episode_id": 50,
+      "type": "single",
+      "seed": 2124,
+      "steps": 360,
+      "min_obs_clearance": 0.446,
+      "min_wall_clearance": 0.204,
+      "terminal_speed": 0.154
+    },
+    {
+      "episode_id": 51,
+      "type": "single",
+      "seed": 2200,
+      "steps": 358,
+      "min_obs_clearance": 0.444,
+      "min_wall_clearance": 0.206,
+      "terminal_speed": 0.155
+    },
+    {
+      "episode_id": 52,
+      "type": "single",
+      "seed": 2201,
+      "steps": 353,
+      "min_obs_clearance": 0.521,
+      "min_wall_clearance": 0.229,
+      "terminal_speed": 0.155
+    },
+    {
+      "episode_id": 53,
+      "type": "single",
+      "seed": 2202,
+      "steps": 362,
+      "min_obs_clearance": 0.447,
+      "min_wall_clearance": 0.203,
+      "terminal_speed": 0.155
+    },
+    {
+      "episode_id": 54,
+      "type": "single",
+      "seed": 2203,
+      "steps": 357,
+      "min_obs_clearance": 0.524,
+      "min_wall_clearance": 0.226,
+      "terminal_speed": 0.155
+    },
+    {
+      "episode_id": 55,
+      "type": "single",
+      "seed": 2204,
+      "steps": 359,
+      "min_obs_clearance": 0.446,
+      "min_wall_clearance": 0.205,
+      "terminal_speed": 0.155
+    },
+    {
+      "episode_id": 56,
+      "type": "single",
+      "seed": 2205,
+      "steps": 355,
+      "min_obs_clearance": 0.523,
+      "min_wall_clearance": 0.227,
+      "terminal_speed": 0.156
+    },
+    {
+      "episode_id": 57,
+      "type": "single",
+      "seed": 2206,
+      "steps": 360,
+      "min_obs_clearance": 0.446,
+      "min_wall_clearance": 0.204,
+      "terminal_speed": 0.155
+    },
+    {
+      "episode_id": 58,
+      "type": "single",
+      "seed": 2207,
+      "steps": 358,
+      "min_obs_clearance": 0.524,
+      "min_wall_clearance": 0.226,
+      "terminal_speed": 0.153
+    },
+    {
+      "episode_id": 59,
+      "type": "single",
+      "seed": 2208,
+      "steps": 359,
+      "min_obs_clearance": 0.445,
+      "min_wall_clearance": 0.205,
+      "terminal_speed": 0.153
+    },
+    {
+      "episode_id": 60,
+      "type": "single",
+      "seed": 2209,
+      "steps": 354,
+      "min_obs_clearance": 0.521,
+      "min_wall_clearance": 0.229,
+      "terminal_speed": 0.155
+    },
+    {
+      "episode_id": 61,
+      "type": "single",
+      "seed": 2210,
+      "steps": 359,
+      "min_obs_clearance": 0.446,
+      "min_wall_clearance": 0.204,
+      "terminal_speed": 0.155
+    },
+    {
+      "episode_id": 62,
+      "type": "single",
+      "seed": 2211,
+      "steps": 355,
+      "min_obs_clearance": 0.522,
+      "min_wall_clearance": 0.228,
+      "terminal_speed": 0.153
+    },
+    {
+      "episode_id": 63,
+      "type": "single",
+      "seed": 2212,
+      "steps": 362,
+      "min_obs_clearance": 0.447,
+      "min_wall_clearance": 0.203,
+      "terminal_speed": 0.156
+    },
+    {
+      "episode_id": 64,
+      "type": "single",
+      "seed": 2213,
+      "steps": 358,
+      "min_obs_clearance": 0.525,
+      "min_wall_clearance": 0.225,
+      "terminal_speed": 0.154
+    },
+    {
+      "episode_id": 65,
+      "type": "single",
+      "seed": 2214,
+      "steps": 357,
+      "min_obs_clearance": 0.444,
+      "min_wall_clearance": 0.206,
+      "terminal_speed": 0.154
+    },
+    {
+      "episode_id": 66,
+      "type": "single",
+      "seed": 2215,
+      "steps": 355,
+      "min_obs_clearance": 0.522,
+      "min_wall_clearance": 0.228,
+      "terminal_speed": 0.154
+    },
+    {
+      "episode_id": 67,
+      "type": "single",
+      "seed": 2216,
+      "steps": 360,
+      "min_obs_clearance": 0.446,
+      "min_wall_clearance": 0.204,
+      "terminal_speed": 0.154
+    },
+    {
+      "episode_id": 68,
+      "type": "single",
+      "seed": 2217,
+      "steps": 356,
+      "min_obs_clearance": 0.523,
+      "min_wall_clearance": 0.227,
+      "terminal_speed": 0.153
+    },
+    {
+      "episode_id": 69,
+      "type": "single",
+      "seed": 2218,
+      "steps": 359,
+      "min_obs_clearance": 0.445,
+      "min_wall_clearance": 0.205,
+      "terminal_speed": 0.154
+    },
+    {
+      "episode_id": 70,
+      "type": "single",
+      "seed": 2219,
+      "steps": 356,
+      "min_obs_clearance": 0.524,
+      "min_wall_clearance": 0.226,
+      "terminal_speed": 0.156
+    },
+    {
+      "episode_id": 71,
+      "type": "single",
+      "seed": 2220,
+      "steps": 356,
+      "min_obs_clearance": 0.444,
+      "min_wall_clearance": 0.206,
+      "terminal_speed": 0.157
+    },
+    {
+      "episode_id": 72,
+      "type": "single",
+      "seed": 2221,
+      "steps": 356,
+      "min_obs_clearance": 0.523,
+      "min_wall_clearance": 0.227,
+      "terminal_speed": 0.154
+    },
+    {
+      "episode_id": 73,
+      "type": "single",
+      "seed": 2222,
+      "steps": 360,
+      "min_obs_clearance": 0.446,
+      "min_wall_clearance": 0.204,
+      "terminal_speed": 0.153
+    },
+    {
+      "episode_id": 74,
+      "type": "single",
+      "seed": 2223,
+      "steps": 354,
+      "min_obs_clearance": 0.521,
+      "min_wall_clearance": 0.229,
+      "terminal_speed": 0.155
+    },
+    {
+      "episode_id": 75,
+      "type": "single",
+      "seed": 2224,
+      "steps": 362,
+      "min_obs_clearance": 0.447,
+      "min_wall_clearance": 0.203,
+      "terminal_speed": 0.156
+    },
+    {
+      "episode_id": 76,
+      "type": "clear",
+      "seed": 2300,
+      "steps": 340,
+      "min_obs_clearance": 10.0,
+      "min_wall_clearance": 0.804,
+      "terminal_speed": 0.154
+    },
+    {
+      "episode_id": 77,
+      "type": "clear",
+      "seed": 2301,
+      "steps": 340,
+      "min_obs_clearance": 10.0,
+      "min_wall_clearance": 0.764,
+      "terminal_speed": 0.154
+    },
+    {
+      "episode_id": 78,
+      "type": "clear",
+      "seed": 2302,
+      "steps": 340,
+      "min_obs_clearance": 10.0,
+      "min_wall_clearance": 0.798,
+      "terminal_speed": 0.154
+    },
+    {
+      "episode_id": 79,
+      "type": "clear",
+      "seed": 2303,
+      "steps": 340,
+      "min_obs_clearance": 10.0,
+      "min_wall_clearance": 0.846,
+      "terminal_speed": 0.154
+    },
+    {
+      "episode_id": 80,
+      "type": "clear",
+      "seed": 2304,
+      "steps": 340,
+      "min_obs_clearance": 10.0,
+      "min_wall_clearance": 0.756,
+      "terminal_speed": 0.154
+    },
+    {
+      "episode_id": 81,
+      "type": "clear",
+      "seed": 2305,
+      "steps": 340,
+      "min_obs_clearance": 10.0,
+      "min_wall_clearance": 0.846,
+      "terminal_speed": 0.154
+    },
+    {
+      "episode_id": 82,
+      "type": "clear",
+      "seed": 2306,
+      "steps": 340,
+      "min_obs_clearance": 10.0,
+      "min_wall_clearance": 0.789,
+      "terminal_speed": 0.154
+    },
+    {
+      "episode_id": 83,
+      "type": "clear",
+      "seed": 2307,
+      "steps": 340,
+      "min_obs_clearance": 10.0,
+      "min_wall_clearance": 0.752,
+      "terminal_speed": 0.154
+    },
+    {
+      "episode_id": 84,
+      "type": "clear",
+      "seed": 2308,
+      "steps": 340,
+      "min_obs_clearance": 10.0,
+      "min_wall_clearance": 0.772,
+      "terminal_speed": 0.154
+    },
+    {
+      "episode_id": 85,
+      "type": "clear",
+      "seed": 2309,
+      "steps": 340,
+      "min_obs_clearance": 10.0,
+      "min_wall_clearance": 0.811,
+      "terminal_speed": 0.154
+    },
+    {
+      "episode_id": 86,
+      "type": "clear",
+      "seed": 2310,
+      "steps": 340,
+      "min_obs_clearance": 10.0,
+      "min_wall_clearance": 0.803,
+      "terminal_speed": 0.154
+    },
+    {
+      "episode_id": 87,
+      "type": "clear",
+      "seed": 2311,
+      "steps": 340,
+      "min_obs_clearance": 10.0,
+      "min_wall_clearance": 0.831,
+      "terminal_speed": 0.154
+    },
+    {
+      "episode_id": 88,
+      "type": "clear",
+      "seed": 2312,
+      "steps": 340,
+      "min_obs_clearance": 10.0,
+      "min_wall_clearance": 0.841,
+      "terminal_speed": 0.154
+    },
+    {
+      "episode_id": 89,
+      "type": "clear",
+      "seed": 2313,
+      "steps": 340,
+      "min_obs_clearance": 10.0,
+      "min_wall_clearance": 0.78,
+      "terminal_speed": 0.154
+    },
+    {
+      "episode_id": 90,
+      "type": "clear",
+      "seed": 2314,
+      "steps": 340,
+      "min_obs_clearance": 10.0,
+      "min_wall_clearance": 0.787,
+      "terminal_speed": 0.154
+    },
+    {
+      "episode_id": 91,
+      "type": "multi",
+      "seed": 2400,
+      "steps": 394,
+      "min_obs_clearance": 0.185,
+      "min_wall_clearance": 0.213,
+      "terminal_speed": 0.168
+    },
+    {
+      "episode_id": 92,
+      "type": "multi",
+      "seed": 2401,
+      "steps": 397,
+      "min_obs_clearance": 0.392,
+      "min_wall_clearance": 0.187,
+      "terminal_speed": 0.168
+    },
+    {
+      "episode_id": 93,
+      "type": "multi",
+      "seed": 2402,
+      "steps": 414,
+      "min_obs_clearance": 0.331,
+      "min_wall_clearance": 0.168,
+      "terminal_speed": 0.165
+    },
+    {
+      "episode_id": 94,
+      "type": "multi",
+      "seed": 2404,
+      "steps": 396,
+      "min_obs_clearance": 0.41,
+      "min_wall_clearance": 0.193,
+      "terminal_speed": 0.169
+    },
+    {
+      "episode_id": 95,
+      "type": "multi",
+      "seed": 2405,
+      "steps": 399,
+      "min_obs_clearance": 0.376,
+      "min_wall_clearance": 0.181,
+      "terminal_speed": 0.168
+    },
+    {
+      "episode_id": 96,
+      "type": "multi",
+      "seed": 2406,
+      "steps": 390,
+      "min_obs_clearance": 0.246,
+      "min_wall_clearance": 0.184,
+      "terminal_speed": 0.167
+    },
+    {
+      "episode_id": 97,
+      "type": "multi",
+      "seed": 2407,
+      "steps": 393,
+      "min_obs_clearance": 0.458,
+      "min_wall_clearance": 0.213,
+      "terminal_speed": 0.167
+    },
+    {
+      "episode_id": 98,
+      "type": "multi",
+      "seed": 2408,
+      "steps": 397,
+      "min_obs_clearance": 0.446,
+      "min_wall_clearance": 0.203,
+      "terminal_speed": 0.168
+    },
+    {
+      "episode_id": 99,
+      "type": "multi",
+      "seed": 2409,
+      "steps": 409,
+      "min_obs_clearance": 0.168,
+      "min_wall_clearance": 0.186,
+      "terminal_speed": 0.172
+    },
+    {
+      "episode_id": 100,
+      "type": "multi",
+      "seed": 2410,
+      "steps": 418,
+      "min_obs_clearance": 0.293,
+      "min_wall_clearance": 0.176,
+      "terminal_speed": 0.166
+    },
+    {
+      "episode_id": 101,
+      "type": "multi",
+      "seed": 2411,
+      "steps": 363,
+      "min_obs_clearance": 0.444,
+      "min_wall_clearance": 0.204,
+      "terminal_speed": 0.17
+    },
+    {
+      "episode_id": 102,
+      "type": "multi",
+      "seed": 2412,
+      "steps": 354,
+      "min_obs_clearance": 0.4,
+      "min_wall_clearance": 0.216,
+      "terminal_speed": 0.172
+    },
+    {
+      "episode_id": 103,
+      "type": "multi",
+      "seed": 2413,
+      "steps": 416,
+      "min_obs_clearance": 0.276,
+      "min_wall_clearance": 0.208,
+      "terminal_speed": 0.171
+    },
+    {
+      "episode_id": 104,
+      "type": "multi",
+      "seed": 2414,
+      "steps": 396,
+      "min_obs_clearance": 0.355,
+      "min_wall_clearance": 0.17,
+      "terminal_speed": 0.17
+    },
+    {
+      "episode_id": 105,
+      "type": "multi",
+      "seed": 2415,
+      "steps": 434,
+      "min_obs_clearance": 0.274,
+      "min_wall_clearance": 0.167,
+      "terminal_speed": 0.169
+    },
+    {
+      "episode_id": 106,
+      "type": "multi",
+      "seed": 2416,
+      "steps": 397,
+      "min_obs_clearance": 0.158,
+      "min_wall_clearance": 0.21,
+      "terminal_speed": 0.167
+    },
+    {
+      "episode_id": 107,
+      "type": "multi",
+      "seed": 2417,
+      "steps": 405,
+      "min_obs_clearance": 0.368,
+      "min_wall_clearance": 0.174,
+      "terminal_speed": 0.168
+    },
+    {
+      "episode_id": 108,
+      "type": "multi",
+      "seed": 2418,
+      "steps": 402,
+      "min_obs_clearance": 0.372,
+      "min_wall_clearance": 0.178,
+      "terminal_speed": 0.168
+    },
+    {
+      "episode_id": 109,
+      "type": "multi",
+      "seed": 2419,
+      "steps": 398,
+      "min_obs_clearance": 0.336,
+      "min_wall_clearance": 0.159,
+      "terminal_speed": 0.166
+    },
+    {
+      "episode_id": 110,
+      "type": "multi",
+      "seed": 2420,
+      "steps": 405,
+      "min_obs_clearance": 0.356,
+      "min_wall_clearance": 0.171,
+      "terminal_speed": 0.167
+    },
+    {
+      "episode_id": 111,
+      "type": "multi",
+      "seed": 2421,
+      "steps": 388,
+      "min_obs_clearance": 0.4,
+      "min_wall_clearance": 0.195,
+      "terminal_speed": 0.172
+    },
+    {
+      "episode_id": 112,
+      "type": "multi",
+      "seed": 2422,
+      "steps": 416,
+      "min_obs_clearance": 0.269,
+      "min_wall_clearance": 0.2,
+      "terminal_speed": 0.167
+    },
+    {
+      "episode_id": 113,
+      "type": "multi",
+      "seed": 2423,
+      "steps": 410,
+      "min_obs_clearance": 0.253,
+      "min_wall_clearance": 0.121,
+      "terminal_speed": 0.171
+    },
+    {
+      "episode_id": 114,
+      "type": "multi",
+      "seed": 2424,
+      "steps": 420,
+      "min_obs_clearance": 0.112,
+      "min_wall_clearance": 0.096,
+      "terminal_speed": 0.174
+    },
+    {
+      "episode_id": 115,
+      "type": "multi",
+      "seed": 2425,
+      "steps": 424,
+      "min_obs_clearance": 0.247,
+      "min_wall_clearance": 0.128,
+      "terminal_speed": 0.169
+    },
+    {
+      "episode_id": 116,
+      "type": "multi",
+      "seed": 2426,
+      "steps": 397,
+      "min_obs_clearance": 0.278,
+      "min_wall_clearance": 0.146,
+      "terminal_speed": 0.171
+    },
+    {
+      "episode_id": 117,
+      "type": "multi",
+      "seed": 2427,
+      "steps": 401,
+      "min_obs_clearance": 0.328,
+      "min_wall_clearance": 0.176,
+      "terminal_speed": 0.167
+    },
+    {
+      "episode_id": 118,
+      "type": "multi",
+      "seed": 2428,
+      "steps": 383,
+      "min_obs_clearance": 0.476,
+      "min_wall_clearance": 0.22,
+      "terminal_speed": 0.167
+    },
+    {
+      "episode_id": 119,
+      "type": "multi",
+      "seed": 2429,
+      "steps": 388,
+      "min_obs_clearance": 0.382,
+      "min_wall_clearance": 0.204,
+      "terminal_speed": 0.172
+    }
+  ]
+}

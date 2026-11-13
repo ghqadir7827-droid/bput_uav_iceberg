@@ -1,0 +1,36 @@
+{
+  "manifest_metadata": {
+    "milestone": "Phase 4J-C",
+    "timestamp_iso": "2026-10-29T16:51:00Z",
+    "workspace": "/Users/ghulamqadir/.gemini/antigravity-ide/scratch/uav-bput-nav"
+  },
+  "frozen_configuration": {
+    "selected_controller": "Arm_B_BC_Baseline",
+    "checkpoint_path": "models/checkpoints/bc_policy_best.pt",
+    "checkpoint_sha256": "93c4d7d1d8476b8d288a24fca1862d87133696f78b9603aa622bcc367afad44f",
+    "caution_distance_m": 0.50,
+    "critical_obstacle_dist_m": 0.30,
+    "emergency_reverse_dist_m": 0.15,
+    "boundary_buffer_m": 0.25,
+    "min_safe_speed_mps": 0.10,
+    "max_fwd_vel_mps": 0.60,
+    "episode_horizon_steps": 500,
+    "timestep_dt_s": 0.05,
+    "total_episode_duration_s": 25.0,
+    "development_seed_set": "2000..2049 (50 paired seeds)",
+    "reserved_held_out_seed_set": "90000..90099 (Sealed, untouched)"
+  },
+  "verified_file_hashes": {
+    "models/checkpoints/bc_policy_best.pt": "93c4d7d1d8476b8d288a24fca1862d87133696f78b9603aa622bcc367afad44f",
+    "models/checkpoints/ppo_policy_best.pt": "33f6d8b705edcffa430c48b2a21ed33a3e00f81b1c8195323134dd8be2a00ee0",
+    "experiments/phase4h/checkpoints/bc_phase4h_candidate.pt": "1fdb2286170b8188421609231af3ac685467a41a8d9dc24c5f793117ac9c319b",
+    "experiments/phase4h/checkpoints/ppo_phase4h_candidate.pt": "751431cda829539e9ef327bd843d9b292e8f097bb2b36c0f5a1deb1bfad159dd",
+    "controllers/safety_supervisor.py": "9f84af22821f0f1473ea963b0f33a1924d1c4e7a487d4ed7893b7efc56fcd26f",
+    "experiments/phase4j/isolated_supervisor_opt.py": "d68fbc38b58e5f2e21e5ad81efc1bc9d053734fe9f4d98b993445784b6b2f83f",
+    "sim/corridor_env.py": "4d0c9bd20b370c181a49b5e5516cab851d4353d038774053557aad260255fc66",
+    "core/geometry.py": "22ca56dd3420614e93346d4d0e78e53531530cb9b6cadb9a400a69fd8c9cfadb",
+    "core/contracts.py": "1272af8f2f301f854ab75b0088e4032f464789379c8120825aa747b1580967ab",
+    "models/policy_net.py": "fe5f8e81a09e4dd123d8cde011f4c7ac9d0511911d83fab1f550337a1f204ea9"
+  }
+}
+

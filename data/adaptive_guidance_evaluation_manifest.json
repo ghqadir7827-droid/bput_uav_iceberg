@@ -1,0 +1,55 @@
+{
+  "title": "Corridor-Width-Adaptive Guidance Evaluation Manifest",
+  "created_at_iso": "2026-10-30T20:45:30Z",
+  "checkpoint": "models/checkpoints/bc_policy_scaled_v2.pt",
+  "controllers": {
+    "scaled_guided_bc_v2": "Retrained BC v2 with recovery perturbations and 5-ray harmonized guidance (94.0% success).",
+    "scaled_guided_bc_v3": "Frozen BC v2 with directional-persistence tie-breaking guidance to eliminate chatter.",
+    "scaled_guided_bc_v4": "Frozen BC v2 with corridor-width-adaptive lateral guidance and persistent tie-breaking."
+  },
+  "tiers": [
+    {
+      "tier": "Level 1 (Basic, W=4.5m)",
+      "level": 1,
+      "seeds": [
+        20100,
+        20149
+      ],
+      "count": 50
+    },
+    {
+      "tier": "Level 2 (Standard, W=3.8m)",
+      "level": 2,
+      "seeds": [
+        20000,
+        20049
+      ],
+      "count": 50
+    },
+    {
+      "tier": "Level 3 (Challenging, W=3.2m)",
+      "level": 3,
+      "seeds": [
+        20200,
+        20249
+      ],
+      "count": 50
+    },
+    {
+      "tier": "Level 4 (Boundary, W=2.8m)",
+      "level": 4,
+      "seeds": [
+        20300,
+        20349
+      ],
+      "count": 50
+    }
+  ],
+  "deadlock_seeds_monitored": [
+    20332,
+    20334,
+    20344
+  ],
+  "total_episodes": 600,
+  "execution_time_seconds": 123.06
+}

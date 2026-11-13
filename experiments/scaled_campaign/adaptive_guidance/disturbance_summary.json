@@ -1,0 +1,546 @@
+{
+  "per_case": {
+    "case_1_Baseline Deterministic": {
+      "scaled_guided_bc_v3": {
+        "total_episodes": 20,
+        "success_count": 20,
+        "success_rate": 1.0,
+        "success_ci95": [
+          83.89,
+          100.0
+        ],
+        "timeouts": 0,
+        "timeout_rate": 0.0,
+        "collisions": 0,
+        "collision_rate": 0.0,
+        "collision_ci95": [
+          0.0,
+          16.11
+        ],
+        "envelope_violation_episodes": 6,
+        "envelope_violation_rate": 0.3,
+        "envelope_violation_steps": 339,
+        "envelope_violation_step_pct": 2.8,
+        "overall_min_clearance_m": 0.0002,
+        "successful_min_clearance_m": 0.0002,
+        "total_interventions": 3506,
+        "mean_interventions_per_ep": 175.3,
+        "mean_flight_time_s": 30.31
+      },
+      "scaled_guided_bc_v4": {
+        "total_episodes": 20,
+        "success_count": 20,
+        "success_rate": 1.0,
+        "success_ci95": [
+          83.89,
+          100.0
+        ],
+        "timeouts": 0,
+        "timeout_rate": 0.0,
+        "collisions": 0,
+        "collision_rate": 0.0,
+        "collision_ci95": [
+          0.0,
+          16.11
+        ],
+        "envelope_violation_episodes": 3,
+        "envelope_violation_rate": 0.15,
+        "envelope_violation_steps": 140,
+        "envelope_violation_step_pct": 1.19,
+        "overall_min_clearance_m": 0.0003,
+        "successful_min_clearance_m": 0.0003,
+        "total_interventions": 3073,
+        "mean_interventions_per_ep": 153.7,
+        "mean_flight_time_s": 29.39
+      },
+      "paired_mcnemar": {
+        "both_succeed": 20,
+        "v3_only": 0,
+        "v4_only": 0,
+        "both_fail": 0,
+        "p_value": 1.0
+      }
+    },
+    "case_2_Sensor Noise & Bias": {
+      "scaled_guided_bc_v3": {
+        "total_episodes": 20,
+        "success_count": 20,
+        "success_rate": 1.0,
+        "success_ci95": [
+          83.89,
+          100.0
+        ],
+        "timeouts": 0,
+        "timeout_rate": 0.0,
+        "collisions": 0,
+        "collision_rate": 0.0,
+        "collision_ci95": [
+          0.0,
+          16.11
+        ],
+        "envelope_violation_episodes": 4,
+        "envelope_violation_rate": 0.2,
+        "envelope_violation_steps": 437,
+        "envelope_violation_step_pct": 3.69,
+        "overall_min_clearance_m": 0.0003,
+        "successful_min_clearance_m": 0.0003,
+        "total_interventions": 2693,
+        "mean_interventions_per_ep": 134.7,
+        "mean_flight_time_s": 29.64
+      },
+      "scaled_guided_bc_v4": {
+        "total_episodes": 20,
+        "success_count": 20,
+        "success_rate": 1.0,
+        "success_ci95": [
+          83.89,
+          100.0
+        ],
+        "timeouts": 0,
+        "timeout_rate": 0.0,
+        "collisions": 0,
+        "collision_rate": 0.0,
+        "collision_ci95": [
+          0.0,
+          16.11
+        ],
+        "envelope_violation_episodes": 5,
+        "envelope_violation_rate": 0.25,
+        "envelope_violation_steps": 165,
+        "envelope_violation_step_pct": 1.42,
+        "overall_min_clearance_m": 0.0003,
+        "successful_min_clearance_m": 0.0003,
+        "total_interventions": 2455,
+        "mean_interventions_per_ep": 122.8,
+        "mean_flight_time_s": 29.12
+      },
+      "paired_mcnemar": {
+        "both_succeed": 20,
+        "v3_only": 0,
+        "v4_only": 0,
+        "both_fail": 0,
+        "p_value": 1.0
+      }
+    },
+    "case_3_Localization Drift & Jitter": {
+      "scaled_guided_bc_v3": {
+        "total_episodes": 20,
+        "success_count": 20,
+        "success_rate": 1.0,
+        "success_ci95": [
+          83.89,
+          100.0
+        ],
+        "timeouts": 0,
+        "timeout_rate": 0.0,
+        "collisions": 0,
+        "collision_rate": 0.0,
+        "collision_ci95": [
+          0.0,
+          16.11
+        ],
+        "envelope_violation_episodes": 7,
+        "envelope_violation_rate": 0.35,
+        "envelope_violation_steps": 269,
+        "envelope_violation_step_pct": 2.26,
+        "overall_min_clearance_m": 0.0003,
+        "successful_min_clearance_m": 0.0003,
+        "total_interventions": 3207,
+        "mean_interventions_per_ep": 160.3,
+        "mean_flight_time_s": 29.79
+      },
+      "scaled_guided_bc_v4": {
+        "total_episodes": 20,
+        "success_count": 20,
+        "success_rate": 1.0,
+        "success_ci95": [
+          83.89,
+          100.0
+        ],
+        "timeouts": 0,
+        "timeout_rate": 0.0,
+        "collisions": 0,
+        "collision_rate": 0.0,
+        "collision_ci95": [
+          0.0,
+          16.11
+        ],
+        "envelope_violation_episodes": 5,
+        "envelope_violation_rate": 0.25,
+        "envelope_violation_steps": 209,
+        "envelope_violation_step_pct": 1.75,
+        "overall_min_clearance_m": 0.0003,
+        "successful_min_clearance_m": 0.0003,
+        "total_interventions": 3268,
+        "mean_interventions_per_ep": 163.4,
+        "mean_flight_time_s": 29.9
+      },
+      "paired_mcnemar": {
+        "both_succeed": 20,
+        "v3_only": 0,
+        "v4_only": 0,
+        "both_fail": 0,
+        "p_value": 1.0
+      }
+    },
+    "case_4_Sensor Latency & Dropout": {
+      "scaled_guided_bc_v3": {
+        "total_episodes": 20,
+        "success_count": 19,
+        "success_rate": 0.95,
+        "success_ci95": [
+          76.39,
+          99.11
+        ],
+        "timeouts": 1,
+        "timeout_rate": 0.05,
+        "collisions": 0,
+        "collision_rate": 0.0,
+        "collision_ci95": [
+          0.0,
+          16.11
+        ],
+        "envelope_violation_episodes": 10,
+        "envelope_violation_rate": 0.5,
+        "envelope_violation_steps": 732,
+        "envelope_violation_step_pct": 5.82,
+        "overall_min_clearance_m": 0.0002,
+        "successful_min_clearance_m": 0.0002,
+        "total_interventions": 3796,
+        "mean_interventions_per_ep": 189.8,
+        "mean_flight_time_s": 30.47
+      },
+      "scaled_guided_bc_v4": {
+        "total_episodes": 20,
+        "success_count": 19,
+        "success_rate": 0.95,
+        "success_ci95": [
+          76.39,
+          99.11
+        ],
+        "timeouts": 1,
+        "timeout_rate": 0.05,
+        "collisions": 0,
+        "collision_rate": 0.0,
+        "collision_ci95": [
+          0.0,
+          16.11
+        ],
+        "envelope_violation_episodes": 9,
+        "envelope_violation_rate": 0.45,
+        "envelope_violation_steps": 725,
+        "envelope_violation_step_pct": 5.77,
+        "overall_min_clearance_m": 0.0002,
+        "successful_min_clearance_m": 0.0002,
+        "total_interventions": 3653,
+        "mean_interventions_per_ep": 182.7,
+        "mean_flight_time_s": 30.42
+      },
+      "paired_mcnemar": {
+        "both_succeed": 19,
+        "v3_only": 0,
+        "v4_only": 0,
+        "both_fail": 1,
+        "p_value": 1.0
+      }
+    },
+    "case_5_Actuation Latency & Scaling Error": {
+      "scaled_guided_bc_v3": {
+        "total_episodes": 20,
+        "success_count": 17,
+        "success_rate": 0.85,
+        "success_ci95": [
+          63.96,
+          94.76
+        ],
+        "timeouts": 3,
+        "timeout_rate": 0.15,
+        "collisions": 0,
+        "collision_rate": 0.0,
+        "collision_ci95": [
+          0.0,
+          16.11
+        ],
+        "envelope_violation_episodes": 10,
+        "envelope_violation_rate": 0.5,
+        "envelope_violation_steps": 656,
+        "envelope_violation_step_pct": 3.93,
+        "overall_min_clearance_m": 0.0001,
+        "successful_min_clearance_m": 0.0191,
+        "total_interventions": 2842,
+        "mean_interventions_per_ep": 142.1,
+        "mean_flight_time_s": 40.33
+      },
+      "scaled_guided_bc_v4": {
+        "total_episodes": 20,
+        "success_count": 17,
+        "success_rate": 0.85,
+        "success_ci95": [
+          63.96,
+          94.76
+        ],
+        "timeouts": 3,
+        "timeout_rate": 0.15,
+        "collisions": 0,
+        "collision_rate": 0.0,
+        "collision_ci95": [
+          0.0,
+          16.11
+        ],
+        "envelope_violation_episodes": 12,
+        "envelope_violation_rate": 0.6,
+        "envelope_violation_steps": 926,
+        "envelope_violation_step_pct": 5.49,
+        "overall_min_clearance_m": 0.0001,
+        "successful_min_clearance_m": 0.0002,
+        "total_interventions": 3281,
+        "mean_interventions_per_ep": 164.1,
+        "mean_flight_time_s": 40.81
+      },
+      "paired_mcnemar": {
+        "both_succeed": 16,
+        "v3_only": 1,
+        "v4_only": 1,
+        "both_fail": 2,
+        "p_value": 1.0
+      }
+    },
+    "case_6_Approach Sensor Blackout": {
+      "scaled_guided_bc_v3": {
+        "total_episodes": 20,
+        "success_count": 20,
+        "success_rate": 1.0,
+        "success_ci95": [
+          83.89,
+          100.0
+        ],
+        "timeouts": 0,
+        "timeout_rate": 0.0,
+        "collisions": 0,
+        "collision_rate": 0.0,
+        "collision_ci95": [
+          0.0,
+          16.11
+        ],
+        "envelope_violation_episodes": 7,
+        "envelope_violation_rate": 0.35,
+        "envelope_violation_steps": 288,
+        "envelope_violation_step_pct": 2.34,
+        "overall_min_clearance_m": 0.0002,
+        "successful_min_clearance_m": 0.0002,
+        "total_interventions": 3564,
+        "mean_interventions_per_ep": 178.2,
+        "mean_flight_time_s": 30.79
+      },
+      "scaled_guided_bc_v4": {
+        "total_episodes": 20,
+        "success_count": 20,
+        "success_rate": 1.0,
+        "success_ci95": [
+          83.89,
+          100.0
+        ],
+        "timeouts": 0,
+        "timeout_rate": 0.0,
+        "collisions": 0,
+        "collision_rate": 0.0,
+        "collision_ci95": [
+          0.0,
+          16.11
+        ],
+        "envelope_violation_episodes": 7,
+        "envelope_violation_rate": 0.35,
+        "envelope_violation_steps": 360,
+        "envelope_violation_step_pct": 2.91,
+        "overall_min_clearance_m": 0.0002,
+        "successful_min_clearance_m": 0.0002,
+        "total_interventions": 3646,
+        "mean_interventions_per_ep": 182.3,
+        "mean_flight_time_s": 30.88
+      },
+      "paired_mcnemar": {
+        "both_succeed": 20,
+        "v3_only": 0,
+        "v4_only": 0,
+        "both_fail": 0,
+        "p_value": 1.0
+      }
+    },
+    "case_7_Combined Moderate Disturbances": {
+      "scaled_guided_bc_v3": {
+        "total_episodes": 20,
+        "success_count": 19,
+        "success_rate": 0.95,
+        "success_ci95": [
+          76.39,
+          99.11
+        ],
+        "timeouts": 1,
+        "timeout_rate": 0.05,
+        "collisions": 0,
+        "collision_rate": 0.0,
+        "collision_ci95": [
+          0.0,
+          16.11
+        ],
+        "envelope_violation_episodes": 9,
+        "envelope_violation_rate": 0.45,
+        "envelope_violation_steps": 484,
+        "envelope_violation_step_pct": 3.21,
+        "overall_min_clearance_m": 0.0002,
+        "successful_min_clearance_m": 0.0002,
+        "total_interventions": 2469,
+        "mean_interventions_per_ep": 123.5,
+        "mean_flight_time_s": 37.07
+      },
+      "scaled_guided_bc_v4": {
+        "total_episodes": 20,
+        "success_count": 17,
+        "success_rate": 0.85,
+        "success_ci95": [
+          63.96,
+          94.76
+        ],
+        "timeouts": 3,
+        "timeout_rate": 0.15,
+        "collisions": 0,
+        "collision_rate": 0.0,
+        "collision_ci95": [
+          0.0,
+          16.11
+        ],
+        "envelope_violation_episodes": 10,
+        "envelope_violation_rate": 0.5,
+        "envelope_violation_steps": 1118,
+        "envelope_violation_step_pct": 7.15,
+        "overall_min_clearance_m": 0.0002,
+        "successful_min_clearance_m": 0.0002,
+        "total_interventions": 3392,
+        "mean_interventions_per_ep": 169.6,
+        "mean_flight_time_s": 37.15
+      },
+      "paired_mcnemar": {
+        "both_succeed": 17,
+        "v3_only": 2,
+        "v4_only": 0,
+        "both_fail": 1,
+        "p_value": 0.5
+      }
+    },
+    "case_8_Initial State Perturbations": {
+      "scaled_guided_bc_v3": {
+        "total_episodes": 20,
+        "success_count": 19,
+        "success_rate": 0.95,
+        "success_ci95": [
+          76.39,
+          99.11
+        ],
+        "timeouts": 1,
+        "timeout_rate": 0.05,
+        "collisions": 0,
+        "collision_rate": 0.0,
+        "collision_ci95": [
+          0.0,
+          16.11
+        ],
+        "envelope_violation_episodes": 2,
+        "envelope_violation_rate": 0.1,
+        "envelope_violation_steps": 437,
+        "envelope_violation_step_pct": 3.52,
+        "overall_min_clearance_m": 0.0346,
+        "successful_min_clearance_m": 0.0346,
+        "total_interventions": 3472,
+        "mean_interventions_per_ep": 173.6,
+        "mean_flight_time_s": 30.06
+      },
+      "scaled_guided_bc_v4": {
+        "total_episodes": 20,
+        "success_count": 20,
+        "success_rate": 1.0,
+        "success_ci95": [
+          83.89,
+          100.0
+        ],
+        "timeouts": 0,
+        "timeout_rate": 0.0,
+        "collisions": 0,
+        "collision_rate": 0.0,
+        "collision_ci95": [
+          0.0,
+          16.11
+        ],
+        "envelope_violation_episodes": 5,
+        "envelope_violation_rate": 0.25,
+        "envelope_violation_steps": 237,
+        "envelope_violation_step_pct": 1.9,
+        "overall_min_clearance_m": 0.0003,
+        "successful_min_clearance_m": 0.0003,
+        "total_interventions": 3364,
+        "mean_interventions_per_ep": 168.2,
+        "mean_flight_time_s": 31.15
+      },
+      "paired_mcnemar": {
+        "both_succeed": 19,
+        "v3_only": 0,
+        "v4_only": 1,
+        "both_fail": 0,
+        "p_value": 1.0
+      }
+    }
+  },
+  "overall": {
+    "scaled_guided_bc_v3": {
+      "total_episodes": 160,
+      "success_count": 154,
+      "success_rate": 0.9625,
+      "success_ci95": [
+        92.06,
+        98.27
+      ],
+      "timeouts": 6,
+      "timeout_rate": 0.0375,
+      "collisions": 0,
+      "collision_rate": 0.0,
+      "collision_ci95": [
+        0.0,
+        2.34
+      ],
+      "envelope_violation_episodes": 55,
+      "envelope_violation_rate": 0.3438,
+      "envelope_violation_steps": 3642,
+      "envelope_violation_step_pct": 3.47,
+      "overall_min_clearance_m": 0.0001,
+      "successful_min_clearance_m": 0.0002,
+      "total_interventions": 25549,
+      "mean_interventions_per_ep": 159.7,
+      "mean_flight_time_s": 32.15
+    },
+    "scaled_guided_bc_v4": {
+      "total_episodes": 160,
+      "success_count": 153,
+      "success_rate": 0.9563,
+      "success_ci95": [
+        91.25,
+        97.86
+      ],
+      "timeouts": 7,
+      "timeout_rate": 0.0437,
+      "collisions": 0,
+      "collision_rate": 0.0,
+      "collision_ci95": [
+        0.0,
+        2.34
+      ],
+      "envelope_violation_episodes": 56,
+      "envelope_violation_rate": 0.35,
+      "envelope_violation_steps": 3880,
+      "envelope_violation_step_pct": 3.69,
+      "overall_min_clearance_m": 0.0001,
+      "successful_min_clearance_m": 0.0002,
+      "total_interventions": 26132,
+      "mean_interventions_per_ep": 163.3,
+      "mean_flight_time_s": 32.1
+    }
+  }
+}

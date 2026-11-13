@@ -1,0 +1,71 @@
+{
+  "benchmark_title": "Frozen UAV Navigation Benchmark: scaled_guided_bc_v2 vs scaled_guided_bc_v3",
+  "timestamp_iso": "2026-10-31T01:30:00Z",
+  "physical_drone_radius_m": 0.325,
+  "physical_drone_diagonal_m": 0.65,
+  "shared_model_checkpoint": {
+    "path": "models/checkpoints/bc_policy_scaled_v2.pt",
+    "sha256": "d02d5712a3e292c535c8ff78898c7c0a8d5758c8fd0a22738c998f67c8ba79d1",
+    "observation_dim": 23,
+    "action_dim": 4,
+    "policy_architecture": "MLP [128, 128] ELU"
+  },
+  "guidance_configurations": {
+    "scaled_guided_bc_v2": {
+      "activation_threshold_m": 1.275,
+      "min_lateral_override_mps": 0.35,
+      "persistent_tie_breaking": false,
+      "deadband_m": 0.08,
+      "hysteresis_m": 0.06,
+      "default_tie_breaker": "LEFT",
+      "forward_ray_indices": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ]
+    },
+    "scaled_guided_bc_v3": {
+      "activation_threshold_m": 1.375,
+      "min_lateral_override_mps": 0.4,
+      "persistent_tie_breaking": true,
+      "deadband_m": 0.08,
+      "hysteresis_m": 0.06,
+      "default_tie_breaker": "LEFT",
+      "forward_ray_indices": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ]
+    }
+  },
+  "safety_supervisor_configuration": {
+    "boundary_buffer_m": 0.35,
+    "critical_obstacle_dist_m": 0.525,
+    "emergency_reverse_dist_m": 0.42500000000000004,
+    "obstacle_caution_dist_m": 1.175,
+    "critical_lateral_dist_m": 0.35,
+    "caution_lateral_dist_m": 0.6,
+    "repulsion_gain": 1.5,
+    "deceleration_limit_mps2": 0.8
+  },
+  "source_file_hashes": {
+    "models/checkpoints/bc_policy_scaled_v2.pt": "d02d5712a3e292c535c8ff78898c7c0a8d5758c8fd0a22738c998f67c8ba79d1",
+    "controllers/bc_policy.py": "af3e145821c9ba50570ad32df9c625750bee93b0ebe0e76b29b10e01eb9a219c",
+    "controllers/safety_supervisor.py": "a029b2a959520827e8d838122abbf25460b931bd93a18f8a2a7d749c86446201",
+    "controllers/registry.py": "12e291f80c1a28e6a491046b3bf34fe2eec23cce7984540b23cd8bffc4c44707",
+    "core/guidance.py": "711de94da2f20474f9d03c772361083ecce11c4350163e95a86667661ccc3071",
+    "core/contracts.py": "1272af8f2f301f854ab75b0088e4032f464789379c8120825aa747b1580967ab",
+    "core/geometry.py": "2ae5f500919c6cab86bbb9d93718bdb61f99fca42794b79a218eef51510ae80c",
+    "core/physical_dimensions.py": "29374ab81800d3950bb391f0826066d0c6d1b08a6ca8e13411de5508c863ca66",
+    "sim/corridor_env.py": "33725604d1d3eeb131528412831dc3a54fa088c853ab5b4a542d1254cb908f5b",
+    "scripts/run_exhaustive_v2_vs_v3_evaluation.py": "2cb0afd09cca08393d48f633d4968ea59f7adb1015943be1d134c8ddca0360ea",
+    "scripts/run_untouched_confirmation_sweep.py": "2ddef378dd83bf7c35bd3144a9c2b262671e8fd169f7bce44bcec1d0d00679ac",
+    "scripts/analyze_exhaustive_sweep_statistics.py": "00583935e19dbafe56e31a9ba661324b8b33593d2fa6ff5d4462d8fe659ac8b8",
+    "scripts/audit_existing_results.py": "17108b6d37bc39eb02487c892961e1ea64694a08ee85dc3e24a62f5a67be44d2",
+    "tests/test_regression_harness_integrity.py": "8f70f35bb670425419d680eb8f4715e4ea34b980233d18453ec1e1ff2f9020ce"
+  }
+}

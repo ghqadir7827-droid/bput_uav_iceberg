@@ -1,0 +1,94 @@
+{
+  "experiment_name": "Phase 4J-G Horizon Sensitivity and Policy-Supervisor Compatibility Audit",
+  "checkpoint": "models/checkpoints/bc_policy_best.pt",
+  "checkpoint_sha256": "93c4d7d1d8476b8d288a24fca1862d87133696f78b9603aa622bcc367afad44f",
+  "canonical_supervisor_sha256": "9f84af22821f0f1473ea963b0f33a1924d1c4e7a487d4ed7893b7efc56fcd26f",
+  "caution_distance_m": 0.5,
+  "num_seeds": 50,
+  "seed_range": [
+    2000,
+    2049
+  ],
+  "dt_s": 0.05,
+  "contingency_table": {
+    "both_succeed": 24,
+    "500_steps_only": 0,
+    "600_steps_only": 0,
+    "both_fail": 26,
+    "mcnemar_exact_p_value": 1.0
+  },
+  "horizons": {
+    "500_steps": {
+      "max_steps": 500,
+      "duration_limit_s": 25.0,
+      "successes": 24,
+      "success_rate_pct": 48.0,
+      "wilson_95_ci_pct": [
+        34.8,
+        61.5
+      ],
+      "obstacle_collisions": 0,
+      "boundary_collisions": 0,
+      "obstacle_envelope_violations": 0,
+      "boundary_envelope_violations": 0,
+      "mean_forward_progress_m": 6.525,
+      "mean_duration_s": 22.99,
+      "absolute_min_obs_clearance_m": 0.107,
+      "absolute_min_boundary_clearance_m": 0.2537
+    },
+    "600_steps": {
+      "max_steps": 600,
+      "duration_limit_s": 30.0,
+      "successes": 24,
+      "success_rate_pct": 48.0,
+      "wilson_95_ci_pct": [
+        34.8,
+        61.5
+      ],
+      "success_rate_at_step_500_pct": 48.0,
+      "additional_successes_steps_501_600": 0,
+      "obstacle_collisions": 0,
+      "boundary_collisions": 0,
+      "obstacle_envelope_violations": 0,
+      "boundary_envelope_violations": 0,
+      "mean_forward_progress_m": 6.528,
+      "mean_duration_s": 25.59,
+      "absolute_min_obs_clearance_m": 0.107,
+      "absolute_min_boundary_clearance_m": 0.2537
+    }
+  },
+  "failure_taxonomy_distribution": {
+    "SUCCESS": 24,
+    "PERSISTENT_STANDOFF_PILLAR_3": 10,
+    "PERSISTENT_STANDOFF_PILLAR_1": 6,
+    "PERSISTENT_STANDOFF_PILLAR_2": 10
+  },
+  "policy_supervisor_compatibility": {
+    "canonical": {
+      "total_steps": 22986,
+      "opposing_steps": 36,
+      "fraction_opposing": 0.00157,
+      "clamped_steps": 704,
+      "fraction_clamped": 0.03063,
+      "mean_conflict_magnitude_mps": 0.1858,
+      "max_conflict_magnitude_mps": 0.2272,
+      "mean_conflict_duration_steps": 1.0,
+      "max_conflict_duration_steps": 1,
+      "mean_dx_during_conflict_m": 0.0009,
+      "mean_dx_during_nominal_m": 0.0142
+    },
+    "guidance": {
+      "total_steps": 23021,
+      "opposing_steps": 202,
+      "fraction_opposing": 0.00877,
+      "clamped_steps": 1214,
+      "fraction_clamped": 0.05273,
+      "mean_conflict_magnitude_mps": 0.1064,
+      "max_conflict_magnitude_mps": 0.2272,
+      "mean_conflict_duration_steps": 1.64,
+      "max_conflict_duration_steps": 9,
+      "mean_dx_during_conflict_m": 0.0015,
+      "mean_dx_during_nominal_m": 0.0147
+    }
+  }
+}

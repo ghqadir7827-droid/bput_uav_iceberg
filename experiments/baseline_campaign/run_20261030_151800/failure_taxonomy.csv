@@ -1,0 +1,10 @@
+outcome_code,description,reactive_count,reactive_rate_pct,reactive_fraction,random_count,random_rate_pct,random_fraction,sample_reactive_seeds,sample_random_seeds
+SUCCESS,Goal reached within tolerance and speed limit with 0 collisions/violations,1197,99.75,1197/1200,116,9.67,116/1200,"[10000, 10001, 10002, 10003, 10004, 10005, 10006, 10007, 10008, 10010]","[10025, 10042, 10045, 10050, 10059, 10063, 10064, 10080, 10089, 10104]"
+OBSTACLE_COLLISION,Physical boundary penetration into internal obstacle,0,0.0,0/1200,0,0.0,0/1200,[],[]
+WALL_COLLISION,Physical boundary penetration into corridor wall/floor/ceiling,0,0.0,0/1200,0,0.0,0/1200,[],[]
+SAFETY_ENVELOPE_VIOLATION,Clearance dropped below 0.08m without physical collision,1,0.08,1/1200,1,0.08,1/1200,[10667],[11101]
+SPATIAL_STANDSTILL,Trapped in motionless hover (speed < 0.02 m/s) near obstacle/wall until timeout,0,0.0,0/1200,0,0.0,0/1200,[],[]
+OSCILLATION,Trapped in repetitive high-frequency lateral limit cycle or chattering,1,0.08,1/1200,625,52.08,625/1200,[10009],"[10002, 10005, 10007, 10010, 10011, 10012, 10014, 10015, 10016, 10017]"
+TIMEOUT_1000,"Actively in flight but exhausted 1,000 steps without reaching goal",1,0.08,1/1200,457,38.08,457/1200,[10131],"[10000, 10001, 10003, 10004, 10006, 10008, 10009, 10013, 10022, 10024]"
+GOAL_ALIGNMENT_FAILURE,Reached goal sphere but speed exceeded 0.35 m/s and failed to stop,0,0.0,0/1200,1,0.08,1/1200,[],[10474]
+OTHER_FAILURE,Unclassified failure or anomaly,0,0.0,0/1200,0,0.0,0/1200,[],[]

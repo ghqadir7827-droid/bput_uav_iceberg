@@ -1,0 +1,401 @@
+tier,level,seed,controller_id,is_feasible,status,success,safe_rejection,timeout,obstacle_collision,wall_collision,collision_episode,safety_envelope_violation,envelope_violation_steps,total_steps,flight_time_s,flight_distance_m,mean_speed_mps,min_obstacle_clearance_m,min_wall_clearance_m,overall_min_clearance_m,safety_interventions,terminal_dist_to_goal_m,bottleneck_gap_m,guidance_activations,tie_break_activations
+Level 1 Independent (Basic),1,26100,scaled_guided_bc_v2,True,SUCCESS,True,False,False,False,False,False,False,0,557,27.85,14.123,0.507,0.6034,0.7412,0.6034,65,0.549,2.1663,144,12
+Level 1 Independent (Basic),1,26101,scaled_guided_bc_v2,True,SUCCESS,True,False,False,False,False,False,False,0,795,39.75,19.482,0.49,0.4898,0.2813,0.2813,130,0.536,2.0099,312,23
+Level 1 Independent (Basic),1,26102,scaled_guided_bc_v2,True,SUCCESS,True,False,False,False,False,False,False,0,856,42.8,20.273,0.474,0.2352,0.2897,0.2352,170,0.548,2.0763,388,54
+Level 1 Independent (Basic),1,26103,scaled_guided_bc_v2,True,SUCCESS,True,False,False,False,False,False,False,0,835,41.75,20.414,0.489,0.3008,0.2275,0.2275,176,0.541,2.0062,387,34
+Level 1 Independent (Basic),1,26104,scaled_guided_bc_v2,True,TIMEOUT,False,False,True,False,False,False,True,793,1000,50.0,17.937,0.359,0.118,1.0099,0.118,910,10.4,2.0367,938,543
+Level 1 Independent (Basic),1,26105,scaled_guided_bc_v2,True,SUCCESS,True,False,False,False,False,False,False,0,836,41.8,19.598,0.469,0.2018,0.2845,0.2018,175,0.546,2.0797,392,65
+Level 1 Independent (Basic),1,26106,scaled_guided_bc_v2,True,SUCCESS,True,False,False,False,False,False,True,7,581,29.05,14.953,0.515,0.1436,0.7512,0.1436,48,0.547,2.2107,128,18
+Level 1 Independent (Basic),1,26107,scaled_guided_bc_v2,True,SUCCESS,True,False,False,False,False,False,False,0,669,33.45,16.283,0.487,0.2732,0.5518,0.2732,147,0.535,2.0704,285,46
+Level 1 Independent (Basic),1,26108,scaled_guided_bc_v2,True,TIMEOUT,False,False,True,False,False,False,True,764,1000,50.0,17.928,0.359,0.1312,1.0097,0.1312,908,10.409,2.0657,940,557
+Level 1 Independent (Basic),1,26109,scaled_guided_bc_v2,True,SUCCESS,True,False,False,False,False,False,False,0,826,41.3,19.759,0.478,0.452,0.2714,0.2714,135,0.541,2.0411,399,44
+Level 1 Independent (Basic),1,26110,scaled_guided_bc_v2,True,SUCCESS,True,False,False,False,False,False,False,0,940,47.0,21.548,0.458,0.1995,0.284,0.1995,225,0.549,2.0288,474,88
+Level 1 Independent (Basic),1,26111,scaled_guided_bc_v2,True,TIMEOUT,False,False,True,False,False,False,True,21,1000,50.0,21.844,0.437,0.3537,0.1194,0.1194,113,14.495,2.0131,471,11
+Level 1 Independent (Basic),1,26112,scaled_guided_bc_v2,True,TIMEOUT,False,False,True,False,False,False,False,0,1000,50.0,23.571,0.471,0.3116,0.2102,0.2102,188,7.053,2.008,529,18
+Level 1 Independent (Basic),1,26113,scaled_guided_bc_v2,True,TIMEOUT,False,False,True,False,False,False,True,10,1000,50.0,24.017,0.48,0.1347,0.2888,0.1347,119,5.696,2.0036,492,34
+Level 1 Independent (Basic),1,26114,scaled_guided_bc_v2,True,SUCCESS,True,False,False,False,False,False,False,0,825,41.25,19.524,0.473,0.456,0.2879,0.2879,132,0.543,2.1039,354,18
+Level 1 Independent (Basic),1,26115,scaled_guided_bc_v2,True,SUCCESS,True,False,False,False,False,False,True,25,641,32.05,15.954,0.498,0.0934,0.6617,0.0934,111,0.541,2.0199,227,19
+Level 1 Independent (Basic),1,26116,scaled_guided_bc_v2,True,TIMEOUT,False,False,True,False,False,False,True,36,1000,50.0,22.33,0.447,0.1347,0.2868,0.1347,318,1.448,2.1214,586,164
+Level 1 Independent (Basic),1,26117,scaled_guided_bc_v2,True,TIMEOUT,False,False,True,False,False,False,True,54,1000,50.0,24.235,0.485,0.0003,0.2859,0.0003,146,3.581,2.1868,472,41
+Level 1 Independent (Basic),1,26118,scaled_guided_bc_v2,True,SUCCESS,True,False,False,False,False,False,False,0,876,43.8,20.273,0.463,0.3385,0.291,0.291,150,0.54,2.1309,392,48
+Level 1 Independent (Basic),1,26119,scaled_guided_bc_v2,True,TIMEOUT,False,False,True,False,False,False,True,46,1000,50.0,21.449,0.429,0.126,0.0998,0.0998,112,14.544,2.056,446,6
+Level 1 Independent (Basic),1,26120,scaled_guided_bc_v2,True,TIMEOUT,False,False,True,False,False,False,True,101,1000,50.0,21.781,0.436,0.062,0.6927,0.062,354,8.094,2.1041,573,217
+Level 1 Independent (Basic),1,26121,scaled_guided_bc_v2,True,SUCCESS,True,False,False,False,False,False,False,0,825,41.25,19.438,0.471,0.502,0.2707,0.2707,134,0.549,2.0057,367,31
+Level 1 Independent (Basic),1,26122,scaled_guided_bc_v2,True,TIMEOUT,False,False,True,False,False,False,False,0,1000,50.0,23.07,0.461,0.2522,0.2153,0.2153,170,7.781,2.0427,511,29
+Level 1 Independent (Basic),1,26123,scaled_guided_bc_v2,True,TIMEOUT,False,False,True,False,False,False,True,33,1000,50.0,21.616,0.432,0.1586,0.0321,0.0321,106,14.794,2.0123,440,3
+Level 1 Independent (Basic),1,26124,scaled_guided_bc_v2,True,TIMEOUT,False,False,True,False,False,False,True,21,1000,50.0,21.716,0.434,0.178,0.1124,0.1124,108,14.569,2.1404,444,3
+Level 1 Independent (Basic),1,26125,scaled_guided_bc_v2,True,SUCCESS,True,False,False,False,False,False,False,0,807,40.35,19.329,0.479,0.3485,0.2869,0.2869,134,0.547,2.1336,365,42
+Level 1 Independent (Basic),1,26126,scaled_guided_bc_v2,True,SUCCESS,True,False,False,False,False,False,True,12,806,40.3,19.606,0.487,0.1276,0.2794,0.1276,137,0.54,2.044,376,53
+Level 1 Independent (Basic),1,26127,scaled_guided_bc_v2,True,SUCCESS,True,False,False,False,False,False,False,0,654,32.7,15.66,0.479,0.4355,0.5547,0.4355,84,0.542,2.1239,221,18
+Level 1 Independent (Basic),1,26128,scaled_guided_bc_v2,True,TIMEOUT,False,False,True,False,False,False,True,814,1000,50.0,17.919,0.358,0.1113,1.0097,0.1113,909,10.409,2.0442,938,558
+Level 1 Independent (Basic),1,26129,scaled_guided_bc_v2,True,TIMEOUT,False,False,True,False,False,False,False,0,1000,50.0,22.253,0.445,0.3606,0.2803,0.2803,248,3.333,2.109,569,44
+Level 1 Independent (Basic),1,26130,scaled_guided_bc_v2,True,TIMEOUT,False,False,True,False,False,False,True,761,1000,50.0,17.887,0.358,0.124,1.01,0.124,906,10.407,2.0774,932,536
+Level 1 Independent (Basic),1,26131,scaled_guided_bc_v2,True,TIMEOUT,False,False,True,False,False,False,False,0,1000,50.0,23.652,0.473,0.4019,0.2131,0.2131,187,7.083,2.0349,524,16
+Level 1 Independent (Basic),1,26132,scaled_guided_bc_v2,True,SUCCESS,True,False,False,False,False,False,False,0,549,27.45,14.068,0.512,0.5816,0.7008,0.5816,89,0.549,2.0916,167,5
+Level 1 Independent (Basic),1,26133,scaled_guided_bc_v2,True,SUCCESS,True,False,False,False,False,False,True,18,653,32.65,16.048,0.492,0.1113,0.6547,0.1113,178,0.543,2.0671,249,64
+Level 1 Independent (Basic),1,26134,scaled_guided_bc_v2,True,SUCCESS,True,False,False,False,False,False,False,0,847,42.35,20.626,0.487,0.5855,0.2119,0.2119,167,0.542,2.0906,375,26
+Level 1 Independent (Basic),1,26135,scaled_guided_bc_v2,True,TIMEOUT,False,False,True,False,False,False,True,29,1000,50.0,21.62,0.432,0.1848,0.0696,0.0696,112,14.716,2.0051,446,1
+Level 1 Independent (Basic),1,26136,scaled_guided_bc_v2,True,SUCCESS,True,False,False,False,False,False,False,0,640,32.0,15.514,0.485,0.3732,0.5645,0.3732,79,0.544,2.071,217,15
+Level 1 Independent (Basic),1,26137,scaled_guided_bc_v2,True,TIMEOUT,False,False,True,False,False,False,True,51,1000,50.0,23.736,0.475,0.0677,0.3071,0.0677,112,6.466,2.0464,445,9
+Level 1 Independent (Basic),1,26138,scaled_guided_bc_v2,True,SUCCESS,True,False,False,False,False,False,False,0,788,39.4,18.429,0.468,0.3617,0.2946,0.2946,169,0.549,2.1914,369,52
+Level 1 Independent (Basic),1,26139,scaled_guided_bc_v2,True,TIMEOUT,False,False,True,False,False,False,True,15,1000,50.0,22.505,0.45,0.143,0.2785,0.143,108,8.558,2.1658,456,17
+Level 1 Independent (Basic),1,26140,scaled_guided_bc_v2,True,SUCCESS,True,False,False,False,False,False,True,9,922,46.1,22.475,0.488,0.1391,0.2554,0.1391,192,0.543,2.1258,429,62
+Level 1 Independent (Basic),1,26141,scaled_guided_bc_v2,True,TIMEOUT,False,False,True,False,False,False,True,753,1000,50.0,17.932,0.359,0.12,1.0103,0.12,909,10.402,2.0883,940,539
+Level 1 Independent (Basic),1,26142,scaled_guided_bc_v2,True,SUCCESS,True,False,False,False,False,False,False,0,547,27.35,14.138,0.517,0.3625,0.7741,0.3625,40,0.546,2.1972,88,2
+Level 1 Independent (Basic),1,26143,scaled_guided_bc_v2,True,SUCCESS,True,False,False,False,False,False,True,15,789,39.45,19.406,0.492,0.1213,0.2878,0.1213,103,0.539,2.0207,348,41
+Level 1 Independent (Basic),1,26144,scaled_guided_bc_v2,True,TIMEOUT,False,False,True,False,False,False,False,0,1000,50.0,22.668,0.453,0.2516,0.2763,0.2516,103,8.473,2.2343,468,22
+Level 1 Independent (Basic),1,26145,scaled_guided_bc_v2,True,SUCCESS,True,False,False,False,False,False,False,0,866,43.3,20.723,0.479,0.5917,0.2849,0.2849,183,0.538,2.0918,399,29
+Level 1 Independent (Basic),1,26146,scaled_guided_bc_v2,True,TIMEOUT,False,False,True,False,False,False,True,25,1000,50.0,21.774,0.435,0.1106,0.2699,0.1106,237,6.591,2.2026,577,108
+Level 1 Independent (Basic),1,26147,scaled_guided_bc_v2,True,SUCCESS,True,False,False,False,False,False,True,61,650,32.5,16.877,0.519,0.0099,0.5521,0.0099,82,0.548,2.0828,192,20
+Level 1 Independent (Basic),1,26148,scaled_guided_bc_v2,True,SUCCESS,True,False,False,False,False,False,False,0,640,32.0,15.73,0.492,0.373,0.5547,0.373,91,0.537,2.036,236,34
+Level 1 Independent (Basic),1,26149,scaled_guided_bc_v2,True,TIMEOUT,False,False,True,False,False,False,True,28,1000,50.0,21.724,0.434,0.1626,0.0761,0.0761,106,14.663,2.1081,427,2
+Level 1 Independent (Basic),1,26100,scaled_guided_bc_v3,True,SUCCESS,True,False,False,False,False,False,False,0,562,28.1,14.218,0.506,0.222,0.7525,0.222,10,0.545,2.1663,127,2
+Level 1 Independent (Basic),1,26101,scaled_guided_bc_v3,True,TIMEOUT,False,False,True,False,False,False,True,59,1000,50.0,25.488,0.51,0.0041,0.5743,0.0041,56,9.236,2.0099,524,45
+Level 1 Independent (Basic),1,26102,scaled_guided_bc_v3,True,SUCCESS,True,False,False,False,False,False,False,0,682,34.1,18.129,0.532,0.3226,0.5963,0.3226,65,0.54,2.0763,250,17
+Level 1 Independent (Basic),1,26103,scaled_guided_bc_v3,True,SUCCESS,True,False,False,False,False,False,False,0,619,30.95,16.304,0.527,0.3355,0.6069,0.3355,78,0.539,2.0062,202,14
+Level 1 Independent (Basic),1,26104,scaled_guided_bc_v3,True,SUCCESS,True,False,False,False,False,False,True,65,864,43.2,20.741,0.48,0.1246,0.577,0.1246,278,0.542,2.0367,464,102
+Level 1 Independent (Basic),1,26105,scaled_guided_bc_v3,True,SUCCESS,True,False,False,False,False,False,False,0,646,32.3,16.795,0.52,0.2213,0.5698,0.2213,119,0.536,2.0797,283,44
+Level 1 Independent (Basic),1,26106,scaled_guided_bc_v3,True,SUCCESS,True,False,False,False,False,False,False,0,663,33.15,16.923,0.511,0.3574,0.5013,0.3574,118,0.547,2.2107,264,27
+Level 1 Independent (Basic),1,26107,scaled_guided_bc_v3,True,SUCCESS,True,False,False,False,False,False,False,0,696,34.8,17.646,0.507,0.4155,0.5741,0.4155,98,0.546,2.0704,299,27
+Level 1 Independent (Basic),1,26108,scaled_guided_bc_v3,True,SUCCESS,True,False,False,False,False,False,False,0,666,33.3,17.224,0.517,0.525,0.6047,0.525,118,0.546,2.0657,265,20
+Level 1 Independent (Basic),1,26109,scaled_guided_bc_v3,True,SUCCESS,True,False,False,False,False,False,False,0,672,33.6,17.134,0.51,0.4776,0.601,0.4776,100,0.547,2.0411,276,27
+Level 1 Independent (Basic),1,26110,scaled_guided_bc_v3,True,SUCCESS,True,False,False,False,False,False,False,0,614,30.7,16.226,0.529,0.4206,0.5739,0.4206,73,0.547,2.0288,260,30
+Level 1 Independent (Basic),1,26111,scaled_guided_bc_v3,True,SUCCESS,True,False,False,False,False,False,False,0,669,33.45,17.194,0.514,0.1676,0.616,0.1676,165,0.544,2.0131,309,65
+Level 1 Independent (Basic),1,26112,scaled_guided_bc_v3,True,SUCCESS,True,False,False,False,False,False,False,0,658,32.9,17.209,0.523,0.4691,0.6148,0.4691,98,0.542,2.008,251,14
+Level 1 Independent (Basic),1,26113,scaled_guided_bc_v3,True,SUCCESS,True,False,False,False,False,False,False,0,661,33.05,17.099,0.517,0.3437,0.5321,0.3437,122,0.539,2.0036,270,26
+Level 1 Independent (Basic),1,26114,scaled_guided_bc_v3,True,SUCCESS,True,False,False,False,False,False,False,0,610,30.5,15.75,0.516,0.4128,0.5595,0.4128,66,0.546,2.1039,215,17
+Level 1 Independent (Basic),1,26115,scaled_guided_bc_v3,True,SUCCESS,True,False,False,False,False,False,False,0,648,32.4,16.68,0.515,0.393,0.6157,0.393,107,0.54,2.0199,252,16
+Level 1 Independent (Basic),1,26116,scaled_guided_bc_v3,True,SUCCESS,True,False,False,False,False,False,False,0,669,33.45,17.226,0.515,0.2196,0.5732,0.2196,111,0.541,2.1214,314,53
+Level 1 Independent (Basic),1,26117,scaled_guided_bc_v3,True,SUCCESS,True,False,False,False,False,False,False,0,621,31.05,16.495,0.531,0.3912,0.5786,0.3912,73,0.543,2.1868,226,29
+Level 1 Independent (Basic),1,26118,scaled_guided_bc_v3,True,SUCCESS,True,False,False,False,False,False,False,0,658,32.9,17.205,0.523,0.4353,0.5548,0.4353,110,0.539,2.1309,277,33
+Level 1 Independent (Basic),1,26119,scaled_guided_bc_v3,True,SUCCESS,True,False,False,False,False,False,False,0,768,38.4,19.178,0.499,0.1545,0.5699,0.1545,206,0.546,2.056,385,70
+Level 1 Independent (Basic),1,26120,scaled_guided_bc_v3,True,SUCCESS,True,False,False,False,False,False,False,0,725,36.25,18.326,0.506,0.1973,0.5658,0.1973,149,0.549,2.1041,338,55
+Level 1 Independent (Basic),1,26121,scaled_guided_bc_v3,True,SUCCESS,True,False,False,False,False,False,False,0,673,33.65,17.047,0.507,0.4709,0.5963,0.4709,72,0.537,2.0057,258,24
+Level 1 Independent (Basic),1,26122,scaled_guided_bc_v3,True,SUCCESS,True,False,False,False,False,False,False,0,683,34.15,17.749,0.52,0.3702,0.5089,0.3702,153,0.548,2.0427,302,51
+Level 1 Independent (Basic),1,26123,scaled_guided_bc_v3,True,SUCCESS,True,False,False,False,False,False,False,0,664,33.2,17.231,0.519,0.5798,0.594,0.5798,123,0.547,2.0123,269,15
+Level 1 Independent (Basic),1,26124,scaled_guided_bc_v3,True,TIMEOUT,False,False,True,False,False,False,True,50,1000,50.0,25.422,0.508,0.0361,0.5778,0.0361,96,9.25,2.1404,548,29
+Level 1 Independent (Basic),1,26125,scaled_guided_bc_v3,True,SUCCESS,True,False,False,False,False,False,False,0,667,33.35,17.271,0.518,0.3582,0.5622,0.3582,85,0.543,2.1336,285,40
+Level 1 Independent (Basic),1,26126,scaled_guided_bc_v3,True,TIMEOUT,False,False,True,False,False,False,False,0,1000,50.0,24.05,0.481,0.285,0.2303,0.2303,104,8.372,2.044,554,45
+Level 1 Independent (Basic),1,26127,scaled_guided_bc_v3,True,SUCCESS,True,False,False,False,False,False,False,0,599,29.95,15.784,0.527,0.4878,0.5331,0.4878,82,0.547,2.1239,223,35
+Level 1 Independent (Basic),1,26128,scaled_guided_bc_v3,True,SUCCESS,True,False,False,False,False,False,True,24,802,40.1,19.923,0.497,0.1358,0.5545,0.1358,261,0.54,2.0442,434,95
+Level 1 Independent (Basic),1,26129,scaled_guided_bc_v3,True,SUCCESS,True,False,False,False,False,False,False,0,671,33.55,17.086,0.509,0.6133,0.5977,0.5977,72,0.538,2.109,253,16
+Level 1 Independent (Basic),1,26130,scaled_guided_bc_v3,True,SUCCESS,True,False,False,False,False,False,True,21,776,38.8,18.614,0.48,0.1392,0.5164,0.1392,245,0.546,2.0774,392,94
+Level 1 Independent (Basic),1,26131,scaled_guided_bc_v3,True,SUCCESS,True,False,False,False,False,False,False,0,657,32.85,17.098,0.52,0.3972,0.5557,0.3972,100,0.542,2.0349,251,26
+Level 1 Independent (Basic),1,26132,scaled_guided_bc_v3,True,SUCCESS,True,False,False,False,False,False,False,0,602,30.1,15.782,0.524,0.4476,0.5841,0.4476,112,0.545,2.0916,230,14
+Level 1 Independent (Basic),1,26133,scaled_guided_bc_v3,True,SUCCESS,True,False,False,False,False,False,False,0,724,36.2,18.196,0.503,0.2749,0.5811,0.2749,135,0.542,2.0671,331,48
+Level 1 Independent (Basic),1,26134,scaled_guided_bc_v3,True,TIMEOUT,False,False,True,False,False,False,False,0,1000,50.0,24.457,0.489,0.3522,0.2033,0.2033,133,8.596,2.0906,532,29
+Level 1 Independent (Basic),1,26135,scaled_guided_bc_v3,True,SUCCESS,True,False,False,False,False,False,False,0,662,33.1,17.117,0.517,0.4802,0.6012,0.4802,109,0.537,2.0051,256,16
+Level 1 Independent (Basic),1,26136,scaled_guided_bc_v3,True,SUCCESS,True,False,False,False,False,False,False,0,674,33.7,17.041,0.506,0.3969,0.528,0.3969,133,0.543,2.071,273,27
+Level 1 Independent (Basic),1,26137,scaled_guided_bc_v3,True,SUCCESS,True,False,False,False,False,False,False,0,588,29.4,15.564,0.529,0.5324,0.5956,0.5324,59,0.542,2.0464,205,16
+Level 1 Independent (Basic),1,26138,scaled_guided_bc_v3,True,SUCCESS,True,False,False,False,False,False,False,0,685,34.25,17.343,0.506,0.6041,0.6101,0.6041,70,0.55,2.1914,271,24
+Level 1 Independent (Basic),1,26139,scaled_guided_bc_v3,True,SUCCESS,True,False,False,False,False,False,False,0,670,33.5,17.543,0.524,0.3737,0.5221,0.3737,139,0.544,2.1658,291,40
+Level 1 Independent (Basic),1,26140,scaled_guided_bc_v3,True,SUCCESS,True,False,False,False,False,False,False,0,629,31.45,16.549,0.526,0.3144,0.5127,0.3144,92,0.538,2.1258,223,24
+Level 1 Independent (Basic),1,26141,scaled_guided_bc_v3,True,TIMEOUT,False,False,True,False,False,False,True,20,1000,50.0,21.824,0.436,0.1497,0.1294,0.1294,210,13.005,2.0883,561,71
+Level 1 Independent (Basic),1,26142,scaled_guided_bc_v3,True,SUCCESS,True,False,False,False,False,False,False,0,527,26.35,14.126,0.536,0.2858,0.8477,0.2858,15,0.539,2.1972,101,7
+Level 1 Independent (Basic),1,26143,scaled_guided_bc_v3,True,SUCCESS,True,False,False,False,False,False,True,47,782,39.1,19.107,0.489,0.139,0.5947,0.139,224,0.535,2.0207,393,95
+Level 1 Independent (Basic),1,26144,scaled_guided_bc_v3,True,SUCCESS,True,False,False,False,False,False,False,0,664,33.2,17.241,0.519,0.331,0.4985,0.331,135,0.538,2.2343,283,34
+Level 1 Independent (Basic),1,26145,scaled_guided_bc_v3,True,SUCCESS,True,False,False,False,False,False,False,0,657,32.85,17.074,0.52,0.5364,0.6199,0.5364,84,0.536,2.0918,254,24
+Level 1 Independent (Basic),1,26146,scaled_guided_bc_v3,True,SUCCESS,True,False,False,False,False,False,False,0,677,33.85,17.152,0.507,0.5996,0.5963,0.5963,79,0.544,2.2026,259,25
+Level 1 Independent (Basic),1,26147,scaled_guided_bc_v3,True,SUCCESS,True,False,False,False,False,False,False,0,658,32.9,17.239,0.524,0.4039,0.4827,0.4039,140,0.546,2.0828,292,48
+Level 1 Independent (Basic),1,26148,scaled_guided_bc_v3,True,SUCCESS,True,False,False,False,False,False,True,18,590,29.5,15.359,0.521,0.1119,0.7265,0.1119,61,0.549,2.036,177,27
+Level 1 Independent (Basic),1,26149,scaled_guided_bc_v3,True,SUCCESS,True,False,False,False,False,False,False,0,662,33.1,17.289,0.522,0.506,0.5636,0.506,129,0.546,2.1081,273,28
+Level 2 Independent (Standard),2,26200,scaled_guided_bc_v2,True,SUCCESS,True,False,False,False,False,False,False,0,537,26.85,14.538,0.541,0.3629,0.5228,0.3629,142,0.491,1.7424,214,32
+Level 2 Independent (Standard),2,26201,scaled_guided_bc_v2,True,SUCCESS,True,False,False,False,False,False,False,0,640,32.0,16.068,0.502,0.2045,0.4959,0.2045,223,0.492,1.6512,308,86
+Level 2 Independent (Standard),2,26202,scaled_guided_bc_v2,True,SUCCESS,True,False,False,False,False,False,False,0,537,26.85,14.637,0.545,0.4281,0.6707,0.4281,88,0.491,2.0324,156,8
+Level 2 Independent (Standard),2,26203,scaled_guided_bc_v2,True,SUCCESS,True,False,False,False,False,False,False,0,564,28.2,15.274,0.542,0.435,0.5858,0.435,129,0.489,1.8312,217,16
+Level 2 Independent (Standard),2,26204,scaled_guided_bc_v2,True,SUCCESS,True,False,False,False,False,False,False,0,553,27.65,14.8,0.535,0.3118,0.5511,0.3118,133,0.488,1.7318,209,37
+Level 2 Independent (Standard),2,26205,scaled_guided_bc_v2,True,SUCCESS,True,False,False,False,False,False,False,0,771,38.55,18.288,0.474,0.1614,0.4443,0.1614,336,0.488,1.6589,445,107
+Level 2 Independent (Standard),2,26206,scaled_guided_bc_v2,True,TIMEOUT,False,False,True,False,False,False,True,591,1000,50.0,8.123,0.162,0.1249,0.3427,0.1249,800,6.405,2.1283,842,25
+Level 2 Independent (Standard),2,26207,scaled_guided_bc_v2,True,SUCCESS,True,False,False,False,False,False,False,0,503,25.15,13.641,0.542,0.5112,0.6964,0.5112,98,0.491,2.0063,148,10
+Level 2 Independent (Standard),2,26208,scaled_guided_bc_v2,True,SUCCESS,True,False,False,False,False,False,True,27,808,40.4,18.838,0.466,0.1415,0.3752,0.1415,326,0.494,1.6616,489,150
+Level 2 Independent (Standard),2,26209,scaled_guided_bc_v2,True,SUCCESS,True,False,False,False,False,False,True,13,681,34.05,17.113,0.503,0.1436,0.5627,0.1436,276,0.493,1.7622,372,84
+Level 2 Independent (Standard),2,26210,scaled_guided_bc_v2,True,SUCCESS,True,False,False,False,False,False,False,0,577,28.85,15.192,0.527,0.3463,0.4729,0.3463,194,0.49,1.7484,244,46
+Level 2 Independent (Standard),2,26211,scaled_guided_bc_v2,True,SUCCESS,True,False,False,False,False,False,False,0,732,36.6,17.73,0.484,0.1513,0.4652,0.1513,284,0.5,1.6689,401,94
+Level 2 Independent (Standard),2,26212,scaled_guided_bc_v2,True,SUCCESS,True,False,False,False,False,False,False,0,626,31.3,15.944,0.509,0.2854,0.4374,0.2854,158,0.492,1.8262,255,47
+Level 2 Independent (Standard),2,26213,scaled_guided_bc_v2,True,SUCCESS,True,False,False,False,False,False,False,0,587,29.35,15.249,0.52,0.2006,0.4649,0.2006,184,0.499,1.71,236,76
+Level 2 Independent (Standard),2,26214,scaled_guided_bc_v2,True,SUCCESS,True,False,False,False,False,False,True,14,613,30.65,14.76,0.482,0.1204,0.3728,0.1204,215,0.49,1.9439,268,28
+Level 2 Independent (Standard),2,26215,scaled_guided_bc_v2,True,SUCCESS,True,False,False,False,False,False,False,0,707,35.35,17.394,0.492,0.1514,0.5928,0.1514,284,0.491,1.7346,377,114
+Level 2 Independent (Standard),2,26216,scaled_guided_bc_v2,True,SUCCESS,True,False,False,False,False,False,False,0,517,25.85,14.378,0.556,0.4472,0.651,0.4472,131,0.493,1.9138,174,24
+Level 2 Independent (Standard),2,26217,scaled_guided_bc_v2,True,SUCCESS,True,False,False,False,False,False,False,0,537,26.85,14.457,0.538,0.4599,0.5681,0.4599,138,0.494,1.9,199,28
+Level 2 Independent (Standard),2,26218,scaled_guided_bc_v2,True,SUCCESS,True,False,False,False,False,False,False,0,537,26.85,14.329,0.534,0.4414,0.5756,0.4414,130,0.491,1.8495,194,28
+Level 2 Independent (Standard),2,26219,scaled_guided_bc_v2,True,TIMEOUT,False,False,True,False,False,False,True,122,1000,50.0,14.391,0.288,0.1436,0.3477,0.1436,688,1.484,1.8751,765,44
+Level 2 Independent (Standard),2,26220,scaled_guided_bc_v2,True,SUCCESS,True,False,False,False,False,False,False,0,590,29.5,15.706,0.532,0.3709,0.5185,0.3709,170,0.498,1.7097,258,51
+Level 2 Independent (Standard),2,26221,scaled_guided_bc_v2,True,SUCCESS,True,False,False,False,False,False,False,0,516,25.8,14.3,0.554,0.4002,0.6218,0.4002,127,0.495,1.8498,168,25
+Level 2 Independent (Standard),2,26222,scaled_guided_bc_v2,True,SUCCESS,True,False,False,False,False,False,True,125,865,43.25,20.146,0.466,0.1338,0.5844,0.1338,450,0.495,1.653,526,197
+Level 2 Independent (Standard),2,26223,scaled_guided_bc_v2,True,SUCCESS,True,False,False,False,False,False,False,0,597,29.85,15.578,0.522,0.3592,0.4954,0.3592,131,0.499,1.6905,215,38
+Level 2 Independent (Standard),2,26224,scaled_guided_bc_v2,True,SUCCESS,True,False,False,False,False,False,False,0,608,30.4,15.323,0.504,0.2669,0.4096,0.2669,232,0.486,1.8096,285,44
+Level 2 Independent (Standard),2,26225,scaled_guided_bc_v2,True,SUCCESS,True,False,False,False,False,False,False,0,607,30.35,15.427,0.508,0.2295,0.4056,0.2295,174,0.5,1.7673,254,50
+Level 2 Independent (Standard),2,26226,scaled_guided_bc_v2,True,SUCCESS,True,False,False,False,False,False,False,0,578,28.9,15.22,0.527,0.336,0.4522,0.336,167,0.489,1.6744,238,43
+Level 2 Independent (Standard),2,26227,scaled_guided_bc_v2,True,SUCCESS,True,False,False,False,False,False,False,0,576,28.8,15.301,0.531,0.1827,0.5265,0.1827,170,0.493,1.7253,240,72
+Level 2 Independent (Standard),2,26228,scaled_guided_bc_v2,True,SUCCESS,True,False,False,False,False,False,False,0,591,29.55,15.179,0.514,0.2888,0.4454,0.2888,185,0.493,1.6842,245,80
+Level 2 Independent (Standard),2,26229,scaled_guided_bc_v2,True,SUCCESS,True,False,False,False,False,False,False,0,517,25.85,14.1,0.545,0.4202,0.7266,0.4202,72,0.488,2.0553,151,17
+Level 2 Independent (Standard),2,26230,scaled_guided_bc_v2,True,SUCCESS,True,False,False,False,False,False,True,30,849,42.45,19.244,0.453,0.0004,0.2224,0.0004,335,0.488,1.9533,476,38
+Level 2 Independent (Standard),2,26231,scaled_guided_bc_v2,True,SUCCESS,True,False,False,False,False,False,False,0,628,31.4,15.898,0.506,0.283,0.4438,0.283,227,0.486,1.8103,306,64
+Level 2 Independent (Standard),2,26232,scaled_guided_bc_v2,True,SUCCESS,True,False,False,False,False,False,False,0,589,29.45,15.458,0.525,0.3672,0.5417,0.3672,116,0.494,1.7722,231,14
+Level 2 Independent (Standard),2,26233,scaled_guided_bc_v2,True,SUCCESS,True,False,False,False,False,False,False,0,589,29.45,15.2,0.516,0.2797,0.4415,0.2797,159,0.498,1.6726,231,49
+Level 2 Independent (Standard),2,26234,scaled_guided_bc_v2,True,SUCCESS,True,False,False,False,False,False,False,0,709,35.45,17.147,0.484,0.1544,0.4206,0.1544,281,0.492,1.7092,388,98
+Level 2 Independent (Standard),2,26235,scaled_guided_bc_v2,True,SUCCESS,True,False,False,False,False,False,False,0,643,32.15,15.627,0.486,0.2205,0.3733,0.2205,161,0.497,1.8351,281,61
+Level 2 Independent (Standard),2,26236,scaled_guided_bc_v2,True,SUCCESS,True,False,False,False,False,False,False,0,590,29.5,15.377,0.521,0.3164,0.4554,0.3164,156,0.495,1.6534,240,27
+Level 2 Independent (Standard),2,26237,scaled_guided_bc_v2,True,SUCCESS,True,False,False,False,False,False,True,52,651,32.55,16.916,0.52,0.0003,0.4067,0.0003,225,0.487,1.7316,319,70
+Level 2 Independent (Standard),2,26238,scaled_guided_bc_v2,True,SUCCESS,True,False,False,False,False,False,False,0,590,29.5,15.43,0.523,0.323,0.5182,0.323,135,0.495,1.7028,223,17
+Level 2 Independent (Standard),2,26239,scaled_guided_bc_v2,True,SUCCESS,True,False,False,False,False,False,True,42,801,40.05,18.671,0.466,0.1407,0.4219,0.1407,402,0.497,1.6819,476,157
+Level 2 Independent (Standard),2,26240,scaled_guided_bc_v2,True,SUCCESS,True,False,False,False,False,False,True,49,627,31.35,16.489,0.526,0.0003,0.4101,0.0003,202,0.499,1.8017,290,72
+Level 2 Independent (Standard),2,26241,scaled_guided_bc_v2,True,SUCCESS,True,False,False,False,False,False,True,74,792,39.6,18.538,0.468,0.1365,0.5753,0.1365,394,0.498,1.6733,471,177
+Level 2 Independent (Standard),2,26242,scaled_guided_bc_v2,True,SUCCESS,True,False,False,False,False,False,False,0,602,30.1,15.314,0.509,0.2555,0.3947,0.2555,166,0.491,1.768,248,44
+Level 2 Independent (Standard),2,26243,scaled_guided_bc_v2,True,SUCCESS,True,False,False,False,False,False,False,0,631,31.55,16.07,0.509,0.1779,0.4666,0.1779,221,0.487,1.691,302,86
+Level 2 Independent (Standard),2,26244,scaled_guided_bc_v2,True,TIMEOUT,False,False,True,False,False,False,True,400,1000,50.0,22.492,0.45,0.1251,0.5747,0.1251,664,1.708,1.658,756,334
+Level 2 Independent (Standard),2,26245,scaled_guided_bc_v2,True,SUCCESS,True,False,False,False,False,False,False,0,700,35.0,16.648,0.476,0.2137,0.3656,0.2137,216,0.495,1.8476,347,87
+Level 2 Independent (Standard),2,26246,scaled_guided_bc_v2,True,SUCCESS,True,False,False,False,False,False,False,0,573,28.65,15.257,0.533,0.4025,0.5798,0.4025,111,0.489,1.9089,216,8
+Level 2 Independent (Standard),2,26247,scaled_guided_bc_v2,True,SUCCESS,True,False,False,False,False,False,False,0,525,26.25,14.189,0.541,0.4427,0.6717,0.4427,99,0.493,1.8982,160,4
+Level 2 Independent (Standard),2,26248,scaled_guided_bc_v2,True,SUCCESS,True,False,False,False,False,False,False,0,632,31.6,16.042,0.508,0.2851,0.4217,0.2851,174,0.488,1.8901,273,45
+Level 2 Independent (Standard),2,26249,scaled_guided_bc_v2,True,SUCCESS,True,False,False,False,False,False,False,0,596,29.8,15.412,0.517,0.321,0.4637,0.321,150,0.498,1.6545,243,31
+Level 2 Independent (Standard),2,26200,scaled_guided_bc_v3,True,SUCCESS,True,False,False,False,False,False,False,0,525,26.25,14.748,0.562,0.3332,0.5288,0.3332,122,0.491,1.7424,220,34
+Level 2 Independent (Standard),2,26201,scaled_guided_bc_v3,True,SUCCESS,True,False,False,False,False,False,True,10,665,33.25,17.276,0.52,0.1184,0.4409,0.1184,226,0.5,1.6512,358,83
+Level 2 Independent (Standard),2,26202,scaled_guided_bc_v3,True,SUCCESS,True,False,False,False,False,False,True,18,512,25.6,14.082,0.55,0.0926,0.6607,0.0926,48,0.489,2.0324,142,7
+Level 2 Independent (Standard),2,26203,scaled_guided_bc_v3,True,SUCCESS,True,False,False,False,False,False,False,0,548,27.4,15.184,0.554,0.4268,0.5626,0.4268,114,0.494,1.8312,213,17
+Level 2 Independent (Standard),2,26204,scaled_guided_bc_v3,True,SUCCESS,True,False,False,False,False,False,False,0,641,32.05,16.934,0.528,0.1597,0.519,0.1597,213,0.499,1.7318,327,67
+Level 2 Independent (Standard),2,26205,scaled_guided_bc_v3,True,SUCCESS,True,False,False,False,False,False,False,0,632,31.6,16.504,0.522,0.1946,0.4414,0.1946,216,0.487,1.6589,317,69
+Level 2 Independent (Standard),2,26206,scaled_guided_bc_v3,True,TIMEOUT,False,False,True,False,False,False,True,617,1000,50.0,8.049,0.161,0.1227,0.3421,0.1227,812,6.396,2.1283,860,28
+Level 2 Independent (Standard),2,26207,scaled_guided_bc_v3,True,SUCCESS,True,False,False,False,False,False,False,0,490,24.5,13.455,0.549,0.1697,0.782,0.1697,50,0.495,2.0063,114,6
+Level 2 Independent (Standard),2,26208,scaled_guided_bc_v3,True,SUCCESS,True,False,False,False,False,False,False,0,625,31.25,16.277,0.521,0.302,0.3858,0.302,197,0.489,1.6616,309,76
+Level 2 Independent (Standard),2,26209,scaled_guided_bc_v3,True,SUCCESS,True,False,False,False,False,False,False,0,577,28.85,15.756,0.546,0.2236,0.5472,0.2236,204,0.491,1.7622,283,42
+Level 2 Independent (Standard),2,26210,scaled_guided_bc_v3,True,SUCCESS,True,False,False,False,False,False,False,0,580,29.0,15.484,0.534,0.3197,0.387,0.3197,176,0.488,1.7484,254,60
+Level 2 Independent (Standard),2,26211,scaled_guided_bc_v3,True,SUCCESS,True,False,False,False,False,False,False,0,701,35.05,16.105,0.459,0.2097,0.3596,0.2097,310,0.488,1.6689,400,52
+Level 2 Independent (Standard),2,26212,scaled_guided_bc_v3,True,SUCCESS,True,False,False,False,False,False,True,2,586,29.3,15.613,0.533,0.1479,0.3849,0.1479,135,0.487,1.8262,247,50
+Level 2 Independent (Standard),2,26213,scaled_guided_bc_v3,True,SUCCESS,True,False,False,False,False,False,False,0,631,31.55,16.416,0.52,0.2029,0.4275,0.2029,148,0.487,1.71,289,73
+Level 2 Independent (Standard),2,26214,scaled_guided_bc_v3,True,SUCCESS,True,False,False,False,False,False,False,0,597,29.85,14.945,0.501,0.2498,0.3596,0.2498,185,0.493,1.9439,281,61
+Level 2 Independent (Standard),2,26215,scaled_guided_bc_v3,True,SUCCESS,True,False,False,False,False,False,False,0,591,29.55,15.948,0.54,0.1885,0.6191,0.1885,171,0.486,1.7346,295,54
+Level 2 Independent (Standard),2,26216,scaled_guided_bc_v3,True,SUCCESS,True,False,False,False,False,False,False,0,508,25.4,14.598,0.575,0.388,0.6256,0.388,101,0.488,1.9138,194,22
+Level 2 Independent (Standard),2,26217,scaled_guided_bc_v3,True,SUCCESS,True,False,False,False,False,False,False,0,515,25.75,14.468,0.562,0.4059,0.6103,0.4059,107,0.492,1.9,200,14
+Level 2 Independent (Standard),2,26218,scaled_guided_bc_v3,True,SUCCESS,True,False,False,False,False,False,False,0,552,27.6,15.053,0.545,0.4179,0.5822,0.4179,111,0.495,1.8495,237,29
+Level 2 Independent (Standard),2,26219,scaled_guided_bc_v3,True,SUCCESS,True,False,False,False,False,False,False,0,626,31.3,15.765,0.504,0.2173,0.3622,0.2173,203,0.491,1.8751,319,55
+Level 2 Independent (Standard),2,26220,scaled_guided_bc_v3,True,SUCCESS,True,False,False,False,False,False,False,0,565,28.25,15.478,0.548,0.2727,0.507,0.2727,122,0.496,1.7097,234,29
+Level 2 Independent (Standard),2,26221,scaled_guided_bc_v3,True,SUCCESS,True,False,False,False,False,False,False,0,516,25.8,14.649,0.568,0.4161,0.5893,0.4161,122,0.489,1.8498,192,24
+Level 2 Independent (Standard),2,26222,scaled_guided_bc_v3,True,TIMEOUT,False,False,True,False,False,False,True,441,1000,50.0,17.273,0.345,0.1249,0.347,0.1249,836,6.388,1.653,898,259
+Level 2 Independent (Standard),2,26223,scaled_guided_bc_v3,True,SUCCESS,True,False,False,False,False,False,False,0,577,28.85,15.892,0.551,0.3517,0.4442,0.3517,121,0.49,1.6905,256,45
+Level 2 Independent (Standard),2,26224,scaled_guided_bc_v3,True,SUCCESS,True,False,False,False,False,False,False,0,594,29.7,15.378,0.518,0.2637,0.3675,0.2637,196,0.495,1.8096,283,67
+Level 2 Independent (Standard),2,26225,scaled_guided_bc_v3,True,SUCCESS,True,False,False,False,False,False,False,0,568,28.4,15.367,0.541,0.2273,0.4162,0.2273,166,0.498,1.7673,251,50
+Level 2 Independent (Standard),2,26226,scaled_guided_bc_v3,True,TIMEOUT,False,False,True,False,False,False,True,511,1000,50.0,10.25,0.205,0.1178,0.3319,0.1178,815,6.364,1.6744,891,94
+Level 2 Independent (Standard),2,26227,scaled_guided_bc_v3,True,SUCCESS,True,False,False,False,False,False,False,0,537,26.85,15.075,0.561,0.3492,0.5189,0.3492,127,0.486,1.7253,242,32
+Level 2 Independent (Standard),2,26228,scaled_guided_bc_v3,True,SUCCESS,True,False,False,False,False,False,False,0,616,30.8,16.156,0.525,0.1664,0.3787,0.1664,163,0.498,1.6842,287,47
+Level 2 Independent (Standard),2,26229,scaled_guided_bc_v3,True,SUCCESS,True,False,False,False,False,False,False,0,528,26.4,14.438,0.547,0.3986,0.6906,0.3986,70,0.493,2.0553,174,10
+Level 2 Independent (Standard),2,26230,scaled_guided_bc_v3,True,SUCCESS,True,False,False,False,False,False,False,0,625,31.25,15.468,0.495,0.1807,0.354,0.1807,184,0.486,1.9533,303,49
+Level 2 Independent (Standard),2,26231,scaled_guided_bc_v3,True,SUCCESS,True,False,False,False,False,False,True,30,670,33.5,17.32,0.517,0.0003,0.3654,0.0003,237,0.499,1.8103,383,65
+Level 2 Independent (Standard),2,26232,scaled_guided_bc_v3,True,SUCCESS,True,False,False,False,False,False,False,0,558,27.9,15.269,0.547,0.3189,0.524,0.3189,105,0.498,1.7722,216,32
+Level 2 Independent (Standard),2,26233,scaled_guided_bc_v3,True,SUCCESS,True,False,False,False,False,False,False,0,563,28.15,15.443,0.549,0.3022,0.4085,0.3022,155,0.497,1.6726,255,58
+Level 2 Independent (Standard),2,26234,scaled_guided_bc_v3,True,SUCCESS,True,False,False,False,False,False,False,0,588,29.4,15.801,0.537,0.238,0.4419,0.238,168,0.492,1.7092,289,41
+Level 2 Independent (Standard),2,26235,scaled_guided_bc_v3,True,SUCCESS,True,False,False,False,False,False,False,0,564,28.2,15.063,0.534,0.3352,0.644,0.3352,125,0.495,1.8351,261,34
+Level 2 Independent (Standard),2,26236,scaled_guided_bc_v3,True,TIMEOUT,False,False,True,False,False,False,True,512,1000,50.0,12.561,0.251,0.0957,0.3405,0.0957,718,3.216,1.6534,810,36
+Level 2 Independent (Standard),2,26237,scaled_guided_bc_v3,True,SUCCESS,True,False,False,False,False,False,False,0,602,30.1,16.058,0.533,0.2142,0.3753,0.2142,181,0.493,1.7316,296,62
+Level 2 Independent (Standard),2,26238,scaled_guided_bc_v3,True,SUCCESS,True,False,False,False,False,False,False,0,547,27.35,15.288,0.559,0.2965,0.468,0.2965,123,0.493,1.7028,242,46
+Level 2 Independent (Standard),2,26239,scaled_guided_bc_v3,True,SUCCESS,True,False,False,False,False,False,False,0,657,32.85,16.819,0.512,0.1765,0.4044,0.1765,247,0.493,1.6819,366,93
+Level 2 Independent (Standard),2,26240,scaled_guided_bc_v3,True,SUCCESS,True,False,False,False,False,False,True,54,643,32.15,17.073,0.531,0.0003,0.3825,0.0003,217,0.489,1.8017,330,76
+Level 2 Independent (Standard),2,26241,scaled_guided_bc_v3,True,SUCCESS,True,False,False,False,False,False,False,0,613,30.65,16.35,0.533,0.1756,0.5891,0.1756,198,0.496,1.6733,342,65
+Level 2 Independent (Standard),2,26242,scaled_guided_bc_v3,True,SUCCESS,True,False,False,False,False,False,False,0,568,28.4,15.446,0.544,0.1967,0.424,0.1967,149,0.486,1.768,252,40
+Level 2 Independent (Standard),2,26243,scaled_guided_bc_v3,True,SUCCESS,True,False,False,False,False,False,False,0,562,28.1,15.32,0.545,0.2789,0.422,0.2789,158,0.493,1.691,245,53
+Level 2 Independent (Standard),2,26244,scaled_guided_bc_v3,True,SUCCESS,True,False,False,False,False,False,True,11,799,39.95,16.994,0.425,0.1282,0.3509,0.1282,418,0.493,1.658,529,77
+Level 2 Independent (Standard),2,26245,scaled_guided_bc_v3,True,SUCCESS,True,False,False,False,False,False,False,0,582,29.1,15.475,0.532,0.2845,0.6543,0.2845,133,0.498,1.8476,283,45
+Level 2 Independent (Standard),2,26246,scaled_guided_bc_v3,True,SUCCESS,True,False,False,False,False,False,False,0,531,26.55,14.885,0.561,0.4033,0.5771,0.4033,93,0.49,1.9089,206,17
+Level 2 Independent (Standard),2,26247,scaled_guided_bc_v3,True,SUCCESS,True,False,False,False,False,False,False,0,531,26.55,14.534,0.547,0.4031,0.6567,0.4031,74,0.494,1.8982,178,15
+Level 2 Independent (Standard),2,26248,scaled_guided_bc_v3,True,SUCCESS,True,False,False,False,False,False,False,0,581,29.05,15.677,0.54,0.2387,0.3962,0.2387,144,0.494,1.8901,266,40
+Level 2 Independent (Standard),2,26249,scaled_guided_bc_v3,True,TIMEOUT,False,False,True,False,False,False,True,389,1000,50.0,21.752,0.435,0.1214,0.3481,0.1214,714,3.114,1.6545,802,265
+Level 3 Independent (Challenging),3,26300,scaled_guided_bc_v2,True,SUCCESS,True,False,False,False,False,False,False,0,549,27.45,14.68,0.535,0.3024,0.4399,0.3024,176,0.499,1.6153,265,51
+Level 3 Independent (Challenging),3,26301,scaled_guided_bc_v2,True,SUCCESS,True,False,False,False,False,False,False,0,525,26.25,14.521,0.553,0.3467,0.5256,0.3467,152,0.495,1.6987,244,43
+Level 3 Independent (Challenging),3,26302,scaled_guided_bc_v2,True,SUCCESS,True,False,False,False,False,False,True,156,854,42.7,19.647,0.46,0.1372,0.386,0.1372,470,0.493,1.3627,571,203
+Level 3 Independent (Challenging),3,26303,scaled_guided_bc_v2,True,SUCCESS,True,False,False,False,False,False,False,0,520,26.0,14.464,0.556,0.3077,0.5091,0.3077,144,0.493,1.6583,232,27
+Level 3 Independent (Challenging),3,26304,scaled_guided_bc_v2,True,SUCCESS,True,False,False,False,False,False,False,0,495,24.75,13.786,0.557,0.2479,0.4915,0.2479,116,0.491,1.6993,174,23
+Level 3 Independent (Challenging),3,26305,scaled_guided_bc_v2,True,SUCCESS,True,False,False,False,False,False,False,0,491,24.55,14.024,0.571,0.4016,0.596,0.4016,103,0.499,1.9903,196,13
+Level 3 Independent (Challenging),3,26306,scaled_guided_bc_v2,True,SUCCESS,True,False,False,False,False,False,False,0,549,27.45,14.804,0.539,0.3492,0.4735,0.3492,174,0.495,1.6028,268,59
+Level 3 Independent (Challenging),3,26307,scaled_guided_bc_v2,True,SUCCESS,True,False,False,False,False,False,False,0,517,25.85,14.553,0.563,0.2696,0.4701,0.2696,177,0.5,1.5915,245,39
+Level 3 Independent (Challenging),3,26308,scaled_guided_bc_v2,True,SUCCESS,True,False,False,False,False,False,False,0,523,26.15,14.297,0.547,0.2506,0.3778,0.2506,182,0.494,1.4765,251,57
+Level 3 Independent (Challenging),3,26309,scaled_guided_bc_v2,True,SUCCESS,True,False,False,False,False,False,True,15,497,24.85,14.107,0.568,0.1105,0.6044,0.1105,76,0.494,1.8215,162,20
+Level 3 Independent (Challenging),3,26310,scaled_guided_bc_v2,True,SUCCESS,True,False,False,False,False,False,False,0,501,25.05,14.147,0.565,0.3361,0.4779,0.3361,118,0.498,1.624,196,38
+Level 3 Independent (Challenging),3,26311,scaled_guided_bc_v2,True,SUCCESS,True,False,False,False,False,False,True,15,622,31.1,15.44,0.496,0.1047,0.3182,0.1047,246,0.494,1.4024,351,111
+Level 3 Independent (Challenging),3,26312,scaled_guided_bc_v2,True,SUCCESS,True,False,False,False,False,False,True,16,543,27.15,14.427,0.531,0.1051,0.3887,0.1051,149,0.493,1.4577,230,44
+Level 3 Independent (Challenging),3,26313,scaled_guided_bc_v2,True,SUCCESS,True,False,False,False,False,False,False,0,611,30.55,14.641,0.479,0.1781,0.3626,0.1781,206,0.499,1.3987,294,87
+Level 3 Independent (Challenging),3,26314,scaled_guided_bc_v2,True,SUCCESS,True,False,False,False,False,False,False,0,568,28.4,14.956,0.527,0.2865,0.4071,0.2865,197,0.498,1.4775,293,44
+Level 3 Independent (Challenging),3,26315,scaled_guided_bc_v2,True,SUCCESS,True,False,False,False,False,False,False,0,477,23.85,13.577,0.569,0.172,0.6314,0.172,97,0.494,1.8695,148,28
+Level 3 Independent (Challenging),3,26316,scaled_guided_bc_v2,True,SUCCESS,True,False,False,False,False,False,False,0,626,31.3,15.783,0.504,0.1577,0.3731,0.1577,244,0.499,1.3518,338,89
+Level 3 Independent (Challenging),3,26317,scaled_guided_bc_v2,True,SUCCESS,True,False,False,False,False,False,False,0,585,29.25,14.799,0.506,0.2581,0.4005,0.2581,200,0.495,1.3658,278,41
+Level 3 Independent (Challenging),3,26318,scaled_guided_bc_v2,True,TIMEOUT,False,False,True,False,False,False,True,363,1000,50.0,20.678,0.414,0.1149,0.3346,0.1149,776,3.419,1.3642,824,425
+Level 3 Independent (Challenging),3,26319,scaled_guided_bc_v2,True,SUCCESS,True,False,False,False,False,False,True,21,639,31.95,15.379,0.481,0.073,0.3112,0.073,294,0.498,1.415,350,107
+Level 3 Independent (Challenging),3,26320,scaled_guided_bc_v2,True,TIMEOUT,False,False,True,False,False,False,True,351,1000,50.0,20.998,0.42,0.1295,0.3732,0.1295,756,3.406,1.4627,833,428
+Level 3 Independent (Challenging),3,26321,scaled_guided_bc_v2,True,SUCCESS,True,False,False,False,False,False,False,0,522,26.1,14.624,0.56,0.2968,0.5005,0.2968,146,0.494,1.6443,246,33
+Level 3 Independent (Challenging),3,26322,scaled_guided_bc_v2,True,SUCCESS,True,False,False,False,False,False,False,0,634,31.7,14.967,0.472,0.1541,0.3425,0.1541,298,0.496,1.4126,375,97
+Level 3 Independent (Challenging),3,26323,scaled_guided_bc_v2,True,SUCCESS,True,False,False,False,False,False,False,0,529,26.45,14.346,0.542,0.2531,0.3973,0.2531,172,0.496,1.4176,242,37
+Level 3 Independent (Challenging),3,26324,scaled_guided_bc_v2,True,SUCCESS,True,False,False,False,False,False,False,0,532,26.6,14.527,0.546,0.2877,0.423,0.2877,169,0.491,1.5848,253,40
+Level 3 Independent (Challenging),3,26325,scaled_guided_bc_v2,True,SUCCESS,True,False,False,False,False,False,False,0,485,24.25,13.115,0.541,0.2399,0.5255,0.2399,99,0.497,1.6857,134,42
+Level 3 Independent (Challenging),3,26326,scaled_guided_bc_v2,True,SUCCESS,True,False,False,False,False,False,False,0,531,26.55,14.332,0.54,0.2053,0.3624,0.2053,172,0.495,1.4311,257,70
+Level 3 Independent (Challenging),3,26327,scaled_guided_bc_v2,True,SUCCESS,True,False,False,False,False,False,True,36,570,28.5,15.368,0.539,0.0002,0.4157,0.0002,189,0.496,1.4563,326,50
+Level 3 Independent (Challenging),3,26328,scaled_guided_bc_v2,True,SUCCESS,True,False,False,False,False,False,False,0,593,29.65,14.712,0.496,0.2458,0.3857,0.2458,205,0.492,1.3946,274,73
+Level 3 Independent (Challenging),3,26329,scaled_guided_bc_v2,True,SUCCESS,True,False,False,False,False,False,True,6,701,35.05,17.021,0.486,0.1461,0.404,0.1461,320,0.498,1.4401,404,111
+Level 3 Independent (Challenging),3,26330,scaled_guided_bc_v2,True,SUCCESS,True,False,False,False,False,False,False,0,503,25.15,14.316,0.569,0.3723,0.5472,0.3723,113,0.493,1.7429,212,30
+Level 3 Independent (Challenging),3,26331,scaled_guided_bc_v2,True,SUCCESS,True,False,False,False,False,False,False,0,568,28.4,14.884,0.524,0.1954,0.4744,0.1954,172,0.499,1.5835,266,57
+Level 3 Independent (Challenging),3,26332,scaled_guided_bc_v2,True,SUCCESS,True,False,False,False,False,False,False,0,498,24.9,14.051,0.564,0.3505,0.5317,0.3505,177,0.5,1.7172,226,61
+Level 3 Independent (Challenging),3,26333,scaled_guided_bc_v2,True,SUCCESS,True,False,False,False,False,False,False,0,571,28.55,14.951,0.524,0.288,0.4091,0.288,208,0.496,1.3921,297,52
+Level 3 Independent (Challenging),3,26334,scaled_guided_bc_v2,True,SUCCESS,True,False,False,False,False,False,False,0,544,27.2,14.607,0.537,0.2811,0.4918,0.2811,139,0.498,1.6087,234,32
+Level 3 Independent (Challenging),3,26335,scaled_guided_bc_v2,True,TIMEOUT,False,False,True,False,False,False,True,10,1000,50.0,8.968,0.179,0.1411,0.3477,0.1411,829,5.186,1.545,857,24
+Level 3 Independent (Challenging),3,26336,scaled_guided_bc_v2,True,SUCCESS,True,False,False,False,False,False,False,0,639,31.95,14.996,0.469,0.1826,0.3537,0.1826,309,0.489,1.3539,372,77
+Level 3 Independent (Challenging),3,26337,scaled_guided_bc_v2,True,SUCCESS,True,False,False,False,False,False,False,0,519,25.95,13.814,0.532,0.2883,0.5269,0.2883,152,0.495,1.6964,194,54
+Level 3 Independent (Challenging),3,26338,scaled_guided_bc_v2,True,SUCCESS,True,False,False,False,False,False,False,0,500,25.0,14.096,0.564,0.4035,0.5454,0.4035,117,0.496,1.8322,201,16
+Level 3 Independent (Challenging),3,26339,scaled_guided_bc_v2,True,SUCCESS,True,False,False,False,False,False,False,0,611,30.55,15.011,0.491,0.2385,0.377,0.2385,270,0.487,1.3821,334,49
+Level 3 Independent (Challenging),3,26340,scaled_guided_bc_v2,True,SUCCESS,True,False,False,False,False,False,False,0,597,29.85,15.121,0.507,0.1751,0.3689,0.1751,236,0.495,1.4345,346,100
+Level 3 Independent (Challenging),3,26341,scaled_guided_bc_v2,True,SUCCESS,True,False,False,False,False,False,False,0,536,26.8,14.574,0.544,0.3246,0.462,0.3246,187,0.497,1.6654,253,37
+Level 3 Independent (Challenging),3,26342,scaled_guided_bc_v2,True,SUCCESS,True,False,False,False,False,False,True,18,641,32.05,15.683,0.489,0.0875,0.316,0.0875,271,0.497,1.4122,383,121
+Level 3 Independent (Challenging),3,26343,scaled_guided_bc_v2,True,SUCCESS,True,False,False,False,False,False,False,0,580,29.0,14.947,0.515,0.2535,0.3855,0.2535,225,0.495,1.3785,304,65
+Level 3 Independent (Challenging),3,26344,scaled_guided_bc_v2,True,SUCCESS,True,False,False,False,False,False,True,32,600,30.0,15.828,0.528,0.0002,0.4692,0.0002,223,0.498,1.5762,358,77
+Level 3 Independent (Challenging),3,26345,scaled_guided_bc_v2,True,SUCCESS,True,False,False,False,False,False,False,0,529,26.45,14.224,0.538,0.3822,0.5347,0.3822,109,0.493,1.8507,194,14
+Level 3 Independent (Challenging),3,26346,scaled_guided_bc_v2,True,SUCCESS,True,False,False,False,False,False,False,0,477,23.85,13.242,0.555,0.1572,0.603,0.1572,91,0.491,1.818,141,32
+Level 3 Independent (Challenging),3,26347,scaled_guided_bc_v2,True,SUCCESS,True,False,False,False,False,False,False,0,522,26.1,14.34,0.549,0.1718,0.4118,0.1718,136,0.498,1.4217,232,48
+Level 3 Independent (Challenging),3,26348,scaled_guided_bc_v2,True,SUCCESS,True,False,False,False,False,False,False,0,529,26.45,14.483,0.548,0.2783,0.4071,0.2783,169,0.497,1.5677,254,41
+Level 3 Independent (Challenging),3,26349,scaled_guided_bc_v2,True,SUCCESS,True,False,False,False,False,False,False,0,482,24.1,13.715,0.569,0.2125,0.6146,0.2125,92,0.492,1.8332,152,31
+Level 3 Independent (Challenging),3,26300,scaled_guided_bc_v3,True,SUCCESS,True,False,False,False,False,False,False,0,550,27.5,15.164,0.551,0.3001,0.4574,0.3001,191,0.498,1.6153,289,58
+Level 3 Independent (Challenging),3,26301,scaled_guided_bc_v3,True,SUCCESS,True,False,False,False,False,False,False,0,509,25.45,14.81,0.582,0.2875,0.4655,0.2875,143,0.493,1.6987,257,45
+Level 3 Independent (Challenging),3,26302,scaled_guided_bc_v3,True,SUCCESS,True,False,False,False,False,False,True,66,728,36.4,18.024,0.495,0.1321,0.3294,0.1321,363,0.495,1.3627,447,154
+Level 3 Independent (Challenging),3,26303,scaled_guided_bc_v3,True,SUCCESS,True,False,False,False,False,False,False,0,523,26.15,14.805,0.566,0.3046,0.4707,0.3046,161,0.494,1.6583,251,52
+Level 3 Independent (Challenging),3,26304,scaled_guided_bc_v3,True,SUCCESS,True,False,False,False,False,False,False,0,513,25.65,14.819,0.578,0.2982,0.5081,0.2982,122,0.498,1.6993,228,39
+Level 3 Independent (Challenging),3,26305,scaled_guided_bc_v3,True,SUCCESS,True,False,False,False,False,False,False,0,478,23.9,14.158,0.592,0.3452,0.6155,0.3452,94,0.499,1.9903,204,32
+Level 3 Independent (Challenging),3,26306,scaled_guided_bc_v3,True,SUCCESS,True,False,False,False,False,False,False,0,523,26.15,14.978,0.573,0.2939,0.4047,0.2939,171,0.497,1.6028,279,52
+Level 3 Independent (Challenging),3,26307,scaled_guided_bc_v3,True,SUCCESS,True,False,False,False,False,False,False,0,507,25.35,14.769,0.583,0.2337,0.4448,0.2337,157,0.492,1.5915,263,43
+Level 3 Independent (Challenging),3,26308,scaled_guided_bc_v3,True,SUCCESS,True,False,False,False,False,False,False,0,507,25.35,14.521,0.573,0.2132,0.3978,0.2132,166,0.5,1.4765,257,56
+Level 3 Independent (Challenging),3,26309,scaled_guided_bc_v3,True,SUCCESS,True,False,False,False,False,False,False,0,493,24.65,14.356,0.582,0.3123,0.5118,0.3123,114,0.493,1.8215,221,26
+Level 3 Independent (Challenging),3,26310,scaled_guided_bc_v3,True,SUCCESS,True,False,False,False,False,False,True,13,500,25.0,14.077,0.563,0.1123,0.4482,0.1123,78,0.496,1.624,177,22
+Level 3 Independent (Challenging),3,26311,scaled_guided_bc_v3,True,SUCCESS,True,False,False,False,False,False,True,20,602,30.1,15.694,0.521,0.0688,0.3257,0.0688,221,0.496,1.4024,330,80
+Level 3 Independent (Challenging),3,26312,scaled_guided_bc_v3,True,SUCCESS,True,False,False,False,False,False,False,0,545,27.25,14.985,0.55,0.2772,0.3853,0.2772,196,0.496,1.4577,275,55
+Level 3 Independent (Challenging),3,26313,scaled_guided_bc_v3,True,SUCCESS,True,False,False,False,False,False,True,11,561,28.05,15.07,0.537,0.1236,0.3469,0.1236,229,0.498,1.3987,310,79
+Level 3 Independent (Challenging),3,26314,scaled_guided_bc_v3,True,SUCCESS,True,False,False,False,False,False,False,0,556,27.8,15.319,0.551,0.2056,0.3613,0.2056,192,0.494,1.4775,331,71
+Level 3 Independent (Challenging),3,26315,scaled_guided_bc_v3,True,SUCCESS,True,False,False,False,False,False,False,0,481,24.05,14.388,0.598,0.357,0.59,0.357,115,0.497,1.8695,216,40
+Level 3 Independent (Challenging),3,26316,scaled_guided_bc_v3,True,SUCCESS,True,False,False,False,False,False,False,0,586,29.3,15.821,0.54,0.2133,0.3711,0.2133,202,0.488,1.3518,352,72
+Level 3 Independent (Challenging),3,26317,scaled_guided_bc_v3,True,SUCCESS,True,False,False,False,False,False,True,17,602,30.1,15.446,0.513,0.0932,0.3287,0.0932,218,0.493,1.3658,312,70
+Level 3 Independent (Challenging),3,26318,scaled_guided_bc_v3,True,SUCCESS,True,False,False,False,False,False,True,24,716,35.8,17.764,0.496,0.102,0.357,0.102,355,0.498,1.3642,513,151
+Level 3 Independent (Challenging),3,26319,scaled_guided_bc_v3,True,SUCCESS,True,False,False,False,False,False,False,0,566,28.3,14.903,0.527,0.2269,0.3807,0.2269,187,0.499,1.415,268,47
+Level 3 Independent (Challenging),3,26320,scaled_guided_bc_v3,True,SUCCESS,True,False,False,False,False,False,False,0,593,29.65,15.696,0.529,0.1948,0.3651,0.1948,248,0.497,1.4627,381,103
+Level 3 Independent (Challenging),3,26321,scaled_guided_bc_v3,True,SUCCESS,True,False,False,False,False,False,False,0,526,26.3,15.0,0.57,0.3092,0.4465,0.3092,163,0.498,1.6443,283,38
+Level 3 Independent (Challenging),3,26322,scaled_guided_bc_v3,True,SUCCESS,True,False,False,False,False,False,True,67,761,38.05,18.746,0.493,0.0002,0.3442,0.0002,384,0.498,1.4126,534,165
+Level 3 Independent (Challenging),3,26323,scaled_guided_bc_v3,True,SUCCESS,True,False,False,False,False,False,True,21,539,26.95,14.992,0.556,0.0874,0.3598,0.0874,161,0.497,1.4176,300,72
+Level 3 Independent (Challenging),3,26324,scaled_guided_bc_v3,True,SUCCESS,True,False,False,False,False,False,False,0,538,26.9,15.151,0.563,0.2307,0.4401,0.2307,185,0.491,1.5848,278,44
+Level 3 Independent (Challenging),3,26325,scaled_guided_bc_v3,True,SUCCESS,True,False,False,False,False,False,False,0,482,24.1,14.658,0.608,0.303,0.5124,0.303,154,0.498,1.6857,253,44
+Level 3 Independent (Challenging),3,26326,scaled_guided_bc_v3,True,SUCCESS,True,False,False,False,False,False,False,0,521,26.05,14.557,0.559,0.2818,0.3778,0.2818,159,0.494,1.4311,264,67
+Level 3 Independent (Challenging),3,26327,scaled_guided_bc_v3,True,SUCCESS,True,False,False,False,False,False,True,30,551,27.55,14.981,0.544,0.0005,0.3669,0.0005,142,0.498,1.4563,269,37
+Level 3 Independent (Challenging),3,26328,scaled_guided_bc_v3,True,SUCCESS,True,False,False,False,False,False,True,45,662,33.1,16.977,0.513,0.0002,0.3913,0.0002,256,0.498,1.3946,410,96
+Level 3 Independent (Challenging),3,26329,scaled_guided_bc_v3,True,SUCCESS,True,False,False,False,False,False,True,7,624,31.2,16.243,0.521,0.1402,0.3617,0.1402,252,0.498,1.4401,352,96
+Level 3 Independent (Challenging),3,26330,scaled_guided_bc_v3,True,SUCCESS,True,False,False,False,False,False,False,0,504,25.2,14.605,0.58,0.3053,0.5016,0.3053,97,0.496,1.7429,237,29
+Level 3 Independent (Challenging),3,26331,scaled_guided_bc_v3,True,SUCCESS,True,False,False,False,False,False,False,0,548,27.4,15.099,0.551,0.253,0.4335,0.253,175,0.496,1.5835,287,62
+Level 3 Independent (Challenging),3,26332,scaled_guided_bc_v3,True,SUCCESS,True,False,False,False,False,False,False,0,508,25.4,15.057,0.593,0.2799,0.4877,0.2799,197,0.494,1.7172,283,47
+Level 3 Independent (Challenging),3,26333,scaled_guided_bc_v3,True,SUCCESS,True,False,False,False,False,False,True,35,707,35.35,18.006,0.509,0.0677,0.3409,0.0677,332,0.492,1.3921,453,129
+Level 3 Independent (Challenging),3,26334,scaled_guided_bc_v3,True,SUCCESS,True,False,False,False,False,False,False,0,520,26.0,14.789,0.569,0.246,0.4316,0.246,112,0.493,1.6087,240,43
+Level 3 Independent (Challenging),3,26335,scaled_guided_bc_v3,True,SUCCESS,True,False,False,False,False,False,False,0,538,26.9,14.989,0.557,0.2004,0.4413,0.2004,156,0.496,1.545,278,34
+Level 3 Independent (Challenging),3,26336,scaled_guided_bc_v3,True,SUCCESS,True,False,False,False,False,False,True,33,701,35.05,17.194,0.491,0.0849,0.3392,0.0849,332,0.497,1.3539,464,132
+Level 3 Independent (Challenging),3,26337,scaled_guided_bc_v3,True,SUCCESS,True,False,False,False,False,False,False,0,490,24.5,14.731,0.601,0.2779,0.4797,0.2779,167,0.497,1.6964,254,55
+Level 3 Independent (Challenging),3,26338,scaled_guided_bc_v3,True,SUCCESS,True,False,False,False,False,False,False,0,482,24.1,14.278,0.592,0.3689,0.5592,0.3689,112,0.498,1.8322,221,36
+Level 3 Independent (Challenging),3,26339,scaled_guided_bc_v3,True,SUCCESS,True,False,False,False,False,False,True,15,564,28.2,15.116,0.536,0.1071,0.3567,0.1071,190,0.498,1.3821,284,61
+Level 3 Independent (Challenging),3,26340,scaled_guided_bc_v3,True,SUCCESS,True,False,False,False,False,False,True,2,623,31.15,16.064,0.516,0.1486,0.3804,0.1486,254,0.496,1.4345,365,99
+Level 3 Independent (Challenging),3,26341,scaled_guided_bc_v3,True,SUCCESS,True,False,False,False,False,False,False,0,546,27.3,15.222,0.558,0.3096,0.4912,0.3096,197,0.498,1.6654,264,47
+Level 3 Independent (Challenging),3,26342,scaled_guided_bc_v3,True,SUCCESS,True,False,False,False,False,False,True,24,632,31.6,16.132,0.511,0.0475,0.3222,0.0475,257,0.496,1.4122,362,113
+Level 3 Independent (Challenging),3,26343,scaled_guided_bc_v3,True,SUCCESS,True,False,False,False,False,False,True,23,580,29.0,15.569,0.537,0.0716,0.3744,0.0716,185,0.498,1.3785,357,70
+Level 3 Independent (Challenging),3,26344,scaled_guided_bc_v3,True,SUCCESS,True,False,False,False,False,False,False,0,545,27.25,15.45,0.567,0.2413,0.4176,0.2413,196,0.492,1.5762,335,81
+Level 3 Independent (Challenging),3,26345,scaled_guided_bc_v3,True,SUCCESS,True,False,False,False,False,False,False,0,520,26.0,14.564,0.56,0.3341,0.5495,0.3341,113,0.491,1.8507,217,21
+Level 3 Independent (Challenging),3,26346,scaled_guided_bc_v3,True,SUCCESS,True,False,False,False,False,False,False,0,476,23.8,14.476,0.608,0.3468,0.5538,0.3468,156,0.495,1.818,235,45
+Level 3 Independent (Challenging),3,26347,scaled_guided_bc_v3,True,SUCCESS,True,False,False,False,False,False,True,8,533,26.65,15.187,0.57,0.1423,0.3654,0.1423,150,0.492,1.4217,308,46
+Level 3 Independent (Challenging),3,26348,scaled_guided_bc_v3,True,SUCCESS,True,False,False,False,False,False,False,0,547,27.35,15.331,0.561,0.2261,0.4789,0.2261,165,0.495,1.5677,293,54
+Level 3 Independent (Challenging),3,26349,scaled_guided_bc_v3,True,SUCCESS,True,False,False,False,False,False,False,0,477,23.85,13.86,0.581,0.1934,0.552,0.1934,88,0.494,1.8332,167,31
+Level 4 Independent (Boundary & Feasibility),4,26400,scaled_guided_bc_v2,True,SUCCESS,True,False,False,False,False,False,True,8,843,42.15,16.886,0.401,0.1453,0.3478,0.1453,450,0.497,1.1984,534,132
+Level 4 Independent (Boundary & Feasibility),4,26401,scaled_guided_bc_v2,False,SAFE_REJECT,False,True,False,False,False,False,True,52,401,20.05,8.655,0.432,0.1239,0.3927,0.1239,267,6.692,0.6,297,135
+Level 4 Independent (Boundary & Feasibility),4,26402,scaled_guided_bc_v2,True,SUCCESS,True,False,False,False,False,False,True,15,672,33.6,15.053,0.448,0.1027,0.3365,0.1027,301,0.499,1.265,381,64
+Level 4 Independent (Boundary & Feasibility),4,26403,scaled_guided_bc_v2,False,SAFE_REJECT,False,True,False,False,False,False,True,37,354,17.7,8.4,0.475,0.1181,0.6594,0.1181,191,6.701,0.6,234,107
+Level 4 Independent (Boundary & Feasibility),4,26404,scaled_guided_bc_v2,True,SUCCESS,True,False,False,False,False,False,False,0,871,43.55,18.143,0.417,0.1526,0.365,0.1526,539,0.5,1.2627,639,207
+Level 4 Independent (Boundary & Feasibility),4,26405,scaled_guided_bc_v2,False,SAFE_REJECT,False,True,False,False,False,False,True,83,559,27.95,10.315,0.369,0.1178,0.3535,0.1178,420,6.69,0.6,449,185
+Level 4 Independent (Boundary & Feasibility),4,26406,scaled_guided_bc_v2,True,SUCCESS,True,False,False,False,False,False,False,0,576,28.8,14.703,0.511,0.2419,0.3891,0.2419,193,0.498,1.3719,294,63
+Level 4 Independent (Boundary & Feasibility),4,26407,scaled_guided_bc_v2,False,SAFE_REJECT,False,True,False,False,False,False,True,66,419,20.95,8.837,0.422,0.1133,0.3732,0.1133,288,6.7,0.6,312,154
+Level 4 Independent (Boundary & Feasibility),4,26408,scaled_guided_bc_v2,True,SUCCESS,True,False,False,False,False,False,True,19,574,28.7,14.085,0.491,0.0835,0.3274,0.0835,228,0.495,1.2383,288,52
+Level 4 Independent (Boundary & Feasibility),4,26409,scaled_guided_bc_v2,False,SAFE_REJECT,False,True,False,False,False,False,True,45,356,17.8,8.29,0.466,0.1188,0.6547,0.1188,198,6.705,0.6,235,102
+Level 4 Independent (Boundary & Feasibility),4,26410,scaled_guided_bc_v2,True,SUCCESS,True,False,False,False,False,False,False,0,718,35.9,15.922,0.443,0.1651,0.3582,0.1651,390,0.496,1.2548,467,112
+Level 4 Independent (Boundary & Feasibility),4,26411,scaled_guided_bc_v2,False,SAFE_REJECT,False,True,False,False,False,False,True,66,451,22.55,8.65,0.384,0.067,0.3253,0.067,331,6.707,0.6,343,123
+Level 4 Independent (Boundary & Feasibility),4,26412,scaled_guided_bc_v2,True,SUCCESS,True,False,False,False,False,False,False,0,605,30.25,14.547,0.481,0.2425,0.3528,0.2425,251,0.496,1.3301,327,70
+Level 4 Independent (Boundary & Feasibility),4,26413,scaled_guided_bc_v2,False,SAFE_REJECT,False,True,False,False,False,False,True,17,342,17.1,8.042,0.47,0.1374,0.7802,0.1374,166,6.707,0.6,191,102
+Level 4 Independent (Boundary & Feasibility),4,26414,scaled_guided_bc_v2,True,SUCCESS,True,False,False,False,False,False,False,0,562,28.1,14.586,0.519,0.2115,0.3966,0.2115,224,0.492,1.3995,292,88
+Level 4 Independent (Boundary & Feasibility),4,26415,scaled_guided_bc_v2,False,SAFE_REJECT,False,True,False,False,False,False,True,48,411,20.55,8.643,0.421,0.1274,0.3776,0.1274,276,6.701,0.6,306,139
+Level 4 Independent (Boundary & Feasibility),4,26416,scaled_guided_bc_v2,True,SUCCESS,True,False,False,False,False,False,False,0,579,28.95,14.364,0.496,0.2295,0.3557,0.2295,194,0.496,1.4484,255,58
+Level 4 Independent (Boundary & Feasibility),4,26417,scaled_guided_bc_v2,False,SAFE_REJECT,False,True,False,False,False,False,True,33,355,17.75,8.363,0.471,0.1333,0.5643,0.1333,203,6.709,0.6,237,122
+Level 4 Independent (Boundary & Feasibility),4,26418,scaled_guided_bc_v2,True,SUCCESS,True,False,False,False,False,False,False,0,563,28.15,14.542,0.517,0.2571,0.3874,0.2571,204,0.491,1.506,289,83
+Level 4 Independent (Boundary & Feasibility),4,26419,scaled_guided_bc_v2,False,SAFE_REJECT,False,True,False,False,False,False,True,24,393,19.65,8.537,0.434,0.1361,0.3832,0.1361,252,6.714,0.6,278,136
+Level 4 Independent (Boundary & Feasibility),4,26420,scaled_guided_bc_v2,True,SUCCESS,True,False,False,False,False,False,False,0,468,23.4,13.321,0.569,0.2429,0.6209,0.2429,70,0.495,1.8783,139,37
+Level 4 Independent (Boundary & Feasibility),4,26421,scaled_guided_bc_v2,False,SAFE_REJECT,False,True,False,False,False,False,True,54,388,19.4,8.598,0.443,0.1288,0.5126,0.1288,232,6.704,0.6,266,138
+Level 4 Independent (Boundary & Feasibility),4,26422,scaled_guided_bc_v2,True,SUCCESS,True,False,False,False,False,False,False,0,619,30.95,14.717,0.476,0.151,0.3451,0.151,219,0.494,1.3087,267,28
+Level 4 Independent (Boundary & Feasibility),4,26423,scaled_guided_bc_v2,False,SAFE_REJECT,False,True,False,False,False,False,True,51,482,24.1,9.567,0.397,0.1251,0.3687,0.1251,342,6.704,0.6,373,158
+Level 4 Independent (Boundary & Feasibility),4,26424,scaled_guided_bc_v2,True,SUCCESS,True,False,False,False,False,False,False,0,550,27.5,14.463,0.526,0.2497,0.394,0.2497,234,0.5,1.425,296,83
+Level 4 Independent (Boundary & Feasibility),4,26425,scaled_guided_bc_v2,False,SAFE_REJECT,False,True,False,False,False,False,True,30,384,19.2,8.605,0.448,0.1328,0.4588,0.1328,227,6.715,0.6,262,112
+Level 4 Independent (Boundary & Feasibility),4,26426,scaled_guided_bc_v2,True,SUCCESS,True,False,False,False,False,False,True,6,617,30.85,14.85,0.481,0.1433,0.3406,0.1433,252,0.496,1.2776,307,53
+Level 4 Independent (Boundary & Feasibility),4,26427,scaled_guided_bc_v2,False,SAFE_REJECT,False,True,False,False,False,False,True,18,343,17.15,8.068,0.47,0.1362,0.8352,0.1362,159,6.714,0.6,188,104
+Level 4 Independent (Boundary & Feasibility),4,26428,scaled_guided_bc_v2,True,SUCCESS,True,False,False,False,False,False,True,11,531,26.55,14.068,0.53,0.1166,0.4056,0.1166,151,0.497,1.4581,256,79
+Level 4 Independent (Boundary & Feasibility),4,26429,scaled_guided_bc_v2,False,SAFE_REJECT,False,True,False,False,False,False,True,50,349,17.45,8.241,0.472,0.1241,0.5686,0.1241,188,6.702,0.6,231,108
+Level 4 Independent (Boundary & Feasibility),4,26430,scaled_guided_bc_v2,True,SUCCESS,True,False,False,False,False,False,True,20,686,34.3,15.227,0.444,0.0721,0.3258,0.0721,326,0.493,1.2241,434,85
+Level 4 Independent (Boundary & Feasibility),4,26431,scaled_guided_bc_v2,False,SAFE_REJECT,False,True,False,False,False,False,True,53,448,22.4,8.688,0.388,0.0952,0.3318,0.0952,320,6.703,0.6,342,127
+Level 4 Independent (Boundary & Feasibility),4,26432,scaled_guided_bc_v2,True,SUCCESS,True,False,False,False,False,False,False,0,539,26.95,14.147,0.525,0.2963,0.3801,0.2963,171,0.497,1.498,255,76
+Level 4 Independent (Boundary & Feasibility),4,26433,scaled_guided_bc_v2,False,SAFE_REJECT,False,True,False,False,False,False,True,33,489,24.45,9.781,0.4,0.1346,0.3483,0.1346,344,6.712,0.6,378,179
+Level 4 Independent (Boundary & Feasibility),4,26434,scaled_guided_bc_v2,True,SUCCESS,True,False,False,False,False,False,False,0,581,29.05,14.139,0.487,0.1982,0.3459,0.1982,201,0.499,1.3052,270,40
+Level 4 Independent (Boundary & Feasibility),4,26435,scaled_guided_bc_v2,False,SAFE_REJECT,False,True,False,False,False,False,True,26,358,17.9,8.439,0.471,0.1318,0.5664,0.1318,213,6.707,0.6,242,121
+Level 4 Independent (Boundary & Feasibility),4,26436,scaled_guided_bc_v2,True,SUCCESS,True,False,False,False,False,False,False,0,520,26.0,14.201,0.546,0.3736,0.512,0.3736,159,0.495,1.7308,237,21
+Level 4 Independent (Boundary & Feasibility),4,26437,scaled_guided_bc_v2,False,SAFE_REJECT,False,True,False,False,False,False,True,51,595,29.75,10.706,0.36,0.1353,0.349,0.1353,451,6.915,0.6,485,132
+Level 4 Independent (Boundary & Feasibility),4,26438,scaled_guided_bc_v2,True,SUCCESS,True,False,False,False,False,False,False,0,703,35.15,13.853,0.394,0.1833,0.3477,0.1833,343,0.495,1.188,408,49
+Level 4 Independent (Boundary & Feasibility),4,26439,scaled_guided_bc_v2,False,SAFE_REJECT,False,True,False,False,False,False,True,71,612,30.6,11.122,0.363,0.1057,0.3508,0.1057,458,6.689,0.6,503,149
+Level 4 Independent (Boundary & Feasibility),4,26440,scaled_guided_bc_v2,True,SUCCESS,True,False,False,False,False,False,False,0,580,29.0,14.634,0.505,0.2238,0.3633,0.2238,185,0.492,1.3635,259,49
+Level 4 Independent (Boundary & Feasibility),4,26441,scaled_guided_bc_v2,False,SAFE_REJECT,False,True,False,False,False,False,True,55,390,19.5,8.566,0.439,0.121,0.4172,0.121,251,6.701,0.6,283,139
+Level 4 Independent (Boundary & Feasibility),4,26442,scaled_guided_bc_v2,True,TIMEOUT,False,False,True,False,False,False,True,211,1000,50.0,19.899,0.398,0.1272,0.3536,0.1272,787,3.412,1.2196,843,355
+Level 4 Independent (Boundary & Feasibility),4,26443,scaled_guided_bc_v2,False,SAFE_REJECT,False,True,False,False,False,False,True,50,433,21.65,9.135,0.422,0.1266,0.4165,0.1266,271,6.702,0.6,322,158
+Level 4 Independent (Boundary & Feasibility),4,26444,scaled_guided_bc_v2,True,SUCCESS,True,False,False,False,False,False,True,26,720,36.0,15.354,0.427,0.0217,0.3201,0.0217,380,0.497,1.1568,474,128
+Level 4 Independent (Boundary & Feasibility),4,26445,scaled_guided_bc_v2,False,SAFE_REJECT,False,True,False,False,False,False,True,69,461,23.05,8.917,0.387,0.1254,0.3481,0.1254,343,6.701,0.6,358,180
+Level 4 Independent (Boundary & Feasibility),4,26446,scaled_guided_bc_v2,True,SUCCESS,True,False,False,False,False,False,False,0,620,31.0,14.998,0.484,0.1938,0.3816,0.1938,268,0.492,1.3973,381,113
+Level 4 Independent (Boundary & Feasibility),4,26447,scaled_guided_bc_v2,False,SAFE_REJECT,False,True,False,False,False,False,True,44,375,18.75,8.498,0.453,0.1267,0.4988,0.1267,226,6.705,0.6,255,109
+Level 4 Independent (Boundary & Feasibility),4,26448,scaled_guided_bc_v2,True,SUCCESS,True,False,False,False,False,False,False,0,587,29.35,14.669,0.5,0.2524,0.3628,0.2524,223,0.494,1.3911,330,90
+Level 4 Independent (Boundary & Feasibility),4,26449,scaled_guided_bc_v2,False,SAFE_REJECT,False,True,False,False,False,False,True,11,384,19.2,8.581,0.447,0.1404,0.441,0.1404,234,6.717,0.6,261,117
+Level 4 Independent (Boundary & Feasibility),4,26400,scaled_guided_bc_v3,True,SUCCESS,True,False,False,False,False,False,False,0,790,39.5,16.054,0.406,0.1538,0.3477,0.1538,411,0.489,1.1984,531,100
+Level 4 Independent (Boundary & Feasibility),4,26401,scaled_guided_bc_v3,False,SAFE_REJECT,False,True,False,False,False,False,True,68,441,22.05,9.669,0.438,0.1076,0.3727,0.1076,301,6.692,0.6,353,143
+Level 4 Independent (Boundary & Feasibility),4,26402,scaled_guided_bc_v3,True,SUCCESS,True,False,False,False,False,False,True,24,677,33.85,15.716,0.464,0.0392,0.3175,0.0392,319,0.494,1.265,403,150
+Level 4 Independent (Boundary & Feasibility),4,26403,scaled_guided_bc_v3,False,SAFE_REJECT,False,True,False,False,False,False,True,78,377,18.85,8.74,0.464,0.0924,0.6015,0.0924,206,6.708,0.6,253,99
+Level 4 Independent (Boundary & Feasibility),4,26404,scaled_guided_bc_v3,True,SUCCESS,True,False,False,False,False,False,False,0,699,34.95,15.965,0.457,0.1673,0.3461,0.1673,361,0.495,1.2627,474,132
+Level 4 Independent (Boundary & Feasibility),4,26405,scaled_guided_bc_v3,False,SAFE_REJECT,False,True,False,False,False,False,True,88,492,24.6,9.177,0.373,0.0834,0.344,0.0834,345,6.688,0.6,388,142
+Level 4 Independent (Boundary & Feasibility),4,26406,scaled_guided_bc_v3,True,SUCCESS,True,False,False,False,False,False,False,0,538,26.9,14.523,0.54,0.1732,0.3863,0.1732,185,0.497,1.3719,307,61
+Level 4 Independent (Boundary & Feasibility),4,26407,scaled_guided_bc_v3,False,SAFE_REJECT,False,True,False,False,False,False,True,96,437,21.85,9.245,0.423,0.0815,0.3384,0.0815,309,6.699,0.6,340,149
+Level 4 Independent (Boundary & Feasibility),4,26408,scaled_guided_bc_v3,True,SUCCESS,True,False,False,False,False,False,True,2,611,30.55,14.943,0.489,0.1489,0.3452,0.1489,271,0.491,1.2383,339,60
+Level 4 Independent (Boundary & Feasibility),4,26409,scaled_guided_bc_v3,False,SAFE_REJECT,False,True,False,False,False,False,True,80,363,18.15,8.606,0.474,0.0985,0.598,0.0985,203,6.691,0.6,254,98
+Level 4 Independent (Boundary & Feasibility),4,26410,scaled_guided_bc_v3,True,SUCCESS,True,False,False,False,False,False,True,18,722,36.1,16.496,0.457,0.0971,0.3418,0.0971,345,0.496,1.2548,502,140
+Level 4 Independent (Boundary & Feasibility),4,26411,scaled_guided_bc_v3,False,TIMEOUT,False,False,True,False,False,False,True,701,1000,50.0,7.195,0.144,0.1244,0.3433,0.1244,938,9.978,0.6,944,112
+Level 4 Independent (Boundary & Feasibility),4,26412,scaled_guided_bc_v3,True,SUCCESS,True,False,False,False,False,False,True,10,582,29.1,14.708,0.505,0.125,0.3292,0.125,238,0.491,1.3301,325,103
+Level 4 Independent (Boundary & Feasibility),4,26413,scaled_guided_bc_v3,False,SAFE_REJECT,False,True,False,False,False,False,True,40,360,18.0,8.658,0.481,0.1072,0.5899,0.1072,176,6.696,0.6,254,90
+Level 4 Independent (Boundary & Feasibility),4,26414,scaled_guided_bc_v3,True,SUCCESS,True,False,False,False,False,False,False,0,562,28.1,14.95,0.532,0.1502,0.3578,0.1502,205,0.494,1.3995,310,76
+Level 4 Independent (Boundary & Feasibility),4,26415,scaled_guided_bc_v3,False,SAFE_REJECT,False,True,False,False,False,False,True,61,445,22.25,9.544,0.429,0.1174,0.367,0.1174,302,6.713,0.6,352,137
+Level 4 Independent (Boundary & Feasibility),4,26416,scaled_guided_bc_v3,True,SUCCESS,True,False,False,False,False,False,False,0,563,28.15,14.771,0.525,0.1749,0.3653,0.1749,165,0.489,1.4484,266,68
+Level 4 Independent (Boundary & Feasibility),4,26417,scaled_guided_bc_v3,False,SAFE_REJECT,False,True,False,False,False,False,True,75,376,18.8,8.808,0.468,0.1,0.5015,0.1,214,6.707,0.6,269,108
+Level 4 Independent (Boundary & Feasibility),4,26418,scaled_guided_bc_v3,True,SUCCESS,True,False,False,False,False,False,False,0,564,28.2,15.007,0.532,0.2345,0.3968,0.2345,179,0.492,1.506,314,67
+Level 4 Independent (Boundary & Feasibility),4,26419,scaled_guided_bc_v3,False,SAFE_REJECT,False,True,False,False,False,False,True,66,412,20.6,9.202,0.447,0.102,0.3725,0.102,274,6.683,0.6,319,123
+Level 4 Independent (Boundary & Feasibility),4,26420,scaled_guided_bc_v3,True,SUCCESS,True,False,False,False,False,False,False,0,484,24.2,13.994,0.578,0.3573,0.5637,0.3573,108,0.494,1.8783,212,36
+Level 4 Independent (Boundary & Feasibility),4,26421,scaled_guided_bc_v3,False,SAFE_REJECT,False,True,False,False,False,False,True,74,385,19.25,9.026,0.469,0.1026,0.4448,0.1026,228,6.699,0.6,296,123
+Level 4 Independent (Boundary & Feasibility),4,26422,scaled_guided_bc_v3,True,SUCCESS,True,False,False,False,False,False,True,18,574,28.7,14.66,0.511,0.0873,0.3238,0.0873,190,0.494,1.3087,290,76
+Level 4 Independent (Boundary & Feasibility),4,26423,scaled_guided_bc_v3,False,SAFE_REJECT,False,True,False,False,False,False,True,62,468,23.4,9.825,0.42,0.1025,0.3498,0.1025,334,6.713,0.6,372,147
+Level 4 Independent (Boundary & Feasibility),4,26424,scaled_guided_bc_v3,True,SUCCESS,True,False,False,False,False,False,False,0,571,28.55,14.904,0.522,0.1987,0.3367,0.1987,214,0.494,1.425,324,95
+Level 4 Independent (Boundary & Feasibility),4,26425,scaled_guided_bc_v3,False,SAFE_REJECT,False,True,False,False,False,False,True,82,395,19.75,8.99,0.455,0.1058,0.4521,0.1058,257,6.686,0.6,295,115
+Level 4 Independent (Boundary & Feasibility),4,26426,scaled_guided_bc_v3,True,SUCCESS,True,False,False,False,False,False,True,16,622,31.1,15.474,0.498,0.0969,0.317,0.0969,236,0.494,1.2776,353,105
+Level 4 Independent (Boundary & Feasibility),4,26427,scaled_guided_bc_v3,False,SAFE_REJECT,False,True,False,False,False,False,True,64,367,18.35,8.629,0.47,0.0981,0.6414,0.0981,198,6.692,0.6,250,99
+Level 4 Independent (Boundary & Feasibility),4,26428,scaled_guided_bc_v3,True,SUCCESS,True,False,False,False,False,False,False,0,549,27.45,14.827,0.54,0.1693,0.3577,0.1693,211,0.5,1.4581,321,88
+Level 4 Independent (Boundary & Feasibility),4,26429,scaled_guided_bc_v3,False,SAFE_REJECT,False,True,False,False,False,False,True,66,368,18.4,8.754,0.476,0.1073,0.5168,0.1073,223,6.701,0.6,267,108
+Level 4 Independent (Boundary & Feasibility),4,26430,scaled_guided_bc_v3,True,SUCCESS,True,False,False,False,False,False,True,20,677,33.85,15.441,0.456,0.0661,0.3275,0.0661,351,0.488,1.2241,446,111
+Level 4 Independent (Boundary & Feasibility),4,26431,scaled_guided_bc_v3,False,SAFE_REJECT,False,True,False,False,False,False,True,103,507,25.35,9.701,0.383,0.0969,0.3486,0.0969,379,6.705,0.6,405,152
+Level 4 Independent (Boundary & Feasibility),4,26432,scaled_guided_bc_v3,True,SUCCESS,True,False,False,False,False,False,False,0,519,25.95,14.216,0.548,0.2073,0.3767,0.2073,169,0.496,1.498,254,63
+Level 4 Independent (Boundary & Feasibility),4,26433,scaled_guided_bc_v3,False,SAFE_REJECT,False,True,False,False,False,False,True,66,467,23.35,9.826,0.421,0.1031,0.3578,0.1031,334,6.695,0.6,379,150
+Level 4 Independent (Boundary & Feasibility),4,26434,scaled_guided_bc_v3,True,SUCCESS,True,False,False,False,False,False,True,12,573,28.65,14.575,0.509,0.1204,0.3263,0.1204,221,0.497,1.3052,323,106
+Level 4 Independent (Boundary & Feasibility),4,26435,scaled_guided_bc_v3,False,SAFE_REJECT,False,True,False,False,False,False,True,58,369,18.45,8.752,0.474,0.1056,0.5056,0.1056,203,6.689,0.6,266,102
+Level 4 Independent (Boundary & Feasibility),4,26436,scaled_guided_bc_v3,True,SUCCESS,True,False,False,False,False,False,False,0,488,24.4,14.059,0.576,0.3419,0.4972,0.3419,134,0.498,1.7308,235,38
+Level 4 Independent (Boundary & Feasibility),4,26437,scaled_guided_bc_v3,False,SAFE_REJECT,False,True,False,False,False,False,True,31,611,30.55,11.166,0.365,0.1016,0.3428,0.1016,474,6.698,0.6,512,153
+Level 4 Independent (Boundary & Feasibility),4,26438,scaled_guided_bc_v3,True,SUCCESS,True,False,False,False,False,False,False,0,762,38.1,15.368,0.403,0.176,0.345,0.176,409,0.49,1.188,503,76
+Level 4 Independent (Boundary & Feasibility),4,26439,scaled_guided_bc_v3,False,SAFE_REJECT,False,True,False,False,False,False,True,60,555,27.75,10.181,0.367,0.1118,0.3389,0.1118,418,6.691,0.6,460,148
+Level 4 Independent (Boundary & Feasibility),4,26440,scaled_guided_bc_v3,True,SUCCESS,True,False,False,False,False,False,False,0,578,28.9,14.993,0.519,0.1614,0.3338,0.1614,193,0.493,1.3635,298,89
+Level 4 Independent (Boundary & Feasibility),4,26441,scaled_guided_bc_v3,False,SAFE_REJECT,False,True,False,False,False,False,True,93,428,21.4,9.139,0.427,0.0993,0.3456,0.0993,273,6.709,0.6,322,143
+Level 4 Independent (Boundary & Feasibility),4,26442,scaled_guided_bc_v3,True,SUCCESS,True,False,False,False,False,False,False,0,885,44.25,17.491,0.395,0.1558,0.3477,0.1558,536,0.493,1.2196,661,126
+Level 4 Independent (Boundary & Feasibility),4,26443,scaled_guided_bc_v3,False,SAFE_REJECT,False,True,False,False,False,False,True,51,391,19.55,8.794,0.45,0.1,0.3632,0.1,256,6.711,0.6,293,139
+Level 4 Independent (Boundary & Feasibility),4,26444,scaled_guided_bc_v3,True,SUCCESS,True,False,False,False,False,False,True,27,756,37.8,16.557,0.438,0.0058,0.3194,0.0058,426,0.498,1.1568,532,128
+Level 4 Independent (Boundary & Feasibility),4,26445,scaled_guided_bc_v3,False,SAFE_REJECT,False,True,False,False,False,False,True,94,455,22.75,9.226,0.406,0.0867,0.321,0.0867,319,6.693,0.6,353,171
+Level 4 Independent (Boundary & Feasibility),4,26446,scaled_guided_bc_v3,True,SUCCESS,True,False,False,False,False,False,False,0,649,32.45,15.669,0.483,0.1881,0.3413,0.1881,300,0.495,1.3973,403,125
+Level 4 Independent (Boundary & Feasibility),4,26447,scaled_guided_bc_v3,False,SAFE_REJECT,False,True,False,False,False,False,True,82,397,19.85,9.05,0.456,0.0981,0.4852,0.0981,253,6.72,0.6,290,121
+Level 4 Independent (Boundary & Feasibility),4,26448,scaled_guided_bc_v3,True,SUCCESS,True,False,False,False,False,False,False,0,584,29.2,14.936,0.511,0.2317,0.3638,0.2317,213,0.497,1.3911,339,88
+Level 4 Independent (Boundary & Feasibility),4,26449,scaled_guided_bc_v3,False,SAFE_REJECT,False,True,False,False,False,False,True,79,396,19.8,9.058,0.457,0.0864,0.4449,0.0864,250,6.693,0.6,296,119

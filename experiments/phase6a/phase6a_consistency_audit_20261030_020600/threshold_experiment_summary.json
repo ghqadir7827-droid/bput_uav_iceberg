@@ -1,0 +1,68 @@
+{
+  "Candidate_Threshold_0.350m": {
+    "trials": 50,
+    "successes": 42,
+    "success_rate_pct": 84.0,
+    "obstacle_collisions": 0,
+    "boundary_collisions": 0,
+    "obs_envelope_violations": 0,
+    "wall_envelope_violations": 0,
+    "min_obstacle_clearance_m": 0.0957,
+    "min_wall_clearance_m": 0.19419999420642853,
+    "mean_progress_m": 8.4752,
+    "mean_duration_s": 21.07,
+    "pillar_1_passage_rate_pct": 100.0,
+    "pillar_2_passage_rate_pct": 100.0,
+    "pillar_3_passage_rate_pct": 92.0,
+    "outcome_breakdown": {
+      "SUCCESS": 42,
+      "PROGRESS_STALL_PILLAR_3": 5,
+      "TIMEOUT_SLOW_TRANSIT": 2,
+      "GOAL_ALIGNMENT_TIMEOUT": 1
+    }
+  },
+  "Candidate_Threshold_0.325m": {
+    "trials": 50,
+    "successes": 42,
+    "success_rate_pct": 84.0,
+    "obstacle_collisions": 0,
+    "boundary_collisions": 0,
+    "obs_envelope_violations": 0,
+    "wall_envelope_violations": 0,
+    "min_obstacle_clearance_m": 0.0968,
+    "min_wall_clearance_m": 0.20069999992847443,
+    "mean_progress_m": 8.4812,
+    "mean_duration_s": 21.08,
+    "pillar_1_passage_rate_pct": 100.0,
+    "pillar_2_passage_rate_pct": 100.0,
+    "pillar_3_passage_rate_pct": 92.0,
+    "outcome_breakdown": {
+      "SUCCESS": 42,
+      "PROGRESS_STALL_PILLAR_3": 5,
+      "TIMEOUT_SLOW_TRANSIT": 2,
+      "GOAL_ALIGNMENT_TIMEOUT": 1
+    }
+  },
+  "Candidate_Threshold_0.300m": {
+    "trials": 50,
+    "successes": 42,
+    "success_rate_pct": 84.0,
+    "obstacle_collisions": 0,
+    "boundary_collisions": 0,
+    "obs_envelope_violations": 0,
+    "wall_envelope_violations": 0,
+    "min_obstacle_clearance_m": 0.0932,
+    "min_wall_clearance_m": 0.2029000073671341,
+    "mean_progress_m": 8.482,
+    "mean_duration_s": 21.08,
+    "pillar_1_passage_rate_pct": 100.0,
+    "pillar_2_passage_rate_pct": 100.0,
+    "pillar_3_passage_rate_pct": 92.0,
+    "outcome_breakdown": {
+      "SUCCESS": 42,
+      "PROGRESS_STALL_PILLAR_3": 5,
+      "TIMEOUT_SLOW_TRANSIT": 2,
+      "GOAL_ALIGNMENT_TIMEOUT": 1
+    }
+  }
+}

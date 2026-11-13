@@ -1,0 +1,104 @@
+{
+  "audit_metadata": {
+    "audit_title": "PHASE 4F.1 Independent Forensic Audit Discrepancy Register",
+    "timestamp_iso": "2026-10-31T13:16:00Z",
+    "canonical_workspace": "/Users/ghulamqadir/.gemini/antigravity-ide/scratch/uav-bput-nav",
+    "git_branch": "feature/v4-radial-adaptive-guidance",
+    "git_commit": "f5b76601b3e23f2e7b6cc174ed9a3a8dedfd8b3f",
+    "checkpoint_path": "models/checkpoints/bc_policy_scaled_v2.pt",
+    "checkpoint_sha256": "d02d5712a3e292c535c8ff78898c7c0a8d5758c8fd0a22738c998f67c8ba79d1"
+  },
+  "discrepancies": [
+    {
+      "id": "DISCREPANCY_01_MIN_CLEARANCE_CONTRADICTION",
+      "category": "Reporting / Metric Definition Defect",
+      "original_claim": "PHASE4F_EVALUATION_REPORT.md Section 7.2 table reports scaled_guided_bc_v5 Stage B Overall Min Clearance as 0.0786 m, while Section 7.3 Level 1 reports min clearance of 0.0055 m and 1 wall-scrape collision.",
+      "raw_data_evidence": "In data/phase4f_development_metrics.json (line 78), overall_min_clearance_m is 0.0055 m, while successful_min_clearance_m is 0.0786 m. In data/phase4f_episode_outcomes.json, Seed 20104 recorded a boundary collision with overall_min_clearance_m = 0.0055 m.",
+      "recomputed_result": "True overall minimum clearance across all 200 Stage B episodes is 0.0055 m (from Seed 20104). The value 0.0786 m is strictly the minimum clearance among successful goal-arrival episodes (successful_min_clearance_m, occurring in Level 3 Seed 20248).",
+      "audit_status": "CONTRADICTED",
+      "impact": "High. The report table placed successful_min_clearance_m into the Overall Min Clearance column, creating a physical contradiction with the reported Level 1 collision and masking the near-boundary crash in the top-level summary table.",
+      "required_correction": "Label overall minimum clearance as 0.0055 m (all runs) and 0.0786 m (successful arrivals only), explicitly identifying the boundary crash."
+    },
+    {
+      "id": "DISCREPANCY_02_COLLISION_SEED_IDENTIFICATION",
+      "category": "Reporting / Transcription Error",
+      "original_claim": "PHASE4F_EVALUATION_REPORT.md Section 7.3 Level 1 text cites '1 collision (seed 20108 wall scrape)'.",
+      "raw_data_evidence": "In data/phase4f_episode_outcomes.json, Seed 20108 achieved CLEAN_SUCCESS with min obstacle clearance 0.5778 m and min boundary clearance 0.5664 m. Seed 20104 experienced CRASH_BOUNDARY with min boundary clearance 0.0055 m.",
+      "recomputed_result": "The single Stage B collision occurred on Seed 20104, not Seed 20108.",
+      "audit_status": "CONTRADICTED",
+      "impact": "Medium. Misidentifies the failing episode, impeding forensic debugging.",
+      "required_correction": "Correct the cited collision episode seed from 20108 to 20104 in all narratives."
+    },
+    {
+      "id": "DISCREPANCY_03_SAFE_REJECTIONS_DENOMINATOR_AND_SEED_26444",
+      "category": "Semantic Classification & Feasibility Defect",
+      "original_claim": "PHASE4F_EVALUATION_REPORT.md claims 25/25 (100.0%) safe rejections on strictly infeasible Level 4 scenarios, but footnote states 26 safe rejections out of 25 in Stage C.",
+      "raw_data_evidence": "Level 4 consists of exactly 25 feasible seeds (even: 26400..26448) and 25 infeasible seeds (odd: 26401..26449). In data/phase4f_independent_confirmation_metrics.json, Level 4 safe_rejection_rate is reported as 1.04 (26 / 25). Seed 26444 is geometrically feasible (bottleneck gap = 1.157 m, drone width = 0.65 m, margin = 0.507 m > 0.150 m required), but was classified as SAFE_REJECTION by OutcomeClassifier.",
+      "recomputed_result": "Seed 26444 is a false-positive conservative rejection on a feasible route. Correct safe rejections on verified infeasible routes are exactly 25/25 (100.0%). False-positive safe rejections on feasible routes are 1/25 (4.0% of Level 4 feasible, 1/175 = 0.57% of all feasible). Total safe rejections across Stage C is 26 (25 correct + 1 false positive).",
+      "audit_status": "CONTRADICTED",
+      "impact": "High. Pooling a false-positive rejection into safe rejections produced a mathematically impossible rate of 104%, masking a conservative abort on a passable corridor.",
+      "required_correction": "Disaggregate correct safe rejection of infeasible routes (25/25 = 100.0%) from false-positive conservative rejection of feasible routes (1/175 = 0.57%). Recompute Level 4 feasible clean success as 22/25 (88.0%) with 1 false-positive arrest, 2 envelope breaches, and 0 timeouts."
+    },
+    {
+      "id": "DISCREPANCY_04_SAFE_ARREST_FORWARD_VELOCITY_LEAK",
+      "category": "Controller / State Machine Flaw",
+      "original_claim": "The SafeArrestStateMachine halts forward progress, anchors hover position, and dwells for 2.0s upon verifying impassability.",
+      "raw_data_evidence": "In controllers/safe_arrest.py, entering SAFE_ARREST asserts suppress_lateral_guidance = True (vy = 0.0), but does not command forward velocity vx to 0. In scripts/run_phase4f_evaluation.py, the BC network continues commanding vx ≈ 0.15 m/s. In SafeArrestStateMachine.update(), anchor position is continuously reset whenever speed_xy > 0.05 m/s. In Seed 26444, the drone entered SAFE_ARREST at x = 6.73 m, but continued cruising forward to x = 9.92 m (over 3.19 meters forward drift) before supervisor braking slowed it below 0.05 m/s to begin the dwell timer.",
+      "recomputed_result": "At impassable barriers, the physical obstacle forces vx to 0, masking this flaw. In open or passable passages, the state machine does not brake the vehicle; the drone drifts forward under neural network momentum while ostensibly in SAFE_ARREST.",
+      "audit_status": "CONTRADICTED",
+      "impact": "Critical. Reveals an unverified dynamic assumption: safe arrest was not actively decelerating the drone, but relying on obstacle blockage to stop forward flight.",
+      "required_correction": "Explicitly override vx = 0.0 m/s when entering VERIFIED_INFEASIBLE or SAFE_ARREST, and anchor the hover coordinate at the moment of state transition."
+    },
+    {
+      "id": "DISCREPANCY_05_SAFE_ARREST_THRESHOLD_MISMATCH",
+      "category": "Geometry / Sensor Threshold Error",
+      "original_claim": "The safe-arrest state machine checks whether lateral clearance allows the 65 cm drone to pass.",
+      "raw_data_evidence": "In controllers/safe_arrest.py (lines 135-136), left_blocked and right_blocked are evaluated as c_left < 0.65 m and c_right < 0.65 m, where c_left and c_right are individual body-frame rangefinder readings measured from the drone center. The drone center-to-wall distance in a centered 1.15 m passage is only 0.575 m.",
+      "recomputed_result": "In a 1.15 m passage, the UAV center distance to each boundary is ~0.58 m < 0.65 m. Comparing individual ray readings to the full 0.65 m diameter falsely flags both sides as impassable, causing the state machine to falsely declare impassability on feasible passages.",
+      "audit_status": "CONTRADICTED",
+      "impact": "High. Causes false-positive infeasibility declarations on any narrow corridor whose half-opening is less than 0.65 m, even when the total opening exceeds the 0.65 m diameter.",
+      "required_correction": "Evaluate passage traversability against total passage opening (c_left + c_right >= min_traversable_width_m) or compare individual clearances to half-width plus margin (0.325 m + 0.150 m = 0.475 m)."
+    },
+    {
+      "id": "DISCREPANCY_06_SEED_20334_CLEARANCE_VALUE",
+      "category": "Reporting / Transcription Error",
+      "original_claim": "PHASE4F_EVALUATION_REPORT.md Section 6 reports v5 minimum clearance on Seed 20334 as 0.1320 m.",
+      "raw_data_evidence": "In data/phase4f_episode_outcomes.json, Seed 20334 under scaled_guided_bc_v5 recorded min_obs_clearance = 0.1354 m, min_bnd_clearance = 0.3285 m, and overall_min_clearance = 0.1354 m.",
+      "recomputed_result": "Independently re-simulating Seed 20334 yields exactly 0.1354 m (+51.8% over v4's 0.0892 m), not 0.1320 m.",
+      "audit_status": "CONTRADICTED",
+      "impact": "Low. Minor numerical discrepancy (0.1320 m vs 0.1354 m); both values confirm an envelope breach (< 0.1500 m) and validate substantial clearance widening.",
+      "required_correction": "Update narrative text and tables to state the exact simulated clearance of 0.1354 m."
+    },
+    {
+      "id": "DISCREPANCY_07_STATISTICAL_SIGNIFICANCE_POOLING",
+      "category": "Statistical Interpretation & Reporting Defect",
+      "original_claim": "PHASE4F_EVALUATION_REPORT.md cites paired McNemar p = 5.13e-6 (Stage B) and p = 1.01e-7 (Stage C) as proof that v5 is overwhelmingly superior to v4.",
+      "raw_data_evidence": "In Stage B, the feasible-only clean success rate of v5 is 80.6% (141/175) vs v4's 74.3% (130/175), yielding a paired difference of +6.29 pp with exact McNemar p = 0.0895 (not statistically significant at alpha = 0.05). In Stage C, feasible-only clean success is 86.9% (152/175) vs 80.6% (141/175), with exact McNemar p = 0.0192.",
+      "recomputed_result": "The p = 5.13e-6 significance in Stage B is driven almost entirely by the safe-arrest state machine resolving 24 infeasible barrier timeouts. On feasible routes, v5 did not achieve statistically significant superiority over v4 in Stage B (p = 0.0895), though it did achieve significant superiority in Stage C (p = 0.0192).",
+      "audit_status": "CONTRADICTED",
+      "impact": "High. Pooling feasible navigation arrivals with impassable barrier arrests created an exaggerated impression of flight guidance superiority.",
+      "required_correction": "Report feasible-route navigation significance separately from impassable-route arrest significance."
+    },
+    {
+      "id": "DISCREPANCY_08_ARREST_DRIFT_STATISTIC",
+      "category": "Reporting / Descriptive Statistic Error",
+      "original_claim": "PHASE4F_EVALUATION_REPORT.md Section 5.3 reports 'Mean hover drift across all 25 arrests: 7.2 mm'.",
+      "raw_data_evidence": "In data/phase4f_episode_outcomes.json, 7.2 mm is the drift of Seed 20301 alone. The mean final drift across all 25 infeasible arrests in Stage B is 8.0 mm (range: 3.6 mm to 12.6 mm). The maximum drift during the entire dwell window across all 25 runs is 19.4 mm.",
+      "recomputed_result": "True mean final drift is 8.0 mm (0.0080 m); mean peak hover drift is 17.0 mm (0.0170 m).",
+      "audit_status": "CONTRADICTED",
+      "impact": "Low. Both 7.2 mm and 8.0 mm are well below the allowable 100.0 mm limit.",
+      "required_correction": "Report true mean drift of 8.0 mm (final) / 17.0 mm (peak) across the 25 episodes."
+    },
+    {
+      "id": "DISCREPANCY_09_HOLDOUT_SEED_PROVENANCE",
+      "category": "Provenance & Verification Detail",
+      "original_claim": "Stage C seeds (26100..26449) are pristine holdout seeds disjoint from all prior evaluations.",
+      "raw_data_evidence": "Seeds 26100..26449 are completely disjoint from all behavioral cloning training demonstrations (bc_train_scaled_v2.npz, 406 seeds) and validation demonstrations (bc_val_scaled_v2.npz, 90 seeds), and disjoint from Phase 4 development seeds (20000..20349). However, they were pre-registered in data/independent_final_seed_manifest.json and executed in Phase 5 for v2 vs v3 (scripts/run_independent_final_evaluation.py).",
+      "recomputed_result": "Seeds 26100..26449 are genuinely held out from v4 and v5 development and parameter tuning, but are not novel to the repository, having served as the frozen Phase 5 benchmark set.",
+      "audit_status": "CONFIRMED WITH QUALIFICATION",
+      "impact": "Low. Experimental integrity is preserved because v4 and v5 were never tuned on these seeds.",
+      "required_correction": "Clarify that Stage C seeds represent the frozen Phase 5 holdout suite pre-registered in data/independent_final_seed_manifest.json."
+    }
+  ]
+}
+

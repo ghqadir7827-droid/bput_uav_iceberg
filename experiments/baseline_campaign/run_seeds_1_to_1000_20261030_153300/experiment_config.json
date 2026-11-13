@@ -1,0 +1,50 @@
+{
+  "timestamp": "20261030_153316",
+  "scenario": "initial_benchmark_10m",
+  "corridor_dimensions": {
+    "x_start": 0.0,
+    "x_end": 10.0,
+    "width": 2.0,
+    "height": 2.0,
+    "pillar_x_positions": [
+      3.0,
+      5.0,
+      7.0
+    ],
+    "pillar_radius": 0.2,
+    "drone_radius": 0.15,
+    "goal_position": [
+      9.5,
+      0.0,
+      1.0
+    ],
+    "goal_radius": 0.35
+  },
+  "episode_horizon": {
+    "default_steps": 500,
+    "override_steps": 1000,
+    "evaluation_duration_s": 50.0
+  },
+  "supervisor_configuration": {
+    "obstacle_caution_dist_m": 0.5,
+    "critical_obstacle_dist_m": 0.3,
+    "emergency_reverse_dist_m": 0.15,
+    "boundary_buffer_m": 0.25,
+    "safety_envelope_m": 0.08
+  },
+  "controllers": [
+    {
+      "id": "reactive_baseline",
+      "class": "ReactiveBaselineController",
+      "cruise_speed": 0.7,
+      "type": "deterministic_reactive"
+    },
+    {
+      "id": "random_baseline",
+      "class": "RandomBaselineController",
+      "seeding_strategy": "seeded_per_episode_with_env_seed",
+      "type": "stochastic_uniform_exploration"
+    }
+  ],
+  "git_commit": "f5b76601b3e23f2e7b6cc174ed9a3a8dedfd8b3f"
+}

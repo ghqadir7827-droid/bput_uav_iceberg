@@ -1,0 +1,126 @@
+{
+  "milestone": "2A",
+  "timestamp_iso": "2026-11-07T11:14:21Z",
+  "source_checkpoint": {
+    "path": "models/checkpoints/bc_policy_scaled_v2.pt",
+    "sha256": "d02d5712a3e292c535c8ff78898c7c0a8d5758c8fd0a22738c998f67c8ba79d1",
+    "total_params": 28740,
+    "obs_dim": 23,
+    "act_dim": 4,
+    "hidden_dims": [
+      128,
+      128,
+      64
+    ],
+    "epoch": 30,
+    "val_loss": 0.00020342343027065138,
+    "val_mae": 0.0037574061103877524
+  },
+  "onnx_model": {
+    "path": "models/checkpoints/policy_bc_v3.onnx",
+    "sha256": "beaaaf5ac2a90997811452c35ec085b27c7c344adf1d2acb04d74a38a435e0e7",
+    "file_size_bytes": 150205,
+    "file_size_kb": 146.7,
+    "opset_version": 18,
+    "input_names": [
+      "observation"
+    ],
+    "input_shape": [
+      "batch_size",
+      23
+    ],
+    "output_names": [
+      "velocity_action"
+    ],
+    "output_shape": [
+      "batch_size",
+      4
+    ],
+    "operator_inventory": {
+      "Gemm": 4,
+      "LayerNormalization": 3,
+      "Div": 3,
+      "Erf": 3,
+      "Add": 4,
+      "Mul": 7,
+      "Tanh": 1
+    },
+    "total_nodes": 25,
+    "total_initializers": 19
+  },
+  "numerical_parity": {
+    "tolerance_target": 0.0001,
+    "total_test_vectors": 2274,
+    "global_max_abs_error": 1.4007091522216797e-06,
+    "per_dimension_max_abs_error": {
+      "vx": 4.76837158203125e-07,
+      "vy": 1.4007091522216797e-06,
+      "vz": 2.9802322387695312e-08,
+      "yaw_rate": 1.1026859283447266e-06
+    },
+    "per_dimension_mean_abs_error": {
+      "vx": 4.700353088982816e-08,
+      "vy": 9.408972740890876e-08,
+      "vz": 4.415023243509351e-09,
+      "yaw_rate": 6.059755062010293e-08
+    },
+    "test_suites": {
+      "random_1000": {
+        "samples": 1000,
+        "max_abs_error": 1.3709068298339844e-06,
+        "mean_abs_error": 5.476321618402835e-08,
+        "p99_abs_error": 3.72678044868735e-07,
+        "status": "PASS"
+      },
+      "zero_and_max_range": {
+        "samples": 60,
+        "max_abs_error": 1.1175870895385742e-06,
+        "mean_abs_error": 7.187551887000154e-08,
+        "p99_abs_error": 6.20037326370948e-07,
+        "status": "PASS"
+      },
+      "minimum_range": {
+        "samples": 50,
+        "max_abs_error": 1.3560056686401367e-06,
+        "mean_abs_error": 1.0918825665839904e-07,
+        "p99_abs_error": 8.005648624020978e-07,
+        "status": "PASS"
+      },
+      "boundary_corners": {
+        "samples": 64,
+        "max_abs_error": 7.599592208862305e-07,
+        "mean_abs_error": 6.866598312171845e-08,
+        "p99_abs_error": 5.200505484026507e-07,
+        "status": "PASS"
+      },
+      "recorded_sim_1000": {
+        "samples": 1000,
+        "max_abs_error": 5.364418029785156e-07,
+        "mean_abs_error": 3.986228591656982e-08,
+        "p99_abs_error": 1.7881393432617188e-07,
+        "status": "PASS"
+      },
+      "saturated_inputs": {
+        "samples": 100,
+        "max_abs_error": 1.4007091522216797e-06,
+        "mean_abs_error": 8.379094396104847e-08,
+        "p99_abs_error": 9.5367431640625e-07,
+        "status": "PASS"
+      }
+    },
+    "status": "PASS"
+  },
+  "composite_controller_parity": {
+    "tests_evaluated": 1000,
+    "guidance_direction_mismatches": 0,
+    "supervisor_state_mismatches": 0,
+    "max_final_action_diff": 1.1026859283447266e-06,
+    "status": "PASS"
+  },
+  "environment": {
+    "torch_version": "2.14.1",
+    "onnx_version": "1.23.2",
+    "onnxruntime_version": "1.31.0",
+    "numpy_version": "2.4.6"
+  }
+}

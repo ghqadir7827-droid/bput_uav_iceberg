@@ -18,8 +18,8 @@ import pybullet as p
 from PIL import Image
 
 from controllers.registry import ControllerRegistry
-from controllers.safety_supervisor import SafetyState, SafetySupervisor
-from core.contracts import VelocityAction
+from controllers.safety_supervisor import SafetyState, SafetySupervisor, SafetySupervisorConfig
+from core.contracts import VelocityAction, compute_forward_clearance_m
 from localization.interface import LocalizationManager
 from localization.sim_source import SimGroundTruthSource
 from sim.corridor_env import CorridorSimEnv
@@ -92,8 +92,9 @@ def run_gui(
         physicsClientId=env.client_id
     )
 
-    # Initialize Safety Supervisor & Localization Layer
-    safety_sup = SafetySupervisor(corridor=env.corridor)
+    # Initialize Safety Supervisor & Localization Layer with production-standard 0.50m caution distance
+    sup_config = SafetySupervisorConfig(obstacle_caution_dist_m=0.50)
+    safety_sup = SafetySupervisor(corridor=env.corridor, config=sup_config)
     sim_loc_source = SimGroundTruthSource()
     loc_mgr = LocalizationManager(primary_source=sim_loc_source, allow_dynamic_switching=False)
 
@@ -125,8 +126,8 @@ def run_gui(
             # Controller Prediction
             raw_action = controller.predict(obs)
 
-            # Safety Supervisor Filter
-            front_dist = float(obs[0] * env.sensor_config.max_range_m)
+            # Safety Supervisor Filter across forward-facing rays (indices 0..4)
+            front_dist = compute_forward_clearance_m(obs, max_range_m=env.sensor_config.max_range_m)
             safe_action, s_state, s_reason = safety_sup.filter_action(
                 proposed_action=raw_action,
                 current_position=pkt.position if pkt else priv.global_position,

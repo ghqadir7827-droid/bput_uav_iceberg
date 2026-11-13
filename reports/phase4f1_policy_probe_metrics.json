@@ -1,0 +1,6012 @@
+{
+  "checkpoints": {
+    "ppo_policy_best": {
+      "path": "models/checkpoints/ppo_policy_best.pt",
+      "sha256": "33f6d8b705edcffa430c48b2a21ed33a3e00f81b1c8195323134dd8be2a00ee0"
+    },
+    "bc_policy_best": {
+      "path": "models/checkpoints/bc_policy_best.pt",
+      "sha256": "93c4d7d1d8476b8d288a24fca1862d87133696f78b9603aa622bcc367afad44f"
+    }
+  },
+  "open_space_probes": [
+    {
+      "mode": "static_hover",
+      "x": 1.0,
+      "y": -0.4,
+      "z": 1.0,
+      "vx_init": 0.0,
+      "left_wall_dist_m": 1.4,
+      "right_wall_dist_m": 0.6,
+      "observation_23": [
+        1.0,
+        0.6994,
+        0.2944,
+        0.4144,
+        0.1765,
+        0.3418,
+        0.1505,
+        0.9966,
+        0.3488,
+        0.354,
+        0.2475,
+        0.2545,
+        0.9989,
+        0.047,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        -0.0,
+        1.0,
+        0.0
+      ],
+      "ppo": {
+        "head_logits": [
+          0.8404,
+          0.147,
+          0.151,
+          0.0525
+        ],
+        "action": {
+          "vx": 0.643,
+          "vy": 0.0876,
+          "vz": 0.0599,
+          "yaw_rate": 0.0315
+        },
+        "safe_action": {
+          "vx": 0.4873,
+          "vy": 0.0876,
+          "vz": 0.0599,
+          "yaw_rate": 0.0315
+        },
+        "safety_state": "obstacle_brake"
+      },
+      "bc": {
+        "head_logits": [
+          0.9856,
+          0.0072,
+          0.0085,
+          0.0111
+        ],
+        "action": {
+          "vx": 0.6777,
+          "vy": 0.0043,
+          "vz": 0.0034,
+          "yaw_rate": 0.0067
+        },
+        "safe_action": {
+          "vx": 0.4873,
+          "vy": 0.0043,
+          "vz": 0.0034,
+          "yaw_rate": 0.0067
+        },
+        "safety_state": "obstacle_brake"
+      }
+    },
+    {
+      "mode": "static_hover",
+      "x": 1.0,
+      "y": -0.3,
+      "z": 1.0,
+      "vx_init": 0.0,
+      "left_wall_dist_m": 1.3,
+      "right_wall_dist_m": 0.7,
+      "observation_23": [
+        0.9959,
+        0.6475,
+        0.3446,
+        0.3752,
+        1.0,
+        0.3264,
+        0.1695,
+        0.9977,
+        0.3574,
+        0.3548,
+        0.2485,
+        0.2538,
+        0.9994,
+        0.0353,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        -0.0,
+        1.0,
+        0.0
+      ],
+      "ppo": {
+        "head_logits": [
+          0.3757,
+          0.1159,
+          0.0578,
+          0.0545
+        ],
+        "action": {
+          "vx": 0.4795,
+          "vy": 0.0692,
+          "vz": 0.0231,
+          "yaw_rate": 0.0327
+        },
+        "safe_action": {
+          "vx": 0.4795,
+          "vy": 0.0692,
+          "vz": 0.0231,
+          "yaw_rate": 0.0327
+        },
+        "safety_state": "nominal"
+      },
+      "bc": {
+        "head_logits": [
+          0.7022,
+          0.0557,
+          0.0109,
+          0.0094
+        ],
+        "action": {
+          "vx": 0.6029,
+          "vy": 0.0334,
+          "vz": 0.0043,
+          "yaw_rate": 0.0057
+        },
+        "safe_action": {
+          "vx": 0.6,
+          "vy": 0.0334,
+          "vz": 0.0043,
+          "yaw_rate": 0.0057
+        },
+        "safety_state": "nominal"
+      }
+    },
+    {
+      "mode": "static_hover",
+      "x": 1.0,
+      "y": -0.2,
+      "z": 1.0,
+      "vx_init": 0.0,
+      "left_wall_dist_m": 1.2,
+      "right_wall_dist_m": 0.8,
+      "observation_23": [
+        1.0,
+        0.5926,
+        0.3978,
+        0.3474,
+        0.225,
+        0.3034,
+        0.2,
+        1.0,
+        1.0,
+        0.3523,
+        0.2387,
+        0.2502,
+        0.9997,
+        0.0235,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        -0.0,
+        1.0,
+        0.0
+      ],
+      "ppo": {
+        "head_logits": [
+          0.6384,
+          0.0948,
+          0.1153,
+          0.0558
+        ],
+        "action": {
+          "vx": 0.5819,
+          "vy": 0.0567,
+          "vz": 0.0459,
+          "yaw_rate": 0.0335
+        },
+        "safe_action": {
+          "vx": 0.5819,
+          "vy": 0.0567,
+          "vz": 0.0459,
+          "yaw_rate": 0.0335
+        },
+        "safety_state": "nominal"
+      },
+      "bc": {
+        "head_logits": [
+          0.7858,
+          0.0156,
+          -0.0053,
+          0.0062
+        ],
+        "action": {
+          "vx": 0.628,
+          "vy": 0.0093,
+          "vz": -0.0021,
+          "yaw_rate": 0.0037
+        },
+        "safe_action": {
+          "vx": 0.6,
+          "vy": 0.0093,
+          "vz": -0.0021,
+          "yaw_rate": 0.0037
+        },
+        "safety_state": "nominal"
+      }
+    },
+    {
+      "mode": "static_hover",
+      "x": 1.0,
+      "y": -0.1,
+      "z": 1.0,
+      "vx_init": 0.0,
+      "left_wall_dist_m": 1.1,
+      "right_wall_dist_m": 0.9,
+      "observation_23": [
+        0.4595,
+        0.5543,
+        0.4533,
+        0.3195,
+        0.2522,
+        0.2744,
+        0.2257,
+        1.0,
+        0.3536,
+        0.3559,
+        0.2533,
+        0.2424,
+        0.9999,
+        0.0118,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        -0.0,
+        1.0,
+        0.0
+      ],
+      "ppo": {
+        "head_logits": [
+          0.7805,
+          -0.0338,
+          0.0964,
+          -0.0216
+        ],
+        "action": {
+          "vx": 0.6265,
+          "vy": -0.0203,
+          "vz": 0.0385,
+          "yaw_rate": -0.0129
+        },
+        "safe_action": {
+          "vx": 0.6,
+          "vy": -0.0203,
+          "vz": 0.0385,
+          "yaw_rate": -0.0129
+        },
+        "safety_state": "nominal"
+      },
+      "bc": {
+        "head_logits": [
+          0.8832,
+          0.0,
+          -0.0055,
+          0.0132
+        ],
+        "action": {
+          "vx": 0.654,
+          "vy": 0.0,
+          "vz": -0.0022,
+          "yaw_rate": 0.0079
+        },
+        "safe_action": {
+          "vx": 0.6,
+          "vy": 0.0,
+          "vz": -0.0022,
+          "yaw_rate": 0.0079
+        },
+        "safety_state": "nominal"
+      }
+    },
+    {
+      "mode": "static_hover",
+      "x": 1.0,
+      "y": 0.0,
+      "z": 1.0,
+      "vx_init": 0.0,
+      "left_wall_dist_m": 1.0,
+      "right_wall_dist_m": 1.0,
+      "observation_23": [
+        0.4531,
+        0.495,
+        0.5029,
+        0.2861,
+        0.2913,
+        0.2514,
+        0.2458,
+        0.9952,
+        0.3479,
+        0.3608,
+        0.2497,
+        0.2479,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        -0.0,
+        1.0,
+        0.0
+      ],
+      "ppo": {
+        "head_logits": [
+          0.7496,
+          -0.0577,
+          0.0891,
+          -0.0499
+        ],
+        "action": {
+          "vx": 0.6174,
+          "vy": -0.0346,
+          "vz": 0.0356,
+          "yaw_rate": -0.0299
+        },
+        "safe_action": {
+          "vx": 0.6,
+          "vy": -0.0346,
+          "vz": 0.0356,
+          "yaw_rate": -0.0299
+        },
+        "safety_state": "nominal"
+      },
+      "bc": {
+        "head_logits": [
+          0.8675,
+          0.0,
+          -0.0065,
+          0.0088
+        ],
+        "action": {
+          "vx": 0.6501,
+          "vy": 0.0,
+          "vz": -0.0026,
+          "yaw_rate": 0.0053
+        },
+        "safe_action": {
+          "vx": 0.6,
+          "vy": 0.0,
+          "vz": -0.0026,
+          "yaw_rate": 0.0053
+        },
+        "safety_state": "nominal"
+      }
+    },
+    {
+      "mode": "static_hover",
+      "x": 1.0,
+      "y": 0.1,
+      "z": 1.0,
+      "vx_init": 0.0,
+      "left_wall_dist_m": 0.9,
+      "right_wall_dist_m": 1.1,
+      "observation_23": [
+        0.4577,
+        0.4442,
+        0.547,
+        0.2553,
+        0.3257,
+        0.2258,
+        0.275,
+        0.9988,
+        0.3547,
+        0.3569,
+        0.251,
+        0.2494,
+        0.9999,
+        -0.0118,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        -0.0,
+        1.0,
+        0.0
+      ],
+      "ppo": {
+        "head_logits": [
+          0.7242,
+          -0.0801,
+          0.0829,
+          -0.0757
+        ],
+        "action": {
+          "vx": 0.6097,
+          "vy": -0.048,
+          "vz": 0.0331,
+          "yaw_rate": -0.0453
+        },
+        "safe_action": {
+          "vx": 0.6,
+          "vy": -0.048,
+          "vz": 0.0331,
+          "yaw_rate": -0.0453
+        },
+        "safety_state": "nominal"
+      },
+      "bc": {
+        "head_logits": [
+          0.8531,
+          -0.0016,
+          -0.0073,
+          0.0031
+        ],
+        "action": {
+          "vx": 0.6463,
+          "vy": -0.0009,
+          "vz": -0.0029,
+          "yaw_rate": 0.0019
+        },
+        "safe_action": {
+          "vx": 0.6,
+          "vy": -0.0009,
+          "vz": -0.0029,
+          "yaw_rate": 0.0019
+        },
+        "safety_state": "nominal"
+      }
+    },
+    {
+      "mode": "static_hover",
+      "x": 1.0,
+      "y": 0.2,
+      "z": 1.0,
+      "vx_init": 0.0,
+      "left_wall_dist_m": 0.8,
+      "right_wall_dist_m": 1.2,
+      "observation_23": [
+        0.4863,
+        0.4009,
+        0.6041,
+        0.2251,
+        0.353,
+        0.2008,
+        0.3144,
+        0.9943,
+        0.354,
+        0.3544,
+        0.2561,
+        0.2364,
+        0.9997,
+        -0.0235,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        -0.0,
+        1.0,
+        0.0
+      ],
+      "ppo": {
+        "head_logits": [
+          0.6864,
+          -0.0957,
+          0.0737,
+          -0.0983
+        ],
+        "action": {
+          "vx": 0.5978,
+          "vy": -0.0573,
+          "vz": 0.0294,
+          "yaw_rate": -0.0588
+        },
+        "safe_action": {
+          "vx": 0.5978,
+          "vy": -0.0573,
+          "vz": 0.0294,
+          "yaw_rate": -0.0588
+        },
+        "safety_state": "nominal"
+      },
+      "bc": {
+        "head_logits": [
+          0.8367,
+          -0.0042,
+          -0.0071,
+          -0.0032
+        ],
+        "action": {
+          "vx": 0.642,
+          "vy": -0.0025,
+          "vz": -0.0028,
+          "yaw_rate": -0.0019
+        },
+        "safe_action": {
+          "vx": 0.6,
+          "vy": -0.0025,
+          "vz": -0.0028,
+          "yaw_rate": -0.0019
+        },
+        "safety_state": "nominal"
+      }
+    },
+    {
+      "mode": "static_hover",
+      "x": 1.0,
+      "y": 0.3,
+      "z": 1.0,
+      "vx_init": 0.0,
+      "left_wall_dist_m": 0.7,
+      "right_wall_dist_m": 1.3,
+      "observation_23": [
+        0.9419,
+        0.3508,
+        0.6447,
+        0.2122,
+        0.3771,
+        0.1749,
+        0.3343,
+        0.9985,
+        0.3503,
+        0.3507,
+        0.2441,
+        0.249,
+        0.9994,
+        -0.0353,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        -0.0,
+        1.0,
+        0.0
+      ],
+      "ppo": {
+        "head_logits": [
+          0.554,
+          -0.0282,
+          0.0735,
+          -0.1101
+        ],
+        "action": {
+          "vx": 0.5518,
+          "vy": -0.0169,
+          "vz": 0.0294,
+          "yaw_rate": -0.0658
+        },
+        "safe_action": {
+          "vx": 0.5518,
+          "vy": -0.0169,
+          "vz": 0.0294,
+          "yaw_rate": -0.0658
+        },
+        "safety_state": "nominal"
+      },
+      "bc": {
+        "head_logits": [
+          0.8277,
+          -0.0013,
+          0.0015,
+          -0.0171
+        ],
+        "action": {
+          "vx": 0.6396,
+          "vy": -0.0008,
+          "vz": 0.0006,
+          "yaw_rate": -0.0102
+        },
+        "safe_action": {
+          "vx": 0.6,
+          "vy": -0.0008,
+          "vz": 0.0006,
+          "yaw_rate": -0.0102
+        },
+        "safety_state": "nominal"
+      }
+    },
+    {
+      "mode": "static_hover",
+      "x": 1.0,
+      "y": 0.4,
+      "z": 1.0,
+      "vx_init": 0.0,
+      "left_wall_dist_m": 0.6,
+      "right_wall_dist_m": 1.4,
+      "observation_23": [
+        0.955,
+        0.3038,
+        0.6993,
+        0.1706,
+        0.4067,
+        0.1463,
+        0.352,
+        0.9899,
+        0.3549,
+        0.3574,
+        0.2444,
+        0.2491,
+        0.9989,
+        -0.047,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        -0.0,
+        1.0,
+        0.0
+      ],
+      "ppo": {
+        "head_logits": [
+          0.5007,
+          -0.0563,
+          0.0675,
+          -0.1469
+        ],
+        "action": {
+          "vx": 0.5313,
+          "vy": -0.0337,
+          "vz": 0.027,
+          "yaw_rate": -0.0875
+        },
+        "safe_action": {
+          "vx": 0.4587,
+          "vy": -0.0337,
+          "vz": 0.027,
+          "yaw_rate": -0.0875
+        },
+        "safety_state": "obstacle_brake"
+      },
+      "bc": {
+        "head_logits": [
+          0.7984,
+          -0.0035,
+          0.0015,
+          -0.0234
+        ],
+        "action": {
+          "vx": 0.6316,
+          "vy": -0.0021,
+          "vz": 0.0006,
+          "yaw_rate": -0.014
+        },
+        "safe_action": {
+          "vx": 0.4587,
+          "vy": -0.0021,
+          "vz": 0.0006,
+          "yaw_rate": -0.014
+        },
+        "safety_state": "obstacle_brake"
+      }
+    },
+    {
+      "mode": "forward_cruise",
+      "x": 1.0,
+      "y": -0.4,
+      "z": 1.0,
+      "vx_init": 0.6,
+      "left_wall_dist_m": 1.4,
+      "right_wall_dist_m": 0.6,
+      "observation_23": [
+        0.992,
+        0.697,
+        0.3031,
+        0.4058,
+        0.1729,
+        0.3463,
+        0.1477,
+        1.0,
+        0.3524,
+        0.3567,
+        0.2448,
+        0.2432,
+        0.9989,
+        0.047,
+        0.0,
+        0.6,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        -0.0,
+        1.0,
+        0.0
+      ],
+      "ppo": {
+        "head_logits": [
+          1.2368,
+          0.0631,
+          0.1563,
+          -0.1757
+        ],
+        "action": {
+          "vx": 0.7223,
+          "vy": 0.0378,
+          "vz": 0.062,
+          "yaw_rate": -0.1043
+        },
+        "safe_action": {
+          "vx": 0.47,
+          "vy": 0.0378,
+          "vz": 0.062,
+          "yaw_rate": -0.1043
+        },
+        "safety_state": "obstacle_brake"
+      },
+      "bc": {
+        "head_logits": [
+          0.8104,
+          0.0448,
+          -0.0001,
+          0.0292
+        ],
+        "action": {
+          "vx": 0.6349,
+          "vy": 0.0269,
+          "vz": -0.0,
+          "yaw_rate": 0.0175
+        },
+        "safe_action": {
+          "vx": 0.47,
+          "vy": 0.0269,
+          "vz": -0.0,
+          "yaw_rate": 0.0175
+        },
+        "safety_state": "obstacle_brake"
+      }
+    },
+    {
+      "mode": "forward_cruise",
+      "x": 1.0,
+      "y": -0.3,
+      "z": 1.0,
+      "vx_init": 0.6,
+      "left_wall_dist_m": 1.3,
+      "right_wall_dist_m": 0.7,
+      "observation_23": [
+        0.9997,
+        0.6454,
+        0.3517,
+        0.3908,
+        0.1984,
+        0.3248,
+        0.1781,
+        0.9978,
+        0.356,
+        0.3557,
+        0.2466,
+        0.2489,
+        0.9994,
+        0.0353,
+        0.0,
+        0.6,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        -0.0,
+        1.0,
+        0.0
+      ],
+      "ppo": {
+        "head_logits": [
+          1.2705,
+          -0.0476,
+          0.1428,
+          -0.2359
+        ],
+        "action": {
+          "vx": 0.727,
+          "vy": -0.0285,
+          "vz": 0.0567,
+          "yaw_rate": -0.139
+        },
+        "safe_action": {
+          "vx": 0.5924,
+          "vy": -0.0285,
+          "vz": 0.0567,
+          "yaw_rate": -0.139
+        },
+        "safety_state": "obstacle_brake"
+      },
+      "bc": {
+        "head_logits": [
+          0.8084,
+          0.0337,
+          -0.0022,
+          0.0164
+        ],
+        "action": {
+          "vx": 0.6344,
+          "vy": 0.0202,
+          "vz": -0.0009,
+          "yaw_rate": 0.0098
+        },
+        "safe_action": {
+          "vx": 0.5924,
+          "vy": 0.0202,
+          "vz": -0.0009,
+          "yaw_rate": 0.0098
+        },
+        "safety_state": "obstacle_brake"
+      }
+    },
+    {
+      "mode": "forward_cruise",
+      "x": 1.0,
+      "y": -0.2,
+      "z": 1.0,
+      "vx_init": 0.6,
+      "left_wall_dist_m": 1.2,
+      "right_wall_dist_m": 0.8,
+      "observation_23": [
+        1.0,
+        0.6039,
+        0.4013,
+        0.3498,
+        0.2294,
+        0.2992,
+        0.1965,
+        0.9985,
+        0.3536,
+        0.3583,
+        0.2572,
+        0.246,
+        0.9997,
+        0.0235,
+        0.0,
+        0.6,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        -0.0,
+        1.0,
+        0.0
+      ],
+      "ppo": {
+        "head_logits": [
+          1.2993,
+          -0.1533,
+          0.1337,
+          -0.3019
+        ],
+        "action": {
+          "vx": 0.7308,
+          "vy": -0.0913,
+          "vz": 0.0532,
+          "yaw_rate": -0.1758
+        },
+        "safe_action": {
+          "vx": 0.6,
+          "vy": -0.0913,
+          "vz": 0.0532,
+          "yaw_rate": -0.1758
+        },
+        "safety_state": "nominal"
+      },
+      "bc": {
+        "head_logits": [
+          0.821,
+          0.0161,
+          -0.0035,
+          0.0014
+        ],
+        "action": {
+          "vx": 0.6378,
+          "vy": 0.0096,
+          "vz": -0.0014,
+          "yaw_rate": 0.0009
+        },
+        "safe_action": {
+          "vx": 0.6,
+          "vy": 0.0096,
+          "vz": -0.0014,
+          "yaw_rate": 0.0009
+        },
+        "safety_state": "nominal"
+      }
+    },
+    {
+      "mode": "forward_cruise",
+      "x": 1.0,
+      "y": -0.1,
+      "z": 1.0,
+      "vx_init": 0.6,
+      "left_wall_dist_m": 1.1,
+      "right_wall_dist_m": 0.9,
+      "observation_23": [
+        0.4573,
+        0.5498,
+        0.457,
+        0.3143,
+        0.2579,
+        0.2698,
+        0.2241,
+        1.0,
+        0.3536,
+        0.3469,
+        0.2498,
+        0.258,
+        0.9999,
+        0.0118,
+        0.0,
+        0.6,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        -0.0,
+        1.0,
+        0.0
+      ],
+      "ppo": {
+        "head_logits": [
+          1.0117,
+          -0.3833,
+          0.0743,
+          -0.2514
+        ],
+        "action": {
+          "vx": 0.6832,
+          "vy": -0.2193,
+          "vz": 0.0297,
+          "yaw_rate": -0.1478
+        },
+        "safe_action": {
+          "vx": 0.6,
+          "vy": -0.2193,
+          "vz": 0.0297,
+          "yaw_rate": -0.1478
+        },
+        "safety_state": "nominal"
+      },
+      "bc": {
+        "head_logits": [
+          0.8426,
+          -0.0032,
+          0.0002,
+          -0.0018
+        ],
+        "action": {
+          "vx": 0.6436,
+          "vy": -0.0019,
+          "vz": 0.0001,
+          "yaw_rate": -0.0011
+        },
+        "safe_action": {
+          "vx": 0.6,
+          "vy": -0.0019,
+          "vz": 0.0001,
+          "yaw_rate": -0.0011
+        },
+        "safety_state": "nominal"
+      }
+    },
+    {
+      "mode": "forward_cruise",
+      "x": 1.0,
+      "y": 0.0,
+      "z": 1.0,
+      "vx_init": 0.6,
+      "left_wall_dist_m": 1.0,
+      "right_wall_dist_m": 1.0,
+      "observation_23": [
+        0.4513,
+        0.503,
+        0.4975,
+        0.2917,
+        0.2847,
+        0.2544,
+        0.2416,
+        1.0,
+        0.3519,
+        0.3482,
+        0.2475,
+        0.255,
+        1.0,
+        0.0,
+        0.0,
+        0.6,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        -0.0,
+        1.0,
+        0.0
+      ],
+      "ppo": {
+        "head_logits": [
+          1.0321,
+          -0.3976,
+          0.0743,
+          -0.2608
+        ],
+        "action": {
+          "vx": 0.6874,
+          "vy": -0.2267,
+          "vz": 0.0297,
+          "yaw_rate": -0.153
+        },
+        "safe_action": {
+          "vx": 0.6,
+          "vy": -0.2267,
+          "vz": 0.0297,
+          "yaw_rate": -0.153
+        },
+        "safety_state": "nominal"
+      },
+      "bc": {
+        "head_logits": [
+          0.8409,
+          -0.0009,
+          0.0014,
+          -0.0009
+        ],
+        "action": {
+          "vx": 0.6431,
+          "vy": -0.0005,
+          "vz": 0.0005,
+          "yaw_rate": -0.0006
+        },
+        "safe_action": {
+          "vx": 0.6,
+          "vy": -0.0005,
+          "vz": 0.0005,
+          "yaw_rate": -0.0006
+        },
+        "safety_state": "nominal"
+      }
+    },
+    {
+      "mode": "forward_cruise",
+      "x": 1.0,
+      "y": 0.1,
+      "z": 1.0,
+      "vx_init": 0.6,
+      "left_wall_dist_m": 0.9,
+      "right_wall_dist_m": 1.1,
+      "observation_23": [
+        0.4553,
+        0.4559,
+        0.5439,
+        0.2635,
+        0.3091,
+        0.2317,
+        0.269,
+        1.0,
+        0.3563,
+        0.3611,
+        0.255,
+        0.2491,
+        0.9999,
+        -0.0118,
+        0.0,
+        0.6,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        -0.0,
+        1.0,
+        0.0
+      ],
+      "ppo": {
+        "head_logits": [
+          1.0587,
+          -0.4043,
+          0.0743,
+          -0.2679
+        ],
+        "action": {
+          "vx": 0.6926,
+          "vy": -0.2302,
+          "vz": 0.0296,
+          "yaw_rate": -0.157
+        },
+        "safe_action": {
+          "vx": 0.6,
+          "vy": -0.2302,
+          "vz": 0.0296,
+          "yaw_rate": -0.157
+        },
+        "safety_state": "nominal"
+      },
+      "bc": {
+        "head_logits": [
+          0.8416,
+          0.0058,
+          0.0025,
+          0.0044
+        ],
+        "action": {
+          "vx": 0.6433,
+          "vy": 0.0035,
+          "vz": 0.001,
+          "yaw_rate": 0.0027
+        },
+        "safe_action": {
+          "vx": 0.6,
+          "vy": 0.0035,
+          "vz": 0.001,
+          "yaw_rate": 0.0027
+        },
+        "safety_state": "nominal"
+      }
+    },
+    {
+      "mode": "forward_cruise",
+      "x": 1.0,
+      "y": 0.2,
+      "z": 1.0,
+      "vx_init": 0.6,
+      "left_wall_dist_m": 0.8,
+      "right_wall_dist_m": 1.2,
+      "observation_23": [
+        0.4914,
+        0.3962,
+        0.6039,
+        0.2297,
+        0.3379,
+        0.2012,
+        0.3037,
+        0.9972,
+        0.3635,
+        0.3564,
+        0.2519,
+        0.245,
+        0.9997,
+        -0.0235,
+        0.0,
+        0.6,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        -0.0,
+        1.0,
+        0.0
+      ],
+      "ppo": {
+        "head_logits": [
+          1.0922,
+          -0.4113,
+          0.0764,
+          -0.2815
+        ],
+        "action": {
+          "vx": 0.6988,
+          "vy": -0.2338,
+          "vz": 0.0305,
+          "yaw_rate": -0.1646
+        },
+        "safe_action": {
+          "vx": 0.6,
+          "vy": -0.2338,
+          "vz": 0.0305,
+          "yaw_rate": -0.1646
+        },
+        "safety_state": "nominal"
+      },
+      "bc": {
+        "head_logits": [
+          0.8509,
+          0.0114,
+          0.0035,
+          0.009
+        ],
+        "action": {
+          "vx": 0.6458,
+          "vy": 0.0069,
+          "vz": 0.0014,
+          "yaw_rate": 0.0054
+        },
+        "safe_action": {
+          "vx": 0.6,
+          "vy": 0.0069,
+          "vz": 0.0014,
+          "yaw_rate": 0.0054
+        },
+        "safety_state": "nominal"
+      }
+    },
+    {
+      "mode": "forward_cruise",
+      "x": 1.0,
+      "y": 0.3,
+      "z": 1.0,
+      "vx_init": 0.6,
+      "left_wall_dist_m": 0.7,
+      "right_wall_dist_m": 1.3,
+      "observation_23": [
+        0.9538,
+        0.3484,
+        0.6553,
+        0.1985,
+        0.3759,
+        0.1753,
+        0.3281,
+        0.9983,
+        0.3505,
+        0.3557,
+        0.2475,
+        0.2509,
+        0.9994,
+        -0.0353,
+        0.0,
+        0.6,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        -0.0,
+        1.0,
+        0.0
+      ],
+      "ppo": {
+        "head_logits": [
+          1.2892,
+          -0.4396,
+          0.1408,
+          -0.379
+        ],
+        "action": {
+          "vx": 0.7295,
+          "vy": -0.248,
+          "vz": 0.056,
+          "yaw_rate": -0.2171
+        },
+        "safe_action": {
+          "vx": 0.5927,
+          "vy": -0.248,
+          "vz": 0.056,
+          "yaw_rate": -0.2171
+        },
+        "safety_state": "obstacle_brake"
+      },
+      "bc": {
+        "head_logits": [
+          0.863,
+          -0.0039,
+          0.0031,
+          0.0044
+        ],
+        "action": {
+          "vx": 0.6489,
+          "vy": -0.0024,
+          "vz": 0.0012,
+          "yaw_rate": 0.0026
+        },
+        "safe_action": {
+          "vx": 0.5927,
+          "vy": -0.0024,
+          "vz": 0.0012,
+          "yaw_rate": 0.0026
+        },
+        "safety_state": "obstacle_brake"
+      }
+    },
+    {
+      "mode": "forward_cruise",
+      "x": 1.0,
+      "y": 0.4,
+      "z": 1.0,
+      "vx_init": 0.6,
+      "left_wall_dist_m": 0.6,
+      "right_wall_dist_m": 1.4,
+      "observation_23": [
+        0.9513,
+        0.3002,
+        0.6944,
+        0.1698,
+        0.411,
+        0.1518,
+        0.3503,
+        1.0,
+        1.0,
+        0.3511,
+        0.2491,
+        0.2592,
+        0.9989,
+        -0.047,
+        0.0,
+        0.6,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        -0.0,
+        1.0,
+        0.0
+      ],
+      "ppo": {
+        "head_logits": [
+          1.2062,
+          -0.4111,
+          0.1055,
+          -0.2853
+        ],
+        "action": {
+          "vx": 0.7178,
+          "vy": -0.2336,
+          "vz": 0.0421,
+          "yaw_rate": -0.1667
+        },
+        "safe_action": {
+          "vx": 0.4552,
+          "vy": -0.2336,
+          "vz": 0.0421,
+          "yaw_rate": -0.1667
+        },
+        "safety_state": "obstacle_brake"
+      },
+      "bc": {
+        "head_logits": [
+          0.8505,
+          -0.024,
+          0.0059,
+          -0.0411
+        ],
+        "action": {
+          "vx": 0.6457,
+          "vy": -0.0144,
+          "vz": 0.0024,
+          "yaw_rate": -0.0246
+        },
+        "safe_action": {
+          "vx": 0.4552,
+          "vy": -0.0144,
+          "vz": 0.0024,
+          "yaw_rate": -0.0246
+        },
+        "safety_state": "obstacle_brake"
+      }
+    }
+  ],
+  "mirrored_obstacle_tests": [
+    {
+      "scenario_type": "controlled_y_shift",
+      "controller": "ppo",
+      "obstacle_y": -0.25,
+      "left_gap_m": 1.05,
+      "right_gap_m": 0.55,
+      "wider_side": "left",
+      "feasibility": "left_only",
+      "chosen_side": "right",
+      "chose_constrained": true,
+      "avg_drone_y_at_obs": -0.5328,
+      "steps": 200,
+      "interventions": 175,
+      "min_obs_clearance_m": 0.1402,
+      "min_wall_clearance_m": 0.2983,
+      "outcome": "passed_obs1",
+      "approach_sample": {
+        "drone_x": 1.967,
+        "drone_y": -0.334,
+        "front_clearance_m": 0.775,
+        "rays_m": [
+          0.877,
+          2.947,
+          1.229,
+          1.557,
+          0.775,
+          4.0,
+          0.66,
+          4.0,
+          1.248,
+          4.0,
+          0.906,
+          1.111
+        ],
+        "raw_head_logits": [
+          0.8885,
+          -0.4703,
+          -0.0181,
+          -0.6204
+        ],
+        "raw_vy": -0.263,
+        "raw_yaw_rate": -0.3309,
+        "safe_vy": -0.263
+      }
+    },
+    {
+      "scenario_type": "controlled_y_shift",
+      "controller": "bc",
+      "obstacle_y": -0.25,
+      "left_gap_m": 1.05,
+      "right_gap_m": 0.55,
+      "wider_side": "left",
+      "feasibility": "left_only",
+      "chosen_side": "left",
+      "chose_constrained": false,
+      "avg_drone_y_at_obs": 0.3214,
+      "steps": 155,
+      "interventions": 37,
+      "min_obs_clearance_m": 0.1994,
+      "min_wall_clearance_m": 0.339,
+      "outcome": "passed_obs1",
+      "approach_sample": {
+        "drone_x": 1.963,
+        "drone_y": 0.165,
+        "front_clearance_m": 0.927,
+        "rays_m": [
+          2.883,
+          1.478,
+          0.953,
+          0.927,
+          1.432,
+          0.8,
+          1.111,
+          3.978,
+          1.415,
+          1.407,
+          1.002,
+          1.015
+        ],
+        "raw_head_logits": [
+          0.8763,
+          0.1926,
+          0.0013,
+          0.2282
+        ],
+        "raw_vy": 0.1141,
+        "raw_yaw_rate": 0.1346,
+        "safe_vy": 0.1141
+      }
+    },
+    {
+      "scenario_type": "controlled_y_shift",
+      "controller": "ppo",
+      "obstacle_y": -0.15,
+      "left_gap_m": 0.95,
+      "right_gap_m": 0.65,
+      "wider_side": "left",
+      "feasibility": "left_only",
+      "chosen_side": "right",
+      "chose_constrained": true,
+      "avg_drone_y_at_obs": -0.5131,
+      "steps": 200,
+      "interventions": 172,
+      "min_obs_clearance_m": 0.1283,
+      "min_wall_clearance_m": 0.3352,
+      "outcome": "passed_obs1",
+      "approach_sample": {
+        "drone_x": 1.958,
+        "drone_y": -0.279,
+        "front_clearance_m": 0.815,
+        "rays_m": [
+          0.933,
+          2.739,
+          1.384,
+          1.507,
+          0.815,
+          1.247,
+          0.747,
+          3.994,
+          1.262,
+          1.318,
+          0.86,
+          1.107
+        ],
+        "raw_head_logits": [
+          0.8808,
+          -0.3884,
+          0.0758,
+          -0.107
+        ],
+        "raw_vy": -0.222,
+        "raw_yaw_rate": -0.0639,
+        "safe_vy": -0.222
+      }
+    },
+    {
+      "scenario_type": "controlled_y_shift",
+      "controller": "bc",
+      "obstacle_y": -0.15,
+      "left_gap_m": 0.95,
+      "right_gap_m": 0.65,
+      "wider_side": "left",
+      "feasibility": "left_only",
+      "chosen_side": "left",
+      "chose_constrained": false,
+      "avg_drone_y_at_obs": 0.3579,
+      "steps": 190,
+      "interventions": 86,
+      "min_obs_clearance_m": 0.1391,
+      "min_wall_clearance_m": 0.35,
+      "outcome": "passed_obs1",
+      "approach_sample": {
+        "drone_x": 1.963,
+        "drone_y": 0.17,
+        "front_clearance_m": 0.919,
+        "rays_m": [
+          2.892,
+          1.456,
+          0.974,
+          0.919,
+          1.443,
+          0.796,
+          1.117,
+          3.978,
+          1.415,
+          1.407,
+          1.002,
+          1.015
+        ],
+        "raw_head_logits": [
+          0.8817,
+          0.2507,
+          0.0019,
+          0.298
+        ],
+        "raw_vy": 0.1474,
+        "raw_yaw_rate": 0.1737,
+        "safe_vy": 0.1474
+      }
+    },
+    {
+      "scenario_type": "controlled_y_shift",
+      "controller": "ppo",
+      "obstacle_y": 0.0,
+      "left_gap_m": 0.8,
+      "right_gap_m": 0.8,
+      "wider_side": "symmetric",
+      "feasibility": "neither_nominal",
+      "chosen_side": "right",
+      "chose_constrained": true,
+      "avg_drone_y_at_obs": -0.4337,
+      "steps": 200,
+      "interventions": 173,
+      "min_obs_clearance_m": 0.1308,
+      "min_wall_clearance_m": 0.3477,
+      "outcome": "passed_obs1",
+      "approach_sample": {
+        "drone_x": 1.952,
+        "drone_y": -0.462,
+        "front_clearance_m": 0.526,
+        "rays_m": [
+          1.639,
+          3.036,
+          0.728,
+          2.224,
+          0.526,
+          1.54,
+          0.571,
+          4.0,
+          1.3,
+          1.53,
+          0.917,
+          1.077
+        ],
+        "raw_head_logits": [
+          0.586,
+          0.0025,
+          -0.0751,
+          -0.0479
+        ],
+        "raw_vy": 0.0015,
+        "raw_yaw_rate": -0.0287,
+        "safe_vy": 0.0015
+      }
+    },
+    {
+      "scenario_type": "controlled_y_shift",
+      "controller": "bc",
+      "obstacle_y": 0.0,
+      "left_gap_m": 0.8,
+      "right_gap_m": 0.8,
+      "wider_side": "symmetric",
+      "feasibility": "neither_nominal",
+      "chosen_side": "left",
+      "chose_constrained": true,
+      "avg_drone_y_at_obs": 0.4208,
+      "steps": 200,
+      "interventions": 156,
+      "min_obs_clearance_m": 0.1324,
+      "min_wall_clearance_m": 0.3373,
+      "outcome": "passed_obs1",
+      "approach_sample": {
+        "drone_x": 1.965,
+        "drone_y": 0.472,
+        "front_clearance_m": 0.584,
+        "rays_m": [
+          1.875,
+          0.752,
+          3.992,
+          0.584,
+          2.173,
+          0.563,
+          1.574,
+          4.0,
+          1.399,
+          4.0,
+          0.992,
+          0.996
+        ],
+        "raw_head_logits": [
+          -0.0585,
+          -0.6424,
+          0.0136,
+          -0.7396
+        ],
+        "raw_vy": -0.3399,
+        "raw_yaw_rate": -0.3773,
+        "safe_vy": -0.3399
+      }
+    },
+    {
+      "scenario_type": "controlled_y_shift",
+      "controller": "ppo",
+      "obstacle_y": 0.15,
+      "left_gap_m": 0.65,
+      "right_gap_m": 0.95,
+      "wider_side": "right",
+      "feasibility": "right_only",
+      "chosen_side": "right",
+      "chose_constrained": false,
+      "avg_drone_y_at_obs": -0.3237,
+      "steps": 200,
+      "interventions": 181,
+      "min_obs_clearance_m": 0.1343,
+      "min_wall_clearance_m": 0.3938,
+      "outcome": "passed_obs1",
+      "approach_sample": {
+        "drone_x": 1.959,
+        "drone_y": -0.376,
+        "front_clearance_m": 0.727,
+        "rays_m": [
+          4.0,
+          0.993,
+          1.153,
+          1.673,
+          0.727,
+          1.389,
+          0.661,
+          4.0,
+          1.245,
+          4.0,
+          0.882,
+          1.105
+        ],
+        "raw_head_logits": [
+          1.046,
+          -0.5358,
+          0.027,
+          -0.4938
+        ],
+        "raw_vy": -0.2939,
+        "raw_yaw_rate": -0.2743,
+        "safe_vy": -0.2675
+      }
+    },
+    {
+      "scenario_type": "controlled_y_shift",
+      "controller": "bc",
+      "obstacle_y": 0.15,
+      "left_gap_m": 0.65,
+      "right_gap_m": 0.95,
+      "wider_side": "right",
+      "feasibility": "right_only",
+      "chosen_side": "right",
+      "chose_constrained": false,
+      "avg_drone_y_at_obs": -0.4113,
+      "steps": 174,
+      "interventions": 73,
+      "min_obs_clearance_m": 0.1905,
+      "min_wall_clearance_m": 0.3368,
+      "outcome": "passed_obs1",
+      "approach_sample": {
+        "drone_x": 1.962,
+        "drone_y": 0.205,
+        "front_clearance_m": 0.891,
+        "rays_m": [
+          0.897,
+          1.449,
+          2.679,
+          0.891,
+          1.461,
+          0.76,
+          1.149,
+          3.978,
+          1.229,
+          1.215,
+          1.002,
+          1.015
+        ],
+        "raw_head_logits": [
+          0.7959,
+          -0.0757,
+          -0.0018,
+          -0.1032
+        ],
+        "raw_vy": -0.0453,
+        "raw_yaw_rate": -0.0617,
+        "safe_vy": -0.0453
+      }
+    },
+    {
+      "scenario_type": "controlled_y_shift",
+      "controller": "ppo",
+      "obstacle_y": 0.25,
+      "left_gap_m": 0.55,
+      "right_gap_m": 1.05,
+      "wider_side": "right",
+      "feasibility": "right_only",
+      "chosen_side": "right",
+      "chose_constrained": false,
+      "avg_drone_y_at_obs": -0.3109,
+      "steps": 166,
+      "interventions": 145,
+      "min_obs_clearance_m": 0.1846,
+      "min_wall_clearance_m": 0.4148,
+      "outcome": "passed_obs1",
+      "approach_sample": {
+        "drone_x": 1.954,
+        "drone_y": -0.392,
+        "front_clearance_m": 0.651,
+        "rays_m": [
+          3.946,
+          1.133,
+          1.053,
+          1.735,
+          0.651,
+          1.385,
+          0.573,
+          4.0,
+          1.266,
+          1.544,
+          0.871,
+          1.087
+        ],
+        "raw_head_logits": [
+          1.1105,
+          -1.0285,
+          -0.0283,
+          -1.022
+        ],
+        "raw_vy": -0.464,
+        "raw_yaw_rate": -0.4624,
+        "safe_vy": -0.2408
+      }
+    },
+    {
+      "scenario_type": "controlled_y_shift",
+      "controller": "bc",
+      "obstacle_y": 0.25,
+      "left_gap_m": 0.55,
+      "right_gap_m": 1.05,
+      "wider_side": "right",
+      "feasibility": "right_only",
+      "chosen_side": "right",
+      "chose_constrained": false,
+      "avg_drone_y_at_obs": -0.4112,
+      "steps": 169,
+      "interventions": 67,
+      "min_obs_clearance_m": 0.2711,
+      "min_wall_clearance_m": 0.3352,
+      "outcome": "passed_obs1",
+      "approach_sample": {
+        "drone_x": 1.962,
+        "drone_y": 0.203,
+        "front_clearance_m": 0.869,
+        "rays_m": [
+          0.869,
+          1.457,
+          2.666,
+          0.894,
+          1.457,
+          0.762,
+          1.147,
+          3.978,
+          1.19,
+          1.177,
+          1.002,
+          1.015
+        ],
+        "raw_head_logits": [
+          0.7912,
+          -0.0691,
+          -0.0019,
+          -0.0954
+        ],
+        "raw_vy": -0.0414,
+        "raw_yaw_rate": -0.0571,
+        "safe_vy": -0.0414
+      }
+    }
+  ],
+  "seed_evaluation_records": [
+    {
+      "seed": 1,
+      "controller": "ppo",
+      "outcome": "timeout",
+      "total_steps": 500,
+      "interventions": 469,
+      "min_obs_clearance_m": 0.1281,
+      "min_wall_clearance_m": 0.247,
+      "initial_pos": [
+        0.5,
+        0.08972989022731781,
+        1.0
+      ],
+      "obstacles": [
+        {
+          "id": 1,
+          "center": [
+            3.0,
+            0.008275137290179702,
+            1.0
+          ],
+          "radius": 0.2,
+          "left_gap_m": 0.7917,
+          "right_gap_m": 0.8083,
+          "wider_side": "right",
+          "feasibility": "neither_nominal"
+        },
+        {
+          "id": 2,
+          "center": [
+            5.0,
+            0.31532458742815467,
+            1.0
+          ],
+          "radius": 0.2,
+          "left_gap_m": 0.4847,
+          "right_gap_m": 1.1153,
+          "wider_side": "right",
+          "feasibility": "right_only"
+        },
+        {
+          "id": 3,
+          "center": [
+            7.0,
+            -0.24908827109625636,
+            1.0
+          ],
+          "radius": 0.2,
+          "left_gap_m": 1.0491,
+          "right_gap_m": 0.5509,
+          "wider_side": "left",
+          "feasibility": "left_only"
+        }
+      ],
+      "encounters": [
+        {
+          "obstacle_id": 1,
+          "obs_x": 3.0,
+          "obs_y": 0.008275137290179702,
+          "left_gap_m": 0.7917,
+          "right_gap_m": 0.8083,
+          "wider_side": "right",
+          "feasibility": "neither_nominal",
+          "chosen_side": "right",
+          "chose_constrained": false,
+          "avg_drone_y": -0.4415
+        },
+        {
+          "obstacle_id": 2,
+          "obs_x": 5.0,
+          "obs_y": 0.31532458742815467,
+          "left_gap_m": 0.4847,
+          "right_gap_m": 1.1153,
+          "wider_side": "right",
+          "feasibility": "right_only",
+          "chosen_side": "right",
+          "chose_constrained": false,
+          "avg_drone_y": -0.5245
+        },
+        {
+          "obstacle_id": 3,
+          "obs_x": 7.0,
+          "obs_y": -0.24908827109625636,
+          "status": "not_reached"
+        }
+      ],
+      "final_pos": [
+        4.675302028656006,
+        -0.5288091897964478,
+        1.6000691652297974
+      ],
+      "trajectory_sample": [
+        [
+          0.5,
+          0.08972989022731781,
+          1.0
+        ],
+        [
+          0.7836449146270752,
+          -0.09856721013784409,
+          0.9951983690261841
+        ],
+        [
+          1.0179877281188965,
+          -0.32070672512054443,
+          0.9867373704910278
+        ],
+        [
+          1.2007122039794922,
+          -0.3679264187812805,
+          0.9933024644851685
+        ],
+        [
+          1.4791247844696045,
+          -0.26234930753707886,
+          1.0540658235549927
+        ],
+        [
+          1.774072289466858,
+          -0.30098503828048706,
+          1.0844742059707642
+        ],
+        [
+          1.9495790004730225,
+          -0.4599994421005249,
+          1.0722144842147827
+        ],
+        [
+          2.1540603637695312,
+          -0.3772708475589752,
+          1.1221750974655151
+        ],
+        [
+          2.3613948822021484,
+          -0.4243893027305603,
+          1.1563721895217896
+        ],
+        [
+          2.509390115737915,
+          -0.4955956041812897,
+          1.151807188987732
+        ],
+        [
+          2.614973545074463,
+          -0.4183003604412079,
+          1.1993476152420044
+        ],
+        [
+          2.6681222915649414,
+          -0.43988850712776184,
+          1.220296859741211
+        ],
+        [
+          2.730782985687256,
+          -0.41993027925491333,
+          1.245924472808838
+        ],
+        [
+          2.760796070098877,
+          -0.4152422547340393,
+          1.2722901105880737
+        ],
+        [
+          2.7657458782196045,
+          -0.4227321147918701,
+          1.2967712879180908
+        ],
+        [
+          2.775583505630493,
+          -0.433440625667572,
+          1.320046067237854
+        ],
+        [
+          2.755612850189209,
+          -0.438195139169693,
+          1.3481810092926025
+        ],
+        [
+          2.765629291534424,
+          -0.4358035922050476,
+          1.3730120658874512
+        ],
+        [
+          2.78556752204895,
+          -0.4457968473434448,
+          1.3944265842437744
+        ],
+        [
+          2.7856554985046387,
+          -0.43578699231147766,
+          1.4215872287750244
+        ],
+        [
+          2.77569580078125,
+          -0.43953511118888855,
+          1.442988634109497
+        ],
+        [
+          2.775698184967041,
+          -0.4370679259300232,
+          1.4690415859222412
+        ],
+        [
+          2.7557427883148193,
+          -0.43713200092315674,
+          1.4959603548049927
+        ],
+        [
+          2.765712261199951,
+          -0.4345560371875763,
+          1.5177106857299805
+        ],
+        [
+          2.7557809352874756,
+          -0.44208866357803345,
+          1.5388773679733276
+        ],
+        [
+          2.7757551670074463,
+          -0.4371550679206848,
+          1.56094491481781
+        ],
+        [
+          2.7757513523101807,
+          -0.4321459233760834,
+          1.5832539796829224
+        ],
+        [
+          2.7757761478424072,
+          -0.4346904456615448,
+          1.6028213500976562
+        ],
+        [
+          2.7658140659332275,
+          -0.42968329787254333,
+          1.601296067237854
+        ],
+        [
+          2.7558364868164062,
+          -0.4345650374889374,
+          1.60044527053833
+        ],
+        [
+          2.745891809463501,
+          -0.4295284152030945,
+          1.600204586982727
+        ],
+        [
+          2.7789926528930664,
+          -0.4265214502811432,
+          1.6019166707992554
+        ],
+        [
+          2.759122848510742,
+          -0.43408626317977905,
+          1.60088050365448
+        ],
+        [
+          2.769106149673462,
+          -0.4390925467014313,
+          1.6004045009613037
+        ],
+        [
+          2.7924535274505615,
+          -0.43606436252593994,
+          1.6017621755599976
+        ],
+        [
+          2.807394027709961,
+          -0.43831682205200195,
+          1.6008095741271973
+        ],
+        [
+          2.817312479019165,
+          -0.44063422083854675,
+          1.6006790399551392
+        ],
+        [
+          2.8274550437927246,
+          -0.43903541564941406,
+          1.600279450416565
+        ],
+        [
+          2.862215518951416,
+          -0.47999489307403564,
+          1.5944693088531494
+        ],
+        [
+          2.987416982650757,
+          -0.5250892639160156,
+          1.6005539894104004
+        ],
+        [
+          3.1229939460754395,
+          -0.5063876509666443,
+          1.6002545356750488
+        ],
+        [
+          3.271219491958618,
+          -0.4758976995944977,
+          1.6001169681549072
+        ],
+        [
+          3.419422149658203,
+          -0.4526163339614868,
+          1.6000537872314453
+        ],
+        [
+          3.6032321453094482,
+          -0.4895066022872925,
+          1.5991816520690918
+        ],
+        [
+          3.764183759689331,
+          -0.4974767565727234,
+          1.600033164024353
+        ],
+        [
+          3.9178051948547363,
+          -0.49614107608795166,
+          1.6008250713348389
+        ],
+        [
+          4.069272041320801,
+          -0.4895217716693878,
+          1.6005326509475708
+        ],
+        [
+          4.218354225158691,
+          -0.4795222580432892,
+          1.600229024887085
+        ],
+        [
+          4.374839782714844,
+          -0.5017049908638,
+          1.600327491760254
+        ],
+        [
+          4.525223255157471,
+          -0.5128340721130371,
+          1.600150465965271
+        ],
+        [
+          4.675302028656006,
+          -0.5288091897964478,
+          1.6000691652297974
+        ]
+      ]
+    },
+    {
+      "seed": 1,
+      "controller": "bc",
+      "outcome": "timeout",
+      "total_steps": 500,
+      "interventions": 456,
+      "min_obs_clearance_m": 0.1224,
+      "min_wall_clearance_m": 0.3373,
+      "initial_pos": [
+        0.5,
+        0.08972989022731781,
+        1.0
+      ],
+      "obstacles": [
+        {
+          "id": 1,
+          "center": [
+            3.0,
+            0.008275137290179702,
+            1.0
+          ],
+          "radius": 0.2,
+          "left_gap_m": 0.7917,
+          "right_gap_m": 0.8083,
+          "wider_side": "right",
+          "feasibility": "neither_nominal"
+        },
+        {
+          "id": 2,
+          "center": [
+            5.0,
+            0.31532458742815467,
+            1.0
+          ],
+          "radius": 0.2,
+          "left_gap_m": 0.4847,
+          "right_gap_m": 1.1153,
+          "wider_side": "right",
+          "feasibility": "right_only"
+        },
+        {
+          "id": 3,
+          "center": [
+            7.0,
+            -0.24908827109625636,
+            1.0
+          ],
+          "radius": 0.2,
+          "left_gap_m": 1.0491,
+          "right_gap_m": 0.5509,
+          "wider_side": "left",
+          "feasibility": "left_only"
+        }
+      ],
+      "encounters": [
+        {
+          "obstacle_id": 1,
+          "obs_x": 3.0,
+          "obs_y": 0.008275137290179702,
+          "left_gap_m": 0.7917,
+          "right_gap_m": 0.8083,
+          "wider_side": "right",
+          "feasibility": "neither_nominal",
+          "chosen_side": "left",
+          "chose_constrained": false,
+          "avg_drone_y": 0.4367
+        },
+        {
+          "obstacle_id": 2,
+          "obs_x": 5.0,
+          "obs_y": 0.31532458742815467,
+          "status": "not_reached"
+        },
+        {
+          "obstacle_id": 3,
+          "obs_x": 7.0,
+          "obs_y": -0.24908827109625636,
+          "status": "not_reached"
+        }
+      ],
+      "final_pos": [
+        2.796499490737915,
+        0.4595336616039276,
+        1.0864665508270264
+      ],
+      "trajectory_sample": [
+        [
+          0.5,
+          0.08972989022731781,
+          1.0
+        ],
+        [
+          0.7990128397941589,
+          0.098016157746315,
+          1.0006141662597656
+        ],
+        [
+          1.0975532531738281,
+          0.12578558921813965,
+          1.001339077949524
+        ],
+        [
+          1.3933666944503784,
+          0.18847998976707458,
+          1.0017156600952148
+        ],
+        [
+          1.658945918083191,
+          0.3471736013889313,
+          1.0010277032852173
+        ],
+        [
+          1.7943702936172485,
+          0.4881724417209625,
+          1.003342866897583
+        ],
+        [
+          1.9132366180419922,
+          0.501453697681427,
+          1.0076977014541626
+        ],
+        [
+          2.1057016849517822,
+          0.37921449542045593,
+          1.0099475383758545
+        ],
+        [
+          2.3173553943634033,
+          0.3180619478225708,
+          1.0108648538589478
+        ],
+        [
+          2.441071033477783,
+          0.28753840923309326,
+          1.011032223701477
+        ],
+        [
+          2.50132155418396,
+          0.31486716866493225,
+          1.010306715965271
+        ],
+        [
+          2.5588674545288086,
+          0.3783302307128906,
+          1.010061502456665
+        ],
+        [
+          2.6146137714385986,
+          0.3879116177558899,
+          1.0104753971099854
+        ],
+        [
+          2.665316104888916,
+          0.3762241005897522,
+          1.0098999738693237
+        ],
+        [
+          2.6902735233306885,
+          0.37629660964012146,
+          1.008830189704895
+        ],
+        [
+          2.6842334270477295,
+          0.4091297388076782,
+          1.0086911916732788
+        ],
+        [
+          2.694243907928467,
+          0.407964289188385,
+          1.0075606107711792
+        ],
+        [
+          2.7041516304016113,
+          0.4186426103115082,
+          1.0064629316329956
+        ],
+        [
+          2.734058141708374,
+          0.41275638341903687,
+          1.0051202774047852
+        ],
+        [
+          2.7343714237213135,
+          0.42548641562461853,
+          1.003941297531128
+        ],
+        [
+          2.7346866130828857,
+          0.43110108375549316,
+          1.0029319524765015
+        ],
+        [
+          2.735368013381958,
+          0.4428997039794922,
+          1.0017427206039429
+        ],
+        [
+          2.734750509262085,
+          0.4336075484752655,
+          1.0006009340286255
+        ],
+        [
+          2.7415897846221924,
+          0.436003178358078,
+          0.999884843826294
+        ],
+        [
+          2.756340742111206,
+          0.43312716484069824,
+          0.9985414147377014
+        ],
+        [
+          2.7570924758911133,
+          0.4404451847076416,
+          0.9974699020385742
+        ],
+        [
+          2.7569847106933594,
+          0.43949440121650696,
+          0.996335506439209
+        ],
+        [
+          2.7676703929901123,
+          0.44447648525238037,
+          0.9953168630599976
+        ],
+        [
+          2.7676949501037598,
+          0.44465145468711853,
+          0.9948135614395142
+        ],
+        [
+          2.7817351818084717,
+          0.4430529475212097,
+          0.9939815402030945
+        ],
+        [
+          2.7718076705932617,
+          0.44416722655296326,
+          0.9955098032951355
+        ],
+        [
+          2.7833476066589355,
+          0.45267370343208313,
+          0.9973598718643188
+        ],
+        [
+          2.7736291885375977,
+          0.45498979091644287,
+          0.99886554479599
+        ],
+        [
+          2.783906936645508,
+          0.4556267559528351,
+          1.000725269317627
+        ],
+        [
+          2.7835934162139893,
+          0.45407387614250183,
+          1.0035483837127686
+        ],
+        [
+          2.782790184020996,
+          0.45022115111351013,
+          1.0072872638702393
+        ],
+        [
+          2.782458543777466,
+          0.44870811700820923,
+          1.0113465785980225
+        ],
+        [
+          2.7919294834136963,
+          0.4453723430633545,
+          1.015749454498291
+        ],
+        [
+          2.7919013500213623,
+          0.44523751735687256,
+          1.0201208591461182
+        ],
+        [
+          2.7822377681732178,
+          0.4477236270904541,
+          1.025389552116394
+        ],
+        [
+          2.7915878295898438,
+          0.444012314081192,
+          1.0301094055175781
+        ],
+        [
+          2.7937533855438232,
+          0.4519839882850647,
+          1.035522699356079
+        ],
+        [
+          2.783273696899414,
+          0.4515179991722107,
+          1.0407719612121582
+        ],
+        [
+          2.7922418117523193,
+          0.4465334415435791,
+          1.046148419380188
+        ],
+        [
+          2.7916128635406494,
+          0.44440561532974243,
+          1.0518348217010498
+        ],
+        [
+          2.7910315990448,
+          0.44246435165405273,
+          1.0569908618927002
+        ],
+        [
+          2.7910377979278564,
+          0.4424840211868286,
+          1.0631389617919922
+        ],
+        [
+          2.8034579753875732,
+          0.44856610894203186,
+          1.0688196420669556
+        ],
+        [
+          2.815293788909912,
+          0.4527970552444458,
+          1.0740940570831299
+        ],
+        [
+          2.806419610977173,
+          0.45781511068344116,
+          1.080467700958252
+        ],
+        [
+          2.796499490737915,
+          0.4595336616039276,
+          1.0864665508270264
+        ]
+      ]
+    },
+    {
+      "seed": 1,
+      "controller": "ppo",
+      "outcome": "timeout",
+      "total_steps": 500,
+      "interventions": 469,
+      "min_obs_clearance_m": 0.1281,
+      "min_wall_clearance_m": 0.247,
+      "initial_pos": [
+        0.5,
+        0.08972989022731781,
+        1.0
+      ],
+      "obstacles": [
+        {
+          "id": 1,
+          "center": [
+            3.0,
+            0.008275137290179702,
+            1.0
+          ],
+          "radius": 0.2,
+          "left_gap_m": 0.7917,
+          "right_gap_m": 0.8083,
+          "wider_side": "right",
+          "feasibility": "neither_nominal"
+        },
+        {
+          "id": 2,
+          "center": [
+            5.0,
+            0.31532458742815467,
+            1.0
+          ],
+          "radius": 0.2,
+          "left_gap_m": 0.4847,
+          "right_gap_m": 1.1153,
+          "wider_side": "right",
+          "feasibility": "right_only"
+        },
+        {
+          "id": 3,
+          "center": [
+            7.0,
+            -0.24908827109625636,
+            1.0
+          ],
+          "radius": 0.2,
+          "left_gap_m": 1.0491,
+          "right_gap_m": 0.5509,
+          "wider_side": "left",
+          "feasibility": "left_only"
+        }
+      ],
+      "encounters": [
+        {
+          "obstacle_id": 1,
+          "obs_x": 3.0,
+          "obs_y": 0.008275137290179702,
+          "left_gap_m": 0.7917,
+          "right_gap_m": 0.8083,
+          "wider_side": "right",
+          "feasibility": "neither_nominal",
+          "chosen_side": "right",
+          "chose_constrained": false,
+          "avg_drone_y": -0.4415
+        },
+        {
+          "obstacle_id": 2,
+          "obs_x": 5.0,
+          "obs_y": 0.31532458742815467,
+          "left_gap_m": 0.4847,
+          "right_gap_m": 1.1153,
+          "wider_side": "right",
+          "feasibility": "right_only",
+          "chosen_side": "right",
+          "chose_constrained": false,
+          "avg_drone_y": -0.5245
+        },
+        {
+          "obstacle_id": 3,
+          "obs_x": 7.0,
+          "obs_y": -0.24908827109625636,
+          "status": "not_reached"
+        }
+      ],
+      "final_pos": [
+        4.675302028656006,
+        -0.5288091897964478,
+        1.6000691652297974
+      ],
+      "trajectory_sample": [
+        [
+          0.5,
+          0.08972989022731781,
+          1.0
+        ],
+        [
+          0.7836449146270752,
+          -0.09856721013784409,
+          0.9951983690261841
+        ],
+        [
+          1.0179877281188965,
+          -0.32070672512054443,
+          0.9867373704910278
+        ],
+        [
+          1.2007122039794922,
+          -0.3679264187812805,
+          0.9933024644851685
+        ],
+        [
+          1.4791247844696045,
+          -0.26234930753707886,
+          1.0540658235549927
+        ],
+        [
+          1.774072289466858,
+          -0.30098503828048706,
+          1.0844742059707642
+        ],
+        [
+          1.9495790004730225,
+          -0.4599994421005249,
+          1.0722144842147827
+        ],
+        [
+          2.1540603637695312,
+          -0.3772708475589752,
+          1.1221750974655151
+        ],
+        [
+          2.3613948822021484,
+          -0.4243893027305603,
+          1.1563721895217896
+        ],
+        [
+          2.509390115737915,
+          -0.4955956041812897,
+          1.151807188987732
+        ],
+        [
+          2.614973545074463,
+          -0.4183003604412079,
+          1.1993476152420044
+        ],
+        [
+          2.6681222915649414,
+          -0.43988850712776184,
+          1.220296859741211
+        ],
+        [
+          2.730782985687256,
+          -0.41993027925491333,
+          1.245924472808838
+        ],
+        [
+          2.760796070098877,
+          -0.4152422547340393,
+          1.2722901105880737
+        ],
+        [
+          2.7657458782196045,
+          -0.4227321147918701,
+          1.2967712879180908
+        ],
+        [
+          2.775583505630493,
+          -0.433440625667572,
+          1.320046067237854
+        ],
+        [
+          2.755612850189209,
+          -0.438195139169693,
+          1.3481810092926025
+        ],
+        [
+          2.765629291534424,
+          -0.4358035922050476,
+          1.3730120658874512
+        ],
+        [
+          2.78556752204895,
+          -0.4457968473434448,
+          1.3944265842437744
+        ],
+        [
+          2.7856554985046387,
+          -0.43578699231147766,
+          1.4215872287750244
+        ],
+        [
+          2.77569580078125,
+          -0.43953511118888855,
+          1.442988634109497
+        ],
+        [
+          2.775698184967041,
+          -0.4370679259300232,
+          1.4690415859222412
+        ],
+        [
+          2.7557427883148193,
+          -0.43713200092315674,
+          1.4959603548049927
+        ],
+        [
+          2.765712261199951,
+          -0.4345560371875763,
+          1.5177106857299805
+        ],
+        [
+          2.7557809352874756,
+          -0.44208866357803345,
+          1.5388773679733276
+        ],
+        [
+          2.7757551670074463,
+          -0.4371550679206848,
+          1.56094491481781
+        ],
+        [
+          2.7757513523101807,
+          -0.4321459233760834,
+          1.5832539796829224
+        ],
+        [
+          2.7757761478424072,
+          -0.4346904456615448,
+          1.6028213500976562
+        ],
+        [
+          2.7658140659332275,
+          -0.42968329787254333,
+          1.601296067237854
+        ],
+        [
+          2.7558364868164062,
+          -0.4345650374889374,
+          1.60044527053833
+        ],
+        [
+          2.745891809463501,
+          -0.4295284152030945,
+          1.600204586982727
+        ],
+        [
+          2.7789926528930664,
+          -0.4265214502811432,
+          1.6019166707992554
+        ],
+        [
+          2.759122848510742,
+          -0.43408626317977905,
+          1.60088050365448
+        ],
+        [
+          2.769106149673462,
+          -0.4390925467014313,
+          1.6004045009613037
+        ],
+        [
+          2.7924535274505615,
+          -0.43606436252593994,
+          1.6017621755599976
+        ],
+        [
+          2.807394027709961,
+          -0.43831682205200195,
+          1.6008095741271973
+        ],
+        [
+          2.817312479019165,
+          -0.44063422083854675,
+          1.6006790399551392
+        ],
+        [
+          2.8274550437927246,
+          -0.43903541564941406,
+          1.600279450416565
+        ],
+        [
+          2.862215518951416,
+          -0.47999489307403564,
+          1.5944693088531494
+        ],
+        [
+          2.987416982650757,
+          -0.5250892639160156,
+          1.6005539894104004
+        ],
+        [
+          3.1229939460754395,
+          -0.5063876509666443,
+          1.6002545356750488
+        ],
+        [
+          3.271219491958618,
+          -0.4758976995944977,
+          1.6001169681549072
+        ],
+        [
+          3.419422149658203,
+          -0.4526163339614868,
+          1.6000537872314453
+        ],
+        [
+          3.6032321453094482,
+          -0.4895066022872925,
+          1.5991816520690918
+        ],
+        [
+          3.764183759689331,
+          -0.4974767565727234,
+          1.600033164024353
+        ],
+        [
+          3.9178051948547363,
+          -0.49614107608795166,
+          1.6008250713348389
+        ],
+        [
+          4.069272041320801,
+          -0.4895217716693878,
+          1.6005326509475708
+        ],
+        [
+          4.218354225158691,
+          -0.4795222580432892,
+          1.600229024887085
+        ],
+        [
+          4.374839782714844,
+          -0.5017049908638,
+          1.600327491760254
+        ],
+        [
+          4.525223255157471,
+          -0.5128340721130371,
+          1.600150465965271
+        ],
+        [
+          4.675302028656006,
+          -0.5288091897964478,
+          1.6000691652297974
+        ]
+      ]
+    },
+    {
+      "seed": 1,
+      "controller": "bc",
+      "outcome": "timeout",
+      "total_steps": 500,
+      "interventions": 456,
+      "min_obs_clearance_m": 0.1224,
+      "min_wall_clearance_m": 0.3373,
+      "initial_pos": [
+        0.5,
+        0.08972989022731781,
+        1.0
+      ],
+      "obstacles": [
+        {
+          "id": 1,
+          "center": [
+            3.0,
+            0.008275137290179702,
+            1.0
+          ],
+          "radius": 0.2,
+          "left_gap_m": 0.7917,
+          "right_gap_m": 0.8083,
+          "wider_side": "right",
+          "feasibility": "neither_nominal"
+        },
+        {
+          "id": 2,
+          "center": [
+            5.0,
+            0.31532458742815467,
+            1.0
+          ],
+          "radius": 0.2,
+          "left_gap_m": 0.4847,
+          "right_gap_m": 1.1153,
+          "wider_side": "right",
+          "feasibility": "right_only"
+        },
+        {
+          "id": 3,
+          "center": [
+            7.0,
+            -0.24908827109625636,
+            1.0
+          ],
+          "radius": 0.2,
+          "left_gap_m": 1.0491,
+          "right_gap_m": 0.5509,
+          "wider_side": "left",
+          "feasibility": "left_only"
+        }
+      ],
+      "encounters": [
+        {
+          "obstacle_id": 1,
+          "obs_x": 3.0,
+          "obs_y": 0.008275137290179702,
+          "left_gap_m": 0.7917,
+          "right_gap_m": 0.8083,
+          "wider_side": "right",
+          "feasibility": "neither_nominal",
+          "chosen_side": "left",
+          "chose_constrained": false,
+          "avg_drone_y": 0.4367
+        },
+        {
+          "obstacle_id": 2,
+          "obs_x": 5.0,
+          "obs_y": 0.31532458742815467,
+          "status": "not_reached"
+        },
+        {
+          "obstacle_id": 3,
+          "obs_x": 7.0,
+          "obs_y": -0.24908827109625636,
+          "status": "not_reached"
+        }
+      ],
+      "final_pos": [
+        2.796499490737915,
+        0.4595336616039276,
+        1.0864665508270264
+      ],
+      "trajectory_sample": [
+        [
+          0.5,
+          0.08972989022731781,
+          1.0
+        ],
+        [
+          0.7990128397941589,
+          0.098016157746315,
+          1.0006141662597656
+        ],
+        [
+          1.0975532531738281,
+          0.12578558921813965,
+          1.001339077949524
+        ],
+        [
+          1.3933666944503784,
+          0.18847998976707458,
+          1.0017156600952148
+        ],
+        [
+          1.658945918083191,
+          0.3471736013889313,
+          1.0010277032852173
+        ],
+        [
+          1.7943702936172485,
+          0.4881724417209625,
+          1.003342866897583
+        ],
+        [
+          1.9132366180419922,
+          0.501453697681427,
+          1.0076977014541626
+        ],
+        [
+          2.1057016849517822,
+          0.37921449542045593,
+          1.0099475383758545
+        ],
+        [
+          2.3173553943634033,
+          0.3180619478225708,
+          1.0108648538589478
+        ],
+        [
+          2.441071033477783,
+          0.28753840923309326,
+          1.011032223701477
+        ],
+        [
+          2.50132155418396,
+          0.31486716866493225,
+          1.010306715965271
+        ],
+        [
+          2.5588674545288086,
+          0.3783302307128906,
+          1.010061502456665
+        ],
+        [
+          2.6146137714385986,
+          0.3879116177558899,
+          1.0104753971099854
+        ],
+        [
+          2.665316104888916,
+          0.3762241005897522,
+          1.0098999738693237
+        ],
+        [
+          2.6902735233306885,
+          0.37629660964012146,
+          1.008830189704895
+        ],
+        [
+          2.6842334270477295,
+          0.4091297388076782,
+          1.0086911916732788
+        ],
+        [
+          2.694243907928467,
+          0.407964289188385,
+          1.0075606107711792
+        ],
+        [
+          2.7041516304016113,
+          0.4186426103115082,
+          1.0064629316329956
+        ],
+        [
+          2.734058141708374,
+          0.41275638341903687,
+          1.0051202774047852
+        ],
+        [
+          2.7343714237213135,
+          0.42548641562461853,
+          1.003941297531128
+        ],
+        [
+          2.7346866130828857,
+          0.43110108375549316,
+          1.0029319524765015
+        ],
+        [
+          2.735368013381958,
+          0.4428997039794922,
+          1.0017427206039429
+        ],
+        [
+          2.734750509262085,
+          0.4336075484752655,
+          1.0006009340286255
+        ],
+        [
+          2.7415897846221924,
+          0.436003178358078,
+          0.999884843826294
+        ],
+        [
+          2.756340742111206,
+          0.43312716484069824,
+          0.9985414147377014
+        ],
+        [
+          2.7570924758911133,
+          0.4404451847076416,
+          0.9974699020385742
+        ],
+        [
+          2.7569847106933594,
+          0.43949440121650696,
+          0.996335506439209
+        ],
+        [
+          2.7676703929901123,
+          0.44447648525238037,
+          0.9953168630599976
+        ],
+        [
+          2.7676949501037598,
+          0.44465145468711853,
+          0.9948135614395142
+        ],
+        [
+          2.7817351818084717,
+          0.4430529475212097,
+          0.9939815402030945
+        ],
+        [
+          2.7718076705932617,
+          0.44416722655296326,
+          0.9955098032951355
+        ],
+        [
+          2.7833476066589355,
+          0.45267370343208313,
+          0.9973598718643188
+        ],
+        [
+          2.7736291885375977,
+          0.45498979091644287,
+          0.99886554479599
+        ],
+        [
+          2.783906936645508,
+          0.4556267559528351,
+          1.000725269317627
+        ],
+        [
+          2.7835934162139893,
+          0.45407387614250183,
+          1.0035483837127686
+        ],
+        [
+          2.782790184020996,
+          0.45022115111351013,
+          1.0072872638702393
+        ],
+        [
+          2.782458543777466,
+          0.44870811700820923,
+          1.0113465785980225
+        ],
+        [
+          2.7919294834136963,
+          0.4453723430633545,
+          1.015749454498291
+        ],
+        [
+          2.7919013500213623,
+          0.44523751735687256,
+          1.0201208591461182
+        ],
+        [
+          2.7822377681732178,
+          0.4477236270904541,
+          1.025389552116394
+        ],
+        [
+          2.7915878295898438,
+          0.444012314081192,
+          1.0301094055175781
+        ],
+        [
+          2.7937533855438232,
+          0.4519839882850647,
+          1.035522699356079
+        ],
+        [
+          2.783273696899414,
+          0.4515179991722107,
+          1.0407719612121582
+        ],
+        [
+          2.7922418117523193,
+          0.4465334415435791,
+          1.046148419380188
+        ],
+        [
+          2.7916128635406494,
+          0.44440561532974243,
+          1.0518348217010498
+        ],
+        [
+          2.7910315990448,
+          0.44246435165405273,
+          1.0569908618927002
+        ],
+        [
+          2.7910377979278564,
+          0.4424840211868286,
+          1.0631389617919922
+        ],
+        [
+          2.8034579753875732,
+          0.44856610894203186,
+          1.0688196420669556
+        ],
+        [
+          2.815293788909912,
+          0.4527970552444458,
+          1.0740940570831299
+        ],
+        [
+          2.806419610977173,
+          0.45781511068344116,
+          1.080467700958252
+        ],
+        [
+          2.796499490737915,
+          0.4595336616039276,
+          1.0864665508270264
+        ]
+      ]
+    },
+    {
+      "seed": 20,
+      "controller": "ppo",
+      "outcome": "timeout",
+      "total_steps": 500,
+      "interventions": 465,
+      "min_obs_clearance_m": 0.1332,
+      "min_wall_clearance_m": 0.2456,
+      "initial_pos": [
+        0.5,
+        0.004521670285612345,
+        1.0
+      ],
+      "obstacles": [
+        {
+          "id": 1,
+          "center": [
+            3.0,
+            -0.15394682615888847,
+            1.0
+          ],
+          "radius": 0.2,
+          "left_gap_m": 0.9539,
+          "right_gap_m": 0.6461,
+          "wider_side": "left",
+          "feasibility": "left_only"
+        },
+        {
+          "id": 2,
+          "center": [
+            5.0,
+            -0.0271973031379405,
+            1.0
+          ],
+          "radius": 0.2,
+          "left_gap_m": 0.8272,
+          "right_gap_m": 0.7728,
+          "wider_side": "left",
+          "feasibility": "neither_nominal"
+        },
+        {
+          "id": 3,
+          "center": [
+            7.0,
+            -0.26479621519649066,
+            1.0
+          ],
+          "radius": 0.2,
+          "left_gap_m": 1.0648,
+          "right_gap_m": 0.5352,
+          "wider_side": "left",
+          "feasibility": "left_only"
+        }
+      ],
+      "encounters": [
+        {
+          "obstacle_id": 1,
+          "obs_x": 3.0,
+          "obs_y": -0.15394682615888847,
+          "left_gap_m": 0.9539,
+          "right_gap_m": 0.6461,
+          "wider_side": "left",
+          "feasibility": "left_only",
+          "chosen_side": "right",
+          "chose_constrained": true,
+          "avg_drone_y": -0.5264
+        },
+        {
+          "obstacle_id": 2,
+          "obs_x": 5.0,
+          "obs_y": -0.0271973031379405,
+          "status": "not_reached"
+        },
+        {
+          "obstacle_id": 3,
+          "obs_x": 7.0,
+          "obs_y": -0.26479621519649066,
+          "status": "not_reached"
+        }
+      ],
+      "final_pos": [
+        2.679530143737793,
+        -0.5273362398147583,
+        1.6005264520645142
+      ],
+      "trajectory_sample": [
+        [
+          0.5,
+          0.004521670285612345,
+          1.0
+        ],
+        [
+          0.7780608534812927,
+          -0.1802084594964981,
+          0.9934051036834717
+        ],
+        [
+          1.0331448316574097,
+          -0.2999080419540405,
+          0.9906496405601501
+        ],
+        [
+          1.334896206855774,
+          -0.2345150262117386,
+          1.0449625253677368
+        ],
+        [
+          1.6307878494262695,
+          -0.26972252130508423,
+          1.0628917217254639
+        ],
+        [
+          1.9296725988388062,
+          -0.2574981153011322,
+          1.0983152389526367
+        ],
+        [
+          2.1953349113464355,
+          -0.3631472885608673,
+          1.1071528196334839
+        ],
+        [
+          2.3260467052459717,
+          -0.49280235171318054,
+          1.0958518981933594
+        ],
+        [
+          2.4709415435791016,
+          -0.423017293214798,
+          1.1433258056640625
+        ],
+        [
+          2.5336906909942627,
+          -0.382110595703125,
+          1.1993783712387085
+        ],
+        [
+          2.5752389430999756,
+          -0.4675426185131073,
+          1.2016901969909668
+        ],
+        [
+          2.6129746437072754,
+          -0.5000556111335754,
+          1.2055516242980957
+        ],
+        [
+          2.6434974670410156,
+          -0.5017604827880859,
+          1.2529395818710327
+        ],
+        [
+          2.6578891277313232,
+          -0.5073163509368896,
+          1.285780668258667
+        ],
+        [
+          2.657823324203491,
+          -0.5084620714187622,
+          1.3085567951202393
+        ],
+        [
+          2.6470751762390137,
+          -0.513847291469574,
+          1.339938998222351
+        ],
+        [
+          2.666363477706909,
+          -0.5203379392623901,
+          1.3737995624542236
+        ],
+        [
+          2.6866908073425293,
+          -0.5296119451522827,
+          1.4019817113876343
+        ],
+        [
+          2.6867516040802,
+          -0.529519259929657,
+          1.4323327541351318
+        ],
+        [
+          2.666740894317627,
+          -0.5308834910392761,
+          1.4664226770401
+        ],
+        [
+          2.6803488731384277,
+          -0.5282594561576843,
+          1.4985578060150146
+        ],
+        [
+          2.667616128921509,
+          -0.5309415459632874,
+          1.5276451110839844
+        ],
+        [
+          2.6779584884643555,
+          -0.5282679200172424,
+          1.555594801902771
+        ],
+        [
+          2.667564868927002,
+          -0.532856285572052,
+          1.5832908153533936
+        ],
+        [
+          2.677797555923462,
+          -0.5311431288719177,
+          1.6035120487213135
+        ],
+        [
+          2.668041229248047,
+          -0.5283889174461365,
+          1.6016135215759277
+        ],
+        [
+          2.6576621532440186,
+          -0.532522976398468,
+          1.6005791425704956
+        ],
+        [
+          2.6579432487487793,
+          -0.52998948097229,
+          1.6005940437316895
+        ],
+        [
+          2.6582279205322266,
+          -0.5276203751564026,
+          1.6002728939056396
+        ],
+        [
+          2.6804513931274414,
+          -0.5295531749725342,
+          1.6001253128051758
+        ],
+        [
+          2.6828033924102783,
+          -0.5319604277610779,
+          1.600057601928711
+        ],
+        [
+          2.652776002883911,
+          -0.5315648913383484,
+          1.601988434791565
+        ],
+        [
+          2.653333902359009,
+          -0.5259568095207214,
+          1.6009060144424438
+        ],
+        [
+          2.6528208255767822,
+          -0.5317791104316711,
+          1.6016954183578491
+        ],
+        [
+          2.6731252670288086,
+          -0.5305282473564148,
+          1.5996241569519043
+        ],
+        [
+          2.66322660446167,
+          -0.5294742584228516,
+          1.602374792098999
+        ],
+        [
+          2.668609380722046,
+          -0.5336189866065979,
+          1.6010910272598267
+        ],
+        [
+          2.668593645095825,
+          -0.5338367819786072,
+          1.6005011796951294
+        ],
+        [
+          2.669095039367676,
+          -0.529136598110199,
+          1.6008906364440918
+        ],
+        [
+          2.6587510108947754,
+          -0.5325545072555542,
+          1.6004091501235962
+        ],
+        [
+          2.659101963043213,
+          -0.5295683145523071,
+          1.6001880168914795
+        ],
+        [
+          2.669330358505249,
+          -0.5240254998207092,
+          1.6000863313674927
+        ],
+        [
+          2.6687841415405273,
+          -0.53014075756073,
+          1.6000397205352783
+        ],
+        [
+          2.658632278442383,
+          -0.5316474437713623,
+          1.601533055305481
+        ],
+        [
+          2.649138927459717,
+          -0.5266793966293335,
+          1.600527048110962
+        ],
+        [
+          2.6486740112304688,
+          -0.5316698551177979,
+          1.601872444152832
+        ],
+        [
+          2.6691200733184814,
+          -0.5279077887535095,
+          1.6007837057113647
+        ],
+        [
+          2.6892800331115723,
+          -0.5266914367675781,
+          1.6003220081329346
+        ],
+        [
+          2.6389544010162354,
+          -0.530060887336731,
+          1.6001479625701904
+        ],
+        [
+          2.659107208251953,
+          -0.5300423502922058,
+          1.6022722721099854
+        ],
+        [
+          2.679530143737793,
+          -0.5273362398147583,
+          1.6005264520645142
+        ]
+      ]
+    },
+    {
+      "seed": 20,
+      "controller": "bc",
+      "outcome": "timeout",
+      "total_steps": 500,
+      "interventions": 322,
+      "min_obs_clearance_m": 0.1247,
+      "min_wall_clearance_m": 0.3325,
+      "initial_pos": [
+        0.5,
+        0.004521670285612345,
+        1.0
+      ],
+      "obstacles": [
+        {
+          "id": 1,
+          "center": [
+            3.0,
+            -0.15394682615888847,
+            1.0
+          ],
+          "radius": 0.2,
+          "left_gap_m": 0.9539,
+          "right_gap_m": 0.6461,
+          "wider_side": "left",
+          "feasibility": "left_only"
+        },
+        {
+          "id": 2,
+          "center": [
+            5.0,
+            -0.0271973031379405,
+            1.0
+          ],
+          "radius": 0.2,
+          "left_gap_m": 0.8272,
+          "right_gap_m": 0.7728,
+          "wider_side": "left",
+          "feasibility": "neither_nominal"
+        },
+        {
+          "id": 3,
+          "center": [
+            7.0,
+            -0.26479621519649066,
+            1.0
+          ],
+          "radius": 0.2,
+          "left_gap_m": 1.0648,
+          "right_gap_m": 0.5352,
+          "wider_side": "left",
+          "feasibility": "left_only"
+        }
+      ],
+      "encounters": [
+        {
+          "obstacle_id": 1,
+          "obs_x": 3.0,
+          "obs_y": -0.15394682615888847,
+          "left_gap_m": 0.9539,
+          "right_gap_m": 0.6461,
+          "wider_side": "left",
+          "feasibility": "left_only",
+          "chosen_side": "left",
+          "chose_constrained": false,
+          "avg_drone_y": 0.4056
+        },
+        {
+          "obstacle_id": 2,
+          "obs_x": 5.0,
+          "obs_y": -0.0271973031379405,
+          "left_gap_m": 0.8272,
+          "right_gap_m": 0.7728,
+          "wider_side": "left",
+          "feasibility": "neither_nominal",
+          "chosen_side": "right",
+          "chose_constrained": false,
+          "avg_drone_y": -0.4498
+        },
+        {
+          "obstacle_id": 3,
+          "obs_x": 7.0,
+          "obs_y": -0.26479621519649066,
+          "left_gap_m": 1.0648,
+          "right_gap_m": 0.5352,
+          "wider_side": "left",
+          "feasibility": "left_only",
+          "chosen_side": "left",
+          "chose_constrained": false,
+          "avg_drone_y": 0.2587
+        }
+      ],
+      "final_pos": [
+        6.727009296417236,
+        0.2222452461719513,
+        1.059380292892456
+      ],
+      "trajectory_sample": [
+        [
+          0.5,
+          0.004521670285612345,
+          1.0
+        ],
+        [
+          0.799039363861084,
+          0.005633899010717869,
+          1.0005967617034912
+        ],
+        [
+          1.0980708599090576,
+          0.009007588028907776,
+          1.0010511875152588
+        ],
+        [
+          1.3970898389816284,
+          0.013507137075066566,
+          1.001288890838623
+        ],
+        [
+          1.6960675716400146,
+          0.021309051662683487,
+          1.0016101598739624
+        ],
+        [
+          1.9949568510055542,
+          0.033172935247421265,
+          1.0019463300704956
+        ],
+        [
+          2.2718777656555176,
+          0.05699373409152031,
+          1.0024685859680176
+        ],
+        [
+          2.3944694995880127,
+          0.15355131030082703,
+          1.0020954608917236
+        ],
+        [
+          2.4774951934814453,
+          0.3292606770992279,
+          1.0016732215881348
+        ],
+        [
+          2.5722057819366455,
+          0.48485010862350464,
+          1.0035078525543213
+        ],
+        [
+          2.7030844688415527,
+          0.484728068113327,
+          1.0078370571136475
+        ],
+        [
+          2.8868813514709473,
+          0.42379966378211975,
+          1.0107167959213257
+        ],
+        [
+          3.0834386348724365,
+          0.40130817890167236,
+          1.011962652206421
+        ],
+        [
+          3.2723679542541504,
+          0.3266538679599762,
+          1.0119985342025757
+        ],
+        [
+          3.4343347549438477,
+          0.24119895696640015,
+          1.011893391609192
+        ],
+        [
+          3.5498640537261963,
+          0.13922326266765594,
+          1.0124868154525757
+        ],
+        [
+          3.659407138824463,
+          -0.009974000044167042,
+          1.0127499103546143
+        ],
+        [
+          3.8252549171447754,
+          -0.30061057209968567,
+          1.011618733406067
+        ],
+        [
+          3.902682304382324,
+          -0.49318161606788635,
+          1.0110845565795898
+        ],
+        [
+          4.072320938110352,
+          -0.4763844907283783,
+          1.0101327896118164
+        ],
+        [
+          4.278614521026611,
+          -0.4184856712818146,
+          1.0106595754623413
+        ],
+        [
+          4.466317176818848,
+          -0.3413216471672058,
+          1.0109753608703613
+        ],
+        [
+          4.539803504943848,
+          -0.3355039060115814,
+          1.0133025646209717
+        ],
+        [
+          4.583441257476807,
+          -0.3674488067626953,
+          1.0147507190704346
+        ],
+        [
+          4.630712032318115,
+          -0.3632380962371826,
+          1.01522696018219
+        ],
+        [
+          4.6438093185424805,
+          -0.37402087450027466,
+          1.017000675201416
+        ],
+        [
+          4.655114650726318,
+          -0.4160270690917969,
+          1.0186114311218262
+        ],
+        [
+          4.675448417663574,
+          -0.4164001941680908,
+          1.0202069282531738
+        ],
+        [
+          4.694084167480469,
+          -0.42518776655197144,
+          1.0224652290344238
+        ],
+        [
+          4.734450817108154,
+          -0.44018855690956116,
+          1.0244282484054565
+        ],
+        [
+          4.754331111907959,
+          -0.4423523247241974,
+          1.0272830724716187
+        ],
+        [
+          4.7344841957092285,
+          -0.44009295105934143,
+          1.0319839715957642
+        ],
+        [
+          4.723613739013672,
+          -0.44527992606163025,
+          1.0360329151153564
+        ],
+        [
+          4.712759017944336,
+          -0.45030835270881653,
+          1.0404423475265503
+        ],
+        [
+          4.749789714813232,
+          -0.4722371995449066,
+          1.0435103178024292
+        ],
+        [
+          4.799429416656494,
+          -0.47776129841804504,
+          1.045904517173767
+        ],
+        [
+          4.848655700683594,
+          -0.4856968820095062,
+          1.0485765933990479
+        ],
+        [
+          4.910313606262207,
+          -0.4938446879386902,
+          1.05128014087677
+        ],
+        [
+          5.044888973236084,
+          -0.5121146440505981,
+          1.0514928102493286
+        ],
+        [
+          5.171333312988281,
+          -0.5125095844268799,
+          1.0526554584503174
+        ],
+        [
+          5.325190544128418,
+          -0.4867886006832123,
+          1.0536812543869019
+        ],
+        [
+          5.466567039489746,
+          -0.397883802652359,
+          1.0538544654846191
+        ],
+        [
+          5.587723255157471,
+          -0.27283957600593567,
+          1.0542526245117188
+        ],
+        [
+          5.690806865692139,
+          -0.12289750576019287,
+          1.0531926155090332
+        ],
+        [
+          5.754395008087158,
+          0.06780485808849335,
+          1.0518567562103271
+        ],
+        [
+          5.854465007781982,
+          0.3703351318836212,
+          1.049338459968567
+        ],
+        [
+          5.973193168640137,
+          0.48302385210990906,
+          1.0513402223587036
+        ],
+        [
+          6.215476989746094,
+          0.42217233777046204,
+          1.0550342798233032
+        ],
+        [
+          6.441296100616455,
+          0.35919761657714844,
+          1.056592583656311
+        ],
+        [
+          6.643009185791016,
+          0.2899742126464844,
+          1.0576003789901733
+        ],
+        [
+          6.727009296417236,
+          0.2222452461719513,
+          1.059380292892456
+        ]
+      ]
+    },
+    {
+      "seed": 100,
+      "controller": "ppo",
+      "outcome": "timeout",
+      "total_steps": 500,
+      "interventions": 473,
+      "min_obs_clearance_m": 0.1326,
+      "min_wall_clearance_m": 0.247,
+      "initial_pos": [
+        0.5,
+        -0.09140968322753906,
+        1.0
+      ],
+      "obstacles": [
+        {
+          "id": 1,
+          "center": [
+            3.0,
+            0.23448714135140622,
+            1.0
+          ],
+          "radius": 0.2,
+          "left_gap_m": 0.5655,
+          "right_gap_m": 1.0345,
+          "wider_side": "right",
+          "feasibility": "right_only"
+        },
+        {
+          "id": 2,
+          "center": [
+            5.0,
+            0.06758781887752109,
+            1.0
+          ],
+          "radius": 0.2,
+          "left_gap_m": 0.7324,
+          "right_gap_m": 0.8676,
+          "wider_side": "right",
+          "feasibility": "right_only"
+        },
+        {
+          "id": 3,
+          "center": [
+            7.0,
+            -0.1477957308161575,
+            1.0
+          ],
+          "radius": 0.2,
+          "left_gap_m": 0.9478,
+          "right_gap_m": 0.6522,
+          "wider_side": "left",
+          "feasibility": "left_only"
+        }
+      ],
+      "encounters": [
+        {
+          "obstacle_id": 1,
+          "obs_x": 3.0,
+          "obs_y": 0.23448714135140622,
+          "left_gap_m": 0.5655,
+          "right_gap_m": 1.0345,
+          "wider_side": "right",
+          "feasibility": "right_only",
+          "chosen_side": "right",
+          "chose_constrained": false,
+          "avg_drone_y": -0.2967
+        },
+        {
+          "obstacle_id": 2,
+          "obs_x": 5.0,
+          "obs_y": 0.06758781887752109,
+          "left_gap_m": 0.7324,
+          "right_gap_m": 0.8676,
+          "wider_side": "right",
+          "feasibility": "right_only",
+          "chosen_side": "right",
+          "chose_constrained": false,
+          "avg_drone_y": -0.4057
+        },
+        {
+          "obstacle_id": 3,
+          "obs_x": 7.0,
+          "obs_y": -0.1477957308161575,
+          "left_gap_m": 0.9478,
+          "right_gap_m": 0.6522,
+          "wider_side": "left",
+          "feasibility": "left_only",
+          "chosen_side": "right",
+          "chose_constrained": true,
+          "avg_drone_y": -0.5273
+        }
+      ],
+      "final_pos": [
+        6.677750587463379,
+        -0.5298010110855103,
+        1.59958016872406
+      ],
+      "trajectory_sample": [
+        [
+          0.5,
+          -0.09140968322753906,
+          1.0
+        ],
+        [
+          0.7858080863952637,
+          -0.25791916251182556,
+          1.0007272958755493
+        ],
+        [
+          0.9774503707885742,
+          -0.41608744859695435,
+          0.9867069125175476
+        ],
+        [
+          1.2243481874465942,
+          -0.29660648107528687,
+          1.0425962209701538
+        ],
+        [
+          1.519334316253662,
+          -0.33152836561203003,
+          1.0768357515335083
+        ],
+        [
+          1.7108644247055054,
+          -0.4050149619579315,
+          1.073046326637268
+        ],
+        [
+          1.9507989883422852,
+          -0.39308637380599976,
+          1.1252683401107788
+        ],
+        [
+          2.162609577178955,
+          -0.3612542152404785,
+          1.1438020467758179
+        ],
+        [
+          2.397576093673706,
+          -0.4243273138999939,
+          1.1658309698104858
+        ],
+        [
+          2.5840044021606445,
+          -0.3358551859855652,
+          1.2129197120666504
+        ],
+        [
+          2.6902987957000732,
+          -0.3316386044025421,
+          1.224244236946106
+        ],
+        [
+          2.7699429988861084,
+          -0.3016431927680969,
+          1.2360992431640625
+        ],
+        [
+          2.822829484939575,
+          -0.2653205990791321,
+          1.255487322807312
+        ],
+        [
+          2.8991310596466064,
+          -0.29157912731170654,
+          1.2512565851211548
+        ],
+        [
+          3.1781046390533447,
+          -0.29771217703819275,
+          1.2701119184494019
+        ],
+        [
+          3.468092441558838,
+          -0.2866048216819763,
+          1.3043769598007202
+        ],
+        [
+          3.7128987312316895,
+          -0.4038468301296234,
+          1.3084675073623657
+        ],
+        [
+          3.8772811889648438,
+          -0.4320434331893921,
+          1.3251715898513794
+        ],
+        [
+          4.097475528717041,
+          -0.4194728136062622,
+          1.375765085220337
+        ],
+        [
+          4.2856974601745605,
+          -0.42388394474983215,
+          1.3875958919525146
+        ],
+        [
+          4.4758429527282715,
+          -0.44650065898895264,
+          1.4225614070892334
+        ],
+        [
+          4.602895259857178,
+          -0.3780365288257599,
+          1.4556796550750732
+        ],
+        [
+          4.672825813293457,
+          -0.4249402582645416,
+          1.4490087032318115
+        ],
+        [
+          4.727736473083496,
+          -0.3849117159843445,
+          1.4750655889511108
+        ],
+        [
+          4.76262903213501,
+          -0.38103875517845154,
+          1.4922735691070557
+        ],
+        [
+          4.797555446624756,
+          -0.37747642397880554,
+          1.502150297164917
+        ],
+        [
+          4.807413101196289,
+          -0.4126329720020294,
+          1.5094903707504272
+        ],
+        [
+          4.857751369476318,
+          -0.4227627217769623,
+          1.5018926858901978
+        ],
+        [
+          4.946063041687012,
+          -0.4217284917831421,
+          1.5107944011688232
+        ],
+        [
+          5.160461902618408,
+          -0.41636550426483154,
+          1.5366743803024292
+        ],
+        [
+          5.385797500610352,
+          -0.4200362265110016,
+          1.5572295188903809
+        ],
+        [
+          5.618133068084717,
+          -0.40398484468460083,
+          1.5750542879104614
+        ],
+        [
+          5.841736793518066,
+          -0.41224804520606995,
+          1.5827158689498901
+        ],
+        [
+          6.067929744720459,
+          -0.40853261947631836,
+          1.6007061004638672
+        ],
+        [
+          6.218055248260498,
+          -0.4136318862438202,
+          1.6001378297805786
+        ],
+        [
+          6.363924503326416,
+          -0.4713740944862366,
+          1.5990750789642334
+        ],
+        [
+          6.485382556915283,
+          -0.501088559627533,
+          1.59330415725708
+        ],
+        [
+          6.562436103820801,
+          -0.510923445224762,
+          1.600620985031128
+        ],
+        [
+          6.612480640411377,
+          -0.5083037614822388,
+          1.6012235879898071
+        ],
+        [
+          6.656453609466553,
+          -0.5203409790992737,
+          1.6023495197296143
+        ],
+        [
+          6.691062927246094,
+          -0.525952935218811,
+          1.5984532833099365
+        ],
+        [
+          6.6858811378479,
+          -0.5300794839859009,
+          1.598665475845337
+        ],
+        [
+          6.70138692855835,
+          -0.5301730632781982,
+          1.5999014377593994
+        ],
+        [
+          6.673882961273193,
+          -0.5312990546226501,
+          1.6003272533416748
+        ],
+        [
+          6.664346218109131,
+          -0.5257464051246643,
+          1.6019015312194824
+        ],
+        [
+          6.674041271209717,
+          -0.5304135680198669,
+          1.600873589515686
+        ],
+        [
+          6.674106121063232,
+          -0.5305919647216797,
+          1.6004012823104858
+        ],
+        [
+          6.664180755615234,
+          -0.529762864112854,
+          1.6002836227416992
+        ],
+        [
+          6.692617416381836,
+          -0.530297577381134,
+          1.6008399724960327
+        ],
+        [
+          6.657841682434082,
+          -0.5281480550765991,
+          1.6002264022827148
+        ],
+        [
+          6.677750587463379,
+          -0.5298010110855103,
+          1.59958016872406
+        ]
+      ]
+    },
+    {
+      "seed": 100,
+      "controller": "bc",
+      "outcome": "timeout",
+      "total_steps": 500,
+      "interventions": 380,
+      "min_obs_clearance_m": 0.1233,
+      "min_wall_clearance_m": 0.3428,
+      "initial_pos": [
+        0.5,
+        -0.09140968322753906,
+        1.0
+      ],
+      "obstacles": [
+        {
+          "id": 1,
+          "center": [
+            3.0,
+            0.23448714135140622,
+            1.0
+          ],
+          "radius": 0.2,
+          "left_gap_m": 0.5655,
+          "right_gap_m": 1.0345,
+          "wider_side": "right",
+          "feasibility": "right_only"
+        },
+        {
+          "id": 2,
+          "center": [
+            5.0,
+            0.06758781887752109,
+            1.0
+          ],
+          "radius": 0.2,
+          "left_gap_m": 0.7324,
+          "right_gap_m": 0.8676,
+          "wider_side": "right",
+          "feasibility": "right_only"
+        },
+        {
+          "id": 3,
+          "center": [
+            7.0,
+            -0.1477957308161575,
+            1.0
+          ],
+          "radius": 0.2,
+          "left_gap_m": 0.9478,
+          "right_gap_m": 0.6522,
+          "wider_side": "left",
+          "feasibility": "left_only"
+        }
+      ],
+      "encounters": [
+        {
+          "obstacle_id": 1,
+          "obs_x": 3.0,
+          "obs_y": 0.23448714135140622,
+          "left_gap_m": 0.5655,
+          "right_gap_m": 1.0345,
+          "wider_side": "right",
+          "feasibility": "right_only",
+          "chosen_side": "right",
+          "chose_constrained": false,
+          "avg_drone_y": -0.4216
+        },
+        {
+          "obstacle_id": 2,
+          "obs_x": 5.0,
+          "obs_y": 0.06758781887752109,
+          "left_gap_m": 0.7324,
+          "right_gap_m": 0.8676,
+          "wider_side": "right",
+          "feasibility": "right_only",
+          "chosen_side": "left",
+          "chose_constrained": true,
+          "avg_drone_y": 0.4507
+        },
+        {
+          "obstacle_id": 3,
+          "obs_x": 7.0,
+          "obs_y": -0.1477957308161575,
+          "status": "not_reached"
+        }
+      ],
+      "final_pos": [
+        4.741521835327148,
+        0.4746864438056946,
+        1.0685553550720215
+      ],
+      "trajectory_sample": [
+        [
+          0.5,
+          -0.09140968322753906,
+          1.0
+        ],
+        [
+          0.7990407943725586,
+          -0.08902137726545334,
+          0.9997605085372925
+        ],
+        [
+          1.09807550907135,
+          -0.08366880565881729,
+          0.9994131326675415
+        ],
+        [
+          1.397086501121521,
+          -0.07705521583557129,
+          0.9992953538894653
+        ],
+        [
+          1.6961026191711426,
+          -0.07279378175735474,
+          0.999342143535614
+        ],
+        [
+          1.9951528310775757,
+          -0.0736003965139389,
+          0.9992976784706116
+        ],
+        [
+          2.263813018798828,
+          -0.10619188845157623,
+          0.9996328949928284
+        ],
+        [
+          2.4206461906433105,
+          -0.20612455904483795,
+          0.9995819330215454
+        ],
+        [
+          2.541301727294922,
+          -0.3459556996822357,
+          0.9991088509559631
+        ],
+        [
+          2.665600061416626,
+          -0.4858970642089844,
+          0.9979085326194763
+        ],
+        [
+          2.8008275032043457,
+          -0.4834609925746918,
+          0.9952242374420166
+        ],
+        [
+          2.9717254638671875,
+          -0.43643155694007874,
+          0.993136465549469
+        ],
+        [
+          3.173142194747925,
+          -0.3685070872306824,
+          0.991614580154419
+        ],
+        [
+          3.355647563934326,
+          -0.3068370223045349,
+          0.9914558529853821
+        ],
+        [
+          3.496617078781128,
+          -0.24630461633205414,
+          0.9915128946304321
+        ],
+        [
+          3.6186461448669434,
+          -0.1396978348493576,
+          0.9918145537376404
+        ],
+        [
+          3.733647108078003,
+          0.025372305884957314,
+          0.991151750087738
+        ],
+        [
+          3.910877227783203,
+          0.2966283857822418,
+          0.9909296035766602
+        ],
+        [
+          4.004647254943848,
+          0.4803704619407654,
+          0.9916166067123413
+        ],
+        [
+          4.2022223472595215,
+          0.43285125494003296,
+          0.9924039244651794
+        ],
+        [
+          4.419709205627441,
+          0.34949764609336853,
+          0.992387592792511
+        ],
+        [
+          4.509334564208984,
+          0.2887977957725525,
+          0.9935972094535828
+        ],
+        [
+          4.5453948974609375,
+          0.2840113639831543,
+          0.9962536096572876
+        ],
+        [
+          4.5586652755737305,
+          0.30577710270881653,
+          1.000939965248108
+        ],
+        [
+          4.576668739318848,
+          0.3303772211074829,
+          1.0053255558013916
+        ],
+        [
+          4.574914455413818,
+          0.36615586280822754,
+          1.0105005502700806
+        ],
+        [
+          4.60508918762207,
+          0.37454476952552795,
+          1.0163577795028687
+        ],
+        [
+          4.625405788421631,
+          0.3957667946815491,
+          1.021623134613037
+        ],
+        [
+          4.646513938903809,
+          0.4320334494113922,
+          1.0235507488250732
+        ],
+        [
+          4.676832675933838,
+          0.4423035681247711,
+          1.024955153465271
+        ],
+        [
+          4.676825523376465,
+          0.44227707386016846,
+          1.026669979095459
+        ],
+        [
+          4.6867570877075195,
+          0.4412563741207123,
+          1.0280017852783203
+        ],
+        [
+          4.686605453491211,
+          0.438890665769577,
+          1.0291297435760498
+        ],
+        [
+          4.707526206970215,
+          0.44920024275779724,
+          1.0310224294662476
+        ],
+        [
+          4.707565784454346,
+          0.4496230185031891,
+          1.0328153371810913
+        ],
+        [
+          4.697727680206299,
+          0.45149219036102295,
+          1.03466796875
+        ],
+        [
+          4.698429584503174,
+          0.4575467109680176,
+          1.036604881286621
+        ],
+        [
+          4.728889465332031,
+          0.46050721406936646,
+          1.0384058952331543
+        ],
+        [
+          4.71892786026001,
+          0.46125712990760803,
+          1.0402013063430786
+        ],
+        [
+          4.719444751739502,
+          0.46537262201309204,
+          1.0421568155288696
+        ],
+        [
+          4.719127178192139,
+          0.4629799425601959,
+          1.0438657999038696
+        ],
+        [
+          4.719236373901367,
+          0.46371304988861084,
+          1.0461236238479614
+        ],
+        [
+          4.7194108963012695,
+          0.46480152010917664,
+          1.048464298248291
+        ],
+        [
+          4.719094753265381,
+          0.4628652334213257,
+          1.0511096715927124
+        ],
+        [
+          4.728666305541992,
+          0.4596138000488281,
+          1.0536600351333618
+        ],
+        [
+          4.7189106941223145,
+          0.4617416262626648,
+          1.0558342933654785
+        ],
+        [
+          4.709441184997559,
+          0.4654736816883087,
+          1.0583840608596802
+        ],
+        [
+          4.729895114898682,
+          0.46647170186042786,
+          1.060599684715271
+        ],
+        [
+          4.720737457275391,
+          0.4719613492488861,
+          1.063795804977417
+        ],
+        [
+          4.740589618682861,
+          0.46958258748054504,
+          1.0654106140136719
+        ],
+        [
+          4.741521835327148,
+          0.4746864438056946,
+          1.0685553550720215
+        ]
+      ]
+    },
+    {
+      "seed": 2000,
+      "controller": "ppo",
+      "outcome": "timeout",
+      "total_steps": 500,
+      "interventions": 477,
+      "min_obs_clearance_m": 0.1164,
+      "min_wall_clearance_m": 0.2478,
+      "initial_pos": [
+        0.5,
+        0.0013114457251504064,
+        1.0
+      ],
+      "obstacles": [
+        {
+          "id": 1,
+          "center": [
+            3.0,
+            0.05259542320034539,
+            1.0
+          ],
+          "radius": 0.2,
+          "left_gap_m": 0.7474,
+          "right_gap_m": 0.8526,
+          "wider_side": "right",
+          "feasibility": "right_only"
+        },
+        {
+          "id": 2,
+          "center": [
+            5.0,
+            0.10949722650502092,
+            1.0
+          ],
+          "radius": 0.2,
+          "left_gap_m": 0.6905,
+          "right_gap_m": 0.9095,
+          "wider_side": "right",
+          "feasibility": "right_only"
+        },
+        {
+          "id": 3,
+          "center": [
+            7.0,
+            -0.33107360724252655,
+            1.0
+          ],
+          "radius": 0.2,
+          "left_gap_m": 1.1311,
+          "right_gap_m": 0.4689,
+          "wider_side": "left",
+          "feasibility": "left_only"
+        }
+      ],
+      "encounters": [
+        {
+          "obstacle_id": 1,
+          "obs_x": 3.0,
+          "obs_y": 0.05259542320034539,
+          "left_gap_m": 0.7474,
+          "right_gap_m": 0.8526,
+          "wider_side": "right",
+          "feasibility": "right_only",
+          "chosen_side": "right",
+          "chose_constrained": false,
+          "avg_drone_y": -0.4011
+        },
+        {
+          "obstacle_id": 2,
+          "obs_x": 5.0,
+          "obs_y": 0.10949722650502092,
+          "left_gap_m": 0.6905,
+          "right_gap_m": 0.9095,
+          "wider_side": "right",
+          "feasibility": "right_only",
+          "chosen_side": "right",
+          "chose_constrained": false,
+          "avg_drone_y": -0.4612
+        },
+        {
+          "obstacle_id": 3,
+          "obs_x": 7.0,
+          "obs_y": -0.33107360724252655,
+          "left_gap_m": 1.1311,
+          "right_gap_m": 0.4689,
+          "wider_side": "left",
+          "feasibility": "left_only",
+          "chosen_side": "left",
+          "chose_constrained": false,
+          "avg_drone_y": -0.054
+        }
+      ],
+      "final_pos": [
+        6.601092338562012,
+        -0.02605699747800827,
+        1.601750135421753
+      ],
+      "trajectory_sample": [
+        [
+          0.5,
+          0.0013114457251504064,
+          1.0
+        ],
+        [
+          0.7846274971961975,
+          -0.18254771828651428,
+          0.9976474046707153
+        ],
+        [
+          1.0034655332565308,
+          -0.3903302252292633,
+          0.9885679483413696
+        ],
+        [
+          1.2061328887939453,
+          -0.3514038920402527,
+          1.014218807220459
+        ],
+        [
+          1.488000512123108,
+          -0.2674870193004608,
+          1.0723166465759277
+        ],
+        [
+          1.7606323957443237,
+          -0.37698662281036377,
+          1.0775376558303833
+        ],
+        [
+          1.9319788217544556,
+          -0.4333097040653229,
+          1.0792826414108276
+        ],
+        [
+          2.173201084136963,
+          -0.3827681541442871,
+          1.13871169090271
+        ],
+        [
+          2.3721330165863037,
+          -0.40476953983306885,
+          1.1489360332489014
+        ],
+        [
+          2.4984169006347656,
+          -0.2701643705368042,
+          1.2065240144729614
+        ],
+        [
+          2.5652363300323486,
+          -0.37666961550712585,
+          1.2178086042404175
+        ],
+        [
+          2.639063596725464,
+          -0.4095352590084076,
+          1.2166235446929932
+        ],
+        [
+          2.689147710800171,
+          -0.3778288662433624,
+          1.2538232803344727
+        ],
+        [
+          2.7291903495788574,
+          -0.36758938431739807,
+          1.2710689306259155
+        ],
+        [
+          2.7437829971313477,
+          -0.3822767734527588,
+          1.2882168292999268
+        ],
+        [
+          2.7631795406341553,
+          -0.3965297043323517,
+          1.3027700185775757
+        ],
+        [
+          2.78305721282959,
+          -0.3981530964374542,
+          1.3258962631225586
+        ],
+        [
+          2.8128225803375244,
+          -0.40578100085258484,
+          1.3379288911819458
+        ],
+        [
+          2.841979503631592,
+          -0.4149782061576843,
+          1.3480817079544067
+        ],
+        [
+          2.892747640609741,
+          -0.4107401967048645,
+          1.3571518659591675
+        ],
+        [
+          3.0543203353881836,
+          -0.4278581142425537,
+          1.3736802339553833
+        ],
+        [
+          3.262934684753418,
+          -0.41096293926239014,
+          1.4002853631973267
+        ],
+        [
+          3.504946708679199,
+          -0.4136326014995575,
+          1.4237908124923706
+        ],
+        [
+          3.709454298019409,
+          -0.4748995304107666,
+          1.4233494997024536
+        ],
+        [
+          3.8546032905578613,
+          -0.5249683856964111,
+          1.430417537689209
+        ],
+        [
+          4.03168249130249,
+          -0.426894873380661,
+          1.4811569452285767
+        ],
+        [
+          4.225732803344727,
+          -0.48503461480140686,
+          1.4846155643463135
+        ],
+        [
+          4.4107584953308105,
+          -0.4704274535179138,
+          1.5143954753875732
+        ],
+        [
+          4.589720726013184,
+          -0.4361376464366913,
+          1.5438001155853271
+        ],
+        [
+          4.695328712463379,
+          -0.4645243287086487,
+          1.5394368171691895
+        ],
+        [
+          4.758640766143799,
+          -0.39722418785095215,
+          1.5727143287658691
+        ],
+        [
+          4.807337284088135,
+          -0.4337123930454254,
+          1.5750840902328491
+        ],
+        [
+          4.913329124450684,
+          -0.47229471802711487,
+          1.5636916160583496
+        ],
+        [
+          5.0982136726379395,
+          -0.4828547537326813,
+          1.587640404701233
+        ],
+        [
+          5.273180961608887,
+          -0.5095159411430359,
+          1.5894089937210083
+        ],
+        [
+          5.435917377471924,
+          -0.5240099430084229,
+          1.6013435125350952
+        ],
+        [
+          5.597792148590088,
+          -0.5297196507453918,
+          1.6006174087524414
+        ],
+        [
+          5.759461879730225,
+          -0.5299960970878601,
+          1.597481369972229
+        ],
+        [
+          5.915010452270508,
+          -0.5299553871154785,
+          1.6001278162002563
+        ],
+        [
+          6.065211772918701,
+          -0.5270153880119324,
+          1.600058674812317
+        ],
+        [
+          6.215821266174316,
+          -0.5302430391311646,
+          1.6000269651412964
+        ],
+        [
+          6.359527587890625,
+          -0.5293508768081665,
+          1.6000124216079712
+        ],
+        [
+          6.4328932762146,
+          -0.45209163427352905,
+          1.6000057458877563
+        ],
+        [
+          6.414828777313232,
+          -0.24586047232151031,
+          1.600002646446228
+        ],
+        [
+          6.4308905601501465,
+          -0.11697850376367569,
+          1.598014235496521
+        ],
+        [
+          6.515410423278809,
+          -0.14173631370067596,
+          1.5764297246932983
+        ],
+        [
+          6.55985164642334,
+          -0.14570902287960052,
+          1.5667974948883057
+        ],
+        [
+          6.566116809844971,
+          -0.12519852817058563,
+          1.5827503204345703
+        ],
+        [
+          6.565464973449707,
+          -0.06662817299365997,
+          1.6000299453735352
+        ],
+        [
+          6.604944705963135,
+          -0.06018418073654175,
+          1.6000137329101562
+        ],
+        [
+          6.601092338562012,
+          -0.02605699747800827,
+          1.601750135421753
+        ]
+      ]
+    },
+    {
+      "seed": 2000,
+      "controller": "bc",
+      "outcome": "timeout",
+      "total_steps": 500,
+      "interventions": 440,
+      "min_obs_clearance_m": 0.1079,
+      "min_wall_clearance_m": 0.3508,
+      "initial_pos": [
+        0.5,
+        0.0013114457251504064,
+        1.0
+      ],
+      "obstacles": [
+        {
+          "id": 1,
+          "center": [
+            3.0,
+            0.05259542320034539,
+            1.0
+          ],
+          "radius": 0.2,
+          "left_gap_m": 0.7474,
+          "right_gap_m": 0.8526,
+          "wider_side": "right",
+          "feasibility": "right_only"
+        },
+        {
+          "id": 2,
+          "center": [
+            5.0,
+            0.10949722650502092,
+            1.0
+          ],
+          "radius": 0.2,
+          "left_gap_m": 0.6905,
+          "right_gap_m": 0.9095,
+          "wider_side": "right",
+          "feasibility": "right_only"
+        },
+        {
+          "id": 3,
+          "center": [
+            7.0,
+            -0.33107360724252655,
+            1.0
+          ],
+          "radius": 0.2,
+          "left_gap_m": 1.1311,
+          "right_gap_m": 0.4689,
+          "wider_side": "left",
+          "feasibility": "left_only"
+        }
+      ],
+      "encounters": [
+        {
+          "obstacle_id": 1,
+          "obs_x": 3.0,
+          "obs_y": 0.05259542320034539,
+          "left_gap_m": 0.7474,
+          "right_gap_m": 0.8526,
+          "wider_side": "right",
+          "feasibility": "right_only",
+          "chosen_side": "left",
+          "chose_constrained": true,
+          "avg_drone_y": 0.4652
+        },
+        {
+          "obstacle_id": 2,
+          "obs_x": 5.0,
+          "obs_y": 0.10949722650502092,
+          "status": "not_reached"
+        },
+        {
+          "obstacle_id": 3,
+          "obs_x": 7.0,
+          "obs_y": -0.33107360724252655,
+          "status": "not_reached"
+        }
+      ],
+      "final_pos": [
+        2.801604747772217,
+        0.496646910905838,
+        1.0030694007873535
+      ],
+      "trajectory_sample": [
+        [
+          0.5,
+          0.0013114457251504064,
+          1.0
+        ],
+        [
+          0.7990400791168213,
+          0.0011621435405686498,
+          1.0005443096160889
+        ],
+        [
+          1.098078966140747,
+          0.0025248355232179165,
+          1.000949740409851
+        ],
+        [
+          1.3971173763275146,
+          0.0036661894991993904,
+          1.001241683959961
+        ],
+        [
+          1.696124792098999,
+          0.011048361659049988,
+          1.0012476444244385
+        ],
+        [
+          1.9948194026947021,
+          0.03349626809358597,
+          1.0011475086212158
+        ],
+        [
+          2.2236790657043457,
+          0.07429780811071396,
+          1.0007641315460205
+        ],
+        [
+          2.3587348461151123,
+          0.13965833187103271,
+          1.0005497932434082
+        ],
+        [
+          2.4190685749053955,
+          0.2726832926273346,
+          1.0001730918884277
+        ],
+        [
+          2.467851400375366,
+          0.43334272503852844,
+          1.0009114742279053
+        ],
+        [
+          2.5536296367645264,
+          0.4767279326915741,
+          1.0039725303649902
+        ],
+        [
+          2.6319146156311035,
+          0.4461524784564972,
+          1.0056939125061035
+        ],
+        [
+          2.6785738468170166,
+          0.4478684961795807,
+          1.0063709020614624
+        ],
+        [
+          2.7192471027374268,
+          0.45034512877464294,
+          1.0067867040634155
+        ],
+        [
+          2.7143399715423584,
+          0.44944852590560913,
+          1.0065220594406128
+        ],
+        [
+          2.6945958137512207,
+          0.4465622305870056,
+          1.006627082824707
+        ],
+        [
+          2.684799909591675,
+          0.4447953999042511,
+          1.0069496631622314
+        ],
+        [
+          2.6952261924743652,
+          0.43529078364372253,
+          1.0076496601104736
+        ],
+        [
+          2.685279607772827,
+          0.44032052159309387,
+          1.0092411041259766
+        ],
+        [
+          2.715195894241333,
+          0.44156134128570557,
+          1.0106221437454224
+        ],
+        [
+          2.705156087875366,
+          0.43927696347236633,
+          1.0123798847198486
+        ],
+        [
+          2.6955058574676514,
+          0.44914698600769043,
+          1.0141648054122925
+        ],
+        [
+          2.715381622314453,
+          0.4468859136104584,
+          1.0155164003372192
+        ],
+        [
+          2.7153079509735107,
+          0.4456954300403595,
+          1.015518307685852
+        ],
+        [
+          2.7360939979553223,
+          0.4572618305683136,
+          1.0154554843902588
+        ],
+        [
+          2.7260994911193848,
+          0.4574666917324066,
+          1.015987753868103
+        ],
+        [
+          2.7261641025543213,
+          0.45832398533821106,
+          1.0154807567596436
+        ],
+        [
+          2.7161142826080322,
+          0.45785725116729736,
+          1.0148413181304932
+        ],
+        [
+          2.7259914875030518,
+          0.4562615156173706,
+          1.014427900314331
+        ],
+        [
+          2.726332187652588,
+          0.4598892331123352,
+          1.014053463935852
+        ],
+        [
+          2.736468553543091,
+          0.4610881507396698,
+          1.013414978981018
+        ],
+        [
+          2.736234188079834,
+          0.4587162137031555,
+          1.0130146741867065
+        ],
+        [
+          2.716306686401367,
+          0.4600543975830078,
+          1.0126014947891235
+        ],
+        [
+          2.7171475887298584,
+          0.46791601181030273,
+          1.012313961982727
+        ],
+        [
+          2.738752841949463,
+          0.47373104095458984,
+          1.011889100074768
+        ],
+        [
+          2.754882335662842,
+          0.47738903760910034,
+          1.011289119720459
+        ],
+        [
+          2.7879316806793213,
+          0.47360387444496155,
+          1.0104714632034302
+        ],
+        [
+          2.812875986099243,
+          0.47105926275253296,
+          1.0091946125030518
+        ],
+        [
+          2.773345708847046,
+          0.476563423871994,
+          1.0082690715789795
+        ],
+        [
+          2.7637200355529785,
+          0.4796549081802368,
+          1.0084834098815918
+        ],
+        [
+          2.7542662620544434,
+          0.48388734459877014,
+          1.0081318616867065
+        ],
+        [
+          2.764380693435669,
+          0.4840356111526489,
+          1.0073679685592651
+        ],
+        [
+          2.7746591567993164,
+          0.4851841926574707,
+          1.0069911479949951
+        ],
+        [
+          2.7552554607391357,
+          0.4902927875518799,
+          1.006781816482544
+        ],
+        [
+          2.7655510902404785,
+          0.49157050251960754,
+          1.0061638355255127
+        ],
+        [
+          2.7956533432006836,
+          0.4874003529548645,
+          1.0054267644882202
+        ],
+        [
+          2.7908029556274414,
+          0.488653302192688,
+          1.004076600074768
+        ],
+        [
+          2.7713050842285156,
+          0.4929792284965515,
+          1.0039368867874146
+        ],
+        [
+          2.7716805934906006,
+          0.49504023790359497,
+          1.003426194190979
+        ],
+        [
+          2.7723405361175537,
+          0.49867430329322815,
+          1.0033912658691406
+        ],
+        [
+          2.801604747772217,
+          0.496646910905838,
+          1.0030694007873535
+        ]
+      ]
+    },
+    {
+      "seed": 8000,
+      "controller": "ppo",
+      "outcome": "timeout",
+      "total_steps": 500,
+      "interventions": 473,
+      "min_obs_clearance_m": 0.1311,
+      "min_wall_clearance_m": 0.2455,
+      "initial_pos": [
+        0.5,
+        0.05421306937932968,
+        1.0
+      ],
+      "obstacles": [
+        {
+          "id": 1,
+          "center": [
+            3.0,
+            -0.17831065962508624,
+            1.0
+          ],
+          "radius": 0.2,
+          "left_gap_m": 0.9783,
+          "right_gap_m": 0.6217,
+          "wider_side": "left",
+          "feasibility": "left_only"
+        },
+        {
+          "id": 2,
+          "center": [
+            5.0,
+            -0.07529226065536278,
+            1.0
+          ],
+          "radius": 0.2,
+          "left_gap_m": 0.8753,
+          "right_gap_m": 0.7247,
+          "wider_side": "left",
+          "feasibility": "left_only"
+        },
+        {
+          "id": 3,
+          "center": [
+            7.0,
+            0.04516731127801596,
+            1.0
+          ],
+          "radius": 0.2,
+          "left_gap_m": 0.7548,
+          "right_gap_m": 0.8452,
+          "wider_side": "right",
+          "feasibility": "neither_nominal"
+        }
+      ],
+      "encounters": [
+        {
+          "obstacle_id": 1,
+          "obs_x": 3.0,
+          "obs_y": -0.17831065962508624,
+          "left_gap_m": 0.9783,
+          "right_gap_m": 0.6217,
+          "wider_side": "left",
+          "feasibility": "left_only",
+          "chosen_side": "right",
+          "chose_constrained": true,
+          "avg_drone_y": -0.5287
+        },
+        {
+          "obstacle_id": 2,
+          "obs_x": 5.0,
+          "obs_y": -0.07529226065536278,
+          "status": "not_reached"
+        },
+        {
+          "obstacle_id": 3,
+          "obs_x": 7.0,
+          "obs_y": 0.04516731127801596,
+          "status": "not_reached"
+        }
+      ],
+      "final_pos": [
+        2.623378038406372,
+        -0.5321307182312012,
+        1.6011959314346313
+      ],
+      "trajectory_sample": [
+        [
+          0.5,
+          0.05421306937932968,
+          1.0
+        ],
+        [
+          0.7636500597000122,
+          -0.10639218986034393,
+          0.9943722486495972
+        ],
+        [
+          1.0153213739395142,
+          -0.28285297751426697,
+          0.9861248731613159
+        ],
+        [
+          1.3065327405929565,
+          -0.22205980122089386,
+          1.0304591655731201
+        ],
+        [
+          1.5906020402908325,
+          -0.3344023823738098,
+          1.0453449487686157
+        ],
+        [
+          1.8406144380569458,
+          -0.2896697521209717,
+          1.0668222904205322
+        ],
+        [
+          2.1143646240234375,
+          -0.38699600100517273,
+          1.0856850147247314
+        ],
+        [
+          2.259066581726074,
+          -0.4967539608478546,
+          1.0796900987625122
+        ],
+        [
+          2.3802595138549805,
+          -0.5028591156005859,
+          1.1108542680740356
+        ],
+        [
+          2.4857687950134277,
+          -0.40800976753234863,
+          1.1695964336395264
+        ],
+        [
+          2.5359063148498535,
+          -0.45052048563957214,
+          1.1931052207946777
+        ],
+        [
+          2.5830044746398926,
+          -0.4994640648365021,
+          1.1860069036483765
+        ],
+        [
+          2.633297920227051,
+          -0.4946809411048889,
+          1.2249209880828857
+        ],
+        [
+          2.635836362838745,
+          -0.5108731389045715,
+          1.249144196510315
+        ],
+        [
+          2.634594678878784,
+          -0.5176650285720825,
+          1.2749916315078735
+        ],
+        [
+          2.633364677429199,
+          -0.5253229737281799,
+          1.3064913749694824
+        ],
+        [
+          2.652561664581299,
+          -0.5317769050598145,
+          1.3320831060409546
+        ],
+        [
+          2.6228702068328857,
+          -0.5285311341285706,
+          1.362586498260498
+        ],
+        [
+          2.6426303386688232,
+          -0.5317103862762451,
+          1.3941243886947632
+        ],
+        [
+          2.6225733757019043,
+          -0.5307319760322571,
+          1.4210857152938843
+        ],
+        [
+          2.633042812347412,
+          -0.5292946696281433,
+          1.4443457126617432
+        ],
+        [
+          2.652050256729126,
+          -0.5307918190956116,
+          1.4714019298553467
+        ],
+        [
+          2.6444156169891357,
+          -0.5312607884407043,
+          1.500664472579956
+        ],
+        [
+          2.6547727584838867,
+          -0.529385507106781,
+          1.5272091627120972
+        ],
+        [
+          2.6345772743225098,
+          -0.5297418832778931,
+          1.554011344909668
+        ],
+        [
+          2.6347930431365967,
+          -0.528883695602417,
+          1.577219009399414
+        ],
+        [
+          2.6343860626220703,
+          -0.5316722393035889,
+          1.6004748344421387
+        ],
+        [
+          2.634765625,
+          -0.5296356678009033,
+          1.6002181768417358
+        ],
+        [
+          2.6244993209838867,
+          -0.530750572681427,
+          1.6017996072769165
+        ],
+        [
+          2.624573230743408,
+          -0.5305453538894653,
+          1.6006230115890503
+        ],
+        [
+          2.6344707012176514,
+          -0.532137393951416,
+          1.600433588027954
+        ],
+        [
+          2.6248064041137695,
+          -0.5296523571014404,
+          1.6011407375335693
+        ],
+        [
+          2.6248726844787598,
+          -0.5295690298080444,
+          1.6010942459106445
+        ],
+        [
+          2.6345865726470947,
+          -0.5319292545318604,
+          1.5994832515716553
+        ],
+        [
+          2.6451988220214844,
+          -0.5291798114776611,
+          1.6002286672592163
+        ],
+        [
+          2.6454520225524902,
+          -0.5275333523750305,
+          1.6015737056732178
+        ],
+        [
+          2.6451358795166016,
+          -0.5302538275718689,
+          1.6007230281829834
+        ],
+        [
+          2.614809989929199,
+          -0.5305247902870178,
+          1.6027096509933472
+        ],
+        [
+          2.604729175567627,
+          -0.5305773615837097,
+          1.6008577346801758
+        ],
+        [
+          2.635131359100342,
+          -0.530834436416626,
+          1.599091649055481
+        ],
+        [
+          2.624887228012085,
+          -0.5318314433097839,
+          1.5996062755584717
+        ],
+        [
+          2.660449266433716,
+          -0.5278542041778564,
+          1.6004289388656616
+        ],
+        [
+          2.6575474739074707,
+          -0.5312237739562988,
+          1.6016407012939453
+        ],
+        [
+          2.6474547386169434,
+          -0.5312179923057556,
+          1.600723147392273
+        ],
+        [
+          2.637580156326294,
+          -0.5300745964050293,
+          1.600332260131836
+        ],
+        [
+          2.617928981781006,
+          -0.5270074605941772,
+          1.6044822931289673
+        ],
+        [
+          2.6275808811187744,
+          -0.5300215482711792,
+          1.6014766693115234
+        ],
+        [
+          2.661492109298706,
+          -0.5302104353904724,
+          1.6027367115020752
+        ],
+        [
+          2.6338751316070557,
+          -0.5293757319450378,
+          1.601061463356018
+        ],
+        [
+          2.6232199668884277,
+          -0.5328086614608765,
+          1.6004877090454102
+        ],
+        [
+          2.623378038406372,
+          -0.5321307182312012,
+          1.6011959314346313
+        ]
+      ]
+    },
+    {
+      "seed": 8000,
+      "controller": "bc",
+      "outcome": "timeout",
+      "total_steps": 500,
+      "interventions": 364,
+      "min_obs_clearance_m": 0.1284,
+      "min_wall_clearance_m": 0.3174,
+      "initial_pos": [
+        0.5,
+        0.05421306937932968,
+        1.0
+      ],
+      "obstacles": [
+        {
+          "id": 1,
+          "center": [
+            3.0,
+            -0.17831065962508624,
+            1.0
+          ],
+          "radius": 0.2,
+          "left_gap_m": 0.9783,
+          "right_gap_m": 0.6217,
+          "wider_side": "left",
+          "feasibility": "left_only"
+        },
+        {
+          "id": 2,
+          "center": [
+            5.0,
+            -0.07529226065536278,
+            1.0
+          ],
+          "radius": 0.2,
+          "left_gap_m": 0.8753,
+          "right_gap_m": 0.7247,
+          "wider_side": "left",
+          "feasibility": "left_only"
+        },
+        {
+          "id": 3,
+          "center": [
+            7.0,
+            0.04516731127801596,
+            1.0
+          ],
+          "radius": 0.2,
+          "left_gap_m": 0.7548,
+          "right_gap_m": 0.8452,
+          "wider_side": "right",
+          "feasibility": "neither_nominal"
+        }
+      ],
+      "encounters": [
+        {
+          "obstacle_id": 1,
+          "obs_x": 3.0,
+          "obs_y": -0.17831065962508624,
+          "left_gap_m": 0.9783,
+          "right_gap_m": 0.6217,
+          "wider_side": "left",
+          "feasibility": "left_only",
+          "chosen_side": "left",
+          "chose_constrained": false,
+          "avg_drone_y": 0.4002
+        },
+        {
+          "obstacle_id": 2,
+          "obs_x": 5.0,
+          "obs_y": -0.07529226065536278,
+          "left_gap_m": 0.8753,
+          "right_gap_m": 0.7247,
+          "wider_side": "left",
+          "feasibility": "left_only",
+          "chosen_side": "right",
+          "chose_constrained": true,
+          "avg_drone_y": -0.4756
+        },
+        {
+          "obstacle_id": 3,
+          "obs_x": 7.0,
+          "obs_y": 0.04516731127801596,
+          "status": "not_reached"
+        }
+      ],
+      "final_pos": [
+        4.789905071258545,
+        -0.5306931138038635,
+        1.101938009262085
+      ],
+      "trajectory_sample": [
+        [
+          0.5,
+          0.05421306937932968,
+          1.0
+        ],
+        [
+          0.7979883551597595,
+          0.06590721011161804,
+          1.0003554821014404
+        ],
+        [
+          1.096853494644165,
+          0.0787419006228447,
+          1.0006563663482666
+        ],
+        [
+          1.3957736492156982,
+          0.08736271411180496,
+          1.0009863376617432
+        ],
+        [
+          1.6948604583740234,
+          0.0888521671295166,
+          1.00118088722229
+        ],
+        [
+          1.9939467906951904,
+          0.08911232650279999,
+          1.0014300346374512
+        ],
+        [
+          2.2624967098236084,
+          0.11772323399782181,
+          1.0014517307281494
+        ],
+        [
+          2.401487350463867,
+          0.24138160049915314,
+          1.001165509223938
+        ],
+        [
+          2.506608486175537,
+          0.40855857729911804,
+          1.000902771949768
+        ],
+        [
+          2.617530584335327,
+          0.5084189772605896,
+          1.0040714740753174
+        ],
+        [
+          2.775416135787964,
+          0.44914957880973816,
+          1.0074306726455688
+        ],
+        [
+          2.9657394886016846,
+          0.40326571464538574,
+          1.0088963508605957
+        ],
+        [
+          3.1545238494873047,
+          0.36546802520751953,
+          1.009572148323059
+        ],
+        [
+          3.327613592147827,
+          0.303568959236145,
+          1.009976863861084
+        ],
+        [
+          3.4753403663635254,
+          0.22566016018390656,
+          1.0101540088653564
+        ],
+        [
+          3.5849339962005615,
+          0.12747424840927124,
+          1.0107637643814087
+        ],
+        [
+          3.6884357929229736,
+          -0.01166020892560482,
+          1.010956883430481
+        ],
+        [
+          3.832387924194336,
+          -0.2894216477870941,
+          1.0106713771820068
+        ],
+        [
+          3.9123501777648926,
+          -0.49184295535087585,
+          1.0102406740188599
+        ],
+        [
+          4.073890209197998,
+          -0.48099130392074585,
+          1.00904381275177
+        ],
+        [
+          4.276474475860596,
+          -0.42115163803100586,
+          1.0088273286819458
+        ],
+        [
+          4.465102672576904,
+          -0.3662427067756653,
+          1.0098052024841309
+        ],
+        [
+          4.539187431335449,
+          -0.3361169397830963,
+          1.010713815689087
+        ],
+        [
+          4.585720539093018,
+          -0.3561013340950012,
+          1.0115516185760498
+        ],
+        [
+          4.614868640899658,
+          -0.36292797327041626,
+          1.0103322267532349
+        ],
+        [
+          4.603922367095947,
+          -0.4051605761051178,
+          1.0086398124694824
+        ],
+        [
+          4.6215033531188965,
+          -0.41644611954689026,
+          1.007755160331726
+        ],
+        [
+          4.653973579406738,
+          -0.4190923273563385,
+          1.0079083442687988
+        ],
+        [
+          4.642370700836182,
+          -0.4259621202945709,
+          1.0103631019592285
+        ],
+        [
+          4.6309990882873535,
+          -0.4323718249797821,
+          1.0132819414138794
+        ],
+        [
+          4.65151309967041,
+          -0.4312116205692291,
+          1.0160998106002808
+        ],
+        [
+          4.640190124511719,
+          -0.43885278701782227,
+          1.0202112197875977
+        ],
+        [
+          4.667652606964111,
+          -0.45622149109840393,
+          1.0229600667953491
+        ],
+        [
+          4.687353134155273,
+          -0.4594365656375885,
+          1.0257773399353027
+        ],
+        [
+          4.697229385375977,
+          -0.46086621284484863,
+          1.029111385345459
+        ],
+        [
+          4.687130928039551,
+          -0.4610140323638916,
+          1.0341579914093018
+        ],
+        [
+          4.685589790344238,
+          -0.4720563292503357,
+          1.0389275550842285
+        ],
+        [
+          4.684006690979004,
+          -0.4829915761947632,
+          1.0428555011749268
+        ],
+        [
+          4.693929672241211,
+          -0.48411887884140015,
+          1.046943187713623
+        ],
+        [
+          4.713093280792236,
+          -0.49148887395858765,
+          1.0513132810592651
+        ],
+        [
+          4.730895042419434,
+          -0.5085915327072144,
+          1.0547590255737305
+        ],
+        [
+          4.768055438995361,
+          -0.5107521414756775,
+          1.058431625366211
+        ],
+        [
+          4.802375793457031,
+          -0.5176497101783752,
+          1.0625020265579224
+        ],
+        [
+          4.831839561462402,
+          -0.5232077240943909,
+          1.066428542137146
+        ],
+        [
+          4.831268787384033,
+          -0.5277856588363647,
+          1.0713069438934326
+        ],
+        [
+          4.820991039276123,
+          -0.529566764831543,
+          1.0758471488952637
+        ],
+        [
+          4.810912609100342,
+          -0.5298002362251282,
+          1.0811978578567505
+        ],
+        [
+          4.83988094329834,
+          -0.5326252579689026,
+          1.0854518413543701
+        ],
+        [
+          4.809952259063721,
+          -0.5309312343597412,
+          1.0912567377090454
+        ],
+        [
+          4.789953231811523,
+          -0.5302450656890869,
+          1.0967741012573242
+        ],
+        [
+          4.789905071258545,
+          -0.5306931138038635,
+          1.101938009262085
+        ]
+      ]
+    }
+  ]
+}

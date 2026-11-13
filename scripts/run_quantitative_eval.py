@@ -22,8 +22,8 @@ from typing import Any, Dict, List, Optional
 import numpy as np
 
 from controllers.registry import ControllerRegistry
-from controllers.safety_supervisor import SafetyState, SafetySupervisor
-from core.contracts import VelocityAction
+from controllers.safety_supervisor import SafetyState, SafetySupervisor, SafetySupervisorConfig
+from core.contracts import VelocityAction, compute_forward_clearance_m
 from localization.interface import LocalizationManager
 from localization.sim_source import SimGroundTruthSource
 from sim.corridor_env import CorridorSimEnv
@@ -60,7 +60,9 @@ def run_benchmark(
     print(f"Max Steps:      {actual_max_steps} ({actual_max_steps * env.dt:.1f} s)")
     print("=" * 80)
 
-    safety_sup = SafetySupervisor(corridor=env.corridor)
+    # Explicitly configure production-standard 0.50m obstacle caution distance
+    sup_config = SafetySupervisorConfig(obstacle_caution_dist_m=0.50)
+    safety_sup = SafetySupervisor(corridor=env.corridor, config=sup_config)
     sim_loc = SimGroundTruthSource()
     loc_mgr = LocalizationManager(primary_source=sim_loc, allow_dynamic_switching=False)
 
@@ -78,6 +80,9 @@ def run_benchmark(
         interventions = 0
         min_clearance = 10.0
         min_boundary = 10.0
+        reverse_cmds_requested = 0
+        reverse_cmds_executed = 0
+        saturated_steps = 0
 
         for step in range(1, actual_max_steps + 1):
             priv = info["privileged_state"]
@@ -93,7 +98,7 @@ def run_benchmark(
             pkt, health = loc_mgr.get_state(current_time_s=env.current_sim_time)
 
             raw_action = controller.predict(obs)
-            front_dist = float(obs[0] * env.sensor_config.max_range_m)
+            front_dist = compute_forward_clearance_m(obs, max_range_m=env.sensor_config.max_range_m)
 
             safe_action, s_state, s_reason = safety_sup.filter_action(
                 proposed_action=raw_action,
@@ -102,15 +107,26 @@ def run_benchmark(
                 min_front_range=front_dist,
                 dt=env.dt,
                 is_localization_healthy=health.is_healthy,
-                telemetry_age_s=health.packet_age_s
+                telemetry_age_s=health.packet_age_s,
+                observation=obs,
             )
 
             if s_state != SafetyState.NOMINAL:
                 interventions += 1
 
+            if safe_action.vx < -1e-4:
+                reverse_cmds_requested += 1
+
             # In active mode: execute filtered action. In passive mode: execute raw action
             applied_action = safe_action if supervisor_mode == "active" else raw_action
             norm_action = applied_action.to_normalized(env.action_limits)
+            if np.any(np.abs(norm_action) >= 0.999):
+                saturated_steps += 1
+
+            decoded_cmd = VelocityAction.from_normalized(norm_action, env.action_limits)
+            if decoded_cmd.vx < -1e-4:
+                reverse_cmds_executed += 1
+
             obs, rew, term, trunc, info = env.step(norm_action)
 
             curr_pos = env._get_drone_position()
@@ -132,6 +148,9 @@ def run_benchmark(
                     "flight_time_s": round(flight_time, 2),
                     "distance_travelled_m": round(dist_travelled, 2),
                     "safety_interventions": interventions,
+                    "reverse_cmds_requested": reverse_cmds_requested,
+                    "reverse_cmds_executed": reverse_cmds_executed,
+                    "action_saturated_steps": saturated_steps,
                     "min_boundary_clearance_m": round(min_boundary, 3),
                     "min_obstacle_clearance_m": round(min_clearance, 3),
                     "final_position": [round(float(x), 2) for x in curr_pos],
@@ -168,6 +187,9 @@ def run_benchmark(
         "mean_flight_time_successful_s": round(float(np.mean([r["flight_time_s"] for r in successes])), 2) if successes else 0.0,
         "mean_distance_successful_m": round(float(np.mean([r["distance_travelled_m"] for r in successes])), 2) if successes else 0.0,
         "mean_safety_interventions_per_episode": round(float(np.mean([r["safety_interventions"] for r in records])), 1),
+        "total_reverse_cmds_requested": sum(r.get("reverse_cmds_requested", 0) for r in records),
+        "total_reverse_cmds_executed": sum(r.get("reverse_cmds_executed", 0) for r in records),
+        "total_action_saturated_steps": sum(r.get("action_saturated_steps", 0) for r in records),
         "records": records,
     }
 

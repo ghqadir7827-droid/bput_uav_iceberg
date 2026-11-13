@@ -1,0 +1,5193 @@
+{
+  "metadata": {
+    "dataset_name": "scaled_expert_apf_level_2_train",
+    "scenario": "level_2_standard",
+    "split": "train",
+    "drone_radius_m": 0.325,
+    "drone_tip_to_tip_diagonal_m": 0.65,
+    "corridor_dimensions": [
+      14.0,
+      3.8,
+      2.5
+    ],
+    "start_position": [
+      0.800000011920929,
+      0.0,
+      1.25
+    ],
+    "goal_position": [
+      13.199999809265137,
+      0.0,
+      1.25
+    ],
+    "teacher_controller_id": "scripted_expert_apf",
+    "total_episodes_accepted": 200,
+    "total_episodes_attempted": 301,
+    "total_transitions": 104799,
+    "observation_dim": 23,
+    "action_dim": 4,
+    "seeds_used": [
+      30000,
+      30003,
+      30004,
+      30006,
+      30009,
+      30010,
+      30011,
+      30012,
+      30013,
+      30014,
+      30015,
+      30018,
+      30020,
+      30023,
+      30024,
+      30026,
+      30027,
+      30029,
+      30030,
+      30031,
+      30032,
+      30033,
+      30034,
+      30036,
+      30037,
+      30039,
+      30042,
+      30043,
+      30044,
+      30045,
+      30046,
+      30048,
+      30049,
+      30050,
+      30051,
+      30052,
+      30053,
+      30056,
+      30057,
+      30058,
+      30060,
+      30061,
+      30063,
+      30065,
+      30066,
+      30067,
+      30068,
+      30070,
+      30071,
+      30072,
+      30075,
+      30076,
+      30078,
+      30079,
+      30080,
+      30081,
+      30082,
+      30084,
+      30086,
+      30088,
+      30089,
+      30090,
+      30092,
+      30093,
+      30094,
+      30095,
+      30097,
+      30098,
+      30099,
+      30100,
+      30101,
+      30103,
+      30105,
+      30106,
+      30109,
+      30110,
+      30111,
+      30113,
+      30114,
+      30115,
+      30117,
+      30119,
+      30123,
+      30125,
+      30126,
+      30128,
+      30129,
+      30130,
+      30132,
+      30133,
+      30136,
+      30137,
+      30138,
+      30140,
+      30143,
+      30145,
+      30150,
+      30151,
+      30152,
+      30153,
+      30154,
+      30156,
+      30157,
+      30158,
+      30159,
+      30160,
+      30161,
+      30163,
+      30164,
+      30165,
+      30166,
+      30167,
+      30168,
+      30171,
+      30172,
+      30173,
+      30174,
+      30175,
+      30176,
+      30178,
+      30183,
+      30184,
+      30185,
+      30188,
+      30190,
+      30194,
+      30195,
+      30196,
+      30197,
+      30199,
+      30201,
+      30205,
+      30207,
+      30208,
+      30211,
+      30213,
+      30214,
+      30215,
+      30216,
+      30217,
+      30218,
+      30219,
+      30220,
+      30221,
+      30222,
+      30225,
+      30226,
+      30227,
+      30229,
+      30230,
+      30231,
+      30232,
+      30233,
+      30236,
+      30238,
+      30239,
+      30240,
+      30241,
+      30242,
+      30243,
+      30244,
+      30245,
+      30247,
+      30248,
+      30250,
+      30251,
+      30253,
+      30256,
+      30258,
+      30260,
+      30261,
+      30263,
+      30264,
+      30265,
+      30266,
+      30268,
+      30270,
+      30271,
+      30272,
+      30273,
+      30274,
+      30275,
+      30277,
+      30278,
+      30280,
+      30282,
+      30284,
+      30285,
+      30286,
+      30287,
+      30288,
+      30289,
+      30290,
+      30291,
+      30294,
+      30296,
+      30297,
+      30298,
+      30299,
+      30300
+    ],
+    "action_limits": {
+      "vx": [
+        -0.2,
+        0.8
+      ],
+      "vy": [
+        -0.6,
+        0.6
+      ],
+      "vz": [
+        -0.4,
+        0.4
+      ],
+      "yaw_rate": [
+        -0.6,
+        0.6
+      ]
+    },
+    "quality_filter_criteria": {
+      "min_obstacle_clearance_m": 0.12,
+      "min_boundary_distance_m": 0.12,
+      "max_steps": 1000
+    },
+    "file_sha256": "9e3d325f657a28b5527a527777121195abf7957f4c22545864aa46b5f63aee2e",
+    "generation_timestamp_iso": "2026-10-30T15:20:02Z"
+  },
+  "summary": {
+    "attempted_episodes": 301,
+    "accepted_episodes": 200,
+    "rejected_episodes": 101,
+    "filter_acceptance_rate_pct": 66.4,
+    "mean_steps_per_episode": 524.0,
+    "mean_flight_time_s": 26.2,
+    "mean_distance_m": 14.06,
+    "min_obstacle_clearance_overall_m": 0.1251,
+    "min_wall_clearance_overall_m": 0.1216,
+    "action_vx_mean": 0.4996,
+    "action_vx_std": 0.1438,
+    "action_vy_mean": -0.0026,
+    "action_vy_std": 0.2167
+  },
+  "accepted_episodes": [
+    {
+      "seed": 30000,
+      "episode_id": 1,
+      "status": "success",
+      "steps": 509,
+      "flight_time_s": 25.45,
+      "distance_m": 13.6,
+      "min_obstacle_clearance_m": 0.4365,
+      "min_boundary_distance_m": 0.26,
+      "final_position": [
+        12.719,
+        -0.124,
+        1.25
+      ],
+      "passed_filter": true
+    },
+    {
+      "seed": 30003,
+      "episode_id": 4,
+      "status": "success",
+      "steps": 531,
+      "flight_time_s": 26.55,
+      "distance_m": 14.4,
+      "min_obstacle_clearance_m": 0.6956,
+      "min_boundary_distance_m": 0.2849,
+      "final_position": [
+        12.728,
+        -0.147,
+        1.25
+      ],
+      "passed_filter": true
+    },
+    {
+      "seed": 30004,
+      "episode_id": 5,
+      "status": "success",
+      "steps": 523,
+      "flight_time_s": 26.15,
+      "distance_m": 13.78,
+      "min_obstacle_clearance_m": 0.3365,
+      "min_boundary_distance_m": 0.235,
+      "final_position": [
+        12.723,
+        -0.147,
+        1.25
+      ],
+      "passed_filter": true
+    },
+    {
+      "seed": 30006,
+      "episode_id": 7,
+      "status": "success",
+      "steps": 492,
+      "flight_time_s": 24.6,
+      "distance_m": 13.57,
+      "min_obstacle_clearance_m": 0.5145,
+      "min_boundary_distance_m": 0.3128,
+      "final_position": [
+        12.733,
+        -0.149,
+        1.25
+      ],
+      "passed_filter": true
+    },
+    {
+      "seed": 30009,
+      "episode_id": 10,
+      "status": "success",
+      "steps": 484,
+      "flight_time_s": 24.2,
+      "distance_m": 13.36,
+      "min_obstacle_clearance_m": 0.6382,
+      "min_boundary_distance_m": 0.2725,
+      "final_position": [
+        12.718,
+        -0.102,
+        1.25
+      ],
+      "passed_filter": true
+    },
+    {
+      "seed": 30010,
+      "episode_id": 11,
+      "status": "success",
+      "steps": 497,
+      "flight_time_s": 24.85,
+      "distance_m": 13.55,
+      "min_obstacle_clearance_m": 0.5819,
+      "min_boundary_distance_m": 0.2354,
+      "final_position": [
+        12.732,
+        0.135,
+        1.25
+      ],
+      "passed_filter": true
+    },
+    {
+      "seed": 30011,
+      "episode_id": 12,
+      "status": "success",
+      "steps": 495,
+      "flight_time_s": 24.75,
+      "distance_m": 13.72,
+      "min_obstacle_clearance_m": 0.4922,
+      "min_boundary_distance_m": 0.2663,
+      "final_position": [
+        12.726,
+        -0.149,
+        1.25
+      ],
+      "passed_filter": true
+    },
+    {
+      "seed": 30012,
+      "episode_id": 13,
+      "status": "success",
+      "steps": 579,
+      "flight_time_s": 28.95,
+      "distance_m": 15.22,
+      "min_obstacle_clearance_m": 0.4959,
+      "min_boundary_distance_m": 0.134,
+      "final_position": [
+        12.747,
+        -0.171,
+        1.25
+      ],
+      "passed_filter": true
+    },
+    {
+      "seed": 30013,
+      "episode_id": 14,
+      "status": "success",
+      "steps": 479,
+      "flight_time_s": 23.95,
+      "distance_m": 13.44,
+      "min_obstacle_clearance_m": 0.4493,
+      "min_boundary_distance_m": 0.294,
+      "final_position": [
+        12.722,
+        -0.124,
+        1.25
+      ],
+      "passed_filter": true
+    },
+    {
+      "seed": 30014,
+      "episode_id": 15,
+      "status": "success",
+      "steps": 541,
+      "flight_time_s": 27.05,
+      "distance_m": 14.57,
+      "min_obstacle_clearance_m": 0.6269,
+      "min_boundary_distance_m": 0.2124,
+      "final_position": [
+        12.727,
+        -0.159,
+        1.25
+      ],
+      "passed_filter": true
+    },
+    {
+      "seed": 30015,
+      "episode_id": 16,
+      "status": "success",
+      "steps": 503,
+      "flight_time_s": 25.15,
+      "distance_m": 13.84,
+      "min_obstacle_clearance_m": 0.5528,
+      "min_boundary_distance_m": 0.2225,
+      "final_position": [
+        12.732,
+        0.137,
+        1.25
+      ],
+      "passed_filter": true
+    },
+    {
+      "seed": 30018,
+      "episode_id": 19,
+      "status": "success",
+      "steps": 591,
+      "flight_time_s": 29.55,
+      "distance_m": 15.01,
+      "min_obstacle_clearance_m": 0.4286,
+      "min_boundary_distance_m": 0.1325,
+      "final_position": [
+        12.732,
+        -0.173,
+        1.25
+      ],
+      "passed_filter": true
+    },
+    {
+      "seed": 30020,
+      "episode_id": 21,
+      "status": "success",
+      "steps": 508,
+      "flight_time_s": 25.4,
+      "distance_m": 13.78,
+      "min_obstacle_clearance_m": 0.4327,
+      "min_boundary_distance_m": 0.2532,
+      "final_position": [
+        12.724,
+        -0.146,
+        1.25
+      ],
+      "passed_filter": true
+    },
+    {
+      "seed": 30023,
+      "episode_id": 24,
+      "status": "success",
+      "steps": 480,
+      "flight_time_s": 24.0,
+      "distance_m": 13.54,
+      "min_obstacle_clearance_m": 0.4515,
+      "min_boundary_distance_m": 0.3011,
+      "final_position": [
+        12.727,
+        0.144,
+        1.25
+      ],
+      "passed_filter": true
+    },
+    {
+      "seed": 30024,
+      "episode_id": 25,
+      "status": "success",
+      "steps": 563,
+      "flight_time_s": 28.15,
+      "distance_m": 14.6,
+      "min_obstacle_clearance_m": 0.4321,
+      "min_boundary_distance_m": 0.245,
+      "final_position": [
+        12.727,
+        0.153,
+        1.25
+      ],
+      "passed_filter": true
+    },
+    {
+      "seed": 30026,
+      "episode_id": 27,
+      "status": "success",
+      "steps": 477,
+      "flight_time_s": 23.85,
+      "distance_m": 13.35,
+      "min_obstacle_clearance_m": 0.5846,
+      "min_boundary_distance_m": 0.3035,
+      "final_position": [
+        12.727,
+        -0.119,
+        1.25
+      ],
+      "passed_filter": true
+    },
+    {
+      "seed": 30027,
+      "episode_id": 28,
+      "status": "success",
+      "steps": 487,
+      "flight_time_s": 24.35,
+      "distance_m": 13.6,
+      "min_obstacle_clearance_m": 0.49,
+      "min_boundary_distance_m": 0.2882,
+      "final_position": [
+        12.727,
+        -0.146,
+        1.25
+      ],
+      "passed_filter": true
+    },
+    {
+      "seed": 30029,
+      "episode_id": 30,
+      "status": "success",
+      "steps": 495,
+      "flight_time_s": 24.75,
+      "distance_m": 13.51,
+      "min_obstacle_clearance_m": 0.5465,
+      "min_boundary_distance_m": 0.2261,
+      "final_position": [
+        12.717,
+        0.112,
+        1.25
+      ],
+      "passed_filter": true
+    },
+    {
+      "seed": 30030,
+      "episode_id": 31,
+      "status": "success",
+      "steps": 493,
+      "flight_time_s": 24.65,
+      "distance_m": 13.47,
+      "min_obstacle_clearance_m": 0.5252,
+      "min_boundary_distance_m": 0.2972,
+      "final_position": [
+        12.727,
+        -0.156,
+        1.25
+      ],
+      "passed_filter": true
+    },
+    {
+      "seed": 30031,
+      "episode_id": 32,
+      "status": "success",
+      "steps": 522,
+      "flight_time_s": 26.1,
+      "distance_m": 14.31,
+      "min_obstacle_clearance_m": 0.4711,
+      "min_boundary_distance_m": 0.2976,
+      "final_position": [
+        12.732,
+        -0.141,
+        1.25
+      ],
+      "passed_filter": true
+    },
+    {
+      "seed": 30032,
+      "episode_id": 33,
+      "status": "success",
+      "steps": 555,
+      "flight_time_s": 27.75,
+      "distance_m": 14.79,
+      "min_obstacle_clearance_m": 0.5724,
+      "min_boundary_distance_m": 0.1516,
+      "final_position": [
+        12.739,
+        0.166,
+        1.25
+      ],
+      "passed_filter": true
+    },
+    {
+      "seed": 30033,
+      "episode_id": 34,
+      "status": "success",
+      "steps": 492,
+      "flight_time_s": 24.6,
+      "distance_m": 13.52,
+      "min_obstacle_clearance_m": 0.6075,
+      "min_boundary_distance_m": 0.2517,
+      "final_position": [
+        12.723,
+        -0.136,
+        1.25
+      ],
+      "passed_filter": true
+    },
+    {
+      "seed": 30034,
+      "episode_id": 35,
+      "status": "success",
+      "steps": 526,
+      "flight_time_s": 26.3,
+      "distance_m": 13.77,
+      "min_obstacle_clearance_m": 0.4252,
+      "min_boundary_distance_m": 0.2245,
+      "final_position": [
+        12.716,
+        -0.126,
+        1.25
+      ],
+      "passed_filter": true
+    },
+    {
+      "seed": 30036,
+      "episode_id": 37,
+      "status": "success",
+      "steps": 555,
+      "flight_time_s": 27.75,
+      "distance_m": 14.77,
+      "min_obstacle_clearance_m": 0.5886,
+      "min_boundary_distance_m": 0.244,
+      "final_position": [
+        12.725,
+        0.153,
+        1.25
+      ],
+      "passed_filter": true
+    },
+    {
+      "seed": 30037,
+      "episode_id": 38,
+      "status": "success",
+      "steps": 491,
+      "flight_time_s": 24.55,
+      "distance_m": 13.63,
+      "min_obstacle_clearance_m": 0.4371,
+      "min_boundary_distance_m": 0.2603,
+      "final_position": [
+        12.724,
+        -0.141,
+        1.25
+      ],
+      "passed_filter": true
+    },
+    {
+      "seed": 30039,
+      "episode_id": 40,
+      "status": "success",
+      "steps": 481,
+      "flight_time_s": 24.05,
+      "distance_m": 13.51,
+      "min_obstacle_clearance_m": 0.455,
+      "min_boundary_distance_m": 0.294,
+      "final_position": [
+        12.723,
+        0.14,
+        1.25
+      ],
+      "passed_filter": true
+    },
+    {
+      "seed": 30042,
+      "episode_id": 43,
+      "status": "success",
+      "steps": 542,
+      "flight_time_s": 27.1,
+      "distance_m": 14.02,
+      "min_obstacle_clearance_m": 0.2889,
+      "min_boundary_distance_m": 0.2036,
+      "final_position": [
+        12.721,
+        -0.121,
+        1.25
+      ],
+      "passed_filter": true
+    },
+    {
+      "seed": 30043,
+      "episode_id": 44,
+      "status": "success",
+      "steps": 554,
+      "flight_time_s": 27.7,
+      "distance_m": 14.78,
+      "min_obstacle_clearance_m": 0.6051,
+      "min_boundary_distance_m": 0.1888,
+      "final_position": [
+        12.731,
+        0.162,
+        1.25
+      ],
+      "passed_filter": true
+    },
+    {
+      "seed": 30044,
+      "episode_id": 45,
+      "status": "success",
+      "steps": 481,
+      "flight_time_s": 24.05,
+      "distance_m": 13.44,
+      "min_obstacle_clearance_m": 0.5447,
+      "min_boundary_distance_m": 0.3036,
+      "final_position": [
+        12.732,
+        0.146,
+        1.25
+      ],
+      "passed_filter": true
+    },
+    {
+      "seed": 30045,
+      "episode_id": 46,
+      "status": "success",
+      "steps": 558,
+      "flight_time_s": 27.9,
+      "distance_m": 14.85,
+      "min_obstacle_clearance_m": 0.5598,
+      "min_boundary_distance_m": 0.1753,
+      "final_position": [
+        12.738,
+        0.164,
+        1.25
+      ],
+      "passed_filter": true
+    },
+    {
+      "seed": 30046,
+      "episode_id": 47,
+      "status": "success",
+      "steps": 494,
+      "flight_time_s": 24.7,
+      "distance_m": 13.59,
+      "min_obstacle_clearance_m": 0.6082,
+      "min_boundary_distance_m": 0.2444,
+      "final_position": [
+        12.721,
+        -0.128,
+        1.25
+      ],
+      "passed_filter": true
+    },
+    {
+      "seed": 30048,
+      "episode_id": 49,
+      "status": "success",
+      "steps": 529,
+      "flight_time_s": 26.45,
+      "distance_m": 14.37,
+      "min_obstacle_clearance_m": 0.7,
+      "min_boundary_distance_m": 0.2965,
+      "final_position": [
+        12.726,
+        -0.146,
+        1.25
+      ],
+      "passed_filter": true
+    },
+    {
+      "seed": 30049,
+      "episode_id": 50,
+      "status": "success",
+      "steps": 522,
+      "flight_time_s": 26.1,
+      "distance_m": 13.72,
+      "min_obstacle_clearance_m": 0.406,
+      "min_boundary_distance_m": 0.2511,
+      "final_position": [
+        12.727,
+        0.147,
+        1.25
+      ],
+      "passed_filter": true
+    },
+    {
+      "seed": 30050,
+      "episode_id": 51,
+      "status": "success",
+      "steps": 490,
+      "flight_time_s": 24.5,
+      "distance_m": 13.64,
+      "min_obstacle_clearance_m": 0.5054,
+      "min_boundary_distance_m": 0.2766,
+      "final_position": [
+        12.729,
+        0.149,
+        1.25
+      ],
+      "passed_filter": true
+    },
+    {
+      "seed": 30051,
+      "episode_id": 52,
+      "status": "success",
+      "steps": 567,
+      "flight_time_s": 28.35,
+      "distance_m": 14.99,
+      "min_obstacle_clearance_m": 0.5311,
+      "min_boundary_distance_m": 0.1256,
+      "final_position": [
+        12.735,
+        -0.175,
+        1.25
+      ],
+      "passed_filter": true
+    },
+    {
+      "seed": 30052,
+      "episode_id": 53,
+      "status": "success",
+      "steps": 520,
+      "flight_time_s": 26.0,
+      "distance_m": 13.73,
+      "min_obstacle_clearance_m": 0.3601,
+      "min_boundary_distance_m": 0.2212,
+      "final_position": [
+        12.726,
+        -0.145,
+        1.25
+      ],
+      "passed_filter": true
+    },
+    {
+      "seed": 30053,
+      "episode_id": 54,
+      "status": "success",
+      "steps": 576,
+      "flight_time_s": 28.8,
+      "distance_m": 14.83,
+      "min_obstacle_clearance_m": 0.4289,
+      "min_boundary_distance_m": 0.2289,
+      "final_position": [
+        12.733,
+        0.143,
+        1.25
+      ],
+      "passed_filter": true
+    },
+    {
+      "seed": 30056,
+      "episode_id": 57,
+      "status": "success",
+      "steps": 477,
+      "flight_time_s": 23.85,
+      "distance_m": 13.34,
+      "min_obstacle_clearance_m": 0.6022,
+      "min_boundary_distance_m": 0.3138,
+      "final_position": [
+        12.727,
+        0.134,
+        1.25
+      ],
+      "passed_filter": true
+    },
+    {
+      "seed": 30057,
+      "episode_id": 58,
+      "status": "success",
+      "steps": 574,
+      "flight_time_s": 28.7,
+      "distance_m": 15.13,
+      "min_obstacle_clearance_m": 0.4658,
+      "min_boundary_distance_m": 0.1675,
+      "final_position": [
+        12.727,
+        0.154,
+        1.25
+      ],
+      "passed_filter": true
+    },
+    {
+      "seed": 30058,
+      "episode_id": 59,
+      "status": "success",
+      "steps": 468,
+      "flight_time_s": 23.4,
+      "distance_m": 13.13,
+      "min_obstacle_clearance_m": 0.6263,
+      "min_boundary_distance_m": 0.3167,
+      "final_position": [
+        12.716,
+        -0.104,
+        1.25
+      ],
+      "passed_filter": true
+    },
+    {
+      "seed": 30060,
+      "episode_id": 61,
+      "status": "success",
+      "steps": 565,
+      "flight_time_s": 28.25,
+      "distance_m": 14.63,
+      "min_obstacle_clearance_m": 0.4329,
+      "min_boundary_distance_m": 0.2254,
+      "final_position": [
+        12.726,
+        0.156,
+        1.25
+      ],
+      "passed_filter": true
+    },
+    {
+      "seed": 30061,
+      "episode_id": 62,
+      "status": "success",
+      "steps": 593,
+      "flight_time_s": 29.65,
+      "distance_m": 15.04,
+      "min_obstacle_clearance_m": 0.4166,
+      "min_boundary_distance_m": 0.1513,
+      "final_position": [
+        12.739,
+        -0.165,
+        1.25
+      ],
+      "passed_filter": true
+    },
+    {
+      "seed": 30063,
+      "episode_id": 64,
+      "status": "success",
+      "steps": 493,
+      "flight_time_s": 24.65,
+      "distance_m": 13.5,
+      "min_obstacle_clearance_m": 0.5231,
+      "min_boundary_distance_m": 0.3163,
+      "final_position": [
+        12.737,
+        -0.153,
+        1.25
+      ],
+      "passed_filter": true
+    },
+    {
+      "seed": 30065,
+      "episode_id": 66,
+      "status": "success",
+      "steps": 511,
+      "flight_time_s": 25.55,
+      "distance_m": 13.55,
+      "min_obstacle_clearance_m": 0.4299,
+      "min_boundary_distance_m": 0.264,
+      "final_position": [
+        12.726,
+        0.119,
+        1.25
+      ],
+      "passed_filter": true
+    },
+    {
+      "seed": 30066,
+      "episode_id": 67,
+      "status": "success",
+      "steps": 492,
+      "flight_time_s": 24.6,
+      "distance_m": 13.59,
+      "min_obstacle_clearance_m": 0.5753,
+      "min_boundary_distance_m": 0.2533,
+      "final_position": [
+        12.723,
+        -0.127,
+        1.25
+      ],
+      "passed_filter": true
+    },
+    {
+      "seed": 30067,
+      "episode_id": 68,
+      "status": "success",
+      "steps": 539,
+      "flight_time_s": 26.95,
+      "distance_m": 14.51,
+      "min_obstacle_clearance_m": 0.6804,
+      "min_boundary_distance_m": 0.2719,
+      "final_position": [
+        12.724,
+        0.15,
+        1.25
+      ],
+      "passed_filter": true
+    },
+    {
+      "seed": 30068,
+      "episode_id": 69,
+      "status": "success",
+      "steps": 480,
+      "flight_time_s": 24.0,
+      "distance_m": 13.21,
+      "min_obstacle_clearance_m": 0.6644,
+      "min_boundary_distance_m": 0.282,
+      "final_position": [
+        12.726,
+        -0.118,
+        1.25
+      ],
+      "passed_filter": true
+    },
+    {
+      "seed": 30070,
+      "episode_id": 71,
+      "status": "success",
+      "steps": 546,
+      "flight_time_s": 27.3,
+      "distance_m": 14.67,
+      "min_obstacle_clearance_m": 0.5887,
+      "min_boundary_distance_m": 0.1718,
+      "final_position": [
+        12.729,
+        0.166,
+        1.25
+      ],
+      "passed_filter": true
+    },
+    {
+      "seed": 30071,
+      "episode_id": 72,
+      "status": "success",
+      "steps": 596,
+      "flight_time_s": 29.8,
+      "distance_m": 15.0,
+      "min_obstacle_clearance_m": 0.2215,
+      "min_boundary_distance_m": 0.2305,
+      "final_position": [
+        12.738,
+        -0.151,
+        1.25
+      ],
+      "passed_filter": true
+    },
+    {
+      "seed": 30072,
+      "episode_id": 73,
+      "status": "success",
+      "steps": 488,
+      "flight_time_s": 24.4,
+      "distance_m": 13.34,
+      "min_obstacle_clearance_m": 0.6012,
+      "min_boundary_distance_m": 0.2491,
+      "final_position": [
+        12.717,
+        -0.109,
+        1.25
+      ],
+      "passed_filter": true
+    },
+    {
+      "seed": 30075,
+      "episode_id": 76,
+      "status": "success",
+      "steps": 543,
+      "flight_time_s": 27.15,
+      "distance_m": 13.88,
+      "min_obstacle_clearance_m": 0.3932,
+      "min_boundary_distance_m": 0.2532,
+      "final_position": [
+        12.736,
+        -0.153,
+        1.25
+      ],
+      "passed_filter": true
+    },
+    {
+      "seed": 30076,
+      "episode_id": 77,
+      "status": "success",
+      "steps": 499,
+      "flight_time_s": 24.95,
+      "distance_m": 13.63,
+      "min_obstacle_clearance_m": 0.451,
+      "min_boundary_distance_m": 0.3003,
+      "final_position": [
+        12.733,
+        0.153,
+        1.25
+      ],
+      "passed_filter": true
+    },
+    {
+      "seed": 30078,
+      "episode_id": 79,
+      "status": "success",
+      "steps": 501,
+      "flight_time_s": 25.05,
+      "distance_m": 13.7,
+      "min_obstacle_clearance_m": 0.5109,
+      "min_boundary_distance_m": 0.2715,
+      "final_position": [
+        12.733,
+        -0.149,
+        1.25
+      ],
+      "passed_filter": true
+    },
+    {
+      "seed": 30079,
+      "episode_id": 80,
+      "status": "success",
+      "steps": 502,
+      "flight_time_s": 25.1,
+      "distance_m": 13.61,
+      "min_obstacle_clearance_m": 0.5201,
+      "min_boundary_distance_m": 0.2823,
+      "final_position": [
+        12.736,
+        -0.153,
+        1.25
+      ],
+      "passed_filter": true
+    },
+    {
+      "seed": 30080,
+      "episode_id": 81,
+      "status": "success",
+      "steps": 487,
+      "flight_time_s": 24.35,
+      "distance_m": 13.45,
+      "min_obstacle_clearance_m": 0.615,
+      "min_boundary_distance_m": 0.2776,
+      "final_position": [
+        12.729,
+        -0.142,
+        1.25
+      ],
+      "passed_filter": true
+    },
+    {
+      "seed": 30081,
+      "episode_id": 82,
+      "status": "success",
+      "steps": 546,
+      "flight_time_s": 27.3,
+      "distance_m": 14.52,
+      "min_obstacle_clearance_m": 0.446,
+      "min_boundary_distance_m": 0.2463,
+      "final_position": [
+        12.732,
+        0.15,
+        1.25
+      ],
+      "passed_filter": true
+    },
+    {
+      "seed": 30082,
+      "episode_id": 83,
+      "status": "success",
+      "steps": 483,
+      "flight_time_s": 24.15,
+      "distance_m": 13.46,
+      "min_obstacle_clearance_m": 0.5294,
+      "min_boundary_distance_m": 0.3025,
+      "final_position": [
+        12.727,
+        0.152,
+        1.25
+      ],
+      "passed_filter": true
+    },
+    {
+      "seed": 30084,
+      "episode_id": 85,
+      "status": "success",
+      "steps": 525,
+      "flight_time_s": 26.25,
+      "distance_m": 13.91,
+      "min_obstacle_clearance_m": 0.4295,
+      "min_boundary_distance_m": 0.2259,
+      "final_position": [
+        12.732,
+        -0.152,
+        1.25
+      ],
+      "passed_filter": true
+    },
+    {
+      "seed": 30086,
+      "episode_id": 87,
+      "status": "success",
+      "steps": 552,
+      "flight_time_s": 27.6,
+      "distance_m": 14.74,
+      "min_obstacle_clearance_m": 0.6022,
+      "min_boundary_distance_m": 0.1958,
+      "final_position": [
+        12.731,
+        -0.162,
+        1.25
+      ],
+      "passed_filter": true
+    },
+    {
+      "seed": 30088,
+      "episode_id": 89,
+      "status": "success",
+      "steps": 501,
+      "flight_time_s": 25.05,
+      "distance_m": 13.59,
+      "min_obstacle_clearance_m": 0.5189,
+      "min_boundary_distance_m": 0.3058,
+      "final_position": [
+        12.727,
+        -0.158,
+        1.25
+      ],
+      "passed_filter": true
+    },
+    {
+      "seed": 30089,
+      "episode_id": 90,
+      "status": "success",
+      "steps": 592,
+      "flight_time_s": 29.6,
+      "distance_m": 14.98,
+      "min_obstacle_clearance_m": 0.3751,
+      "min_boundary_distance_m": 0.1323,
+      "final_position": [
+        12.738,
+        0.17,
+        1.25
+      ],
+      "passed_filter": true
+    },
+    {
+      "seed": 30090,
+      "episode_id": 91,
+      "status": "success",
+      "steps": 554,
+      "flight_time_s": 27.7,
+      "distance_m": 13.96,
+      "min_obstacle_clearance_m": 0.1681,
+      "min_boundary_distance_m": 0.2008,
+      "final_position": [
+        12.74,
+        -0.154,
+        1.25
+      ],
+      "passed_filter": true
+    },
+    {
+      "seed": 30092,
+      "episode_id": 93,
+      "status": "success",
+      "steps": 489,
+      "flight_time_s": 24.45,
+      "distance_m": 13.57,
+      "min_obstacle_clearance_m": 0.567,
+      "min_boundary_distance_m": 0.2743,
+      "final_position": [
+        12.731,
+        0.137,
+        1.25
+      ],
+      "passed_filter": true
+    },
+    {
+      "seed": 30093,
+      "episode_id": 94,
+      "status": "success",
+      "steps": 514,
+      "flight_time_s": 25.7,
+      "distance_m": 13.68,
+      "min_obstacle_clearance_m": 0.4289,
+      "min_boundary_distance_m": 0.2571,
+      "final_position": [
+        12.727,
+        -0.14,
+        1.25
+      ],
+      "passed_filter": true
+    },
+    {
+      "seed": 30094,
+      "episode_id": 95,
+      "status": "success",
+      "steps": 558,
+      "flight_time_s": 27.9,
+      "distance_m": 14.84,
+      "min_obstacle_clearance_m": 0.6127,
+      "min_boundary_distance_m": 0.1895,
+      "final_position": [
+        12.731,
+        -0.162,
+        1.25
+      ],
+      "passed_filter": true
+    },
+    {
+      "seed": 30095,
+      "episode_id": 96,
+      "status": "success",
+      "steps": 482,
+      "flight_time_s": 24.1,
+      "distance_m": 13.3,
+      "min_obstacle_clearance_m": 0.6377,
+      "min_boundary_distance_m": 0.2767,
+      "final_position": [
+        12.72,
+        -0.108,
+        1.25
+      ],
+      "passed_filter": true
+    },
+    {
+      "seed": 30097,
+      "episode_id": 98,
+      "status": "success",
+      "steps": 535,
+      "flight_time_s": 26.75,
+      "distance_m": 14.46,
+      "min_obstacle_clearance_m": 0.6909,
+      "min_boundary_distance_m": 0.2981,
+      "final_position": [
+        12.729,
+        -0.146,
+        1.25
+      ],
+      "passed_filter": true
+    },
+    {
+      "seed": 30098,
+      "episode_id": 99,
+      "status": "success",
+      "steps": 486,
+      "flight_time_s": 24.3,
+      "distance_m": 13.43,
+      "min_obstacle_clearance_m": 0.5171,
+      "min_boundary_distance_m": 0.3216,
+      "final_position": [
+        12.729,
+        -0.153,
+        1.25
+      ],
+      "passed_filter": true
+    },
+    {
+      "seed": 30099,
+      "episode_id": 100,
+      "status": "success",
+      "steps": 483,
+      "flight_time_s": 24.15,
+      "distance_m": 13.47,
+      "min_obstacle_clearance_m": 0.5686,
+      "min_boundary_distance_m": 0.3017,
+      "final_position": [
+        12.73,
+        -0.144,
+        1.25
+      ],
+      "passed_filter": true
+    },
+    {
+      "seed": 30100,
+      "episode_id": 101,
+      "status": "success",
+      "steps": 474,
+      "flight_time_s": 23.7,
+      "distance_m": 13.16,
+      "min_obstacle_clearance_m": 0.6569,
+      "min_boundary_distance_m": 0.3021,
+      "final_position": [
+        12.714,
+        -0.107,
+        1.25
+      ],
+      "passed_filter": true
+    },
+    {
+      "seed": 30101,
+      "episode_id": 102,
+      "status": "success",
+      "steps": 556,
+      "flight_time_s": 27.8,
+      "distance_m": 14.79,
+      "min_obstacle_clearance_m": 0.6173,
+      "min_boundary_distance_m": 0.2511,
+      "final_position": [
+        12.729,
+        0.152,
+        1.25
+      ],
+      "passed_filter": true
+    },
+    {
+      "seed": 30103,
+      "episode_id": 104,
+      "status": "success",
+      "steps": 497,
+      "flight_time_s": 24.85,
+      "distance_m": 13.75,
+      "min_obstacle_clearance_m": 0.5018,
+      "min_boundary_distance_m": 0.2514,
+      "final_position": [
+        12.736,
+        0.146,
+        1.25
+      ],
+      "passed_filter": true
+    },
+    {
+      "seed": 30105,
+      "episode_id": 106,
+      "status": "success",
+      "steps": 577,
+      "flight_time_s": 28.85,
+      "distance_m": 14.79,
+      "min_obstacle_clearance_m": 0.4184,
+      "min_boundary_distance_m": 0.2399,
+      "final_position": [
+        12.732,
+        -0.143,
+        1.25
+      ],
+      "passed_filter": true
+    },
+    {
+      "seed": 30106,
+      "episode_id": 107,
+      "status": "success",
+      "steps": 531,
+      "flight_time_s": 26.55,
+      "distance_m": 14.44,
+      "min_obstacle_clearance_m": 0.4961,
+      "min_boundary_distance_m": 0.2602,
+      "final_position": [
+        12.724,
+        0.152,
+        1.25
+      ],
+      "passed_filter": true
+    },
+    {
+      "seed": 30109,
+      "episode_id": 110,
+      "status": "success",
+      "steps": 514,
+      "flight_time_s": 25.7,
+      "distance_m": 13.77,
+      "min_obstacle_clearance_m": 0.4289,
+      "min_boundary_distance_m": 0.2125,
+      "final_position": [
+        12.723,
+        -0.124,
+        1.25
+      ],
+      "passed_filter": true
+    },
+    {
+      "seed": 30110,
+      "episode_id": 111,
+      "status": "success",
+      "steps": 581,
+      "flight_time_s": 29.05,
+      "distance_m": 14.83,
+      "min_obstacle_clearance_m": 0.4221,
+      "min_boundary_distance_m": 0.1705,
+      "final_position": [
+        12.731,
+        0.165,
+        1.25
+      ],
+      "passed_filter": true
+    },
+    {
+      "seed": 30111,
+      "episode_id": 112,
+      "status": "success",
+      "steps": 603,
+      "flight_time_s": 30.15,
+      "distance_m": 15.17,
+      "min_obstacle_clearance_m": 0.3952,
+      "min_boundary_distance_m": 0.156,
+      "final_position": [
+        12.73,
+        0.169,
+        1.25
+      ],
+      "passed_filter": true
+    },
+    {
+      "seed": 30113,
+      "episode_id": 114,
+      "status": "success",
+      "steps": 557,
+      "flight_time_s": 27.85,
+      "distance_m": 14.87,
+      "min_obstacle_clearance_m": 0.4379,
+      "min_boundary_distance_m": 0.1743,
+      "final_position": [
+        12.742,
+        0.161,
+        1.25
+      ],
+      "passed_filter": true
+    },
+    {
+      "seed": 30114,
+      "episode_id": 115,
+      "status": "success",
+      "steps": 496,
+      "flight_time_s": 24.8,
+      "distance_m": 13.33,
+      "min_obstacle_clearance_m": 0.4339,
+      "min_boundary_distance_m": 0.2609,
+      "final_position": [
+        12.724,
+        0.112,
+        1.25
+      ],
+      "passed_filter": true
+    },
+    {
+      "seed": 30115,
+      "episode_id": 116,
+      "status": "success",
+      "steps": 530,
+      "flight_time_s": 26.5,
+      "distance_m": 13.81,
+      "min_obstacle_clearance_m": 0.4244,
+      "min_boundary_distance_m": 0.2683,
+      "final_position": [
+        12.729,
+        -0.15,
+        1.25
+      ],
+      "passed_filter": true
+    },
+    {
+      "seed": 30117,
+      "episode_id": 118,
+      "status": "success",
+      "steps": 584,
+      "flight_time_s": 29.2,
+      "distance_m": 15.31,
+      "min_obstacle_clearance_m": 0.5191,
+      "min_boundary_distance_m": 0.1483,
+      "final_position": [
+        12.742,
+        0.166,
+        1.25
+      ],
+      "passed_filter": true
+    },
+    {
+      "seed": 30119,
+      "episode_id": 120,
+      "status": "success",
+      "steps": 478,
+      "flight_time_s": 23.9,
+      "distance_m": 13.48,
+      "min_obstacle_clearance_m": 0.5001,
+      "min_boundary_distance_m": 0.3196,
+      "final_position": [
+        12.729,
+        0.146,
+        1.25
+      ],
+      "passed_filter": true
+    },
+    {
+      "seed": 30123,
+      "episode_id": 124,
+      "status": "success",
+      "steps": 552,
+      "flight_time_s": 27.6,
+      "distance_m": 13.98,
+      "min_obstacle_clearance_m": 0.1344,
+      "min_boundary_distance_m": 0.2276,
+      "final_position": [
+        12.729,
+        -0.155,
+        1.25
+      ],
+      "passed_filter": true
+    },
+    {
+      "seed": 30125,
+      "episode_id": 126,
+      "status": "success",
+      "steps": 511,
+      "flight_time_s": 25.55,
+      "distance_m": 13.87,
+      "min_obstacle_clearance_m": 0.4293,
+      "min_boundary_distance_m": 0.2332,
+      "final_position": [
+        12.727,
+        0.147,
+        1.25
+      ],
+      "passed_filter": true
+    },
+    {
+      "seed": 30126,
+      "episode_id": 127,
+      "status": "success",
+      "steps": 570,
+      "flight_time_s": 28.5,
+      "distance_m": 15.02,
+      "min_obstacle_clearance_m": 0.5708,
+      "min_boundary_distance_m": 0.1892,
+      "final_position": [
+        12.731,
+        -0.163,
+        1.25
+      ],
+      "passed_filter": true
+    },
+    {
+      "seed": 30128,
+      "episode_id": 129,
+      "status": "success",
+      "steps": 491,
+      "flight_time_s": 24.55,
+      "distance_m": 13.28,
+      "min_obstacle_clearance_m": 0.5699,
+      "min_boundary_distance_m": 0.2331,
+      "final_position": [
+        12.714,
+        0.104,
+        1.25
+      ],
+      "passed_filter": true
+    },
+    {
+      "seed": 30129,
+      "episode_id": 130,
+      "status": "success",
+      "steps": 511,
+      "flight_time_s": 25.55,
+      "distance_m": 13.91,
+      "min_obstacle_clearance_m": 0.4882,
+      "min_boundary_distance_m": 0.1838,
+      "final_position": [
+        12.731,
+        0.157,
+        1.25
+      ],
+      "passed_filter": true
+    },
+    {
+      "seed": 30130,
+      "episode_id": 131,
+      "status": "success",
+      "steps": 516,
+      "flight_time_s": 25.8,
+      "distance_m": 13.56,
+      "min_obstacle_clearance_m": 0.2618,
+      "min_boundary_distance_m": 0.2156,
+      "final_position": [
+        12.714,
+        -0.113,
+        1.25
+      ],
+      "passed_filter": true
+    },
+    {
+      "seed": 30132,
+      "episode_id": 133,
+      "status": "success",
+      "steps": 518,
+      "flight_time_s": 25.9,
+      "distance_m": 13.63,
+      "min_obstacle_clearance_m": 0.2634,
+      "min_boundary_distance_m": 0.3173,
+      "final_position": [
+        12.729,
+        -0.15,
+        1.25
+      ],
+      "passed_filter": true
+    },
+    {
+      "seed": 30133,
+      "episode_id": 134,
+      "status": "success",
+      "steps": 496,
+      "flight_time_s": 24.8,
+      "distance_m": 13.75,
+      "min_obstacle_clearance_m": 0.4948,
+      "min_boundary_distance_m": 0.2527,
+      "final_position": [
+        12.728,
+        -0.147,
+        1.25
+      ],
+      "passed_filter": true
+    },
+    {
+      "seed": 30136,
+      "episode_id": 137,
+      "status": "success",
+      "steps": 512,
+      "flight_time_s": 25.6,
+      "distance_m": 14.05,
+      "min_obstacle_clearance_m": 0.4806,
+      "min_boundary_distance_m": 0.1774,
+      "final_position": [
+        12.735,
+        -0.143,
+        1.25
+      ],
+      "passed_filter": true
+    },
+    {
+      "seed": 30137,
+      "episode_id": 138,
+      "status": "success",
+      "steps": 525,
+      "flight_time_s": 26.25,
+      "distance_m": 13.82,
+      "min_obstacle_clearance_m": 0.402,
+      "min_boundary_distance_m": 0.2577,
+      "final_position": [
+        12.724,
+        -0.138,
+        1.25
+      ],
+      "passed_filter": true
+    },
+    {
+      "seed": 30138,
+      "episode_id": 139,
+      "status": "success",
+      "steps": 561,
+      "flight_time_s": 28.05,
+      "distance_m": 14.9,
+      "min_obstacle_clearance_m": 0.589,
+      "min_boundary_distance_m": 0.2292,
+      "final_position": [
+        12.731,
+        -0.155,
+        1.25
+      ],
+      "passed_filter": true
+    },
+    {
+      "seed": 30140,
+      "episode_id": 141,
+      "status": "success",
+      "steps": 508,
+      "flight_time_s": 25.4,
+      "distance_m": 13.95,
+      "min_obstacle_clearance_m": 0.4979,
+      "min_boundary_distance_m": 0.2196,
+      "final_position": [
+        12.727,
+        0.149,
+        1.25
+      ],
+      "passed_filter": true
+    },
+    {
+      "seed": 30143,
+      "episode_id": 144,
+      "status": "success",
+      "steps": 481,
+      "flight_time_s": 24.05,
+      "distance_m": 13.51,
+      "min_obstacle_clearance_m": 0.505,
+      "min_boundary_distance_m": 0.309,
+      "final_position": [
+        12.724,
+        -0.149,
+        1.25
+      ],
+      "passed_filter": true
+    },
+    {
+      "seed": 30145,
+      "episode_id": 146,
+      "status": "success",
+      "steps": 559,
+      "flight_time_s": 27.95,
+      "distance_m": 14.9,
+      "min_obstacle_clearance_m": 0.4438,
+      "min_boundary_distance_m": 0.171,
+      "final_position": [
+        12.73,
+        0.166,
+        1.25
+      ],
+      "passed_filter": true
+    },
+    {
+      "seed": 30150,
+      "episode_id": 151,
+      "status": "success",
+      "steps": 496,
+      "flight_time_s": 24.8,
+      "distance_m": 13.51,
+      "min_obstacle_clearance_m": 0.5774,
+      "min_boundary_distance_m": 0.23,
+      "final_position": [
+        12.725,
+        -0.116,
+        1.25
+      ],
+      "passed_filter": true
+    },
+    {
+      "seed": 30151,
+      "episode_id": 152,
+      "status": "success",
+      "steps": 576,
+      "flight_time_s": 28.8,
+      "distance_m": 15.17,
+      "min_obstacle_clearance_m": 0.5503,
+      "min_boundary_distance_m": 0.1747,
+      "final_position": [
+        12.733,
+        -0.164,
+        1.25
+      ],
+      "passed_filter": true
+    },
+    {
+      "seed": 30152,
+      "episode_id": 153,
+      "status": "success",
+      "steps": 529,
+      "flight_time_s": 26.45,
+      "distance_m": 13.81,
+      "min_obstacle_clearance_m": 0.3774,
+      "min_boundary_distance_m": 0.2393,
+      "final_position": [
+        12.724,
+        0.121,
+        1.25
+      ],
+      "passed_filter": true
+    },
+    {
+      "seed": 30153,
+      "episode_id": 154,
+      "status": "success",
+      "steps": 528,
+      "flight_time_s": 26.4,
+      "distance_m": 13.92,
+      "min_obstacle_clearance_m": 0.4328,
+      "min_boundary_distance_m": 0.2379,
+      "final_position": [
+        12.739,
+        0.153,
+        1.25
+      ],
+      "passed_filter": true
+    },
+    {
+      "seed": 30154,
+      "episode_id": 155,
+      "status": "success",
+      "steps": 505,
+      "flight_time_s": 25.25,
+      "distance_m": 13.84,
+      "min_obstacle_clearance_m": 0.5005,
+      "min_boundary_distance_m": 0.2305,
+      "final_position": [
+        12.737,
+        0.148,
+        1.25
+      ],
+      "passed_filter": true
+    },
+    {
+      "seed": 30156,
+      "episode_id": 157,
+      "status": "success",
+      "steps": 494,
+      "flight_time_s": 24.7,
+      "distance_m": 13.56,
+      "min_obstacle_clearance_m": 0.4931,
+      "min_boundary_distance_m": 0.3055,
+      "final_position": [
+        12.728,
+        -0.153,
+        1.25
+      ],
+      "passed_filter": true
+    },
+    {
+      "seed": 30157,
+      "episode_id": 158,
+      "status": "success",
+      "steps": 501,
+      "flight_time_s": 25.05,
+      "distance_m": 13.66,
+      "min_obstacle_clearance_m": 0.5124,
+      "min_boundary_distance_m": 0.2732,
+      "final_position": [
+        12.73,
+        0.151,
+        1.25
+      ],
+      "passed_filter": true
+    },
+    {
+      "seed": 30158,
+      "episode_id": 159,
+      "status": "success",
+      "steps": 498,
+      "flight_time_s": 24.9,
+      "distance_m": 13.72,
+      "min_obstacle_clearance_m": 0.5152,
+      "min_boundary_distance_m": 0.2512,
+      "final_position": [
+        12.738,
+        -0.152,
+        1.25
+      ],
+      "passed_filter": true
+    },
+    {
+      "seed": 30159,
+      "episode_id": 160,
+      "status": "success",
+      "steps": 488,
+      "flight_time_s": 24.4,
+      "distance_m": 13.38,
+      "min_obstacle_clearance_m": 0.6286,
+      "min_boundary_distance_m": 0.2571,
+      "final_position": [
+        12.722,
+        -0.115,
+        1.25
+      ],
+      "passed_filter": true
+    },
+    {
+      "seed": 30160,
+      "episode_id": 161,
+      "status": "success",
+      "steps": 520,
+      "flight_time_s": 26.0,
+      "distance_m": 13.84,
+      "min_obstacle_clearance_m": 0.4343,
+      "min_boundary_distance_m": 0.2391,
+      "final_position": [
+        12.734,
+        0.144,
+        1.25
+      ],
+      "passed_filter": true
+    },
+    {
+      "seed": 30161,
+      "episode_id": 162,
+      "status": "success",
+      "steps": 494,
+      "flight_time_s": 24.7,
+      "distance_m": 13.56,
+      "min_obstacle_clearance_m": 0.5867,
+      "min_boundary_distance_m": 0.2547,
+      "final_position": [
+        12.731,
+        -0.148,
+        1.25
+      ],
+      "passed_filter": true
+    },
+    {
+      "seed": 30163,
+      "episode_id": 164,
+      "status": "success",
+      "steps": 544,
+      "flight_time_s": 27.2,
+      "distance_m": 14.54,
+      "min_obstacle_clearance_m": 0.6112,
+      "min_boundary_distance_m": 0.2422,
+      "final_position": [
+        12.73,
+        0.153,
+        1.25
+      ],
+      "passed_filter": true
+    },
+    {
+      "seed": 30164,
+      "episode_id": 165,
+      "status": "success",
+      "steps": 580,
+      "flight_time_s": 29.0,
+      "distance_m": 14.88,
+      "min_obstacle_clearance_m": 0.4295,
+      "min_boundary_distance_m": 0.2462,
+      "final_position": [
+        12.732,
+        -0.149,
+        1.25
+      ],
+      "passed_filter": true
+    },
+    {
+      "seed": 30165,
+      "episode_id": 166,
+      "status": "success",
+      "steps": 575,
+      "flight_time_s": 28.75,
+      "distance_m": 15.2,
+      "min_obstacle_clearance_m": 0.4743,
+      "min_boundary_distance_m": 0.1739,
+      "final_position": [
+        12.73,
+        -0.156,
+        1.25
+      ],
+      "passed_filter": true
+    },
+    {
+      "seed": 30166,
+      "episode_id": 167,
+      "status": "success",
+      "steps": 579,
+      "flight_time_s": 28.95,
+      "distance_m": 15.21,
+      "min_obstacle_clearance_m": 0.5439,
+      "min_boundary_distance_m": 0.1246,
+      "final_position": [
+        12.741,
+        -0.171,
+        1.25
+      ],
+      "passed_filter": true
+    },
+    {
+      "seed": 30167,
+      "episode_id": 168,
+      "status": "success",
+      "steps": 594,
+      "flight_time_s": 29.7,
+      "distance_m": 14.96,
+      "min_obstacle_clearance_m": 0.2164,
+      "min_boundary_distance_m": 0.2372,
+      "final_position": [
+        12.725,
+        -0.15,
+        1.25
+      ],
+      "passed_filter": true
+    },
+    {
+      "seed": 30168,
+      "episode_id": 169,
+      "status": "success",
+      "steps": 481,
+      "flight_time_s": 24.05,
+      "distance_m": 13.55,
+      "min_obstacle_clearance_m": 0.4914,
+      "min_boundary_distance_m": 0.31,
+      "final_position": [
+        12.725,
+        -0.148,
+        1.25
+      ],
+      "passed_filter": true
+    },
+    {
+      "seed": 30171,
+      "episode_id": 172,
+      "status": "success",
+      "steps": 508,
+      "flight_time_s": 25.4,
+      "distance_m": 13.83,
+      "min_obstacle_clearance_m": 0.5113,
+      "min_boundary_distance_m": 0.2349,
+      "final_position": [
+        12.736,
+        -0.149,
+        1.25
+      ],
+      "passed_filter": true
+    },
+    {
+      "seed": 30172,
+      "episode_id": 173,
+      "status": "success",
+      "steps": 576,
+      "flight_time_s": 28.8,
+      "distance_m": 15.12,
+      "min_obstacle_clearance_m": 0.5263,
+      "min_boundary_distance_m": 0.1745,
+      "final_position": [
+        12.739,
+        -0.164,
+        1.25
+      ],
+      "passed_filter": true
+    },
+    {
+      "seed": 30173,
+      "episode_id": 174,
+      "status": "success",
+      "steps": 556,
+      "flight_time_s": 27.8,
+      "distance_m": 14.82,
+      "min_obstacle_clearance_m": 0.6293,
+      "min_boundary_distance_m": 0.2346,
+      "final_position": [
+        12.735,
+        -0.152,
+        1.25
+      ],
+      "passed_filter": true
+    },
+    {
+      "seed": 30174,
+      "episode_id": 175,
+      "status": "success",
+      "steps": 552,
+      "flight_time_s": 27.6,
+      "distance_m": 14.76,
+      "min_obstacle_clearance_m": 0.6498,
+      "min_boundary_distance_m": 0.225,
+      "final_position": [
+        12.728,
+        -0.156,
+        1.25
+      ],
+      "passed_filter": true
+    },
+    {
+      "seed": 30175,
+      "episode_id": 176,
+      "status": "success",
+      "steps": 574,
+      "flight_time_s": 28.7,
+      "distance_m": 15.12,
+      "min_obstacle_clearance_m": 0.5534,
+      "min_boundary_distance_m": 0.1378,
+      "final_position": [
+        12.733,
+        -0.171,
+        1.25
+      ],
+      "passed_filter": true
+    },
+    {
+      "seed": 30176,
+      "episode_id": 177,
+      "status": "success",
+      "steps": 507,
+      "flight_time_s": 25.35,
+      "distance_m": 13.73,
+      "min_obstacle_clearance_m": 0.5187,
+      "min_boundary_distance_m": 0.2674,
+      "final_position": [
+        12.735,
+        -0.151,
+        1.25
+      ],
+      "passed_filter": true
+    },
+    {
+      "seed": 30178,
+      "episode_id": 179,
+      "status": "success",
+      "steps": 519,
+      "flight_time_s": 25.95,
+      "distance_m": 13.91,
+      "min_obstacle_clearance_m": 0.4293,
+      "min_boundary_distance_m": 0.2216,
+      "final_position": [
+        12.729,
+        -0.151,
+        1.25
+      ],
+      "passed_filter": true
+    },
+    {
+      "seed": 30183,
+      "episode_id": 184,
+      "status": "success",
+      "steps": 516,
+      "flight_time_s": 25.8,
+      "distance_m": 13.56,
+      "min_obstacle_clearance_m": 0.3691,
+      "min_boundary_distance_m": 0.2831,
+      "final_position": [
+        12.733,
+        0.148,
+        1.25
+      ],
+      "passed_filter": true
+    },
+    {
+      "seed": 30184,
+      "episode_id": 185,
+      "status": "success",
+      "steps": 567,
+      "flight_time_s": 28.35,
+      "distance_m": 14.61,
+      "min_obstacle_clearance_m": 0.4088,
+      "min_boundary_distance_m": 0.2452,
+      "final_position": [
+        12.736,
+        0.146,
+        1.25
+      ],
+      "passed_filter": true
+    },
+    {
+      "seed": 30185,
+      "episode_id": 186,
+      "status": "success",
+      "steps": 504,
+      "flight_time_s": 25.2,
+      "distance_m": 13.66,
+      "min_obstacle_clearance_m": 0.4341,
+      "min_boundary_distance_m": 0.2589,
+      "final_position": [
+        12.72,
+        0.137,
+        1.25
+      ],
+      "passed_filter": true
+    },
+    {
+      "seed": 30188,
+      "episode_id": 189,
+      "status": "success",
+      "steps": 550,
+      "flight_time_s": 27.5,
+      "distance_m": 14.72,
+      "min_obstacle_clearance_m": 0.6312,
+      "min_boundary_distance_m": 0.2363,
+      "final_position": [
+        12.733,
+        -0.154,
+        1.25
+      ],
+      "passed_filter": true
+    },
+    {
+      "seed": 30190,
+      "episode_id": 191,
+      "status": "success",
+      "steps": 538,
+      "flight_time_s": 26.9,
+      "distance_m": 14.0,
+      "min_obstacle_clearance_m": 0.3391,
+      "min_boundary_distance_m": 0.2189,
+      "final_position": [
+        12.727,
+        -0.128,
+        1.25
+      ],
+      "passed_filter": true
+    },
+    {
+      "seed": 30194,
+      "episode_id": 195,
+      "status": "success",
+      "steps": 567,
+      "flight_time_s": 28.35,
+      "distance_m": 15.01,
+      "min_obstacle_clearance_m": 0.5853,
+      "min_boundary_distance_m": 0.2228,
+      "final_position": [
+        12.727,
+        -0.159,
+        1.25
+      ],
+      "passed_filter": true
+    },
+    {
+      "seed": 30195,
+      "episode_id": 196,
+      "status": "success",
+      "steps": 476,
+      "flight_time_s": 23.8,
+      "distance_m": 13.49,
+      "min_obstacle_clearance_m": 0.4845,
+      "min_boundary_distance_m": 0.3043,
+      "final_position": [
+        12.725,
+        0.144,
+        1.25
+      ],
+      "passed_filter": true
+    },
+    {
+      "seed": 30196,
+      "episode_id": 197,
+      "status": "success",
+      "steps": 475,
+      "flight_time_s": 23.75,
+      "distance_m": 13.22,
+      "min_obstacle_clearance_m": 0.6375,
+      "min_boundary_distance_m": 0.3029,
+      "final_position": [
+        12.72,
+        0.109,
+        1.25
+      ],
+      "passed_filter": true
+    },
+    {
+      "seed": 30197,
+      "episode_id": 198,
+      "status": "success",
+      "steps": 479,
+      "flight_time_s": 23.95,
+      "distance_m": 13.47,
+      "min_obstacle_clearance_m": 0.4447,
+      "min_boundary_distance_m": 0.2967,
+      "final_position": [
+        12.718,
+        -0.131,
+        1.25
+      ],
+      "passed_filter": true
+    },
+    {
+      "seed": 30199,
+      "episode_id": 200,
+      "status": "success",
+      "steps": 480,
+      "flight_time_s": 24.0,
+      "distance_m": 13.46,
+      "min_obstacle_clearance_m": 0.5008,
+      "min_boundary_distance_m": 0.3135,
+      "final_position": [
+        12.725,
+        0.152,
+        1.25
+      ],
+      "passed_filter": true
+    },
+    {
+      "seed": 30201,
+      "episode_id": 202,
+      "status": "success",
+      "steps": 604,
+      "flight_time_s": 30.2,
+      "distance_m": 15.15,
+      "min_obstacle_clearance_m": 0.2157,
+      "min_boundary_distance_m": 0.2263,
+      "final_position": [
+        12.727,
+        -0.156,
+        1.25
+      ],
+      "passed_filter": true
+    },
+    {
+      "seed": 30205,
+      "episode_id": 206,
+      "status": "success",
+      "steps": 564,
+      "flight_time_s": 28.2,
+      "distance_m": 14.95,
+      "min_obstacle_clearance_m": 0.5908,
+      "min_boundary_distance_m": 0.2005,
+      "final_position": [
+        12.732,
+        -0.16,
+        1.25
+      ],
+      "passed_filter": true
+    },
+    {
+      "seed": 30207,
+      "episode_id": 208,
+      "status": "success",
+      "steps": 496,
+      "flight_time_s": 24.8,
+      "distance_m": 13.59,
+      "min_obstacle_clearance_m": 0.5767,
+      "min_boundary_distance_m": 0.2316,
+      "final_position": [
+        12.723,
+        0.112,
+        1.25
+      ],
+      "passed_filter": true
+    },
+    {
+      "seed": 30208,
+      "episode_id": 209,
+      "status": "success",
+      "steps": 467,
+      "flight_time_s": 23.35,
+      "distance_m": 13.09,
+      "min_obstacle_clearance_m": 0.6447,
+      "min_boundary_distance_m": 0.3271,
+      "final_position": [
+        12.719,
+        0.123,
+        1.25
+      ],
+      "passed_filter": true
+    },
+    {
+      "seed": 30211,
+      "episode_id": 212,
+      "status": "success",
+      "steps": 487,
+      "flight_time_s": 24.35,
+      "distance_m": 13.57,
+      "min_obstacle_clearance_m": 0.5472,
+      "min_boundary_distance_m": 0.284,
+      "final_position": [
+        12.732,
+        -0.138,
+        1.25
+      ],
+      "passed_filter": true
+    },
+    {
+      "seed": 30213,
+      "episode_id": 214,
+      "status": "success",
+      "steps": 583,
+      "flight_time_s": 29.15,
+      "distance_m": 14.87,
+      "min_obstacle_clearance_m": 0.4136,
+      "min_boundary_distance_m": 0.2458,
+      "final_position": [
+        12.737,
+        0.149,
+        1.25
+      ],
+      "passed_filter": true
+    },
+    {
+      "seed": 30214,
+      "episode_id": 215,
+      "status": "success",
+      "steps": 563,
+      "flight_time_s": 28.15,
+      "distance_m": 14.91,
+      "min_obstacle_clearance_m": 0.5713,
+      "min_boundary_distance_m": 0.2175,
+      "final_position": [
+        12.729,
+        -0.158,
+        1.25
+      ],
+      "passed_filter": true
+    },
+    {
+      "seed": 30215,
+      "episode_id": 216,
+      "status": "success",
+      "steps": 564,
+      "flight_time_s": 28.2,
+      "distance_m": 14.96,
+      "min_obstacle_clearance_m": 0.5788,
+      "min_boundary_distance_m": 0.229,
+      "final_position": [
+        12.73,
+        0.153,
+        1.25
+      ],
+      "passed_filter": true
+    },
+    {
+      "seed": 30216,
+      "episode_id": 217,
+      "status": "success",
+      "steps": 497,
+      "flight_time_s": 24.85,
+      "distance_m": 13.66,
+      "min_obstacle_clearance_m": 0.5092,
+      "min_boundary_distance_m": 0.2817,
+      "final_position": [
+        12.734,
+        -0.149,
+        1.25
+      ],
+      "passed_filter": true
+    },
+    {
+      "seed": 30217,
+      "episode_id": 218,
+      "status": "success",
+      "steps": 478,
+      "flight_time_s": 23.9,
+      "distance_m": 13.2,
+      "min_obstacle_clearance_m": 0.6572,
+      "min_boundary_distance_m": 0.2825,
+      "final_position": [
+        12.721,
+        0.104,
+        1.25
+      ],
+      "passed_filter": true
+    },
+    {
+      "seed": 30218,
+      "episode_id": 219,
+      "status": "success",
+      "steps": 584,
+      "flight_time_s": 29.2,
+      "distance_m": 15.29,
+      "min_obstacle_clearance_m": 0.5114,
+      "min_boundary_distance_m": 0.1295,
+      "final_position": [
+        12.739,
+        -0.173,
+        1.25
+      ],
+      "passed_filter": true
+    },
+    {
+      "seed": 30219,
+      "episode_id": 220,
+      "status": "success",
+      "steps": 476,
+      "flight_time_s": 23.8,
+      "distance_m": 13.26,
+      "min_obstacle_clearance_m": 0.625,
+      "min_boundary_distance_m": 0.3052,
+      "final_position": [
+        12.731,
+        -0.136,
+        1.25
+      ],
+      "passed_filter": true
+    },
+    {
+      "seed": 30220,
+      "episode_id": 221,
+      "status": "success",
+      "steps": 498,
+      "flight_time_s": 24.9,
+      "distance_m": 13.69,
+      "min_obstacle_clearance_m": 0.5751,
+      "min_boundary_distance_m": 0.2416,
+      "final_position": [
+        12.734,
+        -0.144,
+        1.25
+      ],
+      "passed_filter": true
+    },
+    {
+      "seed": 30221,
+      "episode_id": 222,
+      "status": "success",
+      "steps": 543,
+      "flight_time_s": 27.15,
+      "distance_m": 14.6,
+      "min_obstacle_clearance_m": 0.6441,
+      "min_boundary_distance_m": 0.2182,
+      "final_position": [
+        12.736,
+        -0.154,
+        1.25
+      ],
+      "passed_filter": true
+    },
+    {
+      "seed": 30222,
+      "episode_id": 223,
+      "status": "success",
+      "steps": 505,
+      "flight_time_s": 25.25,
+      "distance_m": 13.85,
+      "min_obstacle_clearance_m": 0.5401,
+      "min_boundary_distance_m": 0.2144,
+      "final_position": [
+        12.727,
+        0.15,
+        1.25
+      ],
+      "passed_filter": true
+    },
+    {
+      "seed": 30225,
+      "episode_id": 226,
+      "status": "success",
+      "steps": 472,
+      "flight_time_s": 23.6,
+      "distance_m": 13.32,
+      "min_obstacle_clearance_m": 0.5624,
+      "min_boundary_distance_m": 0.3245,
+      "final_position": [
+        12.729,
+        -0.143,
+        1.25
+      ],
+      "passed_filter": true
+    },
+    {
+      "seed": 30226,
+      "episode_id": 227,
+      "status": "success",
+      "steps": 534,
+      "flight_time_s": 26.7,
+      "distance_m": 14.46,
+      "min_obstacle_clearance_m": 0.6771,
+      "min_boundary_distance_m": 0.2451,
+      "final_position": [
+        12.727,
+        -0.152,
+        1.25
+      ],
+      "passed_filter": true
+    },
+    {
+      "seed": 30227,
+      "episode_id": 228,
+      "status": "success",
+      "steps": 498,
+      "flight_time_s": 24.9,
+      "distance_m": 13.59,
+      "min_obstacle_clearance_m": 0.5143,
+      "min_boundary_distance_m": 0.2967,
+      "final_position": [
+        12.729,
+        -0.153,
+        1.25
+      ],
+      "passed_filter": true
+    },
+    {
+      "seed": 30229,
+      "episode_id": 230,
+      "status": "success",
+      "steps": 574,
+      "flight_time_s": 28.7,
+      "distance_m": 14.65,
+      "min_obstacle_clearance_m": 0.236,
+      "min_boundary_distance_m": 0.2259,
+      "final_position": [
+        12.726,
+        0.142,
+        1.25
+      ],
+      "passed_filter": true
+    },
+    {
+      "seed": 30230,
+      "episode_id": 231,
+      "status": "success",
+      "steps": 562,
+      "flight_time_s": 28.1,
+      "distance_m": 14.92,
+      "min_obstacle_clearance_m": 0.4228,
+      "min_boundary_distance_m": 0.2316,
+      "final_position": [
+        12.737,
+        -0.148,
+        1.25
+      ],
+      "passed_filter": true
+    },
+    {
+      "seed": 30231,
+      "episode_id": 232,
+      "status": "success",
+      "steps": 511,
+      "flight_time_s": 25.55,
+      "distance_m": 13.87,
+      "min_obstacle_clearance_m": 0.5161,
+      "min_boundary_distance_m": 0.2201,
+      "final_position": [
+        12.738,
+        0.151,
+        1.25
+      ],
+      "passed_filter": true
+    },
+    {
+      "seed": 30232,
+      "episode_id": 233,
+      "status": "success",
+      "steps": 568,
+      "flight_time_s": 28.4,
+      "distance_m": 15.03,
+      "min_obstacle_clearance_m": 0.5446,
+      "min_boundary_distance_m": 0.2155,
+      "final_position": [
+        12.736,
+        0.155,
+        1.25
+      ],
+      "passed_filter": true
+    },
+    {
+      "seed": 30233,
+      "episode_id": 234,
+      "status": "success",
+      "steps": 501,
+      "flight_time_s": 25.05,
+      "distance_m": 13.59,
+      "min_obstacle_clearance_m": 0.5195,
+      "min_boundary_distance_m": 0.3096,
+      "final_position": [
+        12.729,
+        0.158,
+        1.25
+      ],
+      "passed_filter": true
+    },
+    {
+      "seed": 30236,
+      "episode_id": 237,
+      "status": "success",
+      "steps": 530,
+      "flight_time_s": 26.5,
+      "distance_m": 13.73,
+      "min_obstacle_clearance_m": 0.1792,
+      "min_boundary_distance_m": 0.2153,
+      "final_position": [
+        12.72,
+        0.121,
+        1.25
+      ],
+      "passed_filter": true
+    },
+    {
+      "seed": 30238,
+      "episode_id": 239,
+      "status": "success",
+      "steps": 477,
+      "flight_time_s": 23.85,
+      "distance_m": 13.19,
+      "min_obstacle_clearance_m": 0.669,
+      "min_boundary_distance_m": 0.2952,
+      "final_position": [
+        12.719,
+        -0.117,
+        1.25
+      ],
+      "passed_filter": true
+    },
+    {
+      "seed": 30239,
+      "episode_id": 240,
+      "status": "success",
+      "steps": 579,
+      "flight_time_s": 28.95,
+      "distance_m": 15.05,
+      "min_obstacle_clearance_m": 0.4323,
+      "min_boundary_distance_m": 0.2216,
+      "final_position": [
+        12.727,
+        -0.158,
+        1.25
+      ],
+      "passed_filter": true
+    },
+    {
+      "seed": 30240,
+      "episode_id": 241,
+      "status": "success",
+      "steps": 492,
+      "flight_time_s": 24.6,
+      "distance_m": 13.31,
+      "min_obstacle_clearance_m": 0.5704,
+      "min_boundary_distance_m": 0.2281,
+      "final_position": [
+        12.712,
+        -0.103,
+        1.25
+      ],
+      "passed_filter": true
+    },
+    {
+      "seed": 30241,
+      "episode_id": 242,
+      "status": "success",
+      "steps": 503,
+      "flight_time_s": 25.15,
+      "distance_m": 13.67,
+      "min_obstacle_clearance_m": 0.4406,
+      "min_boundary_distance_m": 0.2866,
+      "final_position": [
+        12.728,
+        0.148,
+        1.25
+      ],
+      "passed_filter": true
+    },
+    {
+      "seed": 30242,
+      "episode_id": 243,
+      "status": "success",
+      "steps": 492,
+      "flight_time_s": 24.6,
+      "distance_m": 13.47,
+      "min_obstacle_clearance_m": 0.6042,
+      "min_boundary_distance_m": 0.2464,
+      "final_position": [
+        12.725,
+        -0.123,
+        1.25
+      ],
+      "passed_filter": true
+    },
+    {
+      "seed": 30243,
+      "episode_id": 244,
+      "status": "success",
+      "steps": 524,
+      "flight_time_s": 26.2,
+      "distance_m": 13.65,
+      "min_obstacle_clearance_m": 0.4184,
+      "min_boundary_distance_m": 0.2246,
+      "final_position": [
+        12.712,
+        0.103,
+        1.25
+      ],
+      "passed_filter": true
+    },
+    {
+      "seed": 30244,
+      "episode_id": 245,
+      "status": "success",
+      "steps": 491,
+      "flight_time_s": 24.55,
+      "distance_m": 13.52,
+      "min_obstacle_clearance_m": 0.5161,
+      "min_boundary_distance_m": 0.2966,
+      "final_position": [
+        12.733,
+        0.15,
+        1.25
+      ],
+      "passed_filter": true
+    },
+    {
+      "seed": 30245,
+      "episode_id": 246,
+      "status": "success",
+      "steps": 499,
+      "flight_time_s": 24.95,
+      "distance_m": 13.68,
+      "min_obstacle_clearance_m": 0.5291,
+      "min_boundary_distance_m": 0.2414,
+      "final_position": [
+        12.729,
+        0.157,
+        1.25
+      ],
+      "passed_filter": true
+    },
+    {
+      "seed": 30247,
+      "episode_id": 248,
+      "status": "success",
+      "steps": 568,
+      "flight_time_s": 28.4,
+      "distance_m": 15.03,
+      "min_obstacle_clearance_m": 0.5195,
+      "min_boundary_distance_m": 0.1216,
+      "final_position": [
+        12.743,
+        0.172,
+        1.25
+      ],
+      "passed_filter": true
+    },
+    {
+      "seed": 30248,
+      "episode_id": 249,
+      "status": "success",
+      "steps": 488,
+      "flight_time_s": 24.4,
+      "distance_m": 13.5,
+      "min_obstacle_clearance_m": 0.6,
+      "min_boundary_distance_m": 0.2629,
+      "final_position": [
+        12.716,
+        -0.122,
+        1.25
+      ],
+      "passed_filter": true
+    },
+    {
+      "seed": 30250,
+      "episode_id": 251,
+      "status": "success",
+      "steps": 523,
+      "flight_time_s": 26.15,
+      "distance_m": 13.65,
+      "min_obstacle_clearance_m": 0.3219,
+      "min_boundary_distance_m": 0.2414,
+      "final_position": [
+        12.724,
+        -0.109,
+        1.25
+      ],
+      "passed_filter": true
+    },
+    {
+      "seed": 30251,
+      "episode_id": 252,
+      "status": "success",
+      "steps": 572,
+      "flight_time_s": 28.6,
+      "distance_m": 15.1,
+      "min_obstacle_clearance_m": 0.5507,
+      "min_boundary_distance_m": 0.1356,
+      "final_position": [
+        12.733,
+        -0.172,
+        1.25
+      ],
+      "passed_filter": true
+    },
+    {
+      "seed": 30253,
+      "episode_id": 254,
+      "status": "success",
+      "steps": 516,
+      "flight_time_s": 25.8,
+      "distance_m": 13.97,
+      "min_obstacle_clearance_m": 0.5146,
+      "min_boundary_distance_m": 0.1999,
+      "final_position": [
+        12.731,
+        0.153,
+        1.25
+      ],
+      "passed_filter": true
+    },
+    {
+      "seed": 30256,
+      "episode_id": 257,
+      "status": "success",
+      "steps": 499,
+      "flight_time_s": 24.95,
+      "distance_m": 13.58,
+      "min_obstacle_clearance_m": 0.5178,
+      "min_boundary_distance_m": 0.2984,
+      "final_position": [
+        12.733,
+        0.154,
+        1.25
+      ],
+      "passed_filter": true
+    },
+    {
+      "seed": 30258,
+      "episode_id": 259,
+      "status": "success",
+      "steps": 486,
+      "flight_time_s": 24.3,
+      "distance_m": 13.48,
+      "min_obstacle_clearance_m": 0.5651,
+      "min_boundary_distance_m": 0.2788,
+      "final_position": [
+        12.734,
+        -0.146,
+        1.25
+      ],
+      "passed_filter": true
+    },
+    {
+      "seed": 30260,
+      "episode_id": 261,
+      "status": "success",
+      "steps": 497,
+      "flight_time_s": 24.85,
+      "distance_m": 13.34,
+      "min_obstacle_clearance_m": 0.4358,
+      "min_boundary_distance_m": 0.2803,
+      "final_position": [
+        12.715,
+        0.107,
+        1.25
+      ],
+      "passed_filter": true
+    },
+    {
+      "seed": 30261,
+      "episode_id": 262,
+      "status": "success",
+      "steps": 529,
+      "flight_time_s": 26.45,
+      "distance_m": 14.39,
+      "min_obstacle_clearance_m": 0.6949,
+      "min_boundary_distance_m": 0.2828,
+      "final_position": [
+        12.729,
+        0.147,
+        1.25
+      ],
+      "passed_filter": true
+    },
+    {
+      "seed": 30263,
+      "episode_id": 264,
+      "status": "success",
+      "steps": 502,
+      "flight_time_s": 25.1,
+      "distance_m": 13.66,
+      "min_obstacle_clearance_m": 0.551,
+      "min_boundary_distance_m": 0.2252,
+      "final_position": [
+        12.726,
+        0.151,
+        1.25
+      ],
+      "passed_filter": true
+    },
+    {
+      "seed": 30264,
+      "episode_id": 265,
+      "status": "success",
+      "steps": 506,
+      "flight_time_s": 25.3,
+      "distance_m": 13.45,
+      "min_obstacle_clearance_m": 0.3818,
+      "min_boundary_distance_m": 0.2308,
+      "final_position": [
+        12.725,
+        0.112,
+        1.25
+      ],
+      "passed_filter": true
+    },
+    {
+      "seed": 30265,
+      "episode_id": 266,
+      "status": "success",
+      "steps": 514,
+      "flight_time_s": 25.7,
+      "distance_m": 13.56,
+      "min_obstacle_clearance_m": 0.2977,
+      "min_boundary_distance_m": 0.3115,
+      "final_position": [
+        12.736,
+        0.148,
+        1.25
+      ],
+      "passed_filter": true
+    },
+    {
+      "seed": 30266,
+      "episode_id": 267,
+      "status": "success",
+      "steps": 569,
+      "flight_time_s": 28.45,
+      "distance_m": 14.68,
+      "min_obstacle_clearance_m": 0.4273,
+      "min_boundary_distance_m": 0.2601,
+      "final_position": [
+        12.732,
+        -0.143,
+        1.25
+      ],
+      "passed_filter": true
+    },
+    {
+      "seed": 30268,
+      "episode_id": 269,
+      "status": "success",
+      "steps": 494,
+      "flight_time_s": 24.7,
+      "distance_m": 13.6,
+      "min_obstacle_clearance_m": 0.5143,
+      "min_boundary_distance_m": 0.2599,
+      "final_position": [
+        12.735,
+        0.154,
+        1.25
+      ],
+      "passed_filter": true
+    },
+    {
+      "seed": 30270,
+      "episode_id": 271,
+      "status": "success",
+      "steps": 496,
+      "flight_time_s": 24.8,
+      "distance_m": 13.52,
+      "min_obstacle_clearance_m": 0.5209,
+      "min_boundary_distance_m": 0.3093,
+      "final_position": [
+        12.729,
+        -0.155,
+        1.25
+      ],
+      "passed_filter": true
+    },
+    {
+      "seed": 30271,
+      "episode_id": 272,
+      "status": "success",
+      "steps": 500,
+      "flight_time_s": 25.0,
+      "distance_m": 13.58,
+      "min_obstacle_clearance_m": 0.5231,
+      "min_boundary_distance_m": 0.3052,
+      "final_position": [
+        12.73,
+        0.155,
+        1.25
+      ],
+      "passed_filter": true
+    },
+    {
+      "seed": 30272,
+      "episode_id": 273,
+      "status": "success",
+      "steps": 562,
+      "flight_time_s": 28.1,
+      "distance_m": 14.92,
+      "min_obstacle_clearance_m": 0.6112,
+      "min_boundary_distance_m": 0.2204,
+      "final_position": [
+        12.732,
+        -0.157,
+        1.25
+      ],
+      "passed_filter": true
+    },
+    {
+      "seed": 30273,
+      "episode_id": 274,
+      "status": "success",
+      "steps": 530,
+      "flight_time_s": 26.5,
+      "distance_m": 14.44,
+      "min_obstacle_clearance_m": 0.479,
+      "min_boundary_distance_m": 0.2903,
+      "final_position": [
+        12.723,
+        0.147,
+        1.25
+      ],
+      "passed_filter": true
+    },
+    {
+      "seed": 30274,
+      "episode_id": 275,
+      "status": "success",
+      "steps": 605,
+      "flight_time_s": 30.25,
+      "distance_m": 15.27,
+      "min_obstacle_clearance_m": 0.4144,
+      "min_boundary_distance_m": 0.1561,
+      "final_position": [
+        12.735,
+        -0.167,
+        1.25
+      ],
+      "passed_filter": true
+    },
+    {
+      "seed": 30275,
+      "episode_id": 276,
+      "status": "success",
+      "steps": 493,
+      "flight_time_s": 24.65,
+      "distance_m": 13.7,
+      "min_obstacle_clearance_m": 0.4925,
+      "min_boundary_distance_m": 0.2679,
+      "final_position": [
+        12.725,
+        -0.148,
+        1.25
+      ],
+      "passed_filter": true
+    },
+    {
+      "seed": 30277,
+      "episode_id": 278,
+      "status": "success",
+      "steps": 575,
+      "flight_time_s": 28.75,
+      "distance_m": 14.72,
+      "min_obstacle_clearance_m": 0.3785,
+      "min_boundary_distance_m": 0.2406,
+      "final_position": [
+        12.732,
+        -0.151,
+        1.25
+      ],
+      "passed_filter": true
+    },
+    {
+      "seed": 30278,
+      "episode_id": 279,
+      "status": "success",
+      "steps": 487,
+      "flight_time_s": 24.35,
+      "distance_m": 13.5,
+      "min_obstacle_clearance_m": 0.5767,
+      "min_boundary_distance_m": 0.2829,
+      "final_position": [
+        12.732,
+        -0.144,
+        1.25
+      ],
+      "passed_filter": true
+    },
+    {
+      "seed": 30280,
+      "episode_id": 281,
+      "status": "success",
+      "steps": 597,
+      "flight_time_s": 29.85,
+      "distance_m": 15.11,
+      "min_obstacle_clearance_m": 0.344,
+      "min_boundary_distance_m": 0.2189,
+      "final_position": [
+        12.727,
+        0.153,
+        1.25
+      ],
+      "passed_filter": true
+    },
+    {
+      "seed": 30282,
+      "episode_id": 283,
+      "status": "success",
+      "steps": 597,
+      "flight_time_s": 29.85,
+      "distance_m": 15.08,
+      "min_obstacle_clearance_m": 0.3232,
+      "min_boundary_distance_m": 0.1888,
+      "final_position": [
+        12.74,
+        -0.158,
+        1.25
+      ],
+      "passed_filter": true
+    },
+    {
+      "seed": 30284,
+      "episode_id": 285,
+      "status": "success",
+      "steps": 570,
+      "flight_time_s": 28.5,
+      "distance_m": 15.02,
+      "min_obstacle_clearance_m": 0.5745,
+      "min_boundary_distance_m": 0.1535,
+      "final_position": [
+        12.737,
+        0.168,
+        1.25
+      ],
+      "passed_filter": true
+    },
+    {
+      "seed": 30285,
+      "episode_id": 286,
+      "status": "success",
+      "steps": 506,
+      "flight_time_s": 25.3,
+      "distance_m": 13.71,
+      "min_obstacle_clearance_m": 0.5171,
+      "min_boundary_distance_m": 0.2691,
+      "final_position": [
+        12.73,
+        -0.154,
+        1.25
+      ],
+      "passed_filter": true
+    },
+    {
+      "seed": 30286,
+      "episode_id": 287,
+      "status": "success",
+      "steps": 541,
+      "flight_time_s": 27.05,
+      "distance_m": 14.57,
+      "min_obstacle_clearance_m": 0.6523,
+      "min_boundary_distance_m": 0.2694,
+      "final_position": [
+        12.733,
+        -0.148,
+        1.25
+      ],
+      "passed_filter": true
+    },
+    {
+      "seed": 30287,
+      "episode_id": 288,
+      "status": "success",
+      "steps": 558,
+      "flight_time_s": 27.9,
+      "distance_m": 14.82,
+      "min_obstacle_clearance_m": 0.6114,
+      "min_boundary_distance_m": 0.2098,
+      "final_position": [
+        12.737,
+        0.157,
+        1.25
+      ],
+      "passed_filter": true
+    },
+    {
+      "seed": 30288,
+      "episode_id": 289,
+      "status": "success",
+      "steps": 519,
+      "flight_time_s": 25.95,
+      "distance_m": 13.56,
+      "min_obstacle_clearance_m": 0.2812,
+      "min_boundary_distance_m": 0.2218,
+      "final_position": [
+        12.719,
+        0.103,
+        1.25
+      ],
+      "passed_filter": true
+    },
+    {
+      "seed": 30289,
+      "episode_id": 290,
+      "status": "success",
+      "steps": 546,
+      "flight_time_s": 27.3,
+      "distance_m": 13.94,
+      "min_obstacle_clearance_m": 0.3034,
+      "min_boundary_distance_m": 0.214,
+      "final_position": [
+        12.731,
+        0.157,
+        1.25
+      ],
+      "passed_filter": true
+    },
+    {
+      "seed": 30290,
+      "episode_id": 291,
+      "status": "success",
+      "steps": 486,
+      "flight_time_s": 24.3,
+      "distance_m": 13.54,
+      "min_obstacle_clearance_m": 0.5447,
+      "min_boundary_distance_m": 0.2888,
+      "final_position": [
+        12.733,
+        0.143,
+        1.25
+      ],
+      "passed_filter": true
+    },
+    {
+      "seed": 30291,
+      "episode_id": 292,
+      "status": "success",
+      "steps": 546,
+      "flight_time_s": 27.3,
+      "distance_m": 14.7,
+      "min_obstacle_clearance_m": 0.4707,
+      "min_boundary_distance_m": 0.2333,
+      "final_position": [
+        12.737,
+        0.152,
+        1.25
+      ],
+      "passed_filter": true
+    },
+    {
+      "seed": 30294,
+      "episode_id": 295,
+      "status": "success",
+      "steps": 475,
+      "flight_time_s": 23.75,
+      "distance_m": 13.11,
+      "min_obstacle_clearance_m": 0.6825,
+      "min_boundary_distance_m": 0.2948,
+      "final_position": [
+        12.718,
+        0.109,
+        1.25
+      ],
+      "passed_filter": true
+    },
+    {
+      "seed": 30296,
+      "episode_id": 297,
+      "status": "success",
+      "steps": 514,
+      "flight_time_s": 25.7,
+      "distance_m": 13.79,
+      "min_obstacle_clearance_m": 0.5166,
+      "min_boundary_distance_m": 0.2634,
+      "final_position": [
+        12.738,
+        -0.154,
+        1.25
+      ],
+      "passed_filter": true
+    },
+    {
+      "seed": 30297,
+      "episode_id": 298,
+      "status": "success",
+      "steps": 476,
+      "flight_time_s": 23.8,
+      "distance_m": 13.45,
+      "min_obstacle_clearance_m": 0.5141,
+      "min_boundary_distance_m": 0.315,
+      "final_position": [
+        12.724,
+        -0.145,
+        1.25
+      ],
+      "passed_filter": true
+    },
+    {
+      "seed": 30298,
+      "episode_id": 299,
+      "status": "success",
+      "steps": 487,
+      "flight_time_s": 24.35,
+      "distance_m": 13.53,
+      "min_obstacle_clearance_m": 0.556,
+      "min_boundary_distance_m": 0.2826,
+      "final_position": [
+        12.732,
+        -0.144,
+        1.25
+      ],
+      "passed_filter": true
+    },
+    {
+      "seed": 30299,
+      "episode_id": 300,
+      "status": "success",
+      "steps": 542,
+      "flight_time_s": 27.1,
+      "distance_m": 13.87,
+      "min_obstacle_clearance_m": 0.1251,
+      "min_boundary_distance_m": 0.2216,
+      "final_position": [
+        12.72,
+        -0.122,
+        1.25
+      ],
+      "passed_filter": true
+    },
+    {
+      "seed": 30300,
+      "episode_id": 301,
+      "status": "success",
+      "steps": 561,
+      "flight_time_s": 28.05,
+      "distance_m": 14.91,
+      "min_obstacle_clearance_m": 0.54,
+      "min_boundary_distance_m": 0.2121,
+      "final_position": [
+        12.726,
+        -0.151,
+        1.25
+      ],
+      "passed_filter": true
+    }
+  ],
+  "rejected_episodes": [
+    {
+      "seed": 30001,
+      "episode_id": 2,
+      "status": "crash_boundary",
+      "steps": 332,
+      "flight_time_s": 16.6,
+      "distance_m": 8.59,
+      "min_obstacle_clearance_m": 0.2895,
+      "min_boundary_distance_m": -0.0004,
+      "final_position": [
+        6.566,
+        -1.575,
+        1.25
+      ],
+      "passed_filter": false,
+      "rejection_reason": "status=crash_boundary, obs_clear=0.2895m, wall_clear=-0.0004m"
+    },
+    {
+      "seed": 30002,
+      "episode_id": 3,
+      "status": "success",
+      "steps": 674,
+      "flight_time_s": 33.7,
+      "distance_m": 17.2,
+      "min_obstacle_clearance_m": 0.417,
+      "min_boundary_distance_m": 0.009,
+      "final_position": [
+        12.759,
+        -0.194,
+        1.25
+      ],
+      "passed_filter": false,
+      "rejection_reason": "status=success, obs_clear=0.4170m, wall_clear=0.0090m"
+    },
+    {
+      "seed": 30005,
+      "episode_id": 6,
+      "status": "success",
+      "steps": 668,
+      "flight_time_s": 33.4,
+      "distance_m": 17.1,
+      "min_obstacle_clearance_m": 0.4632,
+      "min_boundary_distance_m": 0.039,
+      "final_position": [
+        12.741,
+        -0.193,
+        1.25
+      ],
+      "passed_filter": false,
+      "rejection_reason": "status=success, obs_clear=0.4632m, wall_clear=0.0390m"
+    },
+    {
+      "seed": 30007,
+      "episode_id": 8,
+      "status": "success",
+      "steps": 593,
+      "flight_time_s": 29.65,
+      "distance_m": 15.52,
+      "min_obstacle_clearance_m": 0.4564,
+      "min_boundary_distance_m": 0.062,
+      "final_position": [
+        12.725,
+        -0.156,
+        1.25
+      ],
+      "passed_filter": false,
+      "rejection_reason": "status=success, obs_clear=0.4564m, wall_clear=0.0620m"
+    },
+    {
+      "seed": 30008,
+      "episode_id": 9,
+      "status": "crash_boundary",
+      "steps": 434,
+      "flight_time_s": 21.7,
+      "distance_m": 11.83,
+      "min_obstacle_clearance_m": 0.3248,
+      "min_boundary_distance_m": -0.0,
+      "final_position": [
+        10.183,
+        1.575,
+        1.25
+      ],
+      "passed_filter": false,
+      "rejection_reason": "status=crash_boundary, obs_clear=0.3248m, wall_clear=-0.0000m"
+    },
+    {
+      "seed": 30016,
+      "episode_id": 17,
+      "status": "success",
+      "steps": 591,
+      "flight_time_s": 29.55,
+      "distance_m": 15.5,
+      "min_obstacle_clearance_m": 0.3818,
+      "min_boundary_distance_m": 0.0118,
+      "final_position": [
+        12.759,
+        -0.196,
+        1.25
+      ],
+      "passed_filter": false,
+      "rejection_reason": "status=success, obs_clear=0.3818m, wall_clear=0.0118m"
+    },
+    {
+      "seed": 30017,
+      "episode_id": 18,
+      "status": "crash_boundary",
+      "steps": 467,
+      "flight_time_s": 23.35,
+      "distance_m": 12.25,
+      "min_obstacle_clearance_m": 0.3177,
+      "min_boundary_distance_m": -0.0,
+      "final_position": [
+        10.216,
+        -1.575,
+        1.25
+      ],
+      "passed_filter": false,
+      "rejection_reason": "status=crash_boundary, obs_clear=0.3177m, wall_clear=-0.0000m"
+    },
+    {
+      "seed": 30019,
+      "episode_id": 20,
+      "status": "success",
+      "steps": 579,
+      "flight_time_s": 28.95,
+      "distance_m": 15.36,
+      "min_obstacle_clearance_m": 0.4969,
+      "min_boundary_distance_m": 0.0839,
+      "final_position": [
+        12.718,
+        0.109,
+        1.25
+      ],
+      "passed_filter": false,
+      "rejection_reason": "status=success, obs_clear=0.4969m, wall_clear=0.0839m"
+    },
+    {
+      "seed": 30021,
+      "episode_id": 22,
+      "status": "crash_boundary",
+      "steps": 328,
+      "flight_time_s": 16.4,
+      "distance_m": 8.55,
+      "min_obstacle_clearance_m": 0.2816,
+      "min_boundary_distance_m": -0.0,
+      "final_position": [
+        6.585,
+        -1.575,
+        1.25
+      ],
+      "passed_filter": false,
+      "rejection_reason": "status=crash_boundary, obs_clear=0.2816m, wall_clear=-0.0000m"
+    },
+    {
+      "seed": 30022,
+      "episode_id": 23,
+      "status": "crash_boundary",
+      "steps": 345,
+      "flight_time_s": 17.25,
+      "distance_m": 8.72,
+      "min_obstacle_clearance_m": 0.2166,
+      "min_boundary_distance_m": -0.0,
+      "final_position": [
+        6.446,
+        -1.575,
+        1.25
+      ],
+      "passed_filter": false,
+      "rejection_reason": "status=crash_boundary, obs_clear=0.2166m, wall_clear=-0.0000m"
+    },
+    {
+      "seed": 30025,
+      "episode_id": 26,
+      "status": "crash_boundary",
+      "steps": 324,
+      "flight_time_s": 16.2,
+      "distance_m": 8.54,
+      "min_obstacle_clearance_m": 0.2987,
+      "min_boundary_distance_m": -0.0,
+      "final_position": [
+        6.643,
+        -1.575,
+        1.25
+      ],
+      "passed_filter": false,
+      "rejection_reason": "status=crash_boundary, obs_clear=0.2987m, wall_clear=-0.0000m"
+    },
+    {
+      "seed": 30028,
+      "episode_id": 29,
+      "status": "success",
+      "steps": 633,
+      "flight_time_s": 31.65,
+      "distance_m": 16.46,
+      "min_obstacle_clearance_m": 0.4452,
+      "min_boundary_distance_m": 0.0387,
+      "final_position": [
+        12.731,
+        -0.142,
+        1.25
+      ],
+      "passed_filter": false,
+      "rejection_reason": "status=success, obs_clear=0.4452m, wall_clear=0.0387m"
+    },
+    {
+      "seed": 30035,
+      "episode_id": 36,
+      "status": "crash_boundary",
+      "steps": 349,
+      "flight_time_s": 17.45,
+      "distance_m": 8.79,
+      "min_obstacle_clearance_m": 0.1047,
+      "min_boundary_distance_m": -0.0,
+      "final_position": [
+        6.368,
+        -1.575,
+        1.25
+      ],
+      "passed_filter": false,
+      "rejection_reason": "status=crash_boundary, obs_clear=0.1047m, wall_clear=-0.0000m"
+    },
+    {
+      "seed": 30038,
+      "episode_id": 39,
+      "status": "crash_boundary",
+      "steps": 435,
+      "flight_time_s": 21.75,
+      "distance_m": 11.88,
+      "min_obstacle_clearance_m": 0.281,
+      "min_boundary_distance_m": -0.0,
+      "final_position": [
+        10.208,
+        1.575,
+        1.25
+      ],
+      "passed_filter": false,
+      "rejection_reason": "status=crash_boundary, obs_clear=0.2810m, wall_clear=-0.0000m"
+    },
+    {
+      "seed": 30040,
+      "episode_id": 41,
+      "status": "success",
+      "steps": 636,
+      "flight_time_s": 31.8,
+      "distance_m": 16.52,
+      "min_obstacle_clearance_m": 0.4551,
+      "min_boundary_distance_m": 0.0472,
+      "final_position": [
+        12.732,
+        -0.145,
+        1.25
+      ],
+      "passed_filter": false,
+      "rejection_reason": "status=success, obs_clear=0.4551m, wall_clear=0.0472m"
+    },
+    {
+      "seed": 30041,
+      "episode_id": 42,
+      "status": "success",
+      "steps": 579,
+      "flight_time_s": 28.95,
+      "distance_m": 15.35,
+      "min_obstacle_clearance_m": 0.443,
+      "min_boundary_distance_m": 0.038,
+      "final_position": [
+        12.714,
+        -0.104,
+        1.25
+      ],
+      "passed_filter": false,
+      "rejection_reason": "status=success, obs_clear=0.4430m, wall_clear=0.0380m"
+    },
+    {
+      "seed": 30047,
+      "episode_id": 48,
+      "status": "crash_boundary",
+      "steps": 327,
+      "flight_time_s": 16.35,
+      "distance_m": 8.56,
+      "min_obstacle_clearance_m": 0.2792,
+      "min_boundary_distance_m": -0.0,
+      "final_position": [
+        6.603,
+        1.575,
+        1.25
+      ],
+      "passed_filter": false,
+      "rejection_reason": "status=crash_boundary, obs_clear=0.2792m, wall_clear=-0.0000m"
+    },
+    {
+      "seed": 30054,
+      "episode_id": 55,
+      "status": "crash_boundary",
+      "steps": 440,
+      "flight_time_s": 22.0,
+      "distance_m": 11.93,
+      "min_obstacle_clearance_m": 0.2325,
+      "min_boundary_distance_m": -0.0,
+      "final_position": [
+        10.097,
+        1.575,
+        1.25
+      ],
+      "passed_filter": false,
+      "rejection_reason": "status=crash_boundary, obs_clear=0.2325m, wall_clear=-0.0000m"
+    },
+    {
+      "seed": 30055,
+      "episode_id": 56,
+      "status": "success",
+      "steps": 611,
+      "flight_time_s": 30.55,
+      "distance_m": 15.33,
+      "min_obstacle_clearance_m": 0.3195,
+      "min_boundary_distance_m": 0.0607,
+      "final_position": [
+        12.741,
+        0.187,
+        1.25
+      ],
+      "passed_filter": false,
+      "rejection_reason": "status=success, obs_clear=0.3195m, wall_clear=0.0607m"
+    },
+    {
+      "seed": 30059,
+      "episode_id": 60,
+      "status": "crash_boundary",
+      "steps": 315,
+      "flight_time_s": 15.75,
+      "distance_m": 8.49,
+      "min_obstacle_clearance_m": 0.2243,
+      "min_boundary_distance_m": -0.0,
+      "final_position": [
+        6.614,
+        1.575,
+        1.25
+      ],
+      "passed_filter": false,
+      "rejection_reason": "status=crash_boundary, obs_clear=0.2243m, wall_clear=-0.0000m"
+    },
+    {
+      "seed": 30062,
+      "episode_id": 63,
+      "status": "success",
+      "steps": 625,
+      "flight_time_s": 31.25,
+      "distance_m": 16.4,
+      "min_obstacle_clearance_m": 0.47,
+      "min_boundary_distance_m": 0.0885,
+      "final_position": [
+        12.735,
+        0.144,
+        1.25
+      ],
+      "passed_filter": false,
+      "rejection_reason": "status=success, obs_clear=0.4700m, wall_clear=0.0885m"
+    },
+    {
+      "seed": 30064,
+      "episode_id": 65,
+      "status": "success",
+      "steps": 573,
+      "flight_time_s": 28.65,
+      "distance_m": 15.17,
+      "min_obstacle_clearance_m": 0.4199,
+      "min_boundary_distance_m": 0.033,
+      "final_position": [
+        12.754,
+        -0.19,
+        1.25
+      ],
+      "passed_filter": false,
+      "rejection_reason": "status=success, obs_clear=0.4199m, wall_clear=0.0330m"
+    },
+    {
+      "seed": 30069,
+      "episode_id": 70,
+      "status": "crash_boundary",
+      "steps": 348,
+      "flight_time_s": 17.4,
+      "distance_m": 8.76,
+      "min_obstacle_clearance_m": 0.183,
+      "min_boundary_distance_m": -0.0,
+      "final_position": [
+        6.413,
+        -1.575,
+        1.25
+      ],
+      "passed_filter": false,
+      "rejection_reason": "status=crash_boundary, obs_clear=0.1830m, wall_clear=-0.0000m"
+    },
+    {
+      "seed": 30073,
+      "episode_id": 74,
+      "status": "crash_boundary",
+      "steps": 339,
+      "flight_time_s": 16.95,
+      "distance_m": 8.77,
+      "min_obstacle_clearance_m": 0.3562,
+      "min_boundary_distance_m": -0.0,
+      "final_position": [
+        6.734,
+        1.575,
+        1.25
+      ],
+      "passed_filter": false,
+      "rejection_reason": "status=crash_boundary, obs_clear=0.3562m, wall_clear=-0.0000m"
+    },
+    {
+      "seed": 30074,
+      "episode_id": 75,
+      "status": "crash_boundary",
+      "steps": 331,
+      "flight_time_s": 16.55,
+      "distance_m": 8.56,
+      "min_obstacle_clearance_m": 0.0689,
+      "min_boundary_distance_m": -0.0,
+      "final_position": [
+        6.413,
+        -1.575,
+        1.25
+      ],
+      "passed_filter": false,
+      "rejection_reason": "status=crash_boundary, obs_clear=0.0689m, wall_clear=-0.0000m"
+    },
+    {
+      "seed": 30077,
+      "episode_id": 78,
+      "status": "success",
+      "steps": 647,
+      "flight_time_s": 32.35,
+      "distance_m": 16.81,
+      "min_obstacle_clearance_m": 0.3866,
+      "min_boundary_distance_m": 0.0096,
+      "final_position": [
+        12.734,
+        -0.16,
+        1.25
+      ],
+      "passed_filter": false,
+      "rejection_reason": "status=success, obs_clear=0.3866m, wall_clear=0.0096m"
+    },
+    {
+      "seed": 30083,
+      "episode_id": 84,
+      "status": "crash_boundary",
+      "steps": 429,
+      "flight_time_s": 21.45,
+      "distance_m": 11.76,
+      "min_obstacle_clearance_m": 0.3337,
+      "min_boundary_distance_m": -0.0,
+      "final_position": [
+        10.201,
+        -1.575,
+        1.25
+      ],
+      "passed_filter": false,
+      "rejection_reason": "status=crash_boundary, obs_clear=0.3337m, wall_clear=-0.0000m"
+    },
+    {
+      "seed": 30085,
+      "episode_id": 86,
+      "status": "crash_boundary",
+      "steps": 462,
+      "flight_time_s": 23.1,
+      "distance_m": 12.37,
+      "min_obstacle_clearance_m": 0.334,
+      "min_boundary_distance_m": -0.0,
+      "final_position": [
+        10.237,
+        -1.575,
+        1.25
+      ],
+      "passed_filter": false,
+      "rejection_reason": "status=crash_boundary, obs_clear=0.3340m, wall_clear=-0.0000m"
+    },
+    {
+      "seed": 30087,
+      "episode_id": 88,
+      "status": "crash_boundary",
+      "steps": 324,
+      "flight_time_s": 16.2,
+      "distance_m": 8.7,
+      "min_obstacle_clearance_m": 0.3446,
+      "min_boundary_distance_m": -0.0,
+      "final_position": [
+        6.878,
+        -1.575,
+        1.25
+      ],
+      "passed_filter": false,
+      "rejection_reason": "status=crash_boundary, obs_clear=0.3446m, wall_clear=-0.0000m"
+    },
+    {
+      "seed": 30091,
+      "episode_id": 92,
+      "status": "success",
+      "steps": 586,
+      "flight_time_s": 29.3,
+      "distance_m": 15.32,
+      "min_obstacle_clearance_m": 0.4852,
+      "min_boundary_distance_m": 0.092,
+      "final_position": [
+        12.74,
+        0.182,
+        1.25
+      ],
+      "passed_filter": false,
+      "rejection_reason": "status=success, obs_clear=0.4852m, wall_clear=0.0920m"
+    },
+    {
+      "seed": 30096,
+      "episode_id": 97,
+      "status": "success",
+      "steps": 604,
+      "flight_time_s": 30.2,
+      "distance_m": 15.05,
+      "min_obstacle_clearance_m": 0.1096,
+      "min_boundary_distance_m": 0.1864,
+      "final_position": [
+        12.731,
+        -0.162,
+        1.25
+      ],
+      "passed_filter": false,
+      "rejection_reason": "status=success, obs_clear=0.1096m, wall_clear=0.1864m"
+    },
+    {
+      "seed": 30102,
+      "episode_id": 103,
+      "status": "success",
+      "steps": 617,
+      "flight_time_s": 30.85,
+      "distance_m": 15.49,
+      "min_obstacle_clearance_m": 0.4208,
+      "min_boundary_distance_m": 0.0252,
+      "final_position": [
+        12.747,
+        0.195,
+        1.25
+      ],
+      "passed_filter": false,
+      "rejection_reason": "status=success, obs_clear=0.4208m, wall_clear=0.0252m"
+    },
+    {
+      "seed": 30104,
+      "episode_id": 105,
+      "status": "success",
+      "steps": 647,
+      "flight_time_s": 32.35,
+      "distance_m": 15.97,
+      "min_obstacle_clearance_m": 0.2307,
+      "min_boundary_distance_m": 0.0398,
+      "final_position": [
+        12.743,
+        0.192,
+        1.25
+      ],
+      "passed_filter": false,
+      "rejection_reason": "status=success, obs_clear=0.2307m, wall_clear=0.0398m"
+    },
+    {
+      "seed": 30107,
+      "episode_id": 108,
+      "status": "success",
+      "steps": 568,
+      "flight_time_s": 28.4,
+      "distance_m": 15.06,
+      "min_obstacle_clearance_m": 0.4531,
+      "min_boundary_distance_m": 0.0599,
+      "final_position": [
+        12.752,
+        -0.184,
+        1.25
+      ],
+      "passed_filter": false,
+      "rejection_reason": "status=success, obs_clear=0.4531m, wall_clear=0.0599m"
+    },
+    {
+      "seed": 30108,
+      "episode_id": 109,
+      "status": "crash_boundary",
+      "steps": 342,
+      "flight_time_s": 17.1,
+      "distance_m": 8.87,
+      "min_obstacle_clearance_m": 0.381,
+      "min_boundary_distance_m": -0.0,
+      "final_position": [
+        6.829,
+        1.575,
+        1.25
+      ],
+      "passed_filter": false,
+      "rejection_reason": "status=crash_boundary, obs_clear=0.3810m, wall_clear=-0.0000m"
+    },
+    {
+      "seed": 30112,
+      "episode_id": 113,
+      "status": "crash_boundary",
+      "steps": 462,
+      "flight_time_s": 23.1,
+      "distance_m": 12.24,
+      "min_obstacle_clearance_m": 0.1917,
+      "min_boundary_distance_m": -0.0027,
+      "final_position": [
+        9.948,
+        1.578,
+        1.25
+      ],
+      "passed_filter": false,
+      "rejection_reason": "status=crash_boundary, obs_clear=0.1917m, wall_clear=-0.0027m"
+    },
+    {
+      "seed": 30116,
+      "episode_id": 117,
+      "status": "success",
+      "steps": 584,
+      "flight_time_s": 29.2,
+      "distance_m": 15.53,
+      "min_obstacle_clearance_m": 0.4555,
+      "min_boundary_distance_m": 0.0512,
+      "final_position": [
+        12.727,
+        -0.12,
+        1.25
+      ],
+      "passed_filter": false,
+      "rejection_reason": "status=success, obs_clear=0.4555m, wall_clear=0.0512m"
+    },
+    {
+      "seed": 30118,
+      "episode_id": 119,
+      "status": "crash_boundary",
+      "steps": 351,
+      "flight_time_s": 17.55,
+      "distance_m": 8.79,
+      "min_obstacle_clearance_m": 0.1077,
+      "min_boundary_distance_m": -0.0065,
+      "final_position": [
+        6.349,
+        1.581,
+        1.25
+      ],
+      "passed_filter": false,
+      "rejection_reason": "status=crash_boundary, obs_clear=0.1077m, wall_clear=-0.0065m"
+    },
+    {
+      "seed": 30120,
+      "episode_id": 121,
+      "status": "success",
+      "steps": 557,
+      "flight_time_s": 27.85,
+      "distance_m": 14.9,
+      "min_obstacle_clearance_m": 0.4494,
+      "min_boundary_distance_m": 0.1142,
+      "final_position": [
+        12.734,
+        -0.176,
+        1.25
+      ],
+      "passed_filter": false,
+      "rejection_reason": "status=success, obs_clear=0.4494m, wall_clear=0.1142m"
+    },
+    {
+      "seed": 30121,
+      "episode_id": 122,
+      "status": "success",
+      "steps": 665,
+      "flight_time_s": 33.25,
+      "distance_m": 17.04,
+      "min_obstacle_clearance_m": 0.4172,
+      "min_boundary_distance_m": 0.0301,
+      "final_position": [
+        12.738,
+        -0.18,
+        1.25
+      ],
+      "passed_filter": false,
+      "rejection_reason": "status=success, obs_clear=0.4172m, wall_clear=0.0301m"
+    },
+    {
+      "seed": 30122,
+      "episode_id": 123,
+      "status": "crash_boundary",
+      "steps": 320,
+      "flight_time_s": 16.0,
+      "distance_m": 8.59,
+      "min_obstacle_clearance_m": 0.3111,
+      "min_boundary_distance_m": -0.0,
+      "final_position": [
+        6.76,
+        1.575,
+        1.25
+      ],
+      "passed_filter": false,
+      "rejection_reason": "status=crash_boundary, obs_clear=0.3111m, wall_clear=-0.0000m"
+    },
+    {
+      "seed": 30124,
+      "episode_id": 125,
+      "status": "success",
+      "steps": 612,
+      "flight_time_s": 30.6,
+      "distance_m": 15.32,
+      "min_obstacle_clearance_m": 0.3019,
+      "min_boundary_distance_m": 0.1101,
+      "final_position": [
+        12.742,
+        0.174,
+        1.25
+      ],
+      "passed_filter": false,
+      "rejection_reason": "status=success, obs_clear=0.3019m, wall_clear=0.1101m"
+    },
+    {
+      "seed": 30127,
+      "episode_id": 128,
+      "status": "success",
+      "steps": 647,
+      "flight_time_s": 32.35,
+      "distance_m": 16.73,
+      "min_obstacle_clearance_m": 0.4353,
+      "min_boundary_distance_m": 0.0406,
+      "final_position": [
+        12.728,
+        -0.16,
+        1.25
+      ],
+      "passed_filter": false,
+      "rejection_reason": "status=success, obs_clear=0.4353m, wall_clear=0.0406m"
+    },
+    {
+      "seed": 30131,
+      "episode_id": 132,
+      "status": "crash_boundary",
+      "steps": 329,
+      "flight_time_s": 16.45,
+      "distance_m": 8.76,
+      "min_obstacle_clearance_m": 0.3766,
+      "min_boundary_distance_m": -0.0,
+      "final_position": [
+        6.989,
+        1.575,
+        1.25
+      ],
+      "passed_filter": false,
+      "rejection_reason": "status=crash_boundary, obs_clear=0.3766m, wall_clear=-0.0000m"
+    },
+    {
+      "seed": 30134,
+      "episode_id": 135,
+      "status": "crash_boundary",
+      "steps": 323,
+      "flight_time_s": 16.15,
+      "distance_m": 8.61,
+      "min_obstacle_clearance_m": 0.2667,
+      "min_boundary_distance_m": -0.0,
+      "final_position": [
+        6.665,
+        -1.575,
+        1.25
+      ],
+      "passed_filter": false,
+      "rejection_reason": "status=crash_boundary, obs_clear=0.2667m, wall_clear=-0.0000m"
+    },
+    {
+      "seed": 30135,
+      "episode_id": 136,
+      "status": "success",
+      "steps": 606,
+      "flight_time_s": 30.3,
+      "distance_m": 15.24,
+      "min_obstacle_clearance_m": 0.3925,
+      "min_boundary_distance_m": 0.1119,
+      "final_position": [
+        12.736,
+        0.176,
+        1.25
+      ],
+      "passed_filter": false,
+      "rejection_reason": "status=success, obs_clear=0.3925m, wall_clear=0.1119m"
+    },
+    {
+      "seed": 30139,
+      "episode_id": 140,
+      "status": "crash_boundary",
+      "steps": 468,
+      "flight_time_s": 23.4,
+      "distance_m": 12.31,
+      "min_obstacle_clearance_m": 0.1822,
+      "min_boundary_distance_m": -0.0,
+      "final_position": [
+        9.96,
+        1.575,
+        1.25
+      ],
+      "passed_filter": false,
+      "rejection_reason": "status=crash_boundary, obs_clear=0.1822m, wall_clear=-0.0000m"
+    },
+    {
+      "seed": 30141,
+      "episode_id": 142,
+      "status": "crash_boundary",
+      "steps": 347,
+      "flight_time_s": 17.35,
+      "distance_m": 8.83,
+      "min_obstacle_clearance_m": 0.2963,
+      "min_boundary_distance_m": -0.0014,
+      "final_position": [
+        6.511,
+        -1.576,
+        1.25
+      ],
+      "passed_filter": false,
+      "rejection_reason": "status=crash_boundary, obs_clear=0.2963m, wall_clear=-0.0014m"
+    },
+    {
+      "seed": 30142,
+      "episode_id": 143,
+      "status": "crash_boundary",
+      "steps": 319,
+      "flight_time_s": 15.95,
+      "distance_m": 8.54,
+      "min_obstacle_clearance_m": 0.3045,
+      "min_boundary_distance_m": -0.0,
+      "final_position": [
+        6.722,
+        1.575,
+        1.25
+      ],
+      "passed_filter": false,
+      "rejection_reason": "status=crash_boundary, obs_clear=0.3045m, wall_clear=-0.0000m"
+    },
+    {
+      "seed": 30144,
+      "episode_id": 145,
+      "status": "success",
+      "steps": 603,
+      "flight_time_s": 30.15,
+      "distance_m": 15.24,
+      "min_obstacle_clearance_m": 0.4294,
+      "min_boundary_distance_m": 0.1119,
+      "final_position": [
+        12.735,
+        -0.177,
+        1.25
+      ],
+      "passed_filter": false,
+      "rejection_reason": "status=success, obs_clear=0.4294m, wall_clear=0.1119m"
+    },
+    {
+      "seed": 30146,
+      "episode_id": 147,
+      "status": "success",
+      "steps": 576,
+      "flight_time_s": 28.8,
+      "distance_m": 15.15,
+      "min_obstacle_clearance_m": 0.5108,
+      "min_boundary_distance_m": 0.106,
+      "final_position": [
+        12.734,
+        0.179,
+        1.25
+      ],
+      "passed_filter": false,
+      "rejection_reason": "status=success, obs_clear=0.5108m, wall_clear=0.1060m"
+    },
+    {
+      "seed": 30147,
+      "episode_id": 148,
+      "status": "crash_boundary",
+      "steps": 350,
+      "flight_time_s": 17.5,
+      "distance_m": 8.75,
+      "min_obstacle_clearance_m": 0.0866,
+      "min_boundary_distance_m": -0.0,
+      "final_position": [
+        6.346,
+        -1.575,
+        1.25
+      ],
+      "passed_filter": false,
+      "rejection_reason": "status=crash_boundary, obs_clear=0.0866m, wall_clear=-0.0000m"
+    },
+    {
+      "seed": 30148,
+      "episode_id": 149,
+      "status": "success",
+      "steps": 617,
+      "flight_time_s": 30.85,
+      "distance_m": 15.32,
+      "min_obstacle_clearance_m": 0.1184,
+      "min_boundary_distance_m": 0.1897,
+      "final_position": [
+        12.729,
+        -0.15,
+        1.25
+      ],
+      "passed_filter": false,
+      "rejection_reason": "status=success, obs_clear=0.1184m, wall_clear=0.1897m"
+    },
+    {
+      "seed": 30149,
+      "episode_id": 150,
+      "status": "crash_boundary",
+      "steps": 315,
+      "flight_time_s": 15.75,
+      "distance_m": 8.52,
+      "min_obstacle_clearance_m": 0.2629,
+      "min_boundary_distance_m": -0.0,
+      "final_position": [
+        6.69,
+        1.575,
+        1.25
+      ],
+      "passed_filter": false,
+      "rejection_reason": "status=crash_boundary, obs_clear=0.2629m, wall_clear=-0.0000m"
+    },
+    {
+      "seed": 30155,
+      "episode_id": 156,
+      "status": "success",
+      "steps": 585,
+      "flight_time_s": 29.25,
+      "distance_m": 15.33,
+      "min_obstacle_clearance_m": 0.4436,
+      "min_boundary_distance_m": 0.0508,
+      "final_position": [
+        12.744,
+        -0.191,
+        1.25
+      ],
+      "passed_filter": false,
+      "rejection_reason": "status=success, obs_clear=0.4436m, wall_clear=0.0508m"
+    },
+    {
+      "seed": 30162,
+      "episode_id": 163,
+      "status": "success",
+      "steps": 614,
+      "flight_time_s": 30.7,
+      "distance_m": 15.42,
+      "min_obstacle_clearance_m": 0.4195,
+      "min_boundary_distance_m": 0.0673,
+      "final_position": [
+        12.745,
+        -0.184,
+        1.25
+      ],
+      "passed_filter": false,
+      "rejection_reason": "status=success, obs_clear=0.4195m, wall_clear=0.0673m"
+    },
+    {
+      "seed": 30169,
+      "episode_id": 170,
+      "status": "crash_boundary",
+      "steps": 327,
+      "flight_time_s": 16.35,
+      "distance_m": 8.59,
+      "min_obstacle_clearance_m": 0.2886,
+      "min_boundary_distance_m": -0.0,
+      "final_position": [
+        6.638,
+        -1.575,
+        1.25
+      ],
+      "passed_filter": false,
+      "rejection_reason": "status=crash_boundary, obs_clear=0.2886m, wall_clear=-0.0000m"
+    },
+    {
+      "seed": 30170,
+      "episode_id": 171,
+      "status": "crash_boundary",
+      "steps": 347,
+      "flight_time_s": 17.35,
+      "distance_m": 8.72,
+      "min_obstacle_clearance_m": 0.0004,
+      "min_boundary_distance_m": -0.0048,
+      "final_position": [
+        6.342,
+        -1.58,
+        1.25
+      ],
+      "passed_filter": false,
+      "rejection_reason": "status=crash_boundary, obs_clear=0.0004m, wall_clear=-0.0048m"
+    },
+    {
+      "seed": 30177,
+      "episode_id": 178,
+      "status": "crash_boundary",
+      "steps": 339,
+      "flight_time_s": 16.95,
+      "distance_m": 8.77,
+      "min_obstacle_clearance_m": 0.3555,
+      "min_boundary_distance_m": -0.0,
+      "final_position": [
+        6.704,
+        -1.575,
+        1.25
+      ],
+      "passed_filter": false,
+      "rejection_reason": "status=crash_boundary, obs_clear=0.3555m, wall_clear=-0.0000m"
+    },
+    {
+      "seed": 30179,
+      "episode_id": 180,
+      "status": "success",
+      "steps": 587,
+      "flight_time_s": 29.35,
+      "distance_m": 15.67,
+      "min_obstacle_clearance_m": 0.4374,
+      "min_boundary_distance_m": 0.0364,
+      "final_position": [
+        12.732,
+        -0.135,
+        1.25
+      ],
+      "passed_filter": false,
+      "rejection_reason": "status=success, obs_clear=0.4374m, wall_clear=0.0364m"
+    },
+    {
+      "seed": 30180,
+      "episode_id": 181,
+      "status": "crash_boundary",
+      "steps": 460,
+      "flight_time_s": 23.0,
+      "distance_m": 12.33,
+      "min_obstacle_clearance_m": 0.3326,
+      "min_boundary_distance_m": -0.0,
+      "final_position": [
+        10.259,
+        -1.575,
+        1.25
+      ],
+      "passed_filter": false,
+      "rejection_reason": "status=crash_boundary, obs_clear=0.3326m, wall_clear=-0.0000m"
+    },
+    {
+      "seed": 30181,
+      "episode_id": 182,
+      "status": "success",
+      "steps": 590,
+      "flight_time_s": 29.5,
+      "distance_m": 15.55,
+      "min_obstacle_clearance_m": 0.4239,
+      "min_boundary_distance_m": 0.0458,
+      "final_position": [
+        12.728,
+        -0.153,
+        1.25
+      ],
+      "passed_filter": false,
+      "rejection_reason": "status=success, obs_clear=0.4239m, wall_clear=0.0458m"
+    },
+    {
+      "seed": 30182,
+      "episode_id": 183,
+      "status": "success",
+      "steps": 594,
+      "flight_time_s": 29.7,
+      "distance_m": 15.53,
+      "min_obstacle_clearance_m": 0.4393,
+      "min_boundary_distance_m": 0.0634,
+      "final_position": [
+        12.738,
+        -0.19,
+        1.25
+      ],
+      "passed_filter": false,
+      "rejection_reason": "status=success, obs_clear=0.4393m, wall_clear=0.0634m"
+    },
+    {
+      "seed": 30186,
+      "episode_id": 187,
+      "status": "crash_boundary",
+      "steps": 533,
+      "flight_time_s": 26.65,
+      "distance_m": 13.79,
+      "min_obstacle_clearance_m": 0.3201,
+      "min_boundary_distance_m": -0.0,
+      "final_position": [
+        10.14,
+        1.575,
+        1.25
+      ],
+      "passed_filter": false,
+      "rejection_reason": "status=crash_boundary, obs_clear=0.3201m, wall_clear=-0.0000m"
+    },
+    {
+      "seed": 30187,
+      "episode_id": 188,
+      "status": "success",
+      "steps": 579,
+      "flight_time_s": 28.95,
+      "distance_m": 15.4,
+      "min_obstacle_clearance_m": 0.5128,
+      "min_boundary_distance_m": 0.0987,
+      "final_position": [
+        12.728,
+        -0.127,
+        1.25
+      ],
+      "passed_filter": false,
+      "rejection_reason": "status=success, obs_clear=0.5128m, wall_clear=0.0987m"
+    },
+    {
+      "seed": 30189,
+      "episode_id": 190,
+      "status": "crash_boundary",
+      "steps": 321,
+      "flight_time_s": 16.05,
+      "distance_m": 8.55,
+      "min_obstacle_clearance_m": 0.2774,
+      "min_boundary_distance_m": -0.0,
+      "final_position": [
+        6.65,
+        1.575,
+        1.25
+      ],
+      "passed_filter": false,
+      "rejection_reason": "status=crash_boundary, obs_clear=0.2774m, wall_clear=-0.0000m"
+    },
+    {
+      "seed": 30191,
+      "episode_id": 192,
+      "status": "success",
+      "steps": 611,
+      "flight_time_s": 30.55,
+      "distance_m": 15.34,
+      "min_obstacle_clearance_m": 0.4183,
+      "min_boundary_distance_m": 0.0846,
+      "final_position": [
+        12.737,
+        -0.183,
+        1.25
+      ],
+      "passed_filter": false,
+      "rejection_reason": "status=success, obs_clear=0.4183m, wall_clear=0.0846m"
+    },
+    {
+      "seed": 30192,
+      "episode_id": 193,
+      "status": "crash_boundary",
+      "steps": 335,
+      "flight_time_s": 16.75,
+      "distance_m": 8.59,
+      "min_obstacle_clearance_m": 0.281,
+      "min_boundary_distance_m": -0.0,
+      "final_position": [
+        6.548,
+        -1.575,
+        1.25
+      ],
+      "passed_filter": false,
+      "rejection_reason": "status=crash_boundary, obs_clear=0.2810m, wall_clear=-0.0000m"
+    },
+    {
+      "seed": 30193,
+      "episode_id": 194,
+      "status": "crash_boundary",
+      "steps": 477,
+      "flight_time_s": 23.85,
+      "distance_m": 12.21,
+      "min_obstacle_clearance_m": 0.3491,
+      "min_boundary_distance_m": -0.0,
+      "final_position": [
+        10.255,
+        -1.575,
+        1.25
+      ],
+      "passed_filter": false,
+      "rejection_reason": "status=crash_boundary, obs_clear=0.3491m, wall_clear=-0.0000m"
+    },
+    {
+      "seed": 30198,
+      "episode_id": 199,
+      "status": "crash_boundary",
+      "steps": 342,
+      "flight_time_s": 17.1,
+      "distance_m": 8.81,
+      "min_obstacle_clearance_m": 0.3653,
+      "min_boundary_distance_m": -0.0,
+      "final_position": [
+        6.716,
+        1.575,
+        1.25
+      ],
+      "passed_filter": false,
+      "rejection_reason": "status=crash_boundary, obs_clear=0.3653m, wall_clear=-0.0000m"
+    },
+    {
+      "seed": 30200,
+      "episode_id": 201,
+      "status": "crash_boundary",
+      "steps": 341,
+      "flight_time_s": 17.05,
+      "distance_m": 8.66,
+      "min_obstacle_clearance_m": 0.1653,
+      "min_boundary_distance_m": -0.0008,
+      "final_position": [
+        6.397,
+        1.576,
+        1.25
+      ],
+      "passed_filter": false,
+      "rejection_reason": "status=crash_boundary, obs_clear=0.1653m, wall_clear=-0.0008m"
+    },
+    {
+      "seed": 30202,
+      "episode_id": 203,
+      "status": "success",
+      "steps": 581,
+      "flight_time_s": 29.05,
+      "distance_m": 15.48,
+      "min_obstacle_clearance_m": 0.5022,
+      "min_boundary_distance_m": 0.0869,
+      "final_position": [
+        12.726,
+        0.136,
+        1.25
+      ],
+      "passed_filter": false,
+      "rejection_reason": "status=success, obs_clear=0.5022m, wall_clear=0.0869m"
+    },
+    {
+      "seed": 30203,
+      "episode_id": 204,
+      "status": "success",
+      "steps": 599,
+      "flight_time_s": 29.95,
+      "distance_m": 15.61,
+      "min_obstacle_clearance_m": 0.4416,
+      "min_boundary_distance_m": 0.0666,
+      "final_position": [
+        12.741,
+        -0.189,
+        1.25
+      ],
+      "passed_filter": false,
+      "rejection_reason": "status=success, obs_clear=0.4416m, wall_clear=0.0666m"
+    },
+    {
+      "seed": 30204,
+      "episode_id": 205,
+      "status": "success",
+      "steps": 600,
+      "flight_time_s": 30.0,
+      "distance_m": 15.37,
+      "min_obstacle_clearance_m": 0.4272,
+      "min_boundary_distance_m": 0.0353,
+      "final_position": [
+        12.755,
+        0.189,
+        1.25
+      ],
+      "passed_filter": false,
+      "rejection_reason": "status=success, obs_clear=0.4272m, wall_clear=0.0353m"
+    },
+    {
+      "seed": 30206,
+      "episode_id": 207,
+      "status": "success",
+      "steps": 570,
+      "flight_time_s": 28.5,
+      "distance_m": 15.08,
+      "min_obstacle_clearance_m": 0.4637,
+      "min_boundary_distance_m": 0.0576,
+      "final_position": [
+        12.738,
+        -0.189,
+        1.25
+      ],
+      "passed_filter": false,
+      "rejection_reason": "status=success, obs_clear=0.4637m, wall_clear=0.0576m"
+    },
+    {
+      "seed": 30209,
+      "episode_id": 210,
+      "status": "crash_boundary",
+      "steps": 351,
+      "flight_time_s": 17.55,
+      "distance_m": 8.81,
+      "min_obstacle_clearance_m": 0.1194,
+      "min_boundary_distance_m": -0.0,
+      "final_position": [
+        6.374,
+        -1.575,
+        1.25
+      ],
+      "passed_filter": false,
+      "rejection_reason": "status=crash_boundary, obs_clear=0.1194m, wall_clear=-0.0000m"
+    },
+    {
+      "seed": 30210,
+      "episode_id": 211,
+      "status": "crash_boundary",
+      "steps": 455,
+      "flight_time_s": 22.75,
+      "distance_m": 12.24,
+      "min_obstacle_clearance_m": 0.3466,
+      "min_boundary_distance_m": -0.0,
+      "final_position": [
+        10.329,
+        -1.575,
+        1.25
+      ],
+      "passed_filter": false,
+      "rejection_reason": "status=crash_boundary, obs_clear=0.3466m, wall_clear=-0.0000m"
+    },
+    {
+      "seed": 30212,
+      "episode_id": 213,
+      "status": "crash_boundary",
+      "steps": 336,
+      "flight_time_s": 16.8,
+      "distance_m": 8.61,
+      "min_obstacle_clearance_m": 0.0433,
+      "min_boundary_distance_m": -0.0,
+      "final_position": [
+        6.393,
+        1.575,
+        1.25
+      ],
+      "passed_filter": false,
+      "rejection_reason": "status=crash_boundary, obs_clear=0.0433m, wall_clear=-0.0000m"
+    },
+    {
+      "seed": 30223,
+      "episode_id": 224,
+      "status": "crash_boundary",
+      "steps": 320,
+      "flight_time_s": 16.0,
+      "distance_m": 8.68,
+      "min_obstacle_clearance_m": 0.3309,
+      "min_boundary_distance_m": -0.0,
+      "final_position": [
+        6.895,
+        -1.575,
+        1.25
+      ],
+      "passed_filter": false,
+      "rejection_reason": "status=crash_boundary, obs_clear=0.3309m, wall_clear=-0.0000m"
+    },
+    {
+      "seed": 30224,
+      "episode_id": 225,
+      "status": "crash_boundary",
+      "steps": 440,
+      "flight_time_s": 22.0,
+      "distance_m": 11.89,
+      "min_obstacle_clearance_m": 0.1348,
+      "min_boundary_distance_m": -0.0,
+      "final_position": [
+        9.928,
+        -1.575,
+        1.25
+      ],
+      "passed_filter": false,
+      "rejection_reason": "status=crash_boundary, obs_clear=0.1348m, wall_clear=-0.0000m"
+    },
+    {
+      "seed": 30228,
+      "episode_id": 229,
+      "status": "crash_boundary",
+      "steps": 347,
+      "flight_time_s": 17.35,
+      "distance_m": 8.71,
+      "min_obstacle_clearance_m": 0.0491,
+      "min_boundary_distance_m": -0.0019,
+      "final_position": [
+        6.341,
+        1.577,
+        1.25
+      ],
+      "passed_filter": false,
+      "rejection_reason": "status=crash_boundary, obs_clear=0.0491m, wall_clear=-0.0019m"
+    },
+    {
+      "seed": 30234,
+      "episode_id": 235,
+      "status": "success",
+      "steps": 566,
+      "flight_time_s": 28.3,
+      "distance_m": 13.75,
+      "min_obstacle_clearance_m": 0.0,
+      "min_boundary_distance_m": 0.2689,
+      "final_position": [
+        12.731,
+        0.135,
+        1.25
+      ],
+      "passed_filter": false,
+      "rejection_reason": "status=success, obs_clear=0.0000m, wall_clear=0.2689m"
+    },
+    {
+      "seed": 30235,
+      "episode_id": 236,
+      "status": "success",
+      "steps": 674,
+      "flight_time_s": 33.7,
+      "distance_m": 17.16,
+      "min_obstacle_clearance_m": 0.4636,
+      "min_boundary_distance_m": 0.0438,
+      "final_position": [
+        12.745,
+        0.191,
+        1.25
+      ],
+      "passed_filter": false,
+      "rejection_reason": "status=success, obs_clear=0.4636m, wall_clear=0.0438m"
+    },
+    {
+      "seed": 30237,
+      "episode_id": 238,
+      "status": "crash_boundary",
+      "steps": 321,
+      "flight_time_s": 16.05,
+      "distance_m": 8.59,
+      "min_obstacle_clearance_m": 0.294,
+      "min_boundary_distance_m": -0.0,
+      "final_position": [
+        6.711,
+        1.575,
+        1.25
+      ],
+      "passed_filter": false,
+      "rejection_reason": "status=crash_boundary, obs_clear=0.2940m, wall_clear=-0.0000m"
+    },
+    {
+      "seed": 30246,
+      "episode_id": 247,
+      "status": "crash_boundary",
+      "steps": 323,
+      "flight_time_s": 16.15,
+      "distance_m": 8.62,
+      "min_obstacle_clearance_m": 0.3468,
+      "min_boundary_distance_m": -0.0,
+      "final_position": [
+        6.823,
+        1.575,
+        1.25
+      ],
+      "passed_filter": false,
+      "rejection_reason": "status=crash_boundary, obs_clear=0.3468m, wall_clear=-0.0000m"
+    },
+    {
+      "seed": 30249,
+      "episode_id": 250,
+      "status": "crash_boundary",
+      "steps": 442,
+      "flight_time_s": 22.1,
+      "distance_m": 12.13,
+      "min_obstacle_clearance_m": 0.3721,
+      "min_boundary_distance_m": -0.0,
+      "final_position": [
+        10.429,
+        -1.575,
+        1.25
+      ],
+      "passed_filter": false,
+      "rejection_reason": "status=crash_boundary, obs_clear=0.3721m, wall_clear=-0.0000m"
+    },
+    {
+      "seed": 30252,
+      "episode_id": 253,
+      "status": "crash_boundary",
+      "steps": 325,
+      "flight_time_s": 16.25,
+      "distance_m": 8.62,
+      "min_obstacle_clearance_m": 0.2483,
+      "min_boundary_distance_m": -0.0,
+      "final_position": [
+        6.632,
+        1.575,
+        1.25
+      ],
+      "passed_filter": false,
+      "rejection_reason": "status=crash_boundary, obs_clear=0.2483m, wall_clear=-0.0000m"
+    },
+    {
+      "seed": 30254,
+      "episode_id": 255,
+      "status": "success",
+      "steps": 575,
+      "flight_time_s": 28.75,
+      "distance_m": 15.2,
+      "min_obstacle_clearance_m": 0.3517,
+      "min_boundary_distance_m": 0.0273,
+      "final_position": [
+        12.742,
+        0.2,
+        1.25
+      ],
+      "passed_filter": false,
+      "rejection_reason": "status=success, obs_clear=0.3517m, wall_clear=0.0273m"
+    },
+    {
+      "seed": 30255,
+      "episode_id": 256,
+      "status": "success",
+      "steps": 576,
+      "flight_time_s": 28.8,
+      "distance_m": 15.26,
+      "min_obstacle_clearance_m": 0.4939,
+      "min_boundary_distance_m": 0.083,
+      "final_position": [
+        12.714,
+        0.103,
+        1.25
+      ],
+      "passed_filter": false,
+      "rejection_reason": "status=success, obs_clear=0.4939m, wall_clear=0.0830m"
+    },
+    {
+      "seed": 30257,
+      "episode_id": 258,
+      "status": "success",
+      "steps": 670,
+      "flight_time_s": 33.5,
+      "distance_m": 17.1,
+      "min_obstacle_clearance_m": 0.4585,
+      "min_boundary_distance_m": 0.0508,
+      "final_position": [
+        12.734,
+        -0.176,
+        1.25
+      ],
+      "passed_filter": false,
+      "rejection_reason": "status=success, obs_clear=0.4585m, wall_clear=0.0508m"
+    },
+    {
+      "seed": 30259,
+      "episode_id": 260,
+      "status": "success",
+      "steps": 582,
+      "flight_time_s": 29.1,
+      "distance_m": 15.35,
+      "min_obstacle_clearance_m": 0.3619,
+      "min_boundary_distance_m": 0.0253,
+      "final_position": [
+        12.744,
+        -0.201,
+        1.25
+      ],
+      "passed_filter": false,
+      "rejection_reason": "status=success, obs_clear=0.3619m, wall_clear=0.0253m"
+    },
+    {
+      "seed": 30262,
+      "episode_id": 263,
+      "status": "crash_boundary",
+      "steps": 327,
+      "flight_time_s": 16.35,
+      "distance_m": 8.56,
+      "min_obstacle_clearance_m": 0.1382,
+      "min_boundary_distance_m": -0.0011,
+      "final_position": [
+        6.464,
+        1.576,
+        1.25
+      ],
+      "passed_filter": false,
+      "rejection_reason": "status=crash_boundary, obs_clear=0.1382m, wall_clear=-0.0011m"
+    },
+    {
+      "seed": 30267,
+      "episode_id": 268,
+      "status": "crash_boundary",
+      "steps": 327,
+      "flight_time_s": 16.35,
+      "distance_m": 8.52,
+      "min_obstacle_clearance_m": 0.2237,
+      "min_boundary_distance_m": -0.0,
+      "final_position": [
+        6.527,
+        1.575,
+        1.25
+      ],
+      "passed_filter": false,
+      "rejection_reason": "status=crash_boundary, obs_clear=0.2237m, wall_clear=-0.0000m"
+    },
+    {
+      "seed": 30269,
+      "episode_id": 270,
+      "status": "success",
+      "steps": 601,
+      "flight_time_s": 30.05,
+      "distance_m": 15.67,
+      "min_obstacle_clearance_m": 0.4193,
+      "min_boundary_distance_m": 0.0423,
+      "final_position": [
+        12.749,
+        0.191,
+        1.25
+      ],
+      "passed_filter": false,
+      "rejection_reason": "status=success, obs_clear=0.4193m, wall_clear=0.0423m"
+    },
+    {
+      "seed": 30276,
+      "episode_id": 277,
+      "status": "success",
+      "steps": 641,
+      "flight_time_s": 32.05,
+      "distance_m": 16.74,
+      "min_obstacle_clearance_m": 0.3788,
+      "min_boundary_distance_m": 0.0031,
+      "final_position": [
+        12.729,
+        -0.153,
+        1.25
+      ],
+      "passed_filter": false,
+      "rejection_reason": "status=success, obs_clear=0.3788m, wall_clear=0.0031m"
+    },
+    {
+      "seed": 30279,
+      "episode_id": 280,
+      "status": "crash_boundary",
+      "steps": 321,
+      "flight_time_s": 16.05,
+      "distance_m": 8.54,
+      "min_obstacle_clearance_m": 0.221,
+      "min_boundary_distance_m": -0.0,
+      "final_position": [
+        6.594,
+        -1.575,
+        1.25
+      ],
+      "passed_filter": false,
+      "rejection_reason": "status=crash_boundary, obs_clear=0.2210m, wall_clear=-0.0000m"
+    },
+    {
+      "seed": 30281,
+      "episode_id": 282,
+      "status": "success",
+      "steps": 563,
+      "flight_time_s": 28.15,
+      "distance_m": 14.0,
+      "min_obstacle_clearance_m": 0.0001,
+      "min_boundary_distance_m": 0.1983,
+      "final_position": [
+        12.716,
+        0.121,
+        1.25
+      ],
+      "passed_filter": false,
+      "rejection_reason": "status=success, obs_clear=0.0001m, wall_clear=0.1983m"
+    },
+    {
+      "seed": 30283,
+      "episode_id": 284,
+      "status": "crash_boundary",
+      "steps": 332,
+      "flight_time_s": 16.6,
+      "distance_m": 8.7,
+      "min_obstacle_clearance_m": 0.325,
+      "min_boundary_distance_m": -0.0,
+      "final_position": [
+        6.691,
+        -1.575,
+        1.25
+      ],
+      "passed_filter": false,
+      "rejection_reason": "status=crash_boundary, obs_clear=0.3250m, wall_clear=-0.0000m"
+    },
+    {
+      "seed": 30292,
+      "episode_id": 293,
+      "status": "success",
+      "steps": 590,
+      "flight_time_s": 29.5,
+      "distance_m": 15.46,
+      "min_obstacle_clearance_m": 0.4019,
+      "min_boundary_distance_m": 0.0352,
+      "final_position": [
+        12.742,
+        -0.197,
+        1.25
+      ],
+      "passed_filter": false,
+      "rejection_reason": "status=success, obs_clear=0.4019m, wall_clear=0.0352m"
+    },
+    {
+      "seed": 30293,
+      "episode_id": 294,
+      "status": "success",
+      "steps": 602,
+      "flight_time_s": 30.1,
+      "distance_m": 15.17,
+      "min_obstacle_clearance_m": 0.3994,
+      "min_boundary_distance_m": 0.0833,
+      "final_position": [
+        12.739,
+        -0.181,
+        1.25
+      ],
+      "passed_filter": false,
+      "rejection_reason": "status=success, obs_clear=0.3994m, wall_clear=0.0833m"
+    },
+    {
+      "seed": 30295,
+      "episode_id": 296,
+      "status": "crash_boundary",
+      "steps": 345,
+      "flight_time_s": 17.25,
+      "distance_m": 8.7,
+      "min_obstacle_clearance_m": 0.0764,
+      "min_boundary_distance_m": -0.0,
+      "final_position": [
+        6.36,
+        -1.575,
+        1.25
+      ],
+      "passed_filter": false,
+      "rejection_reason": "status=crash_boundary, obs_clear=0.0764m, wall_clear=-0.0000m"
+    }
+  ]
+}

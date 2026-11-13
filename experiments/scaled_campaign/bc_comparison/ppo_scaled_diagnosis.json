@@ -1,0 +1,29 @@
+{
+  "raw_action_means": {
+    "vx": 0.5395601713061333,
+    "vy": -0.017039543094148332,
+    "vz": 0.004085890067490255,
+    "yaw_rate": 0.02783819660650867
+  },
+  "raw_action_stds": {
+    "vx": 0.19413297033665436,
+    "vy": 0.3018274585200174,
+    "vz": 0.05009644605525059,
+    "yaw_rate": 0.3700543633946627
+  },
+  "filtered_action_means": {
+    "vx": 0.39095697327240914,
+    "vy": -0.009846469823082382,
+    "vz": 0.004085890067490255,
+    "yaw_rate": 0.022490561754576144
+  },
+  "supervisor_states": {
+    "nominal": 1310,
+    "caution": 0,
+    "stopping": 0,
+    "evasion": 0,
+    "recovery": 0,
+    "obstacle_brake": 1690
+  },
+  "sample_termination_reasons": []
+}

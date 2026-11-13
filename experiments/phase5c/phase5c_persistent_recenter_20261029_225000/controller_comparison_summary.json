@@ -1,0 +1,145 @@
+{
+  "benchmark_metadata": {
+    "horizon_steps": 500,
+    "dt_s": 0.05,
+    "caution_distance_m": 0.5,
+    "seed_range": [
+      2000,
+      2049
+    ],
+    "total_seeds": 50
+  },
+  "controller_a_baseline": {
+    "controller": "Controller_A_Frozen_BC_Baseline",
+    "episodes": 50,
+    "successes": 24,
+    "success_rate_pct": 48.0,
+    "wilson_ci_95": [
+      34.8,
+      61.5
+    ],
+    "obstacle_collisions": 0,
+    "boundary_collisions": 0,
+    "obs_envelope_violations": 0,
+    "wall_envelope_violations": 0,
+    "min_obstacle_clearance_m": 0.107,
+    "min_boundary_clearance_m": 0.2537,
+    "mean_progress_m": 6.525,
+    "mean_duration_s": 22.99,
+    "mean_throttled_pct": 27.57,
+    "mean_interventions": 231.8,
+    "pillar_1_cleared": 44,
+    "pillar_1_cleared_pct": 88.0,
+    "pillar_2_cleared": 34,
+    "pillar_2_cleared_pct": 68.0,
+    "pillar_3_cleared": 24,
+    "pillar_3_cleared_pct": 48.0,
+    "terminal_alignment_failures": 0,
+    "failure_breakdown": {
+      "SUCCESS": 24,
+      "PROGRESS_STALL_PILLAR_3": 10,
+      "PROGRESS_STALL_PILLAR_1": 6,
+      "PROGRESS_STALL_PILLAR_2": 10
+    }
+  },
+  "controller_b_stateless": {
+    "controller": "Controller_B_Stateless_Clearance",
+    "episodes": 50,
+    "successes": 35,
+    "success_rate_pct": 70.0,
+    "wilson_ci_95": [
+      56.2,
+      80.9
+    ],
+    "obstacle_collisions": 0,
+    "boundary_collisions": 0,
+    "obs_envelope_violations": 0,
+    "wall_envelope_violations": 0,
+    "min_obstacle_clearance_m": 0.087,
+    "min_boundary_clearance_m": 0.1724,
+    "mean_progress_m": 7.936,
+    "mean_duration_s": 21.74,
+    "mean_throttled_pct": 20.18,
+    "mean_interventions": 133.16,
+    "pillar_1_cleared": 48,
+    "pillar_1_cleared_pct": 96.0,
+    "pillar_2_cleared": 47,
+    "pillar_2_cleared_pct": 94.0,
+    "pillar_3_cleared": 39,
+    "pillar_3_cleared_pct": 78.0,
+    "terminal_alignment_failures": 1,
+    "failure_breakdown": {
+      "SUCCESS": 35,
+      "TIMEOUT_SLOW_TRANSIT": 3,
+      "PROGRESS_STALL_PILLAR_3": 8,
+      "PROGRESS_STALL_PILLAR_2": 1,
+      "PROGRESS_STALL_PILLAR_1": 2,
+      "GOAL_ALIGNMENT_TIMEOUT": 1
+    }
+  },
+  "controller_c_persistent": {
+    "controller": "Controller_C_Persistent_Clearance",
+    "episodes": 50,
+    "successes": 17,
+    "success_rate_pct": 34.0,
+    "wilson_ci_95": [
+      22.4,
+      47.8
+    ],
+    "obstacle_collisions": 0,
+    "boundary_collisions": 0,
+    "obs_envelope_violations": 1,
+    "wall_envelope_violations": 0,
+    "min_obstacle_clearance_m": 0.0223,
+    "min_boundary_clearance_m": 0.1544,
+    "mean_progress_m": 6.87,
+    "mean_duration_s": 24.25,
+    "mean_throttled_pct": 37.15,
+    "mean_interventions": 243.24,
+    "pillar_1_cleared": 50,
+    "pillar_1_cleared_pct": 100.0,
+    "pillar_2_cleared": 38,
+    "pillar_2_cleared_pct": 76.0,
+    "pillar_3_cleared": 26,
+    "pillar_3_cleared_pct": 52.0,
+    "terminal_alignment_failures": 0,
+    "failure_breakdown": {
+      "SUCCESS": 17,
+      "TIMEOUT_SLOW_TRANSIT": 7,
+      "PROGRESS_STALL_PILLAR_2": 12,
+      "PROGRESS_STALL_PILLAR_3": 14
+    }
+  },
+  "paired_comparisons": {
+    "stateless_vs_baseline": {
+      "comparison": "Controller_B vs Controller_A",
+      "wins_for_second": 18,
+      "wins_for_first": 7,
+      "net_difference": 11,
+      "both_succeeded": 17,
+      "both_failed": 8,
+      "exact_binomial_pvalue": 0.043285250663757324,
+      "significant_at_05": true
+    },
+    "persistent_vs_stateless": {
+      "comparison": "Controller_C vs Controller_B",
+      "wins_for_second": 4,
+      "wins_for_first": 22,
+      "net_difference": -18,
+      "both_succeeded": 13,
+      "both_failed": 11,
+      "exact_binomial_pvalue": 0.0005335211753845215,
+      "significant_at_05": true
+    },
+    "persistent_vs_baseline": {
+      "comparison": "Controller_C vs Controller_A",
+      "wins_for_second": 7,
+      "wins_for_first": 14,
+      "net_difference": -7,
+      "both_succeeded": 10,
+      "both_failed": 19,
+      "exact_binomial_pvalue": 0.18924713134765625,
+      "significant_at_05": false
+    }
+  }
+}

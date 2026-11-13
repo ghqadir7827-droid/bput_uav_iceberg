@@ -1,0 +1,86 @@
+{
+  "evaluation_milestone": "Phase 4J-D Sealed Held-Out Generalization Evaluation",
+  "controller_id": "Arm_B_BC_Baseline",
+  "checkpoint": "models/checkpoints/bc_policy_best.pt",
+  "checkpoint_sha256": "93c4d7d1d8476b8d288a24fca1862d87133696f78b9603aa622bcc367afad44f",
+  "caution_distance_m": 0.5,
+  "critical_distance_m": 0.3,
+  "reverse_distance_m": 0.15,
+  "boundary_buffer_m": 0.25,
+  "horizon_steps": 500,
+  "timestep_s": 0.05,
+  "seed_range": [
+    90000,
+    90099
+  ],
+  "total_episodes": 100,
+  "success_count": 47,
+  "success_rate_pct": 47.0,
+  "success_ci95": [
+    37.5,
+    56.7
+  ],
+  "obstacle_collision_count": 0,
+  "obstacle_collision_pct": 0.0,
+  "boundary_collision_count": 0,
+  "boundary_collision_pct": 0.0,
+  "obstacle_envelope_violation_count": 0,
+  "obstacle_envelope_violation_pct": 0.0,
+  "boundary_envelope_violation_count": 0,
+  "boundary_envelope_violation_pct": 0.0,
+  "timeout_count": 53,
+  "timeout_pct": 53.0,
+  "forward_progress_m": {
+    "mean": 6.605,
+    "median": 7.16,
+    "std": 2.39,
+    "min": 2.107,
+    "max": 8.732
+  },
+  "episode_duration_s": {
+    "mean": 22.86,
+    "median": 25.0,
+    "min": 17.4,
+    "max": 25.0
+  },
+  "obstacle_clearance_m": {
+    "mean": 0.1365,
+    "median": 0.1207,
+    "global_min": 0.0975
+  },
+  "boundary_clearance_m": {
+    "mean": 0.2944,
+    "median": 0.2911,
+    "global_min": 0.2498
+  },
+  "supervisor_metrics": {
+    "mean_throttled_time_pct": 28.0,
+    "mean_intervention_rate": 0.47,
+    "mean_stationary_time_pct": 7.3,
+    "mean_direction_reversals": 37.56
+  },
+  "category_breakdown": {
+    "PROGRESS_STALL_PILLAR_1": 16,
+    "PROGRESS_STALL_PILLAR_3": 25,
+    "PROGRESS_STALL_PILLAR_2": 9,
+    "SUCCESS": 47,
+    "GOAL_ALIGNMENT_TIMEOUT": 1,
+    "PROGRESS_LATERAL_OSCILLATION": 2
+  },
+  "development_reference_comparison": {
+    "phase4jc_dev_seeds": "2000..2049 (50 seeds)",
+    "dev_success_rate_pct": 48.0,
+    "dev_success_ci95": [
+      34.8,
+      61.5
+    ],
+    "dev_obstacle_collisions": 0,
+    "dev_boundary_collisions": 0,
+    "dev_envelope_violations": 0,
+    "dev_global_min_obs_clearance_m": 0.1073,
+    "dev_global_min_boundary_clearance_m": 0.1873,
+    "dev_mean_forward_progress_m": 6.53,
+    "dev_mean_duration_s": 23.0,
+    "dev_mean_throttled_time_pct": 27.6
+  }
+}

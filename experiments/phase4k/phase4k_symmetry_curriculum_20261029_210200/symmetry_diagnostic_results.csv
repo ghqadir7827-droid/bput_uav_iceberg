@@ -1,0 +1,15 @@
+test_id,description,obstacle_1_y,start_pos_x,start_pos_y,start_vel_y,steps_completed,status,is_success,final_x,final_y,forward_progress_m,min_obstacle_clearance_m,min_boundary_clearance_m,stalled_steps,mean_raw_vy,mean_safe_vy,outcome_classification
+TEST_01_CENTERED,Perfectly centered single pillar at y=0.0m,0.0,0.5,0.0,0.0,406,SUCCESS,True,9.152,-0.01,8.652,0.2018,0.2825,1,-0.0052,-0.006,SUCCESS
+TEST_LEFT_Y_05,Pillar 1 offset to Left by +0.05m,0.05,0.5,0.0,0.0,500,timeout,False,2.766,0.47,2.266,0.1155,0.3711,84,-0.0043,0.0148,TIMEOUT_DELAY
+TEST_RIGHT_Y_05,Pillar 1 offset to Right by -0.05m,-0.05,0.5,0.0,0.0,404,SUCCESS,True,9.161,-0.01,8.661,0.2162,0.2854,1,-0.0054,-0.007,SUCCESS
+TEST_LEFT_Y_10,Pillar 1 offset to Left by +0.10m,0.1,0.5,0.0,0.0,500,timeout,False,2.716,0.493,2.216,0.1151,0.3551,72,0.0026,0.0163,TIMEOUT_DELAY
+TEST_RIGHT_Y_10,Pillar 1 offset to Right by -0.10m,-0.1,0.5,0.0,0.0,400,SUCCESS,True,9.161,-0.0,8.661,0.2335,0.2846,1,-0.0056,-0.0074,SUCCESS
+TEST_LEFT_Y_20,Pillar 1 offset to Left by +0.20m,0.2,0.5,0.0,0.0,388,SUCCESS,True,9.158,0.009,8.658,0.1323,0.2926,1,-0.0075,-0.0079,SUCCESS
+TEST_RIGHT_Y_20,Pillar 1 offset to Right by -0.20m,-0.2,0.5,0.0,0.0,398,SUCCESS,True,9.151,-0.009,8.651,0.2256,0.2841,1,-0.0069,-0.0093,SUCCESS
+TEST_LEFT_Y_35,Pillar 1 offset to Left by +0.35m,0.35,0.5,0.0,0.0,341,SUCCESS,True,9.156,-0.001,8.656,0.3121,0.2959,1,-0.0081,-0.0088,SUCCESS
+TEST_RIGHT_Y_35,Pillar 1 offset to Right by -0.35m,-0.35,0.5,0.0,0.0,391,SUCCESS,True,9.151,0.002,8.651,0.2251,0.2809,1,-0.0064,-0.0096,SUCCESS
+TEST_STANDOFF_VY_NEG_20,Drone placed at x=2.40m facing centered pillar with initial vy=-0.20m/s,0.0,2.4,0.0,-0.2,399,SUCCESS,True,9.158,-0.016,6.758,0.1207,0.268,21,-0.0048,-0.0195,SUCCESS
+TEST_STANDOFF_VY_NEG_10,Drone placed at x=2.40m facing centered pillar with initial vy=-0.10m/s,0.0,2.4,0.0,-0.1,427,SUCCESS,True,9.162,-0.022,6.762,0.1117,0.2792,23,-0.002,-0.0169,SUCCESS
+TEST_STANDOFF_VY_ZERO_00,Drone placed at x=2.40m facing centered pillar with initial vy=+0.00m/s,0.0,2.4,0.0,0.0,482,SUCCESS,True,9.16,-0.006,6.76,0.092,0.2782,47,-0.0036,-0.0165,SUCCESS
+TEST_STANDOFF_VY_POS_10,Drone placed at x=2.40m facing centered pillar with initial vy=+0.10m/s,0.0,2.4,0.0,0.1,500,timeout,False,2.829,0.45,0.429,0.1138,0.3793,97,-0.0138,0.0167,TIMEOUT_DELAY
+TEST_STANDOFF_VY_POS_20,Drone placed at x=2.40m facing centered pillar with initial vy=+0.20m/s,0.0,2.4,0.0,0.2,500,timeout,False,2.818,0.443,0.418,0.1174,0.3912,92,-0.0174,0.0147,TIMEOUT_DELAY

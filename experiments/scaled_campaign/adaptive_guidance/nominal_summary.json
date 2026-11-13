@@ -1,0 +1,1064 @@
+{
+  "per_tier": {
+    "Level 1 (Basic, W=4.5m)": {
+      "scaled_guided_bc_v2": {
+        "total_episodes": 50,
+        "feasible_routes": 50,
+        "infeasible_routes": 0,
+        "feasible_success_count": 20,
+        "feasible_success_rate": 0.4,
+        "feasible_success_ci95": [
+          27.61,
+          53.82
+        ],
+        "infeasible_safe_count": 0,
+        "infeasible_safe_rate": 1.0,
+        "infeasible_safe_ci95": [
+          1.0,
+          1.0
+        ],
+        "timeouts": 30,
+        "timeout_rate": 0.6,
+        "collisions": 0,
+        "collision_rate": 0.0,
+        "collision_ci95": [
+          0.0,
+          7.13
+        ],
+        "envelope_violation_episodes": 25,
+        "envelope_violation_rate": 0.5,
+        "envelope_violation_steps": 5277,
+        "envelope_violation_step_pct": 11.72,
+        "overall_min_clearance_m": 0.0004,
+        "successful_min_clearance_m": 0.1166,
+        "total_interventions": 12152,
+        "mean_interventions_per_ep": 243.0,
+        "total_lateral_reversals": 3156,
+        "mean_reversals_per_ep": 63.12,
+        "mean_flight_time_s": 37.61,
+        "mean_speed_mps": 0.479
+      },
+      "scaled_guided_bc_v3": {
+        "total_episodes": 50,
+        "feasible_routes": 50,
+        "infeasible_routes": 0,
+        "feasible_success_count": 47,
+        "feasible_success_rate": 0.94,
+        "feasible_success_ci95": [
+          83.78,
+          97.94
+        ],
+        "infeasible_safe_count": 0,
+        "infeasible_safe_rate": 1.0,
+        "infeasible_safe_ci95": [
+          1.0,
+          1.0
+        ],
+        "timeouts": 3,
+        "timeout_rate": 0.06,
+        "collisions": 0,
+        "collision_rate": 0.0,
+        "collision_ci95": [
+          0.0,
+          7.13
+        ],
+        "envelope_violation_episodes": 3,
+        "envelope_violation_rate": 0.06,
+        "envelope_violation_steps": 194,
+        "envelope_violation_step_pct": 0.57,
+        "overall_min_clearance_m": 0.0867,
+        "successful_min_clearance_m": 0.1297,
+        "total_interventions": 5567,
+        "mean_interventions_per_ep": 111.3,
+        "total_lateral_reversals": 793,
+        "mean_reversals_per_ep": 15.86,
+        "mean_flight_time_s": 33.01,
+        "mean_speed_mps": 0.517
+      },
+      "scaled_guided_bc_v4": {
+        "total_episodes": 50,
+        "feasible_routes": 50,
+        "infeasible_routes": 0,
+        "feasible_success_count": 48,
+        "feasible_success_rate": 0.96,
+        "feasible_success_ci95": [
+          86.54,
+          98.9
+        ],
+        "infeasible_safe_count": 0,
+        "infeasible_safe_rate": 1.0,
+        "infeasible_safe_ci95": [
+          1.0,
+          1.0
+        ],
+        "timeouts": 2,
+        "timeout_rate": 0.04,
+        "collisions": 0,
+        "collision_rate": 0.0,
+        "collision_ci95": [
+          0.0,
+          7.13
+        ],
+        "envelope_violation_episodes": 2,
+        "envelope_violation_rate": 0.04,
+        "envelope_violation_steps": 169,
+        "envelope_violation_step_pct": 0.5,
+        "overall_min_clearance_m": 0.1297,
+        "successful_min_clearance_m": 0.1297,
+        "total_interventions": 5660,
+        "mean_interventions_per_ep": 113.2,
+        "total_lateral_reversals": 786,
+        "mean_reversals_per_ep": 15.72,
+        "mean_flight_time_s": 33.25,
+        "mean_speed_mps": 0.514
+      },
+      "paired_comparisons": {
+        "v2_vs_v3": {
+          "n_evaluated": 50,
+          "contingency_table": {
+            "both_succeed": 19,
+            "scaled_guided_bc_v2_only": 1,
+            "scaled_guided_bc_v3_only": 28,
+            "both_fail": 2
+          },
+          "p_value": 1.1175870895385742e-07,
+          "statistically_significant": true,
+          "scaled_guided_bc_v2_only_seeds": [
+            20109
+          ],
+          "scaled_guided_bc_v3_only_seeds": [
+            20100,
+            20101,
+            20103,
+            20104,
+            20105,
+            20106,
+            20107,
+            20108,
+            20111,
+            20112,
+            20114,
+            20117,
+            20123,
+            20124,
+            20125,
+            20131,
+            20132,
+            20133,
+            20135,
+            20136,
+            20138,
+            20139,
+            20140,
+            20141,
+            20142,
+            20144,
+            20146,
+            20148
+          ]
+        },
+        "v3_vs_v4": {
+          "n_evaluated": 50,
+          "contingency_table": {
+            "both_succeed": 47,
+            "scaled_guided_bc_v3_only": 0,
+            "scaled_guided_bc_v4_only": 1,
+            "both_fail": 2
+          },
+          "p_value": 1.0,
+          "statistically_significant": false,
+          "scaled_guided_bc_v3_only_seeds": [],
+          "scaled_guided_bc_v4_only_seeds": [
+            20128
+          ]
+        },
+        "v2_vs_v4": {
+          "n_evaluated": 50,
+          "contingency_table": {
+            "both_succeed": 19,
+            "scaled_guided_bc_v2_only": 1,
+            "scaled_guided_bc_v4_only": 29,
+            "both_fail": 1
+          },
+          "p_value": 5.774199962615967e-08,
+          "statistically_significant": true,
+          "scaled_guided_bc_v2_only_seeds": [
+            20109
+          ],
+          "scaled_guided_bc_v4_only_seeds": [
+            20100,
+            20101,
+            20103,
+            20104,
+            20105,
+            20106,
+            20107,
+            20108,
+            20111,
+            20112,
+            20114,
+            20117,
+            20123,
+            20124,
+            20125,
+            20128,
+            20131,
+            20132,
+            20133,
+            20135,
+            20136,
+            20138,
+            20139,
+            20140,
+            20141,
+            20142,
+            20144,
+            20146,
+            20148
+          ]
+        }
+      }
+    },
+    "Level 2 (Standard, W=3.8m)": {
+      "scaled_guided_bc_v2": {
+        "total_episodes": 50,
+        "feasible_routes": 50,
+        "infeasible_routes": 0,
+        "feasible_success_count": 46,
+        "feasible_success_rate": 0.92,
+        "feasible_success_ci95": [
+          81.16,
+          96.85
+        ],
+        "infeasible_safe_count": 0,
+        "infeasible_safe_rate": 1.0,
+        "infeasible_safe_ci95": [
+          1.0,
+          1.0
+        ],
+        "timeouts": 4,
+        "timeout_rate": 0.08,
+        "collisions": 0,
+        "collision_rate": 0.0,
+        "collision_ci95": [
+          0.0,
+          7.13
+        ],
+        "envelope_violation_episodes": 10,
+        "envelope_violation_rate": 0.2,
+        "envelope_violation_steps": 2421,
+        "envelope_violation_step_pct": 7.55,
+        "overall_min_clearance_m": 0.0003,
+        "successful_min_clearance_m": 0.0003,
+        "total_interventions": 11299,
+        "mean_interventions_per_ep": 226.0,
+        "total_lateral_reversals": 2171,
+        "mean_reversals_per_ep": 43.42,
+        "mean_flight_time_s": 30.5,
+        "mean_speed_mps": 0.515
+      },
+      "scaled_guided_bc_v3": {
+        "total_episodes": 50,
+        "feasible_routes": 50,
+        "infeasible_routes": 0,
+        "feasible_success_count": 45,
+        "feasible_success_rate": 0.9,
+        "feasible_success_ci95": [
+          78.64,
+          95.65
+        ],
+        "infeasible_safe_count": 0,
+        "infeasible_safe_rate": 1.0,
+        "infeasible_safe_ci95": [
+          1.0,
+          1.0
+        ],
+        "timeouts": 5,
+        "timeout_rate": 0.1,
+        "collisions": 0,
+        "collision_rate": 0.0,
+        "collision_ci95": [
+          0.0,
+          7.13
+        ],
+        "envelope_violation_episodes": 15,
+        "envelope_violation_rate": 0.3,
+        "envelope_violation_steps": 2063,
+        "envelope_violation_step_pct": 6.48,
+        "overall_min_clearance_m": 0.0002,
+        "successful_min_clearance_m": 0.0002,
+        "total_interventions": 11053,
+        "mean_interventions_per_ep": 221.1,
+        "total_lateral_reversals": 1472,
+        "mean_reversals_per_ep": 29.44,
+        "mean_flight_time_s": 29.79,
+        "mean_speed_mps": 0.534
+      },
+      "scaled_guided_bc_v4": {
+        "total_episodes": 50,
+        "feasible_routes": 50,
+        "infeasible_routes": 0,
+        "feasible_success_count": 44,
+        "feasible_success_rate": 0.88,
+        "feasible_success_ci95": [
+          76.2,
+          94.38
+        ],
+        "infeasible_safe_count": 0,
+        "infeasible_safe_rate": 1.0,
+        "infeasible_safe_ci95": [
+          1.0,
+          1.0
+        ],
+        "timeouts": 6,
+        "timeout_rate": 0.12,
+        "collisions": 0,
+        "collision_rate": 0.0,
+        "collision_ci95": [
+          0.0,
+          7.13
+        ],
+        "envelope_violation_episodes": 15,
+        "envelope_violation_rate": 0.3,
+        "envelope_violation_steps": 2515,
+        "envelope_violation_step_pct": 7.78,
+        "overall_min_clearance_m": 0.0003,
+        "successful_min_clearance_m": 0.0003,
+        "total_interventions": 11687,
+        "mean_interventions_per_ep": 233.7,
+        "total_lateral_reversals": 1450,
+        "mean_reversals_per_ep": 29.0,
+        "mean_flight_time_s": 29.9,
+        "mean_speed_mps": 0.528
+      },
+      "paired_comparisons": {
+        "v2_vs_v3": {
+          "n_evaluated": 50,
+          "contingency_table": {
+            "both_succeed": 43,
+            "scaled_guided_bc_v2_only": 3,
+            "scaled_guided_bc_v3_only": 2,
+            "both_fail": 2
+          },
+          "p_value": 1.0,
+          "statistically_significant": false,
+          "scaled_guided_bc_v2_only_seeds": [
+            20016,
+            20029,
+            20047
+          ],
+          "scaled_guided_bc_v3_only_seeds": [
+            20003,
+            20023
+          ]
+        },
+        "v3_vs_v4": {
+          "n_evaluated": 50,
+          "contingency_table": {
+            "both_succeed": 44,
+            "scaled_guided_bc_v3_only": 1,
+            "scaled_guided_bc_v4_only": 0,
+            "both_fail": 5
+          },
+          "p_value": 1.0,
+          "statistically_significant": false,
+          "scaled_guided_bc_v3_only_seeds": [
+            20035
+          ],
+          "scaled_guided_bc_v4_only_seeds": []
+        },
+        "v2_vs_v4": {
+          "n_evaluated": 50,
+          "contingency_table": {
+            "both_succeed": 42,
+            "scaled_guided_bc_v2_only": 4,
+            "scaled_guided_bc_v4_only": 2,
+            "both_fail": 2
+          },
+          "p_value": 0.6875,
+          "statistically_significant": false,
+          "scaled_guided_bc_v2_only_seeds": [
+            20016,
+            20029,
+            20035,
+            20047
+          ],
+          "scaled_guided_bc_v4_only_seeds": [
+            20003,
+            20023
+          ]
+        }
+      }
+    },
+    "Level 3 (Challenging, W=3.2m)": {
+      "scaled_guided_bc_v2": {
+        "total_episodes": 50,
+        "feasible_routes": 50,
+        "infeasible_routes": 0,
+        "feasible_success_count": 49,
+        "feasible_success_rate": 0.98,
+        "feasible_success_ci95": [
+          89.5,
+          99.65
+        ],
+        "infeasible_safe_count": 0,
+        "infeasible_safe_rate": 1.0,
+        "infeasible_safe_ci95": [
+          1.0,
+          1.0
+        ],
+        "timeouts": 1,
+        "timeout_rate": 0.02,
+        "collisions": 0,
+        "collision_rate": 0.0,
+        "collision_ci95": [
+          0.0,
+          7.13
+        ],
+        "envelope_violation_episodes": 13,
+        "envelope_violation_rate": 0.26,
+        "envelope_violation_steps": 1031,
+        "envelope_violation_step_pct": 3.5,
+        "overall_min_clearance_m": 0.0002,
+        "successful_min_clearance_m": 0.0002,
+        "total_interventions": 11086,
+        "mean_interventions_per_ep": 221.7,
+        "total_lateral_reversals": 2577,
+        "mean_reversals_per_ep": 51.54,
+        "mean_flight_time_s": 29.02,
+        "mean_speed_mps": 0.512
+      },
+      "scaled_guided_bc_v3": {
+        "total_episodes": 50,
+        "feasible_routes": 50,
+        "infeasible_routes": 0,
+        "feasible_success_count": 50,
+        "feasible_success_rate": 1.0,
+        "feasible_success_ci95": [
+          92.87,
+          100.0
+        ],
+        "infeasible_safe_count": 0,
+        "infeasible_safe_rate": 1.0,
+        "infeasible_safe_ci95": [
+          1.0,
+          1.0
+        ],
+        "timeouts": 0,
+        "timeout_rate": 0.0,
+        "collisions": 0,
+        "collision_rate": 0.0,
+        "collision_ci95": [
+          0.0,
+          7.13
+        ],
+        "envelope_violation_episodes": 9,
+        "envelope_violation_rate": 0.18,
+        "envelope_violation_steps": 486,
+        "envelope_violation_step_pct": 1.73,
+        "overall_min_clearance_m": 0.0001,
+        "successful_min_clearance_m": 0.0001,
+        "total_interventions": 9483,
+        "mean_interventions_per_ep": 189.7,
+        "total_lateral_reversals": 1783,
+        "mean_reversals_per_ep": 35.66,
+        "mean_flight_time_s": 28.1,
+        "mean_speed_mps": 0.55
+      },
+      "scaled_guided_bc_v4": {
+        "total_episodes": 50,
+        "feasible_routes": 50,
+        "infeasible_routes": 0,
+        "feasible_success_count": 50,
+        "feasible_success_rate": 1.0,
+        "feasible_success_ci95": [
+          92.87,
+          100.0
+        ],
+        "infeasible_safe_count": 0,
+        "infeasible_safe_rate": 1.0,
+        "infeasible_safe_ci95": [
+          1.0,
+          1.0
+        ],
+        "timeouts": 0,
+        "timeout_rate": 0.0,
+        "collisions": 0,
+        "collision_rate": 0.0,
+        "collision_ci95": [
+          0.0,
+          7.13
+        ],
+        "envelope_violation_episodes": 11,
+        "envelope_violation_rate": 0.22,
+        "envelope_violation_steps": 501,
+        "envelope_violation_step_pct": 1.78,
+        "overall_min_clearance_m": 0.0003,
+        "successful_min_clearance_m": 0.0003,
+        "total_interventions": 9438,
+        "mean_interventions_per_ep": 188.8,
+        "total_lateral_reversals": 1722,
+        "mean_reversals_per_ep": 34.44,
+        "mean_flight_time_s": 28.15,
+        "mean_speed_mps": 0.541
+      },
+      "paired_comparisons": {
+        "v2_vs_v3": {
+          "n_evaluated": 50,
+          "contingency_table": {
+            "both_succeed": 49,
+            "scaled_guided_bc_v2_only": 0,
+            "scaled_guided_bc_v3_only": 1,
+            "both_fail": 0
+          },
+          "p_value": 1.0,
+          "statistically_significant": false,
+          "scaled_guided_bc_v2_only_seeds": [],
+          "scaled_guided_bc_v3_only_seeds": [
+            20202
+          ]
+        },
+        "v3_vs_v4": {
+          "n_evaluated": 50,
+          "contingency_table": {
+            "both_succeed": 50,
+            "scaled_guided_bc_v3_only": 0,
+            "scaled_guided_bc_v4_only": 0,
+            "both_fail": 0
+          },
+          "p_value": 1.0,
+          "statistically_significant": false,
+          "scaled_guided_bc_v3_only_seeds": [],
+          "scaled_guided_bc_v4_only_seeds": []
+        },
+        "v2_vs_v4": {
+          "n_evaluated": 50,
+          "contingency_table": {
+            "both_succeed": 49,
+            "scaled_guided_bc_v2_only": 0,
+            "scaled_guided_bc_v4_only": 1,
+            "both_fail": 0
+          },
+          "p_value": 1.0,
+          "statistically_significant": false,
+          "scaled_guided_bc_v2_only_seeds": [],
+          "scaled_guided_bc_v4_only_seeds": [
+            20202
+          ]
+        }
+      }
+    },
+    "Level 4 (Boundary, W=2.8m)": {
+      "scaled_guided_bc_v2": {
+        "total_episodes": 50,
+        "feasible_routes": 25,
+        "infeasible_routes": 25,
+        "feasible_success_count": 22,
+        "feasible_success_rate": 0.88,
+        "feasible_success_ci95": [
+          70.04,
+          95.83
+        ],
+        "infeasible_safe_count": 0,
+        "infeasible_safe_rate": 0.0,
+        "infeasible_safe_ci95": [
+          0.0,
+          13.32
+        ],
+        "timeouts": 28,
+        "timeout_rate": 0.56,
+        "collisions": 0,
+        "collision_rate": 0.0,
+        "collision_ci95": [
+          0.0,
+          7.13
+        ],
+        "envelope_violation_episodes": 38,
+        "envelope_violation_rate": 0.76,
+        "envelope_violation_steps": 13374,
+        "envelope_violation_step_pct": 32.19,
+        "overall_min_clearance_m": 0.0003,
+        "successful_min_clearance_m": 0.013,
+        "total_interventions": 29535,
+        "mean_interventions_per_ep": 590.7,
+        "total_lateral_reversals": 9074,
+        "mean_reversals_per_ep": 181.48,
+        "mean_flight_time_s": 30.8,
+        "mean_speed_mps": 0.482
+      },
+      "scaled_guided_bc_v3": {
+        "total_episodes": 50,
+        "feasible_routes": 25,
+        "infeasible_routes": 25,
+        "feasible_success_count": 20,
+        "feasible_success_rate": 0.8,
+        "feasible_success_ci95": [
+          60.87,
+          91.14
+        ],
+        "infeasible_safe_count": 2,
+        "infeasible_safe_rate": 0.08,
+        "infeasible_safe_ci95": [
+          2.22,
+          24.97
+        ],
+        "timeouts": 28,
+        "timeout_rate": 0.56,
+        "collisions": 0,
+        "collision_rate": 0.0,
+        "collision_ci95": [
+          0.0,
+          7.13
+        ],
+        "envelope_violation_episodes": 38,
+        "envelope_violation_rate": 0.76,
+        "envelope_violation_steps": 13959,
+        "envelope_violation_step_pct": 33.86,
+        "overall_min_clearance_m": 0.0004,
+        "successful_min_clearance_m": 0.0007,
+        "total_interventions": 30090,
+        "mean_interventions_per_ep": 601.8,
+        "total_lateral_reversals": 3534,
+        "mean_reversals_per_ep": 70.68,
+        "mean_flight_time_s": 30.05,
+        "mean_speed_mps": 0.482
+      },
+      "scaled_guided_bc_v4": {
+        "total_episodes": 50,
+        "feasible_routes": 25,
+        "infeasible_routes": 25,
+        "feasible_success_count": 21,
+        "feasible_success_rate": 0.84,
+        "feasible_success_ci95": [
+          65.35,
+          93.6
+        ],
+        "infeasible_safe_count": 2,
+        "infeasible_safe_rate": 0.08,
+        "infeasible_safe_ci95": [
+          2.22,
+          24.97
+        ],
+        "timeouts": 27,
+        "timeout_rate": 0.54,
+        "collisions": 0,
+        "collision_rate": 0.0,
+        "collision_ci95": [
+          0.0,
+          7.13
+        ],
+        "envelope_violation_episodes": 38,
+        "envelope_violation_rate": 0.76,
+        "envelope_violation_steps": 12676,
+        "envelope_violation_step_pct": 31.04,
+        "overall_min_clearance_m": 0.0005,
+        "successful_min_clearance_m": 0.0369,
+        "total_interventions": 29805,
+        "mean_interventions_per_ep": 596.1,
+        "total_lateral_reversals": 3139,
+        "mean_reversals_per_ep": 62.78,
+        "mean_flight_time_s": 30.07,
+        "mean_speed_mps": 0.456
+      },
+      "paired_comparisons": {
+        "v2_vs_v3": {
+          "n_evaluated": 50,
+          "contingency_table": {
+            "both_succeed": 19,
+            "scaled_guided_bc_v2_only": 3,
+            "scaled_guided_bc_v3_only": 3,
+            "both_fail": 25
+          },
+          "p_value": 1.0,
+          "statistically_significant": false,
+          "scaled_guided_bc_v2_only_seeds": [
+            20332,
+            20334,
+            20344
+          ],
+          "scaled_guided_bc_v3_only_seeds": [
+            20319,
+            20331,
+            20348
+          ]
+        },
+        "v3_vs_v4": {
+          "n_evaluated": 50,
+          "contingency_table": {
+            "both_succeed": 22,
+            "scaled_guided_bc_v3_only": 0,
+            "scaled_guided_bc_v4_only": 1,
+            "both_fail": 27
+          },
+          "p_value": 1.0,
+          "statistically_significant": false,
+          "scaled_guided_bc_v3_only_seeds": [],
+          "scaled_guided_bc_v4_only_seeds": [
+            20334
+          ]
+        },
+        "v2_vs_v4": {
+          "n_evaluated": 50,
+          "contingency_table": {
+            "both_succeed": 20,
+            "scaled_guided_bc_v2_only": 2,
+            "scaled_guided_bc_v4_only": 3,
+            "both_fail": 25
+          },
+          "p_value": 1.0,
+          "statistically_significant": false,
+          "scaled_guided_bc_v2_only_seeds": [
+            20332,
+            20344
+          ],
+          "scaled_guided_bc_v4_only_seeds": [
+            20319,
+            20331,
+            20348
+          ]
+        }
+      }
+    }
+  },
+  "overall": {
+    "scaled_guided_bc_v2": {
+      "total_episodes": 200,
+      "feasible_routes": 175,
+      "infeasible_routes": 25,
+      "feasible_success_count": 137,
+      "feasible_success_rate": 0.7829,
+      "feasible_success_ci95": [
+        71.61,
+        83.75
+      ],
+      "infeasible_safe_count": 0,
+      "infeasible_safe_rate": 0.0,
+      "infeasible_safe_ci95": [
+        0.0,
+        13.32
+      ],
+      "overall_effective_success_count": 137,
+      "overall_effective_success_rate": 0.685,
+      "timeouts": 63,
+      "timeout_rate": 0.315,
+      "collisions": 0,
+      "collision_rate": 0.0,
+      "collision_ci95": [
+        0.0,
+        1.88
+      ],
+      "envelope_violation_episodes": 86,
+      "envelope_violation_rate": 0.43,
+      "envelope_violation_steps": 22103,
+      "envelope_violation_step_pct": 14.93,
+      "overall_min_clearance_m": 0.0002,
+      "successful_min_clearance_m": 0.0002,
+      "total_interventions": 64072,
+      "mean_interventions_per_ep": 320.4,
+      "total_lateral_reversals": 16978,
+      "mean_reversals_per_ep": 84.89,
+      "mean_flight_time_s": 31.06,
+      "mean_speed_mps": 0.503
+    },
+    "scaled_guided_bc_v3": {
+      "total_episodes": 200,
+      "feasible_routes": 175,
+      "infeasible_routes": 25,
+      "feasible_success_count": 162,
+      "feasible_success_rate": 0.9257,
+      "feasible_success_ci95": [
+        87.71,
+        95.61
+      ],
+      "infeasible_safe_count": 2,
+      "infeasible_safe_rate": 0.08,
+      "infeasible_safe_ci95": [
+        2.22,
+        24.97
+      ],
+      "overall_effective_success_count": 164,
+      "overall_effective_success_rate": 0.82,
+      "timeouts": 36,
+      "timeout_rate": 0.18,
+      "collisions": 0,
+      "collision_rate": 0.0,
+      "collision_ci95": [
+        0.0,
+        1.88
+      ],
+      "envelope_violation_episodes": 65,
+      "envelope_violation_rate": 0.325,
+      "envelope_violation_steps": 16702,
+      "envelope_violation_step_pct": 12.36,
+      "overall_min_clearance_m": 0.0001,
+      "successful_min_clearance_m": 0.0001,
+      "total_interventions": 56193,
+      "mean_interventions_per_ep": 281.0,
+      "total_lateral_reversals": 7582,
+      "mean_reversals_per_ep": 37.91,
+      "mean_flight_time_s": 30.23,
+      "mean_speed_mps": 0.527
+    },
+    "scaled_guided_bc_v4": {
+      "total_episodes": 200,
+      "feasible_routes": 175,
+      "infeasible_routes": 25,
+      "feasible_success_count": 163,
+      "feasible_success_rate": 0.9314,
+      "feasible_success_ci95": [
+        88.4,
+        96.03
+      ],
+      "infeasible_safe_count": 2,
+      "infeasible_safe_rate": 0.08,
+      "infeasible_safe_ci95": [
+        2.22,
+        24.97
+      ],
+      "overall_effective_success_count": 165,
+      "overall_effective_success_rate": 0.825,
+      "timeouts": 35,
+      "timeout_rate": 0.175,
+      "collisions": 0,
+      "collision_rate": 0.0,
+      "collision_ci95": [
+        0.0,
+        1.88
+      ],
+      "envelope_violation_episodes": 66,
+      "envelope_violation_rate": 0.33,
+      "envelope_violation_steps": 15861,
+      "envelope_violation_step_pct": 11.73,
+      "overall_min_clearance_m": 0.0003,
+      "successful_min_clearance_m": 0.0003,
+      "total_interventions": 56590,
+      "mean_interventions_per_ep": 282.9,
+      "total_lateral_reversals": 7097,
+      "mean_reversals_per_ep": 35.48,
+      "mean_flight_time_s": 30.36,
+      "mean_speed_mps": 0.518
+    },
+    "paired_comparisons": {
+      "v2_vs_v3": {
+        "n_evaluated": 200,
+        "contingency_table": {
+          "both_succeed": 130,
+          "scaled_guided_bc_v2_only": 7,
+          "scaled_guided_bc_v3_only": 34,
+          "both_fail": 29
+        },
+        "p_value": 2.532080361561384e-05,
+        "statistically_significant": true,
+        "scaled_guided_bc_v2_only_seeds": [
+          20109,
+          20016,
+          20029,
+          20047,
+          20332,
+          20334,
+          20344
+        ],
+        "scaled_guided_bc_v3_only_seeds": [
+          20100,
+          20101,
+          20103,
+          20104,
+          20105,
+          20106,
+          20107,
+          20108,
+          20111,
+          20112,
+          20114,
+          20117,
+          20123,
+          20124,
+          20125,
+          20131,
+          20132,
+          20133,
+          20135,
+          20136,
+          20138,
+          20139,
+          20140,
+          20141,
+          20142,
+          20144,
+          20146,
+          20148,
+          20003,
+          20023,
+          20202,
+          20319,
+          20331,
+          20348
+        ]
+      },
+      "v3_vs_v4": {
+        "n_evaluated": 200,
+        "contingency_table": {
+          "both_succeed": 163,
+          "scaled_guided_bc_v3_only": 1,
+          "scaled_guided_bc_v4_only": 2,
+          "both_fail": 34
+        },
+        "p_value": 1.0,
+        "statistically_significant": false,
+        "scaled_guided_bc_v3_only_seeds": [
+          20035
+        ],
+        "scaled_guided_bc_v4_only_seeds": [
+          20128,
+          20334
+        ]
+      },
+      "v2_vs_v4": {
+        "n_evaluated": 200,
+        "contingency_table": {
+          "both_succeed": 130,
+          "scaled_guided_bc_v2_only": 7,
+          "scaled_guided_bc_v4_only": 35,
+          "both_fail": 28
+        },
+        "p_value": 1.5097200957825407e-05,
+        "statistically_significant": true,
+        "scaled_guided_bc_v2_only_seeds": [
+          20109,
+          20016,
+          20029,
+          20035,
+          20047,
+          20332,
+          20344
+        ],
+        "scaled_guided_bc_v4_only_seeds": [
+          20100,
+          20101,
+          20103,
+          20104,
+          20105,
+          20106,
+          20107,
+          20108,
+          20111,
+          20112,
+          20114,
+          20117,
+          20123,
+          20124,
+          20125,
+          20128,
+          20131,
+          20132,
+          20133,
+          20135,
+          20136,
+          20138,
+          20139,
+          20140,
+          20141,
+          20142,
+          20144,
+          20146,
+          20148,
+          20003,
+          20023,
+          20202,
+          20319,
+          20331,
+          20348
+        ]
+      }
+    }
+  },
+  "deadlock_case_studies": {
+    "20332": {
+      "scaled_guided_bc_v2": {
+        "status": "SUCCESS",
+        "total_steps": 589,
+        "flight_time_s": 29.45,
+        "min_obstacle_clearance_m": 0.0474,
+        "min_wall_clearance_m": 0.3238,
+        "envelope_violation_steps": 23,
+        "safety_interventions": 233
+      },
+      "scaled_guided_bc_v3": {
+        "status": "TIMEOUT",
+        "total_steps": 1000,
+        "flight_time_s": 50.0,
+        "min_obstacle_clearance_m": 0.1193,
+        "min_wall_clearance_m": 0.3359,
+        "envelope_violation_steps": 632,
+        "safety_interventions": 935
+      },
+      "scaled_guided_bc_v4": {
+        "status": "TIMEOUT",
+        "total_steps": 1000,
+        "flight_time_s": 50.0,
+        "min_obstacle_clearance_m": 0.1208,
+        "min_wall_clearance_m": 0.3412,
+        "envelope_violation_steps": 658,
+        "safety_interventions": 934
+      }
+    },
+    "20334": {
+      "scaled_guided_bc_v2": {
+        "status": "SUCCESS",
+        "total_steps": 634,
+        "flight_time_s": 31.7,
+        "min_obstacle_clearance_m": 0.0679,
+        "min_wall_clearance_m": 0.3276,
+        "envelope_violation_steps": 21,
+        "safety_interventions": 290
+      },
+      "scaled_guided_bc_v3": {
+        "status": "TIMEOUT",
+        "total_steps": 1000,
+        "flight_time_s": 50.0,
+        "min_obstacle_clearance_m": 0.1154,
+        "min_wall_clearance_m": 0.3425,
+        "envelope_violation_steps": 656,
+        "safety_interventions": 942
+      },
+      "scaled_guided_bc_v4": {
+        "status": "SUCCESS",
+        "total_steps": 672,
+        "flight_time_s": 33.6,
+        "min_obstacle_clearance_m": 0.0892,
+        "min_wall_clearance_m": 0.3279,
+        "envelope_violation_steps": 20,
+        "safety_interventions": 356
+      }
+    },
+    "20344": {
+      "scaled_guided_bc_v2": {
+        "status": "SUCCESS",
+        "total_steps": 691,
+        "flight_time_s": 34.55,
+        "min_obstacle_clearance_m": 0.013,
+        "min_wall_clearance_m": 0.317,
+        "envelope_violation_steps": 28,
+        "safety_interventions": 397
+      },
+      "scaled_guided_bc_v3": {
+        "status": "TIMEOUT",
+        "total_steps": 1000,
+        "flight_time_s": 50.0,
+        "min_obstacle_clearance_m": 0.1501,
+        "min_wall_clearance_m": 0.346,
+        "envelope_violation_steps": 0,
+        "safety_interventions": 847
+      },
+      "scaled_guided_bc_v4": {
+        "status": "TIMEOUT",
+        "total_steps": 1000,
+        "flight_time_s": 50.0,
+        "min_obstacle_clearance_m": 0.1473,
+        "min_wall_clearance_m": 0.3408,
+        "envelope_violation_steps": 5,
+        "safety_interventions": 857
+      }
+    }
+  }
+}

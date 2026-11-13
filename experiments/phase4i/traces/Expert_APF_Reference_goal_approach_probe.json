@@ -1,0 +1,2936 @@
+{
+  "controller_id": "Expert_APF_Reference",
+  "scenario_name": "goal_approach_probe",
+  "seed": 1,
+  "total_steps": 106,
+  "total_time_s": 5.3,
+  "termination_reason": "success",
+  "is_success": true,
+  "final_position": [
+    9.153,
+    0.0,
+    1.0
+  ],
+  "final_speed_mps": 0.153,
+  "final_goal_distance_m": 0.347,
+  "forward_progress_m": 1.653,
+  "obstacles_cleared_count": 3,
+  "cleared_pillars": [
+    1,
+    2,
+    3
+  ],
+  "time_budget": {
+    "total_steps": 106,
+    "total_time_s": 5.3,
+    "step_counts": {
+      "unconstrained_forward": 18,
+      "supervisor_constrained_forward": 0,
+      "lateral_avoidance": 0,
+      "braking_or_stopping": 0,
+      "retreat_or_recovery": 0,
+      "re_acceleration": 0,
+      "goal_approach_braking": 0,
+      "other_unclassified": 88
+    },
+    "time_spent_s": {
+      "unconstrained_forward": 0.9,
+      "supervisor_constrained_forward": 0.0,
+      "lateral_avoidance": 0.0,
+      "braking_or_stopping": 0.0,
+      "retreat_or_recovery": 0.0,
+      "re_acceleration": 0.0,
+      "goal_approach_braking": 0.0,
+      "other_unclassified": 4.4
+    },
+    "time_percentages": {
+      "unconstrained_forward": 16.98,
+      "supervisor_constrained_forward": 0.0,
+      "lateral_avoidance": 0.0,
+      "braking_or_stopping": 0.0,
+      "retreat_or_recovery": 0.0,
+      "re_acceleration": 0.0,
+      "goal_approach_braking": 0.0,
+      "other_unclassified": 83.02
+    },
+    "encounters": {
+      "caution_entries": 0,
+      "complete_stops": 0,
+      "stalled_recoveries": 0,
+      "obstacles_cleared": 3
+    }
+  },
+  "progress_loss_diagnostics": {
+    "first_loss_x_m": null,
+    "first_loss_step": null,
+    "first_loss_obstacle": null,
+    "first_loss_reason": null,
+    "total_braking_time_s": 0.0,
+    "mean_reaccel_time_s": null,
+    "reaccel_event_count": 0
+  },
+  "step_traces": [
+    {
+      "step": 0,
+      "time_s": 0.0,
+      "pos": [
+        7.5,
+        0.0,
+        1.0
+      ],
+      "vel": [
+        0.5,
+        0.0,
+        0.0
+      ],
+      "goal_dist": 2.0,
+      "fwd_progress": 0.0,
+      "raw_vx": 0.65,
+      "raw_vy": 0.0,
+      "safe_vx": 0.6,
+      "safe_vy": 0.0,
+      "safety_state": "nominal",
+      "safety_reason": "All safety envelopes satisfied",
+      "front_clearance_m": 1.168,
+      "min_obs_clearance_m": 10.0,
+      "min_wall_clearance_m": 0.85,
+      "mode": "unconstrained_forward",
+      "active_pillar": "Pillar_3"
+    },
+    {
+      "step": 1,
+      "time_s": 0.05,
+      "pos": [
+        7.53,
+        0.0,
+        1.0
+      ],
+      "vel": [
+        0.598,
+        0.0,
+        0.0
+      ],
+      "goal_dist": 1.97,
+      "fwd_progress": 0.03,
+      "raw_vx": 0.65,
+      "raw_vy": 0.0,
+      "safe_vx": 0.6,
+      "safe_vy": 0.0,
+      "safety_state": "nominal",
+      "safety_reason": "All safety envelopes satisfied",
+      "front_clearance_m": 1.154,
+      "min_obs_clearance_m": 10.0,
+      "min_wall_clearance_m": 0.85,
+      "mode": "unconstrained_forward",
+      "active_pillar": "Pillar_3"
+    },
+    {
+      "step": 2,
+      "time_s": 0.1,
+      "pos": [
+        7.56,
+        0.0,
+        1.0
+      ],
+      "vel": [
+        0.598,
+        0.0,
+        0.0
+      ],
+      "goal_dist": 1.94,
+      "fwd_progress": 0.06,
+      "raw_vx": 0.65,
+      "raw_vy": 0.0,
+      "safe_vx": 0.6,
+      "safe_vy": 0.0,
+      "safety_state": "nominal",
+      "safety_reason": "All safety envelopes satisfied",
+      "front_clearance_m": 1.131,
+      "min_obs_clearance_m": 10.0,
+      "min_wall_clearance_m": 0.85,
+      "mode": "unconstrained_forward",
+      "active_pillar": "Pillar_3"
+    },
+    {
+      "step": 3,
+      "time_s": 0.15,
+      "pos": [
+        7.59,
+        0.0,
+        1.0
+      ],
+      "vel": [
+        0.598,
+        0.0,
+        0.0
+      ],
+      "goal_dist": 1.91,
+      "fwd_progress": 0.09,
+      "raw_vx": 0.65,
+      "raw_vy": 0.0,
+      "safe_vx": 0.6,
+      "safe_vy": 0.0,
+      "safety_state": "nominal",
+      "safety_reason": "All safety envelopes satisfied",
+      "front_clearance_m": 1.124,
+      "min_obs_clearance_m": 10.0,
+      "min_wall_clearance_m": 0.85,
+      "mode": "unconstrained_forward",
+      "active_pillar": "Pillar_3"
+    },
+    {
+      "step": 4,
+      "time_s": 0.2,
+      "pos": [
+        7.62,
+        0.0,
+        1.0
+      ],
+      "vel": [
+        0.598,
+        0.0,
+        0.0
+      ],
+      "goal_dist": 1.88,
+      "fwd_progress": 0.12,
+      "raw_vx": 0.65,
+      "raw_vy": 0.0,
+      "safe_vx": 0.6,
+      "safe_vy": 0.0,
+      "safety_state": "nominal",
+      "safety_reason": "All safety envelopes satisfied",
+      "front_clearance_m": 1.145,
+      "min_obs_clearance_m": 10.0,
+      "min_wall_clearance_m": 0.85,
+      "mode": "unconstrained_forward",
+      "active_pillar": "Pillar_3"
+    },
+    {
+      "step": 5,
+      "time_s": 0.25,
+      "pos": [
+        7.65,
+        0.0,
+        1.0
+      ],
+      "vel": [
+        0.598,
+        0.0,
+        0.0
+      ],
+      "goal_dist": 1.85,
+      "fwd_progress": 0.15,
+      "raw_vx": 0.65,
+      "raw_vy": 0.0,
+      "safe_vx": 0.6,
+      "safe_vy": 0.0,
+      "safety_state": "nominal",
+      "safety_reason": "All safety envelopes satisfied",
+      "front_clearance_m": 1.137,
+      "min_obs_clearance_m": 10.0,
+      "min_wall_clearance_m": 0.85,
+      "mode": "unconstrained_forward",
+      "active_pillar": "Pillar_3"
+    },
+    {
+      "step": 6,
+      "time_s": 0.3,
+      "pos": [
+        7.679,
+        0.0,
+        1.0
+      ],
+      "vel": [
+        0.598,
+        0.0,
+        0.0
+      ],
+      "goal_dist": 1.821,
+      "fwd_progress": 0.179,
+      "raw_vx": 0.65,
+      "raw_vy": 0.0,
+      "safe_vx": 0.6,
+      "safe_vy": 0.0,
+      "safety_state": "nominal",
+      "safety_reason": "All safety envelopes satisfied",
+      "front_clearance_m": 1.131,
+      "min_obs_clearance_m": 10.0,
+      "min_wall_clearance_m": 0.85,
+      "mode": "unconstrained_forward",
+      "active_pillar": "Pillar_3"
+    },
+    {
+      "step": 7,
+      "time_s": 0.35,
+      "pos": [
+        7.709,
+        0.0,
+        1.0
+      ],
+      "vel": [
+        0.598,
+        0.0,
+        0.0
+      ],
+      "goal_dist": 1.791,
+      "fwd_progress": 0.209,
+      "raw_vx": 0.65,
+      "raw_vy": 0.0,
+      "safe_vx": 0.6,
+      "safe_vy": 0.0,
+      "safety_state": "nominal",
+      "safety_reason": "All safety envelopes satisfied",
+      "front_clearance_m": 1.162,
+      "min_obs_clearance_m": 10.0,
+      "min_wall_clearance_m": 0.85,
+      "mode": "unconstrained_forward",
+      "active_pillar": "Pillar_3"
+    },
+    {
+      "step": 8,
+      "time_s": 0.4,
+      "pos": [
+        7.739,
+        0.0,
+        1.0
+      ],
+      "vel": [
+        0.598,
+        0.0,
+        0.0
+      ],
+      "goal_dist": 1.761,
+      "fwd_progress": 0.239,
+      "raw_vx": 0.65,
+      "raw_vy": 0.0,
+      "safe_vx": 0.6,
+      "safe_vy": 0.0,
+      "safety_state": "nominal",
+      "safety_reason": "All safety envelopes satisfied",
+      "front_clearance_m": 1.144,
+      "min_obs_clearance_m": 10.0,
+      "min_wall_clearance_m": 0.85,
+      "mode": "unconstrained_forward",
+      "active_pillar": "Pillar_3"
+    },
+    {
+      "step": 9,
+      "time_s": 0.45,
+      "pos": [
+        7.769,
+        0.0,
+        1.0
+      ],
+      "vel": [
+        0.598,
+        0.0,
+        0.0
+      ],
+      "goal_dist": 1.731,
+      "fwd_progress": 0.269,
+      "raw_vx": 0.65,
+      "raw_vy": 0.0,
+      "safe_vx": 0.6,
+      "safe_vy": 0.0,
+      "safety_state": "nominal",
+      "safety_reason": "All safety envelopes satisfied",
+      "front_clearance_m": 1.154,
+      "min_obs_clearance_m": 10.0,
+      "min_wall_clearance_m": 0.85,
+      "mode": "unconstrained_forward",
+      "active_pillar": "Pillar_3"
+    },
+    {
+      "step": 10,
+      "time_s": 0.5,
+      "pos": [
+        7.799,
+        0.0,
+        1.0
+      ],
+      "vel": [
+        0.598,
+        0.0,
+        0.0
+      ],
+      "goal_dist": 1.701,
+      "fwd_progress": 0.299,
+      "raw_vx": 0.65,
+      "raw_vy": 0.0,
+      "safe_vx": 0.6,
+      "safe_vy": 0.0,
+      "safety_state": "nominal",
+      "safety_reason": "All safety envelopes satisfied",
+      "front_clearance_m": 1.14,
+      "min_obs_clearance_m": 10.0,
+      "min_wall_clearance_m": 0.85,
+      "mode": "unconstrained_forward",
+      "active_pillar": "Pillar_3"
+    },
+    {
+      "step": 11,
+      "time_s": 0.55,
+      "pos": [
+        7.829,
+        0.0,
+        1.0
+      ],
+      "vel": [
+        0.598,
+        0.0,
+        0.0
+      ],
+      "goal_dist": 1.671,
+      "fwd_progress": 0.329,
+      "raw_vx": 0.65,
+      "raw_vy": 0.0,
+      "safe_vx": 0.6,
+      "safe_vy": 0.0,
+      "safety_state": "nominal",
+      "safety_reason": "All safety envelopes satisfied",
+      "front_clearance_m": 1.149,
+      "min_obs_clearance_m": 10.0,
+      "min_wall_clearance_m": 0.85,
+      "mode": "unconstrained_forward",
+      "active_pillar": "Pillar_3"
+    },
+    {
+      "step": 12,
+      "time_s": 0.6,
+      "pos": [
+        7.859,
+        0.0,
+        1.0
+      ],
+      "vel": [
+        0.598,
+        0.0,
+        0.0
+      ],
+      "goal_dist": 1.641,
+      "fwd_progress": 0.359,
+      "raw_vx": 0.65,
+      "raw_vy": 0.0,
+      "safe_vx": 0.6,
+      "safe_vy": 0.0,
+      "safety_state": "nominal",
+      "safety_reason": "All safety envelopes satisfied",
+      "front_clearance_m": 1.142,
+      "min_obs_clearance_m": 10.0,
+      "min_wall_clearance_m": 0.85,
+      "mode": "unconstrained_forward",
+      "active_pillar": "Pillar_3"
+    },
+    {
+      "step": 13,
+      "time_s": 0.65,
+      "pos": [
+        7.889,
+        0.0,
+        1.0
+      ],
+      "vel": [
+        0.598,
+        0.0,
+        0.0
+      ],
+      "goal_dist": 1.611,
+      "fwd_progress": 0.389,
+      "raw_vx": 0.65,
+      "raw_vy": 0.0,
+      "safe_vx": 0.6,
+      "safe_vy": 0.0,
+      "safety_state": "nominal",
+      "safety_reason": "All safety envelopes satisfied",
+      "front_clearance_m": 1.139,
+      "min_obs_clearance_m": 10.0,
+      "min_wall_clearance_m": 0.85,
+      "mode": "unconstrained_forward",
+      "active_pillar": "Pillar_3"
+    },
+    {
+      "step": 14,
+      "time_s": 0.7,
+      "pos": [
+        7.919,
+        0.0,
+        1.0
+      ],
+      "vel": [
+        0.598,
+        0.0,
+        0.0
+      ],
+      "goal_dist": 1.581,
+      "fwd_progress": 0.419,
+      "raw_vx": 0.65,
+      "raw_vy": 0.0,
+      "safe_vx": 0.6,
+      "safe_vy": 0.0,
+      "safety_state": "nominal",
+      "safety_reason": "All safety envelopes satisfied",
+      "front_clearance_m": 1.121,
+      "min_obs_clearance_m": 10.0,
+      "min_wall_clearance_m": 0.85,
+      "mode": "unconstrained_forward",
+      "active_pillar": "Pillar_3"
+    },
+    {
+      "step": 15,
+      "time_s": 0.75,
+      "pos": [
+        7.949,
+        0.0,
+        1.0
+      ],
+      "vel": [
+        0.598,
+        0.0,
+        0.0
+      ],
+      "goal_dist": 1.551,
+      "fwd_progress": 0.449,
+      "raw_vx": 0.65,
+      "raw_vy": 0.0,
+      "safe_vx": 0.6,
+      "safe_vy": 0.0,
+      "safety_state": "nominal",
+      "safety_reason": "All safety envelopes satisfied",
+      "front_clearance_m": 1.121,
+      "min_obs_clearance_m": 10.0,
+      "min_wall_clearance_m": 0.85,
+      "mode": "unconstrained_forward",
+      "active_pillar": "Pillar_3"
+    },
+    {
+      "step": 16,
+      "time_s": 0.8,
+      "pos": [
+        7.978,
+        0.0,
+        1.0
+      ],
+      "vel": [
+        0.598,
+        0.0,
+        0.0
+      ],
+      "goal_dist": 1.522,
+      "fwd_progress": 0.478,
+      "raw_vx": 0.65,
+      "raw_vy": 0.0,
+      "safe_vx": 0.6,
+      "safe_vy": 0.0,
+      "safety_state": "nominal",
+      "safety_reason": "All safety envelopes satisfied",
+      "front_clearance_m": 1.14,
+      "min_obs_clearance_m": 10.0,
+      "min_wall_clearance_m": 0.85,
+      "mode": "unconstrained_forward",
+      "active_pillar": "Pillar_3"
+    },
+    {
+      "step": 17,
+      "time_s": 0.85,
+      "pos": [
+        8.008,
+        0.0,
+        1.0
+      ],
+      "vel": [
+        0.598,
+        0.0,
+        0.0
+      ],
+      "goal_dist": 1.492,
+      "fwd_progress": 0.508,
+      "raw_vx": 0.28,
+      "raw_vy": 0.0,
+      "safe_vx": 0.28,
+      "safe_vy": 0.0,
+      "safety_state": "nominal",
+      "safety_reason": "All safety envelopes satisfied",
+      "front_clearance_m": 1.141,
+      "min_obs_clearance_m": 10.0,
+      "min_wall_clearance_m": 0.85,
+      "mode": "unconstrained_forward",
+      "active_pillar": null
+    },
+    {
+      "step": 18,
+      "time_s": 0.9,
+      "pos": [
+        8.022,
+        0.0,
+        1.0
+      ],
+      "vel": [
+        0.279,
+        0.0,
+        0.0
+      ],
+      "goal_dist": 1.478,
+      "fwd_progress": 0.522,
+      "raw_vx": 0.28,
+      "raw_vy": 0.0,
+      "safe_vx": 0.28,
+      "safe_vy": 0.0,
+      "safety_state": "nominal",
+      "safety_reason": "All safety envelopes satisfied",
+      "front_clearance_m": 1.15,
+      "min_obs_clearance_m": 10.0,
+      "min_wall_clearance_m": 0.85,
+      "mode": "other_unclassified",
+      "active_pillar": null
+    },
+    {
+      "step": 19,
+      "time_s": 0.95,
+      "pos": [
+        8.036,
+        0.0,
+        1.0
+      ],
+      "vel": [
+        0.279,
+        0.0,
+        0.0
+      ],
+      "goal_dist": 1.464,
+      "fwd_progress": 0.536,
+      "raw_vx": 0.28,
+      "raw_vy": 0.0,
+      "safe_vx": 0.28,
+      "safe_vy": 0.0,
+      "safety_state": "nominal",
+      "safety_reason": "All safety envelopes satisfied",
+      "front_clearance_m": 1.138,
+      "min_obs_clearance_m": 10.0,
+      "min_wall_clearance_m": 0.85,
+      "mode": "other_unclassified",
+      "active_pillar": null
+    },
+    {
+      "step": 20,
+      "time_s": 1.0,
+      "pos": [
+        8.05,
+        0.0,
+        1.0
+      ],
+      "vel": [
+        0.279,
+        0.0,
+        0.0
+      ],
+      "goal_dist": 1.45,
+      "fwd_progress": 0.55,
+      "raw_vx": 0.28,
+      "raw_vy": 0.0,
+      "safe_vx": 0.28,
+      "safe_vy": 0.0,
+      "safety_state": "nominal",
+      "safety_reason": "All safety envelopes satisfied",
+      "front_clearance_m": 1.129,
+      "min_obs_clearance_m": 10.0,
+      "min_wall_clearance_m": 0.85,
+      "mode": "other_unclassified",
+      "active_pillar": null
+    },
+    {
+      "step": 21,
+      "time_s": 1.05,
+      "pos": [
+        8.064,
+        0.0,
+        1.0
+      ],
+      "vel": [
+        0.279,
+        0.0,
+        0.0
+      ],
+      "goal_dist": 1.436,
+      "fwd_progress": 0.564,
+      "raw_vx": 0.28,
+      "raw_vy": 0.0,
+      "safe_vx": 0.28,
+      "safe_vy": 0.0,
+      "safety_state": "nominal",
+      "safety_reason": "All safety envelopes satisfied",
+      "front_clearance_m": 1.175,
+      "min_obs_clearance_m": 10.0,
+      "min_wall_clearance_m": 0.85,
+      "mode": "other_unclassified",
+      "active_pillar": null
+    },
+    {
+      "step": 22,
+      "time_s": 1.1,
+      "pos": [
+        8.078,
+        0.0,
+        1.0
+      ],
+      "vel": [
+        0.279,
+        0.0,
+        0.0
+      ],
+      "goal_dist": 1.422,
+      "fwd_progress": 0.578,
+      "raw_vx": 0.28,
+      "raw_vy": 0.0,
+      "safe_vx": 0.28,
+      "safe_vy": 0.0,
+      "safety_state": "nominal",
+      "safety_reason": "All safety envelopes satisfied",
+      "front_clearance_m": 1.173,
+      "min_obs_clearance_m": 10.0,
+      "min_wall_clearance_m": 0.85,
+      "mode": "other_unclassified",
+      "active_pillar": null
+    },
+    {
+      "step": 23,
+      "time_s": 1.15,
+      "pos": [
+        8.092,
+        0.0,
+        1.0
+      ],
+      "vel": [
+        0.279,
+        0.0,
+        0.0
+      ],
+      "goal_dist": 1.408,
+      "fwd_progress": 0.592,
+      "raw_vx": 0.28,
+      "raw_vy": 0.0,
+      "safe_vx": 0.28,
+      "safe_vy": 0.0,
+      "safety_state": "nominal",
+      "safety_reason": "All safety envelopes satisfied",
+      "front_clearance_m": 1.141,
+      "min_obs_clearance_m": 10.0,
+      "min_wall_clearance_m": 0.85,
+      "mode": "other_unclassified",
+      "active_pillar": null
+    },
+    {
+      "step": 24,
+      "time_s": 1.2,
+      "pos": [
+        8.106,
+        0.0,
+        1.0
+      ],
+      "vel": [
+        0.279,
+        0.0,
+        0.0
+      ],
+      "goal_dist": 1.394,
+      "fwd_progress": 0.606,
+      "raw_vx": 0.28,
+      "raw_vy": 0.0,
+      "safe_vx": 0.28,
+      "safe_vy": 0.0,
+      "safety_state": "nominal",
+      "safety_reason": "All safety envelopes satisfied",
+      "front_clearance_m": 1.126,
+      "min_obs_clearance_m": 10.0,
+      "min_wall_clearance_m": 0.85,
+      "mode": "other_unclassified",
+      "active_pillar": null
+    },
+    {
+      "step": 25,
+      "time_s": 1.25,
+      "pos": [
+        8.12,
+        0.0,
+        1.0
+      ],
+      "vel": [
+        0.279,
+        0.0,
+        0.0
+      ],
+      "goal_dist": 1.38,
+      "fwd_progress": 0.62,
+      "raw_vx": 0.28,
+      "raw_vy": 0.0,
+      "safe_vx": 0.28,
+      "safe_vy": 0.0,
+      "safety_state": "nominal",
+      "safety_reason": "All safety envelopes satisfied",
+      "front_clearance_m": 1.117,
+      "min_obs_clearance_m": 10.0,
+      "min_wall_clearance_m": 0.85,
+      "mode": "other_unclassified",
+      "active_pillar": null
+    },
+    {
+      "step": 26,
+      "time_s": 1.3,
+      "pos": [
+        8.134,
+        0.0,
+        1.0
+      ],
+      "vel": [
+        0.279,
+        0.0,
+        0.0
+      ],
+      "goal_dist": 1.366,
+      "fwd_progress": 0.634,
+      "raw_vx": 0.28,
+      "raw_vy": 0.0,
+      "safe_vx": 0.28,
+      "safe_vy": 0.0,
+      "safety_state": "nominal",
+      "safety_reason": "All safety envelopes satisfied",
+      "front_clearance_m": 1.126,
+      "min_obs_clearance_m": 10.0,
+      "min_wall_clearance_m": 0.85,
+      "mode": "other_unclassified",
+      "active_pillar": null
+    },
+    {
+      "step": 27,
+      "time_s": 1.35,
+      "pos": [
+        8.148,
+        0.0,
+        1.0
+      ],
+      "vel": [
+        0.279,
+        0.0,
+        0.0
+      ],
+      "goal_dist": 1.352,
+      "fwd_progress": 0.648,
+      "raw_vx": 0.28,
+      "raw_vy": 0.0,
+      "safe_vx": 0.28,
+      "safe_vy": 0.0,
+      "safety_state": "nominal",
+      "safety_reason": "All safety envelopes satisfied",
+      "front_clearance_m": 1.136,
+      "min_obs_clearance_m": 10.0,
+      "min_wall_clearance_m": 0.85,
+      "mode": "other_unclassified",
+      "active_pillar": null
+    },
+    {
+      "step": 28,
+      "time_s": 1.4,
+      "pos": [
+        8.162,
+        0.0,
+        1.0
+      ],
+      "vel": [
+        0.279,
+        0.0,
+        0.0
+      ],
+      "goal_dist": 1.338,
+      "fwd_progress": 0.662,
+      "raw_vx": 0.28,
+      "raw_vy": 0.0,
+      "safe_vx": 0.28,
+      "safe_vy": 0.0,
+      "safety_state": "nominal",
+      "safety_reason": "All safety envelopes satisfied",
+      "front_clearance_m": 1.084,
+      "min_obs_clearance_m": 10.0,
+      "min_wall_clearance_m": 0.85,
+      "mode": "other_unclassified",
+      "active_pillar": null
+    },
+    {
+      "step": 29,
+      "time_s": 1.45,
+      "pos": [
+        8.176,
+        0.0,
+        1.0
+      ],
+      "vel": [
+        0.279,
+        0.0,
+        0.0
+      ],
+      "goal_dist": 1.324,
+      "fwd_progress": 0.676,
+      "raw_vx": 0.28,
+      "raw_vy": 0.0,
+      "safe_vx": 0.28,
+      "safe_vy": 0.0,
+      "safety_state": "nominal",
+      "safety_reason": "All safety envelopes satisfied",
+      "front_clearance_m": 1.142,
+      "min_obs_clearance_m": 10.0,
+      "min_wall_clearance_m": 0.85,
+      "mode": "other_unclassified",
+      "active_pillar": null
+    },
+    {
+      "step": 30,
+      "time_s": 1.5,
+      "pos": [
+        8.19,
+        0.0,
+        1.0
+      ],
+      "vel": [
+        0.279,
+        0.0,
+        0.0
+      ],
+      "goal_dist": 1.31,
+      "fwd_progress": 0.69,
+      "raw_vx": 0.28,
+      "raw_vy": 0.0,
+      "safe_vx": 0.28,
+      "safe_vy": 0.0,
+      "safety_state": "nominal",
+      "safety_reason": "All safety envelopes satisfied",
+      "front_clearance_m": 1.129,
+      "min_obs_clearance_m": 10.0,
+      "min_wall_clearance_m": 0.85,
+      "mode": "other_unclassified",
+      "active_pillar": null
+    },
+    {
+      "step": 31,
+      "time_s": 1.55,
+      "pos": [
+        8.204,
+        0.0,
+        1.0
+      ],
+      "vel": [
+        0.279,
+        0.0,
+        0.0
+      ],
+      "goal_dist": 1.296,
+      "fwd_progress": 0.704,
+      "raw_vx": 0.28,
+      "raw_vy": 0.0,
+      "safe_vx": 0.28,
+      "safe_vy": 0.0,
+      "safety_state": "nominal",
+      "safety_reason": "All safety envelopes satisfied",
+      "front_clearance_m": 1.139,
+      "min_obs_clearance_m": 10.0,
+      "min_wall_clearance_m": 0.85,
+      "mode": "other_unclassified",
+      "active_pillar": null
+    },
+    {
+      "step": 32,
+      "time_s": 1.6,
+      "pos": [
+        8.218,
+        0.0,
+        1.0
+      ],
+      "vel": [
+        0.279,
+        0.0,
+        0.0
+      ],
+      "goal_dist": 1.282,
+      "fwd_progress": 0.718,
+      "raw_vx": 0.28,
+      "raw_vy": 0.0,
+      "safe_vx": 0.28,
+      "safe_vy": 0.0,
+      "safety_state": "nominal",
+      "safety_reason": "All safety envelopes satisfied",
+      "front_clearance_m": 1.131,
+      "min_obs_clearance_m": 10.0,
+      "min_wall_clearance_m": 0.85,
+      "mode": "other_unclassified",
+      "active_pillar": null
+    },
+    {
+      "step": 33,
+      "time_s": 1.65,
+      "pos": [
+        8.232,
+        0.0,
+        1.0
+      ],
+      "vel": [
+        0.279,
+        0.0,
+        0.0
+      ],
+      "goal_dist": 1.268,
+      "fwd_progress": 0.732,
+      "raw_vx": 0.28,
+      "raw_vy": 0.0,
+      "safe_vx": 0.28,
+      "safe_vy": 0.0,
+      "safety_state": "nominal",
+      "safety_reason": "All safety envelopes satisfied",
+      "front_clearance_m": 1.142,
+      "min_obs_clearance_m": 10.0,
+      "min_wall_clearance_m": 0.85,
+      "mode": "other_unclassified",
+      "active_pillar": null
+    },
+    {
+      "step": 34,
+      "time_s": 1.7,
+      "pos": [
+        8.246,
+        0.0,
+        1.0
+      ],
+      "vel": [
+        0.279,
+        0.0,
+        0.0
+      ],
+      "goal_dist": 1.254,
+      "fwd_progress": 0.746,
+      "raw_vx": 0.28,
+      "raw_vy": 0.0,
+      "safe_vx": 0.28,
+      "safe_vy": 0.0,
+      "safety_state": "nominal",
+      "safety_reason": "All safety envelopes satisfied",
+      "front_clearance_m": 1.167,
+      "min_obs_clearance_m": 10.0,
+      "min_wall_clearance_m": 0.85,
+      "mode": "other_unclassified",
+      "active_pillar": null
+    },
+    {
+      "step": 35,
+      "time_s": 1.75,
+      "pos": [
+        8.26,
+        0.0,
+        1.0
+      ],
+      "vel": [
+        0.279,
+        0.0,
+        0.0
+      ],
+      "goal_dist": 1.24,
+      "fwd_progress": 0.76,
+      "raw_vx": 0.28,
+      "raw_vy": 0.0,
+      "safe_vx": 0.28,
+      "safe_vy": 0.0,
+      "safety_state": "nominal",
+      "safety_reason": "All safety envelopes satisfied",
+      "front_clearance_m": 1.155,
+      "min_obs_clearance_m": 10.0,
+      "min_wall_clearance_m": 0.85,
+      "mode": "other_unclassified",
+      "active_pillar": null
+    },
+    {
+      "step": 36,
+      "time_s": 1.8,
+      "pos": [
+        8.274,
+        0.0,
+        1.0
+      ],
+      "vel": [
+        0.279,
+        0.0,
+        0.0
+      ],
+      "goal_dist": 1.226,
+      "fwd_progress": 0.774,
+      "raw_vx": 0.28,
+      "raw_vy": 0.0,
+      "safe_vx": 0.28,
+      "safe_vy": 0.0,
+      "safety_state": "nominal",
+      "safety_reason": "All safety envelopes satisfied",
+      "front_clearance_m": 1.148,
+      "min_obs_clearance_m": 10.0,
+      "min_wall_clearance_m": 0.85,
+      "mode": "other_unclassified",
+      "active_pillar": null
+    },
+    {
+      "step": 37,
+      "time_s": 1.85,
+      "pos": [
+        8.288,
+        0.0,
+        1.0
+      ],
+      "vel": [
+        0.279,
+        0.0,
+        0.0
+      ],
+      "goal_dist": 1.212,
+      "fwd_progress": 0.788,
+      "raw_vx": 0.28,
+      "raw_vy": 0.0,
+      "safe_vx": 0.28,
+      "safe_vy": 0.0,
+      "safety_state": "nominal",
+      "safety_reason": "All safety envelopes satisfied",
+      "front_clearance_m": 1.127,
+      "min_obs_clearance_m": 10.0,
+      "min_wall_clearance_m": 0.85,
+      "mode": "other_unclassified",
+      "active_pillar": null
+    },
+    {
+      "step": 38,
+      "time_s": 1.9,
+      "pos": [
+        8.302,
+        0.0,
+        1.0
+      ],
+      "vel": [
+        0.279,
+        0.0,
+        0.0
+      ],
+      "goal_dist": 1.198,
+      "fwd_progress": 0.802,
+      "raw_vx": 0.28,
+      "raw_vy": 0.0,
+      "safe_vx": 0.28,
+      "safe_vy": 0.0,
+      "safety_state": "nominal",
+      "safety_reason": "All safety envelopes satisfied",
+      "front_clearance_m": 1.169,
+      "min_obs_clearance_m": 10.0,
+      "min_wall_clearance_m": 0.85,
+      "mode": "other_unclassified",
+      "active_pillar": null
+    },
+    {
+      "step": 39,
+      "time_s": 1.95,
+      "pos": [
+        8.316,
+        0.0,
+        1.0
+      ],
+      "vel": [
+        0.279,
+        0.0,
+        0.0
+      ],
+      "goal_dist": 1.184,
+      "fwd_progress": 0.816,
+      "raw_vx": 0.28,
+      "raw_vy": 0.0,
+      "safe_vx": 0.28,
+      "safe_vy": 0.0,
+      "safety_state": "nominal",
+      "safety_reason": "All safety envelopes satisfied",
+      "front_clearance_m": 1.166,
+      "min_obs_clearance_m": 10.0,
+      "min_wall_clearance_m": 0.85,
+      "mode": "other_unclassified",
+      "active_pillar": null
+    },
+    {
+      "step": 40,
+      "time_s": 2.0,
+      "pos": [
+        8.33,
+        0.0,
+        1.0
+      ],
+      "vel": [
+        0.279,
+        0.0,
+        0.0
+      ],
+      "goal_dist": 1.17,
+      "fwd_progress": 0.83,
+      "raw_vx": 0.28,
+      "raw_vy": 0.0,
+      "safe_vx": 0.28,
+      "safe_vy": 0.0,
+      "safety_state": "nominal",
+      "safety_reason": "All safety envelopes satisfied",
+      "front_clearance_m": 1.135,
+      "min_obs_clearance_m": 10.0,
+      "min_wall_clearance_m": 0.85,
+      "mode": "other_unclassified",
+      "active_pillar": null
+    },
+    {
+      "step": 41,
+      "time_s": 2.05,
+      "pos": [
+        8.344,
+        0.0,
+        1.0
+      ],
+      "vel": [
+        0.279,
+        0.0,
+        0.0
+      ],
+      "goal_dist": 1.156,
+      "fwd_progress": 0.844,
+      "raw_vx": 0.28,
+      "raw_vy": 0.0,
+      "safe_vx": 0.28,
+      "safe_vy": 0.0,
+      "safety_state": "nominal",
+      "safety_reason": "All safety envelopes satisfied",
+      "front_clearance_m": 1.126,
+      "min_obs_clearance_m": 10.0,
+      "min_wall_clearance_m": 0.85,
+      "mode": "other_unclassified",
+      "active_pillar": null
+    },
+    {
+      "step": 42,
+      "time_s": 2.1,
+      "pos": [
+        8.357,
+        0.0,
+        1.0
+      ],
+      "vel": [
+        0.279,
+        0.0,
+        0.0
+      ],
+      "goal_dist": 1.143,
+      "fwd_progress": 0.857,
+      "raw_vx": 0.28,
+      "raw_vy": 0.0,
+      "safe_vx": 0.28,
+      "safe_vy": 0.0,
+      "safety_state": "nominal",
+      "safety_reason": "All safety envelopes satisfied",
+      "front_clearance_m": 1.164,
+      "min_obs_clearance_m": 10.0,
+      "min_wall_clearance_m": 0.85,
+      "mode": "other_unclassified",
+      "active_pillar": null
+    },
+    {
+      "step": 43,
+      "time_s": 2.15,
+      "pos": [
+        8.371,
+        0.0,
+        1.0
+      ],
+      "vel": [
+        0.279,
+        0.0,
+        0.0
+      ],
+      "goal_dist": 1.129,
+      "fwd_progress": 0.871,
+      "raw_vx": 0.28,
+      "raw_vy": 0.0,
+      "safe_vx": 0.28,
+      "safe_vy": 0.0,
+      "safety_state": "nominal",
+      "safety_reason": "All safety envelopes satisfied",
+      "front_clearance_m": 1.125,
+      "min_obs_clearance_m": 10.0,
+      "min_wall_clearance_m": 0.85,
+      "mode": "other_unclassified",
+      "active_pillar": null
+    },
+    {
+      "step": 44,
+      "time_s": 2.2,
+      "pos": [
+        8.385,
+        0.0,
+        1.0
+      ],
+      "vel": [
+        0.279,
+        0.0,
+        0.0
+      ],
+      "goal_dist": 1.115,
+      "fwd_progress": 0.885,
+      "raw_vx": 0.28,
+      "raw_vy": 0.0,
+      "safe_vx": 0.28,
+      "safe_vy": 0.0,
+      "safety_state": "nominal",
+      "safety_reason": "All safety envelopes satisfied",
+      "front_clearance_m": 1.132,
+      "min_obs_clearance_m": 10.0,
+      "min_wall_clearance_m": 0.85,
+      "mode": "other_unclassified",
+      "active_pillar": null
+    },
+    {
+      "step": 45,
+      "time_s": 2.25,
+      "pos": [
+        8.399,
+        0.0,
+        1.0
+      ],
+      "vel": [
+        0.279,
+        0.0,
+        0.0
+      ],
+      "goal_dist": 1.101,
+      "fwd_progress": 0.899,
+      "raw_vx": 0.28,
+      "raw_vy": 0.0,
+      "safe_vx": 0.28,
+      "safe_vy": 0.0,
+      "safety_state": "nominal",
+      "safety_reason": "All safety envelopes satisfied",
+      "front_clearance_m": 1.137,
+      "min_obs_clearance_m": 10.0,
+      "min_wall_clearance_m": 0.85,
+      "mode": "other_unclassified",
+      "active_pillar": null
+    },
+    {
+      "step": 46,
+      "time_s": 2.3,
+      "pos": [
+        8.413,
+        0.0,
+        1.0
+      ],
+      "vel": [
+        0.279,
+        0.0,
+        0.0
+      ],
+      "goal_dist": 1.087,
+      "fwd_progress": 0.913,
+      "raw_vx": 0.28,
+      "raw_vy": 0.0,
+      "safe_vx": 0.28,
+      "safe_vy": 0.0,
+      "safety_state": "nominal",
+      "safety_reason": "All safety envelopes satisfied",
+      "front_clearance_m": 1.155,
+      "min_obs_clearance_m": 10.0,
+      "min_wall_clearance_m": 0.85,
+      "mode": "other_unclassified",
+      "active_pillar": null
+    },
+    {
+      "step": 47,
+      "time_s": 2.35,
+      "pos": [
+        8.427,
+        0.0,
+        1.0
+      ],
+      "vel": [
+        0.279,
+        0.0,
+        0.0
+      ],
+      "goal_dist": 1.073,
+      "fwd_progress": 0.927,
+      "raw_vx": 0.28,
+      "raw_vy": 0.0,
+      "safe_vx": 0.28,
+      "safe_vy": 0.0,
+      "safety_state": "nominal",
+      "safety_reason": "All safety envelopes satisfied",
+      "front_clearance_m": 1.119,
+      "min_obs_clearance_m": 10.0,
+      "min_wall_clearance_m": 0.85,
+      "mode": "other_unclassified",
+      "active_pillar": null
+    },
+    {
+      "step": 48,
+      "time_s": 2.4,
+      "pos": [
+        8.441,
+        0.0,
+        1.0
+      ],
+      "vel": [
+        0.279,
+        0.0,
+        0.0
+      ],
+      "goal_dist": 1.059,
+      "fwd_progress": 0.941,
+      "raw_vx": 0.28,
+      "raw_vy": 0.0,
+      "safe_vx": 0.28,
+      "safe_vy": 0.0,
+      "safety_state": "nominal",
+      "safety_reason": "All safety envelopes satisfied",
+      "front_clearance_m": 1.154,
+      "min_obs_clearance_m": 10.0,
+      "min_wall_clearance_m": 0.85,
+      "mode": "other_unclassified",
+      "active_pillar": null
+    },
+    {
+      "step": 49,
+      "time_s": 2.45,
+      "pos": [
+        8.455,
+        0.0,
+        1.0
+      ],
+      "vel": [
+        0.279,
+        0.0,
+        0.0
+      ],
+      "goal_dist": 1.045,
+      "fwd_progress": 0.955,
+      "raw_vx": 0.28,
+      "raw_vy": 0.0,
+      "safe_vx": 0.28,
+      "safe_vy": 0.0,
+      "safety_state": "nominal",
+      "safety_reason": "All safety envelopes satisfied",
+      "front_clearance_m": 1.126,
+      "min_obs_clearance_m": 10.0,
+      "min_wall_clearance_m": 0.85,
+      "mode": "other_unclassified",
+      "active_pillar": null
+    },
+    {
+      "step": 50,
+      "time_s": 2.5,
+      "pos": [
+        8.469,
+        0.0,
+        1.0
+      ],
+      "vel": [
+        0.279,
+        0.0,
+        0.0
+      ],
+      "goal_dist": 1.031,
+      "fwd_progress": 0.969,
+      "raw_vx": 0.28,
+      "raw_vy": 0.0,
+      "safe_vx": 0.28,
+      "safe_vy": 0.0,
+      "safety_state": "nominal",
+      "safety_reason": "All safety envelopes satisfied",
+      "front_clearance_m": 1.144,
+      "min_obs_clearance_m": 10.0,
+      "min_wall_clearance_m": 0.85,
+      "mode": "other_unclassified",
+      "active_pillar": null
+    },
+    {
+      "step": 51,
+      "time_s": 2.55,
+      "pos": [
+        8.483,
+        0.0,
+        1.0
+      ],
+      "vel": [
+        0.279,
+        0.0,
+        0.0
+      ],
+      "goal_dist": 1.017,
+      "fwd_progress": 0.983,
+      "raw_vx": 0.28,
+      "raw_vy": 0.0,
+      "safe_vx": 0.28,
+      "safe_vy": 0.0,
+      "safety_state": "nominal",
+      "safety_reason": "All safety envelopes satisfied",
+      "front_clearance_m": 1.128,
+      "min_obs_clearance_m": 10.0,
+      "min_wall_clearance_m": 0.85,
+      "mode": "other_unclassified",
+      "active_pillar": null
+    },
+    {
+      "step": 52,
+      "time_s": 2.6,
+      "pos": [
+        8.497,
+        0.0,
+        1.0
+      ],
+      "vel": [
+        0.279,
+        0.0,
+        0.0
+      ],
+      "goal_dist": 1.003,
+      "fwd_progress": 0.997,
+      "raw_vx": 0.28,
+      "raw_vy": 0.0,
+      "safe_vx": 0.28,
+      "safe_vy": 0.0,
+      "safety_state": "nominal",
+      "safety_reason": "All safety envelopes satisfied",
+      "front_clearance_m": 1.153,
+      "min_obs_clearance_m": 10.0,
+      "min_wall_clearance_m": 0.85,
+      "mode": "other_unclassified",
+      "active_pillar": null
+    },
+    {
+      "step": 53,
+      "time_s": 2.65,
+      "pos": [
+        8.511,
+        0.0,
+        1.0
+      ],
+      "vel": [
+        0.279,
+        0.0,
+        0.0
+      ],
+      "goal_dist": 0.989,
+      "fwd_progress": 1.011,
+      "raw_vx": 0.28,
+      "raw_vy": 0.0,
+      "safe_vx": 0.28,
+      "safe_vy": 0.0,
+      "safety_state": "nominal",
+      "safety_reason": "All safety envelopes satisfied",
+      "front_clearance_m": 1.116,
+      "min_obs_clearance_m": 10.0,
+      "min_wall_clearance_m": 0.85,
+      "mode": "other_unclassified",
+      "active_pillar": null
+    },
+    {
+      "step": 54,
+      "time_s": 2.7,
+      "pos": [
+        8.525,
+        0.0,
+        1.0
+      ],
+      "vel": [
+        0.279,
+        0.0,
+        0.0
+      ],
+      "goal_dist": 0.975,
+      "fwd_progress": 1.025,
+      "raw_vx": 0.28,
+      "raw_vy": 0.0,
+      "safe_vx": 0.28,
+      "safe_vy": 0.0,
+      "safety_state": "nominal",
+      "safety_reason": "All safety envelopes satisfied",
+      "front_clearance_m": 1.148,
+      "min_obs_clearance_m": 10.0,
+      "min_wall_clearance_m": 0.85,
+      "mode": "other_unclassified",
+      "active_pillar": null
+    },
+    {
+      "step": 55,
+      "time_s": 2.75,
+      "pos": [
+        8.539,
+        0.0,
+        1.0
+      ],
+      "vel": [
+        0.279,
+        0.0,
+        0.0
+      ],
+      "goal_dist": 0.961,
+      "fwd_progress": 1.039,
+      "raw_vx": 0.28,
+      "raw_vy": 0.0,
+      "safe_vx": 0.28,
+      "safe_vy": 0.0,
+      "safety_state": "nominal",
+      "safety_reason": "All safety envelopes satisfied",
+      "front_clearance_m": 1.159,
+      "min_obs_clearance_m": 10.0,
+      "min_wall_clearance_m": 0.85,
+      "mode": "other_unclassified",
+      "active_pillar": null
+    },
+    {
+      "step": 56,
+      "time_s": 2.8,
+      "pos": [
+        8.553,
+        0.0,
+        1.0
+      ],
+      "vel": [
+        0.279,
+        0.0,
+        0.0
+      ],
+      "goal_dist": 0.947,
+      "fwd_progress": 1.053,
+      "raw_vx": 0.28,
+      "raw_vy": 0.0,
+      "safe_vx": 0.28,
+      "safe_vy": 0.0,
+      "safety_state": "nominal",
+      "safety_reason": "All safety envelopes satisfied",
+      "front_clearance_m": 1.138,
+      "min_obs_clearance_m": 10.0,
+      "min_wall_clearance_m": 0.85,
+      "mode": "other_unclassified",
+      "active_pillar": null
+    },
+    {
+      "step": 57,
+      "time_s": 2.85,
+      "pos": [
+        8.567,
+        0.0,
+        1.0
+      ],
+      "vel": [
+        0.279,
+        0.0,
+        0.0
+      ],
+      "goal_dist": 0.933,
+      "fwd_progress": 1.067,
+      "raw_vx": 0.28,
+      "raw_vy": 0.0,
+      "safe_vx": 0.28,
+      "safe_vy": 0.0,
+      "safety_state": "nominal",
+      "safety_reason": "All safety envelopes satisfied",
+      "front_clearance_m": 1.116,
+      "min_obs_clearance_m": 10.0,
+      "min_wall_clearance_m": 0.85,
+      "mode": "other_unclassified",
+      "active_pillar": null
+    },
+    {
+      "step": 58,
+      "time_s": 2.9,
+      "pos": [
+        8.581,
+        0.0,
+        1.0
+      ],
+      "vel": [
+        0.279,
+        0.0,
+        0.0
+      ],
+      "goal_dist": 0.919,
+      "fwd_progress": 1.081,
+      "raw_vx": 0.28,
+      "raw_vy": 0.0,
+      "safe_vx": 0.28,
+      "safe_vy": 0.0,
+      "safety_state": "nominal",
+      "safety_reason": "All safety envelopes satisfied",
+      "front_clearance_m": 1.138,
+      "min_obs_clearance_m": 10.0,
+      "min_wall_clearance_m": 0.85,
+      "mode": "other_unclassified",
+      "active_pillar": null
+    },
+    {
+      "step": 59,
+      "time_s": 2.95,
+      "pos": [
+        8.595,
+        0.0,
+        1.0
+      ],
+      "vel": [
+        0.279,
+        0.0,
+        0.0
+      ],
+      "goal_dist": 0.905,
+      "fwd_progress": 1.095,
+      "raw_vx": 0.28,
+      "raw_vy": 0.0,
+      "safe_vx": 0.28,
+      "safe_vy": 0.0,
+      "safety_state": "nominal",
+      "safety_reason": "All safety envelopes satisfied",
+      "front_clearance_m": 1.133,
+      "min_obs_clearance_m": 10.0,
+      "min_wall_clearance_m": 0.85,
+      "mode": "other_unclassified",
+      "active_pillar": null
+    },
+    {
+      "step": 60,
+      "time_s": 3.0,
+      "pos": [
+        8.609,
+        0.0,
+        1.0
+      ],
+      "vel": [
+        0.279,
+        0.0,
+        0.0
+      ],
+      "goal_dist": 0.891,
+      "fwd_progress": 1.109,
+      "raw_vx": 0.28,
+      "raw_vy": 0.0,
+      "safe_vx": 0.28,
+      "safe_vy": 0.0,
+      "safety_state": "nominal",
+      "safety_reason": "All safety envelopes satisfied",
+      "front_clearance_m": 1.138,
+      "min_obs_clearance_m": 10.0,
+      "min_wall_clearance_m": 0.85,
+      "mode": "other_unclassified",
+      "active_pillar": null
+    },
+    {
+      "step": 61,
+      "time_s": 3.05,
+      "pos": [
+        8.623,
+        0.0,
+        1.0
+      ],
+      "vel": [
+        0.279,
+        0.0,
+        0.0
+      ],
+      "goal_dist": 0.877,
+      "fwd_progress": 1.123,
+      "raw_vx": 0.28,
+      "raw_vy": 0.0,
+      "safe_vx": 0.28,
+      "safe_vy": 0.0,
+      "safety_state": "nominal",
+      "safety_reason": "All safety envelopes satisfied",
+      "front_clearance_m": 1.17,
+      "min_obs_clearance_m": 10.0,
+      "min_wall_clearance_m": 0.85,
+      "mode": "other_unclassified",
+      "active_pillar": null
+    },
+    {
+      "step": 62,
+      "time_s": 3.1,
+      "pos": [
+        8.637,
+        0.0,
+        1.0
+      ],
+      "vel": [
+        0.279,
+        0.0,
+        0.0
+      ],
+      "goal_dist": 0.863,
+      "fwd_progress": 1.137,
+      "raw_vx": 0.28,
+      "raw_vy": 0.0,
+      "safe_vx": 0.28,
+      "safe_vy": 0.0,
+      "safety_state": "nominal",
+      "safety_reason": "All safety envelopes satisfied",
+      "front_clearance_m": 1.179,
+      "min_obs_clearance_m": 10.0,
+      "min_wall_clearance_m": 0.85,
+      "mode": "other_unclassified",
+      "active_pillar": null
+    },
+    {
+      "step": 63,
+      "time_s": 3.15,
+      "pos": [
+        8.651,
+        0.0,
+        1.0
+      ],
+      "vel": [
+        0.279,
+        0.0,
+        0.0
+      ],
+      "goal_dist": 0.849,
+      "fwd_progress": 1.151,
+      "raw_vx": 0.28,
+      "raw_vy": 0.0,
+      "safe_vx": 0.28,
+      "safe_vy": 0.0,
+      "safety_state": "nominal",
+      "safety_reason": "All safety envelopes satisfied",
+      "front_clearance_m": 1.131,
+      "min_obs_clearance_m": 10.0,
+      "min_wall_clearance_m": 0.85,
+      "mode": "other_unclassified",
+      "active_pillar": null
+    },
+    {
+      "step": 64,
+      "time_s": 3.2,
+      "pos": [
+        8.665,
+        0.0,
+        1.0
+      ],
+      "vel": [
+        0.279,
+        0.0,
+        0.0
+      ],
+      "goal_dist": 0.835,
+      "fwd_progress": 1.165,
+      "raw_vx": 0.28,
+      "raw_vy": 0.0,
+      "safe_vx": 0.28,
+      "safe_vy": 0.0,
+      "safety_state": "nominal",
+      "safety_reason": "All safety envelopes satisfied",
+      "front_clearance_m": 1.128,
+      "min_obs_clearance_m": 10.0,
+      "min_wall_clearance_m": 0.85,
+      "mode": "other_unclassified",
+      "active_pillar": null
+    },
+    {
+      "step": 65,
+      "time_s": 3.25,
+      "pos": [
+        8.679,
+        0.0,
+        1.0
+      ],
+      "vel": [
+        0.279,
+        0.0,
+        0.0
+      ],
+      "goal_dist": 0.821,
+      "fwd_progress": 1.179,
+      "raw_vx": 0.28,
+      "raw_vy": 0.0,
+      "safe_vx": 0.28,
+      "safe_vy": 0.0,
+      "safety_state": "nominal",
+      "safety_reason": "All safety envelopes satisfied",
+      "front_clearance_m": 1.127,
+      "min_obs_clearance_m": 10.0,
+      "min_wall_clearance_m": 0.85,
+      "mode": "other_unclassified",
+      "active_pillar": null
+    },
+    {
+      "step": 66,
+      "time_s": 3.3,
+      "pos": [
+        8.693,
+        0.0,
+        1.0
+      ],
+      "vel": [
+        0.279,
+        0.0,
+        0.0
+      ],
+      "goal_dist": 0.807,
+      "fwd_progress": 1.193,
+      "raw_vx": 0.28,
+      "raw_vy": 0.0,
+      "safe_vx": 0.28,
+      "safe_vy": 0.0,
+      "safety_state": "nominal",
+      "safety_reason": "All safety envelopes satisfied",
+      "front_clearance_m": 1.146,
+      "min_obs_clearance_m": 10.0,
+      "min_wall_clearance_m": 0.85,
+      "mode": "other_unclassified",
+      "active_pillar": null
+    },
+    {
+      "step": 67,
+      "time_s": 3.35,
+      "pos": [
+        8.707,
+        0.0,
+        1.0
+      ],
+      "vel": [
+        0.279,
+        0.0,
+        0.0
+      ],
+      "goal_dist": 0.793,
+      "fwd_progress": 1.207,
+      "raw_vx": 0.28,
+      "raw_vy": 0.0,
+      "safe_vx": 0.28,
+      "safe_vy": 0.0,
+      "safety_state": "nominal",
+      "safety_reason": "All safety envelopes satisfied",
+      "front_clearance_m": 1.144,
+      "min_obs_clearance_m": 10.0,
+      "min_wall_clearance_m": 0.85,
+      "mode": "other_unclassified",
+      "active_pillar": null
+    },
+    {
+      "step": 68,
+      "time_s": 3.4,
+      "pos": [
+        8.721,
+        0.0,
+        1.0
+      ],
+      "vel": [
+        0.279,
+        0.0,
+        0.0
+      ],
+      "goal_dist": 0.779,
+      "fwd_progress": 1.221,
+      "raw_vx": 0.28,
+      "raw_vy": 0.0,
+      "safe_vx": 0.28,
+      "safe_vy": 0.0,
+      "safety_state": "nominal",
+      "safety_reason": "All safety envelopes satisfied",
+      "front_clearance_m": 1.123,
+      "min_obs_clearance_m": 10.0,
+      "min_wall_clearance_m": 0.85,
+      "mode": "other_unclassified",
+      "active_pillar": null
+    },
+    {
+      "step": 69,
+      "time_s": 3.45,
+      "pos": [
+        8.735,
+        0.0,
+        1.0
+      ],
+      "vel": [
+        0.279,
+        0.0,
+        0.0
+      ],
+      "goal_dist": 0.765,
+      "fwd_progress": 1.235,
+      "raw_vx": 0.28,
+      "raw_vy": 0.0,
+      "safe_vx": 0.28,
+      "safe_vy": 0.0,
+      "safety_state": "nominal",
+      "safety_reason": "All safety envelopes satisfied",
+      "front_clearance_m": 1.149,
+      "min_obs_clearance_m": 10.0,
+      "min_wall_clearance_m": 0.85,
+      "mode": "other_unclassified",
+      "active_pillar": null
+    },
+    {
+      "step": 70,
+      "time_s": 3.5,
+      "pos": [
+        8.748,
+        0.0,
+        1.0
+      ],
+      "vel": [
+        0.279,
+        0.0,
+        0.0
+      ],
+      "goal_dist": 0.752,
+      "fwd_progress": 1.248,
+      "raw_vx": 0.28,
+      "raw_vy": 0.0,
+      "safe_vx": 0.28,
+      "safe_vy": 0.0,
+      "safety_state": "nominal",
+      "safety_reason": "All safety envelopes satisfied",
+      "front_clearance_m": 1.113,
+      "min_obs_clearance_m": 10.0,
+      "min_wall_clearance_m": 0.85,
+      "mode": "other_unclassified",
+      "active_pillar": null
+    },
+    {
+      "step": 71,
+      "time_s": 3.55,
+      "pos": [
+        8.762,
+        0.0,
+        1.0
+      ],
+      "vel": [
+        0.279,
+        0.0,
+        0.0
+      ],
+      "goal_dist": 0.738,
+      "fwd_progress": 1.262,
+      "raw_vx": 0.28,
+      "raw_vy": 0.0,
+      "safe_vx": 0.28,
+      "safe_vy": 0.0,
+      "safety_state": "nominal",
+      "safety_reason": "All safety envelopes satisfied",
+      "front_clearance_m": 1.143,
+      "min_obs_clearance_m": 10.0,
+      "min_wall_clearance_m": 0.85,
+      "mode": "other_unclassified",
+      "active_pillar": null
+    },
+    {
+      "step": 72,
+      "time_s": 3.6,
+      "pos": [
+        8.776,
+        0.0,
+        1.0
+      ],
+      "vel": [
+        0.279,
+        0.0,
+        0.0
+      ],
+      "goal_dist": 0.724,
+      "fwd_progress": 1.276,
+      "raw_vx": 0.28,
+      "raw_vy": 0.0,
+      "safe_vx": 0.28,
+      "safe_vy": 0.0,
+      "safety_state": "nominal",
+      "safety_reason": "All safety envelopes satisfied",
+      "front_clearance_m": 1.137,
+      "min_obs_clearance_m": 10.0,
+      "min_wall_clearance_m": 0.85,
+      "mode": "other_unclassified",
+      "active_pillar": null
+    },
+    {
+      "step": 73,
+      "time_s": 3.65,
+      "pos": [
+        8.79,
+        0.0,
+        1.0
+      ],
+      "vel": [
+        0.279,
+        0.0,
+        0.0
+      ],
+      "goal_dist": 0.71,
+      "fwd_progress": 1.29,
+      "raw_vx": 0.28,
+      "raw_vy": 0.0,
+      "safe_vx": 0.28,
+      "safe_vy": 0.0,
+      "safety_state": "nominal",
+      "safety_reason": "All safety envelopes satisfied",
+      "front_clearance_m": 1.168,
+      "min_obs_clearance_m": 10.0,
+      "min_wall_clearance_m": 0.85,
+      "mode": "other_unclassified",
+      "active_pillar": null
+    },
+    {
+      "step": 74,
+      "time_s": 3.7,
+      "pos": [
+        8.804,
+        0.0,
+        1.0
+      ],
+      "vel": [
+        0.279,
+        0.0,
+        0.0
+      ],
+      "goal_dist": 0.696,
+      "fwd_progress": 1.304,
+      "raw_vx": 0.28,
+      "raw_vy": 0.0,
+      "safe_vx": 0.28,
+      "safe_vy": 0.0,
+      "safety_state": "nominal",
+      "safety_reason": "All safety envelopes satisfied",
+      "front_clearance_m": 1.133,
+      "min_obs_clearance_m": 10.0,
+      "min_wall_clearance_m": 0.85,
+      "mode": "other_unclassified",
+      "active_pillar": null
+    },
+    {
+      "step": 75,
+      "time_s": 3.75,
+      "pos": [
+        8.818,
+        0.0,
+        1.0
+      ],
+      "vel": [
+        0.279,
+        0.0,
+        0.0
+      ],
+      "goal_dist": 0.682,
+      "fwd_progress": 1.318,
+      "raw_vx": 0.28,
+      "raw_vy": 0.0,
+      "safe_vx": 0.28,
+      "safe_vy": 0.0,
+      "safety_state": "nominal",
+      "safety_reason": "All safety envelopes satisfied",
+      "front_clearance_m": 1.12,
+      "min_obs_clearance_m": 10.0,
+      "min_wall_clearance_m": 0.85,
+      "mode": "other_unclassified",
+      "active_pillar": null
+    },
+    {
+      "step": 76,
+      "time_s": 3.8,
+      "pos": [
+        8.832,
+        0.0,
+        1.0
+      ],
+      "vel": [
+        0.279,
+        0.0,
+        0.0
+      ],
+      "goal_dist": 0.668,
+      "fwd_progress": 1.332,
+      "raw_vx": 0.28,
+      "raw_vy": 0.0,
+      "safe_vx": 0.28,
+      "safe_vy": 0.0,
+      "safety_state": "nominal",
+      "safety_reason": "All safety envelopes satisfied",
+      "front_clearance_m": 1.151,
+      "min_obs_clearance_m": 10.0,
+      "min_wall_clearance_m": 0.85,
+      "mode": "other_unclassified",
+      "active_pillar": null
+    },
+    {
+      "step": 77,
+      "time_s": 3.85,
+      "pos": [
+        8.846,
+        0.0,
+        1.0
+      ],
+      "vel": [
+        0.279,
+        0.0,
+        0.0
+      ],
+      "goal_dist": 0.654,
+      "fwd_progress": 1.346,
+      "raw_vx": 0.28,
+      "raw_vy": 0.0,
+      "safe_vx": 0.28,
+      "safe_vy": 0.0,
+      "safety_state": "nominal",
+      "safety_reason": "All safety envelopes satisfied",
+      "front_clearance_m": 1.169,
+      "min_obs_clearance_m": 10.0,
+      "min_wall_clearance_m": 0.85,
+      "mode": "other_unclassified",
+      "active_pillar": null
+    },
+    {
+      "step": 78,
+      "time_s": 3.9,
+      "pos": [
+        8.86,
+        0.0,
+        1.0
+      ],
+      "vel": [
+        0.279,
+        0.0,
+        0.0
+      ],
+      "goal_dist": 0.64,
+      "fwd_progress": 1.36,
+      "raw_vx": 0.277,
+      "raw_vy": 0.0,
+      "safe_vx": 0.277,
+      "safe_vy": 0.0,
+      "safety_state": "nominal",
+      "safety_reason": "All safety envelopes satisfied",
+      "front_clearance_m": 1.145,
+      "min_obs_clearance_m": 10.0,
+      "min_wall_clearance_m": 0.85,
+      "mode": "other_unclassified",
+      "active_pillar": null
+    },
+    {
+      "step": 79,
+      "time_s": 3.95,
+      "pos": [
+        8.874,
+        0.0,
+        1.0
+      ],
+      "vel": [
+        0.277,
+        0.0,
+        0.0
+      ],
+      "goal_dist": 0.626,
+      "fwd_progress": 1.374,
+      "raw_vx": 0.271,
+      "raw_vy": 0.0,
+      "safe_vx": 0.271,
+      "safe_vy": 0.0,
+      "safety_state": "nominal",
+      "safety_reason": "All safety envelopes satisfied",
+      "front_clearance_m": 1.144,
+      "min_obs_clearance_m": 10.0,
+      "min_wall_clearance_m": 0.85,
+      "mode": "other_unclassified",
+      "active_pillar": null
+    },
+    {
+      "step": 80,
+      "time_s": 4.0,
+      "pos": [
+        8.888,
+        0.0,
+        1.0
+      ],
+      "vel": [
+        0.271,
+        0.0,
+        0.0
+      ],
+      "goal_dist": 0.612,
+      "fwd_progress": 1.388,
+      "raw_vx": 0.265,
+      "raw_vy": 0.0,
+      "safe_vx": 0.265,
+      "safe_vy": 0.0,
+      "safety_state": "nominal",
+      "safety_reason": "All safety envelopes satisfied",
+      "front_clearance_m": 1.129,
+      "min_obs_clearance_m": 10.0,
+      "min_wall_clearance_m": 0.85,
+      "mode": "other_unclassified",
+      "active_pillar": null
+    },
+    {
+      "step": 81,
+      "time_s": 4.05,
+      "pos": [
+        8.901,
+        0.0,
+        1.0
+      ],
+      "vel": [
+        0.265,
+        0.0,
+        0.0
+      ],
+      "goal_dist": 0.599,
+      "fwd_progress": 1.401,
+      "raw_vx": 0.26,
+      "raw_vy": 0.0,
+      "safe_vx": 0.26,
+      "safe_vy": 0.0,
+      "safety_state": "nominal",
+      "safety_reason": "All safety envelopes satisfied",
+      "front_clearance_m": 1.158,
+      "min_obs_clearance_m": 10.0,
+      "min_wall_clearance_m": 0.85,
+      "mode": "other_unclassified",
+      "active_pillar": null
+    },
+    {
+      "step": 82,
+      "time_s": 4.1,
+      "pos": [
+        8.914,
+        0.0,
+        1.0
+      ],
+      "vel": [
+        0.259,
+        0.0,
+        0.0
+      ],
+      "goal_dist": 0.586,
+      "fwd_progress": 1.414,
+      "raw_vx": 0.254,
+      "raw_vy": 0.0,
+      "safe_vx": 0.254,
+      "safe_vy": 0.0,
+      "safety_state": "nominal",
+      "safety_reason": "All safety envelopes satisfied",
+      "front_clearance_m": 1.147,
+      "min_obs_clearance_m": 10.0,
+      "min_wall_clearance_m": 0.85,
+      "mode": "other_unclassified",
+      "active_pillar": null
+    },
+    {
+      "step": 83,
+      "time_s": 4.15,
+      "pos": [
+        8.926,
+        0.0,
+        1.0
+      ],
+      "vel": [
+        0.253,
+        0.0,
+        0.0
+      ],
+      "goal_dist": 0.574,
+      "fwd_progress": 1.426,
+      "raw_vx": 0.249,
+      "raw_vy": 0.0,
+      "safe_vx": 0.249,
+      "safe_vy": 0.0,
+      "safety_state": "nominal",
+      "safety_reason": "All safety envelopes satisfied",
+      "front_clearance_m": 1.13,
+      "min_obs_clearance_m": 10.0,
+      "min_wall_clearance_m": 0.85,
+      "mode": "other_unclassified",
+      "active_pillar": null
+    },
+    {
+      "step": 84,
+      "time_s": 4.2,
+      "pos": [
+        8.939,
+        0.0,
+        1.0
+      ],
+      "vel": [
+        0.248,
+        0.0,
+        0.0
+      ],
+      "goal_dist": 0.561,
+      "fwd_progress": 1.439,
+      "raw_vx": 0.243,
+      "raw_vy": 0.0,
+      "safe_vx": 0.243,
+      "safe_vy": 0.0,
+      "safety_state": "nominal",
+      "safety_reason": "All safety envelopes satisfied",
+      "front_clearance_m": 1.143,
+      "min_obs_clearance_m": 10.0,
+      "min_wall_clearance_m": 0.85,
+      "mode": "other_unclassified",
+      "active_pillar": null
+    },
+    {
+      "step": 85,
+      "time_s": 4.25,
+      "pos": [
+        8.951,
+        0.0,
+        1.0
+      ],
+      "vel": [
+        0.243,
+        0.0,
+        0.0
+      ],
+      "goal_dist": 0.549,
+      "fwd_progress": 1.451,
+      "raw_vx": 0.238,
+      "raw_vy": 0.0,
+      "safe_vx": 0.238,
+      "safe_vy": 0.0,
+      "safety_state": "nominal",
+      "safety_reason": "All safety envelopes satisfied",
+      "front_clearance_m": 1.164,
+      "min_obs_clearance_m": 10.0,
+      "min_wall_clearance_m": 0.85,
+      "mode": "other_unclassified",
+      "active_pillar": null
+    },
+    {
+      "step": 86,
+      "time_s": 4.3,
+      "pos": [
+        8.963,
+        0.0,
+        1.0
+      ],
+      "vel": [
+        0.237,
+        0.0,
+        0.0
+      ],
+      "goal_dist": 0.537,
+      "fwd_progress": 1.463,
+      "raw_vx": 0.233,
+      "raw_vy": 0.0,
+      "safe_vx": 0.233,
+      "safe_vy": 0.0,
+      "safety_state": "nominal",
+      "safety_reason": "All safety envelopes satisfied",
+      "front_clearance_m": 1.152,
+      "min_obs_clearance_m": 10.0,
+      "min_wall_clearance_m": 0.85,
+      "mode": "other_unclassified",
+      "active_pillar": null
+    },
+    {
+      "step": 87,
+      "time_s": 4.35,
+      "pos": [
+        8.974,
+        0.0,
+        1.0
+      ],
+      "vel": [
+        0.232,
+        0.0,
+        0.0
+      ],
+      "goal_dist": 0.526,
+      "fwd_progress": 1.474,
+      "raw_vx": 0.228,
+      "raw_vy": 0.0,
+      "safe_vx": 0.228,
+      "safe_vy": 0.0,
+      "safety_state": "nominal",
+      "safety_reason": "All safety envelopes satisfied",
+      "front_clearance_m": 1.158,
+      "min_obs_clearance_m": 10.0,
+      "min_wall_clearance_m": 0.85,
+      "mode": "other_unclassified",
+      "active_pillar": null
+    },
+    {
+      "step": 88,
+      "time_s": 4.4,
+      "pos": [
+        8.986,
+        0.0,
+        1.0
+      ],
+      "vel": [
+        0.227,
+        0.0,
+        0.0
+      ],
+      "goal_dist": 0.514,
+      "fwd_progress": 1.486,
+      "raw_vx": 0.223,
+      "raw_vy": 0.0,
+      "safe_vx": 0.223,
+      "safe_vy": 0.0,
+      "safety_state": "nominal",
+      "safety_reason": "All safety envelopes satisfied",
+      "front_clearance_m": 1.137,
+      "min_obs_clearance_m": 10.0,
+      "min_wall_clearance_m": 0.85,
+      "mode": "other_unclassified",
+      "active_pillar": null
+    },
+    {
+      "step": 89,
+      "time_s": 4.45,
+      "pos": [
+        8.997,
+        0.0,
+        1.0
+      ],
+      "vel": [
+        0.222,
+        0.0,
+        0.0
+      ],
+      "goal_dist": 0.503,
+      "fwd_progress": 1.497,
+      "raw_vx": 0.218,
+      "raw_vy": 0.0,
+      "safe_vx": 0.218,
+      "safe_vy": 0.0,
+      "safety_state": "nominal",
+      "safety_reason": "All safety envelopes satisfied",
+      "front_clearance_m": 1.139,
+      "min_obs_clearance_m": 10.0,
+      "min_wall_clearance_m": 0.85,
+      "mode": "other_unclassified",
+      "active_pillar": null
+    },
+    {
+      "step": 90,
+      "time_s": 4.5,
+      "pos": [
+        9.008,
+        0.0,
+        1.0
+      ],
+      "vel": [
+        0.217,
+        0.0,
+        0.0
+      ],
+      "goal_dist": 0.492,
+      "fwd_progress": 1.508,
+      "raw_vx": 0.213,
+      "raw_vy": 0.0,
+      "safe_vx": 0.213,
+      "safe_vy": 0.0,
+      "safety_state": "nominal",
+      "safety_reason": "All safety envelopes satisfied",
+      "front_clearance_m": 1.151,
+      "min_obs_clearance_m": 10.0,
+      "min_wall_clearance_m": 0.85,
+      "mode": "other_unclassified",
+      "active_pillar": null
+    },
+    {
+      "step": 91,
+      "time_s": 4.55,
+      "pos": [
+        9.018,
+        0.0,
+        1.0
+      ],
+      "vel": [
+        0.213,
+        0.0,
+        0.0
+      ],
+      "goal_dist": 0.482,
+      "fwd_progress": 1.518,
+      "raw_vx": 0.209,
+      "raw_vy": 0.0,
+      "safe_vx": 0.209,
+      "safe_vy": 0.0,
+      "safety_state": "nominal",
+      "safety_reason": "All safety envelopes satisfied",
+      "front_clearance_m": 1.185,
+      "min_obs_clearance_m": 10.0,
+      "min_wall_clearance_m": 0.85,
+      "mode": "other_unclassified",
+      "active_pillar": null
+    },
+    {
+      "step": 92,
+      "time_s": 4.6,
+      "pos": [
+        9.029,
+        0.0,
+        1.0
+      ],
+      "vel": [
+        0.208,
+        0.0,
+        0.0
+      ],
+      "goal_dist": 0.471,
+      "fwd_progress": 1.529,
+      "raw_vx": 0.204,
+      "raw_vy": 0.0,
+      "safe_vx": 0.204,
+      "safe_vy": 0.0,
+      "safety_state": "nominal",
+      "safety_reason": "All safety envelopes satisfied",
+      "front_clearance_m": 1.162,
+      "min_obs_clearance_m": 10.0,
+      "min_wall_clearance_m": 0.85,
+      "mode": "other_unclassified",
+      "active_pillar": null
+    },
+    {
+      "step": 93,
+      "time_s": 4.65,
+      "pos": [
+        9.039,
+        0.0,
+        1.0
+      ],
+      "vel": [
+        0.204,
+        0.0,
+        0.0
+      ],
+      "goal_dist": 0.461,
+      "fwd_progress": 1.539,
+      "raw_vx": 0.2,
+      "raw_vy": 0.0,
+      "safe_vx": 0.2,
+      "safe_vy": 0.0,
+      "safety_state": "nominal",
+      "safety_reason": "All safety envelopes satisfied",
+      "front_clearance_m": 1.136,
+      "min_obs_clearance_m": 10.0,
+      "min_wall_clearance_m": 0.85,
+      "mode": "other_unclassified",
+      "active_pillar": null
+    },
+    {
+      "step": 94,
+      "time_s": 4.7,
+      "pos": [
+        9.049,
+        0.0,
+        1.0
+      ],
+      "vel": [
+        0.199,
+        0.0,
+        0.0
+      ],
+      "goal_dist": 0.451,
+      "fwd_progress": 1.549,
+      "raw_vx": 0.195,
+      "raw_vy": 0.0,
+      "safe_vx": 0.195,
+      "safe_vy": 0.0,
+      "safety_state": "nominal",
+      "safety_reason": "All safety envelopes satisfied",
+      "front_clearance_m": 1.147,
+      "min_obs_clearance_m": 10.0,
+      "min_wall_clearance_m": 0.85,
+      "mode": "other_unclassified",
+      "active_pillar": null
+    },
+    {
+      "step": 95,
+      "time_s": 4.75,
+      "pos": [
+        9.059,
+        0.0,
+        1.0
+      ],
+      "vel": [
+        0.195,
+        0.0,
+        0.0
+      ],
+      "goal_dist": 0.441,
+      "fwd_progress": 1.559,
+      "raw_vx": 0.191,
+      "raw_vy": 0.0,
+      "safe_vx": 0.191,
+      "safe_vy": 0.0,
+      "safety_state": "nominal",
+      "safety_reason": "All safety envelopes satisfied",
+      "front_clearance_m": 1.14,
+      "min_obs_clearance_m": 10.0,
+      "min_wall_clearance_m": 0.85,
+      "mode": "other_unclassified",
+      "active_pillar": null
+    },
+    {
+      "step": 96,
+      "time_s": 4.8,
+      "pos": [
+        9.068,
+        0.0,
+        1.0
+      ],
+      "vel": [
+        0.191,
+        0.0,
+        0.0
+      ],
+      "goal_dist": 0.432,
+      "fwd_progress": 1.568,
+      "raw_vx": 0.187,
+      "raw_vy": 0.0,
+      "safe_vx": 0.187,
+      "safe_vy": 0.0,
+      "safety_state": "nominal",
+      "safety_reason": "All safety envelopes satisfied",
+      "front_clearance_m": 1.142,
+      "min_obs_clearance_m": 10.0,
+      "min_wall_clearance_m": 0.85,
+      "mode": "other_unclassified",
+      "active_pillar": null
+    },
+    {
+      "step": 97,
+      "time_s": 4.85,
+      "pos": [
+        9.078,
+        0.0,
+        1.0
+      ],
+      "vel": [
+        0.187,
+        0.0,
+        0.0
+      ],
+      "goal_dist": 0.422,
+      "fwd_progress": 1.578,
+      "raw_vx": 0.183,
+      "raw_vy": 0.0,
+      "safe_vx": 0.183,
+      "safe_vy": 0.0,
+      "safety_state": "nominal",
+      "safety_reason": "All safety envelopes satisfied",
+      "front_clearance_m": 1.152,
+      "min_obs_clearance_m": 10.0,
+      "min_wall_clearance_m": 0.85,
+      "mode": "other_unclassified",
+      "active_pillar": null
+    },
+    {
+      "step": 98,
+      "time_s": 4.9,
+      "pos": [
+        9.087,
+        0.0,
+        1.0
+      ],
+      "vel": [
+        0.183,
+        0.0,
+        0.0
+      ],
+      "goal_dist": 0.413,
+      "fwd_progress": 1.587,
+      "raw_vx": 0.179,
+      "raw_vy": 0.0,
+      "safe_vx": 0.179,
+      "safe_vy": 0.0,
+      "safety_state": "nominal",
+      "safety_reason": "All safety envelopes satisfied",
+      "front_clearance_m": 1.172,
+      "min_obs_clearance_m": 10.0,
+      "min_wall_clearance_m": 0.85,
+      "mode": "other_unclassified",
+      "active_pillar": null
+    },
+    {
+      "step": 99,
+      "time_s": 4.95,
+      "pos": [
+        9.096,
+        0.0,
+        1.0
+      ],
+      "vel": [
+        0.179,
+        0.0,
+        0.0
+      ],
+      "goal_dist": 0.404,
+      "fwd_progress": 1.596,
+      "raw_vx": 0.175,
+      "raw_vy": 0.0,
+      "safe_vx": 0.175,
+      "safe_vy": 0.0,
+      "safety_state": "nominal",
+      "safety_reason": "All safety envelopes satisfied",
+      "front_clearance_m": 1.154,
+      "min_obs_clearance_m": 10.0,
+      "min_wall_clearance_m": 0.85,
+      "mode": "other_unclassified",
+      "active_pillar": null
+    },
+    {
+      "step": 100,
+      "time_s": 5.0,
+      "pos": [
+        9.104,
+        0.0,
+        1.0
+      ],
+      "vel": [
+        0.175,
+        0.0,
+        0.0
+      ],
+      "goal_dist": 0.396,
+      "fwd_progress": 1.604,
+      "raw_vx": 0.171,
+      "raw_vy": 0.0,
+      "safe_vx": 0.171,
+      "safe_vy": 0.0,
+      "safety_state": "nominal",
+      "safety_reason": "All safety envelopes satisfied",
+      "front_clearance_m": 1.157,
+      "min_obs_clearance_m": 10.0,
+      "min_wall_clearance_m": 0.85,
+      "mode": "other_unclassified",
+      "active_pillar": null
+    },
+    {
+      "step": 101,
+      "time_s": 5.05,
+      "pos": [
+        9.113,
+        0.0,
+        1.0
+      ],
+      "vel": [
+        0.171,
+        0.0,
+        0.0
+      ],
+      "goal_dist": 0.387,
+      "fwd_progress": 1.613,
+      "raw_vx": 0.168,
+      "raw_vy": 0.0,
+      "safe_vx": 0.168,
+      "safe_vy": 0.0,
+      "safety_state": "nominal",
+      "safety_reason": "All safety envelopes satisfied",
+      "front_clearance_m": 1.151,
+      "min_obs_clearance_m": 10.0,
+      "min_wall_clearance_m": 0.85,
+      "mode": "other_unclassified",
+      "active_pillar": null
+    },
+    {
+      "step": 102,
+      "time_s": 5.1,
+      "pos": [
+        9.121,
+        0.0,
+        1.0
+      ],
+      "vel": [
+        0.167,
+        0.0,
+        0.0
+      ],
+      "goal_dist": 0.379,
+      "fwd_progress": 1.621,
+      "raw_vx": 0.164,
+      "raw_vy": 0.0,
+      "safe_vx": 0.164,
+      "safe_vy": 0.0,
+      "safety_state": "nominal",
+      "safety_reason": "All safety envelopes satisfied",
+      "front_clearance_m": 1.15,
+      "min_obs_clearance_m": 10.0,
+      "min_wall_clearance_m": 0.85,
+      "mode": "other_unclassified",
+      "active_pillar": null
+    },
+    {
+      "step": 103,
+      "time_s": 5.15,
+      "pos": [
+        9.129,
+        0.0,
+        1.0
+      ],
+      "vel": [
+        0.164,
+        0.0,
+        0.0
+      ],
+      "goal_dist": 0.371,
+      "fwd_progress": 1.629,
+      "raw_vx": 0.161,
+      "raw_vy": 0.0,
+      "safe_vx": 0.161,
+      "safe_vy": 0.0,
+      "safety_state": "nominal",
+      "safety_reason": "All safety envelopes satisfied",
+      "front_clearance_m": 1.17,
+      "min_obs_clearance_m": 10.0,
+      "min_wall_clearance_m": 0.85,
+      "mode": "other_unclassified",
+      "active_pillar": null
+    },
+    {
+      "step": 104,
+      "time_s": 5.2,
+      "pos": [
+        9.137,
+        0.0,
+        1.0
+      ],
+      "vel": [
+        0.16,
+        0.0,
+        0.0
+      ],
+      "goal_dist": 0.363,
+      "fwd_progress": 1.637,
+      "raw_vx": 0.157,
+      "raw_vy": 0.0,
+      "safe_vx": 0.157,
+      "safe_vy": 0.0,
+      "safety_state": "nominal",
+      "safety_reason": "All safety envelopes satisfied",
+      "front_clearance_m": 1.154,
+      "min_obs_clearance_m": 10.0,
+      "min_wall_clearance_m": 0.85,
+      "mode": "other_unclassified",
+      "active_pillar": null
+    },
+    {
+      "step": 105,
+      "time_s": 5.25,
+      "pos": [
+        9.145,
+        0.0,
+        1.0
+      ],
+      "vel": [
+        0.157,
+        0.0,
+        0.0
+      ],
+      "goal_dist": 0.355,
+      "fwd_progress": 1.645,
+      "raw_vx": 0.154,
+      "raw_vy": 0.0,
+      "safe_vx": 0.154,
+      "safe_vy": 0.0,
+      "safety_state": "nominal",
+      "safety_reason": "All safety envelopes satisfied",
+      "front_clearance_m": 1.13,
+      "min_obs_clearance_m": 10.0,
+      "min_wall_clearance_m": 0.85,
+      "mode": "other_unclassified",
+      "active_pillar": null
+    }
+  ]
+}

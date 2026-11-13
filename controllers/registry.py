@@ -72,8 +72,9 @@ class NominalBaselineController(IController):
 class ReactiveBaselineController(IController):
     """Milestone 1 baseline: reactive obstacle avoidance using deployable multi-beam rangefinders."""
 
-    def __init__(self, cruise_speed: float = 0.70):
-        self.cruise_speed = cruise_speed
+    def __init__(self, cruise_speed: float = 0.70, drone_radius: float = 0.15):
+        self.cruise_speed = float(cruise_speed)
+        self.drone_radius = float(drone_radius)
         self._meta = ControllerMetadata(
             controller_id="reactive_baseline",
             checkpoint_id="m1_reactive_baseline_v1",
@@ -102,11 +103,17 @@ class ReactiveBaselineController(IController):
 
         front_min = min(d_front, d_fl, d_fr)
 
+        # Dynamic thresholds scaled to vehicle radius (bit-identical at default 0.15m)
+        obs_slow_dist = self.drone_radius + 1.25   # 1.40m at r=0.15, 1.575m at r=0.325
+        obs_evade_dist = self.drone_radius + 1.35  # 1.50m at r=0.15, 1.675m at r=0.325
+        wall_buffer = self.drone_radius + 0.50     # 0.65m at r=0.15, 0.825m at r=0.325
+        vert_buffer = self.drone_radius + 0.35     # 0.50m at r=0.15, 0.675m at r=0.325
+
         # Longitudinal cruise speed with goal and obstacle slowing
         if gx < 0:
             vx = -0.15  # Gently reverse if overshot destination
-        elif front_min < 1.4:
-            vx = float(np.clip(0.30 + 0.35 * (front_min - 0.4) / 1.0, 0.20, self.cruise_speed))
+        elif front_min < obs_slow_dist:
+            vx = float(np.clip(0.30 + 0.35 * (front_min - (self.drone_radius + 0.25)) / 1.0, 0.20, self.cruise_speed))
         else:
             vx = float(self.cruise_speed * np.clip(gx, 0.25, 1.0))
 
@@ -115,26 +122,26 @@ class ReactiveBaselineController(IController):
         vz = float(0.5 * gz)
 
         # Obstacle avoidance steering: evade toward side with more open space
-        if front_min < 1.5:
+        if front_min < obs_evade_dist:
             left_score = d_fl + 0.6 * d_left
             right_score = d_fr + 0.6 * d_right
-            repel_strength = float(np.clip((1.5 - front_min) * 0.65, 0.0, 0.60))
+            repel_strength = float(np.clip((obs_evade_dist - front_min) * 0.65, 0.0, 0.60))
             if left_score > right_score:
                 vy += repel_strength
             else:
                 vy -= repel_strength
 
         # Corridor wall centering buffers
-        if d_left < 0.65:
-            vy -= float((0.65 - d_left) * 0.5)
-        if d_right < 0.65:
-            vy += float((0.65 - d_right) * 0.5)
+        if d_left < wall_buffer:
+            vy -= float((wall_buffer - d_left) * 0.5)
+        if d_right < wall_buffer:
+            vy += float((wall_buffer - d_right) * 0.5)
 
         # Floor / ceiling buffers
-        if d_down < 0.50:
-            vz += float((0.50 - d_down) * 0.4)
-        if d_up < 0.50:
-            vz -= float((0.50 - d_up) * 0.4)
+        if d_down < vert_buffer:
+            vz += float((vert_buffer - d_down) * 0.4)
+        if d_up < vert_buffer:
+            vz -= float((vert_buffer - d_up) * 0.4)
 
         yaw_rate = float(np.clip(1.2 * vy, -0.4, 0.4))
 
@@ -222,6 +229,106 @@ class ControllerRegistry:
             if bc_ctrl.metadata.is_implemented:
                 self.register(bc_ctrl)
                 bc_registered = True
+        except Exception:
+            pass
+
+        # Register Phase 6 Stateless Clearance Guidance controller if base checkpoint exists
+        try:
+            from controllers.guidance_controller import StatelessClearanceGuidanceController
+            guidance_ctrl = StatelessClearanceGuidanceController()
+            if guidance_ctrl.metadata.is_implemented:
+                self.register(guidance_ctrl)
+        except Exception:
+            pass
+
+        # Register Scaled 65cm UAV Guided BC Controllers (v1 and v2 Winner)
+        try:
+            from controllers.guidance_controller import StatelessClearanceGuidanceController
+            from core.guidance import GuidanceConfig
+
+            scaled_v1_path = Path("models/checkpoints/bc_policy_scaled_v1.pt")
+            if scaled_v1_path.exists():
+                g_cfg_v1 = GuidanceConfig.for_65cm_uav(drone_radius=0.325)
+                ctrl_v1 = StatelessClearanceGuidanceController(
+                    base_model=str(scaled_v1_path),
+                    guidance_config=g_cfg_v1,
+                )
+                ctrl_v1._meta = ControllerMetadata(
+                    controller_id="scaled_guided_bc_v1",
+                    checkpoint_id="bc_policy_scaled_v1",
+                    display_name="65cm UAV Guided BC v1 (Baseline)",
+                    is_implemented=True,
+                    milestone_tag="Phase 4 Baseline",
+                    description="Scaled BC v1 baseline with 3-ray guidance.",
+                    file_path=str(scaled_v1_path),
+                )
+                self.register(ctrl_v1)
+
+            scaled_v2_path = Path("models/checkpoints/bc_policy_scaled_v2.pt")
+            if scaled_v2_path.exists():
+                g_cfg_v2 = GuidanceConfig.for_65cm_uav_v2(drone_radius=0.325)
+                ctrl_v2 = StatelessClearanceGuidanceController(
+                    base_model=str(scaled_v2_path),
+                    guidance_config=g_cfg_v2,
+                )
+                ctrl_v2._meta = ControllerMetadata(
+                    controller_id="scaled_guided_bc_v2",
+                    checkpoint_id="bc_policy_scaled_v2",
+                    display_name="65cm UAV Guided BC v2 (Exceed 90% Winner)",
+                    is_implemented=True,
+                    milestone_tag="Phase 5 Winner",
+                    description="Retrained BC v2 with recovery perturbations and 5-ray harmonized guidance (94.0% success).",
+                    file_path=str(scaled_v2_path),
+                )
+                self.register(ctrl_v2)
+
+                g_cfg_v3 = GuidanceConfig.for_65cm_uav_v3(drone_radius=0.325)
+                ctrl_v3 = StatelessClearanceGuidanceController(
+                    base_model=str(scaled_v2_path),
+                    guidance_config=g_cfg_v3,
+                )
+                ctrl_v3._meta = ControllerMetadata(
+                    controller_id="scaled_guided_bc_v3",
+                    checkpoint_id="bc_policy_scaled_v2_v3guidance",
+                    display_name="65cm UAV Guided BC v3 (Persistent Guidance)",
+                    is_implemented=True,
+                    milestone_tag="Phase 6 Candidate",
+                    description="Frozen BC v2 with directional-persistence tie-breaking guidance to eliminate chatter.",
+                    file_path=str(scaled_v2_path),
+                )
+                self.register(ctrl_v3)
+
+                g_cfg_v4 = GuidanceConfig.for_65cm_uav_v4_adaptive(drone_radius=0.325)
+                ctrl_v4 = StatelessClearanceGuidanceController(
+                    base_model=str(scaled_v2_path),
+                    guidance_config=g_cfg_v4,
+                )
+                ctrl_v4._meta = ControllerMetadata(
+                    controller_id="scaled_guided_bc_v4",
+                    checkpoint_id="bc_policy_scaled_v2_v4adaptive",
+                    display_name="65cm UAV Guided BC v4 (Corridor-Adaptive Guidance)",
+                    is_implemented=True,
+                    milestone_tag="Adaptive Candidate",
+                    description="Frozen BC v2 with corridor-width-adaptive lateral guidance and persistent tie-breaking.",
+                    file_path=str(scaled_v2_path),
+                )
+                self.register(ctrl_v4)
+
+                g_cfg_v5 = GuidanceConfig.for_65cm_uav_v5_clearance_aware(drone_radius=0.325)
+                ctrl_v5 = StatelessClearanceGuidanceController(
+                    base_model=str(scaled_v2_path),
+                    guidance_config=g_cfg_v5,
+                )
+                ctrl_v5._meta = ControllerMetadata(
+                    controller_id="scaled_guided_bc_v5",
+                    checkpoint_id="bc_policy_scaled_v2_v5clearance",
+                    display_name="65cm UAV Guided BC v5 (Clearance-Aware Continuous Guidance)",
+                    is_implemented=True,
+                    milestone_tag="Phase 4F Candidate",
+                    description="Frozen BC v2 with continuous clearance-scaled lateral guidance (0.15-0.40 m/s) and safe-arrest integration.",
+                    file_path=str(scaled_v2_path),
+                )
+                self.register(ctrl_v5)
         except Exception:
             pass
 

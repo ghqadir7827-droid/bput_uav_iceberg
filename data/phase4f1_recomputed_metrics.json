@@ -1,0 +1,337 @@
+{
+  "metadata": {
+    "audit_phase": "PHASE 4F.1 Independent Forensic Audit",
+    "timestamp_iso": "2026-10-31T13:18:00Z",
+    "git_branch": "feature/v4-radial-adaptive-guidance",
+    "git_commit": "f5b76601b3e23f2e7b6cc174ed9a3a8dedfd8b3f",
+    "checkpoint_path": "models/checkpoints/bc_policy_scaled_v2.pt",
+    "checkpoint_sha256": "d02d5712a3e292c535c8ff78898c7c0a8d5758c8fd0a22738c998f67c8ba79d1"
+  },
+  "stage_b_development": {
+    "total_episodes": 600,
+    "seeds_count": 200,
+    "controllers": {
+      "scaled_guided_bc_v3": {
+        "total_episodes": 200,
+        "feasible_count": 175,
+        "infeasible_count": 25,
+        "clean_success": 128,
+        "clean_success_rate": 0.7314,
+        "envelope_breach_arrival": 34,
+        "collision": 0,
+        "timeout": 13,
+        "correct_safe_rejection": 1,
+        "false_positive_rejection": 0,
+        "unsafe_arrest": 24,
+        "overall_min_clearance_m": 0.0001,
+        "successful_min_clearance_m": 0.0001,
+        "clean_min_clearance_m": 0.1536
+      },
+      "scaled_guided_bc_v4": {
+        "total_episodes": 200,
+        "feasible_count": 175,
+        "infeasible_count": 25,
+        "clean_success": 130,
+        "clean_success_rate": 0.7429,
+        "envelope_breach_arrival": 33,
+        "collision": 0,
+        "timeout": 12,
+        "correct_safe_rejection": 1,
+        "false_positive_rejection": 0,
+        "unsafe_arrest": 24,
+        "overall_min_clearance_m": 0.0003,
+        "successful_min_clearance_m": 0.0003,
+        "clean_min_clearance_m": 0.1536
+      },
+      "scaled_guided_bc_v5": {
+        "total_episodes": 200,
+        "feasible_count": 175,
+        "infeasible_count": 25,
+        "clean_success": 141,
+        "clean_success_rate": 0.8057,
+        "envelope_breach_arrival": 25,
+        "collision": 1,
+        "collision_details": {
+          "seed": 20104,
+          "tier": "LEVEL_1_BASIC",
+          "type": "CRASH_BOUNDARY",
+          "min_bnd_clearance_m": 0.0055
+        },
+        "timeout": 8,
+        "correct_safe_rejection": 25,
+        "correct_safe_rejection_rate": 1.0,
+        "false_positive_rejection": 0,
+        "unsafe_arrest": 0,
+        "overall_min_clearance_m": 0.0055,
+        "successful_min_clearance_m": 0.0786,
+        "clean_min_clearance_m": 0.1526
+      }
+    },
+    "paired_comparisons_all_scenarios_n200": {
+      "v3_vs_v4": {
+        "both_valid": 122,
+        "v3_only": 7,
+        "v4_only": 9,
+        "both_fail": 62,
+        "paired_diff_pp": 1.0,
+        "ci95_pp": [
+          -2.92,
+          4.92
+        ],
+        "exact_p": 0.803619
+      },
+      "v4_vs_v5": {
+        "both_valid": 119,
+        "v4_only": 12,
+        "v5_only": 47,
+        "both_fail": 22,
+        "paired_diff_pp": 17.5,
+        "ci95_pp": [
+          10.37,
+          24.63
+        ],
+        "exact_p": 5.1256e-06
+      },
+      "v3_vs_v5": {
+        "both_valid": 118,
+        "v3_only": 11,
+        "v5_only": 48,
+        "both_fail": 23,
+        "paired_diff_pp": 18.5,
+        "ci95_pp": [
+          11.42,
+          25.58
+        ],
+        "exact_p": 1.2416e-06
+      }
+    },
+    "paired_comparisons_feasible_only_n175": {
+      "v3_vs_v4": {
+        "both_valid": 121,
+        "v3_only": 7,
+        "v4_only": 9,
+        "both_fail": 38,
+        "paired_diff_pp": 1.14,
+        "ci95_pp": [
+          -3.33,
+          5.62
+        ],
+        "exact_p": 0.803619
+      },
+      "v4_vs_v5": {
+        "both_valid": 118,
+        "v4_only": 12,
+        "v5_only": 23,
+        "both_fail": 22,
+        "paired_diff_pp": 6.29,
+        "ci95_pp": [
+          -0.27,
+          12.85
+        ],
+        "exact_p": 0.089531
+      },
+      "v3_vs_v5": {
+        "both_valid": 117,
+        "v3_only": 11,
+        "v5_only": 24,
+        "both_fail": 23,
+        "paired_diff_pp": 7.43,
+        "ci95_pp": [
+          0.89,
+          13.96
+        ],
+        "exact_p": 0.04096
+      }
+    }
+  },
+  "stage_c_independent_confirmation": {
+    "total_episodes": 600,
+    "seeds_count": 200,
+    "controllers": {
+      "scaled_guided_bc_v3": {
+        "total_episodes": 200,
+        "feasible_count": 175,
+        "infeasible_count": 25,
+        "clean_success": 127,
+        "clean_success_rate": 0.7257,
+        "envelope_breach_arrival": 38,
+        "collision": 0,
+        "timeout": 10,
+        "correct_safe_rejection": 1,
+        "false_positive_rejection": 0,
+        "unsafe_arrest": 24,
+        "overall_min_clearance_m": 0.0002,
+        "successful_min_clearance_m": 0.0002,
+        "clean_min_clearance_m": 0.1536
+      },
+      "scaled_guided_bc_v4": {
+        "total_episodes": 200,
+        "feasible_count": 175,
+        "infeasible_count": 25,
+        "clean_success": 141,
+        "clean_success_rate": 0.8057,
+        "envelope_breach_arrival": 26,
+        "collision": 0,
+        "timeout": 8,
+        "correct_safe_rejection": 0,
+        "false_positive_rejection": 0,
+        "unsafe_arrest": 25,
+        "overall_min_clearance_m": 0.0001,
+        "successful_min_clearance_m": 0.0001,
+        "clean_min_clearance_m": 0.1536
+      },
+      "scaled_guided_bc_v5": {
+        "total_episodes": 200,
+        "feasible_count": 175,
+        "infeasible_count": 25,
+        "clean_success": 152,
+        "clean_success_rate": 0.8686,
+        "envelope_breach_arrival": 15,
+        "collision": 0,
+        "timeout": 7,
+        "correct_safe_rejection": 25,
+        "correct_safe_rejection_rate": 1.0,
+        "false_positive_rejection": 1,
+        "false_positive_details": {
+          "seed": 26444,
+          "tier": "LEVEL_4_FEASIBILITY_BOUNDARY",
+          "reason": "Passable bottleneck gap 1.157m falsely triggered safe-arrest due to one-sided ray thresholding"
+        },
+        "unsafe_arrest": 0,
+        "overall_min_clearance_m": 0.1049,
+        "successful_min_clearance_m": 0.1067,
+        "clean_min_clearance_m": 0.1526
+      }
+    },
+    "paired_comparisons_all_scenarios_n200": {
+      "v3_vs_v4": {
+        "both_valid": 121,
+        "v3_only": 7,
+        "v4_only": 20,
+        "both_fail": 52,
+        "paired_diff_pp": 6.5,
+        "ci95_pp": [
+          1.49,
+          11.51
+        ],
+        "exact_p": 0.019157
+      },
+      "v4_vs_v5": {
+        "both_valid": 135,
+        "v4_only": 6,
+        "v5_only": 42,
+        "both_fail": 17,
+        "paired_diff_pp": 18.0,
+        "ci95_pp": [
+          11.69,
+          24.31
+        ],
+        "exact_p": 1.0087e-07
+      },
+      "v3_vs_v5": {
+        "both_valid": 122,
+        "v3_only": 6,
+        "v5_only": 55,
+        "both_fail": 17,
+        "paired_diff_pp": 24.5,
+        "ci95_pp": [
+          17.64,
+          31.36
+        ],
+        "exact_p": 5.3806e-11
+      }
+    },
+    "paired_comparisons_feasible_only_n175": {
+      "v3_vs_v4": {
+        "both_valid": 121,
+        "v3_only": 6,
+        "v4_only": 20,
+        "both_fail": 28,
+        "paired_diff_pp": 8.0,
+        "ci95_pp": [
+          2.41,
+          13.59
+        ],
+        "exact_p": 0.009355
+      },
+      "v4_vs_v5": {
+        "both_valid": 135,
+        "v4_only": 6,
+        "v5_only": 17,
+        "both_fail": 17,
+        "paired_diff_pp": 6.29,
+        "ci95_pp": [
+          1.0,
+          11.58
+        ],
+        "exact_p": 0.03469
+      },
+      "v3_vs_v5": {
+        "both_valid": 121,
+        "v3_only": 6,
+        "v5_only": 31,
+        "both_fail": 17,
+        "paired_diff_pp": 14.29,
+        "ci95_pp": [
+          7.81,
+          20.76
+        ],
+        "exact_p": 4.1258e-05
+      }
+    }
+  },
+  "forensic_seed_investigations": {
+    "seed_20334": {
+      "corridor_width_m": 2.8,
+      "obstacle_location": {
+        "x": 7.0,
+        "y": 0.35,
+        "radius_m": 0.25
+      },
+      "obstacle_relative_bearing_deg": -123.8,
+      "scaled_guided_bc_v3": {
+        "outcome": "timeout",
+        "min_clearance_m": 0.1154,
+        "steps": 1000,
+        "interventions": 942
+      },
+      "scaled_guided_bc_v4": {
+        "outcome": "envelope_breach_arrival",
+        "min_clearance_m": 0.0892,
+        "steps": 672,
+        "interventions": 356
+      },
+      "scaled_guided_bc_v5": {
+        "outcome": "envelope_breach_arrival",
+        "min_clearance_m": 0.1354,
+        "steps": 764,
+        "interventions": 451,
+        "detection_beams": [
+          13,
+          15
+        ]
+      }
+    },
+    "seed_26444": {
+      "corridor_width_m": 2.8,
+      "obstacle_center": [
+        7.0,
+        -0.0068,
+        1.2
+      ],
+      "obstacle_radius_m": 0.25,
+      "lateral_opening_width_m": 1.1568,
+      "uav_diameter_m": 0.65,
+      "clearance_margin_m": 0.5068,
+      "analytical_feasibility": "FEASIBLE",
+      "v5_behavior": {
+        "entered_safe_arrest_step": 374,
+        "entered_safe_arrest_x_m": 6.73,
+        "final_arrest_step": 847,
+        "final_arrest_x_m": 9.92,
+        "forward_drift_during_arrest_m": 3.19,
+        "root_cause": "min_traversable_width_m (0.65m) compared to single-ray clearance instead of passage opening; forward velocity vx not zeroed by state machine"
+      }
+    }
+  }
+}

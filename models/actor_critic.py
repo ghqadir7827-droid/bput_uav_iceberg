@@ -70,6 +70,41 @@ class ActorCriticPPO(nn.Module):
             print(f"Warning: Failed to load BC warmstart: {e}")
             return False
 
+    def load_ppo_checkpoint(self, ppo_checkpoint_path: str, device: torch.device) -> bool:
+        """Initializes actor and critic weights from an existing PPO checkpoint."""
+        p = Path(ppo_checkpoint_path)
+        if not p.exists():
+            print(f"Warning: PPO checkpoint not found at {ppo_checkpoint_path}.")
+            return False
+
+        try:
+            ckpt = torch.load(p, map_location=device, weights_only=False)
+            obs_dim = ckpt.get("obs_dim", 23)
+            act_dim = ckpt.get("act_dim", 4)
+            if obs_dim != self.obs_dim or act_dim != self.act_dim:
+                print(f"Error: Dimension mismatch in {ppo_checkpoint_path}: obs_dim={obs_dim} (expected {self.obs_dim}), act_dim={act_dim} (expected {self.act_dim})")
+                return False
+
+            self.actor.load_state_dict(ckpt["model_state_dict"])
+            if "critic_state_dict" in ckpt:
+                self.critic.load_state_dict(ckpt["critic_state_dict"])
+                print(f"[PPO Checkpoint] Successfully loaded actor and critic from: {ppo_checkpoint_path}")
+            else:
+                print(f"[PPO Checkpoint] Loaded actor only from: {ppo_checkpoint_path} (no critic in checkpoint)")
+
+            if "log_std" in ckpt:
+                with torch.no_grad():
+                    self.log_std.copy_(ckpt["log_std"].to(device))
+                print(f"[PPO Checkpoint] Loaded exploration log_std from checkpoint.")
+            else:
+                print(f"[PPO Checkpoint] Exploration log_std retained at default ({float(self.log_std[0].item()):.2f}).")
+
+            return True
+        except Exception as e:
+            print(f"Warning: Failed to load PPO checkpoint: {e}")
+            return False
+
+
     def get_action_and_value(
         self,
         obs: torch.Tensor,

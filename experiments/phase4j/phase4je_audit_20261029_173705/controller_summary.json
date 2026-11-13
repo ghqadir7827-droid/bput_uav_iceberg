@@ -1,0 +1,390 @@
+{
+  "metadata": {
+    "evaluation_phase": "Phase 4J-E Controlled Comparison",
+    "date": "2026-10-29",
+    "seed_set": "Development seeds 2000..2049 (50 paired seeds)",
+    "caution_distance_m": 0.5,
+    "horizon_steps": 500,
+    "timestep_s": 0.05
+  },
+  "controller_summary": {
+    "Arm_B_BC_Baseline": {
+      "controller_id": "Arm_B_BC_Baseline",
+      "role": "primary",
+      "checkpoint": "models/checkpoints/bc_policy_best.pt",
+      "checkpoint_sha256": "93c4d7d1d8476b8d288a24fca1862d87133696f78b9603aa622bcc367afad44f",
+      "total_episodes": 50,
+      "success_count": 24,
+      "success_rate_pct": 48.0,
+      "success_ci95": [
+        34.8,
+        61.5
+      ],
+      "obstacle_collision_count": 0,
+      "obstacle_collision_pct": 0.0,
+      "boundary_collision_count": 0,
+      "boundary_collision_pct": 0.0,
+      "obstacle_envelope_violation_count": 0,
+      "obstacle_envelope_violation_pct": 0.0,
+      "boundary_envelope_violation_count": 0,
+      "boundary_envelope_violation_pct": 0.0,
+      "timeout_count": 26,
+      "timeout_pct": 52.0,
+      "forward_progress_m": {
+        "mean": 6.525,
+        "median": 6.324,
+        "std": 2.331,
+        "min": 2.223,
+        "max": 8.725
+      },
+      "duration_s": {
+        "mean": 22.99,
+        "median": 25.0
+      },
+      "steps": {
+        "mean": 459.7,
+        "median": 500.0
+      },
+      "obstacle_clearance_m": {
+        "mean": 0.1367,
+        "median": 0.1218,
+        "global_min": 0.107
+      },
+      "boundary_clearance_m": {
+        "mean": 0.2931,
+        "median": 0.2913,
+        "global_min": 0.2537
+      },
+      "supervisor_metrics": {
+        "mean_intervention_rate": 0.477,
+        "mean_throttled_time_pct": 27.6,
+        "mean_stationary_time_pct": 7.5,
+        "mean_direction_reversals": 36.22
+      },
+      "action_diagnostics": {
+        "mean_raw_vx": 0.5475,
+        "mean_raw_vy": -0.0035,
+        "mean_safe_vx": 0.305,
+        "mean_safe_vy": 0.001,
+        "mean_policy_sat_vx_pct": 56.0,
+        "mean_policy_sat_vy_pct": 1.5,
+        "mean_applied_sat_vx_pct": 33.6,
+        "mean_applied_sat_vy_pct": 1.2
+      },
+      "failure_categories": {
+        "SUCCESS": 24,
+        "PROGRESS_STALL_PILLAR_3": 10,
+        "PROGRESS_STALL_PILLAR_1": 6,
+        "PROGRESS_STALL_PILLAR_2": 10
+      }
+    },
+    "Arm_A_PPO_Baseline": {
+      "controller_id": "Arm_A_PPO_Baseline",
+      "role": "primary",
+      "checkpoint": "models/checkpoints/ppo_policy_best.pt",
+      "checkpoint_sha256": "33f6d8b705edcffa430c48b2a21ed33a3e00f81b1c8195323134dd8be2a00ee0",
+      "total_episodes": 50,
+      "success_count": 6,
+      "success_rate_pct": 12.0,
+      "success_ci95": [
+        5.6,
+        23.8
+      ],
+      "obstacle_collision_count": 0,
+      "obstacle_collision_pct": 0.0,
+      "boundary_collision_count": 0,
+      "boundary_collision_pct": 0.0,
+      "obstacle_envelope_violation_count": 0,
+      "obstacle_envelope_violation_pct": 0.0,
+      "boundary_envelope_violation_count": 0,
+      "boundary_envelope_violation_pct": 0.0,
+      "timeout_count": 44,
+      "timeout_pct": 88.0,
+      "forward_progress_m": {
+        "mean": 4.282,
+        "median": 4.137,
+        "std": 2.192,
+        "min": 2.054,
+        "max": 9.0
+      },
+      "duration_s": {
+        "mean": 24.34,
+        "median": 25.0
+      },
+      "steps": {
+        "mean": 486.7,
+        "median": 500.0
+      },
+      "obstacle_clearance_m": {
+        "mean": 0.1243,
+        "median": 0.122,
+        "global_min": 0.0874
+      },
+      "boundary_clearance_m": {
+        "mean": 0.2465,
+        "median": 0.2467,
+        "global_min": 0.2434
+      },
+      "supervisor_metrics": {
+        "mean_intervention_rate": 0.739,
+        "mean_throttled_time_pct": 36.1,
+        "mean_stationary_time_pct": 15.5,
+        "mean_direction_reversals": 86.98
+      },
+      "action_diagnostics": {
+        "mean_raw_vx": 0.5389,
+        "mean_raw_vy": 0.0212,
+        "mean_safe_vx": 0.1871,
+        "mean_safe_vy": 0.0029,
+        "mean_policy_sat_vx_pct": 53.4,
+        "mean_policy_sat_vy_pct": 4.8,
+        "mean_applied_sat_vx_pct": 26.0,
+        "mean_applied_sat_vy_pct": 2.1
+      },
+      "failure_categories": {
+        "PROGRESS_STALL_PILLAR_3": 8,
+        "PROGRESS_STALL_PILLAR_2": 17,
+        "SUCCESS": 6,
+        "PROGRESS_STALL_PILLAR_1": 19
+      }
+    },
+    "BC_Phase4H_Candidate": {
+      "controller_id": "BC_Phase4H_Candidate",
+      "role": "secondary",
+      "checkpoint": "experiments/phase4h/checkpoints/bc_phase4h_candidate.pt",
+      "checkpoint_sha256": "1fdb2286170b8188421609231af3ac685467a41a8d9dc24c5f793117ac9c319b",
+      "total_episodes": 50,
+      "success_count": 17,
+      "success_rate_pct": 34.0,
+      "success_ci95": [
+        22.4,
+        47.8
+      ],
+      "obstacle_collision_count": 0,
+      "obstacle_collision_pct": 0.0,
+      "boundary_collision_count": 0,
+      "boundary_collision_pct": 0.0,
+      "obstacle_envelope_violation_count": 7,
+      "obstacle_envelope_violation_pct": 14.0,
+      "boundary_envelope_violation_count": 0,
+      "boundary_envelope_violation_pct": 0.0,
+      "timeout_count": 33,
+      "timeout_pct": 66.0,
+      "forward_progress_m": {
+        "mean": 6.931,
+        "median": 8.187,
+        "std": 1.923,
+        "min": 2.284,
+        "max": 8.699
+      },
+      "duration_s": {
+        "mean": 23.82,
+        "median": 25.0
+      },
+      "steps": {
+        "mean": 476.3,
+        "median": 500.0
+      },
+      "obstacle_clearance_m": {
+        "mean": 0.1151,
+        "median": 0.123,
+        "global_min": 0.0095
+      },
+      "boundary_clearance_m": {
+        "mean": 0.2664,
+        "median": 0.2676,
+        "global_min": 0.1784
+      },
+      "supervisor_metrics": {
+        "mean_intervention_rate": 0.427,
+        "mean_throttled_time_pct": 29.3,
+        "mean_stationary_time_pct": 6.4,
+        "mean_direction_reversals": 17.08
+      },
+      "action_diagnostics": {
+        "mean_raw_vx": 0.5065,
+        "mean_raw_vy": 0.006,
+        "mean_safe_vx": 0.3094,
+        "mean_safe_vy": 0.0029,
+        "mean_policy_sat_vx_pct": 48.7,
+        "mean_policy_sat_vy_pct": 5.7,
+        "mean_applied_sat_vx_pct": 25.9,
+        "mean_applied_sat_vy_pct": 5.0
+      },
+      "failure_categories": {
+        "PROGRESS_LATERAL_OSCILLATION": 4,
+        "SUCCESS": 17,
+        "PROGRESS_STALL_PILLAR_1": 1,
+        "PROGRESS_STALL_PILLAR_2": 12,
+        "PROGRESS_STALL_PILLAR_3": 10,
+        "GOAL_ALIGNMENT_TIMEOUT": 5,
+        "TIMEOUT_SLOW_TRANSIT": 1
+      }
+    },
+    "PPO_Phase4H_Candidate": {
+      "controller_id": "PPO_Phase4H_Candidate",
+      "role": "secondary",
+      "checkpoint": "experiments/phase4h/checkpoints/ppo_phase4h_candidate.pt",
+      "checkpoint_sha256": "751431cda829539e9ef327bd843d9b292e8f097bb2b36c0f5a1deb1bfad159dd",
+      "total_episodes": 50,
+      "success_count": 0,
+      "success_rate_pct": 0.0,
+      "success_ci95": [
+        0.0,
+        7.1
+      ],
+      "obstacle_collision_count": 0,
+      "obstacle_collision_pct": 0.0,
+      "boundary_collision_count": 13,
+      "boundary_collision_pct": 26.0,
+      "obstacle_envelope_violation_count": 0,
+      "obstacle_envelope_violation_pct": 0.0,
+      "boundary_envelope_violation_count": 13,
+      "boundary_envelope_violation_pct": 26.0,
+      "timeout_count": 37,
+      "timeout_pct": 74.0,
+      "forward_progress_m": {
+        "mean": 5.695,
+        "median": 4.244,
+        "std": 3.09,
+        "min": 2.04,
+        "max": 10.424
+      },
+      "duration_s": {
+        "mean": 23.78,
+        "median": 25.0
+      },
+      "steps": {
+        "mean": 475.5,
+        "median": 500.0
+      },
+      "obstacle_clearance_m": {
+        "mean": 0.1431,
+        "median": 0.127,
+        "global_min": 0.1138
+      },
+      "boundary_clearance_m": {
+        "mean": 0.1809,
+        "median": 0.2233,
+        "global_min": -0.0146
+      },
+      "supervisor_metrics": {
+        "mean_intervention_rate": 0.67,
+        "mean_throttled_time_pct": 41.7,
+        "mean_stationary_time_pct": 9.9,
+        "mean_direction_reversals": 62.38
+      },
+      "action_diagnostics": {
+        "mean_raw_vx": 0.5789,
+        "mean_raw_vy": 0.0193,
+        "mean_safe_vx": 0.2592,
+        "mean_safe_vy": 0.0296,
+        "mean_policy_sat_vx_pct": 57.9,
+        "mean_policy_sat_vy_pct": 5.4,
+        "mean_applied_sat_vx_pct": 32.0,
+        "mean_applied_sat_vy_pct": 2.4
+      },
+      "failure_categories": {
+        "PROGRESS_STALL_PILLAR_3": 10,
+        "PROGRESS_STALL_PILLAR_2": 13,
+        "WALL_COLLISION": 13,
+        "PROGRESS_STALL_PILLAR_1": 13,
+        "PROGRESS_LATERAL_OSCILLATION": 1
+      }
+    }
+  },
+  "primary_paired_comparison": {
+    "comparison": "Arm_B_BC_Baseline vs Arm_A_PPO_Baseline",
+    "sample_size": 50,
+    "bc_success_count": 24,
+    "ppo_success_count": 6,
+    "absolute_difference_pct": 36.0,
+    "contingency_table": {
+      "both_succeed": {
+        "count": 2,
+        "seeds": [
+          2002,
+          2008
+        ]
+      },
+      "bc_succeeds_ppo_fails": {
+        "count": 22,
+        "seeds": [
+          2000,
+          2003,
+          2005,
+          2006,
+          2007,
+          2012,
+          2014,
+          2016,
+          2019,
+          2027,
+          2028,
+          2029,
+          2035,
+          2037,
+          2038,
+          2040,
+          2041,
+          2042,
+          2043,
+          2044,
+          2046,
+          2049
+        ]
+      },
+      "ppo_succeeds_bc_fails": {
+        "count": 4,
+        "seeds": [
+          2017,
+          2021,
+          2039,
+          2048
+        ]
+      },
+      "both_fail": {
+        "count": 22,
+        "seeds": [
+          2001,
+          2004,
+          2009,
+          2010,
+          2011,
+          2013,
+          2015,
+          2018,
+          2020,
+          2022,
+          2023,
+          2024,
+          2025,
+          2026,
+          2030,
+          2031,
+          2032,
+          2033,
+          2034,
+          2036,
+          2045,
+          2047
+        ]
+      }
+    },
+    "mcnemar_exact_test": {
+      "b_bc_only": 22,
+      "c_ppo_only": 4,
+      "two_tailed_p_value": 0.000534,
+      "statistically_significant_at_alpha_0_05": true
+    },
+    "paired_forward_progress_difference_m": {
+      "mean_delta_bc_minus_ppo": 2.244,
+      "median_delta": 2.386,
+      "std_delta": 3.066
+    },
+    "paired_obstacle_clearance_difference_m": {
+      "mean_delta_bc_minus_ppo": 0.0124,
+      "median_delta": 0.0041
+    }
+  }
+}

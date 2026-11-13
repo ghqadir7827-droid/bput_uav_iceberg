@@ -1,0 +1,74 @@
+{
+  "Frozen_BC_Baseline": {
+    "trials": 50,
+    "successes": 24,
+    "success_rate_pct": 48.0,
+    "wilson_ci_95": [
+      34.8,
+      61.5
+    ],
+    "obstacle_collisions": 0,
+    "boundary_collisions": 0,
+    "obs_envelope_violations": 0,
+    "wall_envelope_violations": 0,
+    "min_obstacle_clearance_m": 0.107,
+    "min_wall_clearance_m": 0.25369998812675476,
+    "mean_progress_m": 6.525,
+    "mean_duration_s": 22.99,
+    "mean_throttled_fraction_pct": 27.57,
+    "pillar_1_passage_rate_pct": 88.0,
+    "pillar_2_passage_rate_pct": 68.0,
+    "pillar_3_passage_rate_pct": 48.0
+  },
+  "Phase5B_Stateless_Guidance": {
+    "trials": 50,
+    "successes": 35,
+    "success_rate_pct": 70.0,
+    "wilson_ci_95": [
+      56.2,
+      80.9
+    ],
+    "obstacle_collisions": 0,
+    "boundary_collisions": 0,
+    "obs_envelope_violations": 0,
+    "wall_envelope_violations": 0,
+    "min_obstacle_clearance_m": 0.087,
+    "min_wall_clearance_m": 0.17239999771118164,
+    "mean_progress_m": 7.936,
+    "mean_duration_s": 21.74,
+    "mean_throttled_fraction_pct": 20.18,
+    "pillar_1_passage_rate_pct": 96.0,
+    "pillar_2_passage_rate_pct": 94.0,
+    "pillar_3_passage_rate_pct": 78.0
+  },
+  "Phase6_Production_Guidance": {
+    "trials": 50,
+    "successes": 42,
+    "success_rate_pct": 84.0,
+    "wilson_ci_95": [
+      71.5,
+      91.7
+    ],
+    "obstacle_collisions": 0,
+    "boundary_collisions": 0,
+    "obs_envelope_violations": 0,
+    "wall_envelope_violations": 0,
+    "min_obstacle_clearance_m": 0.0957,
+    "min_wall_clearance_m": 0.19419999420642853,
+    "mean_progress_m": 8.475,
+    "mean_duration_s": 21.07,
+    "mean_throttled_fraction_pct": 18.11,
+    "pillar_1_passage_rate_pct": 100.0,
+    "pillar_2_passage_rate_pct": 100.0,
+    "pillar_3_passage_rate_pct": 92.0
+  },
+  "paired_comparison_phase6_vs_baseline": {
+    "candidate_wins": 23,
+    "baseline_wins": 5,
+    "ties_both_success": 19,
+    "ties_both_fail": 3,
+    "net_candidate_wins": 18,
+    "mcnemar_exact_p_value": 0.0009122341871261597,
+    "statistically_significant": true
+  }
+}

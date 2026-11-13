@@ -1,0 +1,2862 @@
+{
+  "disjoint_seed_verification": {
+    "status": "VERIFIED_STRICTLY_DISJOINT",
+    "phase4eb_seed_count": 15,
+    "seed_range": [
+      70001,
+      70015
+    ],
+    "overlaps": {
+      "validation_pool": [],
+      "training_pool": [],
+      "phase4c_heldout_pool": [],
+      "phase4ea_diagnostic_pool": []
+    }
+  },
+  "scenarios": [
+    {
+      "scenario_id": 1,
+      "name": "Direct approach toward isolated obstacle",
+      "steps": 150,
+      "canonical": {
+        "outcome": "timeout",
+        "collision_reason": null,
+        "steps_completed": 150,
+        "net_forward_displacement_m": 0.149,
+        "path_length_m": 0.739,
+        "min_obstacle_clearance_m": 0.296,
+        "min_wall_clearance_m": 0.85,
+        "velocity_sign_reversals": 116,
+        "stationary_duration_s": 0.3,
+        "braking_duration_s": 7.5,
+        "recovery_duration_s": 0.0,
+        "bypass_duration_s": 0.0,
+        "blocked_escape_events": 0,
+        "successful_escapes": 0,
+        "intervention_rate_pct": 100.0,
+        "final_position": [
+          2.349,
+          0.0,
+          1.0
+        ],
+        "final_goal_distance_m": 7.151,
+        "final_arrival_speed_mps": 0.1,
+        "sample_trace": [
+          [
+            0,
+            2.209,
+            0.0,
+            1.0,
+            0.18,
+            0.0,
+            "obstacle_brake"
+          ],
+          [
+            15,
+            2.299,
+            0.0,
+            1.0,
+            0.1,
+            0.0,
+            "obstacle_brake"
+          ],
+          [
+            30,
+            2.354,
+            0.0,
+            1.0,
+            0.0,
+            0.0,
+            "obstacle_brake"
+          ],
+          [
+            45,
+            2.349,
+            0.0,
+            1.0,
+            -0.1,
+            0.0,
+            "obstacle_brake"
+          ],
+          [
+            60,
+            2.354,
+            0.0,
+            1.0,
+            0.1,
+            0.0,
+            "obstacle_brake"
+          ],
+          [
+            75,
+            2.349,
+            0.0,
+            1.0,
+            -0.1,
+            0.0,
+            "obstacle_brake"
+          ],
+          [
+            90,
+            2.354,
+            0.0,
+            1.0,
+            0.1,
+            0.0,
+            "obstacle_brake"
+          ],
+          [
+            105,
+            2.349,
+            0.0,
+            1.0,
+            -0.1,
+            0.0,
+            "obstacle_brake"
+          ],
+          [
+            120,
+            2.354,
+            0.0,
+            1.0,
+            0.1,
+            0.0,
+            "obstacle_brake"
+          ],
+          [
+            135,
+            2.349,
+            0.0,
+            1.0,
+            -0.1,
+            0.0,
+            "obstacle_brake"
+          ]
+        ]
+      },
+      "hysteresis": {
+        "outcome": "timeout",
+        "collision_reason": null,
+        "steps_completed": 150,
+        "net_forward_displacement_m": 0.154,
+        "path_length_m": 1.166,
+        "min_obstacle_clearance_m": 0.296,
+        "min_wall_clearance_m": 0.318,
+        "velocity_sign_reversals": 0,
+        "stationary_duration_s": 0.9,
+        "braking_duration_s": 0.0,
+        "recovery_duration_s": 0.0,
+        "bypass_duration_s": 5.85,
+        "blocked_escape_events": 0,
+        "successful_escapes": 0,
+        "intervention_rate_pct": 100.0,
+        "final_position": [
+          2.354,
+          0.052,
+          1.0
+        ],
+        "final_goal_distance_m": 7.146,
+        "final_arrival_speed_mps": 0.2,
+        "sample_trace": [
+          [
+            0,
+            2.209,
+            0.0,
+            1.0,
+            0.18,
+            0.0,
+            "normal_approach"
+          ],
+          [
+            15,
+            2.299,
+            0.0,
+            1.0,
+            0.1,
+            0.0,
+            "normal_approach"
+          ],
+          [
+            30,
+            2.354,
+            0.01,
+            1.0,
+            0.0,
+            0.2,
+            "lateral_obstacle_bypass"
+          ],
+          [
+            45,
+            2.354,
+            0.16,
+            1.0,
+            0.0,
+            0.2,
+            "lateral_obstacle_bypass"
+          ],
+          [
+            60,
+            2.354,
+            0.31,
+            1.0,
+            0.0,
+            0.2,
+            "lateral_obstacle_bypass"
+          ],
+          [
+            75,
+            2.354,
+            0.454,
+            1.0,
+            0.0,
+            0.146,
+            "lateral_obstacle_bypass"
+          ],
+          [
+            90,
+            2.354,
+            0.512,
+            1.0,
+            0.0,
+            0.05,
+            "lateral_obstacle_bypass"
+          ],
+          [
+            105,
+            2.354,
+            0.492,
+            1.0,
+            0.0,
+            -0.2,
+            "lateral_obstacle_bypass"
+          ],
+          [
+            120,
+            2.354,
+            0.342,
+            1.0,
+            0.0,
+            -0.2,
+            "lateral_obstacle_bypass"
+          ],
+          [
+            135,
+            2.354,
+            0.192,
+            1.0,
+            0.0,
+            -0.2,
+            "lateral_obstacle_bypass"
+          ]
+        ]
+      }
+    },
+    {
+      "scenario_id": 2,
+      "name": "Obstacle approached from offset angle",
+      "steps": 150,
+      "canonical": {
+        "outcome": "timeout",
+        "collision_reason": null,
+        "steps_completed": 150,
+        "net_forward_displacement_m": 0.15,
+        "path_length_m": 1.02,
+        "min_obstacle_clearance_m": 0.349,
+        "min_wall_clearance_m": 0.513,
+        "velocity_sign_reversals": 113,
+        "stationary_duration_s": 0.0,
+        "braking_duration_s": 7.5,
+        "recovery_duration_s": 0.0,
+        "bypass_duration_s": 0.0,
+        "blocked_escape_events": 0,
+        "successful_escapes": 0,
+        "intervention_rate_pct": 100.0,
+        "final_position": [
+          2.35,
+          -0.335,
+          1.0
+        ],
+        "final_goal_distance_m": 7.158,
+        "final_arrival_speed_mps": 0.113,
+        "sample_trace": [
+          [
+            0,
+            2.205,
+            -0.147,
+            1.0,
+            0.1,
+            0.052,
+            "obstacle_brake"
+          ],
+          [
+            15,
+            2.28,
+            -0.108,
+            1.0,
+            0.1,
+            0.052,
+            "obstacle_brake"
+          ],
+          [
+            30,
+            2.35,
+            -0.069,
+            1.0,
+            0.0,
+            0.052,
+            "obstacle_brake"
+          ],
+          [
+            45,
+            2.35,
+            -0.081,
+            1.0,
+            0.1,
+            0.052,
+            "obstacle_brake"
+          ],
+          [
+            60,
+            2.345,
+            -0.122,
+            1.0,
+            -0.1,
+            -0.15,
+            "obstacle_brake"
+          ],
+          [
+            75,
+            2.35,
+            -0.154,
+            1.0,
+            0.1,
+            0.052,
+            "obstacle_brake"
+          ],
+          [
+            90,
+            2.345,
+            -0.196,
+            1.0,
+            -0.1,
+            -0.15,
+            "obstacle_brake"
+          ],
+          [
+            105,
+            2.35,
+            -0.227,
+            1.0,
+            0.1,
+            0.052,
+            "obstacle_brake"
+          ],
+          [
+            120,
+            2.345,
+            -0.269,
+            1.0,
+            -0.1,
+            -0.15,
+            "obstacle_brake"
+          ],
+          [
+            135,
+            2.35,
+            -0.301,
+            1.0,
+            0.1,
+            0.052,
+            "obstacle_brake"
+          ]
+        ]
+      },
+      "hysteresis": {
+        "outcome": "timeout",
+        "collision_reason": null,
+        "steps_completed": 150,
+        "net_forward_displacement_m": -0.05,
+        "path_length_m": 0.948,
+        "min_obstacle_clearance_m": 0.352,
+        "min_wall_clearance_m": 0.32,
+        "velocity_sign_reversals": 0,
+        "stationary_duration_s": 0.6,
+        "braking_duration_s": 0.0,
+        "recovery_duration_s": 2.0,
+        "bypass_duration_s": 3.7,
+        "blocked_escape_events": 0,
+        "successful_escapes": 0,
+        "intervention_rate_pct": 100.0,
+        "final_position": [
+          2.15,
+          -0.489,
+          1.0
+        ],
+        "final_goal_distance_m": 7.366,
+        "final_arrival_speed_mps": 0.078,
+        "sample_trace": [
+          [
+            0,
+            2.205,
+            -0.147,
+            1.0,
+            0.1,
+            0.052,
+            "normal_approach"
+          ],
+          [
+            15,
+            2.28,
+            -0.108,
+            1.0,
+            0.1,
+            0.052,
+            "normal_approach"
+          ],
+          [
+            30,
+            2.35,
+            -0.069,
+            1.0,
+            0.0,
+            0.052,
+            "obstacle_braking"
+          ],
+          [
+            45,
+            2.35,
+            -0.194,
+            1.0,
+            0.0,
+            -0.2,
+            "lateral_obstacle_bypass"
+          ],
+          [
+            60,
+            2.35,
+            -0.344,
+            1.0,
+            0.0,
+            -0.2,
+            "lateral_obstacle_bypass"
+          ],
+          [
+            75,
+            2.35,
+            -0.474,
+            1.0,
+            0.0,
+            -0.107,
+            "lateral_obstacle_bypass"
+          ],
+          [
+            90,
+            2.35,
+            -0.52,
+            1.0,
+            0.0,
+            -0.05,
+            "lateral_obstacle_bypass"
+          ],
+          [
+            105,
+            2.31,
+            -0.504,
+            1.0,
+            -0.1,
+            0.052,
+            "retreat_or_recovery"
+          ],
+          [
+            120,
+            2.235,
+            -0.465,
+            1.0,
+            -0.1,
+            0.052,
+            "retreat_or_recovery"
+          ],
+          [
+            135,
+            2.16,
+            -0.426,
+            1.0,
+            -0.1,
+            0.052,
+            "retreat_or_recovery"
+          ]
+        ]
+      }
+    },
+    {
+      "scenario_id": 3,
+      "name": "Bypass route open on left only",
+      "steps": 150,
+      "canonical": {
+        "outcome": "timeout",
+        "collision_reason": null,
+        "steps_completed": 150,
+        "net_forward_displacement_m": -0.72,
+        "path_length_m": 1.119,
+        "min_obstacle_clearance_m": 0.35,
+        "min_wall_clearance_m": 0.349,
+        "velocity_sign_reversals": 0,
+        "stationary_duration_s": 0.3,
+        "braking_duration_s": 7.5,
+        "recovery_duration_s": 0.0,
+        "bypass_duration_s": 0.0,
+        "blocked_escape_events": 0,
+        "successful_escapes": 0,
+        "intervention_rate_pct": 100.0,
+        "final_position": [
+          1.58,
+          0.501,
+          1.0
+        ],
+        "final_goal_distance_m": 7.936,
+        "final_arrival_speed_mps": 0.1,
+        "sample_trace": [
+          [
+            0,
+            2.3,
+            -0.248,
+            1.0,
+            0.0,
+            0.045,
+            "obstacle_brake"
+          ],
+          [
+            15,
+            2.25,
+            -0.162,
+            1.0,
+            -0.1,
+            0.15,
+            "obstacle_brake"
+          ],
+          [
+            30,
+            2.175,
+            -0.049,
+            1.0,
+            -0.1,
+            0.15,
+            "obstacle_brake"
+          ],
+          [
+            45,
+            2.1,
+            0.063,
+            1.0,
+            -0.1,
+            0.15,
+            "obstacle_brake"
+          ],
+          [
+            60,
+            2.025,
+            0.176,
+            1.0,
+            -0.1,
+            0.15,
+            "obstacle_brake"
+          ],
+          [
+            75,
+            1.95,
+            0.288,
+            1.0,
+            -0.1,
+            0.15,
+            "obstacle_brake"
+          ],
+          [
+            90,
+            1.875,
+            0.401,
+            1.0,
+            -0.1,
+            0.15,
+            "obstacle_brake"
+          ],
+          [
+            105,
+            1.8,
+            0.485,
+            1.0,
+            -0.1,
+            0.009,
+            "obstacle_brake"
+          ],
+          [
+            120,
+            1.725,
+            0.491,
+            1.0,
+            -0.1,
+            0.008,
+            "obstacle_brake"
+          ],
+          [
+            135,
+            1.65,
+            0.497,
+            1.0,
+            -0.1,
+            0.007,
+            "obstacle_brake"
+          ]
+        ]
+      },
+      "hysteresis": {
+        "outcome": "timeout",
+        "collision_reason": null,
+        "steps_completed": 150,
+        "net_forward_displacement_m": -0.225,
+        "path_length_m": 1.007,
+        "min_obstacle_clearance_m": 0.35,
+        "min_wall_clearance_m": 0.318,
+        "velocity_sign_reversals": 0,
+        "stationary_duration_s": 1.15,
+        "braking_duration_s": 0.0,
+        "recovery_duration_s": 2.3,
+        "bypass_duration_s": 4.7,
+        "blocked_escape_events": 4,
+        "successful_escapes": 0,
+        "intervention_rate_pct": 100.0,
+        "final_position": [
+          2.075,
+          0.532,
+          1.0
+        ],
+        "final_goal_distance_m": 7.444,
+        "final_arrival_speed_mps": 0.1,
+        "sample_trace": [
+          [
+            0,
+            2.3,
+            -0.25,
+            1.0,
+            0.0,
+            0.0,
+            "obstacle_braking"
+          ],
+          [
+            15,
+            2.3,
+            -0.12,
+            1.0,
+            0.0,
+            0.2,
+            "lateral_obstacle_bypass"
+          ],
+          [
+            30,
+            2.3,
+            0.03,
+            1.0,
+            0.0,
+            0.2,
+            "lateral_obstacle_bypass"
+          ],
+          [
+            45,
+            2.3,
+            0.18,
+            1.0,
+            0.0,
+            0.2,
+            "lateral_obstacle_bypass"
+          ],
+          [
+            60,
+            2.3,
+            0.33,
+            1.0,
+            0.0,
+            0.2,
+            "lateral_obstacle_bypass"
+          ],
+          [
+            75,
+            2.3,
+            0.466,
+            1.0,
+            0.0,
+            0.121,
+            "lateral_obstacle_bypass"
+          ],
+          [
+            90,
+            2.3,
+            0.517,
+            1.0,
+            0.0,
+            0.05,
+            "lateral_obstacle_bypass"
+          ],
+          [
+            105,
+            2.27,
+            0.532,
+            1.0,
+            -0.1,
+            0.0,
+            "retreat_or_recovery"
+          ],
+          [
+            120,
+            2.195,
+            0.532,
+            1.0,
+            -0.1,
+            0.0,
+            "retreat_or_recovery"
+          ],
+          [
+            135,
+            2.12,
+            0.532,
+            1.0,
+            -0.1,
+            0.0,
+            "retreat_or_recovery"
+          ]
+        ]
+      }
+    },
+    {
+      "scenario_id": 4,
+      "name": "Bypass route open on right only",
+      "steps": 150,
+      "canonical": {
+        "outcome": "timeout",
+        "collision_reason": null,
+        "steps_completed": 150,
+        "net_forward_displacement_m": -0.72,
+        "path_length_m": 1.119,
+        "min_obstacle_clearance_m": 0.35,
+        "min_wall_clearance_m": 0.349,
+        "velocity_sign_reversals": 0,
+        "stationary_duration_s": 0.3,
+        "braking_duration_s": 7.5,
+        "recovery_duration_s": 0.0,
+        "bypass_duration_s": 0.0,
+        "blocked_escape_events": 0,
+        "successful_escapes": 0,
+        "intervention_rate_pct": 100.0,
+        "final_position": [
+          1.58,
+          -0.501,
+          1.0
+        ],
+        "final_goal_distance_m": 7.936,
+        "final_arrival_speed_mps": 0.1,
+        "sample_trace": [
+          [
+            0,
+            2.3,
+            0.248,
+            1.0,
+            0.0,
+            -0.045,
+            "obstacle_brake"
+          ],
+          [
+            15,
+            2.25,
+            0.162,
+            1.0,
+            -0.1,
+            -0.15,
+            "obstacle_brake"
+          ],
+          [
+            30,
+            2.175,
+            0.049,
+            1.0,
+            -0.1,
+            -0.15,
+            "obstacle_brake"
+          ],
+          [
+            45,
+            2.1,
+            -0.063,
+            1.0,
+            -0.1,
+            -0.15,
+            "obstacle_brake"
+          ],
+          [
+            60,
+            2.025,
+            -0.176,
+            1.0,
+            -0.1,
+            -0.15,
+            "obstacle_brake"
+          ],
+          [
+            75,
+            1.95,
+            -0.288,
+            1.0,
+            -0.1,
+            -0.15,
+            "obstacle_brake"
+          ],
+          [
+            90,
+            1.875,
+            -0.401,
+            1.0,
+            -0.1,
+            -0.15,
+            "obstacle_brake"
+          ],
+          [
+            105,
+            1.8,
+            -0.485,
+            1.0,
+            -0.1,
+            -0.009,
+            "obstacle_brake"
+          ],
+          [
+            120,
+            1.725,
+            -0.491,
+            1.0,
+            -0.1,
+            -0.008,
+            "obstacle_brake"
+          ],
+          [
+            135,
+            1.65,
+            -0.497,
+            1.0,
+            -0.1,
+            -0.007,
+            "obstacle_brake"
+          ]
+        ]
+      },
+      "hysteresis": {
+        "outcome": "timeout",
+        "collision_reason": null,
+        "steps_completed": 150,
+        "net_forward_displacement_m": -0.225,
+        "path_length_m": 1.007,
+        "min_obstacle_clearance_m": 0.35,
+        "min_wall_clearance_m": 0.318,
+        "velocity_sign_reversals": 0,
+        "stationary_duration_s": 1.15,
+        "braking_duration_s": 0.0,
+        "recovery_duration_s": 2.3,
+        "bypass_duration_s": 4.7,
+        "blocked_escape_events": 4,
+        "successful_escapes": 0,
+        "intervention_rate_pct": 100.0,
+        "final_position": [
+          2.075,
+          -0.532,
+          1.0
+        ],
+        "final_goal_distance_m": 7.444,
+        "final_arrival_speed_mps": 0.1,
+        "sample_trace": [
+          [
+            0,
+            2.3,
+            0.25,
+            1.0,
+            0.0,
+            0.0,
+            "obstacle_braking"
+          ],
+          [
+            15,
+            2.3,
+            0.12,
+            1.0,
+            0.0,
+            -0.2,
+            "lateral_obstacle_bypass"
+          ],
+          [
+            30,
+            2.3,
+            -0.03,
+            1.0,
+            0.0,
+            -0.2,
+            "lateral_obstacle_bypass"
+          ],
+          [
+            45,
+            2.3,
+            -0.18,
+            1.0,
+            0.0,
+            -0.2,
+            "lateral_obstacle_bypass"
+          ],
+          [
+            60,
+            2.3,
+            -0.33,
+            1.0,
+            0.0,
+            -0.2,
+            "lateral_obstacle_bypass"
+          ],
+          [
+            75,
+            2.3,
+            -0.466,
+            1.0,
+            0.0,
+            -0.121,
+            "lateral_obstacle_bypass"
+          ],
+          [
+            90,
+            2.3,
+            -0.517,
+            1.0,
+            0.0,
+            -0.05,
+            "lateral_obstacle_bypass"
+          ],
+          [
+            105,
+            2.27,
+            -0.532,
+            1.0,
+            -0.1,
+            0.0,
+            "retreat_or_recovery"
+          ],
+          [
+            120,
+            2.195,
+            -0.532,
+            1.0,
+            -0.1,
+            0.0,
+            "retreat_or_recovery"
+          ],
+          [
+            135,
+            2.12,
+            -0.532,
+            1.0,
+            -0.1,
+            0.0,
+            "retreat_or_recovery"
+          ]
+        ]
+      }
+    },
+    {
+      "scenario_id": 5,
+      "name": "Obstacle near corridor wall",
+      "steps": 150,
+      "canonical": {
+        "outcome": "timeout",
+        "collision_reason": null,
+        "steps_completed": 150,
+        "net_forward_displacement_m": -0.72,
+        "path_length_m": 1.281,
+        "min_obstacle_clearance_m": 0.35,
+        "min_wall_clearance_m": 0.327,
+        "velocity_sign_reversals": 0,
+        "stationary_duration_s": 0.0,
+        "braking_duration_s": 7.5,
+        "recovery_duration_s": 0.0,
+        "bypass_duration_s": 0.0,
+        "blocked_escape_events": 0,
+        "successful_escapes": 0,
+        "intervention_rate_pct": 100.0,
+        "final_position": [
+          1.58,
+          -0.524,
+          1.0
+        ],
+        "final_goal_distance_m": 7.937,
+        "final_arrival_speed_mps": 0.1,
+        "sample_trace": [
+          [
+            0,
+            2.3,
+            0.495,
+            1.0,
+            0.0,
+            -0.105,
+            "obstacle_brake"
+          ],
+          [
+            15,
+            2.25,
+            0.394,
+            1.0,
+            -0.1,
+            -0.15,
+            "obstacle_brake"
+          ],
+          [
+            30,
+            2.175,
+            0.281,
+            1.0,
+            -0.1,
+            -0.15,
+            "obstacle_brake"
+          ],
+          [
+            45,
+            2.1,
+            0.169,
+            1.0,
+            -0.1,
+            -0.15,
+            "obstacle_brake"
+          ],
+          [
+            60,
+            2.025,
+            0.056,
+            1.0,
+            -0.1,
+            -0.15,
+            "obstacle_brake"
+          ],
+          [
+            75,
+            1.95,
+            -0.056,
+            1.0,
+            -0.1,
+            -0.15,
+            "obstacle_brake"
+          ],
+          [
+            90,
+            1.875,
+            -0.169,
+            1.0,
+            -0.1,
+            -0.15,
+            "obstacle_brake"
+          ],
+          [
+            105,
+            1.8,
+            -0.281,
+            1.0,
+            -0.1,
+            -0.15,
+            "obstacle_brake"
+          ],
+          [
+            120,
+            1.725,
+            -0.394,
+            1.0,
+            -0.1,
+            -0.15,
+            "obstacle_brake"
+          ],
+          [
+            135,
+            1.65,
+            -0.506,
+            1.0,
+            -0.1,
+            -0.15,
+            "obstacle_brake"
+          ]
+        ]
+      },
+      "hysteresis": {
+        "outcome": "timeout",
+        "collision_reason": null,
+        "steps_completed": 150,
+        "net_forward_displacement_m": -0.125,
+        "path_length_m": 1.157,
+        "min_obstacle_clearance_m": 0.35,
+        "min_wall_clearance_m": 0.318,
+        "velocity_sign_reversals": 0,
+        "stationary_duration_s": 0.9,
+        "braking_duration_s": 0.0,
+        "recovery_duration_s": 1.25,
+        "bypass_duration_s": 5.95,
+        "blocked_escape_events": 0,
+        "successful_escapes": 0,
+        "intervention_rate_pct": 100.0,
+        "final_position": [
+          2.175,
+          -0.532,
+          1.0
+        ],
+        "final_goal_distance_m": 7.344,
+        "final_arrival_speed_mps": 0.1,
+        "sample_trace": [
+          [
+            0,
+            2.3,
+            0.5,
+            1.0,
+            0.0,
+            0.0,
+            "obstacle_braking"
+          ],
+          [
+            15,
+            2.3,
+            0.37,
+            1.0,
+            0.0,
+            -0.2,
+            "lateral_obstacle_bypass"
+          ],
+          [
+            30,
+            2.3,
+            0.22,
+            1.0,
+            0.0,
+            -0.2,
+            "lateral_obstacle_bypass"
+          ],
+          [
+            45,
+            2.3,
+            0.07,
+            1.0,
+            0.0,
+            -0.2,
+            "lateral_obstacle_bypass"
+          ],
+          [
+            60,
+            2.3,
+            -0.08,
+            1.0,
+            0.0,
+            -0.2,
+            "lateral_obstacle_bypass"
+          ],
+          [
+            75,
+            2.3,
+            -0.23,
+            1.0,
+            0.0,
+            -0.2,
+            "lateral_obstacle_bypass"
+          ],
+          [
+            90,
+            2.3,
+            -0.38,
+            1.0,
+            0.0,
+            -0.2,
+            "lateral_obstacle_bypass"
+          ],
+          [
+            105,
+            2.3,
+            -0.49,
+            1.0,
+            0.0,
+            -0.077,
+            "lateral_obstacle_bypass"
+          ],
+          [
+            120,
+            2.3,
+            -0.529,
+            1.0,
+            0.0,
+            -0.05,
+            "lateral_obstacle_bypass"
+          ],
+          [
+            135,
+            2.245,
+            -0.532,
+            1.0,
+            -0.1,
+            0.0,
+            "retreat_or_recovery"
+          ]
+        ]
+      }
+    },
+    {
+      "scenario_id": 6,
+      "name": "Narrow passage with no route satisfying bypass threshold",
+      "steps": 150,
+      "canonical": {
+        "outcome": "timeout",
+        "collision_reason": null,
+        "steps_completed": 150,
+        "net_forward_displacement_m": -0.72,
+        "path_length_m": 0.72,
+        "min_obstacle_clearance_m": 0.25,
+        "min_wall_clearance_m": 0.85,
+        "velocity_sign_reversals": 0,
+        "stationary_duration_s": 0.3,
+        "braking_duration_s": 7.5,
+        "recovery_duration_s": 0.0,
+        "bypass_duration_s": 0.0,
+        "blocked_escape_events": 0,
+        "successful_escapes": 0,
+        "intervention_rate_pct": 100.0,
+        "final_position": [
+          1.68,
+          0.0,
+          1.0
+        ],
+        "final_goal_distance_m": 7.82,
+        "final_arrival_speed_mps": 0.1,
+        "sample_trace": [
+          [
+            0,
+            2.4,
+            0.0,
+            1.0,
+            0.0,
+            0.0,
+            "obstacle_brake"
+          ],
+          [
+            15,
+            2.35,
+            0.0,
+            1.0,
+            -0.1,
+            0.0,
+            "obstacle_brake"
+          ],
+          [
+            30,
+            2.275,
+            0.0,
+            1.0,
+            -0.1,
+            0.0,
+            "obstacle_brake"
+          ],
+          [
+            45,
+            2.2,
+            0.0,
+            1.0,
+            -0.1,
+            0.0,
+            "obstacle_brake"
+          ],
+          [
+            60,
+            2.125,
+            0.0,
+            1.0,
+            -0.1,
+            0.0,
+            "obstacle_brake"
+          ],
+          [
+            75,
+            2.05,
+            0.0,
+            1.0,
+            -0.1,
+            0.0,
+            "obstacle_brake"
+          ],
+          [
+            90,
+            1.975,
+            0.0,
+            1.0,
+            -0.1,
+            0.0,
+            "obstacle_brake"
+          ],
+          [
+            105,
+            1.9,
+            0.0,
+            1.0,
+            -0.1,
+            0.0,
+            "obstacle_brake"
+          ],
+          [
+            120,
+            1.825,
+            0.0,
+            1.0,
+            -0.1,
+            0.0,
+            "obstacle_brake"
+          ],
+          [
+            135,
+            1.75,
+            0.0,
+            1.0,
+            -0.1,
+            0.0,
+            "obstacle_brake"
+          ]
+        ]
+      },
+      "hysteresis": {
+        "outcome": "timeout",
+        "collision_reason": null,
+        "steps_completed": 150,
+        "net_forward_displacement_m": -0.66,
+        "path_length_m": 0.66,
+        "min_obstacle_clearance_m": 0.25,
+        "min_wall_clearance_m": 0.85,
+        "velocity_sign_reversals": 0,
+        "stationary_duration_s": 0.9,
+        "braking_duration_s": 0.0,
+        "recovery_duration_s": 6.75,
+        "bypass_duration_s": 0.0,
+        "blocked_escape_events": 12,
+        "successful_escapes": 0,
+        "intervention_rate_pct": 100.0,
+        "final_position": [
+          1.74,
+          0.0,
+          1.0
+        ],
+        "final_goal_distance_m": 7.76,
+        "final_arrival_speed_mps": 0.1,
+        "sample_trace": [
+          [
+            0,
+            2.4,
+            0.0,
+            1.0,
+            0.0,
+            0.0,
+            "obstacle_braking"
+          ],
+          [
+            15,
+            2.335,
+            0.0,
+            1.0,
+            -0.1,
+            0.0,
+            "retreat_or_recovery"
+          ],
+          [
+            30,
+            2.26,
+            0.0,
+            1.0,
+            -0.1,
+            0.0,
+            "retreat_or_recovery"
+          ],
+          [
+            45,
+            2.2,
+            0.0,
+            1.0,
+            0.0,
+            0.0,
+            "blocked_escape_direction"
+          ],
+          [
+            60,
+            2.135,
+            0.0,
+            1.0,
+            -0.1,
+            0.0,
+            "retreat_or_recovery"
+          ],
+          [
+            75,
+            2.06,
+            0.0,
+            1.0,
+            -0.1,
+            0.0,
+            "retreat_or_recovery"
+          ],
+          [
+            90,
+            2.005,
+            0.0,
+            1.0,
+            0.0,
+            0.0,
+            "blocked_escape_direction"
+          ],
+          [
+            105,
+            1.935,
+            0.0,
+            1.0,
+            -0.1,
+            0.0,
+            "retreat_or_recovery"
+          ],
+          [
+            120,
+            1.86,
+            0.0,
+            1.0,
+            -0.1,
+            0.0,
+            "retreat_or_recovery"
+          ],
+          [
+            135,
+            1.81,
+            0.0,
+            1.0,
+            0.0,
+            0.0,
+            "retreat_or_recovery"
+          ]
+        ]
+      }
+    },
+    {
+      "scenario_id": 7,
+      "name": "Multiple obstacles encountered consecutively",
+      "steps": 150,
+      "canonical": {
+        "outcome": "timeout",
+        "collision_reason": null,
+        "steps_completed": 150,
+        "net_forward_displacement_m": -0.72,
+        "path_length_m": 0.965,
+        "min_obstacle_clearance_m": 0.45,
+        "min_wall_clearance_m": 0.393,
+        "velocity_sign_reversals": 0,
+        "stationary_duration_s": 0.3,
+        "braking_duration_s": 7.5,
+        "recovery_duration_s": 0.0,
+        "bypass_duration_s": 0.0,
+        "blocked_escape_events": 0,
+        "successful_escapes": 0,
+        "intervention_rate_pct": 100.0,
+        "final_position": [
+          1.48,
+          0.457,
+          1.0
+        ],
+        "final_goal_distance_m": 8.033,
+        "final_arrival_speed_mps": 0.1,
+        "sample_trace": [
+          [
+            0,
+            2.2,
+            0.0,
+            1.0,
+            0.0,
+            0.0,
+            "obstacle_brake"
+          ],
+          [
+            15,
+            2.15,
+            0.075,
+            1.0,
+            -0.1,
+            0.15,
+            "obstacle_brake"
+          ],
+          [
+            30,
+            2.075,
+            0.187,
+            1.0,
+            -0.1,
+            0.15,
+            "obstacle_brake"
+          ],
+          [
+            45,
+            2.0,
+            0.3,
+            1.0,
+            -0.1,
+            0.15,
+            "obstacle_brake"
+          ],
+          [
+            60,
+            1.925,
+            0.412,
+            1.0,
+            -0.1,
+            0.15,
+            "obstacle_brake"
+          ],
+          [
+            75,
+            1.85,
+            0.457,
+            1.0,
+            -0.1,
+            0.0,
+            "obstacle_brake"
+          ],
+          [
+            90,
+            1.775,
+            0.457,
+            1.0,
+            -0.1,
+            0.0,
+            "obstacle_brake"
+          ],
+          [
+            105,
+            1.7,
+            0.457,
+            1.0,
+            -0.1,
+            0.0,
+            "obstacle_brake"
+          ],
+          [
+            120,
+            1.625,
+            0.457,
+            1.0,
+            -0.1,
+            0.0,
+            "obstacle_brake"
+          ],
+          [
+            135,
+            1.55,
+            0.457,
+            1.0,
+            -0.1,
+            0.0,
+            "obstacle_brake"
+          ]
+        ]
+      },
+      "hysteresis": {
+        "outcome": "timeout",
+        "collision_reason": null,
+        "steps_completed": 150,
+        "net_forward_displacement_m": -0.35,
+        "path_length_m": 0.882,
+        "min_obstacle_clearance_m": 0.45,
+        "min_wall_clearance_m": 0.318,
+        "velocity_sign_reversals": 0,
+        "stationary_duration_s": 1.15,
+        "braking_duration_s": 0.0,
+        "recovery_duration_s": 3.55,
+        "bypass_duration_s": 3.45,
+        "blocked_escape_events": 4,
+        "successful_escapes": 0,
+        "intervention_rate_pct": 100.0,
+        "final_position": [
+          1.85,
+          0.532,
+          1.0
+        ],
+        "final_goal_distance_m": 7.668,
+        "final_arrival_speed_mps": 0.1,
+        "sample_trace": [
+          [
+            0,
+            2.2,
+            0.0,
+            1.0,
+            0.0,
+            0.0,
+            "obstacle_braking"
+          ],
+          [
+            15,
+            2.2,
+            0.13,
+            1.0,
+            0.0,
+            0.2,
+            "lateral_obstacle_bypass"
+          ],
+          [
+            30,
+            2.2,
+            0.28,
+            1.0,
+            0.0,
+            0.2,
+            "lateral_obstacle_bypass"
+          ],
+          [
+            45,
+            2.2,
+            0.43,
+            1.0,
+            0.0,
+            0.191,
+            "lateral_obstacle_bypass"
+          ],
+          [
+            60,
+            2.2,
+            0.504,
+            1.0,
+            0.0,
+            0.05,
+            "lateral_obstacle_bypass"
+          ],
+          [
+            75,
+            2.195,
+            0.532,
+            1.0,
+            -0.1,
+            0.0,
+            "retreat_or_recovery"
+          ],
+          [
+            90,
+            2.12,
+            0.532,
+            1.0,
+            -0.1,
+            0.0,
+            "retreat_or_recovery"
+          ],
+          [
+            105,
+            2.045,
+            0.532,
+            1.0,
+            -0.1,
+            0.0,
+            "retreat_or_recovery"
+          ],
+          [
+            120,
+            1.995,
+            0.532,
+            1.0,
+            -0.1,
+            0.0,
+            "retreat_or_recovery"
+          ],
+          [
+            135,
+            1.92,
+            0.532,
+            1.0,
+            -0.1,
+            0.0,
+            "retreat_or_recovery"
+          ]
+        ]
+      }
+    },
+    {
+      "scenario_id": 8,
+      "name": "Recovery after unsuccessful lateral bypass",
+      "steps": 150,
+      "canonical": {
+        "outcome": "timeout",
+        "collision_reason": null,
+        "steps_completed": 150,
+        "net_forward_displacement_m": -0.725,
+        "path_length_m": 0.761,
+        "min_obstacle_clearance_m": 0.15,
+        "min_wall_clearance_m": 0.783,
+        "velocity_sign_reversals": 0,
+        "stationary_duration_s": 0.25,
+        "braking_duration_s": 7.5,
+        "recovery_duration_s": 0.0,
+        "bypass_duration_s": 0.0,
+        "blocked_escape_events": 0,
+        "successful_escapes": 0,
+        "intervention_rate_pct": 100.0,
+        "final_position": [
+          1.775,
+          0.067,
+          1.0
+        ],
+        "final_goal_distance_m": 7.725,
+        "final_arrival_speed_mps": 0.1,
+        "sample_trace": [
+          [
+            0,
+            2.495,
+            0.0,
+            1.0,
+            -0.1,
+            0.0,
+            "obstacle_brake"
+          ],
+          [
+            15,
+            2.445,
+            0.067,
+            1.0,
+            -0.1,
+            0.0,
+            "obstacle_brake"
+          ],
+          [
+            30,
+            2.37,
+            0.067,
+            1.0,
+            -0.1,
+            0.0,
+            "obstacle_brake"
+          ],
+          [
+            45,
+            2.295,
+            0.067,
+            1.0,
+            -0.1,
+            0.0,
+            "obstacle_brake"
+          ],
+          [
+            60,
+            2.22,
+            0.067,
+            1.0,
+            -0.1,
+            0.0,
+            "obstacle_brake"
+          ],
+          [
+            75,
+            2.145,
+            0.067,
+            1.0,
+            -0.1,
+            0.0,
+            "obstacle_brake"
+          ],
+          [
+            90,
+            2.07,
+            0.067,
+            1.0,
+            -0.1,
+            0.0,
+            "obstacle_brake"
+          ],
+          [
+            105,
+            1.995,
+            0.067,
+            1.0,
+            -0.1,
+            0.0,
+            "obstacle_brake"
+          ],
+          [
+            120,
+            1.92,
+            0.067,
+            1.0,
+            -0.1,
+            0.0,
+            "obstacle_brake"
+          ],
+          [
+            135,
+            1.845,
+            0.067,
+            1.0,
+            -0.1,
+            0.0,
+            "obstacle_brake"
+          ]
+        ]
+      },
+      "hysteresis": {
+        "outcome": "timeout",
+        "collision_reason": null,
+        "steps_completed": 150,
+        "net_forward_displacement_m": -0.675,
+        "path_length_m": 0.706,
+        "min_obstacle_clearance_m": 0.15,
+        "min_wall_clearance_m": 0.775,
+        "velocity_sign_reversals": 0,
+        "stationary_duration_s": 0.75,
+        "braking_duration_s": 0.0,
+        "recovery_duration_s": 6.9,
+        "bypass_duration_s": 0.0,
+        "blocked_escape_events": 12,
+        "successful_escapes": 0,
+        "intervention_rate_pct": 100.0,
+        "final_position": [
+          1.825,
+          0.075,
+          1.0
+        ],
+        "final_goal_distance_m": 7.675,
+        "final_arrival_speed_mps": 0.1,
+        "sample_trace": [
+          [
+            0,
+            2.495,
+            0.005,
+            1.0,
+            -0.1,
+            0.1,
+            "retreat_or_recovery"
+          ],
+          [
+            15,
+            2.42,
+            0.075,
+            1.0,
+            -0.1,
+            0.0,
+            "retreat_or_recovery"
+          ],
+          [
+            30,
+            2.345,
+            0.075,
+            1.0,
+            -0.1,
+            0.0,
+            "retreat_or_recovery"
+          ],
+          [
+            45,
+            2.295,
+            0.075,
+            1.0,
+            -0.1,
+            0.0,
+            "retreat_or_recovery"
+          ],
+          [
+            60,
+            2.22,
+            0.075,
+            1.0,
+            -0.1,
+            0.0,
+            "retreat_or_recovery"
+          ],
+          [
+            75,
+            2.145,
+            0.075,
+            1.0,
+            -0.1,
+            0.0,
+            "retreat_or_recovery"
+          ],
+          [
+            90,
+            2.095,
+            0.075,
+            1.0,
+            -0.1,
+            0.0,
+            "retreat_or_recovery"
+          ],
+          [
+            105,
+            2.02,
+            0.075,
+            1.0,
+            -0.1,
+            0.0,
+            "retreat_or_recovery"
+          ],
+          [
+            120,
+            1.945,
+            0.075,
+            1.0,
+            -0.1,
+            0.0,
+            "retreat_or_recovery"
+          ],
+          [
+            135,
+            1.895,
+            0.075,
+            1.0,
+            -0.1,
+            0.0,
+            "retreat_or_recovery"
+          ]
+        ]
+      }
+    },
+    {
+      "scenario_id": 9,
+      "name": "Stationary drone with blocked escape direction",
+      "steps": 150,
+      "canonical": {
+        "outcome": "timeout",
+        "collision_reason": null,
+        "steps_completed": 150,
+        "net_forward_displacement_m": 0.0,
+        "path_length_m": 0.0,
+        "min_obstacle_clearance_m": 0.22,
+        "min_wall_clearance_m": 0.85,
+        "velocity_sign_reversals": 0,
+        "stationary_duration_s": 7.5,
+        "braking_duration_s": 7.5,
+        "recovery_duration_s": 0.0,
+        "bypass_duration_s": 0.0,
+        "blocked_escape_events": 0,
+        "successful_escapes": 0,
+        "intervention_rate_pct": 100.0,
+        "final_position": [
+          2.5,
+          0.0,
+          1.0
+        ],
+        "final_goal_distance_m": 7.0,
+        "final_arrival_speed_mps": 0.0,
+        "sample_trace": [
+          [
+            0,
+            2.5,
+            0.0,
+            1.0,
+            0.0,
+            0.0,
+            "obstacle_brake"
+          ],
+          [
+            15,
+            2.5,
+            0.0,
+            1.0,
+            0.0,
+            0.0,
+            "obstacle_brake"
+          ],
+          [
+            30,
+            2.5,
+            0.0,
+            1.0,
+            0.0,
+            0.0,
+            "obstacle_brake"
+          ],
+          [
+            45,
+            2.5,
+            0.0,
+            1.0,
+            0.0,
+            0.0,
+            "obstacle_brake"
+          ],
+          [
+            60,
+            2.5,
+            0.0,
+            1.0,
+            0.0,
+            0.0,
+            "obstacle_brake"
+          ],
+          [
+            75,
+            2.5,
+            0.0,
+            1.0,
+            0.0,
+            0.0,
+            "obstacle_brake"
+          ],
+          [
+            90,
+            2.5,
+            0.0,
+            1.0,
+            0.0,
+            0.0,
+            "obstacle_brake"
+          ],
+          [
+            105,
+            2.5,
+            0.0,
+            1.0,
+            0.0,
+            0.0,
+            "obstacle_brake"
+          ],
+          [
+            120,
+            2.5,
+            0.0,
+            1.0,
+            0.0,
+            0.0,
+            "obstacle_brake"
+          ],
+          [
+            135,
+            2.5,
+            0.0,
+            1.0,
+            0.0,
+            0.0,
+            "obstacle_brake"
+          ]
+        ]
+      },
+      "hysteresis": {
+        "outcome": "timeout",
+        "collision_reason": null,
+        "steps_completed": 150,
+        "net_forward_displacement_m": 0.0,
+        "path_length_m": 0.0,
+        "min_obstacle_clearance_m": 0.22,
+        "min_wall_clearance_m": 0.85,
+        "velocity_sign_reversals": 0,
+        "stationary_duration_s": 7.5,
+        "braking_duration_s": 0.0,
+        "recovery_duration_s": 0.0,
+        "bypass_duration_s": 0.0,
+        "blocked_escape_events": 147,
+        "successful_escapes": 0,
+        "intervention_rate_pct": 100.0,
+        "final_position": [
+          2.5,
+          0.0,
+          1.0
+        ],
+        "final_goal_distance_m": 7.0,
+        "final_arrival_speed_mps": 0.0,
+        "sample_trace": [
+          [
+            0,
+            2.5,
+            0.0,
+            1.0,
+            0.0,
+            0.0,
+            "obstacle_braking"
+          ],
+          [
+            15,
+            2.5,
+            0.0,
+            1.0,
+            0.0,
+            0.0,
+            "blocked_escape_direction"
+          ],
+          [
+            30,
+            2.5,
+            0.0,
+            1.0,
+            0.0,
+            0.0,
+            "blocked_escape_direction"
+          ],
+          [
+            45,
+            2.5,
+            0.0,
+            1.0,
+            0.0,
+            0.0,
+            "blocked_escape_direction"
+          ],
+          [
+            60,
+            2.5,
+            0.0,
+            1.0,
+            0.0,
+            0.0,
+            "blocked_escape_direction"
+          ],
+          [
+            75,
+            2.5,
+            0.0,
+            1.0,
+            0.0,
+            0.0,
+            "blocked_escape_direction"
+          ],
+          [
+            90,
+            2.5,
+            0.0,
+            1.0,
+            0.0,
+            0.0,
+            "blocked_escape_direction"
+          ],
+          [
+            105,
+            2.5,
+            0.0,
+            1.0,
+            0.0,
+            0.0,
+            "blocked_escape_direction"
+          ],
+          [
+            120,
+            2.5,
+            0.0,
+            1.0,
+            0.0,
+            0.0,
+            "blocked_escape_direction"
+          ],
+          [
+            135,
+            2.5,
+            0.0,
+            1.0,
+            0.0,
+            0.0,
+            "blocked_escape_direction"
+          ]
+        ]
+      }
+    },
+    {
+      "scenario_id": 10,
+      "name": "Clear corridor with no obstacle",
+      "steps": 150,
+      "canonical": {
+        "outcome": "timeout",
+        "collision_reason": null,
+        "steps_completed": 150,
+        "net_forward_displacement_m": 4.5,
+        "path_length_m": 4.5,
+        "min_obstacle_clearance_m": 10.0,
+        "min_wall_clearance_m": 0.85,
+        "velocity_sign_reversals": 0,
+        "stationary_duration_s": 0.0,
+        "braking_duration_s": 0.0,
+        "recovery_duration_s": 0.0,
+        "bypass_duration_s": 0.0,
+        "blocked_escape_events": 0,
+        "successful_escapes": 0,
+        "intervention_rate_pct": 0.0,
+        "final_position": [
+          5.5,
+          0.0,
+          1.0
+        ],
+        "final_goal_distance_m": 4.0,
+        "final_arrival_speed_mps": 0.6,
+        "sample_trace": [
+          [
+            0,
+            1.03,
+            0.0,
+            1.0,
+            0.6,
+            0.0,
+            "nominal"
+          ],
+          [
+            15,
+            1.48,
+            0.0,
+            1.0,
+            0.6,
+            0.0,
+            "nominal"
+          ],
+          [
+            30,
+            1.93,
+            0.0,
+            1.0,
+            0.6,
+            0.0,
+            "nominal"
+          ],
+          [
+            45,
+            2.38,
+            0.0,
+            1.0,
+            0.6,
+            0.0,
+            "nominal"
+          ],
+          [
+            60,
+            2.83,
+            0.0,
+            1.0,
+            0.6,
+            0.0,
+            "nominal"
+          ],
+          [
+            75,
+            3.28,
+            0.0,
+            1.0,
+            0.6,
+            0.0,
+            "nominal"
+          ],
+          [
+            90,
+            3.73,
+            0.0,
+            1.0,
+            0.6,
+            0.0,
+            "nominal"
+          ],
+          [
+            105,
+            4.18,
+            0.0,
+            1.0,
+            0.6,
+            0.0,
+            "nominal"
+          ],
+          [
+            120,
+            4.63,
+            0.0,
+            1.0,
+            0.6,
+            0.0,
+            "nominal"
+          ],
+          [
+            135,
+            5.08,
+            0.0,
+            1.0,
+            0.6,
+            0.0,
+            "nominal"
+          ]
+        ]
+      },
+      "hysteresis": {
+        "outcome": "timeout",
+        "collision_reason": null,
+        "steps_completed": 150,
+        "net_forward_displacement_m": 4.5,
+        "path_length_m": 4.5,
+        "min_obstacle_clearance_m": 10.0,
+        "min_wall_clearance_m": 0.85,
+        "velocity_sign_reversals": 0,
+        "stationary_duration_s": 0.0,
+        "braking_duration_s": 0.0,
+        "recovery_duration_s": 0.0,
+        "bypass_duration_s": 0.0,
+        "blocked_escape_events": 0,
+        "successful_escapes": 1,
+        "intervention_rate_pct": 0.0,
+        "final_position": [
+          5.5,
+          0.0,
+          1.0
+        ],
+        "final_goal_distance_m": 4.0,
+        "final_arrival_speed_mps": 0.6,
+        "sample_trace": [
+          [
+            0,
+            1.03,
+            0.0,
+            1.0,
+            0.6,
+            0.0,
+            "normal_approach"
+          ],
+          [
+            15,
+            1.48,
+            0.0,
+            1.0,
+            0.6,
+            0.0,
+            "normal_approach"
+          ],
+          [
+            30,
+            1.93,
+            0.0,
+            1.0,
+            0.6,
+            0.0,
+            "normal_approach"
+          ],
+          [
+            45,
+            2.38,
+            0.0,
+            1.0,
+            0.6,
+            0.0,
+            "normal_approach"
+          ],
+          [
+            60,
+            2.83,
+            0.0,
+            1.0,
+            0.6,
+            0.0,
+            "normal_approach"
+          ],
+          [
+            75,
+            3.28,
+            0.0,
+            1.0,
+            0.6,
+            0.0,
+            "normal_approach"
+          ],
+          [
+            90,
+            3.73,
+            0.0,
+            1.0,
+            0.6,
+            0.0,
+            "normal_approach"
+          ],
+          [
+            105,
+            4.18,
+            0.0,
+            1.0,
+            0.6,
+            0.0,
+            "normal_approach"
+          ],
+          [
+            120,
+            4.63,
+            0.0,
+            1.0,
+            0.6,
+            0.0,
+            "normal_approach"
+          ],
+          [
+            135,
+            5.08,
+            0.0,
+            1.0,
+            0.6,
+            0.0,
+            "normal_approach"
+          ]
+        ]
+      }
+    },
+    {
+      "scenario_id": 11,
+      "name": "Restricted vertical clearance near ceiling",
+      "steps": 150,
+      "canonical": {
+        "outcome": "timeout",
+        "collision_reason": null,
+        "steps_completed": 150,
+        "net_forward_displacement_m": 0.147,
+        "path_length_m": 1.039,
+        "min_obstacle_clearance_m": 0.298,
+        "min_wall_clearance_m": 0.05,
+        "velocity_sign_reversals": 112,
+        "stationary_duration_s": 0.3,
+        "braking_duration_s": 7.5,
+        "recovery_duration_s": 0.0,
+        "bypass_duration_s": 0.0,
+        "blocked_escape_events": 0,
+        "successful_escapes": 0,
+        "intervention_rate_pct": 100.0,
+        "final_position": [
+          2.347,
+          0.405,
+          1.6
+        ],
+        "final_goal_distance_m": 7.19,
+        "final_arrival_speed_mps": 0.1,
+        "sample_trace": [
+          [
+            0,
+            2.203,
+            0.0,
+            1.785,
+            0.06,
+            0.0,
+            "boundary_and_obstacle_brake"
+          ],
+          [
+            15,
+            2.277,
+            0.0,
+            1.657,
+            0.1,
+            0.0,
+            "boundary_and_obstacle_brake"
+          ],
+          [
+            30,
+            2.352,
+            0.0,
+            1.618,
+            0.1,
+            0.0,
+            "boundary_and_obstacle_brake"
+          ],
+          [
+            45,
+            2.347,
+            0.037,
+            1.606,
+            -0.1,
+            0.15,
+            "boundary_and_obstacle_brake"
+          ],
+          [
+            60,
+            2.352,
+            0.09,
+            1.602,
+            0.1,
+            0.0,
+            "boundary_and_obstacle_brake"
+          ],
+          [
+            75,
+            2.347,
+            0.15,
+            1.601,
+            -0.1,
+            0.15,
+            "boundary_and_obstacle_brake"
+          ],
+          [
+            90,
+            2.352,
+            0.202,
+            1.6,
+            0.1,
+            0.0,
+            "boundary_and_obstacle_brake"
+          ],
+          [
+            105,
+            2.347,
+            0.262,
+            1.6,
+            -0.1,
+            0.15,
+            "boundary_and_obstacle_brake"
+          ],
+          [
+            120,
+            2.352,
+            0.315,
+            1.6,
+            0.1,
+            0.0,
+            "boundary_and_obstacle_brake"
+          ],
+          [
+            135,
+            2.347,
+            0.375,
+            1.6,
+            -0.1,
+            0.15,
+            "boundary_and_obstacle_brake"
+          ]
+        ]
+      },
+      "hysteresis": {
+        "outcome": "timeout",
+        "collision_reason": null,
+        "steps_completed": 150,
+        "net_forward_displacement_m": -0.05,
+        "path_length_m": 0.982,
+        "min_obstacle_clearance_m": 0.3,
+        "min_wall_clearance_m": 0.05,
+        "velocity_sign_reversals": 0,
+        "stationary_duration_s": 0.55,
+        "braking_duration_s": 0.0,
+        "recovery_duration_s": 2.05,
+        "bypass_duration_s": 3.45,
+        "blocked_escape_events": 4,
+        "successful_escapes": 0,
+        "intervention_rate_pct": 100.0,
+        "final_position": [
+          2.15,
+          0.532,
+          1.6
+        ],
+        "final_goal_distance_m": 7.394,
+        "final_arrival_speed_mps": 0.0,
+        "sample_trace": [
+          [
+            0,
+            2.205,
+            0.0,
+            1.785,
+            0.1,
+            0.0,
+            "normal_approach"
+          ],
+          [
+            15,
+            2.28,
+            0.0,
+            1.657,
+            0.1,
+            0.0,
+            "normal_approach"
+          ],
+          [
+            30,
+            2.35,
+            0.0,
+            1.618,
+            0.0,
+            0.0,
+            "obstacle_braking"
+          ],
+          [
+            45,
+            2.35,
+            0.13,
+            1.606,
+            0.0,
+            0.2,
+            "lateral_obstacle_bypass"
+          ],
+          [
+            60,
+            2.35,
+            0.28,
+            1.602,
+            0.0,
+            0.2,
+            "lateral_obstacle_bypass"
+          ],
+          [
+            75,
+            2.35,
+            0.43,
+            1.601,
+            0.0,
+            0.191,
+            "lateral_obstacle_bypass"
+          ],
+          [
+            90,
+            2.35,
+            0.504,
+            1.6,
+            0.0,
+            0.05,
+            "lateral_obstacle_bypass"
+          ],
+          [
+            105,
+            2.345,
+            0.532,
+            1.6,
+            -0.1,
+            0.0,
+            "retreat_or_recovery"
+          ],
+          [
+            120,
+            2.27,
+            0.532,
+            1.6,
+            -0.1,
+            0.0,
+            "retreat_or_recovery"
+          ],
+          [
+            135,
+            2.195,
+            0.532,
+            1.6,
+            -0.1,
+            0.0,
+            "retreat_or_recovery"
+          ]
+        ]
+      }
+    },
+    {
+      "scenario_id": 12,
+      "name": "Obstacle encountered with pre-existing lateral velocity",
+      "steps": 150,
+      "canonical": {
+        "outcome": "timeout",
+        "collision_reason": null,
+        "steps_completed": 150,
+        "net_forward_displacement_m": -0.72,
+        "path_length_m": 0.952,
+        "min_obstacle_clearance_m": 0.35,
+        "min_wall_clearance_m": 0.318,
+        "velocity_sign_reversals": 0,
+        "stationary_duration_s": 0.0,
+        "braking_duration_s": 7.5,
+        "recovery_duration_s": 0.0,
+        "bypass_duration_s": 0.0,
+        "blocked_escape_events": 0,
+        "successful_escapes": 0,
+        "intervention_rate_pct": 100.0,
+        "final_position": [
+          1.58,
+          -0.532,
+          1.0
+        ],
+        "final_goal_distance_m": 7.938,
+        "final_arrival_speed_mps": 0.1,
+        "sample_trace": [
+          [
+            0,
+            2.3,
+            -0.218,
+            1.0,
+            0.0,
+            -0.35,
+            "obstacle_brake"
+          ],
+          [
+            15,
+            2.25,
+            -0.438,
+            1.0,
+            -0.1,
+            -0.175,
+            "obstacle_brake"
+          ],
+          [
+            30,
+            2.175,
+            -0.507,
+            1.0,
+            -0.1,
+            -0.05,
+            "obstacle_brake"
+          ],
+          [
+            45,
+            2.1,
+            -0.532,
+            1.0,
+            -0.1,
+            0.0,
+            "obstacle_brake"
+          ],
+          [
+            60,
+            2.025,
+            -0.532,
+            1.0,
+            -0.1,
+            0.0,
+            "obstacle_brake"
+          ],
+          [
+            75,
+            1.95,
+            -0.532,
+            1.0,
+            -0.1,
+            0.0,
+            "obstacle_brake"
+          ],
+          [
+            90,
+            1.875,
+            -0.532,
+            1.0,
+            -0.1,
+            0.0,
+            "obstacle_brake"
+          ],
+          [
+            105,
+            1.8,
+            -0.532,
+            1.0,
+            -0.1,
+            0.0,
+            "obstacle_brake"
+          ],
+          [
+            120,
+            1.725,
+            -0.532,
+            1.0,
+            -0.1,
+            0.0,
+            "obstacle_brake"
+          ],
+          [
+            135,
+            1.65,
+            -0.532,
+            1.0,
+            -0.1,
+            0.0,
+            "obstacle_brake"
+          ]
+        ]
+      },
+      "hysteresis": {
+        "outcome": "timeout",
+        "collision_reason": null,
+        "steps_completed": 150,
+        "net_forward_displacement_m": -0.455,
+        "path_length_m": 0.785,
+        "min_obstacle_clearance_m": 0.35,
+        "min_wall_clearance_m": 0.32,
+        "velocity_sign_reversals": 0,
+        "stationary_duration_s": 1.2,
+        "braking_duration_s": 0.0,
+        "recovery_duration_s": 4.65,
+        "bypass_duration_s": 2.15,
+        "blocked_escape_events": 8,
+        "successful_escapes": 0,
+        "intervention_rate_pct": 100.0,
+        "final_position": [
+          1.845,
+          -0.53,
+          1.0
+        ],
+        "final_goal_distance_m": 7.673,
+        "final_arrival_speed_mps": 0.1,
+        "sample_trace": [
+          [
+            0,
+            2.3,
+            -0.218,
+            1.0,
+            0.0,
+            -0.35,
+            "obstacle_braking"
+          ],
+          [
+            15,
+            2.3,
+            -0.382,
+            1.0,
+            0.0,
+            -0.2,
+            "lateral_obstacle_bypass"
+          ],
+          [
+            30,
+            2.3,
+            -0.49,
+            1.0,
+            0.0,
+            -0.075,
+            "lateral_obstacle_bypass"
+          ],
+          [
+            45,
+            2.3,
+            -0.53,
+            1.0,
+            0.0,
+            -0.05,
+            "lateral_obstacle_bypass"
+          ],
+          [
+            60,
+            2.24,
+            -0.53,
+            1.0,
+            -0.1,
+            0.0,
+            "retreat_or_recovery"
+          ],
+          [
+            75,
+            2.165,
+            -0.53,
+            1.0,
+            -0.1,
+            0.0,
+            "retreat_or_recovery"
+          ],
+          [
+            90,
+            2.1,
+            -0.53,
+            1.0,
+            0.0,
+            0.0,
+            "blocked_escape_direction"
+          ],
+          [
+            105,
+            2.04,
+            -0.53,
+            1.0,
+            -0.1,
+            0.0,
+            "retreat_or_recovery"
+          ],
+          [
+            120,
+            1.965,
+            -0.53,
+            1.0,
+            -0.1,
+            0.0,
+            "retreat_or_recovery"
+          ],
+          [
+            135,
+            1.905,
+            -0.53,
+            1.0,
+            0.0,
+            0.0,
+            "blocked_escape_direction"
+          ]
+        ]
+      }
+    }
+  ]
+}

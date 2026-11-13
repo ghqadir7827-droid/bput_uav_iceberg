@@ -1,0 +1,330 @@
+{
+  "Level 1 (Basic)": {
+    "reactive_baseline": {
+      "feasible_total": 50,
+      "feasible_success": 38,
+      "feasible_success_pct": 76.0,
+      "wilson_ci_95": [
+        62.58731612803865,
+        85.70260866267341
+      ],
+      "infeasible_total": 0,
+      "infeasible_safe_rejections": 0,
+      "infeasible_rejection_pct": 100.0,
+      "collisions": 0,
+      "envelope_violations_lt_0_15m": 29,
+      "min_obstacle_clearance_m": 0.05871680278740071,
+      "mean_steps_to_goal": 587.8157894736842
+    },
+    "raw_bc": {
+      "feasible_total": 50,
+      "feasible_success": 16,
+      "feasible_success_pct": 32.0,
+      "wilson_ci_95": [
+        20.758216186752545,
+        45.81029741967757
+      ],
+      "infeasible_total": 0,
+      "infeasible_safe_rejections": 0,
+      "infeasible_rejection_pct": 100.0,
+      "collisions": 0,
+      "envelope_violations_lt_0_15m": 38,
+      "min_obstacle_clearance_m": 0.03721286205312552,
+      "mean_steps_to_goal": 708.0625
+    },
+    "guided_bc_phase6a": {
+      "feasible_total": 50,
+      "feasible_success": 31,
+      "feasible_success_pct": 62.0,
+      "wilson_ci_95": [
+        48.15044682285895,
+        74.1372107728543
+      ],
+      "infeasible_total": 0,
+      "infeasible_safe_rejections": 0,
+      "infeasible_rejection_pct": 100.0,
+      "collisions": 0,
+      "envelope_violations_lt_0_15m": 22,
+      "min_obstacle_clearance_m": 0.038598790058498256,
+      "mean_steps_to_goal": 684.2258064516129
+    },
+    "raw_ppo": {
+      "feasible_total": 50,
+      "feasible_success": 0,
+      "feasible_success_pct": 0.0,
+      "wilson_ci_95": [
+        0.0,
+        7.134760017861414
+      ],
+      "infeasible_total": 0,
+      "infeasible_safe_rejections": 0,
+      "infeasible_rejection_pct": 100.0,
+      "collisions": 41,
+      "envelope_violations_lt_0_15m": 9,
+      "min_obstacle_clearance_m": 6.6941447561252865e-06,
+      "mean_steps_to_goal": 1000.0
+    },
+    "guided_ppo": {
+      "feasible_total": 50,
+      "feasible_success": 0,
+      "feasible_success_pct": 0.0,
+      "wilson_ci_95": [
+        0.0,
+        7.134760017861414
+      ],
+      "infeasible_total": 0,
+      "infeasible_safe_rejections": 0,
+      "infeasible_rejection_pct": 100.0,
+      "collisions": 1,
+      "envelope_violations_lt_0_15m": 49,
+      "min_obstacle_clearance_m": 0.00014384713546405914,
+      "mean_steps_to_goal": 1000.0
+    }
+  },
+  "Level 2 (Standard)": {
+    "reactive_baseline": {
+      "feasible_total": 100,
+      "feasible_success": 90,
+      "feasible_success_pct": 90.0,
+      "wilson_ci_95": [
+        82.56343377898756,
+        94.47708631949274
+      ],
+      "infeasible_total": 0,
+      "infeasible_safe_rejections": 0,
+      "infeasible_rejection_pct": 100.0,
+      "collisions": 0,
+      "envelope_violations_lt_0_15m": 74,
+      "min_obstacle_clearance_m": 0.062069190143177855,
+      "mean_steps_to_goal": 570.4888888888889
+    },
+    "raw_bc": {
+      "feasible_total": 100,
+      "feasible_success": 36,
+      "feasible_success_pct": 36.0,
+      "wilson_ci_95": [
+        27.271220338813617,
+        45.764597626718285
+      ],
+      "infeasible_total": 0,
+      "infeasible_safe_rejections": 0,
+      "infeasible_rejection_pct": 100.0,
+      "collisions": 0,
+      "envelope_violations_lt_0_15m": 86,
+      "min_obstacle_clearance_m": 0.00016698531860254162,
+      "mean_steps_to_goal": 771.3055555555555
+    },
+    "guided_bc_phase6a": {
+      "feasible_total": 100,
+      "feasible_success": 42,
+      "feasible_success_pct": 42.0,
+      "wilson_ci_95": [
+        32.79838260663658,
+        51.793513373667366
+      ],
+      "infeasible_total": 0,
+      "infeasible_safe_rejections": 0,
+      "infeasible_rejection_pct": 100.0,
+      "collisions": 4,
+      "envelope_violations_lt_0_15m": 85,
+      "min_obstacle_clearance_m": 0.00015859206265250725,
+      "mean_steps_to_goal": 756.3095238095239
+    },
+    "raw_ppo": {
+      "feasible_total": 100,
+      "feasible_success": 0,
+      "feasible_success_pct": 0.0,
+      "wilson_ci_95": [
+        0.0,
+        3.699349876899627
+      ],
+      "infeasible_total": 0,
+      "infeasible_safe_rejections": 0,
+      "infeasible_rejection_pct": 100.0,
+      "collisions": 4,
+      "envelope_violations_lt_0_15m": 90,
+      "min_obstacle_clearance_m": 0.03915232575797062,
+      "mean_steps_to_goal": 1000.0
+    },
+    "guided_ppo": {
+      "feasible_total": 100,
+      "feasible_success": 0,
+      "feasible_success_pct": 0.0,
+      "wilson_ci_95": [
+        0.0,
+        3.699349876899627
+      ],
+      "infeasible_total": 0,
+      "infeasible_safe_rejections": 0,
+      "infeasible_rejection_pct": 100.0,
+      "collisions": 2,
+      "envelope_violations_lt_0_15m": 99,
+      "min_obstacle_clearance_m": 5.955516172123643e-05,
+      "mean_steps_to_goal": 1000.0
+    }
+  },
+  "Level 3 (Challenging)": {
+    "reactive_baseline": {
+      "feasible_total": 50,
+      "feasible_success": 43,
+      "feasible_success_pct": 86.0,
+      "wilson_ci_95": [
+        73.81380617631021,
+        93.04916661082956
+      ],
+      "infeasible_total": 0,
+      "infeasible_safe_rejections": 0,
+      "infeasible_rejection_pct": 100.0,
+      "collisions": 0,
+      "envelope_violations_lt_0_15m": 44,
+      "min_obstacle_clearance_m": 0.04716340054248508,
+      "mean_steps_to_goal": 565.1627906976744
+    },
+    "raw_bc": {
+      "feasible_total": 50,
+      "feasible_success": 7,
+      "feasible_success_pct": 14.000000000000002,
+      "wilson_ci_95": [
+        6.950833389170439,
+        26.18619382368978
+      ],
+      "infeasible_total": 0,
+      "infeasible_safe_rejections": 0,
+      "infeasible_rejection_pct": 100.0,
+      "collisions": 0,
+      "envelope_violations_lt_0_15m": 48,
+      "min_obstacle_clearance_m": 0.00019254013240327383,
+      "mean_steps_to_goal": 862.2857142857143
+    },
+    "guided_bc_phase6a": {
+      "feasible_total": 50,
+      "feasible_success": 29,
+      "feasible_success_pct": 57.99999999999999,
+      "wilson_ci_95": [
+        44.23344166337506,
+        70.62499673376709
+      ],
+      "infeasible_total": 0,
+      "infeasible_safe_rejections": 0,
+      "infeasible_rejection_pct": 100.0,
+      "collisions": 0,
+      "envelope_violations_lt_0_15m": 39,
+      "min_obstacle_clearance_m": 0.015125468555153676,
+      "mean_steps_to_goal": 698.0344827586207
+    },
+    "raw_ppo": {
+      "feasible_total": 50,
+      "feasible_success": 6,
+      "feasible_success_pct": 12.0,
+      "wilson_ci_95": [
+        5.617600118119359,
+        23.804817495455318
+      ],
+      "infeasible_total": 0,
+      "infeasible_safe_rejections": 0,
+      "infeasible_rejection_pct": 100.0,
+      "collisions": 0,
+      "envelope_violations_lt_0_15m": 47,
+      "min_obstacle_clearance_m": 0.0539520149108646,
+      "mean_steps_to_goal": 650.0
+    },
+    "guided_ppo": {
+      "feasible_total": 50,
+      "feasible_success": 5,
+      "feasible_success_pct": 10.0,
+      "wilson_ci_95": [
+        4.347576465675888,
+        21.36023154861324
+      ],
+      "infeasible_total": 0,
+      "infeasible_safe_rejections": 0,
+      "infeasible_rejection_pct": 100.0,
+      "collisions": 0,
+      "envelope_violations_lt_0_15m": 48,
+      "min_obstacle_clearance_m": 0.051566603690114066,
+      "mean_steps_to_goal": 619.4
+    }
+  },
+  "Level 4 (Boundary & Feasibility)": {
+    "reactive_baseline": {
+      "feasible_total": 25,
+      "feasible_success": 10,
+      "feasible_success_pct": 40.0,
+      "wilson_ci_95": [
+        23.403302272702053,
+        59.260542782505766
+      ],
+      "infeasible_total": 25,
+      "infeasible_safe_rejections": 10,
+      "infeasible_rejection_pct": 40.0,
+      "collisions": 0,
+      "envelope_violations_lt_0_15m": 49,
+      "min_obstacle_clearance_m": 0.04129063772294356,
+      "mean_steps_to_goal": 544.6
+    },
+    "raw_bc": {
+      "feasible_total": 25,
+      "feasible_success": 4,
+      "feasible_success_pct": 16.0,
+      "wilson_ci_95": [
+        6.403451412098321,
+        34.653621775608265
+      ],
+      "infeasible_total": 25,
+      "infeasible_safe_rejections": 11,
+      "infeasible_rejection_pct": 44.0,
+      "collisions": 0,
+      "envelope_violations_lt_0_15m": 47,
+      "min_obstacle_clearance_m": 0.0024693610413729083,
+      "mean_steps_to_goal": 911.75
+    },
+    "guided_bc_phase6a": {
+      "feasible_total": 25,
+      "feasible_success": 14,
+      "feasible_success_pct": 56.00000000000001,
+      "wilson_ci_95": [
+        37.0673317346462,
+        73.33436123222911
+      ],
+      "infeasible_total": 25,
+      "infeasible_safe_rejections": 2,
+      "infeasible_rejection_pct": 8.0,
+      "collisions": 0,
+      "envelope_violations_lt_0_15m": 50,
+      "min_obstacle_clearance_m": 0.00016119778740703028,
+      "mean_steps_to_goal": 761.3571428571429
+    },
+    "raw_ppo": {
+      "feasible_total": 25,
+      "feasible_success": 1,
+      "feasible_success_pct": 4.0,
+      "wilson_ci_95": [
+        0.7096233423382087,
+        19.54406391161776
+      ],
+      "infeasible_total": 25,
+      "infeasible_safe_rejections": 10,
+      "infeasible_rejection_pct": 40.0,
+      "collisions": 0,
+      "envelope_violations_lt_0_15m": 50,
+      "min_obstacle_clearance_m": 0.030979900915061476,
+      "mean_steps_to_goal": 933.0
+    },
+    "guided_ppo": {
+      "feasible_total": 25,
+      "feasible_success": 5,
+      "feasible_success_pct": 20.0,
+      "wilson_ci_95": [
+        8.860584630746873,
+        39.13095053487658
+      ],
+      "infeasible_total": 25,
+      "infeasible_safe_rejections": 12,
+      "infeasible_rejection_pct": 48.0,
+      "collisions": 0,
+      "envelope_violations_lt_0_15m": 50,
+      "min_obstacle_clearance_m": 0.05970933417862606,
+      "mean_steps_to_goal": 808.4
+    }
+  }
+}

@@ -1,0 +1,213 @@
+{
+  "controller_id": "ppo_fine_tuned",
+  "checkpoint_id": "ppo_iter_22_succ_70.0pct",
+  "controller_display_name": "PPO Fine-Tuned Policy",
+  "total_episodes": 10,
+  "success_count": 0,
+  "success_rate_pct": 0.0,
+  "collision_count": 0,
+  "collision_rate_pct": 0.0,
+  "obstacle_crash_count": 0,
+  "boundary_crash_count": 0,
+  "corridor_boundary_violation_rate_pct": 0.0,
+  "timeout_count": 10,
+  "timeout_rate_pct": 100.0,
+  "mean_flight_time_successful_s": 0.0,
+  "mean_distance_successful_m": 0.0,
+  "mean_safety_interventions_per_episode": 469.3,
+  "total_reverse_cmds_requested": 945,
+  "total_reverse_cmds_executed": 945,
+  "total_action_saturated_steps": 563,
+  "records": [
+    {
+      "seed": 50000,
+      "status": "timeout",
+      "detail": "Max steps (500) exceeded",
+      "steps": 500,
+      "flight_time_s": 25.0,
+      "distance_travelled_m": 4.53,
+      "safety_interventions": 467,
+      "reverse_cmds_requested": 185,
+      "reverse_cmds_executed": 185,
+      "action_saturated_steps": 37,
+      "min_boundary_clearance_m": 0.246,
+      "min_obstacle_clearance_m": 0.134,
+      "final_position": [
+        2.64,
+        -0.53,
+        1.6
+      ]
+    },
+    {
+      "seed": 50001,
+      "status": "timeout",
+      "detail": "Max steps (500) exceeded",
+      "steps": 500,
+      "flight_time_s": 25.0,
+      "distance_travelled_m": 8.21,
+      "safety_interventions": 466,
+      "reverse_cmds_requested": 21,
+      "reverse_cmds_executed": 21,
+      "action_saturated_steps": 58,
+      "min_boundary_clearance_m": 0.246,
+      "min_obstacle_clearance_m": 0.119,
+      "final_position": [
+        7.28,
+        0.12,
+        1.6
+      ]
+    },
+    {
+      "seed": 50002,
+      "status": "timeout",
+      "detail": "Max steps (500) exceeded",
+      "steps": 500,
+      "flight_time_s": 25.0,
+      "distance_travelled_m": 6.34,
+      "safety_interventions": 486,
+      "reverse_cmds_requested": 123,
+      "reverse_cmds_executed": 123,
+      "action_saturated_steps": 39,
+      "min_boundary_clearance_m": 0.247,
+      "min_obstacle_clearance_m": 0.118,
+      "final_position": [
+        4.73,
+        -0.52,
+        1.6
+      ]
+    },
+    {
+      "seed": 50003,
+      "status": "timeout",
+      "detail": "Max steps (500) exceeded",
+      "steps": 500,
+      "flight_time_s": 25.0,
+      "distance_travelled_m": 4.77,
+      "safety_interventions": 478,
+      "reverse_cmds_requested": 181,
+      "reverse_cmds_executed": 181,
+      "action_saturated_steps": 52,
+      "min_boundary_clearance_m": 0.247,
+      "min_obstacle_clearance_m": 0.129,
+      "final_position": [
+        2.69,
+        -0.45,
+        1.6
+      ]
+    },
+    {
+      "seed": 50004,
+      "status": "timeout",
+      "detail": "Max steps (500) exceeded",
+      "steps": 500,
+      "flight_time_s": 25.0,
+      "distance_travelled_m": 7.65,
+      "safety_interventions": 483,
+      "reverse_cmds_requested": 93,
+      "reverse_cmds_executed": 93,
+      "action_saturated_steps": 33,
+      "min_boundary_clearance_m": 0.246,
+      "min_obstacle_clearance_m": 0.131,
+      "final_position": [
+        6.58,
+        -0.53,
+        1.6
+      ]
+    },
+    {
+      "seed": 50005,
+      "status": "timeout",
+      "detail": "Max steps (500) exceeded",
+      "steps": 500,
+      "flight_time_s": 25.0,
+      "distance_travelled_m": 7.33,
+      "safety_interventions": 479,
+      "reverse_cmds_requested": 54,
+      "reverse_cmds_executed": 54,
+      "action_saturated_steps": 44,
+      "min_boundary_clearance_m": 0.246,
+      "min_obstacle_clearance_m": 0.121,
+      "final_position": [
+        6.58,
+        -0.53,
+        1.6
+      ]
+    },
+    {
+      "seed": 50006,
+      "status": "timeout",
+      "detail": "Max steps (500) exceeded",
+      "steps": 500,
+      "flight_time_s": 25.0,
+      "distance_travelled_m": 8.38,
+      "safety_interventions": 432,
+      "reverse_cmds_requested": 34,
+      "reverse_cmds_executed": 34,
+      "action_saturated_steps": 121,
+      "min_boundary_clearance_m": 0.245,
+      "min_obstacle_clearance_m": 0.118,
+      "final_position": [
+        6.65,
+        -0.28,
+        1.6
+      ]
+    },
+    {
+      "seed": 50007,
+      "status": "timeout",
+      "detail": "Max steps (500) exceeded",
+      "steps": 500,
+      "flight_time_s": 25.0,
+      "distance_travelled_m": 7.47,
+      "safety_interventions": 477,
+      "reverse_cmds_requested": 68,
+      "reverse_cmds_executed": 68,
+      "action_saturated_steps": 41,
+      "min_boundary_clearance_m": 0.246,
+      "min_obstacle_clearance_m": 0.142,
+      "final_position": [
+        6.56,
+        -0.53,
+        1.6
+      ]
+    },
+    {
+      "seed": 50008,
+      "status": "timeout",
+      "detail": "Max steps (500) exceeded",
+      "steps": 500,
+      "flight_time_s": 25.0,
+      "distance_travelled_m": 5.79,
+      "safety_interventions": 474,
+      "reverse_cmds_requested": 107,
+      "reverse_cmds_executed": 107,
+      "action_saturated_steps": 47,
+      "min_boundary_clearance_m": 0.247,
+      "min_obstacle_clearance_m": 0.135,
+      "final_position": [
+        4.55,
+        -0.53,
+        1.6
+      ]
+    },
+    {
+      "seed": 50009,
+      "status": "timeout",
+      "detail": "Max steps (500) exceeded",
+      "steps": 500,
+      "flight_time_s": 25.0,
+      "distance_travelled_m": 6.54,
+      "safety_interventions": 451,
+      "reverse_cmds_requested": 79,
+      "reverse_cmds_executed": 79,
+      "action_saturated_steps": 91,
+      "min_boundary_clearance_m": 0.248,
+      "min_obstacle_clearance_m": 0.125,
+      "final_position": [
+        4.7,
+        -0.44,
+        1.6
+      ]
+    }
+  ]
+}

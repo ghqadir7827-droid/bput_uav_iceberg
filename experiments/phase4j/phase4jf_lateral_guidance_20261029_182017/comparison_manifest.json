@@ -1,0 +1,44 @@
+{
+  "experiment_name": "Phase 4J-F Proactive Lateral Guidance and Deadlock-Breaking Evaluation",
+  "timestamp": "20261029_182017",
+  "workspace": "/Users/ghulamqadir/.gemini/antigravity-ide/scratch/uav-bput-nav",
+  "experiment_directory": "/Users/ghulamqadir/.gemini/antigravity-ide/scratch/uav-bput-nav/experiments/phase4j/phase4jf_lateral_guidance_20261029_182017",
+  "artifacts_generated": [
+    "PHASE_4JF_PRE_RUN_AUDIT.md",
+    "experimental_supervisor.py",
+    "experimental_config.json",
+    "run_phase4jf_evaluation.py",
+    "paired_episode_results.csv",
+    "controller_summary.json",
+    "comparison_manifest.json",
+    "failure_analysis.md",
+    "PHASE_4JF_FINAL_REPORT.md"
+  ],
+  "cryptographic_hashes": {
+    "bc_checkpoint_sha256": "93c4d7d1d8476b8d288a24fca1862d87133696f78b9603aa622bcc367afad44f",
+    "canonical_supervisor_sha256": "9f84af22821f0f1473ea963b0f33a1924d1c4e7a487d4ed7893b7efc56fcd26f",
+    "experimental_supervisor_sha256": "413daaa13af7b3e46a0fb8f417326dd3f93fa88210385bc2b3b03e93a5c4d19c",
+    "experimental_config_sha256": "5674c492f4a169769539e69a9d8ca31800562551823dbbb71fe8a4b3fbde14a8",
+    "evaluation_script_sha256": "6bfbae92a78c2c97c186ec82a36d80ca43519d2c68bd449abc9898e6706724d5"
+  },
+  "environment_configuration": {
+    "corridor": "10m canonical benchmark",
+    "corridor_length_m": 10.0,
+    "corridor_half_width_m": 1.0,
+    "drone_radius_m": 0.15,
+    "dt_s": 0.05,
+    "max_steps": 500,
+    "caution_distance_m": 0.5,
+    "safety_envelope_threshold_m": 0.08,
+    "development_seeds": [
+      2000,
+      2049
+    ],
+    "held_out_seeds_status": "SEALED AND UNTOUCHED (90000..90099)"
+  },
+  "python_environment": {
+    "python_version": "3.11.17 (main, Oct  1 2026, 00:48:48) [Clang 21.0.0 (clang-2100.3.34.2)]",
+    "torch_version": "2.14.1",
+    "numpy_version": "2.4.6"
+  }
+}

@@ -1,0 +1,253 @@
+{
+  "metadata": {
+    "timestamp": "20261030_151833",
+    "seed_range": [
+      10000,
+      11199
+    ],
+    "total_seeds": 1200,
+    "max_steps": 1000,
+    "execution_time_s": 372.9
+  },
+  "reactive_baseline": {
+    "total_episodes": 1200,
+    "success_count": 1197,
+    "success_rate_pct": 99.75,
+    "success_rate_fraction": "1197/1200",
+    "wilson_95_ci": [
+      99.27,
+      99.91
+    ],
+    "obstacle_collisions": {
+      "count": 0,
+      "rate_pct": 0.0,
+      "fraction": "0/1200"
+    },
+    "wall_collisions": {
+      "count": 0,
+      "rate_pct": 0.0,
+      "fraction": "0/1200"
+    },
+    "safety_envelope_violations": {
+      "count": 1,
+      "rate_pct": 0.08,
+      "fraction": "1/1200"
+    },
+    "spatial_standstills": {
+      "count": 0,
+      "rate_pct": 0.0,
+      "fraction": "0/1200"
+    },
+    "oscillations": {
+      "count": 1,
+      "rate_pct": 0.08,
+      "fraction": "1/1200"
+    },
+    "timeouts_at_1000": {
+      "count": 1,
+      "rate_pct": 0.08,
+      "fraction": "1/1200"
+    },
+    "goal_alignment_failures": {
+      "count": 0,
+      "rate_pct": 0.0,
+      "fraction": "0/1200"
+    },
+    "other_failures": {
+      "count": 0,
+      "rate_pct": 0.0,
+      "fraction": "0/1200"
+    },
+    "forward_progress_m": {
+      "mean": 8.962,
+      "median": 8.969,
+      "std": 0.14,
+      "p25": 8.96,
+      "p75": 8.978,
+      "min": 4.476,
+      "max": 9.004
+    },
+    "steps_to_success": {
+      "count": 1197,
+      "mean": 487.3,
+      "median": 465.0,
+      "std": 99.2,
+      "min": 368,
+      "max": 990
+    },
+    "min_obstacle_clearance_m": {
+      "overall_min": 0.0777,
+      "mean_min": 0.1481,
+      "median_min": 0.1454
+    },
+    "min_wall_clearance_m": {
+      "overall_min": 0.2941,
+      "mean_min": 0.3957,
+      "median_min": 0.3828
+    },
+    "supervisor_interventions": {
+      "episodes_with_intervention": 1195,
+      "episodes_with_intervention_pct": 99.58,
+      "mean_per_episode": 141.8,
+      "median_per_episode": 119.0,
+      "mean_throttled_fraction": 0.1559
+    },
+    "pillar_passage": {
+      "pillar1_cleared": "1200/1200 (100.0%)",
+      "pillar2_cleared": "1199/1200 (99.92%)",
+      "pillar3_cleared": "1199/1200 (99.92%)"
+    },
+    "stall_recovery": {
+      "stalls_entered": 0,
+      "stalls_entered_pct": 0.0,
+      "stalls_recovered": 0,
+      "recovery_rate_pct": 0.0
+    },
+    "horizon_comparison_500_vs_1000": {
+      "success_at_500": "769/1200 (64.08%)",
+      "success_at_1000": "1197/1200 (99.75%)",
+      "net_success_gain_in_extended": 428,
+      "mean_progress_at_500_m": 8.279,
+      "mean_progress_at_1000_m": 8.962,
+      "mean_progress_gain_m": 0.683
+    }
+  },
+  "random_baseline": {
+    "total_episodes": 1200,
+    "success_count": 116,
+    "success_rate_pct": 9.67,
+    "success_rate_fraction": "116/1200",
+    "wilson_95_ci": [
+      8.12,
+      11.47
+    ],
+    "obstacle_collisions": {
+      "count": 0,
+      "rate_pct": 0.0,
+      "fraction": "0/1200"
+    },
+    "wall_collisions": {
+      "count": 0,
+      "rate_pct": 0.0,
+      "fraction": "0/1200"
+    },
+    "safety_envelope_violations": {
+      "count": 1,
+      "rate_pct": 0.08,
+      "fraction": "1/1200"
+    },
+    "spatial_standstills": {
+      "count": 0,
+      "rate_pct": 0.0,
+      "fraction": "0/1200"
+    },
+    "oscillations": {
+      "count": 625,
+      "rate_pct": 52.08,
+      "fraction": "625/1200"
+    },
+    "timeouts_at_1000": {
+      "count": 457,
+      "rate_pct": 38.08,
+      "fraction": "457/1200"
+    },
+    "goal_alignment_failures": {
+      "count": 1,
+      "rate_pct": 0.08,
+      "fraction": "1/1200"
+    },
+    "other_failures": {
+      "count": 0,
+      "rate_pct": 0.0,
+      "fraction": "0/1200"
+    },
+    "forward_progress_m": {
+      "mean": 7.146,
+      "median": 6.173,
+      "std": 3.199,
+      "p25": 4.151,
+      "p75": 10.187,
+      "min": 2.01,
+      "max": 13.032
+    },
+    "steps_to_success": {
+      "count": 116,
+      "mean": 840.0,
+      "median": 838.0,
+      "std": 66.8,
+      "min": 694,
+      "max": 984
+    },
+    "min_obstacle_clearance_m": {
+      "overall_min": 0.0856,
+      "mean_min": 0.1275,
+      "median_min": 0.1238
+    },
+    "min_wall_clearance_m": {
+      "overall_min": 0.0596,
+      "mean_min": 0.2931,
+      "median_min": 0.308
+    },
+    "supervisor_interventions": {
+      "episodes_with_intervention": 1198,
+      "episodes_with_intervention_pct": 99.83,
+      "mean_per_episode": 452.5,
+      "median_per_episode": 514.5,
+      "mean_throttled_fraction": 0.3563
+    },
+    "pillar_passage": {
+      "pillar1_cleared": "1087/1200 (90.58%)",
+      "pillar2_cleared": "773/1200 (64.42%)",
+      "pillar3_cleared": "554/1200 (46.17%)"
+    },
+    "stall_recovery": {
+      "stalls_entered": 0,
+      "stalls_entered_pct": 0.0,
+      "stalls_recovered": 0,
+      "recovery_rate_pct": 0.0
+    },
+    "horizon_comparison_500_vs_1000": {
+      "success_at_500": "0/1200 (0.0%)",
+      "success_at_1000": "116/1200 (9.67%)",
+      "net_success_gain_in_extended": 116,
+      "mean_progress_at_500_m": 4.451,
+      "mean_progress_at_1000_m": 7.146,
+      "mean_progress_gain_m": 2.695
+    }
+  },
+  "paired_comparison": {
+    "total_paired_seeds": 1200,
+    "both_succeed": {
+      "count": 116,
+      "pct": 9.67,
+      "fraction": "116/1200"
+    },
+    "only_reactive_succeeds": {
+      "count": 1081,
+      "pct": 90.08,
+      "fraction": "1081/1200"
+    },
+    "only_random_succeeds": {
+      "count": 0,
+      "pct": 0.0,
+      "fraction": "0/1200"
+    },
+    "both_fail": {
+      "count": 3,
+      "pct": 0.25,
+      "fraction": "3/1200"
+    },
+    "mcnemar_test": {
+      "discordant_b_reactive_only": 1081,
+      "discordant_c_random_only": 0,
+      "chi2_statistic": 1079.0009,
+      "p_value": 0.0,
+      "significant_at_001": true
+    },
+    "wilcoxon_signed_rank_progress": {
+      "statistic": 155371.0,
+      "p_value": 2.6238490351859617e-65
+    },
+    "mean_progress_diff_m": 1.816
+  }
+}

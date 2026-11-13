@@ -1,0 +1,253 @@
+{
+  "metadata": {
+    "timestamp": "20261030_153316",
+    "seed_range": [
+      1,
+      1000
+    ],
+    "total_seeds": 1000,
+    "max_steps": 1000,
+    "execution_time_s": 299.28
+  },
+  "reactive_baseline": {
+    "total_episodes": 1000,
+    "success_count": 998,
+    "success_rate_pct": 99.8,
+    "success_rate_fraction": "998/1000",
+    "wilson_95_ci": [
+      99.27,
+      99.95
+    ],
+    "obstacle_collisions": {
+      "count": 0,
+      "rate_pct": 0.0,
+      "fraction": "0/1000"
+    },
+    "wall_collisions": {
+      "count": 0,
+      "rate_pct": 0.0,
+      "fraction": "0/1000"
+    },
+    "safety_envelope_violations": {
+      "count": 0,
+      "rate_pct": 0.0,
+      "fraction": "0/1000"
+    },
+    "spatial_standstills": {
+      "count": 0,
+      "rate_pct": 0.0,
+      "fraction": "0/1000"
+    },
+    "oscillations": {
+      "count": 1,
+      "rate_pct": 0.1,
+      "fraction": "1/1000"
+    },
+    "timeouts_at_1000": {
+      "count": 1,
+      "rate_pct": 0.1,
+      "fraction": "1/1000"
+    },
+    "goal_alignment_failures": {
+      "count": 0,
+      "rate_pct": 0.0,
+      "fraction": "0/1000"
+    },
+    "other_failures": {
+      "count": 0,
+      "rate_pct": 0.0,
+      "fraction": "0/1000"
+    },
+    "forward_progress_m": {
+      "mean": 8.961,
+      "median": 8.969,
+      "std": 0.126,
+      "p25": 8.959,
+      "p75": 8.979,
+      "min": 5.987,
+      "max": 9.007
+    },
+    "steps_to_success": {
+      "count": 998,
+      "mean": 494.3,
+      "median": 472.0,
+      "std": 103.6,
+      "min": 369,
+      "max": 947
+    },
+    "min_obstacle_clearance_m": {
+      "overall_min": 0.0873,
+      "mean_min": 0.1467,
+      "median_min": 0.1422
+    },
+    "min_wall_clearance_m": {
+      "overall_min": 0.2939,
+      "mean_min": 0.3936,
+      "median_min": 0.3815
+    },
+    "supervisor_interventions": {
+      "episodes_with_intervention": 993,
+      "episodes_with_intervention_pct": 99.3,
+      "mean_per_episode": 150.3,
+      "median_per_episode": 128.0,
+      "mean_throttled_fraction": 0.1656
+    },
+    "pillar_passage": {
+      "pillar1_cleared": "1000/1000 (100.0%)",
+      "pillar2_cleared": "1000/1000 (100.0%)",
+      "pillar3_cleared": "998/1000 (99.8%)"
+    },
+    "stall_recovery": {
+      "stalls_entered": 0,
+      "stalls_entered_pct": 0.0,
+      "stalls_recovered": 0,
+      "recovery_rate_pct": 0.0
+    },
+    "horizon_comparison_500_vs_1000": {
+      "success_at_500": "618/1000 (61.8%)",
+      "success_at_1000": "998/1000 (99.8%)",
+      "net_success_gain_in_extended": 380,
+      "mean_progress_at_500_m": 8.178,
+      "mean_progress_at_1000_m": 8.961,
+      "mean_progress_gain_m": 0.783
+    }
+  },
+  "random_baseline": {
+    "total_episodes": 1000,
+    "success_count": 97,
+    "success_rate_pct": 9.7,
+    "success_rate_fraction": "97/1000",
+    "wilson_95_ci": [
+      8.02,
+      11.69
+    ],
+    "obstacle_collisions": {
+      "count": 0,
+      "rate_pct": 0.0,
+      "fraction": "0/1000"
+    },
+    "wall_collisions": {
+      "count": 0,
+      "rate_pct": 0.0,
+      "fraction": "0/1000"
+    },
+    "safety_envelope_violations": {
+      "count": 1,
+      "rate_pct": 0.1,
+      "fraction": "1/1000"
+    },
+    "spatial_standstills": {
+      "count": 0,
+      "rate_pct": 0.0,
+      "fraction": "0/1000"
+    },
+    "oscillations": {
+      "count": 498,
+      "rate_pct": 49.8,
+      "fraction": "498/1000"
+    },
+    "timeouts_at_1000": {
+      "count": 404,
+      "rate_pct": 40.4,
+      "fraction": "404/1000"
+    },
+    "goal_alignment_failures": {
+      "count": 0,
+      "rate_pct": 0.0,
+      "fraction": "0/1000"
+    },
+    "other_failures": {
+      "count": 0,
+      "rate_pct": 0.0,
+      "fraction": "0/1000"
+    },
+    "forward_progress_m": {
+      "mean": 7.198,
+      "median": 6.245,
+      "std": 3.225,
+      "p25": 4.154,
+      "p75": 10.17,
+      "min": 1.991,
+      "max": 12.97
+    },
+    "steps_to_success": {
+      "count": 97,
+      "mean": 863.5,
+      "median": 876.0,
+      "std": 75.0,
+      "min": 699,
+      "max": 996
+    },
+    "min_obstacle_clearance_m": {
+      "overall_min": 0.0724,
+      "mean_min": 0.1272,
+      "median_min": 0.1237
+    },
+    "min_wall_clearance_m": {
+      "overall_min": 0.1395,
+      "mean_min": 0.2927,
+      "median_min": 0.3081
+    },
+    "supervisor_interventions": {
+      "episodes_with_intervention": 999,
+      "episodes_with_intervention_pct": 99.9,
+      "mean_per_episode": 454.1,
+      "median_per_episode": 513.0,
+      "mean_throttled_fraction": 0.3553
+    },
+    "pillar_passage": {
+      "pillar1_cleared": "887/1000 (88.7%)",
+      "pillar2_cleared": "667/1000 (66.7%)",
+      "pillar3_cleared": "476/1000 (47.6%)"
+    },
+    "stall_recovery": {
+      "stalls_entered": 0,
+      "stalls_entered_pct": 0.0,
+      "stalls_recovered": 0,
+      "recovery_rate_pct": 0.0
+    },
+    "horizon_comparison_500_vs_1000": {
+      "success_at_500": "0/1000 (0.0%)",
+      "success_at_1000": "97/1000 (9.7%)",
+      "net_success_gain_in_extended": 97,
+      "mean_progress_at_500_m": 4.41,
+      "mean_progress_at_1000_m": 7.198,
+      "mean_progress_gain_m": 2.788
+    }
+  },
+  "paired_comparison": {
+    "total_paired_seeds": 1000,
+    "both_succeed": {
+      "count": 97,
+      "pct": 9.7,
+      "fraction": "97/1000"
+    },
+    "only_reactive_succeeds": {
+      "count": 901,
+      "pct": 90.1,
+      "fraction": "901/1000"
+    },
+    "only_random_succeeds": {
+      "count": 0,
+      "pct": 0.0,
+      "fraction": "0/1000"
+    },
+    "both_fail": {
+      "count": 2,
+      "pct": 0.2,
+      "fraction": "2/1000"
+    },
+    "mcnemar_test": {
+      "discordant_b_reactive_only": 901,
+      "discordant_c_random_only": 0,
+      "chi2_statistic": 899.0011,
+      "p_value": 0.0,
+      "significant_at_001": true
+    },
+    "wilcoxon_signed_rank_progress": {
+      "statistic": 113572.0,
+      "p_value": 1.318137068884012e-50
+    },
+    "mean_progress_diff_m": 1.763
+  }
+}

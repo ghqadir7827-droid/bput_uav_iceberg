@@ -1,0 +1,104 @@
+{
+  "manifest_metadata": {
+    "phase": "Phase 4J-E",
+    "milestone": "Historical PPO Audit & Controlled BC vs PPO Comparison",
+    "timestamp_iso": "2026-10-29T17:50:00Z",
+    "workspace": "/Users/ghulamqadir/.gemini/antigravity-ide/scratch/uav-bput-nav",
+    "evaluation_seeds": "50 development seeds (2000..2049)",
+    "horizon_steps": 500,
+    "timestep_s": 0.05,
+    "caution_distance_m": 0.5
+  },
+  "verified_file_hashes": {
+    "Arm_B_BC_Baseline": "93c4d7d1d8476b8d288a24fca1862d87133696f78b9603aa622bcc367afad44f",
+    "Arm_A_PPO_Baseline": "33f6d8b705edcffa430c48b2a21ed33a3e00f81b1c8195323134dd8be2a00ee0",
+    "BC_Phase4H_Candidate": "1fdb2286170b8188421609231af3ac685467a41a8d9dc24c5f793117ac9c319b",
+    "PPO_Phase4H_Candidate": "751431cda829539e9ef327bd843d9b292e8f097bb2b36c0f5a1deb1bfad159dd"
+  },
+  "system_hashes": {
+    "controllers/safety_supervisor.py": "9f84af22821f0f1473ea963b0f33a1924d1c4e7a487d4ed7893b7efc56fcd26f",
+    "experiments/phase4j/isolated_supervisor_opt.py": "d68fbc38b58e5f2e21e5ad81efc1bc9d053734fe9f4d98b993445784b6b2f83f",
+    "sim/corridor_env.py": "4d0c9bd20b370c181a49b5e5516cab851d4353d038774053557aad260255fc66",
+    "core/geometry.py": "22ca56dd3420614e93346d4d0e78e53531530cb9b6cadb9a400a69fd8c9cfadb",
+    "core/contracts.py": "1272af8f2f301f854ab75b0088e4032f464789379c8120825aa747b1580967ab",
+    "models/policy_net.py": "fe5f8e81a09e4dd123d8cde011f4c7ac9d0511911d83fab1f550337a1f204ea9",
+    "models/actor_critic.py": "b7a8eec4828a849c9ddd36ad37d707baeb1bbecf0495b93c3a2b01a2eca30162"
+  },
+  "results_summary": {
+    "Arm_B_BC_Baseline": {
+      "success_rate_pct": 48.0,
+      "obstacle_collisions": 0,
+      "boundary_collisions": 0,
+      "envelope_violations": 0,
+      "mean_forward_progress_m": 6.525,
+      "mean_duration_s": 22.99
+    },
+    "Arm_A_PPO_Baseline": {
+      "success_rate_pct": 12.0,
+      "obstacle_collisions": 0,
+      "boundary_collisions": 0,
+      "envelope_violations": 0,
+      "mean_forward_progress_m": 4.282,
+      "mean_duration_s": 24.34
+    },
+    "BC_Phase4H_Candidate": {
+      "success_rate_pct": 34.0,
+      "obstacle_collisions": 0,
+      "boundary_collisions": 0,
+      "envelope_violations": 7,
+      "mean_forward_progress_m": 6.931,
+      "mean_duration_s": 23.82
+    },
+    "PPO_Phase4H_Candidate": {
+      "success_rate_pct": 0.0,
+      "obstacle_collisions": 0,
+      "boundary_collisions": 13,
+      "envelope_violations": 0,
+      "mean_forward_progress_m": 5.695,
+      "mean_duration_s": 23.78
+    }
+  },
+  "primary_comparison_mcnemar_p_value": 0.0005335211753845215,
+  "trace_manifest": [
+    {
+      "seed": 2002,
+      "category": "BOTH_SUCCEED",
+      "file": "matched_trace_seed_2002_both_succeed.json"
+    },
+    {
+      "seed": 2008,
+      "category": "BOTH_SUCCEED",
+      "file": "matched_trace_seed_2008_both_succeed.json"
+    },
+    {
+      "seed": 2000,
+      "category": "BC_SUCCEEDS_PPO_FAILS",
+      "file": "matched_trace_seed_2000_bc_succeeds_ppo_fails.json"
+    },
+    {
+      "seed": 2003,
+      "category": "BC_SUCCEEDS_PPO_FAILS",
+      "file": "matched_trace_seed_2003_bc_succeeds_ppo_fails.json"
+    },
+    {
+      "seed": 2017,
+      "category": "PPO_SUCCEEDS_BC_FAILS",
+      "file": "matched_trace_seed_2017_ppo_succeeds_bc_fails.json"
+    },
+    {
+      "seed": 2021,
+      "category": "PPO_SUCCEEDS_BC_FAILS",
+      "file": "matched_trace_seed_2021_ppo_succeeds_bc_fails.json"
+    },
+    {
+      "seed": 2001,
+      "category": "BOTH_FAIL",
+      "file": "matched_trace_seed_2001_both_fail.json"
+    },
+    {
+      "seed": 2004,
+      "category": "BOTH_FAIL",
+      "file": "matched_trace_seed_2004_both_fail.json"
+    }
+  ]
+}

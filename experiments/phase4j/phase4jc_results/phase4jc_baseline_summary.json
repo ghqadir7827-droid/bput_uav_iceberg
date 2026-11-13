@@ -1,0 +1,37 @@
+{
+  "controller_id": "Arm_B_BC_Baseline",
+  "checkpoint": "models/checkpoints/bc_policy_best.pt",
+  "caution_distance_m": 0.5,
+  "total_episodes": 50,
+  "success_count": 24,
+  "success_rate_pct": 48.0,
+  "success_ci95": [
+    34.8,
+    61.5
+  ],
+  "obstacle_collision_count": 0,
+  "obstacle_collision_pct": 0.0,
+  "boundary_collision_count": 0,
+  "boundary_collision_pct": 0.0,
+  "obstacle_envelope_violation_count": 0,
+  "obstacle_envelope_violation_pct": 0.0,
+  "boundary_envelope_violation_count": 0,
+  "timeout_count": 26,
+  "timeout_pct": 52.0,
+  "mean_forward_progress_m": 6.525,
+  "median_forward_progress_m": 6.324,
+  "mean_duration_s": 22.99,
+  "median_duration_s": 25.0,
+  "mean_min_obstacle_clearance_m": 0.1367,
+  "global_min_obstacle_clearance_m": 0.107,
+  "mean_min_boundary_clearance_m": 0.2931,
+  "global_min_boundary_clearance_m": 0.2537,
+  "mean_throttled_time_pct": 27.6,
+  "mean_intervention_rate": 0.477,
+  "category_breakdown": {
+    "SUCCESS": 24,
+    "PROGRESS_STALL_PILLAR_3": 10,
+    "PROGRESS_STALL_PILLAR_1": 6,
+    "PROGRESS_STALL_PILLAR_2": 10
+  }
+}

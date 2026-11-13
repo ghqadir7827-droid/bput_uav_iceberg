@@ -1,0 +1,54 @@
+{
+  "Level 1 (Basic)": {
+    "total_episodes": 50,
+    "successes": 50,
+    "success_rate_pct": 100.0,
+    "collisions": 0,
+    "timeouts": 0,
+    "mean_steps_successful": 729.48,
+    "min_obs_clearance_m": 0.15483289730775146,
+    "min_wall_clearance_m": 0.35408358573913573,
+    "mean_obs_clearance_m": 0.4283707516568378,
+    "supervisor_intervention_rate_pct": 50.47,
+    "elapsed_time_s": 6.6
+  },
+  "Level 2 (Standard)": {
+    "total_episodes": 100,
+    "successes": 97,
+    "success_rate_pct": 97.0,
+    "collisions": 0,
+    "timeouts": 3,
+    "mean_steps_successful": 816.5360824742268,
+    "min_obs_clearance_m": 0.16955012948999265,
+    "min_wall_clearance_m": 0.24549741744995107,
+    "mean_obs_clearance_m": 0.49660714566067665,
+    "supervisor_intervention_rate_pct": 62.36,
+    "elapsed_time_s": 15.0
+  },
+  "Level 3 (Challenging)": {
+    "total_episodes": 50,
+    "successes": 31,
+    "success_rate_pct": 62.0,
+    "collisions": 0,
+    "timeouts": 19,
+    "mean_steps_successful": 879.5806451612904,
+    "min_obs_clearance_m": 0.3377212344326764,
+    "min_wall_clearance_m": 0.22102417945861824,
+    "mean_obs_clearance_m": 0.5625064761965687,
+    "supervisor_intervention_rate_pct": 74.86,
+    "elapsed_time_s": 8.4
+  },
+  "Level 4 (Feasible)": {
+    "total_episodes": 25,
+    "successes": 16,
+    "success_rate_pct": 64.0,
+    "collisions": 0,
+    "timeouts": 9,
+    "mean_steps_successful": 922.3125,
+    "min_obs_clearance_m": 0.14015821962216263,
+    "min_wall_clearance_m": 0.15032250881195058,
+    "mean_obs_clearance_m": 0.40842405058982323,
+    "supervisor_intervention_rate_pct": 80.1,
+    "elapsed_time_s": 4.5
+  }
+}

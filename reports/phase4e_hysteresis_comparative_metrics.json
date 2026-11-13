@@ -1,0 +1,558 @@
+{
+  "benchmark_timestamp": "2026-10-27T12:49:41Z",
+  "diagnostic_seeds": [
+    50000,
+    50001,
+    100,
+    101,
+    102
+  ],
+  "synthetic_benchmark": {
+    "canonical": {
+      "sign_reversals": 164,
+      "stationary_duration_s": 0.3,
+      "intervention_steps": 200,
+      "intervention_rate_pct": 100.0,
+      "final_position": [
+        2.35,
+        0.0,
+        1.0
+      ],
+      "net_displacement_m": -0.15,
+      "min_obstacle_clearance_m": 0.15,
+      "sample_trajectory": [
+        [
+          0,
+          2.5,
+          0.0,
+          0.0,
+          0.0,
+          "obstacle_brake"
+        ],
+        [
+          1,
+          2.5,
+          0.0,
+          0.0,
+          0.0,
+          "obstacle_brake"
+        ],
+        [
+          2,
+          2.5,
+          0.0,
+          0.0,
+          0.0,
+          "obstacle_brake"
+        ],
+        [
+          3,
+          2.5,
+          0.0,
+          0.0,
+          0.0,
+          "obstacle_brake"
+        ],
+        [
+          4,
+          2.5,
+          0.0,
+          0.0,
+          0.0,
+          "obstacle_brake"
+        ],
+        [
+          5,
+          2.5,
+          0.0,
+          0.0,
+          0.0,
+          "obstacle_brake"
+        ],
+        [
+          6,
+          2.494999885559082,
+          0.0,
+          -0.1,
+          0.0,
+          "obstacle_brake"
+        ],
+        [
+          7,
+          2.489999771118164,
+          0.0,
+          -0.1,
+          0.0,
+          "obstacle_brake"
+        ],
+        [
+          8,
+          2.484999656677246,
+          0.0,
+          -0.1,
+          0.0,
+          "obstacle_brake"
+        ],
+        [
+          9,
+          2.479999542236328,
+          0.0,
+          -0.1,
+          0.0,
+          "obstacle_brake"
+        ],
+        [
+          10,
+          2.47499942779541,
+          0.0,
+          -0.1,
+          0.0,
+          "obstacle_brake"
+        ],
+        [
+          11,
+          2.469999313354492,
+          0.0,
+          -0.1,
+          0.0,
+          "obstacle_brake"
+        ],
+        [
+          12,
+          2.464999198913574,
+          0.0,
+          -0.1,
+          0.0,
+          "obstacle_brake"
+        ],
+        [
+          13,
+          2.4599990844726562,
+          0.0,
+          -0.1,
+          0.0,
+          "obstacle_brake"
+        ],
+        [
+          14,
+          2.4549989700317383,
+          0.0,
+          -0.1,
+          0.0,
+          "obstacle_brake"
+        ],
+        [
+          15,
+          2.4499988555908203,
+          0.0,
+          -0.1,
+          0.0,
+          "obstacle_brake"
+        ],
+        [
+          16,
+          2.4449987411499023,
+          0.0,
+          -0.1,
+          0.0,
+          "obstacle_brake"
+        ],
+        [
+          17,
+          2.4399986267089844,
+          0.0,
+          -0.1,
+          0.0,
+          "obstacle_brake"
+        ],
+        [
+          18,
+          2.4349985122680664,
+          0.0,
+          -0.1,
+          0.0,
+          "obstacle_brake"
+        ],
+        [
+          19,
+          2.4299983978271484,
+          0.0,
+          -0.1,
+          0.0,
+          "obstacle_brake"
+        ]
+      ]
+    },
+    "hysteresis": {
+      "sign_reversals": 0,
+      "stationary_duration_s": 1.65,
+      "intervention_steps": 200,
+      "intervention_rate_pct": 100.0,
+      "final_position": [
+        2.5,
+        -0.531,
+        1.0
+      ],
+      "net_displacement_m": 0.0,
+      "min_obstacle_clearance_m": 0.15,
+      "sample_trajectory": [
+        [
+          0,
+          2.5,
+          0.0,
+          0.0,
+          0.0,
+          "obstacle_braking"
+        ],
+        [
+          1,
+          2.5,
+          0.0,
+          0.0,
+          0.0,
+          "obstacle_braking"
+        ],
+        [
+          2,
+          2.5,
+          0.0,
+          0.0,
+          0.0,
+          "obstacle_braking"
+        ],
+        [
+          3,
+          2.5,
+          0.009999999776482582,
+          0.0,
+          0.2,
+          "lateral_obstacle_bypass"
+        ],
+        [
+          4,
+          2.5,
+          0.019999999552965164,
+          0.0,
+          0.2,
+          "lateral_obstacle_bypass"
+        ],
+        [
+          5,
+          2.5,
+          0.029999999329447746,
+          0.0,
+          0.2,
+          "lateral_obstacle_bypass"
+        ],
+        [
+          6,
+          2.5,
+          0.03999999910593033,
+          0.0,
+          0.2,
+          "lateral_obstacle_bypass"
+        ],
+        [
+          7,
+          2.5,
+          0.04999999701976776,
+          0.0,
+          0.2,
+          "lateral_obstacle_bypass"
+        ],
+        [
+          8,
+          2.5,
+          0.059999994933605194,
+          0.0,
+          0.2,
+          "lateral_obstacle_bypass"
+        ],
+        [
+          9,
+          2.5,
+          0.06999999284744263,
+          0.0,
+          0.2,
+          "lateral_obstacle_bypass"
+        ],
+        [
+          10,
+          2.5,
+          0.07999999076128006,
+          0.0,
+          0.2,
+          "lateral_obstacle_bypass"
+        ],
+        [
+          11,
+          2.5,
+          0.08999998867511749,
+          0.0,
+          0.2,
+          "lateral_obstacle_bypass"
+        ],
+        [
+          12,
+          2.5,
+          0.09999998658895493,
+          0.0,
+          0.2,
+          "lateral_obstacle_bypass"
+        ],
+        [
+          13,
+          2.5,
+          0.10999998450279236,
+          0.0,
+          0.2,
+          "lateral_obstacle_bypass"
+        ],
+        [
+          14,
+          2.5,
+          0.11999998241662979,
+          0.0,
+          0.2,
+          "lateral_obstacle_bypass"
+        ],
+        [
+          15,
+          2.5,
+          0.12999998033046722,
+          0.0,
+          0.2,
+          "lateral_obstacle_bypass"
+        ],
+        [
+          16,
+          2.5,
+          0.13999998569488525,
+          0.0,
+          0.2,
+          "lateral_obstacle_bypass"
+        ],
+        [
+          17,
+          2.5,
+          0.14999999105930328,
+          0.0,
+          0.2,
+          "lateral_obstacle_bypass"
+        ],
+        [
+          18,
+          2.5,
+          0.1599999964237213,
+          0.0,
+          0.2,
+          "lateral_obstacle_bypass"
+        ],
+        [
+          19,
+          2.5,
+          0.17000000178813934,
+          0.0,
+          0.2,
+          "lateral_obstacle_bypass"
+        ]
+      ]
+    }
+  },
+  "simulation_benchmark": {
+    "canonical": [
+      {
+        "seed": 50000,
+        "status": "timeout",
+        "steps": 500,
+        "episode_return": 5.47,
+        "distance_travelled_m": 4.45,
+        "net_forward_displacement_m": 2.14,
+        "final_distance_to_goal_m": 6.91,
+        "sign_reversals": 180,
+        "stationary_duration_s": 1.2,
+        "interventions": 466,
+        "min_obstacle_clearance_m": 0.137,
+        "min_wall_clearance_m": 0.247,
+        "final_position": [
+          2.64,
+          -0.53,
+          0.4
+        ]
+      },
+      {
+        "seed": 50001,
+        "status": "timeout",
+        "steps": 500,
+        "episode_return": 50.44,
+        "distance_travelled_m": 7.83,
+        "net_forward_displacement_m": 6.01,
+        "final_distance_to_goal_m": 3.09,
+        "sign_reversals": 96,
+        "stationary_duration_s": 1.1,
+        "interventions": 447,
+        "min_obstacle_clearance_m": 0.115,
+        "min_wall_clearance_m": 0.266,
+        "final_position": [
+          6.51,
+          -0.53,
+          0.44
+        ]
+      },
+      {
+        "seed": 100,
+        "status": "timeout",
+        "steps": 500,
+        "episode_return": 52.33,
+        "distance_travelled_m": 7.94,
+        "net_forward_displacement_m": 6.16,
+        "final_distance_to_goal_m": 2.95,
+        "sign_reversals": 68,
+        "stationary_duration_s": 1.15,
+        "interventions": 442,
+        "min_obstacle_clearance_m": 0.127,
+        "min_wall_clearance_m": 0.251,
+        "final_position": [
+          6.66,
+          -0.53,
+          0.4
+        ]
+      },
+      {
+        "seed": 101,
+        "status": "timeout",
+        "steps": 500,
+        "episode_return": 29.29,
+        "distance_travelled_m": 6.48,
+        "net_forward_displacement_m": 4.24,
+        "final_distance_to_goal_m": 4.83,
+        "sign_reversals": 135,
+        "stationary_duration_s": 0.3,
+        "interventions": 455,
+        "min_obstacle_clearance_m": 0.138,
+        "min_wall_clearance_m": 0.248,
+        "final_position": [
+          4.74,
+          -0.53,
+          0.4
+        ]
+      },
+      {
+        "seed": 102,
+        "status": "timeout",
+        "steps": 500,
+        "episode_return": 7.7,
+        "distance_travelled_m": 4.48,
+        "net_forward_displacement_m": 2.1,
+        "final_distance_to_goal_m": 6.95,
+        "sign_reversals": 197,
+        "stationary_duration_s": 0.6,
+        "interventions": 469,
+        "min_obstacle_clearance_m": 0.151,
+        "min_wall_clearance_m": 0.247,
+        "final_position": [
+          2.6,
+          -0.56,
+          0.4
+        ]
+      }
+    ],
+    "hysteresis": [
+      {
+        "seed": 50000,
+        "status": "timeout",
+        "steps": 500,
+        "episode_return": 17.32,
+        "distance_travelled_m": 5.06,
+        "net_forward_displacement_m": 1.88,
+        "final_distance_to_goal_m": 7.16,
+        "sign_reversals": 1,
+        "stationary_duration_s": 2.0,
+        "interventions": 466,
+        "min_obstacle_clearance_m": 0.16,
+        "min_wall_clearance_m": 0.248,
+        "final_position": [
+          2.38,
+          -0.46,
+          0.4
+        ]
+      },
+      {
+        "seed": 50001,
+        "status": "timeout",
+        "steps": 500,
+        "episode_return": 90.71,
+        "distance_travelled_m": 10.8,
+        "net_forward_displacement_m": 9.16,
+        "final_distance_to_goal_m": 0.83,
+        "sign_reversals": 0,
+        "stationary_duration_s": 0.15,
+        "interventions": 393,
+        "min_obstacle_clearance_m": 0.133,
+        "min_wall_clearance_m": 0.245,
+        "final_position": [
+          9.66,
+          0.54,
+          0.4
+        ]
+      },
+      {
+        "seed": 100,
+        "status": "timeout",
+        "steps": 500,
+        "episode_return": 59.46,
+        "distance_travelled_m": 8.25,
+        "net_forward_displacement_m": 6.09,
+        "final_distance_to_goal_m": 3.02,
+        "sign_reversals": 0,
+        "stationary_duration_s": 0.95,
+        "interventions": 442,
+        "min_obstacle_clearance_m": 0.159,
+        "min_wall_clearance_m": 0.249,
+        "final_position": [
+          6.59,
+          -0.51,
+          0.4
+        ]
+      },
+      {
+        "seed": 101,
+        "status": "timeout",
+        "steps": 500,
+        "episode_return": 38.55,
+        "distance_travelled_m": 6.84,
+        "net_forward_displacement_m": 3.99,
+        "final_distance_to_goal_m": 5.07,
+        "sign_reversals": 1,
+        "stationary_duration_s": 2.1,
+        "interventions": 455,
+        "min_obstacle_clearance_m": 0.159,
+        "min_wall_clearance_m": 0.25,
+        "final_position": [
+          4.49,
+          -0.51,
+          0.4
+        ]
+      },
+      {
+        "seed": 102,
+        "status": "timeout",
+        "steps": 500,
+        "episode_return": 18.59,
+        "distance_travelled_m": 5.21,
+        "net_forward_displacement_m": 2.0,
+        "final_distance_to_goal_m": 7.04,
+        "sign_reversals": 2,
+        "stationary_duration_s": 2.35,
+        "interventions": 469,
+        "min_obstacle_clearance_m": 0.164,
+        "min_wall_clearance_m": 0.248,
+        "final_position": [
+          2.5,
+          -0.4,
+          0.4
+        ]
+      }
+    ]
+  }
+}

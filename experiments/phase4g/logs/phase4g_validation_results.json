@@ -1,0 +1,1002 @@
+{
+  "Arm_A_Frozen_PPO": {
+    "validation_metrics": {
+      "controller": "Arm_A_Frozen_PPO",
+      "total_episodes": 10,
+      "success_count": 0,
+      "success_rate_pct": 0.0,
+      "collision_count": 0,
+      "wall_collision_count": 0,
+      "timeout_count": 0,
+      "mean_steps": 200.0,
+      "mean_forward_displacement_m": 3.35,
+      "mean_final_goal_dist_m": 5.683,
+      "mean_min_obs_clearance_m": 0.169,
+      "mean_min_wall_clearance_m": 0.36,
+      "intervention_rate_pct": 88.6,
+      "per_seed_results": [
+        {
+          "seed": 100,
+          "outcome": "continue",
+          "steps": 200,
+          "forward_displacement_m": 3.976,
+          "final_goal_dist_m": 5.062,
+          "min_obs_clearance_m": 0.177,
+          "min_wall_clearance_m": 0.381,
+          "interventions": 175
+        },
+        {
+          "seed": 101,
+          "outcome": "continue",
+          "steps": 200,
+          "forward_displacement_m": 4.12,
+          "final_goal_dist_m": 4.921,
+          "min_obs_clearance_m": 0.197,
+          "min_wall_clearance_m": 0.354,
+          "interventions": 178
+        },
+        {
+          "seed": 102,
+          "outcome": "continue",
+          "steps": 200,
+          "forward_displacement_m": 2.081,
+          "final_goal_dist_m": 6.95,
+          "min_obs_clearance_m": 0.151,
+          "min_wall_clearance_m": 0.31,
+          "interventions": 181
+        },
+        {
+          "seed": 103,
+          "outcome": "continue",
+          "steps": 200,
+          "forward_displacement_m": 2.182,
+          "final_goal_dist_m": 6.854,
+          "min_obs_clearance_m": 0.125,
+          "min_wall_clearance_m": 0.338,
+          "interventions": 167
+        },
+        {
+          "seed": 104,
+          "outcome": "continue",
+          "steps": 200,
+          "forward_displacement_m": 4.081,
+          "final_goal_dist_m": 4.948,
+          "min_obs_clearance_m": 0.193,
+          "min_wall_clearance_m": 0.407,
+          "interventions": 171
+        },
+        {
+          "seed": 105,
+          "outcome": "continue",
+          "steps": 200,
+          "forward_displacement_m": 3.146,
+          "final_goal_dist_m": 5.888,
+          "min_obs_clearance_m": 0.142,
+          "min_wall_clearance_m": 0.338,
+          "interventions": 179
+        },
+        {
+          "seed": 106,
+          "outcome": "continue",
+          "steps": 200,
+          "forward_displacement_m": 3.973,
+          "final_goal_dist_m": 5.065,
+          "min_obs_clearance_m": 0.224,
+          "min_wall_clearance_m": 0.312,
+          "interventions": 185
+        },
+        {
+          "seed": 107,
+          "outcome": "continue",
+          "steps": 200,
+          "forward_displacement_m": 3.561,
+          "final_goal_dist_m": 5.466,
+          "min_obs_clearance_m": 0.127,
+          "min_wall_clearance_m": 0.411,
+          "interventions": 173
+        },
+        {
+          "seed": 108,
+          "outcome": "continue",
+          "steps": 200,
+          "forward_displacement_m": 4.095,
+          "final_goal_dist_m": 4.94,
+          "min_obs_clearance_m": 0.221,
+          "min_wall_clearance_m": 0.373,
+          "interventions": 180
+        },
+        {
+          "seed": 109,
+          "outcome": "continue",
+          "steps": 200,
+          "forward_displacement_m": 2.287,
+          "final_goal_dist_m": 6.74,
+          "min_obs_clearance_m": 0.137,
+          "min_wall_clearance_m": 0.372,
+          "interventions": 183
+        }
+      ]
+    },
+    "open_space_bias": {
+      "center_vy": -0.2266,
+      "center_yaw_rate": -0.1537,
+      "lateral_sweep": [
+        {
+          "y": -0.4,
+          "vx": 0.7233,
+          "vy": 0.0465,
+          "vz": 0.063,
+          "yaw_rate": -0.0998
+        },
+        {
+          "y": -0.3,
+          "vx": 0.6723,
+          "vy": -0.0715,
+          "vz": 0.0381,
+          "yaw_rate": -0.1338
+        },
+        {
+          "y": -0.2,
+          "vx": 0.7125,
+          "vy": -0.1823,
+          "vz": 0.047,
+          "yaw_rate": -0.1451
+        },
+        {
+          "y": -0.1,
+          "vx": 0.6836,
+          "vy": -0.2178,
+          "vz": 0.0296,
+          "yaw_rate": -0.1468
+        },
+        {
+          "y": 0.0,
+          "vx": 0.6884,
+          "vy": -0.2266,
+          "vz": 0.0299,
+          "yaw_rate": -0.1537
+        },
+        {
+          "y": 0.1,
+          "vx": 0.6931,
+          "vy": -0.2319,
+          "vz": 0.0299,
+          "yaw_rate": -0.1585
+        },
+        {
+          "y": 0.2,
+          "vx": 0.6987,
+          "vy": -0.2348,
+          "vz": 0.03,
+          "yaw_rate": -0.1646
+        },
+        {
+          "y": 0.3,
+          "vx": 0.729,
+          "vy": -0.2445,
+          "vz": 0.0541,
+          "yaw_rate": -0.2136
+        },
+        {
+          "y": 0.4,
+          "vx": 0.7259,
+          "vy": -0.2711,
+          "vz": 0.0597,
+          "yaw_rate": -0.2191
+        }
+      ]
+    },
+    "mirrored_obstacle_tests": [
+      {
+        "y_obs": -0.25,
+        "wider_side": "left",
+        "feasible_side": "left",
+        "bypass_side": "right",
+        "passed_obstacle": false,
+        "min_obs_clearance_m": 0.14,
+        "min_wall_clearance_m": 0.298,
+        "interventions": 175,
+        "final_x": 2.578,
+        "final_y": -0.534
+      },
+      {
+        "y_obs": -0.15,
+        "wider_side": "left",
+        "feasible_side": "left",
+        "bypass_side": "right",
+        "passed_obstacle": false,
+        "min_obs_clearance_m": 0.128,
+        "min_wall_clearance_m": 0.335,
+        "interventions": 172,
+        "final_x": 2.654,
+        "final_y": -0.516
+      },
+      {
+        "y_obs": 0.0,
+        "wider_side": "symmetric",
+        "feasible_side": "neither",
+        "bypass_side": "right",
+        "passed_obstacle": false,
+        "min_obs_clearance_m": 0.131,
+        "min_wall_clearance_m": 0.348,
+        "interventions": 173,
+        "final_x": 2.766,
+        "final_y": -0.444
+      },
+      {
+        "y_obs": 0.15,
+        "wider_side": "right",
+        "feasible_side": "right",
+        "bypass_side": "right",
+        "passed_obstacle": false,
+        "min_obs_clearance_m": 0.134,
+        "min_wall_clearance_m": 0.394,
+        "interventions": 181,
+        "final_x": 3.714,
+        "final_y": -0.377
+      },
+      {
+        "y_obs": 0.25,
+        "wider_side": "right",
+        "feasible_side": "right",
+        "bypass_side": "right",
+        "passed_obstacle": true,
+        "min_obs_clearance_m": 0.185,
+        "min_wall_clearance_m": 0.415,
+        "interventions": 145,
+        "final_x": 3.825,
+        "final_y": -0.377
+      }
+    ]
+  },
+  "Arm_B_Frozen_BC": {
+    "validation_metrics": {
+      "controller": "Arm_B_Frozen_BC",
+      "total_episodes": 10,
+      "success_count": 0,
+      "success_rate_pct": 0.0,
+      "collision_count": 0,
+      "wall_collision_count": 0,
+      "timeout_count": 0,
+      "mean_steps": 200.0,
+      "mean_forward_displacement_m": 3.457,
+      "mean_final_goal_dist_m": 5.558,
+      "mean_min_obs_clearance_m": 0.231,
+      "mean_min_wall_clearance_m": 0.36,
+      "intervention_rate_pct": 44.0,
+      "per_seed_results": [
+        {
+          "seed": 100,
+          "outcome": "continue",
+          "steps": 200,
+          "forward_displacement_m": 3.92,
+          "final_goal_dist_m": 5.092,
+          "min_obs_clearance_m": 0.275,
+          "min_wall_clearance_m": 0.343,
+          "interventions": 80
+        },
+        {
+          "seed": 101,
+          "outcome": "continue",
+          "steps": 200,
+          "forward_displacement_m": 3.647,
+          "final_goal_dist_m": 5.369,
+          "min_obs_clearance_m": 0.311,
+          "min_wall_clearance_m": 0.342,
+          "interventions": 54
+        },
+        {
+          "seed": 102,
+          "outcome": "continue",
+          "steps": 200,
+          "forward_displacement_m": 3.767,
+          "final_goal_dist_m": 5.252,
+          "min_obs_clearance_m": 0.237,
+          "min_wall_clearance_m": 0.332,
+          "interventions": 79
+        },
+        {
+          "seed": 103,
+          "outcome": "continue",
+          "steps": 200,
+          "forward_displacement_m": 3.869,
+          "final_goal_dist_m": 5.148,
+          "min_obs_clearance_m": 0.181,
+          "min_wall_clearance_m": 0.34,
+          "interventions": 75
+        },
+        {
+          "seed": 104,
+          "outcome": "continue",
+          "steps": 200,
+          "forward_displacement_m": 3.9,
+          "final_goal_dist_m": 5.114,
+          "min_obs_clearance_m": 0.273,
+          "min_wall_clearance_m": 0.336,
+          "interventions": 71
+        },
+        {
+          "seed": 105,
+          "outcome": "continue",
+          "steps": 200,
+          "forward_displacement_m": 2.15,
+          "final_goal_dist_m": 6.864,
+          "min_obs_clearance_m": 0.124,
+          "min_wall_clearance_m": 0.414,
+          "interventions": 141
+        },
+        {
+          "seed": 106,
+          "outcome": "continue",
+          "steps": 200,
+          "forward_displacement_m": 3.913,
+          "final_goal_dist_m": 5.107,
+          "min_obs_clearance_m": 0.336,
+          "min_wall_clearance_m": 0.349,
+          "interventions": 60
+        },
+        {
+          "seed": 107,
+          "outcome": "continue",
+          "steps": 200,
+          "forward_displacement_m": 3.412,
+          "final_goal_dist_m": 5.594,
+          "min_obs_clearance_m": 0.157,
+          "min_wall_clearance_m": 0.419,
+          "interventions": 103
+        },
+        {
+          "seed": 108,
+          "outcome": "continue",
+          "steps": 200,
+          "forward_displacement_m": 3.785,
+          "final_goal_dist_m": 5.23,
+          "min_obs_clearance_m": 0.282,
+          "min_wall_clearance_m": 0.353,
+          "interventions": 75
+        },
+        {
+          "seed": 109,
+          "outcome": "continue",
+          "steps": 200,
+          "forward_displacement_m": 2.206,
+          "final_goal_dist_m": 6.808,
+          "min_obs_clearance_m": 0.134,
+          "min_wall_clearance_m": 0.369,
+          "interventions": 142
+        }
+      ]
+    },
+    "open_space_bias": {
+      "center_vy": -0.0002,
+      "center_yaw_rate": -0.0003,
+      "lateral_sweep": [
+        {
+          "y": -0.4,
+          "vx": 0.6351,
+          "vy": 0.0273,
+          "vz": 0.0001,
+          "yaw_rate": 0.0185
+        },
+        {
+          "y": -0.3,
+          "vx": 0.6524,
+          "vy": 0.0009,
+          "vz": -0.0001,
+          "yaw_rate": -0.0009
+        },
+        {
+          "y": -0.2,
+          "vx": 0.6531,
+          "vy": 0.0026,
+          "vz": -0.0005,
+          "yaw_rate": -0.0139
+        },
+        {
+          "y": -0.1,
+          "vx": 0.6431,
+          "vy": -0.0026,
+          "vz": 0.0003,
+          "yaw_rate": -0.0017
+        },
+        {
+          "y": 0.0,
+          "vx": 0.6431,
+          "vy": -0.0002,
+          "vz": 0.0007,
+          "yaw_rate": -0.0003
+        },
+        {
+          "y": 0.1,
+          "vx": 0.6435,
+          "vy": 0.005,
+          "vz": 0.0011,
+          "yaw_rate": 0.0038
+        },
+        {
+          "y": 0.2,
+          "vx": 0.6448,
+          "vy": 0.0077,
+          "vz": 0.0017,
+          "yaw_rate": 0.0061
+        },
+        {
+          "y": 0.3,
+          "vx": 0.6493,
+          "vy": -0.0012,
+          "vz": 0.0013,
+          "yaw_rate": 0.0036
+        },
+        {
+          "y": 0.4,
+          "vx": 0.6416,
+          "vy": -0.0203,
+          "vz": 0.0012,
+          "yaw_rate": -0.0153
+        }
+      ]
+    },
+    "mirrored_obstacle_tests": [
+      {
+        "y_obs": -0.25,
+        "wider_side": "left",
+        "feasible_side": "left",
+        "bypass_side": "left",
+        "passed_obstacle": true,
+        "min_obs_clearance_m": 0.199,
+        "min_wall_clearance_m": 0.339,
+        "interventions": 37,
+        "final_x": 3.814,
+        "final_y": 0.469
+      },
+      {
+        "y_obs": -0.15,
+        "wider_side": "left",
+        "feasible_side": "left",
+        "bypass_side": "left",
+        "passed_obstacle": true,
+        "min_obs_clearance_m": 0.139,
+        "min_wall_clearance_m": 0.35,
+        "interventions": 86,
+        "final_x": 3.813,
+        "final_y": 0.134
+      },
+      {
+        "y_obs": 0.0,
+        "wider_side": "symmetric",
+        "feasible_side": "neither",
+        "bypass_side": "left",
+        "passed_obstacle": false,
+        "min_obs_clearance_m": 0.132,
+        "min_wall_clearance_m": 0.337,
+        "interventions": 156,
+        "final_x": 2.749,
+        "final_y": 0.434
+      },
+      {
+        "y_obs": 0.15,
+        "wider_side": "right",
+        "feasible_side": "right",
+        "bypass_side": "right",
+        "passed_obstacle": true,
+        "min_obs_clearance_m": 0.191,
+        "min_wall_clearance_m": 0.337,
+        "interventions": 73,
+        "final_x": 3.824,
+        "final_y": -0.233
+      },
+      {
+        "y_obs": 0.25,
+        "wider_side": "right",
+        "feasible_side": "right",
+        "bypass_side": "right",
+        "passed_obstacle": true,
+        "min_obs_clearance_m": 0.271,
+        "min_wall_clearance_m": 0.335,
+        "interventions": 67,
+        "final_x": 3.822,
+        "final_y": -0.239
+      }
+    ]
+  },
+  "Arm_C_PPO_NoAug": {
+    "validation_metrics": {
+      "controller": "Arm_C_PPO_NoAug",
+      "total_episodes": 10,
+      "success_count": 0,
+      "success_rate_pct": 0.0,
+      "collision_count": 0,
+      "wall_collision_count": 0,
+      "timeout_count": 0,
+      "mean_steps": 200.0,
+      "mean_forward_displacement_m": 3.289,
+      "mean_final_goal_dist_m": 5.74,
+      "mean_min_obs_clearance_m": 0.174,
+      "mean_min_wall_clearance_m": 0.336,
+      "intervention_rate_pct": 90.9,
+      "per_seed_results": [
+        {
+          "seed": 100,
+          "outcome": "continue",
+          "steps": 200,
+          "forward_displacement_m": 3.92,
+          "final_goal_dist_m": 5.112,
+          "min_obs_clearance_m": 0.165,
+          "min_wall_clearance_m": 0.382,
+          "interventions": 179
+        },
+        {
+          "seed": 101,
+          "outcome": "continue",
+          "steps": 200,
+          "forward_displacement_m": 4.128,
+          "final_goal_dist_m": 4.911,
+          "min_obs_clearance_m": 0.199,
+          "min_wall_clearance_m": 0.331,
+          "interventions": 184
+        },
+        {
+          "seed": 102,
+          "outcome": "continue",
+          "steps": 200,
+          "forward_displacement_m": 2.077,
+          "final_goal_dist_m": 6.949,
+          "min_obs_clearance_m": 0.155,
+          "min_wall_clearance_m": 0.287,
+          "interventions": 184
+        },
+        {
+          "seed": 103,
+          "outcome": "continue",
+          "steps": 200,
+          "forward_displacement_m": 2.19,
+          "final_goal_dist_m": 6.84,
+          "min_obs_clearance_m": 0.127,
+          "min_wall_clearance_m": 0.314,
+          "interventions": 180
+        },
+        {
+          "seed": 104,
+          "outcome": "continue",
+          "steps": 200,
+          "forward_displacement_m": 3.985,
+          "final_goal_dist_m": 5.047,
+          "min_obs_clearance_m": 0.194,
+          "min_wall_clearance_m": 0.363,
+          "interventions": 180
+        },
+        {
+          "seed": 105,
+          "outcome": "continue",
+          "steps": 200,
+          "forward_displacement_m": 2.815,
+          "final_goal_dist_m": 6.205,
+          "min_obs_clearance_m": 0.134,
+          "min_wall_clearance_m": 0.365,
+          "interventions": 182
+        },
+        {
+          "seed": 106,
+          "outcome": "continue",
+          "steps": 200,
+          "forward_displacement_m": 3.936,
+          "final_goal_dist_m": 5.093,
+          "min_obs_clearance_m": 0.258,
+          "min_wall_clearance_m": 0.316,
+          "interventions": 185
+        },
+        {
+          "seed": 107,
+          "outcome": "continue",
+          "steps": 200,
+          "forward_displacement_m": 3.626,
+          "final_goal_dist_m": 5.399,
+          "min_obs_clearance_m": 0.126,
+          "min_wall_clearance_m": 0.359,
+          "interventions": 176
+        },
+        {
+          "seed": 108,
+          "outcome": "continue",
+          "steps": 200,
+          "forward_displacement_m": 3.926,
+          "final_goal_dist_m": 5.111,
+          "min_obs_clearance_m": 0.242,
+          "min_wall_clearance_m": 0.318,
+          "interventions": 182
+        },
+        {
+          "seed": 109,
+          "outcome": "continue",
+          "steps": 200,
+          "forward_displacement_m": 2.291,
+          "final_goal_dist_m": 6.731,
+          "min_obs_clearance_m": 0.141,
+          "min_wall_clearance_m": 0.321,
+          "interventions": 186
+        }
+      ]
+    },
+    "open_space_bias": {
+      "center_vy": -0.2165,
+      "center_yaw_rate": -0.1364,
+      "lateral_sweep": [
+        {
+          "y": -0.4,
+          "vx": 0.7121,
+          "vy": -0.0121,
+          "vz": 0.0711,
+          "yaw_rate": -0.0914
+        },
+        {
+          "y": -0.3,
+          "vx": 0.6659,
+          "vy": -0.0916,
+          "vz": 0.0544,
+          "yaw_rate": -0.0707
+        },
+        {
+          "y": -0.2,
+          "vx": 0.7064,
+          "vy": -0.1842,
+          "vz": 0.0531,
+          "yaw_rate": -0.0869
+        },
+        {
+          "y": -0.1,
+          "vx": 0.6721,
+          "vy": -0.2106,
+          "vz": 0.0198,
+          "yaw_rate": -0.1282
+        },
+        {
+          "y": 0.0,
+          "vx": 0.6754,
+          "vy": -0.2165,
+          "vz": 0.0205,
+          "yaw_rate": -0.1364
+        },
+        {
+          "y": 0.1,
+          "vx": 0.679,
+          "vy": -0.2204,
+          "vz": 0.0211,
+          "yaw_rate": -0.1429
+        },
+        {
+          "y": 0.2,
+          "vx": 0.6842,
+          "vy": -0.2231,
+          "vz": 0.0222,
+          "yaw_rate": -0.1522
+        },
+        {
+          "y": 0.3,
+          "vx": 0.718,
+          "vy": -0.2494,
+          "vz": 0.0672,
+          "yaw_rate": -0.2088
+        },
+        {
+          "y": 0.4,
+          "vx": 0.7162,
+          "vy": -0.2731,
+          "vz": 0.0733,
+          "yaw_rate": -0.2114
+        }
+      ]
+    },
+    "mirrored_obstacle_tests": [
+      {
+        "y_obs": -0.25,
+        "wider_side": "left",
+        "feasible_side": "left",
+        "bypass_side": "right",
+        "passed_obstacle": false,
+        "min_obs_clearance_m": 0.137,
+        "min_wall_clearance_m": 0.291,
+        "interventions": 181,
+        "final_x": 2.568,
+        "final_y": -0.531
+      },
+      {
+        "y_obs": -0.15,
+        "wider_side": "left",
+        "feasible_side": "left",
+        "bypass_side": "right",
+        "passed_obstacle": false,
+        "min_obs_clearance_m": 0.137,
+        "min_wall_clearance_m": 0.304,
+        "interventions": 182,
+        "final_x": 2.669,
+        "final_y": -0.532
+      },
+      {
+        "y_obs": 0.0,
+        "wider_side": "symmetric",
+        "feasible_side": "neither",
+        "bypass_side": "right",
+        "passed_obstacle": false,
+        "min_obs_clearance_m": 0.129,
+        "min_wall_clearance_m": 0.351,
+        "interventions": 182,
+        "final_x": 2.757,
+        "final_y": -0.438
+      },
+      {
+        "y_obs": 0.15,
+        "wider_side": "right",
+        "feasible_side": "right",
+        "bypass_side": "right",
+        "passed_obstacle": false,
+        "min_obs_clearance_m": 0.135,
+        "min_wall_clearance_m": 0.382,
+        "interventions": 180,
+        "final_x": 3.796,
+        "final_y": -0.428
+      },
+      {
+        "y_obs": 0.25,
+        "wider_side": "right",
+        "feasible_side": "right",
+        "bypass_side": "right",
+        "passed_obstacle": true,
+        "min_obs_clearance_m": 0.25,
+        "min_wall_clearance_m": 0.397,
+        "interventions": 139,
+        "final_x": 3.848,
+        "final_y": -0.395
+      }
+    ]
+  },
+  "Arm_D_PPO_Reflection": {
+    "validation_metrics": {
+      "controller": "Arm_D_PPO_Reflection",
+      "total_episodes": 10,
+      "success_count": 0,
+      "success_rate_pct": 0.0,
+      "collision_count": 0,
+      "wall_collision_count": 0,
+      "timeout_count": 0,
+      "mean_steps": 200.0,
+      "mean_forward_displacement_m": 3.123,
+      "mean_final_goal_dist_m": 5.905,
+      "mean_min_obs_clearance_m": 0.151,
+      "mean_min_wall_clearance_m": 0.284,
+      "intervention_rate_pct": 88.35,
+      "per_seed_results": [
+        {
+          "seed": 100,
+          "outcome": "continue",
+          "steps": 200,
+          "forward_displacement_m": 3.268,
+          "final_goal_dist_m": 5.763,
+          "min_obs_clearance_m": 0.134,
+          "min_wall_clearance_m": 0.283,
+          "interventions": 184
+        },
+        {
+          "seed": 101,
+          "outcome": "continue",
+          "steps": 200,
+          "forward_displacement_m": 4.126,
+          "final_goal_dist_m": 4.904,
+          "min_obs_clearance_m": 0.216,
+          "min_wall_clearance_m": 0.296,
+          "interventions": 170
+        },
+        {
+          "seed": 102,
+          "outcome": "continue",
+          "steps": 200,
+          "forward_displacement_m": 2.149,
+          "final_goal_dist_m": 6.882,
+          "min_obs_clearance_m": 0.16,
+          "min_wall_clearance_m": 0.213,
+          "interventions": 178
+        },
+        {
+          "seed": 103,
+          "outcome": "continue",
+          "steps": 200,
+          "forward_displacement_m": 2.192,
+          "final_goal_dist_m": 6.836,
+          "min_obs_clearance_m": 0.134,
+          "min_wall_clearance_m": 0.237,
+          "interventions": 173
+        },
+        {
+          "seed": 104,
+          "outcome": "continue",
+          "steps": 200,
+          "forward_displacement_m": 3.538,
+          "final_goal_dist_m": 5.488,
+          "min_obs_clearance_m": 0.145,
+          "min_wall_clearance_m": 0.293,
+          "interventions": 180
+        },
+        {
+          "seed": 105,
+          "outcome": "continue",
+          "steps": 200,
+          "forward_displacement_m": 2.932,
+          "final_goal_dist_m": 6.093,
+          "min_obs_clearance_m": 0.143,
+          "min_wall_clearance_m": 0.327,
+          "interventions": 176
+        },
+        {
+          "seed": 106,
+          "outcome": "continue",
+          "steps": 200,
+          "forward_displacement_m": 4.041,
+          "final_goal_dist_m": 4.992,
+          "min_obs_clearance_m": 0.175,
+          "min_wall_clearance_m": 0.281,
+          "interventions": 177
+        },
+        {
+          "seed": 107,
+          "outcome": "continue",
+          "steps": 200,
+          "forward_displacement_m": 3.23,
+          "final_goal_dist_m": 5.788,
+          "min_obs_clearance_m": 0.119,
+          "min_wall_clearance_m": 0.355,
+          "interventions": 171
+        },
+        {
+          "seed": 108,
+          "outcome": "continue",
+          "steps": 200,
+          "forward_displacement_m": 3.446,
+          "final_goal_dist_m": 5.583,
+          "min_obs_clearance_m": 0.145,
+          "min_wall_clearance_m": 0.285,
+          "interventions": 178
+        },
+        {
+          "seed": 109,
+          "outcome": "continue",
+          "steps": 200,
+          "forward_displacement_m": 2.307,
+          "final_goal_dist_m": 6.719,
+          "min_obs_clearance_m": 0.138,
+          "min_wall_clearance_m": 0.267,
+          "interventions": 180
+        }
+      ]
+    },
+    "open_space_bias": {
+      "center_vy": -0.1886,
+      "center_yaw_rate": -0.0618,
+      "lateral_sweep": [
+        {
+          "y": -0.4,
+          "vx": 0.6666,
+          "vy": -0.0868,
+          "vz": -0.0692,
+          "yaw_rate": -0.1381
+        },
+        {
+          "y": -0.3,
+          "vx": 0.6207,
+          "vy": -0.1229,
+          "vz": -0.074,
+          "yaw_rate": -0.0591
+        },
+        {
+          "y": -0.2,
+          "vx": 0.6898,
+          "vy": -0.2013,
+          "vz": -0.049,
+          "yaw_rate": -0.0595
+        },
+        {
+          "y": -0.1,
+          "vx": 0.6777,
+          "vy": -0.1783,
+          "vz": -0.0486,
+          "yaw_rate": -0.0659
+        },
+        {
+          "y": 0.0,
+          "vx": 0.6783,
+          "vy": -0.1886,
+          "vz": -0.0436,
+          "yaw_rate": -0.0618
+        },
+        {
+          "y": 0.1,
+          "vx": 0.6799,
+          "vy": -0.1955,
+          "vz": -0.0389,
+          "yaw_rate": -0.0575
+        },
+        {
+          "y": 0.2,
+          "vx": 0.6823,
+          "vy": -0.2,
+          "vz": -0.0344,
+          "yaw_rate": -0.0542
+        },
+        {
+          "y": 0.3,
+          "vx": 0.6838,
+          "vy": -0.1938,
+          "vz": -0.0154,
+          "yaw_rate": -0.0397
+        },
+        {
+          "y": 0.4,
+          "vx": 0.6815,
+          "vy": -0.2093,
+          "vz": -0.0034,
+          "yaw_rate": -0.0239
+        }
+      ]
+    },
+    "mirrored_obstacle_tests": [
+      {
+        "y_obs": -0.25,
+        "wider_side": "left",
+        "feasible_side": "left",
+        "bypass_side": "right",
+        "passed_obstacle": false,
+        "min_obs_clearance_m": 0.17,
+        "min_wall_clearance_m": 0.226,
+        "interventions": 174,
+        "final_x": 2.632,
+        "final_y": -0.614
+      },
+      {
+        "y_obs": -0.15,
+        "wider_side": "left",
+        "feasible_side": "left",
+        "bypass_side": "right",
+        "passed_obstacle": false,
+        "min_obs_clearance_m": 0.142,
+        "min_wall_clearance_m": 0.23,
+        "interventions": 174,
+        "final_x": 2.663,
+        "final_y": -0.519
+      },
+      {
+        "y_obs": 0.0,
+        "wider_side": "symmetric",
+        "feasible_side": "neither",
+        "bypass_side": "right",
+        "passed_obstacle": false,
+        "min_obs_clearance_m": 0.136,
+        "min_wall_clearance_m": 0.283,
+        "interventions": 172,
+        "final_x": 3.147,
+        "final_y": -0.569
+      },
+      {
+        "y_obs": 0.15,
+        "wider_side": "right",
+        "feasible_side": "right",
+        "bypass_side": "right",
+        "passed_obstacle": true,
+        "min_obs_clearance_m": 0.133,
+        "min_wall_clearance_m": 0.357,
+        "interventions": 172,
+        "final_x": 3.827,
+        "final_y": -0.484
+      },
+      {
+        "y_obs": 0.25,
+        "wider_side": "right",
+        "feasible_side": "right",
+        "bypass_side": "right",
+        "passed_obstacle": true,
+        "min_obs_clearance_m": 0.137,
+        "min_wall_clearance_m": 0.404,
+        "interventions": 148,
+        "final_x": 3.837,
+        "final_y": -0.418
+      }
+    ]
+  }
+}

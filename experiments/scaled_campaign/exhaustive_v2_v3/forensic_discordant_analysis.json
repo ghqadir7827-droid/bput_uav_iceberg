@@ -1,0 +1,1923 @@
+[
+  {
+    "tier": "Level 1 (Basic)",
+    "seed": 20100,
+    "type": "RECOVERY_V3_WON",
+    "v2_status": "TIMEOUT",
+    "v3_status": "SUCCESS",
+    "controllers": {
+      "v2": {
+        "steps": 1000,
+        "lateral_reversals": 15,
+        "min_clearance_m": 0.3081,
+        "tie_break_dirs": [
+          "TIE_BREAK_LEFT",
+          "TIE_BREAK_LEFT",
+          "TIE_BREAK_LEFT",
+          "TIE_BREAK_LEFT",
+          "TIE_BREAK_LEFT",
+          "TIE_BREAK_LEFT",
+          "TIE_BREAK_LEFT",
+          "TIE_BREAK_LEFT",
+          "TIE_BREAK_LEFT",
+          "TIE_BREAK_LEFT"
+        ]
+      },
+      "v3": {
+        "steps": 658,
+        "lateral_reversals": 5,
+        "min_clearance_m": 0.5003,
+        "tie_break_dirs": [
+          "TIE_BREAK_LEFT",
+          "TIE_BREAK_LEFT",
+          "TIE_BREAK_RIGHT",
+          "TIE_BREAK_RIGHT",
+          "TIE_BREAK_RIGHT",
+          "TIE_BREAK_RIGHT",
+          "TIE_BREAK_LEFT",
+          "TIE_BREAK_LEFT",
+          "TIE_BREAK_LEFT"
+        ]
+      }
+    }
+  },
+  {
+    "tier": "Level 1 (Basic)",
+    "seed": 20101,
+    "type": "RECOVERY_V3_WON",
+    "v2_status": "TIMEOUT",
+    "v3_status": "SUCCESS",
+    "controllers": {
+      "v2": {
+        "steps": 1000,
+        "lateral_reversals": 297,
+        "min_clearance_m": 0.1198,
+        "tie_break_dirs": [
+          "TIE_BREAK_LEFT",
+          "TIE_BREAK_LEFT",
+          "TIE_BREAK_LEFT",
+          "TIE_BREAK_LEFT",
+          "TIE_BREAK_LEFT",
+          "TIE_BREAK_RIGHT",
+          "TIE_BREAK_LEFT",
+          "TIE_BREAK_LEFT",
+          "TIE_BREAK_LEFT",
+          "TIE_BREAK_RIGHT"
+        ]
+      },
+      "v3": {
+        "steps": 735,
+        "lateral_reversals": 19,
+        "min_clearance_m": 0.1597,
+        "tie_break_dirs": [
+          "TIE_BREAK_RIGHT",
+          "TIE_BREAK_RIGHT",
+          "TIE_BREAK_RIGHT",
+          "TIE_BREAK_RIGHT",
+          "TIE_BREAK_LEFT",
+          "TIE_BREAK_LEFT",
+          "TIE_BREAK_LEFT",
+          "TIE_BREAK_LEFT",
+          "TIE_BREAK_LEFT",
+          "TIE_BREAK_LEFT"
+        ]
+      }
+    }
+  },
+  {
+    "tier": "Level 1 (Basic)",
+    "seed": 20103,
+    "type": "RECOVERY_V3_WON",
+    "v2_status": "TIMEOUT",
+    "v3_status": "SUCCESS",
+    "controllers": {
+      "v2": {
+        "steps": 1000,
+        "lateral_reversals": 297,
+        "min_clearance_m": 0.1302,
+        "tie_break_dirs": [
+          "TIE_BREAK_LEFT",
+          "TIE_BREAK_LEFT",
+          "TIE_BREAK_LEFT",
+          "TIE_BREAK_LEFT",
+          "TIE_BREAK_LEFT",
+          "TIE_BREAK_LEFT",
+          "TIE_BREAK_LEFT",
+          "TIE_BREAK_LEFT",
+          "TIE_BREAK_LEFT",
+          "TIE_BREAK_LEFT"
+        ]
+      },
+      "v3": {
+        "steps": 665,
+        "lateral_reversals": 16,
+        "min_clearance_m": 0.1714,
+        "tie_break_dirs": [
+          "TIE_BREAK_RIGHT",
+          "TIE_BREAK_RIGHT",
+          "TIE_BREAK_RIGHT",
+          "TIE_BREAK_LEFT",
+          "TIE_BREAK_LEFT",
+          "TIE_BREAK_LEFT",
+          "TIE_BREAK_LEFT",
+          "TIE_BREAK_RIGHT",
+          "TIE_BREAK_RIGHT",
+          "TIE_BREAK_RIGHT"
+        ]
+      }
+    }
+  },
+  {
+    "tier": "Level 1 (Basic)",
+    "seed": 20104,
+    "type": "RECOVERY_V3_WON",
+    "v2_status": "TIMEOUT",
+    "v3_status": "SUCCESS",
+    "controllers": {
+      "v2": {
+        "steps": 1000,
+        "lateral_reversals": 11,
+        "min_clearance_m": 0.1581,
+        "tie_break_dirs": [
+          "TIE_BREAK_RIGHT",
+          "TIE_BREAK_LEFT",
+          "TIE_BREAK_RIGHT",
+          "TIE_BREAK_LEFT",
+          "TIE_BREAK_RIGHT",
+          "TIE_BREAK_LEFT"
+        ]
+      },
+      "v3": {
+        "steps": 657,
+        "lateral_reversals": 7,
+        "min_clearance_m": 0.5458,
+        "tie_break_dirs": [
+          "TIE_BREAK_RIGHT",
+          "TIE_BREAK_RIGHT",
+          "TIE_BREAK_RIGHT",
+          "TIE_BREAK_RIGHT",
+          "TIE_BREAK_LEFT",
+          "TIE_BREAK_LEFT",
+          "TIE_BREAK_RIGHT",
+          "TIE_BREAK_RIGHT",
+          "TIE_BREAK_RIGHT",
+          "TIE_BREAK_RIGHT"
+        ]
+      }
+    }
+  },
+  {
+    "tier": "Level 1 (Basic)",
+    "seed": 20105,
+    "type": "RECOVERY_V3_WON",
+    "v2_status": "TIMEOUT",
+    "v3_status": "SUCCESS",
+    "controllers": {
+      "v2": {
+        "steps": 1000,
+        "lateral_reversals": 11,
+        "min_clearance_m": 0.1595,
+        "tie_break_dirs": [
+          "TIE_BREAK_LEFT",
+          "TIE_BREAK_LEFT",
+          "TIE_BREAK_RIGHT",
+          "TIE_BREAK_LEFT",
+          "TIE_BREAK_LEFT",
+          "TIE_BREAK_LEFT",
+          "TIE_BREAK_LEFT",
+          "TIE_BREAK_RIGHT",
+          "TIE_BREAK_LEFT",
+          "TIE_BREAK_LEFT"
+        ]
+      },
+      "v3": {
+        "steps": 579,
+        "lateral_reversals": 6,
+        "min_clearance_m": 0.5481,
+        "tie_break_dirs": [
+          "TIE_BREAK_RIGHT",
+          "TIE_BREAK_RIGHT",
+          "TIE_BREAK_RIGHT",
+          "TIE_BREAK_RIGHT",
+          "TIE_BREAK_RIGHT",
+          "TIE_BREAK_RIGHT",
+          "TIE_BREAK_RIGHT",
+          "TIE_BREAK_RIGHT",
+          "TIE_BREAK_RIGHT",
+          "TIE_BREAK_RIGHT"
+        ]
+      }
+    }
+  },
+  {
+    "tier": "Level 1 (Basic)",
+    "seed": 20106,
+    "type": "RECOVERY_V3_WON",
+    "v2_status": "TIMEOUT",
+    "v3_status": "SUCCESS",
+    "controllers": {
+      "v2": {
+        "steps": 1000,
+        "lateral_reversals": 97,
+        "min_clearance_m": 0.1355,
+        "tie_break_dirs": [
+          "TIE_BREAK_LEFT",
+          "TIE_BREAK_LEFT",
+          "TIE_BREAK_LEFT",
+          "TIE_BREAK_LEFT",
+          "TIE_BREAK_LEFT",
+          "TIE_BREAK_LEFT",
+          "TIE_BREAK_RIGHT",
+          "TIE_BREAK_LEFT",
+          "TIE_BREAK_LEFT",
+          "TIE_BREAK_LEFT"
+        ]
+      },
+      "v3": {
+        "steps": 639,
+        "lateral_reversals": 14,
+        "min_clearance_m": 0.2418,
+        "tie_break_dirs": [
+          "TIE_BREAK_LEFT",
+          "TIE_BREAK_LEFT",
+          "TIE_BREAK_RIGHT",
+          "TIE_BREAK_RIGHT",
+          "TIE_BREAK_RIGHT",
+          "TIE_BREAK_RIGHT",
+          "TIE_BREAK_RIGHT",
+          "TIE_BREAK_LEFT",
+          "TIE_BREAK_LEFT",
+          "TIE_BREAK_LEFT"
+        ]
+      }
+    }
+  },
+  {
+    "tier": "Level 1 (Basic)",
+    "seed": 20107,
+    "type": "RECOVERY_V3_WON",
+    "v2_status": "TIMEOUT",
+    "v3_status": "SUCCESS",
+    "controllers": {
+      "v2": {
+        "steps": 1000,
+        "lateral_reversals": 307,
+        "min_clearance_m": 0.1131,
+        "tie_break_dirs": [
+          "TIE_BREAK_RIGHT",
+          "TIE_BREAK_LEFT",
+          "TIE_BREAK_LEFT",
+          "TIE_BREAK_LEFT",
+          "TIE_BREAK_LEFT",
+          "TIE_BREAK_LEFT",
+          "TIE_BREAK_RIGHT",
+          "TIE_BREAK_LEFT",
+          "TIE_BREAK_LEFT",
+          "TIE_BREAK_LEFT"
+        ]
+      },
+      "v3": {
+        "steps": 847,
+        "lateral_reversals": 35,
+        "min_clearance_m": 0.1399,
+        "tie_break_dirs": [
+          "TIE_BREAK_RIGHT",
+          "TIE_BREAK_RIGHT",
+          "TIE_BREAK_RIGHT",
+          "TIE_BREAK_LEFT",
+          "TIE_BREAK_LEFT",
+          "TIE_BREAK_LEFT",
+          "TIE_BREAK_LEFT",
+          "TIE_BREAK_LEFT",
+          "TIE_BREAK_RIGHT",
+          "TIE_BREAK_RIGHT"
+        ]
+      }
+    }
+  },
+  {
+    "tier": "Level 1 (Basic)",
+    "seed": 20108,
+    "type": "RECOVERY_V3_WON",
+    "v2_status": "TIMEOUT",
+    "v3_status": "SUCCESS",
+    "controllers": {
+      "v2": {
+        "steps": 1000,
+        "lateral_reversals": 34,
+        "min_clearance_m": 0.1001,
+        "tie_break_dirs": [
+          "TIE_BREAK_LEFT",
+          "TIE_BREAK_LEFT",
+          "TIE_BREAK_RIGHT",
+          "TIE_BREAK_LEFT",
+          "TIE_BREAK_LEFT",
+          "TIE_BREAK_RIGHT",
+          "TIE_BREAK_LEFT",
+          "TIE_BREAK_LEFT",
+          "TIE_BREAK_LEFT",
+          "TIE_BREAK_LEFT"
+        ]
+      },
+      "v3": {
+        "steps": 646,
+        "lateral_reversals": 11,
+        "min_clearance_m": 0.3943,
+        "tie_break_dirs": [
+          "TIE_BREAK_LEFT",
+          "TIE_BREAK_RIGHT",
+          "TIE_BREAK_RIGHT",
+          "TIE_BREAK_RIGHT",
+          "TIE_BREAK_RIGHT",
+          "TIE_BREAK_LEFT",
+          "TIE_BREAK_LEFT",
+          "TIE_BREAK_LEFT",
+          "TIE_BREAK_LEFT",
+          "TIE_BREAK_RIGHT"
+        ]
+      }
+    }
+  },
+  {
+    "tier": "Level 1 (Basic)",
+    "seed": 20109,
+    "type": "REGRESSION_V2_WON",
+    "v2_status": "SUCCESS",
+    "v3_status": "TIMEOUT",
+    "controllers": {
+      "v2": {
+        "steps": 706,
+        "lateral_reversals": 43,
+        "min_clearance_m": 0.1637,
+        "tie_break_dirs": [
+          "TIE_BREAK_LEFT",
+          "TIE_BREAK_LEFT",
+          "TIE_BREAK_LEFT",
+          "TIE_BREAK_LEFT",
+          "TIE_BREAK_LEFT",
+          "TIE_BREAK_LEFT",
+          "TIE_BREAK_LEFT",
+          "TIE_BREAK_LEFT",
+          "TIE_BREAK_RIGHT",
+          "TIE_BREAK_LEFT"
+        ]
+      },
+      "v3": {
+        "steps": 1000,
+        "lateral_reversals": 18,
+        "min_clearance_m": 0.0867,
+        "tie_break_dirs": [
+          "TIE_BREAK_RIGHT",
+          "TIE_BREAK_RIGHT",
+          "TIE_BREAK_RIGHT",
+          "TIE_BREAK_RIGHT",
+          "TIE_BREAK_LEFT",
+          "TIE_BREAK_LEFT",
+          "TIE_BREAK_LEFT",
+          "TIE_BREAK_RIGHT",
+          "TIE_BREAK_RIGHT",
+          "TIE_BREAK_RIGHT"
+        ]
+      }
+    }
+  },
+  {
+    "tier": "Level 1 (Basic)",
+    "seed": 20111,
+    "type": "RECOVERY_V3_WON",
+    "v2_status": "TIMEOUT",
+    "v3_status": "SUCCESS",
+    "controllers": {
+      "v2": {
+        "steps": 1000,
+        "lateral_reversals": 12,
+        "min_clearance_m": 0.217,
+        "tie_break_dirs": [
+          "TIE_BREAK_RIGHT",
+          "TIE_BREAK_RIGHT",
+          "TIE_BREAK_RIGHT",
+          "TIE_BREAK_RIGHT",
+          "TIE_BREAK_LEFT",
+          "TIE_BREAK_LEFT",
+          "TIE_BREAK_RIGHT",
+          "TIE_BREAK_LEFT",
+          "TIE_BREAK_LEFT",
+          "TIE_BREAK_LEFT"
+        ]
+      },
+      "v3": {
+        "steps": 600,
+        "lateral_reversals": 10,
+        "min_clearance_m": 0.4304,
+        "tie_break_dirs": [
+          "TIE_BREAK_RIGHT",
+          "TIE_BREAK_RIGHT",
+          "TIE_BREAK_RIGHT",
+          "TIE_BREAK_LEFT",
+          "TIE_BREAK_LEFT",
+          "TIE_BREAK_RIGHT",
+          "TIE_BREAK_RIGHT",
+          "TIE_BREAK_RIGHT",
+          "TIE_BREAK_RIGHT",
+          "TIE_BREAK_RIGHT"
+        ]
+      }
+    }
+  },
+  {
+    "tier": "Level 1 (Basic)",
+    "seed": 20112,
+    "type": "RECOVERY_V3_WON",
+    "v2_status": "TIMEOUT",
+    "v3_status": "SUCCESS",
+    "controllers": {
+      "v2": {
+        "steps": 1000,
+        "lateral_reversals": 9,
+        "min_clearance_m": 0.0819,
+        "tie_break_dirs": [
+          "TIE_BREAK_LEFT",
+          "TIE_BREAK_LEFT",
+          "TIE_BREAK_LEFT",
+          "TIE_BREAK_LEFT",
+          "TIE_BREAK_RIGHT",
+          "TIE_BREAK_LEFT",
+          "TIE_BREAK_LEFT",
+          "TIE_BREAK_LEFT",
+          "TIE_BREAK_RIGHT",
+          "TIE_BREAK_LEFT"
+        ]
+      },
+      "v3": {
+        "steps": 674,
+        "lateral_reversals": 9,
+        "min_clearance_m": 0.5777,
+        "tie_break_dirs": [
+          "TIE_BREAK_LEFT",
+          "TIE_BREAK_LEFT",
+          "TIE_BREAK_LEFT",
+          "TIE_BREAK_RIGHT",
+          "TIE_BREAK_RIGHT",
+          "TIE_BREAK_RIGHT",
+          "TIE_BREAK_RIGHT",
+          "TIE_BREAK_RIGHT",
+          "TIE_BREAK_LEFT",
+          "TIE_BREAK_LEFT"
+        ]
+      }
+    }
+  },
+  {
+    "tier": "Level 1 (Basic)",
+    "seed": 20114,
+    "type": "RECOVERY_V3_WON",
+    "v2_status": "TIMEOUT",
+    "v3_status": "SUCCESS",
+    "controllers": {
+      "v2": {
+        "steps": 1000,
+        "lateral_reversals": 4,
+        "min_clearance_m": 0.1113,
+        "tie_break_dirs": []
+      },
+      "v3": {
+        "steps": 655,
+        "lateral_reversals": 6,
+        "min_clearance_m": 0.5732,
+        "tie_break_dirs": [
+          "TIE_BREAK_LEFT",
+          "TIE_BREAK_LEFT",
+          "TIE_BREAK_RIGHT",
+          "TIE_BREAK_RIGHT",
+          "TIE_BREAK_RIGHT",
+          "TIE_BREAK_LEFT",
+          "TIE_BREAK_LEFT"
+        ]
+      }
+    }
+  },
+  {
+    "tier": "Level 1 (Basic)",
+    "seed": 20117,
+    "type": "RECOVERY_V3_WON",
+    "v2_status": "TIMEOUT",
+    "v3_status": "SUCCESS",
+    "controllers": {
+      "v2": {
+        "steps": 1000,
+        "lateral_reversals": 32,
+        "min_clearance_m": 0.1493,
+        "tie_break_dirs": [
+          "TIE_BREAK_LEFT",
+          "TIE_BREAK_LEFT",
+          "TIE_BREAK_LEFT",
+          "TIE_BREAK_LEFT",
+          "TIE_BREAK_LEFT",
+          "TIE_BREAK_RIGHT",
+          "TIE_BREAK_LEFT",
+          "TIE_BREAK_LEFT",
+          "TIE_BREAK_RIGHT",
+          "TIE_BREAK_LEFT"
+        ]
+      },
+      "v3": {
+        "steps": 628,
+        "lateral_reversals": 19,
+        "min_clearance_m": 0.2941,
+        "tie_break_dirs": [
+          "TIE_BREAK_LEFT",
+          "TIE_BREAK_LEFT",
+          "TIE_BREAK_LEFT",
+          "TIE_BREAK_LEFT",
+          "TIE_BREAK_RIGHT",
+          "TIE_BREAK_RIGHT",
+          "TIE_BREAK_RIGHT",
+          "TIE_BREAK_RIGHT",
+          "TIE_BREAK_RIGHT",
+          "TIE_BREAK_LEFT"
+        ]
+      }
+    }
+  },
+  {
+    "tier": "Level 1 (Basic)",
+    "seed": 20123,
+    "type": "RECOVERY_V3_WON",
+    "v2_status": "TIMEOUT",
+    "v3_status": "SUCCESS",
+    "controllers": {
+      "v2": {
+        "steps": 1000,
+        "lateral_reversals": 7,
+        "min_clearance_m": 0.0565,
+        "tie_break_dirs": [
+          "TIE_BREAK_LEFT",
+          "TIE_BREAK_LEFT",
+          "TIE_BREAK_LEFT",
+          "TIE_BREAK_RIGHT",
+          "TIE_BREAK_LEFT",
+          "TIE_BREAK_LEFT",
+          "TIE_BREAK_LEFT",
+          "TIE_BREAK_LEFT"
+        ]
+      },
+      "v3": {
+        "steps": 667,
+        "lateral_reversals": 6,
+        "min_clearance_m": 0.6031,
+        "tie_break_dirs": [
+          "TIE_BREAK_LEFT",
+          "TIE_BREAK_LEFT",
+          "TIE_BREAK_LEFT",
+          "TIE_BREAK_LEFT",
+          "TIE_BREAK_LEFT",
+          "TIE_BREAK_RIGHT",
+          "TIE_BREAK_RIGHT",
+          "TIE_BREAK_RIGHT",
+          "TIE_BREAK_RIGHT",
+          "TIE_BREAK_RIGHT"
+        ]
+      }
+    }
+  },
+  {
+    "tier": "Level 1 (Basic)",
+    "seed": 20124,
+    "type": "RECOVERY_V3_WON",
+    "v2_status": "TIMEOUT",
+    "v3_status": "SUCCESS",
+    "controllers": {
+      "v2": {
+        "steps": 1000,
+        "lateral_reversals": 4,
+        "min_clearance_m": 0.0936,
+        "tie_break_dirs": []
+      },
+      "v3": {
+        "steps": 743,
+        "lateral_reversals": 10,
+        "min_clearance_m": 0.3971,
+        "tie_break_dirs": [
+          "TIE_BREAK_LEFT",
+          "TIE_BREAK_LEFT",
+          "TIE_BREAK_LEFT",
+          "TIE_BREAK_LEFT",
+          "TIE_BREAK_LEFT",
+          "TIE_BREAK_LEFT",
+          "TIE_BREAK_LEFT",
+          "TIE_BREAK_LEFT",
+          "TIE_BREAK_RIGHT",
+          "TIE_BREAK_RIGHT"
+        ]
+      }
+    }
+  },
+  {
+    "tier": "Level 1 (Basic)",
+    "seed": 20125,
+    "type": "RECOVERY_V3_WON",
+    "v2_status": "TIMEOUT",
+    "v3_status": "SUCCESS",
+    "controllers": {
+      "v2": {
+        "steps": 1000,
+        "lateral_reversals": 5,
+        "min_clearance_m": 0.236,
+        "tie_break_dirs": [
+          "TIE_BREAK_LEFT",
+          "TIE_BREAK_LEFT",
+          "TIE_BREAK_LEFT",
+          "TIE_BREAK_RIGHT",
+          "TIE_BREAK_LEFT",
+          "TIE_BREAK_LEFT",
+          "TIE_BREAK_LEFT",
+          "TIE_BREAK_LEFT",
+          "TIE_BREAK_LEFT",
+          "TIE_BREAK_LEFT"
+        ]
+      },
+      "v3": {
+        "steps": 663,
+        "lateral_reversals": 10,
+        "min_clearance_m": 0.437,
+        "tie_break_dirs": [
+          "TIE_BREAK_RIGHT",
+          "TIE_BREAK_RIGHT",
+          "TIE_BREAK_RIGHT",
+          "TIE_BREAK_RIGHT",
+          "TIE_BREAK_RIGHT",
+          "TIE_BREAK_RIGHT",
+          "TIE_BREAK_LEFT",
+          "TIE_BREAK_LEFT",
+          "TIE_BREAK_LEFT",
+          "TIE_BREAK_LEFT"
+        ]
+      }
+    }
+  },
+  {
+    "tier": "Level 1 (Basic)",
+    "seed": 20131,
+    "type": "RECOVERY_V3_WON",
+    "v2_status": "TIMEOUT",
+    "v3_status": "SUCCESS",
+    "controllers": {
+      "v2": {
+        "steps": 1000,
+        "lateral_reversals": 8,
+        "min_clearance_m": 0.2379,
+        "tie_break_dirs": [
+          "TIE_BREAK_LEFT",
+          "TIE_BREAK_LEFT",
+          "TIE_BREAK_LEFT",
+          "TIE_BREAK_LEFT",
+          "TIE_BREAK_LEFT",
+          "TIE_BREAK_LEFT",
+          "TIE_BREAK_LEFT",
+          "TIE_BREAK_LEFT",
+          "TIE_BREAK_LEFT",
+          "TIE_BREAK_LEFT"
+        ]
+      },
+      "v3": {
+        "steps": 661,
+        "lateral_reversals": 9,
+        "min_clearance_m": 0.5919,
+        "tie_break_dirs": [
+          "TIE_BREAK_LEFT",
+          "TIE_BREAK_RIGHT",
+          "TIE_BREAK_RIGHT",
+          "TIE_BREAK_RIGHT",
+          "TIE_BREAK_RIGHT",
+          "TIE_BREAK_RIGHT",
+          "TIE_BREAK_RIGHT",
+          "TIE_BREAK_RIGHT",
+          "TIE_BREAK_RIGHT",
+          "TIE_BREAK_LEFT"
+        ]
+      }
+    }
+  },
+  {
+    "tier": "Level 1 (Basic)",
+    "seed": 20132,
+    "type": "RECOVERY_V3_WON",
+    "v2_status": "TIMEOUT",
+    "v3_status": "SUCCESS",
+    "controllers": {
+      "v2": {
+        "steps": 1000,
+        "lateral_reversals": 12,
+        "min_clearance_m": 0.1196,
+        "tie_break_dirs": [
+          "TIE_BREAK_LEFT",
+          "TIE_BREAK_LEFT",
+          "TIE_BREAK_LEFT",
+          "TIE_BREAK_LEFT",
+          "TIE_BREAK_LEFT",
+          "TIE_BREAK_LEFT",
+          "TIE_BREAK_LEFT"
+        ]
+      },
+      "v3": {
+        "steps": 869,
+        "lateral_reversals": 37,
+        "min_clearance_m": 0.1297,
+        "tie_break_dirs": [
+          "TIE_BREAK_LEFT",
+          "TIE_BREAK_RIGHT",
+          "TIE_BREAK_RIGHT",
+          "TIE_BREAK_RIGHT",
+          "TIE_BREAK_LEFT",
+          "TIE_BREAK_LEFT",
+          "TIE_BREAK_LEFT",
+          "TIE_BREAK_LEFT",
+          "TIE_BREAK_RIGHT",
+          "TIE_BREAK_RIGHT"
+        ]
+      }
+    }
+  },
+  {
+    "tier": "Level 1 (Basic)",
+    "seed": 20133,
+    "type": "RECOVERY_V3_WON",
+    "v2_status": "TIMEOUT",
+    "v3_status": "SUCCESS",
+    "controllers": {
+      "v2": {
+        "steps": 1000,
+        "lateral_reversals": 294,
+        "min_clearance_m": 0.1133,
+        "tie_break_dirs": [
+          "TIE_BREAK_LEFT",
+          "TIE_BREAK_LEFT",
+          "TIE_BREAK_LEFT",
+          "TIE_BREAK_LEFT",
+          "TIE_BREAK_RIGHT",
+          "TIE_BREAK_LEFT",
+          "TIE_BREAK_LEFT",
+          "TIE_BREAK_LEFT",
+          "TIE_BREAK_RIGHT",
+          "TIE_BREAK_LEFT"
+        ]
+      },
+      "v3": {
+        "steps": 728,
+        "lateral_reversals": 19,
+        "min_clearance_m": 0.1812,
+        "tie_break_dirs": [
+          "TIE_BREAK_LEFT",
+          "TIE_BREAK_LEFT",
+          "TIE_BREAK_RIGHT",
+          "TIE_BREAK_RIGHT",
+          "TIE_BREAK_RIGHT",
+          "TIE_BREAK_RIGHT",
+          "TIE_BREAK_RIGHT",
+          "TIE_BREAK_LEFT",
+          "TIE_BREAK_LEFT",
+          "TIE_BREAK_LEFT"
+        ]
+      }
+    }
+  },
+  {
+    "tier": "Level 1 (Basic)",
+    "seed": 20135,
+    "type": "RECOVERY_V3_WON",
+    "v2_status": "TIMEOUT",
+    "v3_status": "SUCCESS",
+    "controllers": {
+      "v2": {
+        "steps": 1000,
+        "lateral_reversals": 2,
+        "min_clearance_m": 0.1129,
+        "tie_break_dirs": []
+      },
+      "v3": {
+        "steps": 651,
+        "lateral_reversals": 6,
+        "min_clearance_m": 0.4043,
+        "tie_break_dirs": [
+          "TIE_BREAK_LEFT",
+          "TIE_BREAK_LEFT",
+          "TIE_BREAK_LEFT",
+          "TIE_BREAK_LEFT",
+          "TIE_BREAK_LEFT",
+          "TIE_BREAK_LEFT",
+          "TIE_BREAK_RIGHT",
+          "TIE_BREAK_RIGHT",
+          "TIE_BREAK_RIGHT",
+          "TIE_BREAK_RIGHT"
+        ]
+      }
+    }
+  },
+  {
+    "tier": "Level 1 (Basic)",
+    "seed": 20136,
+    "type": "RECOVERY_V3_WON",
+    "v2_status": "TIMEOUT",
+    "v3_status": "SUCCESS",
+    "controllers": {
+      "v2": {
+        "steps": 1000,
+        "lateral_reversals": 317,
+        "min_clearance_m": 0.1199,
+        "tie_break_dirs": [
+          "TIE_BREAK_LEFT",
+          "TIE_BREAK_LEFT",
+          "TIE_BREAK_RIGHT",
+          "TIE_BREAK_LEFT",
+          "TIE_BREAK_RIGHT",
+          "TIE_BREAK_LEFT",
+          "TIE_BREAK_LEFT",
+          "TIE_BREAK_LEFT",
+          "TIE_BREAK_LEFT",
+          "TIE_BREAK_LEFT"
+        ]
+      },
+      "v3": {
+        "steps": 721,
+        "lateral_reversals": 18,
+        "min_clearance_m": 0.1998,
+        "tie_break_dirs": [
+          "TIE_BREAK_RIGHT",
+          "TIE_BREAK_RIGHT",
+          "TIE_BREAK_RIGHT",
+          "TIE_BREAK_RIGHT",
+          "TIE_BREAK_RIGHT",
+          "TIE_BREAK_LEFT",
+          "TIE_BREAK_LEFT",
+          "TIE_BREAK_LEFT",
+          "TIE_BREAK_RIGHT",
+          "TIE_BREAK_RIGHT"
+        ]
+      }
+    }
+  },
+  {
+    "tier": "Level 1 (Basic)",
+    "seed": 20138,
+    "type": "RECOVERY_V3_WON",
+    "v2_status": "TIMEOUT",
+    "v3_status": "SUCCESS",
+    "controllers": {
+      "v2": {
+        "steps": 1000,
+        "lateral_reversals": 19,
+        "min_clearance_m": 0.0363,
+        "tie_break_dirs": [
+          "TIE_BREAK_LEFT",
+          "TIE_BREAK_LEFT",
+          "TIE_BREAK_RIGHT",
+          "TIE_BREAK_LEFT",
+          "TIE_BREAK_RIGHT",
+          "TIE_BREAK_LEFT",
+          "TIE_BREAK_LEFT",
+          "TIE_BREAK_LEFT",
+          "TIE_BREAK_RIGHT",
+          "TIE_BREAK_LEFT"
+        ]
+      },
+      "v3": {
+        "steps": 686,
+        "lateral_reversals": 10,
+        "min_clearance_m": 0.4968,
+        "tie_break_dirs": [
+          "TIE_BREAK_LEFT",
+          "TIE_BREAK_LEFT",
+          "TIE_BREAK_LEFT",
+          "TIE_BREAK_LEFT",
+          "TIE_BREAK_RIGHT",
+          "TIE_BREAK_RIGHT",
+          "TIE_BREAK_RIGHT",
+          "TIE_BREAK_RIGHT",
+          "TIE_BREAK_LEFT",
+          "TIE_BREAK_LEFT"
+        ]
+      }
+    }
+  },
+  {
+    "tier": "Level 1 (Basic)",
+    "seed": 20139,
+    "type": "RECOVERY_V3_WON",
+    "v2_status": "TIMEOUT",
+    "v3_status": "SUCCESS",
+    "controllers": {
+      "v2": {
+        "steps": 1000,
+        "lateral_reversals": 12,
+        "min_clearance_m": 0.2705,
+        "tie_break_dirs": [
+          "TIE_BREAK_LEFT",
+          "TIE_BREAK_LEFT",
+          "TIE_BREAK_LEFT",
+          "TIE_BREAK_LEFT",
+          "TIE_BREAK_RIGHT",
+          "TIE_BREAK_LEFT",
+          "TIE_BREAK_LEFT",
+          "TIE_BREAK_LEFT",
+          "TIE_BREAK_LEFT",
+          "TIE_BREAK_LEFT"
+        ]
+      },
+      "v3": {
+        "steps": 675,
+        "lateral_reversals": 5,
+        "min_clearance_m": 0.6033,
+        "tie_break_dirs": [
+          "TIE_BREAK_RIGHT",
+          "TIE_BREAK_RIGHT",
+          "TIE_BREAK_RIGHT",
+          "TIE_BREAK_RIGHT",
+          "TIE_BREAK_RIGHT",
+          "TIE_BREAK_RIGHT",
+          "TIE_BREAK_RIGHT",
+          "TIE_BREAK_RIGHT",
+          "TIE_BREAK_RIGHT",
+          "TIE_BREAK_RIGHT"
+        ]
+      }
+    }
+  },
+  {
+    "tier": "Level 1 (Basic)",
+    "seed": 20140,
+    "type": "RECOVERY_V3_WON",
+    "v2_status": "TIMEOUT",
+    "v3_status": "SUCCESS",
+    "controllers": {
+      "v2": {
+        "steps": 1000,
+        "lateral_reversals": 28,
+        "min_clearance_m": 0.0004,
+        "tie_break_dirs": [
+          "TIE_BREAK_LEFT",
+          "TIE_BREAK_LEFT",
+          "TIE_BREAK_LEFT",
+          "TIE_BREAK_LEFT",
+          "TIE_BREAK_LEFT",
+          "TIE_BREAK_LEFT",
+          "TIE_BREAK_LEFT",
+          "TIE_BREAK_LEFT",
+          "TIE_BREAK_LEFT",
+          "TIE_BREAK_LEFT"
+        ]
+      },
+      "v3": {
+        "steps": 585,
+        "lateral_reversals": 9,
+        "min_clearance_m": 0.5287,
+        "tie_break_dirs": [
+          "TIE_BREAK_RIGHT",
+          "TIE_BREAK_RIGHT",
+          "TIE_BREAK_RIGHT",
+          "TIE_BREAK_RIGHT",
+          "TIE_BREAK_LEFT",
+          "TIE_BREAK_LEFT",
+          "TIE_BREAK_LEFT",
+          "TIE_BREAK_LEFT"
+        ]
+      }
+    }
+  },
+  {
+    "tier": "Level 1 (Basic)",
+    "seed": 20141,
+    "type": "RECOVERY_V3_WON",
+    "v2_status": "TIMEOUT",
+    "v3_status": "SUCCESS",
+    "controllers": {
+      "v2": {
+        "steps": 1000,
+        "lateral_reversals": 13,
+        "min_clearance_m": 0.2168,
+        "tie_break_dirs": [
+          "TIE_BREAK_LEFT",
+          "TIE_BREAK_LEFT",
+          "TIE_BREAK_RIGHT",
+          "TIE_BREAK_LEFT",
+          "TIE_BREAK_LEFT",
+          "TIE_BREAK_LEFT",
+          "TIE_BREAK_LEFT",
+          "TIE_BREAK_LEFT",
+          "TIE_BREAK_LEFT",
+          "TIE_BREAK_LEFT"
+        ]
+      },
+      "v3": {
+        "steps": 667,
+        "lateral_reversals": 11,
+        "min_clearance_m": 0.3675,
+        "tie_break_dirs": [
+          "TIE_BREAK_LEFT",
+          "TIE_BREAK_LEFT",
+          "TIE_BREAK_RIGHT",
+          "TIE_BREAK_RIGHT",
+          "TIE_BREAK_RIGHT",
+          "TIE_BREAK_RIGHT",
+          "TIE_BREAK_RIGHT",
+          "TIE_BREAK_LEFT",
+          "TIE_BREAK_LEFT",
+          "TIE_BREAK_LEFT"
+        ]
+      }
+    }
+  },
+  {
+    "tier": "Level 1 (Basic)",
+    "seed": 20142,
+    "type": "RECOVERY_V3_WON",
+    "v2_status": "TIMEOUT",
+    "v3_status": "SUCCESS",
+    "controllers": {
+      "v2": {
+        "steps": 1000,
+        "lateral_reversals": 41,
+        "min_clearance_m": 0.1535,
+        "tie_break_dirs": [
+          "TIE_BREAK_LEFT",
+          "TIE_BREAK_LEFT",
+          "TIE_BREAK_RIGHT",
+          "TIE_BREAK_LEFT",
+          "TIE_BREAK_RIGHT",
+          "TIE_BREAK_LEFT",
+          "TIE_BREAK_LEFT",
+          "TIE_BREAK_LEFT",
+          "TIE_BREAK_RIGHT",
+          "TIE_BREAK_LEFT"
+        ]
+      },
+      "v3": {
+        "steps": 704,
+        "lateral_reversals": 14,
+        "min_clearance_m": 0.2731,
+        "tie_break_dirs": [
+          "TIE_BREAK_LEFT",
+          "TIE_BREAK_LEFT",
+          "TIE_BREAK_LEFT",
+          "TIE_BREAK_RIGHT",
+          "TIE_BREAK_RIGHT",
+          "TIE_BREAK_RIGHT",
+          "TIE_BREAK_RIGHT",
+          "TIE_BREAK_LEFT",
+          "TIE_BREAK_LEFT",
+          "TIE_BREAK_LEFT"
+        ]
+      }
+    }
+  },
+  {
+    "tier": "Level 1 (Basic)",
+    "seed": 20144,
+    "type": "RECOVERY_V3_WON",
+    "v2_status": "TIMEOUT",
+    "v3_status": "SUCCESS",
+    "controllers": {
+      "v2": {
+        "steps": 1000,
+        "lateral_reversals": 113,
+        "min_clearance_m": 0.1185,
+        "tie_break_dirs": [
+          "TIE_BREAK_LEFT",
+          "TIE_BREAK_LEFT",
+          "TIE_BREAK_LEFT",
+          "TIE_BREAK_LEFT",
+          "TIE_BREAK_LEFT",
+          "TIE_BREAK_LEFT",
+          "TIE_BREAK_LEFT",
+          "TIE_BREAK_RIGHT",
+          "TIE_BREAK_LEFT",
+          "TIE_BREAK_LEFT"
+        ]
+      },
+      "v3": {
+        "steps": 679,
+        "lateral_reversals": 15,
+        "min_clearance_m": 0.5339,
+        "tie_break_dirs": [
+          "TIE_BREAK_LEFT",
+          "TIE_BREAK_LEFT",
+          "TIE_BREAK_LEFT",
+          "TIE_BREAK_LEFT",
+          "TIE_BREAK_LEFT",
+          "TIE_BREAK_RIGHT",
+          "TIE_BREAK_RIGHT",
+          "TIE_BREAK_RIGHT",
+          "TIE_BREAK_RIGHT",
+          "TIE_BREAK_RIGHT"
+        ]
+      }
+    }
+  },
+  {
+    "tier": "Level 1 (Basic)",
+    "seed": 20146,
+    "type": "RECOVERY_V3_WON",
+    "v2_status": "TIMEOUT",
+    "v3_status": "SUCCESS",
+    "controllers": {
+      "v2": {
+        "steps": 1000,
+        "lateral_reversals": 18,
+        "min_clearance_m": 0.1017,
+        "tie_break_dirs": [
+          "TIE_BREAK_LEFT",
+          "TIE_BREAK_LEFT",
+          "TIE_BREAK_LEFT",
+          "TIE_BREAK_LEFT",
+          "TIE_BREAK_LEFT",
+          "TIE_BREAK_LEFT",
+          "TIE_BREAK_LEFT",
+          "TIE_BREAK_LEFT",
+          "TIE_BREAK_LEFT",
+          "TIE_BREAK_LEFT"
+        ]
+      },
+      "v3": {
+        "steps": 660,
+        "lateral_reversals": 9,
+        "min_clearance_m": 0.4263,
+        "tie_break_dirs": [
+          "TIE_BREAK_LEFT",
+          "TIE_BREAK_LEFT",
+          "TIE_BREAK_LEFT",
+          "TIE_BREAK_LEFT",
+          "TIE_BREAK_LEFT",
+          "TIE_BREAK_LEFT",
+          "TIE_BREAK_LEFT",
+          "TIE_BREAK_RIGHT",
+          "TIE_BREAK_RIGHT",
+          "TIE_BREAK_RIGHT"
+        ]
+      }
+    }
+  },
+  {
+    "tier": "Level 1 (Basic)",
+    "seed": 20148,
+    "type": "RECOVERY_V3_WON",
+    "v2_status": "TIMEOUT",
+    "v3_status": "SUCCESS",
+    "controllers": {
+      "v2": {
+        "steps": 1000,
+        "lateral_reversals": 4,
+        "min_clearance_m": 0.1188,
+        "tie_break_dirs": [
+          "TIE_BREAK_LEFT"
+        ]
+      },
+      "v3": {
+        "steps": 661,
+        "lateral_reversals": 5,
+        "min_clearance_m": 0.5591,
+        "tie_break_dirs": [
+          "TIE_BREAK_LEFT",
+          "TIE_BREAK_LEFT",
+          "TIE_BREAK_LEFT",
+          "TIE_BREAK_RIGHT",
+          "TIE_BREAK_RIGHT",
+          "TIE_BREAK_RIGHT",
+          "TIE_BREAK_RIGHT",
+          "TIE_BREAK_RIGHT",
+          "TIE_BREAK_RIGHT",
+          "TIE_BREAK_LEFT"
+        ]
+      }
+    }
+  },
+  {
+    "tier": "Level 2 Dev (Standard)",
+    "seed": 20003,
+    "type": "RECOVERY_V3_WON",
+    "v2_status": "TIMEOUT",
+    "v3_status": "SUCCESS",
+    "controllers": {
+      "v2": {
+        "steps": 1000,
+        "lateral_reversals": 266,
+        "min_clearance_m": 0.1295,
+        "tie_break_dirs": [
+          "TIE_BREAK_LEFT",
+          "TIE_BREAK_LEFT",
+          "TIE_BREAK_LEFT",
+          "TIE_BREAK_LEFT",
+          "TIE_BREAK_LEFT",
+          "TIE_BREAK_LEFT",
+          "TIE_BREAK_LEFT",
+          "TIE_BREAK_LEFT",
+          "TIE_BREAK_LEFT",
+          "TIE_BREAK_LEFT"
+        ]
+      },
+      "v3": {
+        "steps": 634,
+        "lateral_reversals": 19,
+        "min_clearance_m": 0.0003,
+        "tie_break_dirs": [
+          "TIE_BREAK_LEFT",
+          "TIE_BREAK_LEFT",
+          "TIE_BREAK_LEFT",
+          "TIE_BREAK_LEFT",
+          "TIE_BREAK_RIGHT",
+          "TIE_BREAK_LEFT",
+          "TIE_BREAK_LEFT",
+          "TIE_BREAK_LEFT",
+          "TIE_BREAK_RIGHT",
+          "TIE_BREAK_RIGHT"
+        ]
+      }
+    }
+  },
+  {
+    "tier": "Level 2 Dev (Standard)",
+    "seed": 20016,
+    "type": "REGRESSION_V2_WON",
+    "v2_status": "SUCCESS",
+    "v3_status": "TIMEOUT",
+    "controllers": {
+      "v2": {
+        "steps": 556,
+        "lateral_reversals": 18,
+        "min_clearance_m": 0.3394,
+        "tie_break_dirs": [
+          "TIE_BREAK_LEFT",
+          "TIE_BREAK_LEFT",
+          "TIE_BREAK_LEFT",
+          "TIE_BREAK_LEFT",
+          "TIE_BREAK_LEFT",
+          "TIE_BREAK_LEFT",
+          "TIE_BREAK_RIGHT",
+          "TIE_BREAK_LEFT",
+          "TIE_BREAK_LEFT",
+          "TIE_BREAK_LEFT"
+        ]
+      },
+      "v3": {
+        "steps": 1000,
+        "lateral_reversals": 30,
+        "min_clearance_m": 0.1229,
+        "tie_break_dirs": [
+          "TIE_BREAK_LEFT",
+          "TIE_BREAK_LEFT",
+          "TIE_BREAK_LEFT",
+          "TIE_BREAK_LEFT",
+          "TIE_BREAK_LEFT",
+          "TIE_BREAK_RIGHT",
+          "TIE_BREAK_RIGHT",
+          "TIE_BREAK_RIGHT",
+          "TIE_BREAK_LEFT",
+          "TIE_BREAK_LEFT"
+        ]
+      }
+    }
+  },
+  {
+    "tier": "Level 2 Dev (Standard)",
+    "seed": 20023,
+    "type": "RECOVERY_V3_WON",
+    "v2_status": "TIMEOUT",
+    "v3_status": "SUCCESS",
+    "controllers": {
+      "v2": {
+        "steps": 1000,
+        "lateral_reversals": 220,
+        "min_clearance_m": 0.132,
+        "tie_break_dirs": [
+          "TIE_BREAK_RIGHT",
+          "TIE_BREAK_RIGHT",
+          "TIE_BREAK_RIGHT",
+          "TIE_BREAK_LEFT",
+          "TIE_BREAK_RIGHT",
+          "TIE_BREAK_LEFT",
+          "TIE_BREAK_LEFT",
+          "TIE_BREAK_LEFT",
+          "TIE_BREAK_LEFT",
+          "TIE_BREAK_LEFT"
+        ]
+      },
+      "v3": {
+        "steps": 570,
+        "lateral_reversals": 17,
+        "min_clearance_m": 0.194,
+        "tie_break_dirs": [
+          "TIE_BREAK_RIGHT",
+          "TIE_BREAK_RIGHT",
+          "TIE_BREAK_RIGHT",
+          "TIE_BREAK_RIGHT",
+          "TIE_BREAK_RIGHT",
+          "TIE_BREAK_LEFT",
+          "TIE_BREAK_LEFT",
+          "TIE_BREAK_RIGHT",
+          "TIE_BREAK_RIGHT",
+          "TIE_BREAK_RIGHT"
+        ]
+      }
+    }
+  },
+  {
+    "tier": "Level 2 Dev (Standard)",
+    "seed": 20029,
+    "type": "REGRESSION_V2_WON",
+    "v2_status": "SUCCESS",
+    "v3_status": "TIMEOUT",
+    "controllers": {
+      "v2": {
+        "steps": 542,
+        "lateral_reversals": 20,
+        "min_clearance_m": 0.412,
+        "tie_break_dirs": [
+          "TIE_BREAK_LEFT",
+          "TIE_BREAK_LEFT",
+          "TIE_BREAK_LEFT",
+          "TIE_BREAK_LEFT",
+          "TIE_BREAK_LEFT",
+          "TIE_BREAK_RIGHT",
+          "TIE_BREAK_LEFT",
+          "TIE_BREAK_RIGHT",
+          "TIE_BREAK_LEFT",
+          "TIE_BREAK_LEFT"
+        ]
+      },
+      "v3": {
+        "steps": 1000,
+        "lateral_reversals": 26,
+        "min_clearance_m": 0.1732,
+        "tie_break_dirs": [
+          "TIE_BREAK_LEFT",
+          "TIE_BREAK_LEFT",
+          "TIE_BREAK_LEFT",
+          "TIE_BREAK_LEFT",
+          "TIE_BREAK_LEFT",
+          "TIE_BREAK_LEFT",
+          "TIE_BREAK_LEFT",
+          "TIE_BREAK_LEFT",
+          "TIE_BREAK_LEFT",
+          "TIE_BREAK_LEFT"
+        ]
+      }
+    }
+  },
+  {
+    "tier": "Level 2 Dev (Standard)",
+    "seed": 20047,
+    "type": "REGRESSION_V2_WON",
+    "v2_status": "SUCCESS",
+    "v3_status": "TIMEOUT",
+    "controllers": {
+      "v2": {
+        "steps": 635,
+        "lateral_reversals": 34,
+        "min_clearance_m": 0.2721,
+        "tie_break_dirs": [
+          "TIE_BREAK_LEFT",
+          "TIE_BREAK_LEFT",
+          "TIE_BREAK_LEFT",
+          "TIE_BREAK_RIGHT",
+          "TIE_BREAK_LEFT",
+          "TIE_BREAK_LEFT",
+          "TIE_BREAK_LEFT",
+          "TIE_BREAK_LEFT",
+          "TIE_BREAK_LEFT",
+          "TIE_BREAK_LEFT"
+        ]
+      },
+      "v3": {
+        "steps": 1000,
+        "lateral_reversals": 31,
+        "min_clearance_m": 0.1508,
+        "tie_break_dirs": [
+          "TIE_BREAK_LEFT",
+          "TIE_BREAK_LEFT",
+          "TIE_BREAK_LEFT",
+          "TIE_BREAK_LEFT",
+          "TIE_BREAK_LEFT",
+          "TIE_BREAK_LEFT",
+          "TIE_BREAK_LEFT",
+          "TIE_BREAK_LEFT",
+          "TIE_BREAK_LEFT",
+          "TIE_BREAK_RIGHT"
+        ]
+      }
+    }
+  },
+  {
+    "tier": "Level 2 Confirmation",
+    "seed": 20051,
+    "type": "REGRESSION_V2_WON",
+    "v2_status": "SUCCESS",
+    "v3_status": "TIMEOUT",
+    "controllers": {
+      "v2": {
+        "steps": 564,
+        "lateral_reversals": 30,
+        "min_clearance_m": 0.35,
+        "tie_break_dirs": [
+          "TIE_BREAK_LEFT",
+          "TIE_BREAK_LEFT",
+          "TIE_BREAK_LEFT",
+          "TIE_BREAK_RIGHT",
+          "TIE_BREAK_RIGHT",
+          "TIE_BREAK_LEFT",
+          "TIE_BREAK_RIGHT",
+          "TIE_BREAK_RIGHT",
+          "TIE_BREAK_LEFT",
+          "TIE_BREAK_RIGHT"
+        ]
+      },
+      "v3": {
+        "steps": 1000,
+        "lateral_reversals": 17,
+        "min_clearance_m": 0.1096,
+        "tie_break_dirs": [
+          "TIE_BREAK_LEFT",
+          "TIE_BREAK_LEFT",
+          "TIE_BREAK_LEFT",
+          "TIE_BREAK_LEFT",
+          "TIE_BREAK_LEFT",
+          "TIE_BREAK_LEFT",
+          "TIE_BREAK_RIGHT",
+          "TIE_BREAK_LEFT",
+          "TIE_BREAK_LEFT",
+          "TIE_BREAK_RIGHT"
+        ]
+      }
+    }
+  },
+  {
+    "tier": "Level 2 Confirmation",
+    "seed": 20055,
+    "type": "REGRESSION_V2_WON",
+    "v2_status": "SUCCESS",
+    "v3_status": "TIMEOUT",
+    "controllers": {
+      "v2": {
+        "steps": 555,
+        "lateral_reversals": 20,
+        "min_clearance_m": 0.2636,
+        "tie_break_dirs": [
+          "TIE_BREAK_LEFT",
+          "TIE_BREAK_LEFT",
+          "TIE_BREAK_LEFT",
+          "TIE_BREAK_LEFT",
+          "TIE_BREAK_LEFT",
+          "TIE_BREAK_LEFT",
+          "TIE_BREAK_LEFT",
+          "TIE_BREAK_LEFT",
+          "TIE_BREAK_LEFT",
+          "TIE_BREAK_LEFT"
+        ]
+      },
+      "v3": {
+        "steps": 1000,
+        "lateral_reversals": 23,
+        "min_clearance_m": 0.1554,
+        "tie_break_dirs": [
+          "TIE_BREAK_LEFT",
+          "TIE_BREAK_LEFT",
+          "TIE_BREAK_LEFT",
+          "TIE_BREAK_LEFT",
+          "TIE_BREAK_LEFT",
+          "TIE_BREAK_LEFT",
+          "TIE_BREAK_RIGHT",
+          "TIE_BREAK_RIGHT",
+          "TIE_BREAK_LEFT",
+          "TIE_BREAK_LEFT"
+        ]
+      }
+    }
+  },
+  {
+    "tier": "Level 2 Confirmation",
+    "seed": 20058,
+    "type": "RECOVERY_V3_WON",
+    "v2_status": "TIMEOUT",
+    "v3_status": "SUCCESS",
+    "controllers": {
+      "v2": {
+        "steps": 1000,
+        "lateral_reversals": 176,
+        "min_clearance_m": 0.1253,
+        "tie_break_dirs": [
+          "TIE_BREAK_LEFT",
+          "TIE_BREAK_LEFT",
+          "TIE_BREAK_LEFT",
+          "TIE_BREAK_LEFT",
+          "TIE_BREAK_LEFT",
+          "TIE_BREAK_LEFT",
+          "TIE_BREAK_RIGHT",
+          "TIE_BREAK_LEFT",
+          "TIE_BREAK_LEFT",
+          "TIE_BREAK_LEFT"
+        ]
+      },
+      "v3": {
+        "steps": 691,
+        "lateral_reversals": 39,
+        "min_clearance_m": 0.1301,
+        "tie_break_dirs": [
+          "TIE_BREAK_LEFT",
+          "TIE_BREAK_LEFT",
+          "TIE_BREAK_LEFT",
+          "TIE_BREAK_LEFT",
+          "TIE_BREAK_LEFT",
+          "TIE_BREAK_RIGHT",
+          "TIE_BREAK_RIGHT",
+          "TIE_BREAK_RIGHT",
+          "TIE_BREAK_LEFT",
+          "TIE_BREAK_LEFT"
+        ]
+      }
+    }
+  },
+  {
+    "tier": "Level 2 Confirmation",
+    "seed": 20068,
+    "type": "RECOVERY_V3_WON",
+    "v2_status": "TIMEOUT",
+    "v3_status": "SUCCESS",
+    "controllers": {
+      "v2": {
+        "steps": 1000,
+        "lateral_reversals": 25,
+        "min_clearance_m": 0.1119,
+        "tie_break_dirs": [
+          "TIE_BREAK_LEFT",
+          "TIE_BREAK_LEFT",
+          "TIE_BREAK_RIGHT",
+          "TIE_BREAK_LEFT",
+          "TIE_BREAK_LEFT",
+          "TIE_BREAK_LEFT",
+          "TIE_BREAK_LEFT",
+          "TIE_BREAK_LEFT",
+          "TIE_BREAK_LEFT",
+          "TIE_BREAK_LEFT"
+        ]
+      },
+      "v3": {
+        "steps": 656,
+        "lateral_reversals": 22,
+        "min_clearance_m": 0.2462,
+        "tie_break_dirs": [
+          "TIE_BREAK_LEFT",
+          "TIE_BREAK_LEFT",
+          "TIE_BREAK_LEFT",
+          "TIE_BREAK_LEFT",
+          "TIE_BREAK_RIGHT",
+          "TIE_BREAK_RIGHT",
+          "TIE_BREAK_RIGHT",
+          "TIE_BREAK_RIGHT",
+          "TIE_BREAK_LEFT",
+          "TIE_BREAK_LEFT"
+        ]
+      }
+    }
+  },
+  {
+    "tier": "Level 2 Confirmation",
+    "seed": 20091,
+    "type": "REGRESSION_V2_WON",
+    "v2_status": "SUCCESS",
+    "v3_status": "TIMEOUT",
+    "controllers": {
+      "v2": {
+        "steps": 552,
+        "lateral_reversals": 14,
+        "min_clearance_m": 0.3458,
+        "tie_break_dirs": [
+          "TIE_BREAK_LEFT",
+          "TIE_BREAK_LEFT",
+          "TIE_BREAK_LEFT",
+          "TIE_BREAK_LEFT",
+          "TIE_BREAK_RIGHT",
+          "TIE_BREAK_LEFT",
+          "TIE_BREAK_LEFT",
+          "TIE_BREAK_LEFT",
+          "TIE_BREAK_RIGHT",
+          "TIE_BREAK_LEFT"
+        ]
+      },
+      "v3": {
+        "steps": 1000,
+        "lateral_reversals": 33,
+        "min_clearance_m": 0.1093,
+        "tie_break_dirs": [
+          "TIE_BREAK_LEFT",
+          "TIE_BREAK_LEFT",
+          "TIE_BREAK_LEFT",
+          "TIE_BREAK_LEFT",
+          "TIE_BREAK_LEFT",
+          "TIE_BREAK_LEFT",
+          "TIE_BREAK_RIGHT",
+          "TIE_BREAK_RIGHT",
+          "TIE_BREAK_RIGHT",
+          "TIE_BREAK_RIGHT"
+        ]
+      }
+    }
+  },
+  {
+    "tier": "Level 2 Confirmation",
+    "seed": 20094,
+    "type": "REGRESSION_V2_WON",
+    "v2_status": "SUCCESS",
+    "v3_status": "TIMEOUT",
+    "controllers": {
+      "v2": {
+        "steps": 952,
+        "lateral_reversals": 22,
+        "min_clearance_m": 0.1537,
+        "tie_break_dirs": [
+          "TIE_BREAK_LEFT",
+          "TIE_BREAK_LEFT",
+          "TIE_BREAK_LEFT",
+          "TIE_BREAK_LEFT",
+          "TIE_BREAK_LEFT",
+          "TIE_BREAK_LEFT",
+          "TIE_BREAK_LEFT",
+          "TIE_BREAK_LEFT",
+          "TIE_BREAK_LEFT",
+          "TIE_BREAK_LEFT"
+        ]
+      },
+      "v3": {
+        "steps": 1000,
+        "lateral_reversals": 19,
+        "min_clearance_m": 0.1337,
+        "tie_break_dirs": [
+          "TIE_BREAK_LEFT",
+          "TIE_BREAK_LEFT",
+          "TIE_BREAK_RIGHT",
+          "TIE_BREAK_RIGHT",
+          "TIE_BREAK_RIGHT",
+          "TIE_BREAK_RIGHT",
+          "TIE_BREAK_RIGHT",
+          "TIE_BREAK_RIGHT",
+          "TIE_BREAK_LEFT",
+          "TIE_BREAK_LEFT"
+        ]
+      }
+    }
+  },
+  {
+    "tier": "Level 3 (Challenging)",
+    "seed": 20202,
+    "type": "RECOVERY_V3_WON",
+    "v2_status": "TIMEOUT",
+    "v3_status": "SUCCESS",
+    "controllers": {
+      "v2": {
+        "steps": 1000,
+        "lateral_reversals": 260,
+        "min_clearance_m": 0.1224,
+        "tie_break_dirs": [
+          "TIE_BREAK_RIGHT",
+          "TIE_BREAK_LEFT",
+          "TIE_BREAK_LEFT",
+          "TIE_BREAK_LEFT",
+          "TIE_BREAK_LEFT",
+          "TIE_BREAK_LEFT",
+          "TIE_BREAK_LEFT",
+          "TIE_BREAK_LEFT",
+          "TIE_BREAK_LEFT",
+          "TIE_BREAK_LEFT"
+        ]
+      },
+      "v3": {
+        "steps": 543,
+        "lateral_reversals": 34,
+        "min_clearance_m": 0.112,
+        "tie_break_dirs": [
+          "TIE_BREAK_LEFT",
+          "TIE_BREAK_LEFT",
+          "TIE_BREAK_RIGHT",
+          "TIE_BREAK_RIGHT",
+          "TIE_BREAK_RIGHT",
+          "TIE_BREAK_RIGHT",
+          "TIE_BREAK_LEFT",
+          "TIE_BREAK_RIGHT",
+          "TIE_BREAK_RIGHT",
+          "TIE_BREAK_RIGHT"
+        ]
+      }
+    }
+  },
+  {
+    "tier": "Level 4 (Boundary & Feasibility)",
+    "seed": 20331,
+    "type": "REGRESSION_V2_WON",
+    "v2_status": "SAFE_REJECT",
+    "v3_status": "TIMEOUT",
+    "controllers": {
+      "v2": {
+        "steps": 1000,
+        "lateral_reversals": 262,
+        "min_clearance_m": 0.0304,
+        "tie_break_dirs": [
+          "TIE_BREAK_RIGHT",
+          "TIE_BREAK_RIGHT",
+          "TIE_BREAK_RIGHT",
+          "TIE_BREAK_RIGHT",
+          "TIE_BREAK_RIGHT",
+          "TIE_BREAK_RIGHT",
+          "TIE_BREAK_RIGHT",
+          "TIE_BREAK_RIGHT",
+          "TIE_BREAK_RIGHT",
+          "TIE_BREAK_RIGHT"
+        ]
+      },
+      "v3": {
+        "steps": 1000,
+        "lateral_reversals": 15,
+        "min_clearance_m": 0.1319,
+        "tie_break_dirs": [
+          "TIE_BREAK_RIGHT",
+          "TIE_BREAK_RIGHT",
+          "TIE_BREAK_RIGHT",
+          "TIE_BREAK_RIGHT",
+          "TIE_BREAK_LEFT",
+          "TIE_BREAK_LEFT",
+          "TIE_BREAK_LEFT",
+          "TIE_BREAK_LEFT",
+          "TIE_BREAK_LEFT",
+          "TIE_BREAK_LEFT"
+        ]
+      }
+    }
+  },
+  {
+    "tier": "Level 4 (Boundary & Feasibility)",
+    "seed": 20332,
+    "type": "REGRESSION_V2_WON",
+    "v2_status": "SUCCESS",
+    "v3_status": "TIMEOUT",
+    "controllers": {
+      "v2": {
+        "steps": 589,
+        "lateral_reversals": 40,
+        "min_clearance_m": 0.0474,
+        "tie_break_dirs": [
+          "TIE_BREAK_RIGHT",
+          "TIE_BREAK_RIGHT",
+          "TIE_BREAK_RIGHT",
+          "TIE_BREAK_RIGHT",
+          "TIE_BREAK_RIGHT",
+          "TIE_BREAK_RIGHT",
+          "TIE_BREAK_RIGHT",
+          "TIE_BREAK_RIGHT",
+          "TIE_BREAK_RIGHT",
+          "TIE_BREAK_RIGHT"
+        ]
+      },
+      "v3": {
+        "steps": 1000,
+        "lateral_reversals": 24,
+        "min_clearance_m": 0.1193,
+        "tie_break_dirs": [
+          "TIE_BREAK_LEFT",
+          "TIE_BREAK_RIGHT",
+          "TIE_BREAK_RIGHT",
+          "TIE_BREAK_LEFT",
+          "TIE_BREAK_LEFT",
+          "TIE_BREAK_LEFT",
+          "TIE_BREAK_LEFT",
+          "TIE_BREAK_RIGHT",
+          "TIE_BREAK_LEFT",
+          "TIE_BREAK_LEFT"
+        ]
+      }
+    }
+  },
+  {
+    "tier": "Level 4 (Boundary & Feasibility)",
+    "seed": 20334,
+    "type": "REGRESSION_V2_WON",
+    "v2_status": "SUCCESS",
+    "v3_status": "TIMEOUT",
+    "controllers": {
+      "v2": {
+        "steps": 634,
+        "lateral_reversals": 24,
+        "min_clearance_m": 0.0679,
+        "tie_break_dirs": [
+          "TIE_BREAK_RIGHT",
+          "TIE_BREAK_RIGHT",
+          "TIE_BREAK_RIGHT",
+          "TIE_BREAK_RIGHT",
+          "TIE_BREAK_RIGHT",
+          "TIE_BREAK_RIGHT",
+          "TIE_BREAK_RIGHT",
+          "TIE_BREAK_RIGHT",
+          "TIE_BREAK_RIGHT",
+          "TIE_BREAK_RIGHT"
+        ]
+      },
+      "v3": {
+        "steps": 1000,
+        "lateral_reversals": 24,
+        "min_clearance_m": 0.1154,
+        "tie_break_dirs": [
+          "TIE_BREAK_RIGHT",
+          "TIE_BREAK_RIGHT",
+          "TIE_BREAK_RIGHT",
+          "TIE_BREAK_RIGHT",
+          "TIE_BREAK_LEFT",
+          "TIE_BREAK_LEFT",
+          "TIE_BREAK_LEFT",
+          "TIE_BREAK_LEFT",
+          "TIE_BREAK_LEFT",
+          "TIE_BREAK_RIGHT"
+        ]
+      }
+    }
+  },
+  {
+    "tier": "Level 4 (Boundary & Feasibility)",
+    "seed": 20344,
+    "type": "REGRESSION_V2_WON",
+    "v2_status": "SUCCESS",
+    "v3_status": "TIMEOUT",
+    "controllers": {
+      "v2": {
+        "steps": 691,
+        "lateral_reversals": 50,
+        "min_clearance_m": 0.013,
+        "tie_break_dirs": [
+          "TIE_BREAK_RIGHT",
+          "TIE_BREAK_RIGHT",
+          "TIE_BREAK_RIGHT",
+          "TIE_BREAK_RIGHT",
+          "TIE_BREAK_RIGHT",
+          "TIE_BREAK_RIGHT",
+          "TIE_BREAK_RIGHT",
+          "TIE_BREAK_RIGHT",
+          "TIE_BREAK_RIGHT",
+          "TIE_BREAK_RIGHT"
+        ]
+      },
+      "v3": {
+        "steps": 1000,
+        "lateral_reversals": 31,
+        "min_clearance_m": 0.1501,
+        "tie_break_dirs": [
+          "TIE_BREAK_RIGHT",
+          "TIE_BREAK_RIGHT",
+          "TIE_BREAK_RIGHT",
+          "TIE_BREAK_LEFT",
+          "TIE_BREAK_LEFT",
+          "TIE_BREAK_LEFT",
+          "TIE_BREAK_RIGHT",
+          "TIE_BREAK_RIGHT",
+          "TIE_BREAK_RIGHT",
+          "TIE_BREAK_RIGHT"
+        ]
+      }
+    }
+  },
+  {
+    "tier": "Level 4 (Boundary & Feasibility)",
+    "seed": 20348,
+    "type": "RECOVERY_V3_WON",
+    "v2_status": "TIMEOUT",
+    "v3_status": "SUCCESS",
+    "controllers": {
+      "v2": {
+        "steps": 1000,
+        "lateral_reversals": 157,
+        "min_clearance_m": 0.0325,
+        "tie_break_dirs": [
+          "TIE_BREAK_LEFT",
+          "TIE_BREAK_LEFT",
+          "TIE_BREAK_LEFT",
+          "TIE_BREAK_LEFT",
+          "TIE_BREAK_LEFT",
+          "TIE_BREAK_LEFT",
+          "TIE_BREAK_LEFT",
+          "TIE_BREAK_LEFT",
+          "TIE_BREAK_LEFT",
+          "TIE_BREAK_LEFT"
+        ]
+      },
+      "v3": {
+        "steps": 890,
+        "lateral_reversals": 56,
+        "min_clearance_m": 0.0007,
+        "tie_break_dirs": [
+          "TIE_BREAK_LEFT",
+          "TIE_BREAK_LEFT",
+          "TIE_BREAK_RIGHT",
+          "TIE_BREAK_LEFT",
+          "TIE_BREAK_LEFT",
+          "TIE_BREAK_LEFT",
+          "TIE_BREAK_LEFT",
+          "TIE_BREAK_LEFT",
+          "TIE_BREAK_LEFT",
+          "TIE_BREAK_LEFT"
+        ]
+      }
+    }
+  }
+]

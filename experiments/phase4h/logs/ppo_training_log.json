@@ -1,0 +1,9 @@
+{
+  "status": "TRAINING_COMPLETE",
+  "checkpoint_path": "experiments/phase4h/checkpoints/ppo_phase4h_candidate.pt",
+  "checkpoint_sha256": "751431cda829539e9ef327bd843d9b292e8f097bb2b36c0f5a1deb1bfad159dd",
+  "total_iterations": 15,
+  "best_validation_success_pct": 0.0,
+  "total_train_time_s": 24.03,
+  "timestamp_iso": "2026-10-28T20:47:17Z"
+}

@@ -1,0 +1,122 @@
+{
+  "Level 1 (Basic)_scaled_guided_bc_v2": {
+    "feasible_total": 50,
+    "feasible_success": 20,
+    "feasible_success_pct": 40.0,
+    "wilson_ci_95": [
+      27.61,
+      53.82
+    ],
+    "infeasible_total": 0,
+    "infeasible_safe_rejections": 0,
+    "infeasible_rejection_pct": 100.0,
+    "total_collision_episodes": 0,
+    "envelope_violation_episodes": 25,
+    "total_safety_interventions": 12152,
+    "min_clearance_across_all_m": 0.0004,
+    "min_clearance_successful_m": 0.1166,
+    "mean_steps_successful": 752.1,
+    "mean_flight_time_s": 37.61,
+    "mean_velocity_mps": 0.479
+  },
+  "Level 1 (Basic)_reactive_baseline": {
+    "feasible_total": 50,
+    "feasible_success": 38,
+    "feasible_success_pct": 76.0,
+    "wilson_ci_95": [
+      62.59,
+      85.7
+    ],
+    "infeasible_total": 0,
+    "infeasible_safe_rejections": 0,
+    "infeasible_rejection_pct": 100.0,
+    "total_collision_episodes": 0,
+    "envelope_violation_episodes": 29,
+    "total_safety_interventions": 17251,
+    "min_clearance_across_all_m": 0.0587,
+    "min_clearance_successful_m": 0.0763,
+    "mean_steps_successful": 587.8,
+    "mean_flight_time_s": 29.39,
+    "mean_velocity_mps": 0.507
+  },
+  "Level 3 (Challenging)_scaled_guided_bc_v2": {
+    "feasible_total": 50,
+    "feasible_success": 49,
+    "feasible_success_pct": 98.0,
+    "wilson_ci_95": [
+      89.5,
+      99.65
+    ],
+    "infeasible_total": 0,
+    "infeasible_safe_rejections": 0,
+    "infeasible_rejection_pct": 100.0,
+    "total_collision_episodes": 0,
+    "envelope_violation_episodes": 13,
+    "total_safety_interventions": 11086,
+    "min_clearance_across_all_m": 0.0002,
+    "min_clearance_successful_m": 0.0002,
+    "mean_steps_successful": 580.4,
+    "mean_flight_time_s": 29.02,
+    "mean_velocity_mps": 0.512
+  },
+  "Level 3 (Challenging)_reactive_baseline": {
+    "feasible_total": 50,
+    "feasible_success": 43,
+    "feasible_success_pct": 86.0,
+    "wilson_ci_95": [
+      73.81,
+      93.05
+    ],
+    "infeasible_total": 0,
+    "infeasible_safe_rejections": 0,
+    "infeasible_rejection_pct": 100.0,
+    "total_collision_episodes": 0,
+    "envelope_violation_episodes": 44,
+    "total_safety_interventions": 12354,
+    "min_clearance_across_all_m": 0.0472,
+    "min_clearance_successful_m": 0.0472,
+    "mean_steps_successful": 565.2,
+    "mean_flight_time_s": 28.26,
+    "mean_velocity_mps": 0.512
+  },
+  "Level 4 (Boundary & Feasibility)_scaled_guided_bc_v2": {
+    "feasible_total": 25,
+    "feasible_success": 22,
+    "feasible_success_pct": 88.0,
+    "wilson_ci_95": [
+      70.04,
+      95.83
+    ],
+    "infeasible_total": 25,
+    "infeasible_safe_rejections": 22,
+    "infeasible_rejection_pct": 88.0,
+    "total_collision_episodes": 0,
+    "envelope_violation_episodes": 38,
+    "total_safety_interventions": 29535,
+    "min_clearance_across_all_m": 0.0003,
+    "min_clearance_successful_m": 0.013,
+    "mean_steps_successful": 615.9,
+    "mean_flight_time_s": 30.8,
+    "mean_velocity_mps": 0.482
+  },
+  "Level 4 (Boundary & Feasibility)_reactive_baseline": {
+    "feasible_total": 25,
+    "feasible_success": 10,
+    "feasible_success_pct": 40.0,
+    "wilson_ci_95": [
+      23.4,
+      59.26
+    ],
+    "infeasible_total": 25,
+    "infeasible_safe_rejections": 10,
+    "infeasible_rejection_pct": 40.0,
+    "total_collision_episodes": 0,
+    "envelope_violation_episodes": 49,
+    "total_safety_interventions": 35631,
+    "min_clearance_across_all_m": 0.0413,
+    "min_clearance_successful_m": 0.0413,
+    "mean_steps_successful": 544.6,
+    "mean_flight_time_s": 27.23,
+    "mean_velocity_mps": 0.523
+  }
+}

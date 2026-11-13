@@ -20,6 +20,177 @@ class TerminationReason(Enum):
     TIMEOUT = "timeout"
 
 
+class EpisodeOutcome(Enum):
+    """Authoritative 8-category terminal outcome taxonomy for evaluation (Phase 4F Priority C)."""
+    CLEAN_SUCCESS = "clean_success"
+    ENVELOPE_BREACH_ARRIVAL = "envelope_breach_arrival"
+    COLLISION = "collision"
+    TIMEOUT = "timeout"
+    SAFE_REJECTION = "safe_rejection"
+    UNRESOLVED_OBSTACLE = "unresolved_obstacle"
+    UNSAFE_OR_UNSTABLE_ARREST = "unsafe_or_unstable_arrest"
+    OTHER_FAILURE = "other_failure"
+
+
+@dataclass(frozen=True)
+class OutcomeClassificationResult:
+    """Rigorous classification result with ground-truth supporting evidence."""
+    outcome: EpisodeOutcome
+    reason: str
+    min_obstacle_clearance_m: float
+    min_boundary_clearance_m: float
+    envelope_breach_detected: bool
+    is_clean: bool
+    is_safe_rejection: bool
+    is_collision: bool
+    is_timeout: bool
+
+
+class OutcomeClassifier:
+    """Authoritative evaluator classifying terminal episodes into mutually exclusive categories."""
+
+    SAFETY_ENVELOPE_THRESHOLD_M: float = 0.150
+
+    @classmethod
+    def classify(
+        cls,
+        termination_reason: Union[TerminationReason, str],
+        min_obstacle_clearance_m: float,
+        min_boundary_clearance_m: float,
+        safe_arrest_state: Optional[str] = None,
+        is_arrest_stable: bool = False,
+        other_failure_reason: Optional[str] = None,
+    ) -> OutcomeClassificationResult:
+        """Assigns exactly one authoritative terminal classification per episode."""
+        term_str = termination_reason.value if isinstance(termination_reason, TerminationReason) else str(termination_reason).lower()
+        min_obs = float(min_obstacle_clearance_m)
+        min_bnd = float(min_boundary_clearance_m)
+        overall_min = min(min_obs, min_bnd)
+
+        # 1. Authoritative Collision Check (collision cannot be overridden by later arrival)
+        if term_str in ("crash_obstacle", "crash_boundary", "collision") or overall_min <= 0.0:
+            return OutcomeClassificationResult(
+                outcome=EpisodeOutcome.COLLISION,
+                reason=f"Authoritative collision detected (min_obs={min_obs:.4f}m, min_bnd={min_bnd:.4f}m)",
+                min_obstacle_clearance_m=min_obs,
+                min_boundary_clearance_m=min_bnd,
+                envelope_breach_detected=True,
+                is_clean=False,
+                is_safe_rejection=False,
+                is_collision=True,
+                is_timeout=False,
+            )
+
+        # 2. Safe Arrest / Rejection Check
+        if safe_arrest_state in ("SAFE_ARREST", "VERIFIED_INFEASIBLE"):
+            if is_arrest_stable and overall_min > 0.05:
+                return OutcomeClassificationResult(
+                    outcome=EpisodeOutcome.SAFE_REJECTION,
+                    reason=f"Safely arrested in front of verified infeasible passage (dwell verified, min_c={overall_min:.4f}m)",
+                    min_obstacle_clearance_m=min_obs,
+                    min_boundary_clearance_m=min_bnd,
+                    envelope_breach_detected=(min_obs < cls.SAFETY_ENVELOPE_THRESHOLD_M),
+                    is_clean=False,
+                    is_safe_rejection=True,
+                    is_collision=False,
+                    is_timeout=False,
+                )
+            else:
+                return OutcomeClassificationResult(
+                    outcome=EpisodeOutcome.UNSAFE_OR_UNSTABLE_ARREST,
+                    reason=f"Safe arrest failed stability or clearance criteria (stable={is_arrest_stable}, min_c={overall_min:.4f}m)",
+                    min_obstacle_clearance_m=min_obs,
+                    min_boundary_clearance_m=min_bnd,
+                    envelope_breach_detected=(min_obs < cls.SAFETY_ENVELOPE_THRESHOLD_M),
+                    is_clean=False,
+                    is_safe_rejection=False,
+                    is_collision=False,
+                    is_timeout=False,
+                )
+
+        if safe_arrest_state == "UNRESOLVED":
+            if is_arrest_stable and overall_min > 0.05:
+                return OutcomeClassificationResult(
+                    outcome=EpisodeOutcome.UNRESOLVED_OBSTACLE,
+                    reason=f"Route unverified/ambiguous, drone safely halted (min_c={overall_min:.4f}m)",
+                    min_obstacle_clearance_m=min_obs,
+                    min_boundary_clearance_m=min_bnd,
+                    envelope_breach_detected=(min_obs < cls.SAFETY_ENVELOPE_THRESHOLD_M),
+                    is_clean=False,
+                    is_safe_rejection=False,
+                    is_collision=False,
+                    is_timeout=False,
+                )
+            else:
+                return OutcomeClassificationResult(
+                    outcome=EpisodeOutcome.UNSAFE_OR_UNSTABLE_ARREST,
+                    reason="Unresolved route with unstable stopping behavior",
+                    min_obstacle_clearance_m=min_obs,
+                    min_boundary_clearance_m=min_bnd,
+                    envelope_breach_detected=True,
+                    is_clean=False,
+                    is_safe_rejection=False,
+                    is_collision=False,
+                    is_timeout=False,
+                )
+
+        # 3. Goal Arrival Check
+        if term_str == "success":
+            # Must satisfy minimum obstacle safety envelope (0.150 m)
+            if min_obs >= cls.SAFETY_ENVELOPE_THRESHOLD_M:
+                return OutcomeClassificationResult(
+                    outcome=EpisodeOutcome.CLEAN_SUCCESS,
+                    reason=f"Clean arrival at goal with valid safety envelope (min_obs={min_obs:.4f}m >= 0.15m)",
+                    min_obstacle_clearance_m=min_obs,
+                    min_boundary_clearance_m=min_bnd,
+                    envelope_breach_detected=False,
+                    is_clean=True,
+                    is_safe_rejection=False,
+                    is_collision=False,
+                    is_timeout=False,
+                )
+            else:
+                # Arrived but violated safety envelope (e.g., Seed 20334 with 0.0892m)
+                return OutcomeClassificationResult(
+                    outcome=EpisodeOutcome.ENVELOPE_BREACH_ARRIVAL,
+                    reason=f"Goal arrived but breached 0.15m obstacle envelope (min_obs={min_obs:.4f}m < 0.15m)",
+                    min_obstacle_clearance_m=min_obs,
+                    min_boundary_clearance_m=min_bnd,
+                    envelope_breach_detected=True,
+                    is_clean=False,
+                    is_safe_rejection=False,
+                    is_collision=False,
+                    is_timeout=False,
+                )
+
+        # 4. Timeout Check
+        if term_str == "timeout":
+            return OutcomeClassificationResult(
+                outcome=EpisodeOutcome.TIMEOUT,
+                reason="Maximum simulation steps reached without valid completion or rejection",
+                min_obstacle_clearance_m=min_obs,
+                min_boundary_clearance_m=min_bnd,
+                envelope_breach_detected=(min_obs < cls.SAFETY_ENVELOPE_THRESHOLD_M),
+                is_clean=False,
+                is_safe_rejection=False,
+                is_collision=False,
+                is_timeout=True,
+            )
+
+        # 5. Other Failure
+        return OutcomeClassificationResult(
+            outcome=EpisodeOutcome.OTHER_FAILURE,
+            reason=other_failure_reason or f"Unclassified termination reason: {term_str}",
+            min_obstacle_clearance_m=min_obs,
+            min_boundary_clearance_m=min_bnd,
+            envelope_breach_detected=(min_obs < cls.SAFETY_ENVELOPE_THRESHOLD_M),
+            is_clean=False,
+            is_safe_rejection=False,
+            is_collision=False,
+            is_timeout=False,
+        )
+
+
 @dataclass
 class Obstacle3D:
     """Analytical representation of a 3D obstacle inside the corridor."""
@@ -127,6 +298,18 @@ class Corridor3D:
         if isinstance(scenario, Corridor3D):
             return scenario
         s = str(scenario).lower().strip()
+        if "level_1" in s or "basic" in s:
+            from core.physical_dimensions import ScaledEnvironmentFactory, DifficultyLevel
+            return ScaledEnvironmentFactory.get_environment_config(DifficultyLevel.LEVEL_1_BASIC)
+        if "level_2" in s or "standard_65" in s or "scaled" in s:
+            from core.physical_dimensions import ScaledEnvironmentFactory, DifficultyLevel
+            return ScaledEnvironmentFactory.get_environment_config(DifficultyLevel.LEVEL_2_STANDARD)
+        if "level_3" in s or "challenging" in s:
+            from core.physical_dimensions import ScaledEnvironmentFactory, DifficultyLevel
+            return ScaledEnvironmentFactory.get_environment_config(DifficultyLevel.LEVEL_3_CHALLENGING)
+        if "level_4" in s or "boundary" in s:
+            from core.physical_dimensions import ScaledEnvironmentFactory, DifficultyLevel
+            return ScaledEnvironmentFactory.get_environment_config(DifficultyLevel.LEVEL_4_FEASIBILITY_BOUNDARY)
         if "20" in s or "ext" in s:
             return cls.get_20m_extended()
         return cls.get_10m_benchmark()

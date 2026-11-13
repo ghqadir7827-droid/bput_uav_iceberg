@@ -1,0 +1,82 @@
+{
+  "scaled_guided_bc_v1": {
+    "feasible_total": 50,
+    "feasible_success": 34,
+    "feasible_success_pct": 68.0,
+    "wilson_ci_95": [
+      54.19,
+      79.24
+    ],
+    "infeasible_total": 0,
+    "infeasible_safe_rejections": 0,
+    "infeasible_rejection_pct": 100.0,
+    "total_collision_episodes": 0,
+    "envelope_violation_episodes": 21,
+    "total_safety_interventions": 19513,
+    "min_clearance_across_all_m": 0.072,
+    "min_clearance_successful_m": 0.0833,
+    "mean_steps_successful": 565.8,
+    "mean_flight_time_s": 28.29,
+    "mean_velocity_mps": 0.532
+  },
+  "bc_v1_guidance_v2": {
+    "feasible_total": 50,
+    "feasible_success": 48,
+    "feasible_success_pct": 96.0,
+    "wilson_ci_95": [
+      86.54,
+      98.9
+    ],
+    "infeasible_total": 0,
+    "infeasible_safe_rejections": 0,
+    "infeasible_rejection_pct": 100.0,
+    "total_collision_episodes": 0,
+    "envelope_violation_episodes": 9,
+    "total_safety_interventions": 10387,
+    "min_clearance_across_all_m": 0.0469,
+    "min_clearance_successful_m": 0.0469,
+    "mean_steps_successful": 562.2,
+    "mean_flight_time_s": 28.11,
+    "mean_velocity_mps": 0.538
+  },
+  "bc_v2_raw": {
+    "feasible_total": 50,
+    "feasible_success": 38,
+    "feasible_success_pct": 76.0,
+    "wilson_ci_95": [
+      62.59,
+      85.7
+    ],
+    "infeasible_total": 0,
+    "infeasible_safe_rejections": 0,
+    "infeasible_rejection_pct": 100.0,
+    "total_collision_episodes": 0,
+    "envelope_violation_episodes": 32,
+    "total_safety_interventions": 19355,
+    "min_clearance_across_all_m": 0.0002,
+    "min_clearance_successful_m": 0.0002,
+    "mean_steps_successful": 732.7,
+    "mean_flight_time_s": 36.63,
+    "mean_velocity_mps": 0.432
+  },
+  "scaled_guided_bc_v2": {
+    "feasible_total": 50,
+    "feasible_success": 46,
+    "feasible_success_pct": 92.0,
+    "wilson_ci_95": [
+      81.16,
+      96.85
+    ],
+    "infeasible_total": 0,
+    "infeasible_safe_rejections": 0,
+    "infeasible_rejection_pct": 100.0,
+    "total_collision_episodes": 0,
+    "envelope_violation_episodes": 10,
+    "total_safety_interventions": 11299,
+    "min_clearance_across_all_m": 0.0003,
+    "min_clearance_successful_m": 0.0003,
+    "mean_steps_successful": 610.0,
+    "mean_flight_time_s": 30.5,
+    "mean_velocity_mps": 0.515
+  }
+}

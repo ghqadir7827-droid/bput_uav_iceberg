@@ -1,0 +1,1404 @@
+{
+  "status": "PPO_HARNESS_VALIDATED",
+  "best_success_rate_pct": 0.0,
+  "total_iterations": 10,
+  "total_timesteps": 20480,
+  "total_training_time_s": 3988.49,
+  "supervisor_active": true,
+  "init_mode": "ppo",
+  "checkpoint_file": "models/checkpoints/ppo_phase4b_candidate.pt",
+  "history": [
+    {
+      "iteration": 1,
+      "mean_reward": -25.04,
+      "policy_loss": -0.0115,
+      "value_loss": 1.1524,
+      "entropy": 0.876,
+      "grad_norm": 10.1643,
+      "eval_success_rate": 0.0,
+      "is_best": true,
+      "eval_detailed": {
+        "total_episodes": 10,
+        "success_count": 0,
+        "success_rate_pct": 0.0,
+        "collision_count": 0,
+        "collision_rate_pct": 0.0,
+        "timeout_count": 10,
+        "timeout_rate_pct": 100.0,
+        "mean_return": 40.07,
+        "mean_net_forward_displacement_m": 5.13,
+        "mean_distance_travelled_m": 6.67,
+        "min_obstacle_clearance_m": 0.123,
+        "min_wall_clearance_m": 0.248,
+        "total_steps": 5000,
+        "intervention_steps": 4686,
+        "intervention_rate_pct": 93.7,
+        "reverse_control_steps": 942,
+        "recovery_episodes": 10,
+        "component_interventions": {
+          "vx": {
+            "mean_mps": 0.3,
+            "max_mps": 0.7,
+            "unit": "m/s"
+          },
+          "vy": {
+            "mean_mps": 0.0774,
+            "max_mps": 0.4,
+            "unit": "m/s"
+          },
+          "vz": {
+            "mean_mps": 0.0017,
+            "max_mps": 0.0714,
+            "unit": "m/s"
+          },
+          "yaw_rate": {
+            "mean_radps": 0.0,
+            "max_radps": 0.0,
+            "unit": "rad/s"
+          }
+        },
+        "policy_saturation": {
+          "vx": 2001,
+          "vy": 139,
+          "vz": 0,
+          "yaw_rate": 27
+        },
+        "applied_saturation": {
+          "vx": 304,
+          "vy": 59,
+          "vz": 0,
+          "yaw_rate": 27
+        },
+        "per_seed_records": [
+          {
+            "seed": 100,
+            "status": "timeout",
+            "steps": 500,
+            "episode_return": 53.88,
+            "distance_travelled_m": 7.34,
+            "net_forward_displacement_m": 6.16,
+            "min_obstacle_clearance_m": 0.123,
+            "min_wall_clearance_m": 0.26,
+            "interventions": 484,
+            "final_position": [
+              6.66,
+              -0.53,
+              1.59
+            ]
+          },
+          {
+            "seed": 101,
+            "status": "timeout",
+            "steps": 500,
+            "episode_return": 25.99,
+            "distance_travelled_m": 6.12,
+            "net_forward_displacement_m": 4.2,
+            "min_obstacle_clearance_m": 0.13,
+            "min_wall_clearance_m": 0.248,
+            "interventions": 459,
+            "final_position": [
+              4.7,
+              -0.49,
+              1.6
+            ]
+          },
+          {
+            "seed": 102,
+            "status": "timeout",
+            "steps": 500,
+            "episode_return": 4.83,
+            "distance_travelled_m": 4.41,
+            "net_forward_displacement_m": 2.08,
+            "min_obstacle_clearance_m": 0.143,
+            "min_wall_clearance_m": 0.308,
+            "interventions": 477,
+            "final_position": [
+              2.58,
+              -0.53,
+              1.52
+            ]
+          },
+          {
+            "seed": 103,
+            "status": "timeout",
+            "steps": 500,
+            "episode_return": -0.05,
+            "distance_travelled_m": 4.54,
+            "net_forward_displacement_m": 2.2,
+            "min_obstacle_clearance_m": 0.123,
+            "min_wall_clearance_m": 0.248,
+            "interventions": 444,
+            "final_position": [
+              2.7,
+              -0.52,
+              1.6
+            ]
+          },
+          {
+            "seed": 104,
+            "status": "timeout",
+            "steps": 500,
+            "episode_return": 54.01,
+            "distance_travelled_m": 7.34,
+            "net_forward_displacement_m": 6.12,
+            "min_obstacle_clearance_m": 0.137,
+            "min_wall_clearance_m": 0.309,
+            "interventions": 478,
+            "final_position": [
+              6.62,
+              -0.53,
+              1.47
+            ]
+          },
+          {
+            "seed": 105,
+            "status": "timeout",
+            "steps": 500,
+            "episode_return": 54.55,
+            "distance_travelled_m": 7.08,
+            "net_forward_displacement_m": 6.06,
+            "min_obstacle_clearance_m": 0.142,
+            "min_wall_clearance_m": 0.314,
+            "interventions": 483,
+            "final_position": [
+              6.56,
+              -0.53,
+              1.33
+            ]
+          },
+          {
+            "seed": 106,
+            "status": "timeout",
+            "steps": 500,
+            "episode_return": 52.02,
+            "distance_travelled_m": 7.67,
+            "net_forward_displacement_m": 6.09,
+            "min_obstacle_clearance_m": 0.126,
+            "min_wall_clearance_m": 0.319,
+            "interventions": 455,
+            "final_position": [
+              6.59,
+              0.03,
+              1.33
+            ]
+          },
+          {
+            "seed": 107,
+            "status": "timeout",
+            "steps": 500,
+            "episode_return": 27.49,
+            "distance_travelled_m": 5.95,
+            "net_forward_displacement_m": 4.26,
+            "min_obstacle_clearance_m": 0.123,
+            "min_wall_clearance_m": 0.249,
+            "interventions": 475,
+            "final_position": [
+              4.76,
+              -0.44,
+              1.6
+            ]
+          },
+          {
+            "seed": 108,
+            "status": "timeout",
+            "steps": 500,
+            "episode_return": 52.86,
+            "distance_travelled_m": 7.21,
+            "net_forward_displacement_m": 6.08,
+            "min_obstacle_clearance_m": 0.128,
+            "min_wall_clearance_m": 0.304,
+            "interventions": 482,
+            "final_position": [
+              6.58,
+              -0.53,
+              1.37
+            ]
+          },
+          {
+            "seed": 109,
+            "status": "timeout",
+            "steps": 500,
+            "episode_return": 75.08,
+            "distance_travelled_m": 9.08,
+            "net_forward_displacement_m": 8.07,
+            "min_obstacle_clearance_m": 0.134,
+            "min_wall_clearance_m": 0.249,
+            "interventions": 449,
+            "final_position": [
+              8.57,
+              -0.27,
+              1.59
+            ]
+          }
+        ]
+      },
+      "telemetry": {
+        "total_steps": 2048,
+        "intervention_steps": 1645,
+        "intervention_rate_pct": 80.32,
+        "intervention_components": {
+          "vx": {
+            "mean_mps": 0.2931,
+            "max_mps": 0.7,
+            "intervened_steps": 1486,
+            "intervened_rate_pct": 72.56,
+            "unit": "m/s"
+          },
+          "vy": {
+            "mean_mps": 0.2056,
+            "max_mps": 0.55,
+            "intervened_steps": 1135,
+            "intervened_rate_pct": 55.42,
+            "unit": "m/s"
+          },
+          "vz": {
+            "mean_mps": 0.1291,
+            "max_mps": 0.3206,
+            "intervened_steps": 181,
+            "intervened_rate_pct": 8.84,
+            "unit": "m/s"
+          },
+          "yaw_rate": {
+            "mean_radps": 0.0,
+            "max_radps": 0.0,
+            "intervened_steps": 0,
+            "intervened_rate_pct": 0.0,
+            "unit": "rad/s"
+          },
+          "mixed_unit_diagnostic_norm": {
+            "mean": 0.3354,
+            "max": 0.8621,
+            "note": "DIAGNOSTIC ONLY: combines linear (m/s) and angular (rad/s) velocities; not a physically homogeneous quantity. Never used in reward."
+          }
+        },
+        "reverse_steps": 362,
+        "reverse_rate_pct": 17.68,
+        "recovery_episodes": 244,
+        "policy_saturation": {
+          "vx": 872,
+          "vy": 659,
+          "vz": 669,
+          "yaw_rate": 531,
+          "total_denominator": 2048
+        },
+        "applied_saturation": {
+          "vx": 139,
+          "vy": 204,
+          "vz": 629,
+          "yaw_rate": 531,
+          "total_denominator": 2048
+        },
+        "episodes_completed": 4,
+        "success_count": 0,
+        "collision_count": 0,
+        "timeout_count": 4,
+        "mean_return": -25.04,
+        "mean_displacement": 4.93,
+        "mean_forward_progress": 4.86
+      }
+    },
+    {
+      "iteration": 2,
+      "mean_reward": -43.77,
+      "policy_loss": -0.0077,
+      "value_loss": 1.1141,
+      "entropy": 0.876,
+      "grad_norm": 18.3821,
+      "eval_success_rate": 0.0,
+      "is_best": true,
+      "eval_detailed": null,
+      "telemetry": {
+        "total_steps": 2048,
+        "intervention_steps": 1771,
+        "intervention_rate_pct": 86.47,
+        "intervention_components": {
+          "vx": {
+            "mean_mps": 0.3663,
+            "max_mps": 0.7,
+            "intervened_steps": 1664,
+            "intervened_rate_pct": 81.25,
+            "unit": "m/s"
+          },
+          "vy": {
+            "mean_mps": 0.2222,
+            "max_mps": 0.4225,
+            "intervened_steps": 1434,
+            "intervened_rate_pct": 70.02,
+            "unit": "m/s"
+          },
+          "vz": {
+            "mean_mps": 0.1328,
+            "max_mps": 0.3101,
+            "intervened_steps": 12,
+            "intervened_rate_pct": 0.59,
+            "unit": "m/s"
+          },
+          "yaw_rate": {
+            "mean_radps": 0.0,
+            "max_radps": 0.0,
+            "intervened_steps": 0,
+            "intervened_rate_pct": 0.0,
+            "unit": "rad/s"
+          },
+          "mixed_unit_diagnostic_norm": {
+            "mean": 0.4158,
+            "max": 0.8284,
+            "note": "DIAGNOSTIC ONLY: combines linear (m/s) and angular (rad/s) velocities; not a physically homogeneous quantity. Never used in reward."
+          }
+        },
+        "reverse_steps": 530,
+        "reverse_rate_pct": 25.88,
+        "recovery_episodes": 290,
+        "policy_saturation": {
+          "vx": 911,
+          "vy": 627,
+          "vz": 685,
+          "yaw_rate": 435,
+          "total_denominator": 2048
+        },
+        "applied_saturation": {
+          "vx": 90,
+          "vy": 119,
+          "vz": 681,
+          "yaw_rate": 435,
+          "total_denominator": 2048
+        },
+        "episodes_completed": 4,
+        "success_count": 0,
+        "collision_count": 0,
+        "timeout_count": 4,
+        "mean_return": -43.77,
+        "mean_displacement": 3.42,
+        "mean_forward_progress": 3.32
+      }
+    },
+    {
+      "iteration": 3,
+      "mean_reward": -23.3,
+      "policy_loss": -0.0097,
+      "value_loss": 0.8413,
+      "entropy": 0.878,
+      "grad_norm": 11.6967,
+      "eval_success_rate": 0.0,
+      "is_best": true,
+      "eval_detailed": null,
+      "telemetry": {
+        "total_steps": 2048,
+        "intervention_steps": 1587,
+        "intervention_rate_pct": 77.49,
+        "intervention_components": {
+          "vx": {
+            "mean_mps": 0.32,
+            "max_mps": 0.7,
+            "intervened_steps": 1447,
+            "intervened_rate_pct": 70.65,
+            "unit": "m/s"
+          },
+          "vy": {
+            "mean_mps": 0.2064,
+            "max_mps": 0.4011,
+            "intervened_steps": 1067,
+            "intervened_rate_pct": 52.1,
+            "unit": "m/s"
+          },
+          "vz": {
+            "mean_mps": 0.0,
+            "max_mps": 0.0,
+            "intervened_steps": 0,
+            "intervened_rate_pct": 0.0,
+            "unit": "m/s"
+          },
+          "yaw_rate": {
+            "mean_radps": 0.0,
+            "max_radps": 0.0,
+            "intervened_steps": 0,
+            "intervened_rate_pct": 0.0,
+            "unit": "rad/s"
+          },
+          "mixed_unit_diagnostic_norm": {
+            "mean": 0.3521,
+            "max": 0.8062,
+            "note": "DIAGNOSTIC ONLY: combines linear (m/s) and angular (rad/s) velocities; not a physically homogeneous quantity. Never used in reward."
+          }
+        },
+        "reverse_steps": 301,
+        "reverse_rate_pct": 14.7,
+        "recovery_episodes": 200,
+        "policy_saturation": {
+          "vx": 865,
+          "vy": 601,
+          "vz": 650,
+          "yaw_rate": 446,
+          "total_denominator": 2048
+        },
+        "applied_saturation": {
+          "vx": 140,
+          "vy": 194,
+          "vz": 650,
+          "yaw_rate": 446,
+          "total_denominator": 2048
+        },
+        "episodes_completed": 4,
+        "success_count": 0,
+        "collision_count": 0,
+        "timeout_count": 4,
+        "mean_return": -23.3,
+        "mean_displacement": 5.0,
+        "mean_forward_progress": 4.97
+      }
+    },
+    {
+      "iteration": 4,
+      "mean_reward": -16.52,
+      "policy_loss": -0.007,
+      "value_loss": 0.7944,
+      "entropy": 0.876,
+      "grad_norm": 16.5352,
+      "eval_success_rate": 0.0,
+      "is_best": true,
+      "eval_detailed": null,
+      "telemetry": {
+        "total_steps": 2048,
+        "intervention_steps": 1676,
+        "intervention_rate_pct": 81.84,
+        "intervention_components": {
+          "vx": {
+            "mean_mps": 0.2823,
+            "max_mps": 0.7,
+            "intervened_steps": 1473,
+            "intervened_rate_pct": 71.92,
+            "unit": "m/s"
+          },
+          "vy": {
+            "mean_mps": 0.1858,
+            "max_mps": 0.4,
+            "intervened_steps": 1194,
+            "intervened_rate_pct": 58.3,
+            "unit": "m/s"
+          },
+          "vz": {
+            "mean_mps": 0.0,
+            "max_mps": 0.0,
+            "intervened_steps": 0,
+            "intervened_rate_pct": 0.0,
+            "unit": "m/s"
+          },
+          "yaw_rate": {
+            "mean_radps": 0.0,
+            "max_radps": 0.0,
+            "intervened_steps": 0,
+            "intervened_rate_pct": 0.0,
+            "unit": "rad/s"
+          },
+          "mixed_unit_diagnostic_norm": {
+            "mean": 0.3125,
+            "max": 0.8062,
+            "note": "DIAGNOSTIC ONLY: combines linear (m/s) and angular (rad/s) velocities; not a physically homogeneous quantity. Never used in reward."
+          }
+        },
+        "reverse_steps": 311,
+        "reverse_rate_pct": 15.19,
+        "recovery_episodes": 216,
+        "policy_saturation": {
+          "vx": 900,
+          "vy": 640,
+          "vz": 659,
+          "yaw_rate": 450,
+          "total_denominator": 2048
+        },
+        "applied_saturation": {
+          "vx": 128,
+          "vy": 139,
+          "vz": 659,
+          "yaw_rate": 450,
+          "total_denominator": 2048
+        },
+        "episodes_completed": 4,
+        "success_count": 0,
+        "collision_count": 0,
+        "timeout_count": 4,
+        "mean_return": -16.52,
+        "mean_displacement": 5.42,
+        "mean_forward_progress": 5.37
+      }
+    },
+    {
+      "iteration": 5,
+      "mean_reward": -23.48,
+      "policy_loss": -0.0067,
+      "value_loss": 0.7054,
+      "entropy": 0.871,
+      "grad_norm": 12.4512,
+      "eval_success_rate": 0.0,
+      "is_best": true,
+      "eval_detailed": {
+        "total_episodes": 10,
+        "success_count": 0,
+        "success_rate_pct": 0.0,
+        "collision_count": 0,
+        "collision_rate_pct": 0.0,
+        "timeout_count": 10,
+        "timeout_rate_pct": 100.0,
+        "mean_return": 47.67,
+        "mean_net_forward_displacement_m": 5.58,
+        "mean_distance_travelled_m": 6.97,
+        "min_obstacle_clearance_m": 0.121,
+        "min_wall_clearance_m": 0.297,
+        "total_steps": 5000,
+        "intervention_steps": 4728,
+        "intervention_rate_pct": 94.6,
+        "reverse_control_steps": 748,
+        "recovery_episodes": 8,
+        "component_interventions": {
+          "vx": {
+            "mean_mps": 0.2941,
+            "max_mps": 0.7,
+            "unit": "m/s"
+          },
+          "vy": {
+            "mean_mps": 0.0874,
+            "max_mps": 0.4,
+            "unit": "m/s"
+          },
+          "vz": {
+            "mean_mps": 0.0,
+            "max_mps": 0.0,
+            "unit": "m/s"
+          },
+          "yaw_rate": {
+            "mean_radps": 0.0,
+            "max_radps": 0.0,
+            "unit": "rad/s"
+          }
+        },
+        "policy_saturation": {
+          "vx": 1794,
+          "vy": 340,
+          "vz": 0,
+          "yaw_rate": 170
+        },
+        "applied_saturation": {
+          "vx": 242,
+          "vy": 174,
+          "vz": 0,
+          "yaw_rate": 170
+        },
+        "per_seed_records": [
+          {
+            "seed": 100,
+            "status": "timeout",
+            "steps": 500,
+            "episode_return": 55.59,
+            "distance_travelled_m": 7.0,
+            "net_forward_displacement_m": 6.17,
+            "min_obstacle_clearance_m": 0.129,
+            "min_wall_clearance_m": 0.312,
+            "interventions": 488,
+            "final_position": [
+              6.67,
+              -0.53,
+              0.98
+            ]
+          },
+          {
+            "seed": 101,
+            "status": "timeout",
+            "steps": 500,
+            "episode_return": 28.33,
+            "distance_travelled_m": 5.77,
+            "net_forward_displacement_m": 4.21,
+            "min_obstacle_clearance_m": 0.136,
+            "min_wall_clearance_m": 0.318,
+            "interventions": 487,
+            "final_position": [
+              4.71,
+              -0.5,
+              0.9
+            ]
+          },
+          {
+            "seed": 102,
+            "status": "timeout",
+            "steps": 500,
+            "episode_return": 6.78,
+            "distance_travelled_m": 4.24,
+            "net_forward_displacement_m": 2.08,
+            "min_obstacle_clearance_m": 0.14,
+            "min_wall_clearance_m": 0.304,
+            "interventions": 487,
+            "final_position": [
+              2.58,
+              -0.54,
+              0.98
+            ]
+          },
+          {
+            "seed": 103,
+            "status": "timeout",
+            "steps": 500,
+            "episode_return": 26.45,
+            "distance_travelled_m": 6.65,
+            "net_forward_displacement_m": 4.14,
+            "min_obstacle_clearance_m": 0.121,
+            "min_wall_clearance_m": 0.322,
+            "interventions": 445,
+            "final_position": [
+              4.64,
+              -0.53,
+              0.8
+            ]
+          },
+          {
+            "seed": 104,
+            "status": "timeout",
+            "steps": 500,
+            "episode_return": 54.97,
+            "distance_travelled_m": 6.98,
+            "net_forward_displacement_m": 6.11,
+            "min_obstacle_clearance_m": 0.132,
+            "min_wall_clearance_m": 0.3,
+            "interventions": 489,
+            "final_position": [
+              6.61,
+              -0.53,
+              0.87
+            ]
+          },
+          {
+            "seed": 105,
+            "status": "timeout",
+            "steps": 500,
+            "episode_return": 55.32,
+            "distance_travelled_m": 7.15,
+            "net_forward_displacement_m": 6.06,
+            "min_obstacle_clearance_m": 0.14,
+            "min_wall_clearance_m": 0.314,
+            "interventions": 477,
+            "final_position": [
+              6.56,
+              -0.53,
+              1.04
+            ]
+          },
+          {
+            "seed": 106,
+            "status": "timeout",
+            "steps": 500,
+            "episode_return": 30.13,
+            "distance_travelled_m": 5.75,
+            "net_forward_displacement_m": 4.04,
+            "min_obstacle_clearance_m": 0.133,
+            "min_wall_clearance_m": 0.318,
+            "interventions": 488,
+            "final_position": [
+              4.54,
+              -0.53,
+              1.28
+            ]
+          },
+          {
+            "seed": 107,
+            "status": "timeout",
+            "steps": 500,
+            "episode_return": 76.23,
+            "distance_travelled_m": 8.89,
+            "net_forward_displacement_m": 8.05,
+            "min_obstacle_clearance_m": 0.138,
+            "min_wall_clearance_m": 0.324,
+            "interventions": 463,
+            "final_position": [
+              8.55,
+              -0.33,
+              0.7
+            ]
+          },
+          {
+            "seed": 108,
+            "status": "timeout",
+            "steps": 500,
+            "episode_return": 54.66,
+            "distance_travelled_m": 6.99,
+            "net_forward_displacement_m": 6.08,
+            "min_obstacle_clearance_m": 0.136,
+            "min_wall_clearance_m": 0.304,
+            "interventions": 488,
+            "final_position": [
+              6.58,
+              -0.54,
+              0.87
+            ]
+          },
+          {
+            "seed": 109,
+            "status": "timeout",
+            "steps": 500,
+            "episode_return": 88.29,
+            "distance_travelled_m": 10.28,
+            "net_forward_displacement_m": 8.87,
+            "min_obstacle_clearance_m": 0.17,
+            "min_wall_clearance_m": 0.297,
+            "interventions": 416,
+            "final_position": [
+              9.37,
+              0.47,
+              0.5
+            ]
+          }
+        ]
+      },
+      "telemetry": {
+        "total_steps": 2048,
+        "intervention_steps": 1743,
+        "intervention_rate_pct": 85.11,
+        "intervention_components": {
+          "vx": {
+            "mean_mps": 0.3142,
+            "max_mps": 0.7,
+            "intervened_steps": 1574,
+            "intervened_rate_pct": 76.86,
+            "unit": "m/s"
+          },
+          "vy": {
+            "mean_mps": 0.2021,
+            "max_mps": 0.4,
+            "intervened_steps": 1261,
+            "intervened_rate_pct": 61.57,
+            "unit": "m/s"
+          },
+          "vz": {
+            "mean_mps": 0.0,
+            "max_mps": 0.0,
+            "intervened_steps": 0,
+            "intervened_rate_pct": 0.0,
+            "unit": "m/s"
+          },
+          "yaw_rate": {
+            "mean_radps": 0.0,
+            "max_radps": 0.0,
+            "intervened_steps": 0,
+            "intervened_rate_pct": 0.0,
+            "unit": "rad/s"
+          },
+          "mixed_unit_diagnostic_norm": {
+            "mean": 0.3486,
+            "max": 0.8062,
+            "note": "DIAGNOSTIC ONLY: combines linear (m/s) and angular (rad/s) velocities; not a physically homogeneous quantity. Never used in reward."
+          }
+        },
+        "reverse_steps": 386,
+        "reverse_rate_pct": 18.85,
+        "recovery_episodes": 229,
+        "policy_saturation": {
+          "vx": 934,
+          "vy": 614,
+          "vz": 660,
+          "yaw_rate": 461,
+          "total_denominator": 2048
+        },
+        "applied_saturation": {
+          "vx": 88,
+          "vy": 125,
+          "vz": 660,
+          "yaw_rate": 461,
+          "total_denominator": 2048
+        },
+        "episodes_completed": 4,
+        "success_count": 0,
+        "collision_count": 0,
+        "timeout_count": 4,
+        "mean_return": -23.48,
+        "mean_displacement": 4.8,
+        "mean_forward_progress": 4.76
+      }
+    },
+    {
+      "iteration": 6,
+      "mean_reward": -26.36,
+      "policy_loss": -0.0119,
+      "value_loss": 0.6161,
+      "entropy": 0.869,
+      "grad_norm": 10.3569,
+      "eval_success_rate": 0.0,
+      "is_best": true,
+      "eval_detailed": null,
+      "telemetry": {
+        "total_steps": 2048,
+        "intervention_steps": 1758,
+        "intervention_rate_pct": 85.84,
+        "intervention_components": {
+          "vx": {
+            "mean_mps": 0.3488,
+            "max_mps": 0.7,
+            "intervened_steps": 1611,
+            "intervened_rate_pct": 78.66,
+            "unit": "m/s"
+          },
+          "vy": {
+            "mean_mps": 0.2179,
+            "max_mps": 0.4,
+            "intervened_steps": 1439,
+            "intervened_rate_pct": 70.26,
+            "unit": "m/s"
+          },
+          "vz": {
+            "mean_mps": 0.0,
+            "max_mps": 0.0,
+            "intervened_steps": 0,
+            "intervened_rate_pct": 0.0,
+            "unit": "m/s"
+          },
+          "yaw_rate": {
+            "mean_radps": 0.0,
+            "max_radps": 0.0,
+            "intervened_steps": 0,
+            "intervened_rate_pct": 0.0,
+            "unit": "rad/s"
+          },
+          "mixed_unit_diagnostic_norm": {
+            "mean": 0.397,
+            "max": 0.8062,
+            "note": "DIAGNOSTIC ONLY: combines linear (m/s) and angular (rad/s) velocities; not a physically homogeneous quantity. Never used in reward."
+          }
+        },
+        "reverse_steps": 452,
+        "reverse_rate_pct": 22.07,
+        "recovery_episodes": 272,
+        "policy_saturation": {
+          "vx": 914,
+          "vy": 658,
+          "vz": 700,
+          "yaw_rate": 406,
+          "total_denominator": 2048
+        },
+        "applied_saturation": {
+          "vx": 118,
+          "vy": 128,
+          "vz": 700,
+          "yaw_rate": 406,
+          "total_denominator": 2048
+        },
+        "episodes_completed": 4,
+        "success_count": 0,
+        "collision_count": 0,
+        "timeout_count": 4,
+        "mean_return": -26.36,
+        "mean_displacement": 4.69,
+        "mean_forward_progress": 4.64
+      }
+    },
+    {
+      "iteration": 7,
+      "mean_reward": -4.18,
+      "policy_loss": -0.0083,
+      "value_loss": 0.8769,
+      "entropy": 0.866,
+      "grad_norm": 21.5712,
+      "eval_success_rate": 0.0,
+      "is_best": true,
+      "eval_detailed": null,
+      "telemetry": {
+        "total_steps": 2048,
+        "intervention_steps": 1660,
+        "intervention_rate_pct": 81.05,
+        "intervention_components": {
+          "vx": {
+            "mean_mps": 0.2643,
+            "max_mps": 0.7,
+            "intervened_steps": 1425,
+            "intervened_rate_pct": 69.58,
+            "unit": "m/s"
+          },
+          "vy": {
+            "mean_mps": 0.1874,
+            "max_mps": 0.4,
+            "intervened_steps": 1206,
+            "intervened_rate_pct": 58.89,
+            "unit": "m/s"
+          },
+          "vz": {
+            "mean_mps": 0.0,
+            "max_mps": 0.0,
+            "intervened_steps": 0,
+            "intervened_rate_pct": 0.0,
+            "unit": "m/s"
+          },
+          "yaw_rate": {
+            "mean_radps": 0.0,
+            "max_radps": 0.0,
+            "intervened_steps": 0,
+            "intervened_rate_pct": 0.0,
+            "unit": "rad/s"
+          },
+          "mixed_unit_diagnostic_norm": {
+            "mean": 0.2977,
+            "max": 0.8062,
+            "note": "DIAGNOSTIC ONLY: combines linear (m/s) and angular (rad/s) velocities; not a physically homogeneous quantity. Never used in reward."
+          }
+        },
+        "reverse_steps": 115,
+        "reverse_rate_pct": 5.62,
+        "recovery_episodes": 96,
+        "policy_saturation": {
+          "vx": 995,
+          "vy": 679,
+          "vz": 656,
+          "yaw_rate": 459,
+          "total_denominator": 2048
+        },
+        "applied_saturation": {
+          "vx": 182,
+          "vy": 171,
+          "vz": 656,
+          "yaw_rate": 459,
+          "total_denominator": 2048
+        },
+        "episodes_completed": 4,
+        "success_count": 0,
+        "collision_count": 0,
+        "timeout_count": 4,
+        "mean_return": -4.18,
+        "mean_displacement": 6.26,
+        "mean_forward_progress": 6.24
+      }
+    },
+    {
+      "iteration": 8,
+      "mean_reward": -9.08,
+      "policy_loss": -0.0091,
+      "value_loss": 0.8847,
+      "entropy": 0.858,
+      "grad_norm": 13.4955,
+      "eval_success_rate": 0.0,
+      "is_best": true,
+      "eval_detailed": null,
+      "telemetry": {
+        "total_steps": 2048,
+        "intervention_steps": 1626,
+        "intervention_rate_pct": 79.39,
+        "intervention_components": {
+          "vx": {
+            "mean_mps": 0.3096,
+            "max_mps": 0.7,
+            "intervened_steps": 1456,
+            "intervened_rate_pct": 71.09,
+            "unit": "m/s"
+          },
+          "vy": {
+            "mean_mps": 0.2024,
+            "max_mps": 0.55,
+            "intervened_steps": 1119,
+            "intervened_rate_pct": 54.64,
+            "unit": "m/s"
+          },
+          "vz": {
+            "mean_mps": 0.0,
+            "max_mps": 0.0,
+            "intervened_steps": 0,
+            "intervened_rate_pct": 0.0,
+            "unit": "m/s"
+          },
+          "yaw_rate": {
+            "mean_radps": 0.0,
+            "max_radps": 0.0,
+            "intervened_steps": 0,
+            "intervened_rate_pct": 0.0,
+            "unit": "rad/s"
+          },
+          "mixed_unit_diagnostic_norm": {
+            "mean": 0.3401,
+            "max": 0.8062,
+            "note": "DIAGNOSTIC ONLY: combines linear (m/s) and angular (rad/s) velocities; not a physically homogeneous quantity. Never used in reward."
+          }
+        },
+        "reverse_steps": 228,
+        "reverse_rate_pct": 11.13,
+        "recovery_episodes": 156,
+        "policy_saturation": {
+          "vx": 1043,
+          "vy": 741,
+          "vz": 645,
+          "yaw_rate": 491,
+          "total_denominator": 2048
+        },
+        "applied_saturation": {
+          "vx": 187,
+          "vy": 245,
+          "vz": 645,
+          "yaw_rate": 491,
+          "total_denominator": 2048
+        },
+        "episodes_completed": 4,
+        "success_count": 0,
+        "collision_count": 0,
+        "timeout_count": 4,
+        "mean_return": -9.08,
+        "mean_displacement": 6.51,
+        "mean_forward_progress": 6.49
+      }
+    },
+    {
+      "iteration": 9,
+      "mean_reward": -29.35,
+      "policy_loss": -0.0064,
+      "value_loss": 0.4425,
+      "entropy": 0.853,
+      "grad_norm": 6.1649,
+      "eval_success_rate": 0.0,
+      "is_best": true,
+      "eval_detailed": null,
+      "telemetry": {
+        "total_steps": 2048,
+        "intervention_steps": 1816,
+        "intervention_rate_pct": 88.67,
+        "intervention_components": {
+          "vx": {
+            "mean_mps": 0.3942,
+            "max_mps": 0.7,
+            "intervened_steps": 1725,
+            "intervened_rate_pct": 84.23,
+            "unit": "m/s"
+          },
+          "vy": {
+            "mean_mps": 0.2276,
+            "max_mps": 0.4,
+            "intervened_steps": 1493,
+            "intervened_rate_pct": 72.9,
+            "unit": "m/s"
+          },
+          "vz": {
+            "mean_mps": 0.0,
+            "max_mps": 0.0,
+            "intervened_steps": 0,
+            "intervened_rate_pct": 0.0,
+            "unit": "m/s"
+          },
+          "yaw_rate": {
+            "mean_radps": 0.0,
+            "max_radps": 0.0,
+            "intervened_steps": 0,
+            "intervened_rate_pct": 0.0,
+            "unit": "rad/s"
+          },
+          "mixed_unit_diagnostic_norm": {
+            "mean": 0.444,
+            "max": 0.8062,
+            "note": "DIAGNOSTIC ONLY: combines linear (m/s) and angular (rad/s) velocities; not a physically homogeneous quantity. Never used in reward."
+          }
+        },
+        "reverse_steps": 571,
+        "reverse_rate_pct": 27.88,
+        "recovery_episodes": 335,
+        "policy_saturation": {
+          "vx": 1065,
+          "vy": 673,
+          "vz": 643,
+          "yaw_rate": 411,
+          "total_denominator": 2048
+        },
+        "applied_saturation": {
+          "vx": 83,
+          "vy": 128,
+          "vz": 643,
+          "yaw_rate": 411,
+          "total_denominator": 2048
+        },
+        "episodes_completed": 4,
+        "success_count": 0,
+        "collision_count": 0,
+        "timeout_count": 4,
+        "mean_return": -29.35,
+        "mean_displacement": 4.16,
+        "mean_forward_progress": 4.11
+      }
+    },
+    {
+      "iteration": 10,
+      "mean_reward": -7.06,
+      "policy_loss": -0.0086,
+      "value_loss": 0.8577,
+      "entropy": 0.84,
+      "grad_norm": 11.5974,
+      "eval_success_rate": 0.0,
+      "is_best": true,
+      "eval_detailed": {
+        "total_episodes": 10,
+        "success_count": 0,
+        "success_rate_pct": 0.0,
+        "collision_count": 0,
+        "collision_rate_pct": 0.0,
+        "timeout_count": 10,
+        "timeout_rate_pct": 100.0,
+        "mean_return": 46.74,
+        "mean_net_forward_displacement_m": 5.58,
+        "mean_distance_travelled_m": 7.63,
+        "min_obstacle_clearance_m": 0.115,
+        "min_wall_clearance_m": 0.247,
+        "total_steps": 5000,
+        "intervention_steps": 4440,
+        "intervention_rate_pct": 88.8,
+        "reverse_control_steps": 924,
+        "recovery_episodes": 8,
+        "component_interventions": {
+          "vx": {
+            "mean_mps": 0.3682,
+            "max_mps": 0.7,
+            "unit": "m/s"
+          },
+          "vy": {
+            "mean_mps": 0.0928,
+            "max_mps": 0.435,
+            "unit": "m/s"
+          },
+          "vz": {
+            "mean_mps": 0.0023,
+            "max_mps": 0.0929,
+            "unit": "m/s"
+          },
+          "yaw_rate": {
+            "mean_radps": 0.0,
+            "max_radps": 0.0,
+            "unit": "rad/s"
+          }
+        },
+        "policy_saturation": {
+          "vx": 3064,
+          "vy": 825,
+          "vz": 0,
+          "yaw_rate": 577
+        },
+        "applied_saturation": {
+          "vx": 558,
+          "vy": 490,
+          "vz": 0,
+          "yaw_rate": 577
+        },
+        "per_seed_records": [
+          {
+            "seed": 100,
+            "status": "timeout",
+            "steps": 500,
+            "episode_return": 52.26,
+            "distance_travelled_m": 7.94,
+            "net_forward_displacement_m": 6.17,
+            "min_obstacle_clearance_m": 0.127,
+            "min_wall_clearance_m": 0.249,
+            "interventions": 442,
+            "final_position": [
+              6.67,
+              -0.53,
+              0.4
+            ]
+          },
+          {
+            "seed": 101,
+            "status": "timeout",
+            "steps": 500,
+            "episode_return": 29.29,
+            "distance_travelled_m": 6.47,
+            "net_forward_displacement_m": 4.24,
+            "min_obstacle_clearance_m": 0.138,
+            "min_wall_clearance_m": 0.248,
+            "interventions": 455,
+            "final_position": [
+              4.74,
+              -0.53,
+              0.4
+            ]
+          },
+          {
+            "seed": 102,
+            "status": "timeout",
+            "steps": 500,
+            "episode_return": 7.7,
+            "distance_travelled_m": 4.48,
+            "net_forward_displacement_m": 2.1,
+            "min_obstacle_clearance_m": 0.151,
+            "min_wall_clearance_m": 0.247,
+            "interventions": 469,
+            "final_position": [
+              2.6,
+              -0.56,
+              0.4
+            ]
+          },
+          {
+            "seed": 103,
+            "status": "timeout",
+            "steps": 500,
+            "episode_return": 21.95,
+            "distance_travelled_m": 6.46,
+            "net_forward_displacement_m": 3.73,
+            "min_obstacle_clearance_m": 0.115,
+            "min_wall_clearance_m": 0.25,
+            "interventions": 455,
+            "final_position": [
+              4.23,
+              -0.38,
+              0.42
+            ]
+          },
+          {
+            "seed": 104,
+            "status": "timeout",
+            "steps": 500,
+            "episode_return": 52.75,
+            "distance_travelled_m": 7.94,
+            "net_forward_displacement_m": 6.11,
+            "min_obstacle_clearance_m": 0.136,
+            "min_wall_clearance_m": 0.282,
+            "interventions": 460,
+            "final_position": [
+              6.61,
+              -0.53,
+              0.43
+            ]
+          },
+          {
+            "seed": 105,
+            "status": "timeout",
+            "steps": 500,
+            "episode_return": 52.81,
+            "distance_travelled_m": 8.11,
+            "net_forward_displacement_m": 6.06,
+            "min_obstacle_clearance_m": 0.135,
+            "min_wall_clearance_m": 0.279,
+            "interventions": 447,
+            "final_position": [
+              6.56,
+              -0.53,
+              0.45
+            ]
+          },
+          {
+            "seed": 106,
+            "status": "timeout",
+            "steps": 500,
+            "episode_return": 29.01,
+            "distance_travelled_m": 6.2,
+            "net_forward_displacement_m": 4.03,
+            "min_obstacle_clearance_m": 0.136,
+            "min_wall_clearance_m": 0.306,
+            "interventions": 459,
+            "final_position": [
+              4.53,
+              -0.53,
+              0.79
+            ]
+          },
+          {
+            "seed": 107,
+            "status": "timeout",
+            "steps": 500,
+            "episode_return": 78.16,
+            "distance_travelled_m": 9.71,
+            "net_forward_displacement_m": 8.15,
+            "min_obstacle_clearance_m": 0.125,
+            "min_wall_clearance_m": 0.272,
+            "interventions": 421,
+            "final_position": [
+              8.65,
+              0.29,
+              0.47
+            ]
+          },
+          {
+            "seed": 108,
+            "status": "timeout",
+            "steps": 500,
+            "episode_return": 52.48,
+            "distance_travelled_m": 8.07,
+            "net_forward_displacement_m": 6.08,
+            "min_obstacle_clearance_m": 0.134,
+            "min_wall_clearance_m": 0.285,
+            "interventions": 448,
+            "final_position": [
+              6.58,
+              -0.53,
+              0.53
+            ]
+          },
+          {
+            "seed": 109,
+            "status": "timeout",
+            "steps": 500,
+            "episode_return": 90.96,
+            "distance_travelled_m": 10.96,
+            "net_forward_displacement_m": 9.12,
+            "min_obstacle_clearance_m": 0.161,
+            "min_wall_clearance_m": 0.267,
+            "interventions": 384,
+            "final_position": [
+              9.62,
+              0.57,
+              0.51
+            ]
+          }
+        ]
+      },
+      "telemetry": {
+        "total_steps": 2048,
+        "intervention_steps": 1703,
+        "intervention_rate_pct": 83.15,
+        "intervention_components": {
+          "vx": {
+            "mean_mps": 0.3175,
+            "max_mps": 0.7,
+            "intervened_steps": 1553,
+            "intervened_rate_pct": 75.83,
+            "unit": "m/s"
+          },
+          "vy": {
+            "mean_mps": 0.204,
+            "max_mps": 0.4001,
+            "intervened_steps": 1224,
+            "intervened_rate_pct": 59.77,
+            "unit": "m/s"
+          },
+          "vz": {
+            "mean_mps": 0.1679,
+            "max_mps": 0.3184,
+            "intervened_steps": 18,
+            "intervened_rate_pct": 0.88,
+            "unit": "m/s"
+          },
+          "yaw_rate": {
+            "mean_radps": 0.0,
+            "max_radps": 0.0,
+            "intervened_steps": 0,
+            "intervened_rate_pct": 0.0,
+            "unit": "rad/s"
+          },
+          "mixed_unit_diagnostic_norm": {
+            "mean": 0.3524,
+            "max": 0.8497,
+            "note": "DIAGNOSTIC ONLY: combines linear (m/s) and angular (rad/s) velocities; not a physically homogeneous quantity. Never used in reward."
+          }
+        },
+        "reverse_steps": 297,
+        "reverse_rate_pct": 14.5,
+        "recovery_episodes": 192,
+        "policy_saturation": {
+          "vx": 1028,
+          "vy": 656,
+          "vz": 656,
+          "yaw_rate": 505,
+          "total_denominator": 2048
+        },
+        "applied_saturation": {
+          "vx": 120,
+          "vy": 161,
+          "vz": 652,
+          "yaw_rate": 505,
+          "total_denominator": 2048
+        },
+        "episodes_completed": 4,
+        "success_count": 0,
+        "collision_count": 0,
+        "timeout_count": 4,
+        "mean_return": -7.06,
+        "mean_displacement": 5.23,
+        "mean_forward_progress": 5.18
+      }
+    }
+  ]
+}

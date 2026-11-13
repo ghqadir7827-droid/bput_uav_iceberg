@@ -1,0 +1,6 @@
+scenario,baseline_success,candidate_success,baseline_steps,candidate_steps,baseline_min_obs,candidate_min_obs,baseline_min_wall,candidate_min_wall
+Scenario_A_Centered,1,1,370,435,0.2645,0.1191,0.2598,0.2866
+Scenario_B_Left_Mirrored,1,1,392,420,0.151,0.1334,0.232,0.3532
+Scenario_B_Right_Mirrored,1,1,344,402,0.3086,0.2285,0.3108,0.3215
+Scenario_C_Wide_Right,1,0,388,500,0.1252,0.1315,0.4039,0.6428
+Scenario_C_Wide_Left,1,0,351,500,0.1744,0.1371,0.3526,0.556
